@@ -1,0 +1,22 @@
+[
+    [
+        {
+            "bbox": [
+                750,
+                58,
+                75
+            ],
+            "pgroup": 0,
+            "color": "purple"
+        },
+        {
+            "bbox": [
+                800,
+                730,
+                160
+            ],
+            "pgroup": 1,
+            "color": "orange"
+        }
+    ]
+]

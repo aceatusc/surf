@@ -1,0 +1,16 @@
+.panel {
+    width: 40%;
+    min-width: 42rem;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(2rem);
+    -webkit-backdrop-filter: blur(2rem);
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    padding: 1.2rem 1.6rem;
+    box-shadow: -0.3rem 0 1.6rem -0.6em rgba(0, 0, 0, 0.3);
+}

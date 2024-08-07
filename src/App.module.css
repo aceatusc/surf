@@ -1,0 +1,5 @@
+.main_container {
+    width: min(60%, calc(100% - 42rem));
+    display: flex;
+    flex-direction: row;
+}

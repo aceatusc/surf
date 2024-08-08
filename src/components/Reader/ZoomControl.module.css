@@ -13,7 +13,7 @@
     height: 4rem;
     border-radius: 4rem;
     font-size: 2rem;
-    margin: 0.6rem 0 !important;
+    margin: 0.6rem 0;
     cursor: pointer;
     border-width: 0.08rem;
 }

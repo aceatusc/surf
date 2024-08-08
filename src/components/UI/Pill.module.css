@@ -1,0 +1,6 @@
+.pill_container {
+    border-radius: 1.6rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.3rem 1.2rem;
+}

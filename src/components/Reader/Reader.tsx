@@ -39,7 +39,7 @@ export default function Reader() {
     if (pageDimensions.width == 0 || pageDimensions.height == 0) return;
     const handleResize = () => {
       if (pageDimensions.width === 0) return;
-      const newWidth = window.innerWidth * 0.6 - 40;
+      const newWidth = window.innerWidth * 0.6 - 48;
       setScale(Math.floor((newWidth / pageDimensions.width) * 10) / 10);
     };
     handleResize();

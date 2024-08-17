@@ -20,6 +20,7 @@ export default function HighlightText({
         const [top, left, height, width] = bbox;
         return (
           <div
+            key={i}
             onMouseEnter={() => setHighlightedBlock(pgroup)}
             onMouseLeave={() => setHighlightedBlock(null)}
           >

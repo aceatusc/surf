@@ -8,16 +8,19 @@ import { VerifiedBadge } from "./verified-badge.js";
 type Props = {
   tweet: EnrichedTweet;
   components?: TwitterComponents;
+  ptype: string;
 };
 
-export const TweetHeader = ({ tweet, components }: Props) => {
+export const TweetHeader = ({ tweet, components, ptype }: Props) => {
   const Img = components?.AvatarImg ?? AvatarImg;
   const { user } = tweet;
+
+  const userUrl = `https://twitter.com/${user.screen_name}`;
 
   return (
     <div className={s.header}>
       <a
-        href={tweet.url}
+        href={userUrl}
         className={s.avatar}
         target="_blank"
         rel="noopener noreferrer"
@@ -31,8 +34,8 @@ export const TweetHeader = ({ tweet, components }: Props) => {
           <Img
             src={user.profile_image_url_https}
             alt={user.name}
-            width={48}
-            height={48}
+            width={32}
+            height={32}
           />
         </div>
         <div className={s.avatarOverflow}>
@@ -41,7 +44,7 @@ export const TweetHeader = ({ tweet, components }: Props) => {
       </a>
       <div className={s.author}>
         <a
-          href={tweet.url}
+          href={userUrl}
           className={s.authorLink}
           target="_blank"
           rel="noopener noreferrer"
@@ -53,7 +56,7 @@ export const TweetHeader = ({ tweet, components }: Props) => {
         </a>
         <div className={s.authorMeta}>
           <a
-            href={tweet.url}
+            href={userUrl}
             className={s.username}
             target="_blank"
             rel="noopener noreferrer"

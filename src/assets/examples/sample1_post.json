@@ -1,5 +1,47 @@
 [
     {
-        "id": 1751023987206103244
+        "pgroup": 0,
+        "color": "green",
+        "posts": [
+            {
+                "id": "1751023987206103244",
+                "type": "author",
+                "replies": [
+                    {
+                        "id": "1751277046938968137",
+                        "type": "opinion",
+                        "replies": [
+                            {
+                                "id": "1751277806351196668",
+                                "type": "opinion",
+                                "replies": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "pgroup": 1,
+        "color": "purple",
+        "posts": [
+            {
+                "id": "1751279042375057724",
+                "type": "opinion",
+                "replies": []
+            }
+        ]
+    },
+    {
+        "pgroup": 2,
+        "color": "blue",
+        "posts": [
+            {
+                "id": "1751298202777555438",
+                "type": "critics",
+                "replies": []
+            }
+        ]
     }
 ]

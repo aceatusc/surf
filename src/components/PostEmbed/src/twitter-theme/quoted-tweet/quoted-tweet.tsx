@@ -10,6 +10,5 @@ export const QuotedTweet = ({ tweet }: Props) => (
   <QuotedTweetContainer tweet={tweet}>
     <QuotedTweetHeader tweet={tweet} />
     <QuotedTweetBody tweet={tweet} />
-    {tweet.mediaDetails?.length ? <TweetMedia quoted tweet={tweet} /> : null}
   </QuotedTweetContainer>
 );

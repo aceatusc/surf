@@ -6,13 +6,15 @@
   white-space: nowrap;
   overflow-wrap: break-word;
   overflow: hidden;
+  align-items: center;
 }
 
 .avatar {
   position: relative;
-  height: 48px;
-  width: 48px;
+  height: 32px;
+  width: 32px;
 }
+
 .avatarOverflow {
   height: 100%;
   width: 100%;
@@ -20,9 +22,11 @@
   overflow: hidden;
   border-radius: 9999px;
 }
+
 .avatarSquare {
   border-radius: 4px;
 }
+
 .avatarShadow {
   height: 100%;
   width: 100%;
@@ -30,6 +34,7 @@
   transition-duration: 0.2s;
   box-shadow: rgb(0 0 0 / 3%) 0px 0px 2px inset;
 }
+
 .avatarShadow:hover {
   background-color: rgba(26, 26, 26, 0.15);
 }
@@ -41,18 +46,22 @@
   justify-content: center;
   margin: 0 0.5rem;
 }
+
 .authorLink {
   text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
 }
+
 .authorLink:hover {
   text-decoration-line: underline;
 }
+
 .authorVerified {
   display: inline-flex;
 }
+
 .authorLinkText {
   font-weight: 700;
   text-overflow: ellipsis;
@@ -63,22 +72,27 @@
 .authorMeta {
   display: flex;
 }
+
 .authorFollow {
   display: flex;
 }
+
 .username {
   color: var(--tweet-font-color-secondary);
   text-decoration: none;
   text-overflow: ellipsis;
 }
+
 .follow {
   color: var(--tweet-color-blue-secondary);
   text-decoration: none;
   font-weight: 700;
 }
+
 .follow:hover {
   text-decoration-line: underline;
 }
+
 .separator {
   padding: 0 0.25rem;
 }

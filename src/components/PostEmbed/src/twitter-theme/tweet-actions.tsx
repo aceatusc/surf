@@ -37,7 +37,7 @@ export const TweetActions = ({ tweet }: { tweet: EnrichedTweet }) => {
             </g>
           </svg>
         </div>
-        <span className={s.replyText}>Reply</span>
+        <span className={s.replyText}>Reply In X</span>
       </a>
       <TweetActionsCopy tweet={tweet} />
     </div>

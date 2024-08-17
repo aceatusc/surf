@@ -8,7 +8,7 @@ import { VerifiedBadge } from "./verified-badge.js";
 type Props = {
   tweet: EnrichedTweet;
   components?: TwitterComponents;
-  ptype: string;
+  ptype: String;
 };
 
 export const TweetHeader = ({ tweet, components, ptype }: Props) => {

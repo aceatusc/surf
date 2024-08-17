@@ -5,15 +5,15 @@
         "posts": [
             {
                 "id": "1751023987206103244",
-                "type": "author",
+                "ptype": "author",
                 "replies": [
                     {
                         "id": "1751277046938968137",
-                        "type": "opinion",
+                        "ptype": "opinion",
                         "replies": [
                             {
                                 "id": "1751277806351196668",
-                                "type": "opinion",
+                                "ptype": "opinion",
                                 "replies": []
                             }
                         ]
@@ -28,7 +28,7 @@
         "posts": [
             {
                 "id": "1751279042375057724",
-                "type": "opinion",
+                "ptype": "opinion",
                 "replies": []
             }
         ]
@@ -39,7 +39,7 @@
         "posts": [
             {
                 "id": "1751298202777555438",
-                "type": "critics",
+                "ptype": "critics",
                 "replies": []
             }
         ]

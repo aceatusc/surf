@@ -15,14 +15,16 @@ import { useMemo } from "react";
 type Props = {
   tweet: Tweet;
   components?: Omit<TwitterComponents, "TweetNotFound">;
+  ptype: String;
 };
 
-export const EmbeddedTweet = ({ tweet: t, components }: Props) => {
+export const EmbeddedTweet = ({ tweet: t, components, ptype }: Props) => {
   // useMemo does nothing for RSC but it helps when the component is used in the client (e.g by SWR)
   const tweet = useMemo(() => enrichTweet(t), [t]);
+
   return (
     <TweetContainer>
-      <TweetHeader tweet={tweet} components={components} />
+      <TweetHeader tweet={tweet} components={components} ptype={ptype} />
       {tweet.in_reply_to_status_id_str && <TweetInReplyTo tweet={tweet} />}
       <TweetBody tweet={tweet} />
       {tweet.mediaDetails?.length ? (

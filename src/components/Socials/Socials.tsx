@@ -3,10 +3,11 @@ import styles from "./Socials.module.css";
 import { HighlightContext } from "../../context/HighlightContext";
 import PostGroup from "./PostGroup";
 import SamplePostData from "../../assets/examples/sample1_post.json";
+import HideScroll from "../UI/HideScroll";
 
 export type PostType = {
   id: string | undefined;
-  type: string;
+  ptype: string;
   replies: PostType[];
 };
 
@@ -21,11 +22,16 @@ const SamplePosts = SamplePostData as PostGroupType[];
 export default function Socials() {
   const { highlightedBlock } = useContext(HighlightContext);
   return (
-    <div className={styles.panel} data-theme="light">
+    <HideScroll
+      className={styles.panel}
+      data-theme="light"
+      paddingX={16}
+      paddingY={8}
+    >
       {SamplePosts.map((pg) => (
         <PostGroup key={pg.pgroup} {...pg} />
       ))}
       {highlightedBlock}
-    </div>
+    </HideScroll>
   );
 }

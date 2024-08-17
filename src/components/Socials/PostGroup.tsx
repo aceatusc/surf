@@ -10,15 +10,31 @@ import { PostGroupType, PostType } from "./Socials";
 export type PostProps = {
   postData: PostType;
   apiUrl?: string;
+  isReply?: boolean;
 };
 
-export const Post = ({ postData, apiUrl }: PostProps) => {
+export const Post = ({ postData, apiUrl, isReply }: PostProps) => {
   const { id, ptype, replies } = postData;
   const { data, error, isLoading } = useTweet(id, apiUrl);
   if (isLoading) return <TweetSkeleton />;
   if (error || !data) return <TweetNotFound error={error} />;
 
-  return <EmbeddedTweet tweet={data} ptype={ptype} />;
+  return (
+    <div id={`post-${id}`}>
+      <EmbeddedTweet tweet={data} ptype={ptype} isReply>
+        {replies &&
+          replies.length > 0 &&
+          replies.map((reply) => (
+            <Post
+              key={reply.id}
+              postData={reply}
+              apiUrl={apiUrl}
+              isReply={true}
+            />
+          ))}
+      </EmbeddedTweet>
+    </div>
+  );
 };
 
 export default function PostGroup({ pgroup, color, posts }: PostGroupType) {

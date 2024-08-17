@@ -8,7 +8,13 @@ import { VerifiedBadge } from "./verified-badge.js";
 type Props = {
   tweet: EnrichedTweet;
   components?: TwitterComponents;
-  ptype: String;
+  ptype: string;
+};
+
+const ptypePalette = {
+  author: { backgroundColor: "#81b29a", color: "#2a2a2a" },
+  opinion: { backgroundColor: "#3D405B", color: "#F4F1DE" },
+  critic: { backgroundColor: "#E07A5F", color: "#F4F1DE" },
 };
 
 export const TweetHeader = ({ tweet, components, ptype }: Props) => {
@@ -76,19 +82,27 @@ export const TweetHeader = ({ tweet, components, ptype }: Props) => {
           </div>
         </div>
       </div>
-      <a
-        href={tweet.url}
-        className={s.brand}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="View on Twitter"
-      >
-        <svg viewBox="0 0 24 24" aria-hidden="true" className={s.twitterIcon}>
-          <g>
-            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
-          </g>
-        </svg>
-      </a>
+      <div className={s.tag_container}>
+        <div
+          className={s.tag}
+          style={ptypePalette[ptype as keyof typeof ptypePalette]}
+        >
+          {ptype}
+        </div>
+        <a
+          href={tweet.url}
+          className={s.brand}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View on Twitter"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" className={s.twitterIcon}>
+            <g>
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+            </g>
+          </svg>
+        </a>
+      </div>
     </div>
   );
 };

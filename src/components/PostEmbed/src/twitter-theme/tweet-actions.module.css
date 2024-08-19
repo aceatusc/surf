@@ -10,6 +10,11 @@
   text-overflow: ellipsis;
 }
 
+.actions[data-in-thread=true] {
+  border-top: none;
+  margin-top: 0.125rem;
+}
+
 .like,
 .reply,
 .copy {
@@ -19,18 +24,27 @@
   align-items: center;
   margin-right: 1.25rem;
 }
+
+.actions[data-in-thread=true] .like,
+.actions[data-in-thread=true] .reply {
+  margin-right: 1rem;
+}
+
 .like:hover,
 .reply:hover,
 .copy:hover {
   background-color: rgba(0, 0, 0, 0);
 }
-.like:hover > .likeIconWrapper {
+
+.like:hover>.likeIconWrapper {
   background-color: var(--tweet-color-red-primary-hover);
 }
-.like:hover > .likeCount {
+
+.like:hover>.likeCount {
   color: var(--tweet-color-red-primary);
   text-decoration-line: underline;
 }
+
 .likeIconWrapper,
 .replyIconWrapper,
 .copyIconWrapper {
@@ -42,6 +56,7 @@
   margin-left: -0.25rem;
   border-radius: 9999px;
 }
+
 .likeIcon,
 .replyIcon,
 .copyIcon {
@@ -49,9 +64,17 @@
   fill: currentColor;
   user-select: none;
 }
+
+.actions[data-in-thread=true] .likeIconWrapper,
+.actions[data-in-thread=true] .replyIconWrapper {
+  width: calc(0.6 * var(--tweet-actions-icon-wrapper-size));
+  height: calc(0.6 * var(--tweet-actions-icon-wrapper-size));
+}
+
 .likeIcon {
   color: var(--tweet-color-red-primary);
 }
+
 .likeCount,
 .replyText,
 .copyText {
@@ -61,13 +84,22 @@
   margin-left: 0.25rem;
 }
 
-.reply:hover > .replyIconWrapper {
+.actions[data-in-thread=true] .likeCount,
+.actions[data-in-thread=true] .replyText {
+  font-size: calc(0.8 * var(--tweet-actions-font-size));
+  font-weight: 600;
+  line-height: calc(0.8 * var(--tweet-actions-line-height));
+}
+
+.reply:hover>.replyIconWrapper {
   background-color: var(--tweet-color-blue-secondary-hover);
 }
-.reply:hover > .replyText {
+
+.reply:hover>.replyText {
   color: var(--tweet-color-blue-secondary);
   text-decoration-line: underline;
 }
+
 .replyIcon {
   color: var(--tweet-color-blue-primary);
 }
@@ -78,13 +110,16 @@
   border: none;
   cursor: pointer;
 }
-.copy:hover > .copyIconWrapper {
+
+.copy:hover>.copyIconWrapper {
   background-color: var(--tweet-color-green-primary-hover);
 }
+
 .copy:hover .copyIcon {
   color: var(--tweet-color-green-primary);
 }
-.copy:hover > .copyText {
+
+.copy:hover>.copyText {
   color: var(--tweet-color-green-primary);
   text-decoration-line: underline;
 }

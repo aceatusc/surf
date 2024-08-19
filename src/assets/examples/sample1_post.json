@@ -5,20 +5,25 @@
         "posts": [
             {
                 "id": "1751023987206103244",
-                "ptype": "author",
+                "ptype": "Author",
                 "replies": [
                     {
                         "id": "1751277046938968137",
-                        "ptype": "opinion",
+                        "ptype": "Opinion",
                         "replies": [
                             {
                                 "id": "1751277806351196668",
-                                "ptype": "opinion",
+                                "ptype": "Opinion",
                                 "replies": []
                             }
                         ]
                     }
                 ]
+            },
+            {
+                "id": "1751029578414666035",
+                "ptype": "TL;DR",
+                "replies": []
             }
         ]
     },
@@ -28,8 +33,25 @@
         "posts": [
             {
                 "id": "1751279042375057724",
-                "ptype": "opinion",
-                "replies": []
+                "ptype": "Opinion",
+                "replies": [
+                    {
+                        "id": "1751349091618226224",
+                        "ptype": "Critic",
+                        "replies": [
+                            {
+                                "id": "1751519580491862424",
+                                "ptype": "Opinion",
+                                "replies": []
+                            },
+                            {
+                                "id": "1751408691822125525",
+                                "ptype": "Opinion",
+                                "replies": []
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },

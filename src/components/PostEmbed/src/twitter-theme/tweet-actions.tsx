@@ -1,12 +1,13 @@
 import { type EnrichedTweet, formatNumber } from "../utils.js";
 import { TweetActionsCopy } from "./tweet-actions-copy.js";
 import s from "./tweet-actions.module.css";
+import { TweetInfo } from "./tweet-info.jsx";
 
 export const TweetActions = ({ tweet }: { tweet: EnrichedTweet }) => {
   const favoriteCount = formatNumber(tweet.favorite_count);
 
   return (
-    <div className={s.actions}>
+    <div className={s.actions} data-in-thread={tweet.in_thread}>
       <a
         className={s.like}
         href={tweet.like_url}
@@ -37,9 +38,16 @@ export const TweetActions = ({ tweet }: { tweet: EnrichedTweet }) => {
             </g>
           </svg>
         </div>
-        <span className={s.replyText}>Reply In X</span>
+        <span className={s.replyText}>Reply</span>
       </a>
-      <TweetActionsCopy tweet={tweet} />
+      {tweet.in_thread ? (
+        <TweetInfo
+          tweet={tweet}
+          style={{ marginLeft: "auto", marginRight: "0.4rem" }}
+        />
+      ) : (
+        <TweetActionsCopy tweet={tweet} />
+      )}
     </div>
   );
 };

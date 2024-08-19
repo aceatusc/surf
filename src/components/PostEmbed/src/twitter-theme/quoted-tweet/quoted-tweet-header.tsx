@@ -1,10 +1,10 @@
 import clsx from "clsx";
 import { AvatarImg } from "../avatar-img.js";
 import s from "./quoted-tweet-header.module.css";
-import type { EnrichedQuotedTweet } from "../../utils.js";
+import type { EnrichedQuotedTweet, EnrichedTweet } from "../../utils.js";
 import { VerifiedBadge } from "../verified-badge.js";
 
-type Props = { tweet: EnrichedQuotedTweet };
+type Props = { tweet: EnrichedQuotedTweet | EnrichedTweet };
 
 export const QuotedTweetHeader = ({ tweet }: Props) => {
   const { user } = tweet;

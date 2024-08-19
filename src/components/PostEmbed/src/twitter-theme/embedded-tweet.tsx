@@ -15,43 +15,25 @@ import React, { useMemo } from "react";
 type Props = {
   tweet: Tweet;
   components?: Omit<TwitterComponents, "TweetNotFound">;
-  ptype: string;
   children?: React.ReactNode;
-  isReply?: boolean;
 };
 
-export const EmbeddedTweetReply = ({
-  tweet: t,
-  components,
-  ptype,
-  children,
-}: Props) => {
-  const reply = useMemo(() => enrichTweet(t), [t]);
-  return (
-    
-  )
-}
-
-export const EmbeddedTweet = ({
-  tweet: t,
-  components,
-  ptype,
-  children,
-  isReply,
-}: Props) => {
+export const EmbeddedTweet = ({ tweet: t, components, children }: Props) => {
   // useMemo does nothing for RSC but it helps when the component is used in the client (e.g by SWR)
   const tweet = useMemo(() => enrichTweet(t), [t]);
 
   return (
-    <TweetContainer>
-      <TweetHeader tweet={tweet} components={components} ptype={ptype} />
-      {tweet.in_reply_to_status_id_str && <TweetInReplyTo tweet={tweet} />}
+    <TweetContainer inThread={tweet.in_thread}>
+      <TweetHeader tweet={tweet} components={components} />
+      {tweet.in_reply_to_status_id_str && !tweet.in_thread && (
+        <TweetInReplyTo tweet={tweet} />
+      )}
       <TweetBody tweet={tweet} />
       {tweet.mediaDetails?.length ? (
         <TweetMedia tweet={tweet} components={components} />
       ) : null}
       {tweet.quoted_tweet && <QuotedTweet tweet={tweet.quoted_tweet} />}
-      <TweetInfo tweet={tweet} />
+      {!tweet.in_thread && <TweetInfo tweet={tweet} />}
       <TweetActions tweet={tweet} />
       {/* <TweetReplies tweet={tweet} /> */}
       {children}

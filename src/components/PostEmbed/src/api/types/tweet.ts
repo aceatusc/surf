@@ -62,6 +62,8 @@ export interface Tweet extends TweetBase {
   in_reply_to_user_id_str?: string
   parent?: TweetParent
   possibly_sensitive?: boolean
+  in_thread?: boolean
+  tweet_type: string
 }
 
 /**

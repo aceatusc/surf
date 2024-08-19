@@ -15,11 +15,24 @@
   transition-property: background-color, box-shadow;
   transition-duration: 0.2s;
 }
+
 .root:hover {
   background-color: var(--tweet-bg-color-hover);
 }
+
 .article {
   position: relative;
   box-sizing: inherit;
   padding: 0.75rem 1rem;
+}
+
+.root[data-in-thread=true] {
+  border: none;
+  border-left: var(--tweet-border);
+  border-width: 1.6px;
+  margin: 0.6rem 0 0.6rem 0.3rem;
+}
+
+.root[data-in-thread=true] .article {
+  padding: 0.5rem 1rem;
 }

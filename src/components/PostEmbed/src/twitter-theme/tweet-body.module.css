@@ -6,3 +6,9 @@
   overflow-wrap: break-word;
   white-space: pre-wrap;
 }
+
+.root[data-in-thread=true] {
+  font-size: calc(0.82 * var(--tweet-body-font-size));
+  line-height: calc(0.82 * var(--tweet-body-line-height));
+  margin: calc(0.8 * var(--tweet-body-margin));
+}

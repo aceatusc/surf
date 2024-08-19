@@ -4,7 +4,12 @@
   font-size: var(--tweet-info-font-size);
   line-height: var(--tweet-info-line-height);
 }
+
 .root:hover {
   text-decoration-thickness: 1px;
   text-decoration-line: underline;
+}
+
+.root[data-in-thread=true] {
+  font-size: calc(0.8 * var(--tweet-info-font-size));
 }

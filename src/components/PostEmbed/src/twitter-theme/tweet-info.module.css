@@ -7,10 +7,17 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+.info[data-in-thread=true] {
+  margin-top: 0;
+  font-weight: 600;
+}
+
 .infoLink {
   color: inherit;
   text-decoration: none;
 }
+
 .infoLink {
   height: var(--tweet-actions-icon-wrapper-size);
   width: var(--tweet-actions-icon-wrapper-size);
@@ -24,15 +31,18 @@
   transition-property: background-color;
   transition-duration: 0.2s;
 }
+
 .infoLink:hover {
   background-color: var(--tweet-color-blue-secondary-hover);
 }
+
 .infoIcon {
   color: inherit;
   fill: currentColor;
   height: var(--tweet-actions-icon-size);
   user-select: none;
 }
-.infoLink:hover > .infoIcon {
+
+.infoLink:hover>.infoIcon {
   color: var(--tweet-color-blue-secondary);
 }

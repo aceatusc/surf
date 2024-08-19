@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import s from "./HideScroll.module.css";
 
 type Props = {
@@ -14,7 +14,6 @@ export function getScrollbarWidth() {
   if (scrollbarWidth !== undefined) {
     return scrollbarWidth;
   }
-  console.log("running getScrollbarWidth");
 
   const container = document.createElement("div");
   document.body.appendChild(container);
@@ -41,11 +40,13 @@ export default function HideScroll({
   paddingY,
   ...props
 }: Props) {
+  const [sbWidth, setSbWidth] = useState<number>(0);
+
   useEffect(() => {
-    if (scrollbarWidth === undefined) {
-      getScrollbarWidth();
-    }
-  }, []);
+    setSbWidth(
+      scrollbarWidth === undefined ? getScrollbarWidth() : scrollbarWidth
+    );
+  }, [scrollbarWidth]);
 
   return (
     <div className={`${s.parent} ${className || s.parent_default}`}>
@@ -54,7 +55,7 @@ export default function HideScroll({
         style={{
           top: `${paddingY || 0}px`,
           bottom: `${paddingY || 0}px`,
-          right: `-${scrollbarWidth}px`,
+          right: `-${sbWidth}px`,
         }}
       >
         <div
@@ -63,7 +64,7 @@ export default function HideScroll({
             paddingLeft: `${paddingX || 0}px`,
             paddingRight: `${paddingX || 0}px`,
             overflowY: "auto",
-            height: "100%",
+            height: "fit-content",
           }}
         >
           {children}

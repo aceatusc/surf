@@ -17,7 +17,7 @@ export default function HighlightText({
   return (
     <Fragment>
       {pageData.map(({ bbox, pgroup }, i) => {
-        const [top, left, height, width] = bbox;
+        const [left, top, width, height] = bbox;
         return (
           <div
             key={i}

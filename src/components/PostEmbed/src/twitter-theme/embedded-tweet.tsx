@@ -22,6 +22,9 @@ export const EmbeddedTweet = ({ tweet: t, components, children }: Props) => {
   // useMemo does nothing for RSC but it helps when the component is used in the client (e.g by SWR)
   const tweet = useMemo(() => enrichTweet(t), [t]);
 
+  // if (tweet.id_str === "1751029578414666035") {
+  //   console.log(tweet);
+  // }
   return (
     <TweetContainer inThread={tweet.in_thread}>
       <TweetHeader tweet={tweet} components={components} />

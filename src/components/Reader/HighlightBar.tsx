@@ -1,4 +1,4 @@
-import { useCallback, useContext } from "react";
+import React, { useCallback, useContext, useEffect } from "react";
 import { HighlightProps } from "./Reader";
 import { HighlightContext } from "../../context/HighlightContext";
 import {
@@ -21,6 +21,16 @@ export default function HighlightBarOverlay({ pageData }: HighlightBarProps) {
     return computePageStyle(pageDimensions, rotation, scale);
   }, [pageDimensions, rotation, scale]);
 
+  const handleMouseEnter = useCallback((groupId: number) => {
+    const element = document.getElementById(`pgroup-${groupId}`);
+    element?.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, []);
+
+  const handleClick = useCallback((e: React.MouseEvent, groupId: number) => {
+    e.stopPropagation();
+    setHighlightedBlock(groupId);
+  }, []);
+
   return (
     <div style={getPageStyle()}>
       {pageData.map(({ bbox, pgroup, color }) => (
@@ -39,8 +49,8 @@ export default function HighlightBarOverlay({ pageData }: HighlightBarProps) {
               scale
             ),
           }}
-          onMouseEnter={() => setHighlightedBlock(pgroup)}
-          onMouseLeave={() => setHighlightedBlock(null)}
+          onMouseEnter={() => handleMouseEnter(pgroup)}
+          onClick={(e: React.MouseEvent) => handleClick(e, pgroup)}
         />
       ))}
     </div>

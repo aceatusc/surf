@@ -4,7 +4,6 @@ import {
   TweetSkeleton,
   useTweet,
 } from "../PostEmbed/src";
-import { isColorDark } from "../UI/Utils";
 import styles from "./PostGroup.module.css";
 import { PostGroupType, PostType } from "./Socials";
 
@@ -45,12 +44,7 @@ export const Post = ({ postData, apiUrl, inThread, color }: PostProps) => {
   );
 };
 
-export default function PostGroup({
-  pgroup,
-  color,
-  posts,
-  text,
-}: PostGroupType) {
+export default function PostGroup({ pgroup, color, posts }: PostGroupType) {
   return (
     <div id={`pgroup-${pgroup}`} className={styles.root}>
       <div

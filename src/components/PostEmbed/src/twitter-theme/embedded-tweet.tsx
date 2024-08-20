@@ -16,9 +16,17 @@ type Props = {
   tweet: Tweet;
   components?: Omit<TwitterComponents, "TweetNotFound">;
   children?: React.ReactNode;
+  id?: string;
+  style?: React.CSSProperties;
 };
 
-export const EmbeddedTweet = ({ tweet: t, components, children }: Props) => {
+export const EmbeddedTweet = ({
+  tweet: t,
+  components,
+  children,
+  id,
+  style,
+}: Props) => {
   // useMemo does nothing for RSC but it helps when the component is used in the client (e.g by SWR)
   const tweet = useMemo(() => enrichTweet(t), [t]);
 
@@ -26,7 +34,7 @@ export const EmbeddedTweet = ({ tweet: t, components, children }: Props) => {
   //   console.log(tweet);
   // }
   return (
-    <TweetContainer inThread={tweet.in_thread}>
+    <TweetContainer inThread={tweet.in_thread} id={id} style={style}>
       <TweetHeader tweet={tweet} components={components} />
       {tweet.in_reply_to_status_id_str && !tweet.in_thread && (
         <TweetInReplyTo tweet={tweet} />

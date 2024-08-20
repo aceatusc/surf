@@ -10,11 +10,12 @@ import { PostGroupType, PostType } from "./Socials";
 
 export type PostProps = {
   postData: PostType;
+  color?: string;
   apiUrl?: string;
   inThread?: boolean;
 };
 
-export const Post = ({ postData, apiUrl, inThread }: PostProps) => {
+export const Post = ({ postData, apiUrl, inThread, color }: PostProps) => {
   const { id, ptype, replies } = postData;
   const { data, error, isLoading } = useTweet(id, apiUrl);
   if (isLoading) return <TweetSkeleton />;
@@ -24,15 +25,23 @@ export const Post = ({ postData, apiUrl, inThread }: PostProps) => {
   data.tweet_type = ptype;
 
   return (
-    <div id={`post-${id}`}>
-      <EmbeddedTweet tweet={data}>
-        {replies &&
-          replies.length > 0 &&
-          replies.map((reply) => (
-            <Post key={reply.id} postData={reply} apiUrl={apiUrl} inThread />
-          ))}
-      </EmbeddedTweet>
-    </div>
+    <EmbeddedTweet
+      tweet={data}
+      id={`post-${id}`}
+      // style={{ backgroundColor: `${color}06` }}
+    >
+      {replies &&
+        replies.length > 0 &&
+        replies.map((reply) => (
+          <Post
+            key={reply.id}
+            postData={reply}
+            apiUrl={apiUrl}
+            inThread
+            color={color}
+          />
+        ))}
+    </EmbeddedTweet>
   );
 };
 
@@ -45,16 +54,13 @@ export default function PostGroup({
   return (
     <div id={`pgroup-${pgroup}`} className={styles.root}>
       <div
-        className={styles.divider_container}
+        className={styles.divider}
         style={{
           backgroundColor: color,
-          color: isColorDark(color) ? "#F4F1DE" : "#2a2a2a",
         }}
-      >
-        "{text}"
-      </div>
+      />
       {posts.map((post) => (
-        <Post key={post.id} postData={post} inThread={false} />
+        <Post key={post.id} postData={post} inThread={false} color={color} />
       ))}
     </div>
   );

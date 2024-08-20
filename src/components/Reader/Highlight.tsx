@@ -1,4 +1,10 @@
-import { ComponentType, MouseEvent, useCallback, useContext } from "react";
+import {
+  ComponentType,
+  Fragment,
+  MouseEvent,
+  useCallback,
+  useContext,
+} from "react";
 import { HighlightContext } from "../../context/HighlightContext";
 import {
   BoundingBox,
@@ -10,35 +16,38 @@ import {
   TransformContext,
 } from "../PdfRender";
 import { HighlightProps } from "./Reader";
+import { getColorForGroup } from "../../context/ColorManager";
 
-interface HighlightHandlersProps {
-  handleClick: (e: React.MouseEvent, groupId: number) => void;
-  handleMouseEnter: (groupId: number) => void;
-  getPageStyle: () => React.CSSProperties;
+interface HighlightCompProps {
+  pageIndex: number;
+  groupData: HighlightProps;
   pageDimensions: Dimensions;
   rotation: PageRotation;
   scale: number;
+  id: string;
 }
 
-interface HighlightCompProps {
+interface HighlightHandlerProps {
   pageData: HighlightProps[];
   pageIndex: number;
 }
 
 const withHighlightHandlers = (
-  WrappedComponent: ComponentType<HighlightCompProps & HighlightHandlersProps>
+  WrappedComponent: ComponentType<HighlightCompProps>
 ) => {
-  return (props: HighlightCompProps) => {
+  return ({ pageData, pageIndex }: HighlightHandlerProps) => {
     const { setHighlightedBlock } = useContext(HighlightContext);
     const { pageDimensions } = useContext(DocumentContext);
     const { rotation, scale } = useContext(TransformContext);
 
-    const handleClick = useCallback((e: MouseEvent, groupId: number) => {
+    const handleClick = useCallback((e: MouseEvent) => {
       e.stopPropagation();
-      setHighlightedBlock(groupId);
+      const groupId = (e.target as HTMLElement).id.split("_")[0].slice(1);
+      setHighlightedBlock(parseInt(groupId));
     }, []);
 
-    const handleMouseEnter = useCallback((groupId: number) => {
+    const handleMouseEnter = useCallback((e: MouseEvent) => {
+      const groupId = (e.target as HTMLElement).id.split("_")[0].slice(1);
       const element = document.getElementById(`pgroup-${groupId}`);
       element?.scrollIntoView({ behavior: "smooth", block: "center" });
     }, []);
@@ -48,85 +57,84 @@ const withHighlightHandlers = (
     }, [pageDimensions, rotation, scale]);
 
     return (
-      <WrappedComponent
-        {...props}
-        handleClick={handleClick}
-        handleMouseEnter={handleMouseEnter}
-        getPageStyle={getPageStyle}
-        pageDimensions={pageDimensions}
-        rotation={rotation}
-        scale={scale}
-      />
+      <div style={getPageStyle()}>
+        {pageData.map((pg, i) => {
+          return (
+            <div key={i} onClick={handleClick} onMouseEnter={handleMouseEnter}>
+              <WrappedComponent
+                pageIndex={pageIndex}
+                groupData={pg}
+                pageDimensions={pageDimensions}
+                rotation={rotation}
+                scale={scale}
+                id={`g${pg.pgroup}_p${pageIndex}_i${i}`}
+              />
+            </div>
+          );
+        })}
+      </div>
     );
   };
 };
 
-function HighlightTextComp({
-  pageData,
-  pageIndex,
-  handleClick,
-  handleMouseEnter,
-  getPageStyle,
-}: HighlightCompProps & HighlightHandlersProps) {
-  return (
-    <div style={getPageStyle()}>
-      {pageData.map(({ bbox, pgroup, color }, i) => {
-        const [left, top, width, height] = bbox;
-        return (
-          <div
-            key={`highlight-text-group-${pgroup}-${i}`}
-            onMouseEnter={() => handleMouseEnter(pgroup)}
-            onClick={(e: MouseEvent) => handleClick(e, pgroup)}
-          >
-            <BoundingBox
-              key={i}
-              isHighlighted={true}
-              page={pageIndex}
-              top={top}
-              left={left}
-              height={height}
-              width={width}
-              color={color}
-            />
-          </div>
-        );
-      })}
-    </div>
-  );
-}
-
 function HighlightBarComp({
-  pageData,
-  handleClick,
-  handleMouseEnter,
-  getPageStyle,
+  groupData: { pgroup, bbox },
   pageDimensions,
   rotation,
   scale,
-}: HighlightCompProps & HighlightHandlersProps) {
+  id,
+}: HighlightCompProps) {
   return (
-    <div style={getPageStyle()}>
-      {pageData.map(({ bbox, pgroup, color }, i) => (
-        <div
-          key={`highlight-bar-group-${pgroup}-${i}`}
-          style={{
-            backgroundColor: color,
-            borderRadius: 5,
-            cursor: "pointer",
-            position: "absolute",
-            zIndex: 100,
-            ...computeBoundingBoxStyle(
-              { left: bbox[0], top: bbox[1], width: 10, height: bbox[2] },
-              pageDimensions,
-              rotation,
-              scale
-            ),
-          }}
-          onMouseEnter={() => handleMouseEnter(pgroup)}
-          onClick={(e: React.MouseEvent) => handleClick(e, pgroup)}
-        />
-      ))}
-    </div>
+    <div
+      id={id}
+      style={{
+        backgroundColor: getColorForGroup(pgroup),
+        borderRadius: 5,
+        cursor: "pointer",
+        position: "absolute",
+        zIndex: 100,
+        ...computeBoundingBoxStyle(
+          { left: bbox[0], top: bbox[1], width: 9, height: bbox[2] },
+          pageDimensions,
+          rotation,
+          scale
+        ),
+      }}
+    />
+  );
+}
+
+function HighlightTextComp({
+  groupData: { pgroup, bbox },
+  pageIndex,
+  id,
+  ...props
+}: HighlightCompProps) {
+  const [left, top, width, height] = bbox;
+  const barBbox = [
+    props.pageDimensions.width / left > 2 ? left - 13.8 : left + width + 5,
+    top,
+    height,
+  ];
+  return (
+    <Fragment>
+      <HighlightBarComp
+        groupData={{ pgroup, bbox: barBbox }}
+        {...props}
+        id={`${id}_bar`}
+        pageIndex={pageIndex}
+      />
+      <BoundingBox
+        id={`${id}_text`}
+        isHighlighted={true}
+        page={pageIndex}
+        top={top}
+        left={left}
+        height={height}
+        width={width}
+        color={getColorForGroup(pgroup)}
+      />
+    </Fragment>
   );
 }
 

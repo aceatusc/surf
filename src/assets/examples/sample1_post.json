@@ -1,7 +1,6 @@
 [
     {
         "pgroup": 0,
-        "color": "#CB3234",
         "text": "Position: AI/ML Influencers Have a Place in the Academic Process",
         "posts": [
             {
@@ -30,7 +29,17 @@
     },
     {
         "pgroup": 1,
-        "color": "#256D7B",
+        "text": "Figure 1: The number of papers accepted to top AI/ML confer-",
+        "posts": [
+            {
+                "id": "1751024300243796379",
+                "ptype": "Author",
+                "replies": []
+            }
+        ]
+    },
+    {
+        "pgroup": 2,
         "posts": [
             {
                 "id": "1751279042375057724",
@@ -57,8 +66,7 @@
         ]
     },
     {
-        "pgroup": 2,
-        "color": "#0E294B",
+        "pgroup": 3,
         "posts": [
             {
                 "id": "1751298202777555438",

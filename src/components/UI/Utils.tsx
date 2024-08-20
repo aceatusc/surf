@@ -1,4 +1,5 @@
-export function isColorDark(color: string): boolean {
+export function isColorDark(color: string | undefined): boolean {
+  if (!color) return false;
   color = color.replace("#", "");
   const r = parseInt(color.substring(0, 2), 16);
   const g = parseInt(color.substring(2, 4), 16);

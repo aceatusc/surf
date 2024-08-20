@@ -16,7 +16,6 @@ import { HighlightBar, HighlightText } from "./Highlight";
 export interface HighlightProps {
   bbox: number[];
   pgroup: number;
-  color: string;
 }
 
 export type PageDataTypes = HighlightProps[];

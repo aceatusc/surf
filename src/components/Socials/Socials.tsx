@@ -4,6 +4,7 @@ import { HighlightContext } from "../../context/HighlightContext";
 import PostGroup from "./PostGroup";
 import SamplePostData from "../../assets/examples/sample1_post.json";
 import HideScroll from "../UI/HideScroll";
+import { getColorForGroup } from "../../context/ColorManager";
 
 export type PostType = {
   id: string | undefined;
@@ -13,7 +14,7 @@ export type PostType = {
 
 export type PostGroupType = {
   pgroup: number;
-  color: string;
+  color?: string;
   posts: PostType[];
   text?: string;
 };
@@ -38,6 +39,11 @@ export default function Socials() {
     highlightedBlock === null
       ? SamplePosts
       : SamplePosts.filter((pg) => pg.pgroup === highlightedBlock);
+
+  postToDisplay.map((pg) => {
+    pg.color = getColorForGroup(pg.pgroup);
+  });
+
   return (
     <HideScroll
       className={styles.panel}

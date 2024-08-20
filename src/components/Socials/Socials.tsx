@@ -14,7 +14,6 @@ export type PostType = {
 
 export type PostGroupType = {
   pgroup: number;
-  color?: string;
   posts: PostType[];
   text?: string;
 };
@@ -41,7 +40,7 @@ export default function Socials() {
       : SamplePosts.filter((pg) => pg.pgroup === highlightedBlock);
 
   postToDisplay.map((pg) => {
-    pg.color = getColorForGroup(pg.pgroup);
+    getColorForGroup(pg.pgroup);
   });
 
   return (

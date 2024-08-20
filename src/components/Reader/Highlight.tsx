@@ -42,12 +42,12 @@ const withHighlightHandlers = (
 
     const handleClick = useCallback((e: MouseEvent) => {
       e.stopPropagation();
-      const groupId = (e.target as HTMLElement).id.split("_")[0].slice(1);
+      const groupId = (e.target as HTMLElement).id.split("_")[1];
       setHighlightedBlock(parseInt(groupId));
     }, []);
 
     const handleMouseEnter = useCallback((e: MouseEvent) => {
-      const groupId = (e.target as HTMLElement).id.split("_")[0].slice(1);
+      const groupId = (e.target as HTMLElement).id.split("_")[2];
       const element = document.getElementById(`pgroup-${groupId}`);
       element?.scrollIntoView({ behavior: "smooth", block: "center" });
     }, []);
@@ -67,7 +67,7 @@ const withHighlightHandlers = (
                 pageDimensions={pageDimensions}
                 rotation={rotation}
                 scale={scale}
-                id={`g${pg.pgroup}_p${pageIndex}_i${i}`}
+                id={`highlight_group_${pg.pgroup}`}
               />
             </div>
           );
@@ -112,7 +112,7 @@ function HighlightTextComp({
 }: HighlightCompProps) {
   const [left, top, width, height] = bbox;
   const barBbox = [
-    props.pageDimensions.width / left > 2 ? left - 13.8 : left + width + 5,
+    props.pageDimensions.width / left > 2 ? left - 14.4 : left + width + 6,
     top,
     height,
   ];
@@ -121,7 +121,7 @@ function HighlightTextComp({
       <HighlightBarComp
         groupData={{ pgroup, bbox: barBbox }}
         {...props}
-        id={`${id}_bar`}
+        id={id}
         pageIndex={pageIndex}
       />
       <BoundingBox

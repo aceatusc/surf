@@ -92,7 +92,7 @@ export const TweetHeader = ({ tweet, components }: Props) => {
         >
           {tweet_type}
         </div>
-        {!in_thread && (
+        {/* {!in_thread && (
           <a
             href={tweet.url}
             className={s.brand}
@@ -110,7 +110,7 @@ export const TweetHeader = ({ tweet, components }: Props) => {
               </g>
             </svg>
           </a>
-        )}
+        )} */}
       </div>
     </div>
   );

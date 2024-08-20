@@ -15,6 +15,7 @@ export type PostGroupType = {
   pgroup: number;
   color: string;
   posts: PostType[];
+  text?: string;
 };
 
 const SamplePosts = SamplePostData as PostGroupType[];

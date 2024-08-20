@@ -2,21 +2,21 @@
     [
         {
             "bbox": [
-                750,
                 58,
+                750,
                 75
             ],
             "pgroup": 0,
-            "color": "purple"
+            "color": "#CB3234"
         },
         {
             "bbox": [
-                800,
                 730,
+                800,
                 160
             ],
             "pgroup": 1,
-            "color": "orange"
+            "color": "#256D7B"
         }
     ]
 ]

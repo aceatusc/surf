@@ -6,13 +6,12 @@ import {
   RENDER_TYPE,
   ScrollContext,
   TransformContext,
-} from "@allenai/pdf-components";
+} from "../PdfRender";
 import { useContext, useEffect } from "react";
-import HighlightBarOverlay from "./HighlightBar";
 import sampleBarBboxData from "../../assets/examples/sample1_bar_bbox.json";
 import sampleTextBboxData from "../../assets/examples/sample1_text_bbox.json";
 import styles from "./Reader.module.css";
-import HighlightText from "./HighlightText";
+import { HighlightBar, HighlightText } from "./Highlight";
 
 export interface HighlightProps {
   bbox: number[];
@@ -61,7 +60,7 @@ export default function Reader() {
         >
           <Overlay>
             {i < sampleBarBbox.length ? (
-              <HighlightBarOverlay pageData={sampleBarBbox[i]} />
+              <HighlightBar pageData={sampleBarBbox[i]} pageIndex={i} />
             ) : (
               <span />
             )}

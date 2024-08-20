@@ -10,10 +10,10 @@
     "preview": "vite preview"
   },
   "workspaces": [
-    "src/components/PostEmbed"
+    "src/components/PostEmbed",
+    "src/components/PdfRender"
   ],
   "dependencies": {
-    "@allenai/pdf-components": "^1.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-remove-scroll": "^2.5.10"

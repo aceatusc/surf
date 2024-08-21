@@ -42,7 +42,7 @@ const withHighlightHandlers = (
 
     const handleClick = useCallback((e: MouseEvent) => {
       e.stopPropagation();
-      const groupId = (e.target as HTMLElement).id.split("_")[1];
+      const groupId = (e.target as HTMLElement).id.split("_")[2];
       setHighlightedBlock(parseInt(groupId));
     }, []);
 

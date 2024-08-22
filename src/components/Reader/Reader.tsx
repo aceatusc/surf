@@ -6,32 +6,27 @@ import {
   RENDER_TYPE,
   ScrollContext,
   TransformContext,
-} from "../PdfRender";
-import { useContext, useEffect } from "react";
-import sampleBarBboxData from "../../assets/examples/sample1_bar_bbox.json";
-import sampleTextBboxData from "../../assets/examples/sample1_text_bbox.json";
+} from "../pdf";
+import { useContext, useEffect, useRef } from "react";
 import styles from "./Reader.module.css";
-import { HighlightBar, HighlightText } from "./Highlight";
-
-export interface HighlightProps {
-  bbox: number[];
-  pgroup: number;
-}
+import { HighlightProps } from "../types/reader";
+import { DataType } from "../types";
+import Highlight from "./Highlight";
 
 export type PageDataTypes = HighlightProps[];
-const sampleBarBbox = sampleBarBboxData as PageDataTypes[];
-const sampleTextBbox = sampleTextBboxData as PageDataTypes[];
 
-export default function Reader() {
+export default function Reader({ data }: { data: DataType }) {
   const { numPages, pageDimensions } = useContext(DocumentContext);
   const { setScale } = useContext(TransformContext);
   const { setScrollRoot } = useContext(ScrollContext);
+  const docRef = useRef<HTMLDivElement>(null);
 
   const samplePdfUrl = "/sample1.pdf";
 
   useEffect(() => {
-    setScrollRoot(null);
-  }, []);
+    if (!docRef.current) return;
+    setScrollRoot(docRef.current);
+  }, [docRef.current]);
 
   useEffect(() => {
     if (pageDimensions.width == 0 || pageDimensions.height == 0) return;
@@ -50,6 +45,7 @@ export default function Reader() {
       className={styles.reader_container}
       file={samplePdfUrl}
       renderType={RENDER_TYPE.SINGLE_CANVAS}
+      inputRef={docRef}
     >
       {Array.from({ length: numPages }).map((_, i) => (
         <PageWrapper
@@ -57,18 +53,11 @@ export default function Reader() {
           pageIndex={i}
           renderType={RENDER_TYPE.SINGLE_CANVAS}
         >
-          <Overlay>
-            {i < sampleBarBbox.length ? (
-              <HighlightBar pageData={sampleBarBbox[i]} pageIndex={i} />
-            ) : (
-              <span />
-            )}
-            {i < sampleTextBbox.length ? (
-              <HighlightText pageData={sampleTextBbox[i]} pageIndex={i} />
-            ) : (
-              <span />
-            )}
-          </Overlay>
+          {i < numPages && data[i] && data[i].length ? (
+            <Overlay>
+              <Highlight pageData={data[i]} pageIndex={i} />
+            </Overlay>
+          ) : undefined}
         </PageWrapper>
       ))}
     </DocumentWrapper>

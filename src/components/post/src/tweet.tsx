@@ -4,8 +4,8 @@ import {
   EmbeddedTweet,
   TweetNotFound,
   TweetSkeleton,
-} from "./twitter-theme/components.js";
-import type { TweetProps } from "./swr.js";
+} from "./twitter-theme/components.jsx";
+import type { TweetProps } from "./swr.jsx";
 
 // This is not ideal because we don't use the `apiUrl` prop here and `id` is required. But as the
 // type is shared with the SWR version when the Tweet component is imported, we need to have a type

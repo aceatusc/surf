@@ -6,7 +6,7 @@ import {
   TweetNotFound,
   TweetSkeleton,
   type TwitterComponents,
-} from "./twitter-theme/components.js";
+} from "./twitter-theme/components.jsx";
 import { type TweetCoreProps } from "./utils.js";
 import { useTweet } from "./hooks.js";
 

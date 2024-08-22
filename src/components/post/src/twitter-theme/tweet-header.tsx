@@ -1,9 +1,9 @@
 import clsx from "clsx";
 import type { EnrichedTweet } from "../utils.js";
-import type { TwitterComponents } from "./types.js";
-import { AvatarImg } from "./avatar-img.js";
+import type { TwitterComponents } from "./types.jsx";
+import { AvatarImg } from "./avatar-img.jsx";
 import s from "./tweet-header.module.css";
-import { VerifiedBadge } from "./verified-badge.js";
+import { VerifiedBadge } from "./verified-badge.jsx";
 
 type Props = {
   tweet: EnrichedTweet;

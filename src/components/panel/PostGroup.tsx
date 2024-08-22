@@ -4,9 +4,9 @@ import {
   TweetNotFound,
   TweetSkeleton,
   useTweet,
-} from "../PostEmbed/src";
+} from "../post/src";
 import styles from "./PostGroup.module.css";
-import { PostGroupType, PostType } from "./Socials";
+import { PostGroupType, PostType } from "./Panel";
 
 export type PostProps = {
   postData: PostType;

@@ -6,9 +6,9 @@ import {
   getMediaUrl,
 } from "../utils.js";
 import { MediaDetails } from "../api/index.js";
-import type { TwitterComponents } from "./types.js";
-import { TweetMediaVideo } from "./tweet-media-video.js";
-import { MediaImg } from "./media-img.js";
+import type { TwitterComponents } from "./types.jsx";
+import { TweetMediaVideo } from "./tweet-media-video.jsx";
+import { MediaImg } from "./media-img.jsx";
 import s from "./tweet-media.module.css";
 
 const getSkeletonStyle = (media: MediaDetails, itemCount: number) => {

@@ -1,7 +1,7 @@
 import { type EnrichedTweet, formatNumber } from "../utils.js";
 import { TweetActionsCopy } from "./tweet-actions-copy.js";
 import s from "./tweet-actions.module.css";
-import { TweetInfo } from "./tweet-info.jsx";
+import { TweetInfo } from "./tweet-info.js";
 
 export const TweetActions = ({ tweet }: { tweet: EnrichedTweet }) => {
   const favoriteCount = formatNumber(tweet.favorite_count);

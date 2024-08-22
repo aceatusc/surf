@@ -1,4 +1,4 @@
-import { ContextProvider as BaseContextProvider } from "@allenai/pdf-components";
+import { ContextProvider as BaseContextProvider } from "../components/pdf";
 import { HighlightContext, useHighlightContextProps } from "./HighlightContext";
 
 export default function ContextProvider({

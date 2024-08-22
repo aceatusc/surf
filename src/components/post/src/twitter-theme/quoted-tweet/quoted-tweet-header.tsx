@@ -1,8 +1,8 @@
 import clsx from "clsx";
-import { AvatarImg } from "../avatar-img.js";
+import { AvatarImg } from "../avatar-img.jsx";
 import s from "./quoted-tweet-header.module.css";
 import type { EnrichedQuotedTweet, EnrichedTweet } from "../../utils.js";
-import { VerifiedBadge } from "../verified-badge.js";
+import { VerifiedBadge } from "../verified-badge.jsx";
 
 type Props = { tweet: EnrichedQuotedTweet | EnrichedTweet };
 

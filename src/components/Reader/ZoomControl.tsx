@@ -3,7 +3,7 @@ import {
   TransformContext,
   ZoomInButton,
   ZoomOutButton,
-} from "@allenai/pdf-components";
+} from "../pdf";
 import { useCallback, useContext } from "react";
 
 import styles from "./ZoomControl.module.css";

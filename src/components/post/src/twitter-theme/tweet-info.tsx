@@ -1,6 +1,6 @@
 import { CSSProperties } from "react";
 import type { EnrichedTweet } from "../utils.js";
-import { TweetInfoCreatedAt } from "./tweet-info-created-at.js";
+import { TweetInfoCreatedAt } from "./tweet-info-created-at.jsx";
 import s from "./tweet-info.module.css";
 
 export const TweetInfo = ({

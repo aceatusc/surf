@@ -17,12 +17,12 @@ export default function Highlight({ pageData, pageIndex }: HighlightProps) {
 
   const handleClick = useCallback((e: MouseEvent) => {
     e.stopPropagation();
-    const quoteId = (e.target as HTMLElement).id.split("_")[2];
+    const quoteId = (e.target as HTMLElement).id.split("_")[1];
     setHighlightedBlock(parseInt(quoteId));
   }, []);
 
   const handleMouseEnter = useCallback((e: MouseEvent) => {
-    const quoteId = (e.target as HTMLElement).id.split("_")[2];
+    const quoteId = (e.target as HTMLElement).id.split("_")[1];
     const element = document.getElementById(`quote-${quoteId}`);
     element?.scrollIntoView({ behavior: "smooth", block: "center" });
   }, []);
@@ -41,7 +41,7 @@ export default function Highlight({ pageData, pageIndex }: HighlightProps) {
         return (
           <div key={i} onClick={handleClick} onMouseEnter={handleMouseEnter}>
             <div
-              id={`highlight_${pageIndex}_${qid}`}
+              id={`highlight_${qid}`}
               style={{
                 backgroundColor: color,
                 borderRadius: 5,
@@ -58,7 +58,7 @@ export default function Highlight({ pageData, pageIndex }: HighlightProps) {
             />
             {qtype === "text" && (
               <BoundingBox
-                id={`highlight_${pageIndex}_${qid}_text`}
+                id={`highlight_${qid}_text`}
                 isHighlighted={true}
                 page={pageIndex}
                 top={top}

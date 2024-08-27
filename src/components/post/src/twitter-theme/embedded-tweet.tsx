@@ -27,8 +27,8 @@ type Props = {
   components?: Omit<TwitterComponents, "TweetNotFound">;
   children?: React.ReactNode;
   id?: string;
-  groupId?: number;
-  groupColor?: string;
+  quoteId?: number;
+  quoteColor?: string;
   style?: React.CSSProperties;
 };
 
@@ -37,17 +37,16 @@ export const EmbeddedTweet = ({
   components,
   children,
   id,
-  groupId,
-  groupColor,
+  quoteId,
+  quoteColor,
   style,
 }: Props) => {
   // useMemo does nothing for RSC but it helps when the component is used in the client (e.g by SWR)
   const tweet = useMemo(() => enrichTweet(t), [t]);
   const jumpToQuote = (e: MouseEvent) => {
     e.stopPropagation();
-    const groupId = (e.target as HTMLElement).id.split("_")[0].slice(1);
-    const element = document.getElementById(`highlight_group_${groupId}`);
-    console.log(groupId, element);
+    const quoteId = (e.target as HTMLElement).id.split("_")[0].slice(1);
+    const element = document.getElementById(`highlight_${quoteId}`);
     element?.scrollIntoView({ behavior: "smooth", block: "center" });
   };
 
@@ -55,12 +54,12 @@ export const EmbeddedTweet = ({
     <TweetContainer inThread={tweet.in_thread} id={id} style={style}>
       {!tweet.in_thread && (
         <div
-          id={`g${groupId}_${id}`}
+          id={`g${quoteId}_${id}`}
           className={s.tag}
           style={{
-            backgroundColor: groupColor,
+            backgroundColor: quoteColor,
             marginBottom: 6.4,
-            color: isColorDark(groupColor) ? "#F4F1DE" : "#2a2a2a",
+            color: isColorDark(quoteColor) ? "#F4F1DE" : "#2a2a2a",
             cursor: "pointer",
           }}
           onClick={jumpToQuote}

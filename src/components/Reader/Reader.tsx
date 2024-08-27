@@ -6,8 +6,9 @@ import {
   RENDER_TYPE,
   ScrollContext,
   TransformContext,
+  UiContext,
 } from "../pdf";
-import { useContext, useEffect, useRef } from "react";
+import { useContext, useEffect } from "react";
 import styles from "./Reader.module.css";
 import { HighlightProps } from "../types/reader";
 import { DataType } from "../types";
@@ -18,15 +19,18 @@ export type PageDataTypes = HighlightProps[];
 export default function Reader({ data }: { data: DataType }) {
   const { numPages, pageDimensions } = useContext(DocumentContext);
   const { setScale } = useContext(TransformContext);
-  const { setScrollRoot } = useContext(ScrollContext);
-  const docRef = useRef<HTMLDivElement>(null);
+  const { setScrollRoot, resetScrollObservers, setScrollThreshold } =
+    useContext(ScrollContext);
+  const { isLoading } = useContext(UiContext);
 
   const samplePdfUrl = "/sample1.pdf";
 
   useEffect(() => {
-    if (!docRef.current) return;
-    setScrollRoot(docRef.current);
-  }, [docRef.current]);
+    if (isLoading) return;
+    setScrollRoot(null);
+    resetScrollObservers();
+    setScrollThreshold(0.8);
+  }, [isLoading]);
 
   useEffect(() => {
     if (pageDimensions.width == 0 || pageDimensions.height == 0) return;
@@ -45,7 +49,6 @@ export default function Reader({ data }: { data: DataType }) {
       className={styles.reader_container}
       file={samplePdfUrl}
       renderType={RENDER_TYPE.SINGLE_CANVAS}
-      inputRef={docRef}
     >
       {Array.from({ length: numPages }).map((_, i) => (
         <PageWrapper

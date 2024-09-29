@@ -3,19 +3,21 @@ import ContextProvider from "./context/ContextProvider";
 import styles from "./App.module.css";
 import Panel from "./components/panel/Panel";
 import ZoomControl from "./components/reader/ZoomControl";
-import SampleData from "./assets/examples/sample1.json";
-import { DataType } from "./components/types";
+import SamplePosts from "./assets/examples/sample_posts.json";
+import SampleQuotes from "./assets/examples/sample_quotes.json";
+import { TPost, TQuote } from "./components/types";
 
-const data: DataType = SampleData;
+const postData = SamplePosts as TPost[];
+const quoteData = SampleQuotes as TQuote[][];
 
 export default function App() {
   return (
     <ContextProvider>
       <main className={styles.main_container}>
-        <Reader data={data} />
+        <Reader data={quoteData} />
         <ZoomControl />
       </main>
-      <Panel data={data} />
+      <Panel data={postData} />
     </ContextProvider>
   );
 }

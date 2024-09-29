@@ -7,7 +7,7 @@ export const TweetBody = ({ tweet }: { tweet: EnrichedTweet }) => (
     className={s.root}
     lang={tweet.lang}
     dir="auto"
-    data-in-thread={tweet.in_thread}
+    data-in-thread={tweet.is_reply}
   >
     {tweet.entities.map((item, i) => {
       switch (item.type) {

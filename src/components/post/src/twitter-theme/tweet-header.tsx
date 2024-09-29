@@ -4,28 +4,31 @@ import type { TwitterComponents } from "./types.jsx";
 import { AvatarImg } from "./avatar-img.jsx";
 import s from "./tweet-header.module.css";
 import { VerifiedBadge } from "./verified-badge.jsx";
+import { Badge } from "../../../ui/badge";
 
 type Props = {
   tweet: EnrichedTweet;
   components?: TwitterComponents;
 };
 
-const ptypePalette = {
-  Author: { backgroundColor: "#81b29a", color: "#2a2a2a" },
-  Opinion: { backgroundColor: "#3D405B", color: "#F4F1DE" },
-  Critic: { backgroundColor: "#E07A5F", color: "#F4F1DE" },
-  "TL;DR": { backgroundColor: "#72383d", color: "#F4F1DE" },
+export const ptypeConfig = {
+  all: { backgroundColor: "#002d9c", color: "#F4F1DE", icon: "🔎" },
+  author: { backgroundColor: "#198038", color: "#F4F1DE", icon: "✍️" },
+  opinion: { backgroundColor: "#1192e8", color: "#F4F1DE", icon: "🧠" },
+  critic: { backgroundColor: "#570408", color: "#F4F1DE", icon: "🧐" },
+  "tl;dr": { backgroundColor: "#72383d", color: "#F4F1DE", icon: "🎯" },
+  question: { backgroundColor: "#6929c4", color: "#F4F1DE", icon: "🙋" },
 };
 
 export const TweetHeader = ({ tweet, components }: Props) => {
   const Img = components?.AvatarImg ?? AvatarImg;
-  const { user, tweet_type, in_thread } = tweet;
+  const { user, tweet_type, is_reply: is_reply } = tweet;
 
   const userUrl = `https://twitter.com/${user.screen_name}`;
-  const avatarSize = in_thread ? 20 : 32;
+  const avatarSize = is_reply ? 20 : 32;
 
   return (
-    <div className={s.header} data-in-thread={in_thread}>
+    <div className={s.header} data-in-thread={is_reply}>
       <a
         href={userUrl}
         className={s.avatar}
@@ -61,7 +64,7 @@ export const TweetHeader = ({ tweet, components }: Props) => {
           </div>
           <VerifiedBadge user={user} className={s.authorVerified} />
         </a>
-        {!tweet.in_thread && (
+        {!tweet.is_reply && (
           <div className={s.authorMeta}>
             <a
               href={userUrl}
@@ -85,33 +88,16 @@ export const TweetHeader = ({ tweet, components }: Props) => {
           </div>
         )}
       </div>
-      <div className={s.tag_container}>
+      <Badge className="ml-auto px-3 py-1 rounded-full bg-zinc-200 text-zinc-800 hover:bg-zinc-300">
         <div
-          className={s.tag}
-          style={ptypePalette[tweet_type as keyof typeof ptypePalette]}
+          className={`mr-1.5 ${is_reply ? "text-[1.2rem]" : "text-[1.6rem]"}`}
         >
-          {tweet_type}
+          {ptypeConfig[tweet_type].icon}
         </div>
-        {/* {!in_thread && (
-          <a
-            href={tweet.url}
-            className={s.brand}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View on Twitter"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              className={s.twitterIcon}
-            >
-              <g>
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
-              </g>
-            </svg>
-          </a>
-        )} */}
-      </div>
+        <span className={is_reply ? "text-[1rem]" : "text-lg"}>
+          {tweet_type}
+        </span>
+      </Badge>
     </div>
   );
 };

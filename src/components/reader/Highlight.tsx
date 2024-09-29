@@ -1,4 +1,4 @@
-import { Fragment, MouseEvent, useCallback, useContext } from "react";
+import { Fragment, MouseEvent, useCallback, useContext, useState } from "react";
 import { HighlightContext } from "../../context/HighlightContext";
 import {
   computeBoundingBoxStyle,
@@ -11,21 +11,27 @@ import { getColorForGroup } from "../../context/ColorManager";
 import { HighlightProps } from "../types/reader";
 
 export default function Highlight({ pageData, pageIndex }: HighlightProps) {
-  const { setHighlightedBlock } = useContext(HighlightContext);
+  const { setHighlightedQuote } = useContext(HighlightContext);
   const { pageDimensions } = useContext(DocumentContext);
   const { rotation, scale } = useContext(TransformContext);
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleClick = useCallback((e: MouseEvent) => {
     e.stopPropagation();
-    const quoteId = (e.target as HTMLElement).id.split("_")[1];
-    setHighlightedBlock(parseInt(quoteId));
+    setIsHovered(false);
   }, []);
 
   const handleMouseEnter = useCallback((e: MouseEvent) => {
     const quoteId = (e.target as HTMLElement).id.split("_")[1];
-    const element = document.getElementById(`quote-${quoteId}`);
-    element?.scrollIntoView({ behavior: "smooth", block: "center" });
+    setHighlightedQuote(parseInt(quoteId));
+    setIsHovered(true);
   }, []);
+
+  const handleMouseLeave = () => {
+    if (isHovered) {
+      setHighlightedQuote(null);
+    }
+  };
 
   // const getPageStyle = useCallback(() => {
   //   return computePageStyle(pageDimensions, rotation, scale);
@@ -39,15 +45,17 @@ export default function Highlight({ pageData, pageIndex }: HighlightProps) {
           pageDimensions.width / left > 2 ? left - 14.4 : left + width + 6;
         const color = getColorForGroup(qid);
         return (
-          <div key={i} onClick={handleClick} onMouseEnter={handleMouseEnter}>
+          <div
+            key={i}
+            onClick={handleClick}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             <div
               id={`highlight_${qid}`}
+              className="transform transition-transform duration-200 hover:scale-y-[1.1] rounded-lg absolute z-[21] cursor-pointer"
               style={{
                 backgroundColor: color,
-                borderRadius: 5,
-                cursor: "pointer",
-                position: "absolute",
-                zIndex: 100,
                 ...computeBoundingBoxStyle(
                   { left: newLeft, top, width: 9, height },
                   pageDimensions,

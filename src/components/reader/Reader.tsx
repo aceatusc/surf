@@ -11,12 +11,12 @@ import {
 import { useContext, useEffect } from "react";
 import styles from "./Reader.module.css";
 import { HighlightProps } from "../types/reader";
-import { DataType } from "../types";
 import Highlight from "./Highlight";
+import { TQuote } from "../types";
 
 export type PageDataTypes = HighlightProps[];
 
-export default function Reader({ data }: { data: DataType }) {
+export default function Reader({ data }: { data: TQuote[][] }) {
   const { numPages, pageDimensions } = useContext(DocumentContext);
   const { setScale } = useContext(TransformContext);
   const { setScrollRoot, resetScrollObservers, setScrollThreshold } =

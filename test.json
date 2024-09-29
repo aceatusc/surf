@@ -1,0 +1,42 @@
+{
+    "platform": "X",
+    "favorite_count": 41,
+    "created_at": "2024-01-26T23:27:05.000Z",
+    "entities": [
+        {
+            "type": "text",
+            "text": "📈🤓 Ever wondered how a social media shoutout can impact AI research visibility? 🌐 Our new research shows significant connections between influencers and AI paper citations. A must-read for anyone in the "
+        },
+        {
+            "text": "#MachineLearning",
+            "type": "hashtag",
+            "href": "https://x.com/hashtag/MachineLearning"
+        },
+        {
+            "type": "text",
+            "text": " community! \n\n📜Preprint: "
+        },
+        {
+            "type": "url",
+            "href": "https://arxiv.org/abs/2401.13782",
+            "text": "arxiv.org/abs/2401.13782"
+        },
+        {
+            "type": "text",
+            "text": "\n\n🧵1/6 "
+        }
+    ],
+    "id": "1751023987206103244",
+    "user": {
+        "id": "1711922761621512192",
+        "name": "Iain Weissburg",
+        "profile_image": "https://pbs.twimg.com/profile_images/1711922804025909248/SXzwvwov_normal.png",
+        "screen_name": "ixweiss"
+    },
+    "photos": [
+        "https://pbs.twimg.com/media/GEzi8HRaUAEUcSx.jpg"
+    ],
+    "conversation_count": 5,
+    "tweet_type": "author",
+    "url": "https://x.com/ixweiss/status/1751023987206103244"
+}

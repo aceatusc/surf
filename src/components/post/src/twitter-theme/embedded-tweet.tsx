@@ -9,64 +9,47 @@ import { TweetInfo } from "./tweet-info.jsx";
 import { TweetActions } from "./tweet-actions.jsx";
 import { QuotedTweet } from "./quoted-tweet/index.js";
 import { enrichTweet } from "../utils.js";
-import React, { MouseEvent, useMemo } from "react";
-import s from "./tweet-header.module.css";
-
-export function isColorDark(color: string | undefined): boolean {
-  if (!color) return false;
-  color = color.replace("#", "");
-  const r = parseInt(color.substring(0, 2), 16);
-  const g = parseInt(color.substring(2, 4), 16);
-  const b = parseInt(color.substring(4, 6), 16);
-  const luminance = 0.299 * r + 0.587 * g + 0.114 * b;
-  return luminance < 130;
-}
+import React, { MouseEvent, ReactElement, useMemo, useState } from "react";
+import { Input } from "../../../ui/input";
+import { Button } from "../../../ui/button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 type Props = {
   tweet: Tweet;
   components?: Omit<TwitterComponents, "TweetNotFound">;
   children?: React.ReactNode;
   id?: string;
-  quoteId?: number;
-  quoteColor?: string;
-  style?: React.CSSProperties;
+  className?: string;
+  onClickReply?: (event: React.MouseEvent) => void;
 };
 
-export const EmbeddedTweet = ({
+type EmbeddedTweetComp = ReactElement<Props>;
+
+export const EmbeddedTweetReply = ({
   tweet: t,
   components,
   children,
+  className,
+  onClickReply,
   id,
-  quoteId,
-  quoteColor,
-  style,
 }: Props) => {
   // useMemo does nothing for RSC but it helps when the component is used in the client (e.g by SWR)
   const tweet = useMemo(() => enrichTweet(t), [t]);
-  const jumpToQuote = (e: MouseEvent) => {
-    e.stopPropagation();
-    const quoteId = (e.target as HTMLElement).id.split("_")[0].slice(1);
-    const element = document.getElementById(`highlight_${quoteId}`);
-    element?.scrollIntoView({ behavior: "smooth", block: "center" });
-  };
+
+  const childrenWithProps = React.Children.map(children, (child) => {
+    if (React.isValidElement(child)) {
+      return React.cloneElement(child as EmbeddedTweetComp, {
+        onClickReply,
+      });
+    }
+    return child;
+  });
 
   return (
-    <TweetContainer inThread={tweet.in_thread} id={id} style={style}>
-      {!tweet.in_thread && (
-        <div
-          id={`g${quoteId}_${id}`}
-          className={s.tag}
-          style={{
-            backgroundColor: quoteColor,
-            marginBottom: 6.4,
-            color: isColorDark(quoteColor) ? "#F4F1DE" : "#2a2a2a",
-            cursor: "pointer",
-          }}
-          onClick={jumpToQuote}
-        >{`← Jump to Quote`}</div>
-      )}
+    <TweetContainer inThread={tweet.is_reply} id={id} className={className}>
       <TweetHeader tweet={tweet} components={components} />
-      {tweet.in_reply_to_status_id_str && !tweet.in_thread && (
+      {tweet.in_reply_to_status_id_str && !tweet.is_reply && (
         <TweetInReplyTo tweet={tweet} />
       )}
       <TweetBody tweet={tweet} />
@@ -74,10 +57,72 @@ export const EmbeddedTweet = ({
         <TweetMedia tweet={tweet} components={components} />
       ) : null}
       {tweet.quoted_tweet && <QuotedTweet tweet={tweet.quoted_tweet} />}
-      {!tweet.in_thread && <TweetInfo tweet={tweet} />}
-      <TweetActions tweet={tweet} />
-      {/* <TweetReplies tweet={tweet} /> */}
-      {children}
+      {!tweet.is_reply && <TweetInfo tweet={tweet} />}
+      <TweetActions tweet={tweet} onClickReply={onClickReply} />
+      {childrenWithProps}
+    </TweetContainer>
+  );
+};
+
+export const EmbeddedTweet = ({
+  tweet: t,
+  components,
+  children,
+  className,
+  id,
+}: Props) => {
+  // useMemo does nothing for RSC but it helps when the component is used in the client (e.g by SWR)
+  const tweet = useMemo(() => enrichTweet(t), [t]);
+  const [replyTo, setReplyTo] = useState<{
+    id: null | string;
+    name: null | string;
+  }>({ id: null, name: null });
+
+  const handleClickReply = (e: MouseEvent) => {
+    const targetId = e.currentTarget.getAttribute("data-pid");
+    if (tweet.id_str === targetId && replyTo.id) {
+      setReplyTo({ id: null, name: null });
+    } else {
+      setReplyTo({
+        id: targetId,
+        name: e.currentTarget.getAttribute("data-name"),
+      });
+    }
+  };
+
+  const childrenWithProps = React.Children.map(children, (child) => {
+    if (React.isValidElement(child)) {
+      return React.cloneElement(child as EmbeddedTweetComp, {
+        onClickReply: handleClickReply,
+      });
+    }
+    return child;
+  });
+
+  return (
+    <TweetContainer inThread={tweet.is_reply} id={id} className={className}>
+      <TweetHeader tweet={tweet} components={components} />
+      {tweet.in_reply_to_status_id_str && !tweet.is_reply && (
+        <TweetInReplyTo tweet={tweet} />
+      )}
+      <TweetBody tweet={tweet} />
+      {tweet.mediaDetails?.length ? (
+        <TweetMedia tweet={tweet} components={components} />
+      ) : null}
+      {tweet.quoted_tweet && <QuotedTweet tweet={tweet.quoted_tweet} />}
+      <TweetActions tweet={tweet} onClickReply={handleClickReply} />
+      {replyTo.id && (
+        <div className="flex w-full items-center space-x-2 h-11 mt-2 mb-3.5">
+          <Input
+            placeholder={`Replying to @${replyTo.name}`}
+            className="rounded-xl h-full text-lg"
+          />
+          <Button type="submit" className="h-full text-lg rounded-xl font-bold">
+            <FontAwesomeIcon icon={faPaperPlane} />
+          </Button>
+        </div>
+      )}
+      {replyTo.id && childrenWithProps}
     </TweetContainer>
   );
 };

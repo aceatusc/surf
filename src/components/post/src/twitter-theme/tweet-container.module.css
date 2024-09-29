@@ -30,9 +30,9 @@
   border: none;
   border-left: var(--tweet-border);
   border-width: 1.6px;
-  margin: 0.6rem 0 0.6rem 0.3rem;
+  margin: 0.5rem 0 0.2rem 0.3rem;
 }
 
 .root[data-in-thread="true"] .article {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.25rem 0.3rem 1rem;
 }

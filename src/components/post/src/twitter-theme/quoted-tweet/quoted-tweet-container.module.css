@@ -4,6 +4,7 @@
   border: var(--tweet-border);
   border-radius: 12px;
   margin: var(--tweet-quoted-container-margin);
+  margin-bottom: 0;
   transition-property: background-color, box-shadow;
   transition-duration: 0.2s;
   cursor: pointer;

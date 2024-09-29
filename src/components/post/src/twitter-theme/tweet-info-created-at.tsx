@@ -13,7 +13,7 @@ export const TweetInfoCreatedAt = ({ tweet }: { tweet: EnrichedTweet }) => {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={formattedCreatedAtDate}
-      data-in-thread={tweet.in_thread}
+      data-in-thread={tweet.is_reply}
     >
       <time dateTime={createdAt.toISOString()}>{formattedCreatedAtDate}</time>
     </a>

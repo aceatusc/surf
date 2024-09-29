@@ -1,0 +1,72 @@
+[
+    {
+        "pid": "1751023987206103244",
+        "ptype": "author",
+        "replies": [
+            {
+                "pid": "1751277046938968137",
+                "ptype": "opinion",
+                "replies": [
+                    {
+                        "pid": "1751277806351196668",
+                        "ptype": "opinion",
+                        "replies": []
+                    }
+                ]
+            }
+        ],
+        "quotes": [
+            0
+        ]
+    },
+    {
+        "pid": "1751298202777555438",
+        "ptype": "critic",
+        "replies": [],
+        "quotes": [
+            3,
+            4
+        ]
+    },
+    {
+        "pid": "1751279042375057724",
+        "ptype": "opinion",
+        "replies": [
+            {
+                "pid": "1751349091618226224",
+                "ptype": "critic",
+                "replies": [
+                    {
+                        "pid": "1751519580491862424",
+                        "ptype": "opinion",
+                        "replies": []
+                    },
+                    {
+                        "pid": "1751408691822125525",
+                        "ptype": "opinion",
+                        "replies": []
+                    }
+                ]
+            }
+        ],
+        "quotes": [
+            1
+        ]
+    },
+    {
+        "pid": "1751029578414666035",
+        "ptype": "tl;dr",
+        "replies": [],
+        "quotes": [
+            0
+        ]
+    },
+    {
+        "pid": "1751024300243796379",
+        "ptype": "author",
+        "replies": [],
+        "quotes": [
+            2
+        ]
+    }
+]

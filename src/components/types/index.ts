@@ -1,17 +1,14 @@
-export type PostData = {
-    pid: string;
-    ptype: string;
-    replies: PostData[];
-}
-
-export type QuoteData = {
+export type TQuote = {
     qid: number;
     qtype: string;
     bbox: number[];
-    posts: PostData[];
 }
 
-export type PageData = QuoteData[];
-export type DataType = PageData[];
+export type TPost = {
+    pid: string;
+    ptype: string;
+    replies: TPost[];
+    quotes?: number[];
+}
 
 export * from "./reader";

@@ -1,13 +1,12 @@
 import { type EnrichedTweet, formatNumber } from "../utils.js";
-import { TweetActionsCopy } from "./tweet-actions-copy.js";
 import s from "./tweet-actions.module.css";
 import { TweetInfo } from "./tweet-info.js";
 
-export const TweetActions = ({ tweet }: { tweet: EnrichedTweet }) => {
+export const TweetActions = ({ tweet, onClickReply }: { tweet: EnrichedTweet, onClickReply?: (event: React.MouseEvent) => void; }) => {
   const favoriteCount = formatNumber(tweet.favorite_count);
 
   return (
-    <div className={s.actions} data-in-thread={tweet.in_thread}>
+    <div className={s.actions} data-in-thread={tweet.is_reply}>
       <a
         className={s.like}
         href={tweet.like_url}
@@ -24,13 +23,8 @@ export const TweetActions = ({ tweet }: { tweet: EnrichedTweet }) => {
         </div>
         <span className={s.likeCount}>{favoriteCount}</span>
       </a>
-      <a
-        className={s.reply}
-        href={tweet.reply_url}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Reply to this Tweet on Twitter"
-      >
+      <div
+        className={s.reply}      >
         <div className={s.replyIconWrapper}>
           <svg viewBox="0 0 24 24" className={s.replyIcon} aria-hidden="true">
             <g>
@@ -38,16 +32,12 @@ export const TweetActions = ({ tweet }: { tweet: EnrichedTweet }) => {
             </g>
           </svg>
         </div>
-        <span className={s.replyText}>Reply</span>
-      </a>
-      {tweet.in_thread ? (
-        <TweetInfo
-          tweet={tweet}
-          style={{ marginLeft: "auto", marginRight: "0.4rem" }}
-        />
-      ) : (
-        <TweetActionsCopy tweet={tweet} />
-      )}
+        <span onClick={onClickReply} className={`${s.replyText} cursor-pointer`} data-pid={tweet.id_str} data-name={tweet.user.screen_name}>{tweet.conversation_count} Comment{tweet.conversation_count > 1 && "s"}</span>
+      </div>
+      <TweetInfo
+        tweet={tweet}
+        style={{ marginLeft: "auto", marginRight: "0.4rem" }}
+      />
     </div>
   );
 };

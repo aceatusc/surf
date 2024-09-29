@@ -2,15 +2,15 @@
   display: flex;
   align-items: center;
   color: var(--tweet-font-color-secondary);
-  margin-top: 0.125rem;
+  margin-top: 0.25rem;
   overflow-wrap: break-word;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-.info[data-in-thread=true] {
+.info[data-in-thread="true"] {
   margin-top: 0;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .infoLink {
@@ -43,6 +43,6 @@
   user-select: none;
 }
 
-.infoLink:hover>.infoIcon {
+.infoLink:hover > .infoIcon {
   color: var(--tweet-color-blue-secondary);
 }

@@ -91,7 +91,7 @@ export default function Panel({ data }: { data: TPost[] }) {
       data-theme="light"
       paddingX={16}
       paddingY={4}
-      className="w-2/5 min-w-[42rem] h-full bg-zinc-50 bg-opacity-85 backdrop-blur-3xl fixed z-40 top-0 right-0 rounded-tl-3xl rounded-bl-3xl shadow-2xl overflow-y-auto"
+      className="w-2/5 min-w-[42rem] h-full bg-zinc-50 bg-opacity-85 backdrop-blur-3xl fixed z-40 top-0 right-0 rounded-tl-3xl rounded-bl-3xl shadow-2xl overflow-y-auto overscroll-none"
     >
       <div className="w-full flex items-center mt-4 h-11">
         <Tabs
@@ -172,7 +172,7 @@ export default function Panel({ data }: { data: TPost[] }) {
             transition={{ duration: 0.2, type: "just", ease: "easeOut" }}
           >
             <EmbedPost key={res.pid} {...res} />
-            <div className="absolute top-0 left-0 flex flex-col space-y-3 z-0 h-full pt-8 pb-8">
+            <div className="absolute top-0 left-0 flex flex-col space-y-3 z-0 h-full pt-8 pb-8 overscroll-none">
               {quotes?.map((quote) => (
                 <div
                   key={quote}

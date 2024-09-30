@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import s from "./HideScroll.module.css";
 import { getScrollbarWidth, scrollbarWidth } from "./Scrollbar";
 
 type Props = {
@@ -27,9 +26,9 @@ export default function HideScroll({
   }, []);
 
   return (
-    <div className={`${s.parent} ${className || s.parent_default}`}>
+    <div className={`overflow-hidden ${className || "relative w-full h-full"}`}>
       <div
-        className={s.child}
+        className="absolute top-0 bottom-0 left-0 overflow-y-scroll"
         ref={scrollRef}
         style={{
           top: `${paddingY || 0}px`,

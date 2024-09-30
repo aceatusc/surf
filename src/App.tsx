@@ -1,6 +1,5 @@
 import Reader from "./components/reader/Reader";
 import ContextProvider from "./context/ContextProvider";
-import styles from "./App.module.css";
 import Panel from "./components/panel/Panel";
 import ZoomControl from "./components/reader/ZoomControl";
 import SamplePosts from "./assets/examples/sample_posts.json";
@@ -13,7 +12,7 @@ const quoteData = SampleQuotes as TQuote[][];
 export default function App() {
   return (
     <ContextProvider>
-      <main className={styles.main_container}>
+      <main className="w-[min(60%,calc(100%-42rem))] flex flex-row">
         <Reader data={quoteData} />
         <ZoomControl />
       </main>

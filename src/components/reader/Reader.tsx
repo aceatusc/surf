@@ -9,7 +9,6 @@ import {
   UiContext,
 } from "../pdf";
 import { useContext, useEffect } from "react";
-import styles from "./Reader.module.css";
 import { HighlightProps } from "../types/reader";
 import Highlight from "./Highlight";
 import { TQuote } from "../types";
@@ -46,7 +45,7 @@ export default function Reader({ data }: { data: TQuote[][] }) {
 
   return (
     <DocumentWrapper
-      className={styles.reader_container}
+      className="w-fit my-0 mx-auto"
       file={samplePdfUrl}
       renderType={RENDER_TYPE.SINGLE_CANVAS}
     >

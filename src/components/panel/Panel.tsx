@@ -91,7 +91,7 @@ export default function Panel({ data }: { data: TPost[] }) {
       data-theme="light"
       paddingX={16}
       paddingY={4}
-      className="w-2/5 min-w-[42rem] h-full bg-zinc-50 bg-opacity-85 backdrop-blur-3xl fixed z-40 top-0 right-0 rounded-tl-3xl rounded-bl-3xl shadow-2xl overflow-y-auto overscroll-none"
+      className="w-2/5 min-w-[42rem] h-full bg-zinc-50 bg-opacity-85 backdrop-blur-3xl fixed z-40 top-0 right-0 rounded-tl-3xl rounded-bl-3xl shadow-2xl"
     >
       <div className="w-full flex items-center mt-4 h-11">
         <Tabs
@@ -148,13 +148,13 @@ export default function Panel({ data }: { data: TPost[] }) {
             <path
               d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z"
               stroke="#27272a"
-              stroke-width="2"
+              strokeWidth="2"
             />
             <path
               d="M9 9L15 15M15 9L9 15"
               stroke="#27272a"
-              stroke-width="2"
-              stroke-linecap="round"
+              strokeWidth="2"
+              strokeLinecap="round"
             />
           </svg>
         </Badge>
@@ -172,7 +172,7 @@ export default function Panel({ data }: { data: TPost[] }) {
             transition={{ duration: 0.2, type: "just", ease: "easeOut" }}
           >
             <EmbedPost key={res.pid} {...res} />
-            <div className="absolute top-0 left-0 flex flex-col space-y-3 z-0 h-full pt-8 pb-8 overscroll-none">
+            <div className="absolute top-0 left-0 flex flex-col space-y-3 z-0 h-full pt-8 pb-8">
               {quotes?.map((quote) => (
                 <div
                   key={quote}

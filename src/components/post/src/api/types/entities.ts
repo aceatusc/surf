@@ -1,4 +1,4 @@
-export type Indices = [number, number]
+export type Indices = number[]
 
 export interface HashtagEntity {
   indices: Indices

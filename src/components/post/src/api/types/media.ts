@@ -31,10 +31,10 @@ export interface VideoInfo {
 interface MediaBase {
   display_url: string
   expanded_url: string
-  ext_media_availability: {
+  ext_media_availability?: {
     status: string
   }
-  ext_media_color: {
+  ext_media_color?: {
     palette: {
       percentage: number
       rgb: RGB
@@ -63,12 +63,12 @@ export interface MediaPhoto extends MediaBase {
 
 export interface MediaAnimatedGif extends MediaBase {
   type: 'animated_gif'
-  video_info: VideoInfo
+  video_info?: VideoInfo
 }
 
 export interface MediaVideo extends MediaBase {
   type: 'video'
-  video_info: VideoInfo
+  video_info?: VideoInfo
 }
 
 export type MediaDetails = MediaPhoto | MediaAnimatedGif | MediaVideo

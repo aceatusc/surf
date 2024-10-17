@@ -1,10 +1,10 @@
-import type { EnrichedQuotedTweet } from "../../utils.js";
+import type { EnrichedTweet } from "../../utils.js";
 import { QuotedTweetContainer } from "./quoted-tweet-container.jsx";
 import { QuotedTweetHeader } from "./quoted-tweet-header.jsx";
 import { QuotedTweetBody } from "./quoted-tweet-body.jsx";
 import { TweetMedia } from "../tweet-media.jsx";
 
-type Props = { tweet: EnrichedQuotedTweet };
+type Props = { tweet: EnrichedTweet };
 
 export const QuotedTweet = ({ tweet }: Props) => (
   <QuotedTweetContainer tweet={tweet}>

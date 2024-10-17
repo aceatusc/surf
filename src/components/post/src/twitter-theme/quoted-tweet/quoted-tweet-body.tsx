@@ -1,7 +1,7 @@
-import type { EnrichedQuotedTweet } from '../../utils.js'
-import s from './quoted-tweet-body.module.css'
+import type { EnrichedTweet } from "../../utils.js";
+import s from "./quoted-tweet-body.module.css";
 
-type Props = { tweet: EnrichedQuotedTweet }
+type Props = { tweet: EnrichedTweet };
 
 export const QuotedTweetBody = ({ tweet }: Props) => (
   <p className={s.root} lang={tweet.lang} dir="auto">
@@ -9,4 +9,4 @@ export const QuotedTweetBody = ({ tweet }: Props) => (
       <span key={i} dangerouslySetInnerHTML={{ __html: item.text }} />
     ))}
   </p>
-)
+);

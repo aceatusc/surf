@@ -88,16 +88,18 @@ export const TweetHeader = ({ tweet, components }: Props) => {
           </div>
         )}
       </div>
-      <Badge className="ml-auto px-3 py-1 rounded-full bg-zinc-200 text-zinc-800 hover:bg-zinc-300">
-        <div
-          className={`mr-1.5 ${is_reply ? "text-[1.2rem]" : "text-[1.6rem]"}`}
-        >
-          {ptypeConfig[tweet_type].icon}
-        </div>
-        <span className={is_reply ? "text-[1rem]" : "text-lg"}>
-          {tweet_type}
-        </span>
-      </Badge>
+      {tweet_type && (
+        <Badge className="ml-auto px-3 py-1 rounded-full bg-zinc-200 text-zinc-800 hover:bg-zinc-300">
+          <div
+            className={`mr-1.5 ${is_reply ? "text-[1.2rem]" : "text-[1.6rem]"}`}
+          >
+            {ptypeConfig[tweet_type].icon}
+          </div>
+          <span className={is_reply ? "text-[1rem]" : "text-lg"}>
+            {tweet_type}
+          </span>
+        </Badge>
+      )}
     </div>
   );
 };

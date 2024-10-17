@@ -8,15 +8,15 @@ import { TweetMedia } from "./tweet-media.jsx";
 import { TweetInfo } from "./tweet-info.jsx";
 import { TweetActions } from "./tweet-actions.jsx";
 import { QuotedTweet } from "./quoted-tweet/index.js";
-import { enrichTweet } from "../utils.js";
-import React, { MouseEvent, ReactElement, useMemo, useState } from "react";
+import { EnrichedTweet } from "../utils.js";
+import React, { MouseEvent, ReactElement, useState } from "react";
 import { Input } from "../../../ui/input";
 import { Button } from "../../../ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 type Props = {
-  tweet: Tweet;
+  tweet: EnrichedTweet;
   components?: Omit<TwitterComponents, "TweetNotFound">;
   children?: React.ReactNode;
   id?: string;
@@ -27,16 +27,13 @@ type Props = {
 type EmbeddedTweetComp = ReactElement<Props>;
 
 export const EmbeddedTweetReply = ({
-  tweet: t,
+  tweet,
   components,
   children,
   className,
   onClickReply,
   id,
 }: Props) => {
-  // useMemo does nothing for RSC but it helps when the component is used in the client (e.g by SWR)
-  const tweet = useMemo(() => enrichTweet(t), [t]);
-
   const childrenWithProps = React.Children.map(children, (child) => {
     if (React.isValidElement(child)) {
       return React.cloneElement(child as EmbeddedTweetComp, {
@@ -65,14 +62,12 @@ export const EmbeddedTweetReply = ({
 };
 
 export const EmbeddedTweet = ({
-  tweet: t,
+  tweet,
   components,
   children,
   className,
   id,
 }: Props) => {
-  // useMemo does nothing for RSC but it helps when the component is used in the client (e.g by SWR)
-  const tweet = useMemo(() => enrichTweet(t), [t]);
   const [replyTo, setReplyTo] = useState<{
     id: null | string;
     name: null | string;

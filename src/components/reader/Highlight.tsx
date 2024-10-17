@@ -11,7 +11,7 @@ import { getColorForGroup } from "../../context/ColorManager";
 import { HighlightProps } from "../types/reader";
 
 export default function Highlight({ pageData, pageIndex }: HighlightProps) {
-  const { setHighlightedQuote } = useContext(HighlightContext);
+  const { setHighlightedLocation } = useContext(HighlightContext);
   const { pageDimensions } = useContext(DocumentContext);
   const { rotation, scale } = useContext(TransformContext);
   const [isHovered, setIsHovered] = useState(false);
@@ -23,13 +23,13 @@ export default function Highlight({ pageData, pageIndex }: HighlightProps) {
 
   const handleMouseEnter = useCallback((e: MouseEvent) => {
     const quoteId = (e.target as HTMLElement).id.split("_")[1];
-    setHighlightedQuote(parseInt(quoteId));
+    setHighlightedLocation(parseInt(quoteId));
     setIsHovered(true);
   }, []);
 
   const handleMouseLeave = () => {
     if (isHovered) {
-      setHighlightedQuote(null);
+      setHighlightedLocation(null);
     }
   };
 

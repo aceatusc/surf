@@ -4,10 +4,10 @@ import Panel from "./components/panel/Panel";
 import ZoomControl from "./components/reader/ZoomControl";
 import SamplePosts from "./assets/examples/sample_posts.json";
 import SampleQuotes from "./assets/examples/sample_quotes.json";
-import { TPost, TQuote } from "./components/types";
+import { TPostData, TQuote } from "./components/types";
 // import Note from "./components/note/Note";
 
-const postData = SamplePosts as TPost[];
+const postData = SamplePosts as TPostData;
 const quoteData = SampleQuotes as TQuote[][];
 
 export default function App() {

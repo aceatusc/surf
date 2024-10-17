@@ -1,19 +1,21 @@
 import { createContext, useState } from "react";
 
 export interface IHighlightContext {
-  highlightedQuote: number | null;
-  setHighlightedQuote: (id: number | null) => void;
+  highlightedLocation: number | null;
+  setHighlightedLocation: (id: number | null) => void;
 }
 
 export const HighlightContext = createContext<IHighlightContext>({
-  highlightedQuote: null,
-  setHighlightedQuote: () => {},
+  highlightedLocation: null,
+  setHighlightedLocation: () => {},
 });
 
 export function useHighlightContextProps(): IHighlightContext {
-  const [highlightedQuote, setHighlightedQuote] = useState<number | null>(null);
+  const [highlightedLocation, setHighlightedLocation] = useState<number | null>(
+    null
+  );
   return {
-    highlightedQuote,
-    setHighlightedQuote,
+    highlightedLocation,
+    setHighlightedLocation,
   };
 }

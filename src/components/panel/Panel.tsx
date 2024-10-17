@@ -2,18 +2,12 @@ import { MouseEvent, useContext, useState } from "react";
 import { HighlightContext } from "../../context/HighlightContext";
 import HideScroll from "../ui/HideScroll";
 import { getColorForGroup } from "../../context/ColorManager";
-import {
-  EmbeddedTweet,
-  EmbeddedTweetReply,
-  TweetNotFound,
-  TweetSkeleton,
-  useTweet,
-} from "../post/src";
-import { TPost } from "../types";
+import { EmbeddedTweet, EmbeddedTweetReply } from "../post/src";
+import { TPost, TPostData } from "../types";
 import { AnimatePresence, motion } from "framer-motion";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "../ui/badge";
-import { getStylesForQuote } from "../ui/Utils";
+import { getStylesForLocation } from "../ui/Utils";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -26,39 +20,35 @@ import { Button } from "@/components/ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpWideShort } from "@fortawesome/free-solid-svg-icons";
 
-type EmbedPostprops = TPost & {
-  apiUrl?: string;
-  is_reply?: boolean;
+type TPostEmbed = TPost & {
+  getQuote: (id: string) => TPost | undefined;
+  getReplies: (id: string) => TPost[];
   onClickReply?: (event: MouseEvent) => void;
 };
 
-export const EmbedPost = ({
-  pid,
-  ptype,
-  replies,
-  apiUrl,
-  is_reply,
-  onClickReply,
-}: EmbedPostprops) => {
-  const { data, error, isLoading } = useTweet(pid, apiUrl);
-  if (isLoading) return <TweetSkeleton />;
-  if (error || !data) return <TweetNotFound error={error} />;
-
-  data.is_reply = is_reply;
-  data.tweet_type = ptype;
-  const Embed = is_reply ? EmbeddedTweetReply : EmbeddedTweet;
+export const EmbedPost = ({ getQuote, getReplies, ...post }: TPostEmbed) => {
+  const Embed = post?.is_reply ? EmbeddedTweetReply : EmbeddedTweet;
+  const replies = getReplies(post.id_str);
+  post.quoted_tweet = getQuote(post.id_str);
+  post.conversation_count = replies?.length || 0;
 
   return (
     <Embed
-      tweet={data}
-      id={`post-${pid}`}
+      tweet={post}
+      id={`post-${post.id_str}`}
       className="relative z-10"
-      onClickReply={onClickReply}
+      onClickReply={post.onClickReply}
     >
       {replies &&
         replies.length > 0 &&
         replies.map((reply) => (
-          <EmbedPost key={reply.pid} {...reply} apiUrl={apiUrl} is_reply />
+          <EmbedPost
+            key={reply.id_str}
+            {...reply}
+            is_reply
+            getQuote={getQuote}
+            getReplies={getReplies}
+          />
         ))}
     </Embed>
   );
@@ -66,20 +56,33 @@ export const EmbedPost = ({
 
 const TabTypes = ["all", "author", "tl;dr", "question", "critic", "opinion"];
 
-export default function Panel({ data }: { data: TPost[] }) {
-  const { highlightedQuote, setHighlightedQuote } =
+export default function Panel({ data }: { data: TPostData }) {
+  const { highlightedLocation, setHighlightedLocation } =
     useContext(HighlightContext);
 
   const [filterType, setFilterType] = useState("all");
   // const [sortBy, setSortBy] = useState("time");
 
-  const postToDisplay = data.filter(
+  const getReplies = (id: string) => {
+    return data[id]?.replies?.map((replyId) => data[replyId]).filter(Boolean);
+  };
+
+  const getQuote = (id: string) => {
+    if (data[id]["quoted_status_id_str"]) {
+      return data[data[id]["quoted_status_id_str"]];
+    }
+    return undefined;
+  };
+
+  const postToDisplay = Object.values(data).filter(
     (post) =>
-      (highlightedQuote === null || post.quotes?.includes(highlightedQuote)) &&
-      (filterType === "all" || post.ptype === filterType)
+      !post.in_reply_to_status_id_str &&
+      (highlightedLocation === null ||
+        post.locations?.includes(highlightedLocation)) &&
+      (filterType === "all" || post?.tweet_type === filterType)
   );
 
-  const jumpToQuote = (e: MouseEvent) => {
+  const jumpToLocation = (e: MouseEvent) => {
     e.stopPropagation();
     const quoteId = (e.target as HTMLElement).id.split("quote_")[1];
     const element = document.getElementById(`highlight_${quoteId}`);
@@ -130,11 +133,11 @@ export default function Panel({ data }: { data: TPost[] }) {
         </DropdownMenu>
       </div>
 
-      {highlightedQuote !== null && (
+      {highlightedLocation !== null && (
         <Badge
-          style={getStylesForQuote(highlightedQuote)}
+          style={getStylesForLocation(highlightedLocation)}
           className="mt-5 text-md rounded-full py-1 pl-4 pr-2 cursor-pointer"
-          onClick={() => setHighlightedQuote(null)}
+          onClick={() => setHighlightedLocation(null)}
         >
           🔍 Showing Only Related Posts
           <svg
@@ -161,9 +164,9 @@ export default function Panel({ data }: { data: TPost[] }) {
       )}
 
       <AnimatePresence>
-        {postToDisplay.map(({ quotes, ...res }) => (
+        {postToDisplay.map(({ locations, ...res }) => (
           <motion.div
-            key={res.pid}
+            key={res.id_str}
             className="relative pl-4"
             layout
             initial={{ opacity: 0, x: 64 }}
@@ -171,17 +174,22 @@ export default function Panel({ data }: { data: TPost[] }) {
             exit={{ opacity: 0, x: 64 }}
             transition={{ duration: 0.2, type: "just", ease: "easeOut" }}
           >
-            <EmbedPost key={res.pid} {...res} />
+            <EmbedPost
+              key={res.id_str}
+              {...res}
+              getReplies={getReplies}
+              getQuote={getQuote}
+            />
             <div className="absolute top-0 left-0 flex flex-col space-y-3 z-0 h-full pt-8 pb-8">
-              {quotes?.map((quote) => (
+              {locations?.map((loc) => (
                 <div
-                  key={quote}
+                  key={loc}
                   style={{
-                    backgroundColor: getColorForGroup(quote),
-                    height: `${100 / quotes.length}%`,
+                    backgroundColor: getColorForGroup(loc),
+                    height: `${100 / locations.length}%`,
                   }}
-                  id={`post_${res.pid}-quote_${quote}`}
-                  onClick={jumpToQuote}
+                  id={`post_${res.id_str}-loc_${loc}`}
+                  onClick={jumpToLocation}
                   className={`hover:-translate-x-3 transition-transform duration-200 w-12 cursor-pointer max-h-40 rounded-tl-2xl rounded-bl-2xl`}
                 />
               ))}

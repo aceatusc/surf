@@ -14,7 +14,7 @@ export function getContrastColor(color: string | undefined): string {
   return isColorDark(color) ? "#f8fafc" : "#27272a";
 }
 
-export function getStylesForLocation(quote: number) {
+export function getStylesForLocation(quote: string) {
   const bgColor = getColorForGroup(quote);
   return { backgroundColor: bgColor, color: getContrastColor(bgColor) };
 }

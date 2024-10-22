@@ -1,4 +1,3 @@
-import type { Tweet } from "../api/index.js";
 import type { TwitterComponents } from "./types.jsx";
 import { TweetContainer } from "./tweet-container.jsx";
 import { TweetHeader } from "./tweet-header.jsx";
@@ -9,11 +8,12 @@ import { TweetInfo } from "./tweet-info.jsx";
 import { TweetActions } from "./tweet-actions.jsx";
 import { QuotedTweet } from "./quoted-tweet/index.js";
 import { EnrichedTweet } from "../utils.js";
-import React, { MouseEvent, ReactElement, useState } from "react";
+import React, { MouseEvent, ReactElement, useContext, useState } from "react";
 import { Input } from "../../../ui/input";
 import { Button } from "../../../ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { DevContext } from "../../../../context/DevContext";
 
 type Props = {
   tweet: EnrichedTweet;
@@ -34,6 +34,8 @@ export const EmbeddedTweetReply = ({
   onClickReply,
   id,
 }: Props) => {
+  const { annotationMode } = useContext(DevContext);
+
   const childrenWithProps = React.Children.map(children, (child) => {
     if (React.isValidElement(child)) {
       return React.cloneElement(child as EmbeddedTweetComp, {
@@ -45,6 +47,12 @@ export const EmbeddedTweetReply = ({
 
   return (
     <TweetContainer inThread={tweet.is_reply} id={id} className={className}>
+      {annotationMode && (
+        <div className="font-bold text-xl text-gray-800 mb-3">
+          Tweet ID:
+          <br /> {tweet.id_str}
+        </div>
+      )}
       <TweetHeader tweet={tweet} components={components} />
       {tweet.in_reply_to_status_id_str && !tweet.is_reply && (
         <TweetInReplyTo tweet={tweet} />
@@ -68,6 +76,7 @@ export const EmbeddedTweet = ({
   className,
   id,
 }: Props) => {
+  const { annotationMode } = useContext(DevContext);
   const [replyTo, setReplyTo] = useState<{
     id: null | string;
     name: null | string;
@@ -96,6 +105,12 @@ export const EmbeddedTweet = ({
 
   return (
     <TweetContainer inThread={tweet.is_reply} id={id} className={className}>
+      {annotationMode && (
+        <div className="font-bold text-xl text-gray-800 mb-3">
+          Tweet ID:
+          <br /> {tweet.id_str}
+        </div>
+      )}
       <TweetHeader tweet={tweet} components={components} />
       {tweet.in_reply_to_status_id_str && !tweet.is_reply && (
         <TweetInReplyTo tweet={tweet} />

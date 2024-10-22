@@ -28,6 +28,7 @@
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1751298202777555438",
         "replies": [
             "1751424913754259829",
+            "1751422795593179595",
             "1751414624619286604",
             "1751424874713919530"
         ]
@@ -61,6 +62,76 @@
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1751002910819795261",
         "replies": []
     },
+    "1803466135041708307": {
+        "created_at": "Wed Jun 19 16:33:28 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    11,
+                    60
+                ],
+                "type": "text",
+                "text": "Sorry to disappoint you. Inspired by this paper: "
+            },
+            {
+                "display_url": "arxiv.org/abs/2401.13782",
+                "expanded_url": "https://arxiv.org/abs/2401.13782",
+                "indices": [
+                    60,
+                    83
+                ],
+                "url": "https://t.co/VIZVnLP5x8",
+                "type": "url",
+                "href": "https://arxiv.org/abs/2401.13782",
+                "text": "arxiv.org/abs/2401.13782"
+            },
+            {
+                "indices": [
+                    83,
+                    224
+                ],
+                "type": "text",
+                "text": ", I did the same thing by clicking the promote button on the top right corner of the post and spending x hundred bucks trying to promote it:\n"
+            },
+            {
+                "display_url": "x.com/simon_zhai/sta…",
+                "expanded_url": "https://x.com/simon_zhai/status/1801992414758055950",
+                "indices": [
+                    224,
+                    247
+                ],
+                "url": "https://t.co/RQC9dgLWHK",
+                "type": "url",
+                "href": "https://x.com/simon_zhai/status/1801992414758055950",
+                "text": "x.com/simon_zhai/sta…"
+            },
+            {
+                "indices": [
+                    247,
+                    288
+                ],
+                "type": "text",
+                "text": ". \n\nBut honestly, it is very hard to use…"
+            }
+        ],
+        "favorite_count": 6,
+        "id_str": "1803466135041708307",
+        "tweetDisplayType": "Tweet",
+        "quoted_status_id_str": "1801992414758055950",
+        "in_reply_to_status_id_str": "1803317256375640471",
+        "user": {
+            "id_str": "1582228292635009024",
+            "name": "Simon Zhai",
+            "screen_name": "simon_zhai",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1582231236612759553/BQBjNLg3_normal.jpg",
+            "url": "https://x.com/simon_zhai",
+            "follow_url": "https://x.com/intent/follow?screen_name=simon_zhai"
+        },
+        "url": "https://x.com/simon_zhai/status/1803466135041708307",
+        "like_url": "https://x.com/intent/like?tweet_id=1803466135041708307",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1803466135041708307",
+        "replies": []
+    },
     "1751279042375057724": {
         "created_at": "Sat Jan 27 16:20:35 +0000 2024",
         "entities": [
@@ -91,7 +162,44 @@
         "replies": [
             "1751418052447739923",
             "1751289021869781353",
-            "1751429017809670524"
+            "1751429017809670524",
+            "1751349091618226224"
+        ]
+    },
+    "1750783025011450254": {
+        "created_at": "Fri Jan 26 07:29:35 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    72
+                ],
+                "type": "text",
+                "text": "This is not a fortunate situation and science should not work like this."
+            }
+        ],
+        "favorite_count": 92,
+        "id_str": "1750783025011450254",
+        "tweetDisplayType": "Tweet",
+        "quoted_status_id_str": "1750732070014337101",
+        "user": {
+            "id_str": "4249537197",
+            "name": "Christian Wolf",
+            "screen_name": "chriswolfvision",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1025687578371084288/a9boyINC_normal.jpg",
+            "url": "https://x.com/chriswolfvision",
+            "follow_url": "https://x.com/intent/follow?screen_name=chriswolfvision"
+        },
+        "url": "https://x.com/chriswolfvision/status/1750783025011450254",
+        "like_url": "https://x.com/intent/like?tweet_id=1750783025011450254",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1750783025011450254",
+        "replies": [
+            "1750936587683438899",
+            "1750844976999620992",
+            "1750836982341652567",
+            "1750852576818401479",
+            "1752091796748869701",
+            "1751084825744732479"
         ]
     },
     "1752425165793759366": {
@@ -358,6 +466,518 @@
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1752425165793759366",
         "replies": []
     },
+    "1750805744255951085": {
+        "created_at": "Fri Jan 26 08:59:52 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    123
+                ],
+                "type": "text",
+                "text": "probably true for VC in AI as well. Many recent AI startups whose valuations are entirely based on founder poasting ability"
+            }
+        ],
+        "favorite_count": 37,
+        "id_str": "1750805744255951085",
+        "tweetDisplayType": "SelfThread",
+        "quoted_status_id_str": "1750777835529072648",
+        "user": {
+            "id_str": "2309105822",
+            "name": "Eric Jang",
+            "screen_name": "ericjang11",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1494315926455394308/La_saDZ8_normal.jpg",
+            "url": "https://x.com/ericjang11",
+            "follow_url": "https://x.com/intent/follow?screen_name=ericjang11"
+        },
+        "url": "https://x.com/ericjang11/status/1750805744255951085",
+        "like_url": "https://x.com/intent/like?tweet_id=1750805744255951085",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1750805744255951085",
+        "replies": [
+            "1750851163530957128",
+            "1751018578600513777",
+            "1750908985991921689",
+            "1750808667761303703"
+        ]
+    },
+    "1750777835529072648": {
+        "created_at": "Fri Jan 26 07:08:58 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    23
+                ],
+                "type": "text",
+                "text": "Being tweeted about by "
+            },
+            {
+                "id_str": "794433401591693312",
+                "indices": [
+                    23,
+                    39
+                ],
+                "name": "Aran Komatsuzaki",
+                "screen_name": "arankomatsuzaki",
+                "type": "mention",
+                "href": "https://x.com/arankomatsuzaki",
+                "text": "@arankomatsuzaki"
+            },
+            {
+                "indices": [
+                    39,
+                    90
+                ],
+                "type": "text",
+                "text": " is more selective than any ML venue (and probably "
+            },
+            {
+                "id_str": "2465283662",
+                "indices": [
+                    90,
+                    99
+                ],
+                "name": "AK",
+                "screen_name": "_akhaliq",
+                "type": "mention",
+                "href": "https://x.com/_akhaliq",
+                "text": "@_akhaliq"
+            },
+            {
+                "indices": [
+                    99,
+                    252
+                ],
+                "type": "text",
+                "text": " too)\n\nCheck out \"Tweets to Citations: Unveiling the Impact of Social Media Influencers on AI Research Visibility\" to see the impact on your citations.\n\n"
+            },
+            {
+                "display_url": "arxiv.org/abs/2401.13782",
+                "expanded_url": "https://arxiv.org/abs/2401.13782",
+                "indices": [
+                    252,
+                    275
+                ],
+                "url": "https://t.co/mIpcRIpxgS",
+                "type": "url",
+                "href": "https://arxiv.org/abs/2401.13782",
+                "text": "arxiv.org/abs/2401.13782"
+            }
+        ],
+        "favorite_count": 240,
+        "id_str": "1750777835529072648",
+        "tweetDisplayType": "Tweet",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/0e4msqSDKe",
+                "expanded_url": "https://x.com/BlancheMinerva/status/1750777835529072648/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1750777832978923520",
+                "indices": [
+                    276,
+                    299
+                ],
+                "media_key": "3_1750777832978923520",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1750777832978923520"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/GEwDKb9WQAAZM-A.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 599,
+                            "w": 1070,
+                            "x": 0,
+                            "y": 129
+                        },
+                        {
+                            "h": 728,
+                            "w": 728,
+                            "x": 90,
+                            "y": 0
+                        },
+                        {
+                            "h": 728,
+                            "w": 639,
+                            "x": 135,
+                            "y": 0
+                        },
+                        {
+                            "h": 728,
+                            "w": 364,
+                            "x": 272,
+                            "y": 0
+                        },
+                        {
+                            "h": 728,
+                            "w": 1070,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 728,
+                    "width": 1070
+                },
+                "sizes": {
+                    "large": {
+                        "h": 728,
+                        "resize": "fit",
+                        "w": 1070
+                    },
+                    "medium": {
+                        "h": 728,
+                        "resize": "fit",
+                        "w": 1070
+                    },
+                    "small": {
+                        "h": 463,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/0e4msqSDKe"
+            }
+        ],
+        "user": {
+            "id_str": "1125849026308575239",
+            "name": "Stella Biderman @ COLM",
+            "screen_name": "BlancheMinerva",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1452862756655357955/4RQeg_aM_normal.jpg",
+            "url": "https://x.com/BlancheMinerva",
+            "follow_url": "https://x.com/intent/follow?screen_name=BlancheMinerva"
+        },
+        "url": "https://x.com/BlancheMinerva/status/1750777835529072648",
+        "like_url": "https://x.com/intent/like?tweet_id=1750777835529072648",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1750777835529072648",
+        "replies": [
+            "1750782611356516418",
+            "1750916435529158901",
+            "1750806613089567150",
+            "1750986671473258965",
+            "1750880987037175969",
+            "1750783274916393329",
+            "1751060553886527982",
+            "1750859032481427652",
+            "1751083146127245489",
+            "1750974418397065614"
+        ]
+    },
+    "1751029578414666035": {
+        "created_at": "Fri Jan 26 23:49:18 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    103
+                ],
+                "type": "text",
+                "text": "[SI] Tweets to Citations: Unveiling the Impact of Social Media Influencers on AI Research Visibility  \n"
+            },
+            {
+                "display_url": "arxiv.org/abs/2401.13782",
+                "expanded_url": "https://arxiv.org/abs/2401.13782",
+                "indices": [
+                    103,
+                    126
+                ],
+                "url": "https://t.co/DJX4F1Q4eH",
+                "type": "url",
+                "href": "https://arxiv.org/abs/2401.13782",
+                "text": "arxiv.org/abs/2401.13782"
+            },
+            {
+                "indices": [
+                    126,
+                    278
+                ],
+                "type": "text",
+                "text": "  \n\nSocial media influencers significantly increase the citation counts of machine learning research papers they share, with median citation counts 2-3…"
+            }
+        ],
+        "favorite_count": 1,
+        "id_str": "1751029578414666035",
+        "tweetDisplayType": "Tweet",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/XjRm9EOy9K",
+                "expanded_url": "https://x.com/fly51fly/status/1751029578414666035/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": [
+                            {
+                                "h": 217,
+                                "w": 217,
+                                "x": 97,
+                                "y": 1216
+                            }
+                        ]
+                    },
+                    "medium": {
+                        "faces": [
+                            {
+                                "h": 130,
+                                "w": 130,
+                                "x": 58,
+                                "y": 733
+                            }
+                        ]
+                    },
+                    "orig": {
+                        "faces": [
+                            {
+                                "h": 217,
+                                "w": 217,
+                                "x": 97,
+                                "y": 1216
+                            }
+                        ]
+                    },
+                    "small": {
+                        "faces": [
+                            {
+                                "h": 74,
+                                "w": 74,
+                                "x": 33,
+                                "y": 415
+                            }
+                        ]
+                    }
+                },
+                "id_str": "1751029455609634816",
+                "indices": [
+                    279,
+                    302
+                ],
+                "media_key": "3_1751029455609634816",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1751029455609634816"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/GEzoAzTboAATXn3.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 784,
+                            "w": 1400,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1400,
+                            "w": 1400,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1596,
+                            "w": 1400,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1990,
+                            "w": 995,
+                            "x": 405,
+                            "y": 0
+                        },
+                        {
+                            "h": 1990,
+                            "w": 1400,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 1990,
+                    "width": 1400
+                },
+                "sizes": {
+                    "large": {
+                        "h": 1990,
+                        "resize": "fit",
+                        "w": 1400
+                    },
+                    "medium": {
+                        "h": 1200,
+                        "resize": "fit",
+                        "w": 844
+                    },
+                    "small": {
+                        "h": 680,
+                        "resize": "fit",
+                        "w": 478
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/XjRm9EOy9K"
+            },
+            {
+                "display_url": "pic.x.com/XjRm9EOy9K",
+                "expanded_url": "https://x.com/fly51fly/status/1751029578414666035/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": [
+                            {
+                                "h": 357,
+                                "w": 357,
+                                "x": 87,
+                                "y": 617
+                            }
+                        ]
+                    },
+                    "medium": {
+                        "faces": [
+                            {
+                                "h": 239,
+                                "w": 239,
+                                "x": 58,
+                                "y": 414
+                            }
+                        ]
+                    },
+                    "orig": {
+                        "faces": [
+                            {
+                                "h": 357,
+                                "w": 357,
+                                "x": 87,
+                                "y": 617
+                            }
+                        ]
+                    },
+                    "small": {
+                        "faces": [
+                            {
+                                "h": 135,
+                                "w": 135,
+                                "x": 33,
+                                "y": 234
+                            }
+                        ]
+                    }
+                },
+                "id_str": "1751029455622225920",
+                "indices": [
+                    279,
+                    302
+                ],
+                "media_key": "3_1751029455622225920",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1751029455622225920"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/GEzoAzWbwAA--NE.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 1000,
+                            "w": 1786,
+                            "x": 0,
+                            "y": 220
+                        },
+                        {
+                            "h": 1220,
+                            "w": 1220,
+                            "x": 236,
+                            "y": 0
+                        },
+                        {
+                            "h": 1220,
+                            "w": 1070,
+                            "x": 311,
+                            "y": 0
+                        },
+                        {
+                            "h": 1220,
+                            "w": 610,
+                            "x": 541,
+                            "y": 0
+                        },
+                        {
+                            "h": 1220,
+                            "w": 1786,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 1220,
+                    "width": 1786
+                },
+                "sizes": {
+                    "large": {
+                        "h": 1220,
+                        "resize": "fit",
+                        "w": 1786
+                    },
+                    "medium": {
+                        "h": 820,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 465,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/XjRm9EOy9K"
+            }
+        ],
+        "user": {
+            "id_str": "22146921",
+            "name": "fly51fly",
+            "screen_name": "fly51fly",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/501577797114937344/ge9Wu-cU_normal.png",
+            "url": "https://x.com/fly51fly",
+            "follow_url": "https://x.com/intent/follow?screen_name=fly51fly"
+        },
+        "url": "https://x.com/fly51fly/status/1751029578414666035",
+        "like_url": "https://x.com/intent/like?tweet_id=1751029578414666035",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1751029578414666035",
+        "replies": []
+    },
     "1750938896316399800": {
         "created_at": "Fri Jan 26 17:48:58 +0000 2024",
         "entities": [
@@ -477,6 +1097,327 @@
         "url": "https://x.com/nikhil_ai/status/1750938896316399800",
         "like_url": "https://x.com/intent/like?tweet_id=1750938896316399800",
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1750938896316399800",
+        "replies": []
+    },
+    "1753932736987890054": {
+        "created_at": "Sun Feb 04 00:05:25 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    39
+                ],
+                "type": "text",
+                "text": "[30/30] 67 Likes, 47 Comments, 1 Posts\n"
+            },
+            {
+                "display_url": "arxiv.org/abs/2401.13782",
+                "expanded_url": "https://arxiv.org/abs/2401.13782",
+                "indices": [
+                    39,
+                    62
+                ],
+                "url": "https://t.co/Tg0ikUoSal",
+                "type": "url",
+                "href": "https://arxiv.org/abs/2401.13782",
+                "text": "arxiv.org/abs/2401.13782"
+            },
+            {
+                "indices": [
+                    62,
+                    264
+                ],
+                "type": "text",
+                "text": " cs․DL | cs․AI | cs․CL | cs․CV | cs․LG | cs․SI, 24 Jan 2024\n\n🆕Tweets to Citations: Unveiling the Impact of Social Media Influencers on AI Research Visibility\n\nIain Xie Weissburg, Mehir Arora, Liangmi..."
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1753932736987890054",
+        "tweetDisplayType": "SelfThread",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/DavtoTX8Nl",
+                "expanded_url": "https://x.com/susumuota/status/1753932736987890054/photo/1",
+                "ext_alt_text": "As the number of accepted papers at AI and ML conferences reaches into the thousands, it has become unclear how researchers access and read research publications.  In this paper, we investigate the role of social media influencers in enhancing the visibility of machine learning research, particularly the citation counts of papers they share.  We have compiled a comprehensive dataset of over 8,000 papers, spanning tweets from December 2018 to October 2023, alongside 1:1 matched controls based on publication year, venue, and abstract topics.  Our analysis reveals a significant increase in citations for papers endorsed by these influencers, with median citation counts 2-3 times higher than those of the control group.  Additionally, the study delves into the geographic, gender, and institutional diversity of highlighted authors.  These findings highlight the expanding influence of social media in scholarly communication and underscore the importance of an evolving ecosystem in today's d...",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1753932733665947648",
+                "indices": [
+                    265,
+                    288
+                ],
+                "media_key": "3_1753932733665947648",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1753932733665947648"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/GFc4h04WsAA3G_d.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 672,
+                            "w": 1200,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1200,
+                            "w": 1200,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1368,
+                            "w": 1200,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1553,
+                            "w": 777,
+                            "x": 423,
+                            "y": 0
+                        },
+                        {
+                            "h": 1553,
+                            "w": 1200,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 1553,
+                    "width": 1200
+                },
+                "sizes": {
+                    "large": {
+                        "h": 1553,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "medium": {
+                        "h": 1200,
+                        "resize": "fit",
+                        "w": 927
+                    },
+                    "small": {
+                        "h": 680,
+                        "resize": "fit",
+                        "w": 525
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/DavtoTX8Nl"
+            }
+        ],
+        "user": {
+            "id_str": "279718877",
+            "name": "S. Ota",
+            "screen_name": "susumuota",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1622591377971507202/EcBLlAUc_normal.png",
+            "url": "https://x.com/susumuota",
+            "follow_url": "https://x.com/intent/follow?screen_name=susumuota"
+        },
+        "url": "https://x.com/susumuota/status/1753932736987890054",
+        "like_url": "https://x.com/intent/like?tweet_id=1753932736987890054",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1753932736987890054",
+        "replies": [
+            "1753932743048560765"
+        ]
+    },
+    "1751055178529374559": {
+        "created_at": "Sat Jan 27 01:31:02 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    18
+                ],
+                "type": "text",
+                "text": "AI界隈がみんな大好きなアカウント "
+            },
+            {
+                "id_str": "2465283662",
+                "indices": [
+                    18,
+                    27
+                ],
+                "name": "AK",
+                "screen_name": "_akhaliq",
+                "type": "mention",
+                "href": "https://x.com/_akhaliq",
+                "text": "@_akhaliq"
+            },
+            {
+                "indices": [
+                    27,
+                    30
+                ],
+                "type": "text",
+                "text": " と "
+            },
+            {
+                "id_str": "794433401591693312",
+                "indices": [
+                    30,
+                    46
+                ],
+                "name": "Aran Komatsuzaki",
+                "screen_name": "arankomatsuzaki",
+                "type": "mention",
+                "href": "https://x.com/arankomatsuzaki",
+                "text": "@arankomatsuzaki"
+            },
+            {
+                "indices": [
+                    46,
+                    135
+                ],
+                "type": "text",
+                "text": " に対する研究おもろい。何と彼らがツイートした論文は被引用数が大幅に増加し、対照群の2~3倍ぐらいになるらしい。研究すらもツイッターインフルエンサーのチカラからは逃れられない\n\n"
+            },
+            {
+                "display_url": "arxiv.org/abs/2401.13782",
+                "expanded_url": "https://arxiv.org/abs/2401.13782",
+                "indices": [
+                    135,
+                    158
+                ],
+                "url": "https://t.co/284ccHGxsT",
+                "type": "url",
+                "href": "https://arxiv.org/abs/2401.13782",
+                "text": "arxiv.org/abs/2401.13782"
+            }
+        ],
+        "favorite_count": 866,
+        "id_str": "1751055178529374559",
+        "tweetDisplayType": "Tweet",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/kaCYkF2jGU",
+                "expanded_url": "https://x.com/takahiroanno/status/1751055178529374559/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1751055119008063488",
+                "indices": [
+                    159,
+                    182
+                ],
+                "media_key": "3_1751055119008063488",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1751055119008063488"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/GEz_Wm6a4AAMNQq.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 643,
+                            "w": 1148,
+                            "x": 0,
+                            "y": 109
+                        },
+                        {
+                            "h": 879,
+                            "w": 879,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 879,
+                            "w": 771,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 879,
+                            "w": 440,
+                            "x": 95,
+                            "y": 0
+                        },
+                        {
+                            "h": 879,
+                            "w": 1148,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 879,
+                    "width": 1148
+                },
+                "sizes": {
+                    "large": {
+                        "h": 879,
+                        "resize": "fit",
+                        "w": 1148
+                    },
+                    "medium": {
+                        "h": 879,
+                        "resize": "fit",
+                        "w": 1148
+                    },
+                    "small": {
+                        "h": 521,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/kaCYkF2jGU"
+            }
+        ],
+        "user": {
+            "id_str": "83077565",
+            "name": "安野たかひろ@都知事選応援ありがとうございました",
+            "screen_name": "takahiroanno",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1798661350509678592/mflwIy5g_normal.jpg",
+            "url": "https://x.com/takahiroanno",
+            "follow_url": "https://x.com/intent/follow?screen_name=takahiroanno"
+        },
+        "url": "https://x.com/takahiroanno/status/1751055178529374559",
+        "like_url": "https://x.com/intent/like?tweet_id=1751055178529374559",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1751055178529374559",
         "replies": []
     },
     "1751023987206103244": {
@@ -638,6 +1579,7 @@
         "like_url": "https://x.com/intent/like?tweet_id=1751023987206103244",
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1751023987206103244",
         "replies": [
+            "1751024300243796379",
             "1751217968506454053",
             "1751277046938968137",
             "1751039007721709935",
@@ -817,7 +1759,7 @@
         "favorite_count": 6,
         "id_str": "1751422795593179595",
         "tweetDisplayType": "Tweet",
-        "quoted_status_id_str": "1751298202777555438",
+        "in_reply_to_status_id_str": "1751298202777555438",
         "user": {
             "id_str": "503452360",
             "name": "William Wang",
@@ -1131,7 +2073,7 @@
         "favorite_count": 3,
         "id_str": "1751349091618226224",
         "tweetDisplayType": "Tweet",
-        "quoted_status_id_str": "1751279042375057724",
+        "in_reply_to_status_id_str": "1751279042375057724",
         "user": {
             "id_str": "3269288695",
             "name": "Archit Sharma",
@@ -1144,6 +2086,7 @@
         "like_url": "https://x.com/intent/like?tweet_id=1751349091618226224",
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1751349091618226224",
         "replies": [
+            "1751519580491862424",
             "1751408691822125525"
         ]
     },
@@ -1162,7 +2105,7 @@
         "favorite_count": 0,
         "id_str": "1751519580491862424",
         "tweetDisplayType": "Tweet",
-        "quoted_status_id_str": "1751349091618226224",
+        "in_reply_to_status_id_str": "1751349091618226224",
         "user": {
             "id_str": "145986026",
             "name": "Erdem Bıyık",
@@ -1175,41 +2118,6 @@
         "like_url": "https://x.com/intent/like?tweet_id=1751519580491862424",
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1751519580491862424",
         "replies": []
-    },
-    "1750783025011450254": {
-        "created_at": "Fri Jan 26 07:29:35 +0000 2024",
-        "entities": [
-            {
-                "indices": [
-                    0,
-                    72
-                ],
-                "type": "text",
-                "text": "This is not a fortunate situation and science should not work like this."
-            }
-        ],
-        "favorite_count": 92,
-        "id_str": "1750783025011450254",
-        "tweetDisplayType": "Tweet",
-        "quoted_status_id_str": "1750732070014337101",
-        "user": {
-            "id_str": "4249537197",
-            "name": "Christian Wolf",
-            "screen_name": "chriswolfvision",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1025687578371084288/a9boyINC_normal.jpg",
-            "url": "https://x.com/chriswolfvision",
-            "follow_url": "https://x.com/intent/follow?screen_name=chriswolfvision"
-        },
-        "url": "https://x.com/chriswolfvision/status/1750783025011450254",
-        "like_url": "https://x.com/intent/like?tweet_id=1750783025011450254",
-        "reply_url": "https://x.com/intent/tweet?in_reply_to=1750783025011450254",
-        "replies": [
-            "1750844976999620992",
-            "1750836982341652567",
-            "1750852576818401479",
-            "1752091796748869701",
-            "1751084825744732479"
-        ]
     },
     "1750936587683438899": {
         "created_at": "Fri Jan 26 17:39:47 +0000 2024",
@@ -1226,7 +2134,7 @@
         "favorite_count": 22,
         "id_str": "1750936587683438899",
         "tweetDisplayType": "Tweet",
-        "quoted_status_id_str": "1750783025011450254",
+        "in_reply_to_status_id_str": "1750783025011450254",
         "user": {
             "id_str": "142783289",
             "name": "Jon Barron",
@@ -1476,189 +2384,183 @@
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1751084825744732479",
         "replies": []
     },
-    "1750777835529072648": {
-        "created_at": "Fri Jan 26 07:08:58 +0000 2024",
+    "1803317256375640471": {
+        "created_at": "Wed Jun 19 06:41:52 +0000 2024",
         "entities": [
             {
                 "indices": [
                     0,
-                    23
+                    216
                 ],
                 "type": "text",
-                "text": "Being tweeted about by "
-            },
-            {
-                "id_str": "794433401591693312",
-                "indices": [
-                    23,
-                    39
-                ],
-                "name": "Aran Komatsuzaki",
-                "screen_name": "arankomatsuzaki",
-                "type": "mention",
-                "href": "https://x.com/arankomatsuzaki",
-                "text": "@arankomatsuzaki"
-            },
-            {
-                "indices": [
-                    39,
-                    90
-                ],
-                "type": "text",
-                "text": " is more selective than any ML venue (and probably "
-            },
-            {
-                "id_str": "2465283662",
-                "indices": [
-                    90,
-                    99
-                ],
-                "name": "AK",
-                "screen_name": "_akhaliq",
-                "type": "mention",
-                "href": "https://x.com/_akhaliq",
-                "text": "@_akhaliq"
-            },
-            {
-                "indices": [
-                    99,
-                    252
-                ],
-                "type": "text",
-                "text": " too)\n\nCheck out \"Tweets to Citations: Unveiling the Impact of Social Media Influencers on AI Research Visibility\" to see the impact on your citations.\n\n"
-            },
-            {
-                "display_url": "arxiv.org/abs/2401.13782",
-                "expanded_url": "https://arxiv.org/abs/2401.13782",
-                "indices": [
-                    252,
-                    275
-                ],
-                "url": "https://t.co/mIpcRIpxgS",
-                "type": "url",
-                "href": "https://arxiv.org/abs/2401.13782",
-                "text": "arxiv.org/abs/2401.13782"
+                "text": "someone just confirmed to me that a student spent several hundred dollars to advertise their paper on twitter/X after I posted a screenshot in my lab chat of getting said ad on my timeline. This is very disappointing"
             }
         ],
-        "favorite_count": 240,
-        "id_str": "1750777835529072648",
+        "favorite_count": 183,
+        "id_str": "1803317256375640471",
         "tweetDisplayType": "Tweet",
-        "mediaDetails": [
+        "user": {
+            "id_str": "1136188068",
+            "name": "Stone Tao",
+            "screen_name": "Stone_Tao",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1287142645295325184/Rna86k6A_normal.jpg",
+            "url": "https://x.com/Stone_Tao",
+            "follow_url": "https://x.com/intent/follow?screen_name=Stone_Tao"
+        },
+        "url": "https://x.com/Stone_Tao/status/1803317256375640471",
+        "like_url": "https://x.com/intent/like?tweet_id=1803317256375640471",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1803317256375640471",
+        "replies": [
+            "1803466135041708307",
+            "1803664447166357709",
+            "1803660566856155140",
+            "1803566869367984146",
+            "1803836523042767286",
+            "1803437664072507848",
+            "1803351110037430596",
+            "1803325063124717624",
+            "1803466627679146428",
+            "1803318000403317039",
+            "1803651394496545134",
+            "1803436402492813377",
+            "1803416192260121015",
+            "1803464710727032998",
+            "1803504451488985376",
+            "1803882596864053670",
+            "1803486605757575569",
+            "1803557690586616035",
+            "1803541779494711682",
+            "1803639336010727660",
+            "1803718951807193091",
+            "1803633201564492101",
+            "1803450421395993023",
+            "1803586908360155339",
+            "1803473266168000847",
+            "1803559545794670831"
+        ]
+    },
+    "1803664447166357709": {
+        "created_at": "Thu Jun 20 05:41:29 +0000 2024",
+        "entities": [
             {
-                "display_url": "pic.x.com/0e4msqSDKe",
-                "expanded_url": "https://x.com/BlancheMinerva/status/1750777835529072648/photo/1",
-                "ext_media_availability": {
-                    "status": "Available"
-                },
-                "features": {
-                    "large": {
-                        "faces": []
-                    },
-                    "medium": {
-                        "faces": []
-                    },
-                    "orig": {
-                        "faces": []
-                    },
-                    "small": {
-                        "faces": []
-                    }
-                },
-                "id_str": "1750777832978923520",
                 "indices": [
-                    276,
-                    299
+                    11,
+                    67
                 ],
-                "media_key": "3_1750777832978923520",
-                "media_results": {
-                    "result": {
-                        "media_key": "3_1750777832978923520"
-                    }
-                },
-                "media_url_https": "https://pbs.twimg.com/media/GEwDKb9WQAAZM-A.jpg",
-                "original_info": {
-                    "focus_rects": [
-                        {
-                            "h": 599,
-                            "w": 1070,
-                            "x": 0,
-                            "y": 129
-                        },
-                        {
-                            "h": 728,
-                            "w": 728,
-                            "x": 90,
-                            "y": 0
-                        },
-                        {
-                            "h": 728,
-                            "w": 639,
-                            "x": 135,
-                            "y": 0
-                        },
-                        {
-                            "h": 728,
-                            "w": 364,
-                            "x": 272,
-                            "y": 0
-                        },
-                        {
-                            "h": 728,
-                            "w": 1070,
-                            "x": 0,
-                            "y": 0
-                        }
-                    ],
-                    "height": 728,
-                    "width": 1070
-                },
-                "sizes": {
-                    "large": {
-                        "h": 728,
-                        "resize": "fit",
-                        "w": 1070
-                    },
-                    "medium": {
-                        "h": 728,
-                        "resize": "fit",
-                        "w": 1070
-                    },
-                    "small": {
-                        "h": 463,
-                        "resize": "fit",
-                        "w": 680
-                    },
-                    "thumb": {
-                        "h": 150,
-                        "resize": "crop",
-                        "w": 150
-                    }
-                },
-                "type": "photo",
-                "url": "https://t.co/0e4msqSDKe"
+                "type": "text",
+                "text": "What's wrong with that? They should be applauded for it!"
             }
         ],
+        "favorite_count": 3,
+        "id_str": "1803664447166357709",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1803317256375640471",
         "user": {
-            "id_str": "1125849026308575239",
-            "name": "Stella Biderman @ COLM",
-            "screen_name": "BlancheMinerva",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1452862756655357955/4RQeg_aM_normal.jpg",
-            "url": "https://x.com/BlancheMinerva",
-            "follow_url": "https://x.com/intent/follow?screen_name=BlancheMinerva"
+            "id_str": "410939902",
+            "name": "Erik Meijer",
+            "screen_name": "headinthebox",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/2434343548/c80bae9z52ca9bbrh4ip_normal.jpeg",
+            "url": "https://x.com/headinthebox",
+            "follow_url": "https://x.com/intent/follow?screen_name=headinthebox"
         },
-        "url": "https://x.com/BlancheMinerva/status/1750777835529072648",
-        "like_url": "https://x.com/intent/like?tweet_id=1750777835529072648",
-        "reply_url": "https://x.com/intent/tweet?in_reply_to=1750777835529072648",
+        "url": "https://x.com/headinthebox/status/1803664447166357709",
+        "like_url": "https://x.com/intent/like?tweet_id=1803664447166357709",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1803664447166357709",
         "replies": [
-            "1750782611356516418",
-            "1750916435529158901",
-            "1750806613089567150",
-            "1750986671473258965",
-            "1750880987037175969",
-            "1751060553886527982",
-            "1750859032481427652",
-            "1751083146127245489",
-            "1750974418397065614"
+            "1803665104023724255"
+        ]
+    },
+    "1803665104023724255": {
+        "created_at": "Thu Jun 20 05:44:05 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    14,
+                    199
+                ],
+                "type": "text",
+                "text": "I’m not sure whether students should or shouldn’t spend hundreds on advertising. But the main disappointment is ai research has reached this stage where people feel compelled to do this"
+            }
+        ],
+        "favorite_count": 13,
+        "id_str": "1803665104023724255",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1803664447166357709",
+        "user": {
+            "id_str": "1136188068",
+            "name": "Stone Tao",
+            "screen_name": "Stone_Tao",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1287142645295325184/Rna86k6A_normal.jpg",
+            "url": "https://x.com/Stone_Tao",
+            "follow_url": "https://x.com/intent/follow?screen_name=Stone_Tao"
+        },
+        "url": "https://x.com/Stone_Tao/status/1803665104023724255",
+        "like_url": "https://x.com/intent/like?tweet_id=1803665104023724255",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1803665104023724255",
+        "replies": [
+            "1803880409585045955"
+        ]
+    },
+    "1803660566856155140": {
+        "created_at": "Thu Jun 20 05:26:04 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    11,
+                    73
+                ],
+                "type": "text",
+                "text": "Why is it disappointing? Isn't it their paper and their money?"
+            }
+        ],
+        "favorite_count": 1,
+        "id_str": "1803660566856155140",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1803317256375640471",
+        "user": {
+            "id_str": "1413212150047252480",
+            "name": "Kara 🦇 🔊/🔮",
+            "screen_name": "0xkarasy",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1600542865771614209/OU0MTLyx_normal.jpg",
+            "url": "https://x.com/0xkarasy",
+            "follow_url": "https://x.com/intent/follow?screen_name=0xkarasy"
+        },
+        "url": "https://x.com/0xkarasy/status/1803660566856155140",
+        "like_url": "https://x.com/intent/like?tweet_id=1803660566856155140",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1803660566856155140",
+        "replies": [
+            "1803661385982943351"
+        ]
+    },
+    "1803661385982943351": {
+        "created_at": "Thu Jun 20 05:29:19 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    10,
+                    251
+                ],
+                "type": "text",
+                "text": "it’s disappointing because it’s a reflection of the very crappy state of academia and research in AI. People feel compelled to have to do this. As others have said this perhaps now is a smart move but ideally this shouldn’t ever be necessary"
+            }
+        ],
+        "favorite_count": 1,
+        "id_str": "1803661385982943351",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1803660566856155140",
+        "user": {
+            "id_str": "1136188068",
+            "name": "Stone Tao",
+            "screen_name": "Stone_Tao",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1287142645295325184/Rna86k6A_normal.jpg",
+            "url": "https://x.com/Stone_Tao",
+            "follow_url": "https://x.com/intent/follow?screen_name=Stone_Tao"
+        },
+        "url": "https://x.com/Stone_Tao/status/1803661385982943351",
+        "like_url": "https://x.com/intent/like?tweet_id=1803661385982943351",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1803661385982943351",
+        "replies": [
+            "1803664498085015603"
         ]
     },
     "1803566869367984146": {
@@ -2169,7 +3071,7 @@
         "favorite_count": 6,
         "id_str": "1750783274916393329",
         "tweetDisplayType": "Tweet",
-        "quoted_status_id_str": "1750777835529072648",
+        "in_reply_to_status_id_str": "1750777835529072648",
         "user": {
             "id_str": "1073974163704958976",
             "name": "Ahmad Beirami",
@@ -2181,7 +3083,9 @@
         "url": "https://x.com/abeirami/status/1750783274916393329",
         "like_url": "https://x.com/intent/like?tweet_id=1750783274916393329",
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1750783274916393329",
-        "replies": []
+        "replies": [
+            "1750813649143222704"
+        ]
     },
     "1751060553886527982": {
         "created_at": "Sat Jan 27 01:52:23 +0000 2024",
@@ -2617,6 +3521,188 @@
         "url": "https://x.com/susumuota/status/1753932743048560765",
         "like_url": "https://x.com/intent/like?tweet_id=1753932743048560765",
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1753932743048560765",
+        "replies": [
+            "1753932748002070574"
+        ]
+    },
+    "1753932748002070574": {
+        "created_at": "Sun Feb 04 00:05:28 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    54
+                ],
+                "type": "text",
+                "text": "(1/1) 67 Likes, 47 Comments, 26 Jan 2024, Hacker News\n"
+            },
+            {
+                "display_url": "news.ycombinator.com/item?id=391448…",
+                "expanded_url": "https://news.ycombinator.com/item?id=39144845",
+                "indices": [
+                    54,
+                    77
+                ],
+                "url": "https://t.co/VnlzrfsMla",
+                "type": "url",
+                "href": "https://news.ycombinator.com/item?id=39144845",
+                "text": "news.ycombinator.com/item?id=391448…"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1753932748002070574",
+        "tweetDisplayType": "SelfThread",
+        "in_reply_to_status_id_str": "1753932743048560765",
+        "user": {
+            "id_str": "279718877",
+            "name": "S. Ota",
+            "screen_name": "susumuota",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1622591377971507202/EcBLlAUc_normal.png",
+            "url": "https://x.com/susumuota",
+            "follow_url": "https://x.com/intent/follow?screen_name=susumuota"
+        },
+        "url": "https://x.com/susumuota/status/1753932748002070574",
+        "like_url": "https://x.com/intent/like?tweet_id=1753932748002070574",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1753932748002070574",
+        "replies": [
+            "1753932767203664056"
+        ]
+    },
+    "1753932767203664056": {
+        "created_at": "Sun Feb 04 00:05:32 +0000 2024",
+        "entities": [
+            {
+                "display_url": "arxiv.org/abs/2401.13782",
+                "expanded_url": "https://arxiv.org/abs/2401.13782",
+                "indices": [
+                    0,
+                    23
+                ],
+                "url": "https://t.co/Tg0ikUoSal",
+                "type": "url",
+                "href": "https://arxiv.org/abs/2401.13782",
+                "text": "arxiv.org/abs/2401.13782"
+            },
+            {
+                "indices": [
+                    23,
+                    151
+                ],
+                "type": "text",
+                "text": "\nAIやMLの学会で採択された論文の数が数千に達するにつれ、研究者がどのように研究論文にアクセスし、読むのかが不明確になってきた。本稿では、機械学習研究の認知度向上におけるソーシャルメディアインフルエンサーの役割、特に彼らが共有する論文の引用数を調査..."
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1753932767203664056",
+        "tweetDisplayType": "SelfThread",
+        "in_reply_to_status_id_str": "1753932748002070574",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/Z7L50LJtdT",
+                "expanded_url": "https://x.com/susumuota/status/1753932767203664056/photo/1",
+                "ext_alt_text": "AIやMLの学会で採択された論文の数が数千に達するにつれ、研究者がどのように研究論文にアクセスし、読むのかが不明確になってきた。本稿では、機械学習研究の認知度向上におけるソーシャルメディアインフルエンサーの役割、特に彼らが共有する論文の引用数を調査する。2018年12月から2023年10月までのツイートにまたがる8,000を超える論文の包括的なデータセットを、出版年、開催地、抄録トピックに基づく1対1のマッチング対照とともに作成した。分析によると、これらのインフルエンサーが支持した論文の被引用回数は大幅に増加し、中央値は対照群の2～3倍であった。さらに、この研究では、ハイライトされた著者の地理的、性別、所属機関の多様性についても掘り下げている。これらの調査結果は、学術コミュニケーションにおけるソーシャルメディアの影響力の拡大を浮き彫りにし、今日のデジタルな学術状況における進化するエコシステムの重要性を強調している。",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1753932764770906112",
+                "indices": [
+                    152,
+                    175
+                ],
+                "media_key": "3_1753932764770906112",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1753932764770906112"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/GFc4jowWsAAt0eM.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 672,
+                            "w": 1200,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1200,
+                            "w": 1200,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1237,
+                            "w": 1085,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1237,
+                            "w": 619,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1237,
+                            "w": 1200,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 1237,
+                    "width": 1200
+                },
+                "sizes": {
+                    "large": {
+                        "h": 1237,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "medium": {
+                        "h": 1200,
+                        "resize": "fit",
+                        "w": 1164
+                    },
+                    "small": {
+                        "h": 680,
+                        "resize": "fit",
+                        "w": 660
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/Z7L50LJtdT"
+            }
+        ],
+        "user": {
+            "id_str": "279718877",
+            "name": "S. Ota",
+            "screen_name": "susumuota",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1622591377971507202/EcBLlAUc_normal.png",
+            "url": "https://x.com/susumuota",
+            "follow_url": "https://x.com/intent/follow?screen_name=susumuota"
+        },
+        "url": "https://x.com/susumuota/status/1753932767203664056",
+        "like_url": "https://x.com/intent/like?tweet_id=1753932767203664056",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1753932767203664056",
         "replies": []
     },
     "1751024300243796379": {
@@ -2634,7 +3720,7 @@
         "favorite_count": 2,
         "id_str": "1751024300243796379",
         "tweetDisplayType": "SelfThread",
-        "quoted_status_id_str": "1751023987206103244",
+        "in_reply_to_status_id_str": "1751023987206103244",
         "mediaDetails": [
             {
                 "display_url": "pic.x.com/jBSjV0vT1k",
@@ -2741,7 +3827,9 @@
         "url": "https://x.com/ixweiss/status/1751024300243796379",
         "like_url": "https://x.com/intent/like?tweet_id=1751024300243796379",
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1751024300243796379",
-        "replies": []
+        "replies": [
+            "1751024871126229355"
+        ]
     },
     "1751024871126229355": {
         "created_at": "Fri Jan 26 23:30:36 +0000 2024",
@@ -2758,7 +3846,7 @@
         "favorite_count": 2,
         "id_str": "1751024871126229355",
         "tweetDisplayType": "SelfThread",
-        "quoted_status_id_str": "1751024300243796379",
+        "in_reply_to_status_id_str": "1751024300243796379",
         "mediaDetails": [
             {
                 "display_url": "pic.x.com/y2KToGh08C",
@@ -2865,7 +3953,9 @@
         "url": "https://x.com/ixweiss/status/1751024871126229355",
         "like_url": "https://x.com/intent/like?tweet_id=1751024871126229355",
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1751024871126229355",
-        "replies": []
+        "replies": [
+            "1751025185149628877"
+        ]
     },
     "1751025185149628877": {
         "created_at": "Fri Jan 26 23:31:51 +0000 2024",
@@ -2882,7 +3972,7 @@
         "favorite_count": 2,
         "id_str": "1751025185149628877",
         "tweetDisplayType": "SelfThread",
-        "quoted_status_id_str": "1751024871126229355",
+        "in_reply_to_status_id_str": "1751024871126229355",
         "mediaDetails": [
             {
                 "display_url": "pic.x.com/p4aDDcPmLq",
@@ -2989,7 +4079,9 @@
         "url": "https://x.com/ixweiss/status/1751025185149628877",
         "like_url": "https://x.com/intent/like?tweet_id=1751025185149628877",
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1751025185149628877",
-        "replies": []
+        "replies": [
+            "1751025610267475977"
+        ]
     },
     "1751025610267475977": {
         "created_at": "Fri Jan 26 23:33:32 +0000 2024",
@@ -3023,7 +4115,7 @@
         "favorite_count": 2,
         "id_str": "1751025610267475977",
         "tweetDisplayType": "SelfThread",
-        "quoted_status_id_str": "1751025185149628877",
+        "in_reply_to_status_id_str": "1751025185149628877",
         "mediaDetails": [
             {
                 "display_url": "pic.x.com/Dq7EJdwozn",
@@ -4663,7 +5755,7 @@
         "favorite_count": 0,
         "id_str": "1750813649143222704",
         "tweetDisplayType": "Tweet",
-        "quoted_status_id_str": "1750783274916393329",
+        "in_reply_to_status_id_str": "1750783274916393329",
         "user": {
             "id_str": "503452360",
             "name": "William Wang",
@@ -7273,6 +8365,7 @@
             "1750772032999207309",
             "1750878238681768110",
             "1750819563745227103",
+            "1750857474108739706",
             "1750795018611106092",
             "1750874128351916141",
             "1750738513111503220",
@@ -7296,10 +8389,13 @@
             "1750786881162186877",
             "1750801764192829484",
             "1750785464154358148",
+            "1750938326096372052",
+            "1750734076297019544",
             "1751579392965321018",
             "1750789882761367906",
             "1750849540649853281",
             "1750949584258404632",
+            "1750848082017730870",
             "1750757655629766805",
             "1750864313856753905",
             "1750770701093785724",
@@ -8078,7 +9174,7 @@
         "favorite_count": 25,
         "id_str": "1750857474108739706",
         "tweetDisplayType": "Tweet",
-        "quoted_status_id_str": "1750732070014337101",
+        "in_reply_to_status_id_str": "1750732070014337101",
         "user": {
             "id_str": "865622395",
             "name": "Sebastian Raschka",
@@ -8879,7 +9975,7 @@
         "favorite_count": 0,
         "id_str": "1750938326096372052",
         "tweetDisplayType": "Tweet",
-        "quoted_status_id_str": "1750732070014337101",
+        "in_reply_to_status_id_str": "1750732070014337101",
         "user": {
             "id_str": "2717806784",
             "name": "Ari Bornstein🎗️",
@@ -8908,7 +10004,7 @@
         "favorite_count": 39,
         "id_str": "1750734076297019544",
         "tweetDisplayType": "Tweet",
-        "quoted_status_id_str": "1750732070014337101",
+        "in_reply_to_status_id_str": "1750732070014337101",
         "user": {
             "id_str": "935189749706391553",
             "name": "Sid Jain",
@@ -9069,7 +10165,7 @@
         "favorite_count": 3,
         "id_str": "1750848082017730870",
         "tweetDisplayType": "Tweet",
-        "quoted_status_id_str": "1750732070014337101",
+        "in_reply_to_status_id_str": "1750732070014337101",
         "user": {
             "id_str": "1374712323693289473",
             "name": "Kristof T. Schütt",
@@ -10040,6 +11136,7 @@
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1750761396684701742",
         "replies": [
             "1750767115085263228",
+            "1750766514586993135",
             "1750761900894535866"
         ]
     },
@@ -10058,7 +11155,6 @@
         "favorite_count": 15,
         "id_str": "1750767115085263228",
         "tweetDisplayType": "Tweet",
-        "quoted_status_id_str": "1750761396684701742",
         "in_reply_to_status_id_str": "1750761396684701742",
         "user": {
             "id_str": "16984977",
@@ -11112,7 +12208,7 @@
         "favorite_count": 1,
         "id_str": "1750766514586993135",
         "tweetDisplayType": "Tweet",
-        "quoted_status_id_str": "1750761396684701742",
+        "in_reply_to_status_id_str": "1750761396684701742",
         "user": {
             "id_str": "258031029",
             "name": "Yaroslav Bulatov",
@@ -11335,7 +12431,9 @@
         "url": "https://x.com/WilliamWangNLP/status/1750816290044830201",
         "like_url": "https://x.com/intent/like?tweet_id=1750816290044830201",
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1750816290044830201",
-        "replies": []
+        "replies": [
+            "1750830321904594998"
+        ]
     },
     "1750801940823310663": {
         "created_at": "Fri Jan 26 08:44:45 +0000 2024",
@@ -11441,7 +12539,7 @@
         "favorite_count": 0,
         "id_str": "1750830321904594998",
         "tweetDisplayType": "Tweet",
-        "quoted_status_id_str": "1750816290044830201",
+        "in_reply_to_status_id_str": "1750816290044830201",
         "user": {
             "id_str": "1681669995351228417",
             "name": "Ines Rangel",

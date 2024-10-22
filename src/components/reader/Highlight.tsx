@@ -23,7 +23,7 @@ export default function Highlight({ data }: { data: TLocation[] }) {
 
   const handleMouseEnter = useCallback((e: MouseEvent) => {
     const quoteId = (e.target as HTMLElement).id.split("_")[1];
-    setHighlightedLocation(parseInt(quoteId));
+    setHighlightedLocation(quoteId);
     setIsHovered(true);
   }, []);
 
@@ -64,7 +64,7 @@ export default function Highlight({ data }: { data: TLocation[] }) {
                 ),
               }}
             />
-            {height < 50 && (
+            {/* {height < 50 && (
               <BoundingBox
                 id={`highlight_${id}_text`}
                 isHighlighted={true}
@@ -75,7 +75,7 @@ export default function Highlight({ data }: { data: TLocation[] }) {
                 width={width}
                 color={color}
               />
-            )}
+            )} */}
           </div>
         );
       })}

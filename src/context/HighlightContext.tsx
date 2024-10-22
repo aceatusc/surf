@@ -1,8 +1,8 @@
 import { createContext, useState } from "react";
 
 export interface IHighlightContext {
-  highlightedLocation: number | null;
-  setHighlightedLocation: (id: number | null) => void;
+  highlightedLocation: string | null;
+  setHighlightedLocation: (id: string | null) => void;
 }
 
 export const HighlightContext = createContext<IHighlightContext>({
@@ -11,7 +11,7 @@ export const HighlightContext = createContext<IHighlightContext>({
 });
 
 export function useHighlightContextProps(): IHighlightContext {
-  const [highlightedLocation, setHighlightedLocation] = useState<number | null>(
+  const [highlightedLocation, setHighlightedLocation] = useState<string | null>(
     null
   );
   return {

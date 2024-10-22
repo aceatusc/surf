@@ -55,6 +55,7 @@ export const EmbedPost = ({ getQuote, getReplies, ...post }: TPostEmbed) => {
 };
 
 const TabTypes = ["all", "author", "tl;dr", "question", "critic", "opinion"];
+const FilterTypes = ["location", "time", "popularity"];
 
 export default function Panel({
   data,
@@ -67,7 +68,7 @@ export default function Panel({
     useContext(HighlightContext);
 
   const [filterType, setFilterType] = useState("all");
-  // const [sortBy, setSortBy] = useState("time");
+  const [sortBy, setSortBy] = useState("location");
 
   const getReplies = (id: string) => {
     return data[id]?.replies?.map((replyId) => data[replyId]).filter(Boolean);
@@ -81,19 +82,30 @@ export default function Panel({
   };
 
   const postToDisplay = rootPosts
-    .filter((id) => !!data[id])
-    .map((id) => data[id]);
-  // const postToDisplay = Object.values(data).filter(
-  //   (post) =>
-  //     rootPosts.includes() &&
-  //     (highlightedLocation === null ||
-  //       post.locations?.includes(highlightedLocation)) &&
-  //     (filterType === "all" || post?.tweet_type === filterType)
-  // );
+    .filter(
+      (id) =>
+        !!data[id] &&
+        (highlightedLocation === null ||
+          data[id].locations?.has(highlightedLocation)) &&
+        (filterType === "all" || data[id]?.tweet_type === filterType)
+    )
+    .map((id) => data[id])
+    .sort((a, b) => {
+      if (sortBy === "time") {
+        return (
+          new Date(a.created_at).getTime() - new Date(b.created_at).getTime()
+        );
+      } else if (sortBy === "popularity") {
+        return b.favorite_count - a.favorite_count;
+      }
+      return Array.from(a.locations || [])
+        .sort()[0]
+        .localeCompare(Array.from(b.locations || []).sort()[0]);
+    });
 
   const jumpToLocation = (e: MouseEvent) => {
     e.stopPropagation();
-    const quoteId = (e.target as HTMLElement).id.split("quote_")[1];
+    const quoteId = (e.target as HTMLElement).id.split(";loc_")[1];
     const element = document.getElementById(`highlight_${quoteId}`);
     element?.scrollIntoView({ behavior: "smooth", block: "center" });
   };
@@ -135,9 +147,17 @@ export default function Panel({
           <DropdownMenuContent>
             <DropdownMenuLabel>Sort by</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>Time</DropdownMenuItem>
-            <DropdownMenuItem>Popularity</DropdownMenuItem>
-            <DropdownMenuItem>Author</DropdownMenuItem>
+            {FilterTypes.map((type) => (
+              <DropdownMenuItem
+                key={type}
+                onClick={() => setSortBy(type)}
+                className={
+                  type === sortBy ? "font-bold capitalize" : "capitalize"
+                }
+              >
+                {type}
+              </DropdownMenuItem>
+            ))}
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
@@ -198,7 +218,7 @@ export default function Panel({
                       backgroundColor: getColorForGroup(loc),
                       height: `${100 / locations.size}%`,
                     }}
-                    id={`post_${res.id_str}-loc_${loc}`}
+                    id={`post_${res.id_str};loc_${loc}`}
                     onClick={jumpToLocation}
                     className={`hover:-translate-x-3 transition-transform duration-200 w-12 cursor-pointer max-h-40 rounded-tl-2xl rounded-bl-2xl`}
                   />

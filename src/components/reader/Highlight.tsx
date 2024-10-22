@@ -8,9 +8,9 @@ import {
   BoundingBox,
 } from "../pdf";
 import { getColorForGroup } from "../../context/ColorManager";
-import { HighlightProps } from "../types/reader";
+import { TLocation } from "../types";
 
-export default function Highlight({ pageData, pageIndex }: HighlightProps) {
+export default function Highlight({ data }: { data: TLocation[] }) {
   const { setHighlightedLocation } = useContext(HighlightContext);
   const { pageDimensions } = useContext(DocumentContext);
   const { rotation, scale } = useContext(TransformContext);
@@ -39,11 +39,11 @@ export default function Highlight({ pageData, pageIndex }: HighlightProps) {
 
   return (
     <Fragment>
-      {pageData.map(({ qid, bbox, qtype }, i) => {
-        const [left, top, width, height] = bbox;
+      {data.map(({ id, bbox }, i) => {
+        const [page, left, top, width, height] = bbox;
         const newLeft =
           pageDimensions.width / left > 2 ? left - 14.4 : left + width + 6;
-        const color = getColorForGroup(qid);
+        const color = getColorForGroup(id);
         return (
           <div
             key={i}
@@ -52,8 +52,8 @@ export default function Highlight({ pageData, pageIndex }: HighlightProps) {
             onMouseLeave={handleMouseLeave}
           >
             <div
-              id={`highlight_${qid}`}
-              className="transform transition-transform duration-200 hover:scale-y-[1.1] rounded-lg absolute z-[21] cursor-pointer"
+              id={`highlight_${id}`}
+              className="transform transition-transform duration-200 hover:scale-x-[1.3] rounded-lg absolute z-[21] cursor-pointer"
               style={{
                 backgroundColor: color,
                 ...computeBoundingBoxStyle(
@@ -64,11 +64,11 @@ export default function Highlight({ pageData, pageIndex }: HighlightProps) {
                 ),
               }}
             />
-            {qtype === "text" && (
+            {height < 50 && (
               <BoundingBox
-                id={`highlight_${qid}_text`}
+                id={`highlight_${id}_text`}
                 isHighlighted={true}
-                page={pageIndex}
+                page={page}
                 top={top}
                 left={left}
                 height={height}

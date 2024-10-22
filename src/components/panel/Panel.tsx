@@ -56,7 +56,13 @@ export const EmbedPost = ({ getQuote, getReplies, ...post }: TPostEmbed) => {
 
 const TabTypes = ["all", "author", "tl;dr", "question", "critic", "opinion"];
 
-export default function Panel({ data }: { data: TPostData }) {
+export default function Panel({
+  data,
+  rootPosts,
+}: {
+  data: TPostData;
+  rootPosts: string[];
+}) {
   const { highlightedLocation, setHighlightedLocation } =
     useContext(HighlightContext);
 
@@ -68,19 +74,22 @@ export default function Panel({ data }: { data: TPostData }) {
   };
 
   const getQuote = (id: string) => {
-    if (data[id]["quoted_status_id_str"]) {
-      return data[data[id]["quoted_status_id_str"]];
+    if (data[id]?.["quoted_status_id_str"]) {
+      return data[data[id]?.["quoted_status_id_str"]];
     }
     return undefined;
   };
 
-  const postToDisplay = Object.values(data).filter(
-    (post) =>
-      !post.in_reply_to_status_id_str &&
-      (highlightedLocation === null ||
-        post.locations?.includes(highlightedLocation)) &&
-      (filterType === "all" || post?.tweet_type === filterType)
-  );
+  const postToDisplay = rootPosts
+    .filter((id) => !!data[id])
+    .map((id) => data[id]);
+  // const postToDisplay = Object.values(data).filter(
+  //   (post) =>
+  //     rootPosts.includes() &&
+  //     (highlightedLocation === null ||
+  //       post.locations?.includes(highlightedLocation)) &&
+  //     (filterType === "all" || post?.tweet_type === filterType)
+  // );
 
   const jumpToLocation = (e: MouseEvent) => {
     e.stopPropagation();
@@ -181,18 +190,19 @@ export default function Panel({ data }: { data: TPostData }) {
               getQuote={getQuote}
             />
             <div className="absolute top-0 left-0 flex flex-col space-y-3 z-0 h-full pt-8 pb-8">
-              {locations?.map((loc) => (
-                <div
-                  key={loc}
-                  style={{
-                    backgroundColor: getColorForGroup(loc),
-                    height: `${100 / locations.length}%`,
-                  }}
-                  id={`post_${res.id_str}-loc_${loc}`}
-                  onClick={jumpToLocation}
-                  className={`hover:-translate-x-3 transition-transform duration-200 w-12 cursor-pointer max-h-40 rounded-tl-2xl rounded-bl-2xl`}
-                />
-              ))}
+              {locations &&
+                Array.from(locations)?.map((loc) => (
+                  <div
+                    key={loc}
+                    style={{
+                      backgroundColor: getColorForGroup(loc),
+                      height: `${100 / locations.size}%`,
+                    }}
+                    id={`post_${res.id_str}-loc_${loc}`}
+                    onClick={jumpToLocation}
+                    className={`hover:-translate-x-3 transition-transform duration-200 w-12 cursor-pointer max-h-40 rounded-tl-2xl rounded-bl-2xl`}
+                  />
+                ))}
             </div>
           </motion.div>
         ))}

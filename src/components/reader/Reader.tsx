@@ -9,13 +9,10 @@ import {
   UiContext,
 } from "../pdf";
 import { useContext, useEffect } from "react";
-import { HighlightProps } from "../types/reader";
 import Highlight from "./Highlight";
-import { TQuote } from "../types";
+import { TlocationData } from "../types";
 
-export type PageDataTypes = HighlightProps[];
-
-export default function Reader({ data }: { data: TQuote[][] }) {
+export default function Reader({ data }: { data: TlocationData }) {
   const { numPages, pageDimensions } = useContext(DocumentContext);
   const { setScale } = useContext(TransformContext);
   const { setScrollRoot, resetScrollObservers, setScrollThreshold } =
@@ -55,11 +52,7 @@ export default function Reader({ data }: { data: TQuote[][] }) {
           pageIndex={i}
           renderType={RENDER_TYPE.SINGLE_CANVAS}
         >
-          {i < numPages && data[i] && data[i].length ? (
-            <Overlay>
-              <Highlight pageData={data[i]} pageIndex={i} />
-            </Overlay>
-          ) : undefined}
+          <Overlay>{data[i] && <Highlight data={data[i]} />}</Overlay>
         </PageWrapper>
       ))}
     </DocumentWrapper>

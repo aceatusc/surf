@@ -15,7 +15,7 @@ const predefinedColors = [
 ];
 const colors: { [key: string]: string } = {};
 
-export function getColorForGroup(pgroup: number) {
+export function getColorForGroup(pgroup: string) {
   if (colors[pgroup]) {
     return colors[pgroup];
   }

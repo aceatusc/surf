@@ -1,0 +1,1931 @@
+{
+    "1841349704191258999": {
+        "created_at": "Wed Oct 02 05:29:14 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    41
+                ],
+                "type": "text",
+                "text": "Please, always post arxiv abs links like "
+            },
+            {
+                "display_url": "arxiv.org/abs/2409.14586",
+                "expanded_url": "http://arxiv.org/abs/2409.14586",
+                "indices": [
+                    41,
+                    64
+                ],
+                "url": "https://t.co/PygQViOYkh",
+                "type": "url",
+                "href": "http://arxiv.org/abs/2409.14586",
+                "text": "arxiv.org/abs/2409.14586"
+            },
+            {
+                "indices": [
+                    64,
+                    87
+                ],
+                "type": "text",
+                "text": " and not pdf ones like "
+            },
+            {
+                "display_url": "arxiv.org/pdf/2409.14586",
+                "expanded_url": "http://arxiv.org/pdf/2409.14586",
+                "indices": [
+                    87,
+                    110
+                ],
+                "url": "https://t.co/CbmzdVmMbb",
+                "type": "url",
+                "href": "http://arxiv.org/pdf/2409.14586",
+                "text": "arxiv.org/pdf/2409.14586"
+            },
+            {
+                "indices": [
+                    110,
+                    220
+                ],
+                "type": "text",
+                "text": " . This saves unnecessary downloads to the wrong kind of device, and allows paper managers like the excellent "
+            },
+            {
+                "id_str": "128429167",
+                "indices": [
+                    220,
+                    230
+                ],
+                "name": "Paperpile",
+                "screen_name": "paperpile",
+                "type": "mention",
+                "href": "https://x.com/paperpile",
+                "text": "@paperpile"
+            },
+            {
+                "indices": [
+                    230,
+                    278
+                ],
+                "type": "text",
+                "text": " to work properly. Thanks. This has been a PSA.…"
+            }
+        ],
+        "favorite_count": 1,
+        "id_str": "1841349704191258999",
+        "tweetDisplayType": "Tweet",
+        "user": {
+            "id_str": "16179709",
+            "name": "Michael Witbrock",
+            "screen_name": "witbrock",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/113136255/meGreen_normal.JPG",
+            "url": "https://x.com/witbrock",
+            "follow_url": "https://x.com/intent/follow?screen_name=witbrock"
+        },
+        "url": "https://x.com/witbrock/status/1841349704191258999",
+        "like_url": "https://x.com/intent/like?tweet_id=1841349704191258999",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1841349704191258999",
+        "replies": []
+    },
+    "1838606623398572087": {
+        "created_at": "Tue Sep 24 15:49:13 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    278
+                ],
+                "type": "text",
+                "text": "Autoregressive text generation has enabled LLMs to do amazing things but also renders them vulnerable to error propagation and manipulation via jailbreaks. The \"backtracking\" capability introduced here is an exciting step toward overcoming some of these limitations. \n\nKudos to…"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1838606623398572087",
+        "tweetDisplayType": "Tweet",
+        "quoted_status_id_str": "1838415378529112330",
+        "user": {
+            "id_str": "77415138",
+            "name": "Dean Carignan",
+            "screen_name": "DeanCarignan",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1352331313206812673/spCKUQ8Y_normal.jpg",
+            "url": "https://x.com/DeanCarignan",
+            "follow_url": "https://x.com/intent/follow?screen_name=DeanCarignan"
+        },
+        "url": "https://x.com/DeanCarignan/status/1838606623398572087",
+        "like_url": "https://x.com/intent/like?tweet_id=1838606623398572087",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1838606623398572087",
+        "replies": []
+    },
+    "1838462507117060309": {
+        "created_at": "Tue Sep 24 06:16:33 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    136
+                ],
+                "type": "text",
+                "text": "Interesting defense! Reminds me the data augmentation approach from “Safety Alignment Should Be Made More Than Just a Few Tokens Deep” ("
+            },
+            {
+                "display_url": "arxiv.org/abs/2406.05946",
+                "expanded_url": "https://arxiv.org/abs/2406.05946",
+                "indices": [
+                    136,
+                    159
+                ],
+                "url": "https://t.co/eaRhbIvMUW",
+                "type": "url",
+                "href": "https://arxiv.org/abs/2406.05946",
+                "text": "arxiv.org/abs/2406.05946"
+            },
+            {
+                "indices": [
+                    159,
+                    213
+                ],
+                "type": "text",
+                "text": "), although that one is implemented a bit differently."
+            }
+        ],
+        "favorite_count": 41,
+        "id_str": "1838462507117060309",
+        "tweetDisplayType": "Tweet",
+        "quoted_status_id_str": "1838415378529112330",
+        "user": {
+            "id_str": "987061319378587649",
+            "name": "Maksym Andriushchenko",
+            "screen_name": "maksym_andr",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1601583305710866434/f4H38Erl_normal.jpg",
+            "url": "https://x.com/maksym_andr",
+            "follow_url": "https://x.com/intent/follow?screen_name=maksym_andr"
+        },
+        "url": "https://x.com/maksym_andr/status/1838462507117060309",
+        "like_url": "https://x.com/intent/like?tweet_id=1838462507117060309",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1838462507117060309",
+        "replies": [
+            "1838581999935598758",
+            "1838474635735867495",
+            "1839137182399046101"
+        ]
+    },
+    "1839162389327130992": {
+        "created_at": "Thu Sep 26 04:37:38 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    25
+                ],
+                "type": "text",
+                "text": "Backtracking generation ("
+            },
+            {
+                "display_url": "arxiv.org/abs/2409.14586",
+                "expanded_url": "https://arxiv.org/abs/2409.14586",
+                "indices": [
+                    25,
+                    48
+                ],
+                "url": "https://t.co/ks2kyHT8Cq",
+                "type": "url",
+                "href": "https://arxiv.org/abs/2409.14586",
+                "text": "arxiv.org/abs/2409.14586"
+            },
+            {
+                "indices": [
+                    48,
+                    273
+                ],
+                "type": "text",
+                "text": ") seems like a simple and effective method -- have the model generate [RESET] tokens once it produces unsafe content. I like framing safety as an inference time procedure instead of hoping a static safe policy generalizes ..."
+            }
+        ],
+        "favorite_count": 9,
+        "id_str": "1839162389327130992",
+        "tweetDisplayType": "SelfThread",
+        "user": {
+            "id_str": "1178454598023024642",
+            "name": "Zack Ankner",
+            "screen_name": "ZackAnkner",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1797597889138483200/-ROOGVvZ_normal.jpg",
+            "url": "https://x.com/ZackAnkner",
+            "follow_url": "https://x.com/intent/follow?screen_name=ZackAnkner"
+        },
+        "url": "https://x.com/ZackAnkner/status/1839162389327130992",
+        "like_url": "https://x.com/intent/like?tweet_id=1839162389327130992",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1839162389327130992",
+        "replies": [
+            "1839162391034253584"
+        ]
+    },
+    "1838691108068733250": {
+        "created_at": "Tue Sep 24 21:24:56 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    108
+                ],
+                "type": "text",
+                "text": "[LG] Backtracking Improves Generation Safety\nY Zhang, J Chi, H Nguyen, K Upasani... [Meta &amp; CMU] (2024)\n"
+            },
+            {
+                "display_url": "arxiv.org/abs/2409.14586",
+                "expanded_url": "https://arxiv.org/abs/2409.14586",
+                "indices": [
+                    108,
+                    131
+                ],
+                "url": "https://t.co/UrLw69T08m",
+                "type": "url",
+                "href": "https://arxiv.org/abs/2409.14586",
+                "text": "arxiv.org/abs/2409.14586"
+            }
+        ],
+        "favorite_count": 7,
+        "id_str": "1838691108068733250",
+        "tweetDisplayType": "Tweet",
+        "mediaDetails": [
+            {
+                "allow_download_status": {
+                    "allow_download": true
+                },
+                "display_url": "pic.x.com/BzG2T64nLn",
+                "expanded_url": "https://x.com/fly51fly/status/1838691108068733250/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": [
+                            {
+                                "h": 131,
+                                "w": 131,
+                                "x": 667,
+                                "y": 1431
+                            },
+                            {
+                                "h": 167,
+                                "w": 167,
+                                "x": 1517,
+                                "y": 1125
+                            }
+                        ]
+                    },
+                    "medium": {
+                        "faces": [
+                            {
+                                "h": 77,
+                                "w": 77,
+                                "x": 391,
+                                "y": 839
+                            },
+                            {
+                                "h": 98,
+                                "w": 98,
+                                "x": 889,
+                                "y": 659
+                            }
+                        ]
+                    },
+                    "orig": {
+                        "faces": [
+                            {
+                                "h": 154,
+                                "w": 154,
+                                "x": 782,
+                                "y": 1678
+                            },
+                            {
+                                "h": 196,
+                                "w": 196,
+                                "x": 1778,
+                                "y": 1319
+                            }
+                        ]
+                    },
+                    "small": {
+                        "faces": [
+                            {
+                                "h": 43,
+                                "w": 43,
+                                "x": 221,
+                                "y": 475
+                            },
+                            {
+                                "h": 55,
+                                "w": 55,
+                                "x": 503,
+                                "y": 373
+                            }
+                        ]
+                    }
+                },
+                "id_str": "1838690632942129153",
+                "indices": [
+                    132,
+                    155
+                ],
+                "media_key": "3_1838690632942129153",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1838690632942129153"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/GYRXY4xakAEfj6T.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 1344,
+                            "w": 2400,
+                            "x": 0,
+                            "y": 828
+                        },
+                        {
+                            "h": 2268,
+                            "w": 2268,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 2268,
+                            "w": 1989,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 2268,
+                            "w": 1134,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 2268,
+                            "w": 2400,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 2268,
+                    "width": 2400
+                },
+                "sizes": {
+                    "large": {
+                        "h": 1935,
+                        "resize": "fit",
+                        "w": 2048
+                    },
+                    "medium": {
+                        "h": 1134,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 643,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/BzG2T64nLn"
+            },
+            {
+                "allow_download_status": {
+                    "allow_download": true
+                },
+                "display_url": "pic.x.com/BzG2T64nLn",
+                "expanded_url": "https://x.com/fly51fly/status/1838691108068733250/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1838690632967364608",
+                "indices": [
+                    132,
+                    155
+                ],
+                "media_key": "3_1838690632967364608",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1838690632967364608"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/GYRXY43boAAKeAq.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 950,
+                            "w": 1696,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1120,
+                            "w": 1120,
+                            "x": 288,
+                            "y": 0
+                        },
+                        {
+                            "h": 1120,
+                            "w": 982,
+                            "x": 357,
+                            "y": 0
+                        },
+                        {
+                            "h": 1120,
+                            "w": 560,
+                            "x": 568,
+                            "y": 0
+                        },
+                        {
+                            "h": 1120,
+                            "w": 1696,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 1120,
+                    "width": 1696
+                },
+                "sizes": {
+                    "large": {
+                        "h": 1120,
+                        "resize": "fit",
+                        "w": 1696
+                    },
+                    "medium": {
+                        "h": 792,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 449,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/BzG2T64nLn"
+            },
+            {
+                "allow_download_status": {
+                    "allow_download": true
+                },
+                "display_url": "pic.x.com/BzG2T64nLn",
+                "expanded_url": "https://x.com/fly51fly/status/1838691108068733250/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1838690652437254145",
+                "indices": [
+                    132,
+                    155
+                ],
+                "media_key": "3_1838690652437254145",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1838690652437254145"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/GYRXaBZakAEc2_n.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 1121,
+                            "w": 2002,
+                            "x": 0,
+                            "y": 35
+                        },
+                        {
+                            "h": 1156,
+                            "w": 1156,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1156,
+                            "w": 1014,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1156,
+                            "w": 578,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1156,
+                            "w": 2002,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 1156,
+                    "width": 2002
+                },
+                "sizes": {
+                    "large": {
+                        "h": 1156,
+                        "resize": "fit",
+                        "w": 2002
+                    },
+                    "medium": {
+                        "h": 693,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 393,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/BzG2T64nLn"
+            },
+            {
+                "display_url": "pic.x.com/BzG2T64nLn",
+                "expanded_url": "https://x.com/fly51fly/status/1838691108068733250/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1838690718912778240",
+                "indices": [
+                    132,
+                    155
+                ],
+                "media_key": "3_1838690718912778240",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1838690718912778240"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/GYRXd5CakAAx3zh.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 928,
+                            "w": 1657,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 928,
+                            "w": 928,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 928,
+                            "w": 814,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 928,
+                            "w": 464,
+                            "x": 18,
+                            "y": 0
+                        },
+                        {
+                            "h": 928,
+                            "w": 2010,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 928,
+                    "width": 2010
+                },
+                "sizes": {
+                    "large": {
+                        "h": 928,
+                        "resize": "fit",
+                        "w": 2010
+                    },
+                    "medium": {
+                        "h": 554,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 314,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/BzG2T64nLn"
+            }
+        ],
+        "user": {
+            "id_str": "22146921",
+            "name": "fly51fly",
+            "screen_name": "fly51fly",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/501577797114937344/ge9Wu-cU_normal.png",
+            "url": "https://x.com/fly51fly",
+            "follow_url": "https://x.com/intent/follow?screen_name=fly51fly"
+        },
+        "url": "https://x.com/fly51fly/status/1838691108068733250",
+        "like_url": "https://x.com/intent/like?tweet_id=1838691108068733250",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1838691108068733250",
+        "replies": []
+    },
+    "1838415378529112330": {
+        "created_at": "Tue Sep 24 03:09:17 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    245
+                ],
+                "type": "text",
+                "text": "🚨New paper! 🚨\nBacktracking Improves Generation Safety\n- We train LLMs with DPO to output a RESET token mid-generation if it's unsafe\n- Backtracking Llama-3-8B is 4x safer than the baseline\n- Provides protection against four jailbreaking attacks\n"
+            },
+            {
+                "display_url": "arxiv.org/pdf/2409.14586",
+                "expanded_url": "http://arxiv.org/pdf/2409.14586",
+                "indices": [
+                    245,
+                    268
+                ],
+                "url": "https://t.co/kXC2rdLZcU",
+                "type": "url",
+                "href": "http://arxiv.org/pdf/2409.14586",
+                "text": "arxiv.org/pdf/2409.14586"
+            },
+            {
+                "indices": [
+                    268,
+                    275
+                ],
+                "type": "text",
+                "text": "\n🧵(1/4)"
+            }
+        ],
+        "favorite_count": 334,
+        "id_str": "1838415378529112330",
+        "tweetDisplayType": "SelfThread",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/nswTXgwMV0",
+                "expanded_url": "https://x.com/jaseweston/status/1838415378529112330/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1838413701419798529",
+                "indices": [
+                    276,
+                    299
+                ],
+                "media_key": "3_1838413701419798529",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1838413701419798529"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/GYNbhWdWkAEIw9z.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 1059,
+                            "w": 1891,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1535,
+                            "w": 1535,
+                            "x": 319,
+                            "y": 0
+                        },
+                        {
+                            "h": 1535,
+                            "w": 1346,
+                            "x": 413,
+                            "y": 0
+                        },
+                        {
+                            "h": 1535,
+                            "w": 768,
+                            "x": 702,
+                            "y": 0
+                        },
+                        {
+                            "h": 1535,
+                            "w": 1891,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 1535,
+                    "width": 1891
+                },
+                "sizes": {
+                    "large": {
+                        "h": 1535,
+                        "resize": "fit",
+                        "w": 1891
+                    },
+                    "medium": {
+                        "h": 974,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 552,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/nswTXgwMV0"
+            }
+        ],
+        "user": {
+            "id_str": "14551614",
+            "name": "Jason Weston",
+            "screen_name": "jaseweston",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1161680026561069061/i-DdZcc1_normal.jpg",
+            "url": "https://x.com/jaseweston",
+            "follow_url": "https://x.com/intent/follow?screen_name=jaseweston"
+        },
+        "url": "https://x.com/jaseweston/status/1838415378529112330",
+        "like_url": "https://x.com/intent/like?tweet_id=1838415378529112330",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1838415378529112330",
+        "replies": [
+            "1838415381624455479"
+        ]
+    },
+    "1841143535841460262": {
+        "created_at": "Tue Oct 01 15:50:00 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    209
+                ],
+                "type": "text",
+                "text": "Backtracking Improves Generation Safety\n\nIntroduces a method to improve adversarial robustness by teaching the model to use a special reset token on unsafe generations and regenerate a response from scratch.\n\n"
+            },
+            {
+                "display_url": "arxiv.org/abs/2409.14586",
+                "expanded_url": "https://arxiv.org/abs/2409.14586",
+                "indices": [
+                    209,
+                    232
+                ],
+                "url": "https://t.co/QplnGwBBOf",
+                "type": "url",
+                "href": "https://arxiv.org/abs/2409.14586",
+                "text": "arxiv.org/abs/2409.14586"
+            }
+        ],
+        "favorite_count": 5,
+        "id_str": "1841143535841460262",
+        "tweetDisplayType": "Tweet",
+        "mediaDetails": [
+            {
+                "allow_download_status": {
+                    "allow_download": true
+                },
+                "display_url": "pic.x.com/kWppVTMYwE",
+                "expanded_url": "https://x.com/topofmlsafety/status/1841143535841460262/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1841055638903992320",
+                "indices": [
+                    233,
+                    256
+                ],
+                "media_key": "3_1841055638903992320",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1841055638903992320"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/GYy-WWiaMAAYwmp.png",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 1051,
+                            "w": 1876,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1206,
+                            "w": 1206,
+                            "x": 335,
+                            "y": 0
+                        },
+                        {
+                            "h": 1206,
+                            "w": 1058,
+                            "x": 409,
+                            "y": 0
+                        },
+                        {
+                            "h": 1206,
+                            "w": 603,
+                            "x": 637,
+                            "y": 0
+                        },
+                        {
+                            "h": 1206,
+                            "w": 1876,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 1206,
+                    "width": 1876
+                },
+                "sizes": {
+                    "large": {
+                        "h": 1206,
+                        "resize": "fit",
+                        "w": 1876
+                    },
+                    "medium": {
+                        "h": 771,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 437,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/kWppVTMYwE"
+            }
+        ],
+        "user": {
+            "id_str": "1517205313396482048",
+            "name": "ML Safety Daily",
+            "screen_name": "topofmlsafety",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1548772139334979584/TQ1C6FwS_normal.jpg",
+            "url": "https://x.com/topofmlsafety",
+            "follow_url": "https://x.com/intent/follow?screen_name=topofmlsafety"
+        },
+        "url": "https://x.com/topofmlsafety/status/1841143535841460262",
+        "like_url": "https://x.com/intent/like?tweet_id=1841143535841460262",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1841143535841460262",
+        "replies": []
+    },
+    "1838583597948899595": {
+        "created_at": "Tue Sep 24 14:17:43 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    225
+                ],
+                "type": "text",
+                "text": "Allowing models to regret along the generation path helps make their safety behaviors more robust. Great to see more work exploring this direction :)\n\nFYI, another two papers with similar ideas but different implementations:\n"
+            },
+            {
+                "display_url": "arxiv.org/abs/2406.05946",
+                "expanded_url": "https://arxiv.org/abs/2406.05946",
+                "indices": [
+                    225,
+                    248
+                ],
+                "url": "https://t.co/MTYNNBiJOh",
+                "type": "url",
+                "href": "https://arxiv.org/abs/2406.05946",
+                "text": "arxiv.org/abs/2406.05946"
+            },
+            {
+                "indices": [
+                    248,
+                    255
+                ],
+                "type": "text",
+                "text": " by us\n"
+            },
+            {
+                "display_url": "arxiv.org/abs/2407.09121",
+                "expanded_url": "https://arxiv.org/abs/2407.09121",
+                "indices": [
+                    255,
+                    278
+                ],
+                "url": "https://t.co/hdyR7kieVw",
+                "type": "url",
+                "href": "https://arxiv.org/abs/2407.09121",
+                "text": "arxiv.org/abs/2407.09121"
+            },
+            {
+                "indices": [
+                    278,
+                    279
+                ],
+                "type": "text",
+                "text": "…"
+            }
+        ],
+        "favorite_count": 48,
+        "id_str": "1838583597948899595",
+        "tweetDisplayType": "Tweet",
+        "quoted_status_id_str": "1838415378529112330",
+        "user": {
+            "id_str": "1210827897419681792",
+            "name": "Xiangyu Qi",
+            "screen_name": "xiangyuqi_pton",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1714112519433068544/b6g5u2z1_normal.jpg",
+            "url": "https://x.com/xiangyuqi_pton",
+            "follow_url": "https://x.com/intent/follow?screen_name=xiangyuqi_pton"
+        },
+        "url": "https://x.com/xiangyuqi_pton/status/1838583597948899595",
+        "like_url": "https://x.com/intent/like?tweet_id=1838583597948899595",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1838583597948899595",
+        "replies": [
+            "1838600192662127102",
+            "1838599486702047449"
+        ]
+    },
+    "1839162391034253584": {
+        "created_at": "Thu Sep 26 04:37:38 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    262
+                ],
+                "type": "text",
+                "text": "After generating a [RESET] token, the model restarts the generation. While the user doesn't see the unsafe text, it's kept in context for the model. This seems like a useful design choice for reducing the probability that the next attempted generation is unsafe."
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1839162391034253584",
+        "tweetDisplayType": "SelfThread",
+        "in_reply_to_status_id_str": "1839162389327130992",
+        "user": {
+            "id_str": "1178454598023024642",
+            "name": "Zack Ankner",
+            "screen_name": "ZackAnkner",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1797597889138483200/-ROOGVvZ_normal.jpg",
+            "url": "https://x.com/ZackAnkner",
+            "follow_url": "https://x.com/intent/follow?screen_name=ZackAnkner"
+        },
+        "url": "https://x.com/ZackAnkner/status/1839162391034253584",
+        "like_url": "https://x.com/intent/like?tweet_id=1839162391034253584",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1839162391034253584",
+        "replies": [
+            "1839162392481247261"
+        ]
+    },
+    "1839162392481247261": {
+        "created_at": "Thu Sep 26 04:37:39 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    273
+                ],
+                "type": "text",
+                "text": "I don't think the design choice was ablated but would be cool to see. To build the dataset they take a standard pairwise preference dataset. They then find unsafe prefixes in the rejected response by performing rejection sampling over the sequence with a safety classifier."
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1839162392481247261",
+        "tweetDisplayType": "SelfThread",
+        "in_reply_to_status_id_str": "1839162391034253584",
+        "user": {
+            "id_str": "1178454598023024642",
+            "name": "Zack Ankner",
+            "screen_name": "ZackAnkner",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1797597889138483200/-ROOGVvZ_normal.jpg",
+            "url": "https://x.com/ZackAnkner",
+            "follow_url": "https://x.com/intent/follow?screen_name=ZackAnkner"
+        },
+        "url": "https://x.com/ZackAnkner/status/1839162392481247261",
+        "like_url": "https://x.com/intent/like?tweet_id=1839162392481247261",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1839162392481247261",
+        "replies": [
+            "1839162394205106574"
+        ]
+    },
+    "1839162394205106574": {
+        "created_at": "Thu Sep 26 04:37:39 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    196
+                ],
+                "type": "text",
+                "text": "To build the [RESET] demonstration, they concatenate the unsafe prefix with a [RESET] token and the corresponding safe response. Enjoyed reading the dataset construction details, was really clean."
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1839162394205106574",
+        "tweetDisplayType": "SelfThread",
+        "in_reply_to_status_id_str": "1839162392481247261",
+        "user": {
+            "id_str": "1178454598023024642",
+            "name": "Zack Ankner",
+            "screen_name": "ZackAnkner",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1797597889138483200/-ROOGVvZ_normal.jpg",
+            "url": "https://x.com/ZackAnkner",
+            "follow_url": "https://x.com/intent/follow?screen_name=ZackAnkner"
+        },
+        "url": "https://x.com/ZackAnkner/status/1839162394205106574",
+        "like_url": "https://x.com/intent/like?tweet_id=1839162394205106574",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1839162394205106574",
+        "replies": [
+            "1839162395585085529"
+        ]
+    },
+    "1839162395585085529": {
+        "created_at": "Thu Sep 26 04:37:39 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    176
+                ],
+                "type": "text",
+                "text": "One question I have is what is the advantage of model-based backtracking compared to running a designated safety classifier at inference and resetting once it flags something ?"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1839162395585085529",
+        "tweetDisplayType": "SelfThread",
+        "in_reply_to_status_id_str": "1839162394205106574",
+        "user": {
+            "id_str": "1178454598023024642",
+            "name": "Zack Ankner",
+            "screen_name": "ZackAnkner",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1797597889138483200/-ROOGVvZ_normal.jpg",
+            "url": "https://x.com/ZackAnkner",
+            "follow_url": "https://x.com/intent/follow?screen_name=ZackAnkner"
+        },
+        "url": "https://x.com/ZackAnkner/status/1839162395585085529",
+        "like_url": "https://x.com/intent/like?tweet_id=1839162395585085529",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1839162395585085529",
+        "replies": [
+            "1839162397225005308"
+        ]
+    },
+    "1839162397225005308": {
+        "created_at": "Thu Sep 26 04:37:40 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    276
+                ],
+                "type": "text",
+                "text": "Also seems like backtracking generation could be useful for other tasks! Would be cool to see if you can learn backtracking end-to-end without manual dataset construction. Something along the lines of prompting the model it can output [RESET] and scoring the final generation."
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1839162397225005308",
+        "tweetDisplayType": "SelfThread",
+        "in_reply_to_status_id_str": "1839162395585085529",
+        "user": {
+            "id_str": "1178454598023024642",
+            "name": "Zack Ankner",
+            "screen_name": "ZackAnkner",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1797597889138483200/-ROOGVvZ_normal.jpg",
+            "url": "https://x.com/ZackAnkner",
+            "follow_url": "https://x.com/intent/follow?screen_name=ZackAnkner"
+        },
+        "url": "https://x.com/ZackAnkner/status/1839162397225005308",
+        "like_url": "https://x.com/intent/like?tweet_id=1839162397225005308",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1839162397225005308",
+        "replies": [
+            "1839162398596542612"
+        ]
+    },
+    "1839162398596542612": {
+        "created_at": "Thu Sep 26 04:37:40 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    43
+                ],
+                "type": "text",
+                "text": "Overall really cool paper by Yiming Zhang, "
+            },
+            {
+                "id_str": "1103422383560450048",
+                "indices": [
+                    43,
+                    55
+                ],
+                "name": "Jianfeng Chi",
+                "screen_name": "jianfengchi",
+                "type": "mention",
+                "href": "https://x.com/jianfengchi",
+                "text": "@jianfengchi"
+            },
+            {
+                "indices": [
+                    55,
+                    57
+                ],
+                "type": "text",
+                "text": ", "
+            },
+            {
+                "id_str": "14551614",
+                "indices": [
+                    57,
+                    68
+                ],
+                "name": "Jason Weston",
+                "screen_name": "jaseweston",
+                "type": "mention",
+                "href": "https://x.com/jaseweston",
+                "text": "@jaseweston"
+            },
+            {
+                "indices": [
+                    68,
+                    70
+                ],
+                "type": "text",
+                "text": "  "
+            },
+            {
+                "id_str": "4309304548",
+                "indices": [
+                    70,
+                    83
+                ],
+                "name": "Eric Michael Smith",
+                "screen_name": "ericsmithnyc",
+                "type": "mention",
+                "href": "https://x.com/ericsmithnyc",
+                "text": "@ericsmithnyc"
+            },
+            {
+                "indices": [
+                    83,
+                    96
+                ],
+                "type": "text",
+                "text": "  and others!"
+            }
+        ],
+        "favorite_count": 1,
+        "id_str": "1839162398596542612",
+        "tweetDisplayType": "SelfThread",
+        "in_reply_to_status_id_str": "1839162397225005308",
+        "user": {
+            "id_str": "1178454598023024642",
+            "name": "Zack Ankner",
+            "screen_name": "ZackAnkner",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1797597889138483200/-ROOGVvZ_normal.jpg",
+            "url": "https://x.com/ZackAnkner",
+            "follow_url": "https://x.com/intent/follow?screen_name=ZackAnkner"
+        },
+        "url": "https://x.com/ZackAnkner/status/1839162398596542612",
+        "like_url": "https://x.com/intent/like?tweet_id=1839162398596542612",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1839162398596542612",
+        "replies": []
+    },
+    "1838581999935598758": {
+        "created_at": "Tue Sep 24 14:11:22 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    13,
+                    40
+                ],
+                "type": "text",
+                "text": "Dark mode for this paper 🌚 "
+            },
+            {
+                "display_url": "synthical.com/abs/2406.05946…",
+                "expanded_url": "https://synthical.com/abs/2406.05946?is_dark=true&utm_source=dark_short_face",
+                "indices": [
+                    40,
+                    63
+                ],
+                "url": "https://t.co/BY2aOfb2xH",
+                "type": "url",
+                "href": "https://synthical.com/abs/2406.05946?is_dark=true&utm_source=dark_short_face",
+                "text": "synthical.com/abs/2406.05946…"
+            }
+        ],
+        "favorite_count": 1,
+        "id_str": "1838581999935598758",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1838462507117060309",
+        "user": {
+            "id_str": "1632731262312931329",
+            "name": "Synthical",
+            "screen_name": "synthical_ai",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1669378971211907073/OOnOchbn_normal.jpg",
+            "url": "https://x.com/synthical_ai",
+            "follow_url": "https://x.com/intent/follow?screen_name=synthical_ai"
+        },
+        "url": "https://x.com/synthical_ai/status/1838581999935598758",
+        "like_url": "https://x.com/intent/like?tweet_id=1838581999935598758",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1838581999935598758",
+        "replies": []
+    },
+    "1838474635735867495": {
+        "created_at": "Tue Sep 24 07:04:45 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    13,
+                    101
+                ],
+                "type": "text",
+                "text": "Wondering whether the introduced special token [RESET] could be exploited like [/INST] 😂"
+            }
+        ],
+        "favorite_count": 5,
+        "id_str": "1838474635735867495",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1838462507117060309",
+        "user": {
+            "id_str": "3436397793",
+            "name": "Xiaosen Zheng",
+            "screen_name": "xszheng2020",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1821433116436635648/Q_cniioR_normal.jpg",
+            "url": "https://x.com/xszheng2020",
+            "follow_url": "https://x.com/intent/follow?screen_name=xszheng2020"
+        },
+        "url": "https://x.com/xszheng2020/status/1838474635735867495",
+        "like_url": "https://x.com/intent/like?tweet_id=1838474635735867495",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1838474635735867495",
+        "replies": []
+    },
+    "1839137182399046101": {
+        "created_at": "Thu Sep 26 02:57:28 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    13,
+                    150
+                ],
+                "type": "text",
+                "text": "Another equally interesting and relevant paper:\nRefuse Whenever You Feel Unsafe: Improving Safety in LLMs via Decoupled Refusal Training\n"
+            },
+            {
+                "display_url": "arxiv.org/abs/2407.09121",
+                "expanded_url": "https://arxiv.org/abs/2407.09121",
+                "indices": [
+                    150,
+                    173
+                ],
+                "url": "https://t.co/87Aj0IBUpn",
+                "type": "url",
+                "href": "https://arxiv.org/abs/2407.09121",
+                "text": "arxiv.org/abs/2407.09121"
+            }
+        ],
+        "favorite_count": 2,
+        "id_str": "1839137182399046101",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1838462507117060309",
+        "user": {
+            "id_str": "1442968976884076554",
+            "name": "Zeyu Qin",
+            "screen_name": "ZeyuQin_alan",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1442969265645113355/pTyNygsu_normal.jpg",
+            "url": "https://x.com/ZeyuQin_alan",
+            "follow_url": "https://x.com/intent/follow?screen_name=ZeyuQin_alan"
+        },
+        "url": "https://x.com/ZeyuQin_alan/status/1839137182399046101",
+        "like_url": "https://x.com/intent/like?tweet_id=1839137182399046101",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1839137182399046101",
+        "replies": []
+    },
+    "1838415381624455479": {
+        "created_at": "Tue Sep 24 03:09:17 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    223
+                ],
+                "type": "text",
+                "text": "Recipe 👩‍🍳:\nGiven prompts x,  safe y and unsafe y- responses.\n- Use a safety classifier, choose random unsafe prefixes of y−\n- SFT or DPO: Use prefix(y-)+RESET+y as chosen\n- For DPO use prefix(y)+RESET+y- as rejected\n🧵(2/4)"
+            }
+        ],
+        "favorite_count": 9,
+        "id_str": "1838415381624455479",
+        "tweetDisplayType": "SelfThread",
+        "in_reply_to_status_id_str": "1838415378529112330",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/36YQy7XpnQ",
+                "expanded_url": "https://x.com/jaseweston/status/1838415381624455479/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1838413182009798656",
+                "indices": [
+                    224,
+                    247
+                ],
+                "media_key": "3_1838413182009798656",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1838413182009798656"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/GYNbDHgW8AAvNyg.png",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 590,
+                            "w": 1054,
+                            "x": 914,
+                            "y": 0
+                        },
+                        {
+                            "h": 590,
+                            "w": 590,
+                            "x": 1378,
+                            "y": 0
+                        },
+                        {
+                            "h": 590,
+                            "w": 518,
+                            "x": 1450,
+                            "y": 0
+                        },
+                        {
+                            "h": 590,
+                            "w": 295,
+                            "x": 1573,
+                            "y": 0
+                        },
+                        {
+                            "h": 590,
+                            "w": 1968,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 590,
+                    "width": 1968
+                },
+                "sizes": {
+                    "large": {
+                        "h": 590,
+                        "resize": "fit",
+                        "w": 1968
+                    },
+                    "medium": {
+                        "h": 360,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 204,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/36YQy7XpnQ"
+            }
+        ],
+        "user": {
+            "id_str": "14551614",
+            "name": "Jason Weston",
+            "screen_name": "jaseweston",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1161680026561069061/i-DdZcc1_normal.jpg",
+            "url": "https://x.com/jaseweston",
+            "follow_url": "https://x.com/intent/follow?screen_name=jaseweston"
+        },
+        "url": "https://x.com/jaseweston/status/1838415381624455479",
+        "like_url": "https://x.com/intent/like?tweet_id=1838415381624455479",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1838415381624455479",
+        "replies": [
+            "1838415383335772545"
+        ]
+    },
+    "1838415383335772545": {
+        "created_at": "Tue Sep 24 03:09:18 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    269
+                ],
+                "type": "text",
+                "text": "We observe across both Gemma and Llama models large improvements in safety on 4 benchmarks without hurting helpfulness (MT-Bench scores, last column).\n\nBacktrack SFT+DPO training helps more than SFT. It's important to penalize incorrect RESETs, which DPO can do.\n🧵(3/4)"
+            }
+        ],
+        "favorite_count": 9,
+        "id_str": "1838415383335772545",
+        "tweetDisplayType": "SelfThread",
+        "in_reply_to_status_id_str": "1838415381624455479",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/v3c9TUT4ho",
+                "expanded_url": "https://x.com/jaseweston/status/1838415383335772545/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1838413285290311680",
+                "indices": [
+                    270,
+                    293
+                ],
+                "media_key": "3_1838413285290311680",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1838413285290311680"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/GYNbJIQWgAAZX6x.png",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 882,
+                            "w": 1575,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 882,
+                            "w": 882,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 882,
+                            "w": 774,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 882,
+                            "w": 441,
+                            "x": 23,
+                            "y": 0
+                        },
+                        {
+                            "h": 882,
+                            "w": 1948,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 882,
+                    "width": 1948
+                },
+                "sizes": {
+                    "large": {
+                        "h": 882,
+                        "resize": "fit",
+                        "w": 1948
+                    },
+                    "medium": {
+                        "h": 543,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 308,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/v3c9TUT4ho"
+            }
+        ],
+        "user": {
+            "id_str": "14551614",
+            "name": "Jason Weston",
+            "screen_name": "jaseweston",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1161680026561069061/i-DdZcc1_normal.jpg",
+            "url": "https://x.com/jaseweston",
+            "follow_url": "https://x.com/intent/follow?screen_name=jaseweston"
+        },
+        "url": "https://x.com/jaseweston/status/1838415383335772545",
+        "like_url": "https://x.com/intent/like?tweet_id=1838415383335772545",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1838415383335772545",
+        "replies": [
+            "1838415385449705818"
+        ]
+    },
+    "1838415385449705818": {
+        "created_at": "Tue Sep 24 03:09:18 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    272
+                ],
+                "type": "text",
+                "text": "We also see dramatic improvements across 4 different jailbreaking techniques compared to the baseline, despite the model not being trained to deal with them.\n\nOverall, our backtracking approach gives substantial gains. Thanks for reading -- and stay safe out there!\n🧵(4/4)"
+            }
+        ],
+        "favorite_count": 10,
+        "id_str": "1838415385449705818",
+        "tweetDisplayType": "SelfThread",
+        "in_reply_to_status_id_str": "1838415383335772545",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/Blw9tIduWu",
+                "expanded_url": "https://x.com/jaseweston/status/1838415385449705818/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1838413414902702080",
+                "indices": [
+                    273,
+                    296
+                ],
+                "media_key": "3_1838413414902702080",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1838413414902702080"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/GYNbQrGWoAAJbJE.png",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 608,
+                            "w": 1086,
+                            "x": 494,
+                            "y": 0
+                        },
+                        {
+                            "h": 608,
+                            "w": 608,
+                            "x": 762,
+                            "y": 0
+                        },
+                        {
+                            "h": 608,
+                            "w": 533,
+                            "x": 800,
+                            "y": 0
+                        },
+                        {
+                            "h": 608,
+                            "w": 304,
+                            "x": 914,
+                            "y": 0
+                        },
+                        {
+                            "h": 608,
+                            "w": 1580,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 608,
+                    "width": 1580
+                },
+                "sizes": {
+                    "large": {
+                        "h": 608,
+                        "resize": "fit",
+                        "w": 1580
+                    },
+                    "medium": {
+                        "h": 462,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 262,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/Blw9tIduWu"
+            }
+        ],
+        "user": {
+            "id_str": "14551614",
+            "name": "Jason Weston",
+            "screen_name": "jaseweston",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1161680026561069061/i-DdZcc1_normal.jpg",
+            "url": "https://x.com/jaseweston",
+            "follow_url": "https://x.com/intent/follow?screen_name=jaseweston"
+        },
+        "url": "https://x.com/jaseweston/status/1838415385449705818",
+        "like_url": "https://x.com/intent/like?tweet_id=1838415385449705818",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1838415385449705818",
+        "replies": []
+    },
+    "1838600192662127102": {
+        "created_at": "Tue Sep 24 15:23:40 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    66
+                ],
+                "type": "text",
+                "text": "Does this work for regret of bad reasoning though?"
+            }
+        ],
+        "favorite_count": 1,
+        "id_str": "1838600192662127102",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1838583597948899595",
+        "user": {
+            "id_str": "192201556",
+            "name": "Teortaxes▶️",
+            "screen_name": "teortaxesTex",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1652169745037242368/KRPTShbG_normal.jpg",
+            "url": "https://x.com/teortaxesTex",
+            "follow_url": "https://x.com/intent/follow?screen_name=teortaxesTex"
+        },
+        "url": "https://x.com/teortaxesTex/status/1838600192662127102",
+        "like_url": "https://x.com/intent/like?tweet_id=1838600192662127102",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1838600192662127102",
+        "replies": [
+            "1838602005495099453",
+            "1838601030537195916"
+        ]
+    },
+    "1838602005495099453": {
+        "created_at": "Tue Sep 24 15:30:52 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    14,
+                    85
+                ],
+                "type": "text",
+                "text": "I think this is also an active research direction happening now, e.g., "
+            },
+            {
+                "display_url": "arxiv.org/abs/2409.12917",
+                "expanded_url": "https://arxiv.org/abs/2409.12917",
+                "indices": [
+                    85,
+                    108
+                ],
+                "url": "https://t.co/vMaCnDMUBZ",
+                "type": "url",
+                "href": "https://arxiv.org/abs/2409.12917",
+                "text": "arxiv.org/abs/2409.12917"
+            }
+        ],
+        "favorite_count": 2,
+        "id_str": "1838602005495099453",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1838600192662127102",
+        "user": {
+            "id_str": "1210827897419681792",
+            "name": "Xiangyu Qi",
+            "screen_name": "xiangyuqi_pton",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1714112519433068544/b6g5u2z1_normal.jpg",
+            "url": "https://x.com/xiangyuqi_pton",
+            "follow_url": "https://x.com/intent/follow?screen_name=xiangyuqi_pton"
+        },
+        "url": "https://x.com/xiangyuqi_pton/status/1838602005495099453",
+        "like_url": "https://x.com/intent/like?tweet_id=1838602005495099453",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1838602005495099453",
+        "replies": []
+    },
+    "1838599486702047449": {
+        "created_at": "Tue Sep 24 15:20:51 +0000 2024",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    71
+                ],
+                "type": "text",
+                "text": "Dark mode for this paper for those who read at night 🌚 "
+            },
+            {
+                "display_url": "synthical.com/abs/2406.05946…",
+                "expanded_url": "https://synthical.com/abs/2406.05946?is_dark=true&utm_source=dark_long_face",
+                "indices": [
+                    71,
+                    94
+                ],
+                "url": "https://t.co/RTUec5dryO",
+                "type": "url",
+                "href": "https://synthical.com/abs/2406.05946?is_dark=true&utm_source=dark_long_face",
+                "text": "synthical.com/abs/2406.05946…"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1838599486702047449",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1838583597948899595",
+        "user": {
+            "id_str": "1632731262312931329",
+            "name": "Synthical",
+            "screen_name": "synthical_ai",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1669378971211907073/OOnOchbn_normal.jpg",
+            "url": "https://x.com/synthical_ai",
+            "follow_url": "https://x.com/intent/follow?screen_name=synthical_ai"
+        },
+        "url": "https://x.com/synthical_ai/status/1838599486702047449",
+        "like_url": "https://x.com/intent/like?tweet_id=1838599486702047449",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1838599486702047449",
+        "replies": []
+    },
+    "1838601030537195916": {
+        "created_at": "Tue Sep 24 15:26:59 +0000 2024",
+        "entities": [
+            {
+                "display_url": "x.com/ZeyuanAllenZhu…",
+                "expanded_url": "https://x.com/ZeyuanAllenZhu/status/1829326506398773510",
+                "indices": [
+                    30,
+                    53
+                ],
+                "url": "https://t.co/WKihCiYQPg",
+                "type": "url",
+                "href": "https://x.com/ZeyuanAllenZhu/status/1829326506398773510",
+                "text": "x.com/ZeyuanAllenZhu…"
+            }
+        ],
+        "favorite_count": 2,
+        "id_str": "1838601030537195916",
+        "tweetDisplayType": "Tweet",
+        "quoted_status_id_str": "1829326506398773510",
+        "in_reply_to_status_id_str": "1838600192662127102",
+        "user": {
+            "id_str": "2281005510",
+            "name": "Gary Basin 🍍",
+            "screen_name": "garybasin",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1604153888361385984/LlQ3-jl7_normal.jpg",
+            "url": "https://x.com/garybasin",
+            "follow_url": "https://x.com/intent/follow?screen_name=garybasin"
+        },
+        "url": "https://x.com/garybasin/status/1838601030537195916",
+        "like_url": "https://x.com/intent/like?tweet_id=1838601030537195916",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1838601030537195916",
+        "replies": []
+    }
+}

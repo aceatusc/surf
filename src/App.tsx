@@ -14,8 +14,6 @@ import {
   Navigate,
 } from "react-router-dom";
 
-const ANNOTATION_MODE = false;
-
 const examples = [
   {
     id: "arxiv:2401.13782",
@@ -23,6 +21,15 @@ const examples = [
     title: "Position: AI/ML Influencers Have a Place in the Academic Process",
     postData: "/2401.13782_posts.json",
     locationData: "/2401.13782_highlights.json",
+    annotated: true,
+  },
+  {
+    id: "arxiv:2409.14586",
+    url: "https://arxiv.org/pdf/2409.14586",
+    title: "Backtracking Improves Generation Safety",
+    postData: "/2409.14586_posts.json",
+    locationData: null,
+    annotated: false,
   },
 ];
 
@@ -58,10 +65,11 @@ export function AppContent() {
     if (!paper) return;
     const fetchData = async () => {
       try {
-        const [postRes, locationRes] = await Promise.all([
-          fetch(paper.postData).then((res) => res.json()),
-          fetch(paper.locationData).then((res) => res.json()),
-        ]);
+        const [postRes, locationRes] = await Promise.all(
+          [paper.postData, paper.locationData].map((url) =>
+            url ? fetch(url).then((res) => res.json()) : Promise.resolve({})
+          )
+        );
 
         setPostData(postRes as TPostData);
         setLocationData(locationRes as THighlightData);
@@ -79,18 +87,26 @@ export function AppContent() {
     return <Navigate to="/" replace />;
   }
 
-  setAnnotationMode(ANNOTATION_MODE);
+  setAnnotationMode(!paper.annotated);
 
   const rootPosts = new Set<string>();
-  Object.values(locationData)
-    .flat()
-    .forEach((loc) => {
-      loc.posts.forEach((post) => {
-        postData[post].locations = postData[post].locations || new Set();
-        postData[post].locations.add(loc.id);
-        rootPosts.add(post);
+  if (paper.annotated) {
+    Object.values(locationData)
+      .flat()
+      .forEach((loc) => {
+        loc.posts.forEach((post) => {
+          postData[post].locations = postData[post].locations || new Set();
+          postData[post].locations.add(loc.id);
+          rootPosts.add(post);
+        });
       });
+  } else {
+    Object.values(postData).forEach((post) => {
+      if (post.quoted_tweet || !post.in_reply_to_status_id_str) {
+        rootPosts.add(post.id_str);
+      }
     });
+  }
 
   if (loading) {
     return (

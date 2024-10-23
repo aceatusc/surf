@@ -8,9 +8,9 @@ import {
   BoundingBox,
 } from "../pdf";
 import { getColorForGroup } from "../../context/ColorManager";
-import { TLocation } from "../types";
+import { THighlight } from "../types";
 
-export default function Highlight({ data }: { data: TLocation[] }) {
+export default function Highlight({ data }: { data: THighlight[] }) {
   const { setHighlightedLocation } = useContext(HighlightContext);
   const { pageDimensions } = useContext(DocumentContext);
   const { rotation, scale } = useContext(TransformContext);

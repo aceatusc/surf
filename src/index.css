@@ -23,6 +23,47 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (min-width: 960px) {
+  /* Add your styles here */
+  html {
+    font-size: 64%; /* Example: Increase font size */
+  }
+}
+
+@media (min-width: 1200px) {
+  /* Add your styles here */
+  html {
+    font-size: 68%; /* Example: Increase font size */
+  }
+}
+
+@media (min-width: 1440px) {
+  /* Add your styles here */
+  html {
+    font-size: 72%; /* Example: Increase font size */
+  }
+}
+
+@media (min-width: 1600px) {
+  /* Add your styles here */
+  html {
+    font-size: 75%; /* Example: Increase font size */
+  }
+}
+
+@media (min-width: 1920px) {
+  /* Add your styles here */
+  html {
+    font-size: 80%; /* Example: Increase font size */
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    font-size: 100%;
+  }
+}
+
 /*
   Typographic tweaks!
   3. Add accessible line-height

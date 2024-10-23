@@ -1,13 +1,13 @@
 import { EnrichedTweet } from "../post/src";
 
-export type TLocation = {
+export type THighlight = {
   bbox: number[];
   posts: string[];
   id: string;
 };
 
-export type TlocationData = {
-  [key: string]: TLocation[];
+export type THighlightData = {
+  [key: string]: THighlight[];
 };
 
 export type TPost = EnrichedTweet & {

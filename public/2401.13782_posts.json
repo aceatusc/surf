@@ -31,7 +31,8 @@
             "1751422795593179595",
             "1751414624619286604",
             "1751424874713919530"
-        ]
+        ],
+        "tweet_type": "critic"
     },
     "1751002910819795261": {
         "created_at": "Fri Jan 26 22:03:20 +0000 2024",
@@ -60,7 +61,8 @@
         "url": "https://x.com/ElanRosenfeld/status/1751002910819795261",
         "like_url": "https://x.com/intent/like?tweet_id=1751002910819795261",
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1751002910819795261",
-        "replies": []
+        "replies": [],
+        "tweet_type": "opinion"
     },
     "1803466135041708307": {
         "created_at": "Wed Jun 19 16:33:28 +0000 2024",
@@ -164,7 +166,8 @@
             "1751289021869781353",
             "1751429017809670524",
             "1751349091618226224"
-        ]
+        ],
+        "tweet_type": "opinion"
     },
     "1750783025011450254": {
         "created_at": "Fri Jan 26 07:29:35 +0000 2024",
@@ -200,7 +203,8 @@
             "1750852576818401479",
             "1752091796748869701",
             "1751084825744732479"
-        ]
+        ],
+        "tweet_type": "opinion"
     },
     "1752425165793759366": {
         "created_at": "Tue Jan 30 20:14:52 +0000 2024",
@@ -427,28 +431,6 @@
                     "height": 1360,
                     "width": 1922
                 },
-                "sizes": {
-                    "large": {
-                        "h": 1360,
-                        "resize": "fit",
-                        "w": 1922
-                    },
-                    "medium": {
-                        "h": 849,
-                        "resize": "fit",
-                        "w": 1200
-                    },
-                    "small": {
-                        "h": 481,
-                        "resize": "fit",
-                        "w": 680
-                    },
-                    "thumb": {
-                        "h": 150,
-                        "resize": "crop",
-                        "w": 150
-                    }
-                },
                 "type": "photo",
                 "url": "https://t.co/GjYXis6Fsc"
             }
@@ -464,7 +446,8 @@
         "url": "https://x.com/CatalinaGoanta/status/1752425165793759366",
         "like_url": "https://x.com/intent/like?tweet_id=1752425165793759366",
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1752425165793759366",
-        "replies": []
+        "replies": [],
+        "tweet_type": "opinion"
     },
     "1750805744255951085": {
         "created_at": "Fri Jan 26 08:59:52 +0000 2024",
@@ -684,7 +667,8 @@
             "1750859032481427652",
             "1751083146127245489",
             "1750974418397065614"
-        ]
+        ],
+        "tweet_type": "opinion"
     },
     "1751029578414666035": {
         "created_at": "Fri Jan 26 23:49:18 +0000 2024",
@@ -976,7 +960,8 @@
         "url": "https://x.com/fly51fly/status/1751029578414666035",
         "like_url": "https://x.com/intent/like?tweet_id=1751029578414666035",
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1751029578414666035",
-        "replies": []
+        "replies": [],
+        "tweet_type": "tl;dr"
     },
     "1750938896316399800": {
         "created_at": "Fri Jan 26 17:48:58 +0000 2024",
@@ -1584,7 +1569,8 @@
             "1751277046938968137",
             "1751039007721709935",
             "1751083556258959597"
-        ]
+        ],
+        "tweet_type": "author"
     },
     "1751424913754259829": {
         "created_at": "Sun Jan 28 02:00:13 +0000 2024",
@@ -8416,7 +8402,8 @@
             "1750769849155092927",
             "1750850092125294990",
             "1751251887003693321"
-        ]
+        ],
+        "tweet_type": "tl;dr"
     },
     "1750746124531454277": {
         "created_at": "Fri Jan 26 05:02:58 +0000 2024",

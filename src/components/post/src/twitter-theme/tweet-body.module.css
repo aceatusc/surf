@@ -7,8 +7,8 @@
   white-space: pre-wrap;
 }
 
-.root[data-in-thread=true] {
-  font-size: calc(0.86 * var(--tweet-body-font-size));
-  line-height: calc(0.86 * var(--tweet-body-line-height));
+.root[data-in-thread="true"] {
+  font-size: calc(0.92 * var(--tweet-body-font-size));
+  line-height: calc(0.92 * var(--tweet-body-line-height));
   margin: calc(0.8 * var(--tweet-body-margin));
 }

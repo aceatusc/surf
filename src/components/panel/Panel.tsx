@@ -36,7 +36,6 @@ export const EmbedPost = ({ getQuote, getReplies, ...post }: TPostEmbed) => {
     <Embed
       tweet={post}
       id={`post-${post.id_str}`}
-      className="relative z-10"
       onClickReply={post.onClickReply}
     >
       {replies &&
@@ -54,8 +53,8 @@ export const EmbedPost = ({ getQuote, getReplies, ...post }: TPostEmbed) => {
   );
 };
 
-const TabTypes = ["all", "author", "tl;dr", "question", "critic", "opinion"];
-const FilterTypes = ["location", "time", "popularity"];
+const TabTypes = ["all", "author", "tl;dr", "q&a", "critic", "opinion"];
+const FilterTypes = ["time", "location", "popularity"];
 
 export default function Panel({
   data,
@@ -68,7 +67,7 @@ export default function Panel({
     useContext(HighlightContext);
 
   const [filterType, setFilterType] = useState("all");
-  const [sortBy, setSortBy] = useState("location");
+  const [sortBy, setSortBy] = useState("time");
 
   const getReplies = (id: string) => {
     return data[id]?.replies?.map((replyId) => data[replyId]).filter(Boolean);
@@ -209,7 +208,7 @@ export default function Panel({
               getReplies={getReplies}
               getQuote={getQuote}
             />
-            <div className="absolute top-0 left-0 flex flex-col space-y-3 z-0 h-full pt-8 pb-8">
+            <div className="absolute top-0 left-0 flex flex-col space-y-3 z-[-1] h-full pt-8 pb-8">
               {locations &&
                 Array.from(locations)?.map((loc) => (
                   <div

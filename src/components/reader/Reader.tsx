@@ -10,16 +10,20 @@ import {
 } from "../pdf";
 import { useContext, useEffect } from "react";
 import Highlight from "./Highlight";
-import { TlocationData } from "../types";
+import { THighlightData } from "../types";
 
-export default function Reader({ data }: { data: TlocationData }) {
+export default function Reader({
+  pdfUrl,
+  highlightData,
+}: {
+  pdfUrl: string;
+  highlightData: THighlightData;
+}) {
   const { numPages, pageDimensions } = useContext(DocumentContext);
   const { setScale } = useContext(TransformContext);
   const { setScrollRoot, resetScrollObservers, setScrollThreshold } =
     useContext(ScrollContext);
   const { isLoading } = useContext(UiContext);
-
-  const samplePdfUrl = "/sample1.pdf";
 
   useEffect(() => {
     if (isLoading) return;
@@ -43,7 +47,7 @@ export default function Reader({ data }: { data: TlocationData }) {
   return (
     <DocumentWrapper
       className="w-fit my-0 mx-auto"
-      file={samplePdfUrl}
+      file={pdfUrl}
       renderType={RENDER_TYPE.SINGLE_CANVAS}
     >
       {Array.from({ length: numPages }).map((_, i) => (
@@ -52,7 +56,9 @@ export default function Reader({ data }: { data: TlocationData }) {
           pageIndex={i}
           renderType={RENDER_TYPE.SINGLE_CANVAS}
         >
-          <Overlay>{data[i] && <Highlight data={data[i]} />}</Overlay>
+          <Overlay>
+            {highlightData[i] && <Highlight data={highlightData[i]} />}
+          </Overlay>
         </PageWrapper>
       ))}
     </DocumentWrapper>

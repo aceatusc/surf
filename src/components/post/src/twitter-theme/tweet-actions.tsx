@@ -32,7 +32,7 @@ export const TweetActions = ({ tweet, onClickReply }: { tweet: EnrichedTweet, on
             </g>
           </svg>
         </div>
-        <span onClick={onClickReply} className={`${s.replyText} cursor-pointer`} data-pid={tweet.id_str} data-name={tweet.user.screen_name}>{tweet.conversation_count} Comment{tweet.conversation_count > 1 && "s"}</span>
+        <span onClick={onClickReply} className={`${s.replyText} cursor-pointer`} data-pid={tweet.id_str} data-name={tweet.user.screen_name}>{tweet.conversation_count} Comment{tweet.conversation_count && tweet.conversation_count > 1 && "s"}</span>
       </div>
       <TweetInfo
         tweet={tweet}

@@ -1,19 +1,23 @@
-import classnames from 'classnames';
-import * as React from 'react';
+import classnames from "classnames";
+import * as React from "react";
 
-import { PageRenderContext } from '../../context/PageRenderContext';
-import { ScrollContext } from '../../context/ScrollContext';
-import { getMaxVisibleElement } from '../../utils/MaxVisibleElement';
-import { Nullable } from '../types/utils';
+import { PageRenderContext } from "../../context/PageRenderContext";
+import { ScrollContext } from "../../context/ScrollContext";
+import { getMaxVisibleElement } from "../../utils/MaxVisibleElement";
+import { Nullable } from "../types/utils";
 
 type Props = {
   pageNumber: number;
 };
 
-export const Thumbnail: React.FunctionComponent<Props> = ({ pageNumber }: Props) => {
+export const Thumbnail: React.FunctionComponent<Props> = ({
+  pageNumber,
+}: Props) => {
   const { getObjectURLForPage } = React.useContext(PageRenderContext);
-  const { isPageVisible, scrollToPage, visiblePageRatios } = React.useContext(ScrollContext);
-  const [maxVisiblePageNumber, setMaxVisiblePageNumber] = React.useState<Nullable<string>>(null);
+  const { isPageVisible, scrollToPage, visiblePageRatios } =
+    React.useContext(ScrollContext);
+  const [maxVisiblePageNumber, setMaxVisiblePageNumber] =
+    React.useState<Nullable<string>>(null);
   const objectURL = getObjectURLForPage({ pageNumber });
 
   React.useEffect(() => {
@@ -31,7 +35,7 @@ export const Thumbnail: React.FunctionComponent<Props> = ({ pageNumber }: Props)
     isPageVisible({ pageNumber });
 
   const onClick = React.useCallback(
-    event => {
+    (event: React.MouseEvent) => {
       event.preventDefault();
       scrollToPage({ pageNumber });
     },
@@ -44,13 +48,16 @@ export const Thumbnail: React.FunctionComponent<Props> = ({ pageNumber }: Props)
       href={`#${pageNumber}`}
       onClick={onClick}
       className={classnames(
-        'pdf-reader__thumbnail',
-        { 'pdf-reader__thumbnail--no-image': !objectURL },
-        { 'pdf-reader__thumbnail--is-visible': isThumbnailVisible }
+        "pdf-reader__thumbnail",
+        { "pdf-reader__thumbnail--no-image": !objectURL },
+        { "pdf-reader__thumbnail--is-visible": isThumbnailVisible }
       )}
       data-page-number={pageNumber}
-      data-test-id="thumbnail-link">
-      {!!objectURL && <img className="pdf-reader__thumbnail-image" src={objectURL} />}
+      data-test-id="thumbnail-link"
+    >
+      {!!objectURL && (
+        <img className="pdf-reader__thumbnail-image" src={objectURL} />
+      )}
     </a>
   );
 };

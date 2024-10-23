@@ -5,7 +5,7 @@ import {
   // computePageStyle,
   DocumentContext,
   TransformContext,
-  BoundingBox,
+  // BoundingBox,
 } from "../pdf";
 import { getColorForGroup } from "../../context/ColorManager";
 import { THighlight } from "../types";
@@ -46,7 +46,7 @@ export default function Highlight({ data }: { data: THighlight[] }) {
         const color = getColorForGroup(id);
         return (
           <div
-            key={i}
+            key={i + page}
             onClick={handleClick}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}

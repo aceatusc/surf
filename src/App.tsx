@@ -30,7 +30,7 @@ function SelectExample() {
   const navigate = useNavigate();
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-2xl font-bold mb-4">Select an Example</h1>
+      <h1 className="text-2xl font-bold mb-4">Select a Sample Paper</h1>
       <ul className="space-y-2">
         {examples.map((example) => (
           <li

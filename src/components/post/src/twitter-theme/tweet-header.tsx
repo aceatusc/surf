@@ -93,7 +93,7 @@ export const TweetHeader = ({ tweet, components }: Props) => {
           <div
             className={`mr-1.5 ${is_reply ? "text-[1.2rem]" : "text-[1.6rem]"}`}
           >
-            {ptypeConfig[tweet_type].icon}
+            {ptypeConfig[tweet_type as keyof typeof ptypeConfig].icon}
           </div>
           <span className={is_reply ? "text-[1rem]" : "text-lg"}>
             {tweet_type}

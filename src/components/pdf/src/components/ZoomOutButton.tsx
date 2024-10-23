@@ -11,7 +11,7 @@ export type Props = {
 
 const MIN_ZOOM_OUT_SCALE = 20;
 
-export const ZoomOutButton: React.FunctionComponent = ({
+export const ZoomOutButton: React.FunctionComponent<Props> = ({
   className,
   children,
   onZoom,
@@ -21,7 +21,7 @@ export const ZoomOutButton: React.FunctionComponent = ({
     React.useContext(TransformContext);
 
   const handleZoomOut = React.useCallback(
-    (event): void => {
+    (event: React.MouseEvent): void => {
       event.preventDefault();
       event.stopPropagation();
       const newScaleValue = scale - zoomIncrementValue;

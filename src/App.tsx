@@ -26,7 +26,7 @@ const examples = [
   {
     id: "arxiv:2409.14586",
     url: "https://arxiv.org/pdf/2409.14586",
-    title: "Backtracking Improves Generation Safety",
+    title: "[For Annotaters] Backtracking Improves Generation Safety",
     postData: "/2409.14586_posts.json",
     locationData: null,
     annotated: false,
@@ -63,6 +63,8 @@ export function AppContent() {
 
   useEffect(() => {
     if (!paper) return;
+    document.title = `${paper.title} - SURF Reader`;
+
     const fetchData = async () => {
       try {
         const [postRes, locationRes] = await Promise.all(

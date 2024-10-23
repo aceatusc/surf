@@ -208,7 +208,7 @@ export default function Panel({
               getReplies={getReplies}
               getQuote={getQuote}
             />
-            <div className="absolute top-0 left-0 flex flex-col space-y-3 z-[-1] h-full pt-8 pb-8">
+            <div className="absolute top-0 left-0 flex flex-col space-y-3 h-full pt-8 pb-8">
               {locations &&
                 Array.from(locations)?.map((loc) => (
                   <div
@@ -219,7 +219,7 @@ export default function Panel({
                     }}
                     id={`post_${res.id_str};loc_${loc}`}
                     onClick={jumpToLocation}
-                    className={`hover:-translate-x-3 transition-transform duration-200 w-12 cursor-pointer max-h-40 rounded-tl-2xl rounded-bl-2xl`}
+                    className={`hover:-translate-x-3 hover:w-7 w-4 transition-translate transition-width duration-200 cursor-pointer max-h-40 rounded-tl-2xl rounded-bl-2xl`}
                   />
                 ))}
             </div>

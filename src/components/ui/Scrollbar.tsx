@@ -20,9 +20,5 @@ export function getScrollbarWidth() {
   scrollbarWidth = container.offsetWidth - inner.offsetWidth;
   document.body.removeChild(container);
 
-  if (scrollbarWidth === 0) {
-    scrollbarWidth = 16;
-  }
-
   return scrollbarWidth;
 }

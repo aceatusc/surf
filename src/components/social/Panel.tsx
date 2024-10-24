@@ -124,7 +124,7 @@ export default function Social({
         style={{ direction: "rtl" }}
         className="pl-6"
       >
-        <HideScroll direction="rtl" paddingRight={10} paddingLeft={16}>
+        <HideScroll direction="rtl" paddingRight={10}>
           <AnimatePresence>
             {postToDisplay.map(({ locations, ...res }) => (
               <motion.div

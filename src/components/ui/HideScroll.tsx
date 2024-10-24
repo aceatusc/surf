@@ -43,8 +43,10 @@ export default function HideScroll({
         style={{
           top: `${paddingY || 0}px`,
           bottom: `${paddingY || 0}px`,
-          left: direction === "rtl" ? `-${sbWidth}px` : undefined,
-          right: direction === "ltr" ? `-${sbWidth}px` : undefined,
+          left: direction === "rtl" ? `-${sbWidth || 16}px` : undefined,
+          right: direction === "ltr" ? `-${sbWidth || 16}px` : undefined,
+          paddingLeft: direction === "rtl" && !sbWidth ? "16px" : undefined,
+          paddingRight: direction === "ltr" && !sbWidth ? "16px" : undefined,
         }}
       >
         <div

@@ -133,14 +133,14 @@ export function AppContent() {
 
   return (
     <SidebarProvider>
-      <Social data={postData} rootPosts={Array.from(rootPosts)} />
-      <SidebarInset>
-        <main>
-          <SidebarTrigger className="h-10 w-10 [&_svg]:size-6 m-1.5 [&_svg]:text-slate-600 fixed z-50" />
-          <Reader pdfUrl={paper.url} highlightData={locationData} />
+      <SidebarInset className="h-[100vh] overflow-hidden relative">
+        <Reader pdfUrl={paper.url} highlightData={locationData} />
+        <div className="absolute w-full z-50">
+          <SidebarTrigger className=" absolute right-0 top-0 w-10 h-10 [&_svg]:size-6 [&_svg]:text-zinc-600 my-2 mx-1 rounded-lg" />
           <ZoomControl />
-        </main>
+        </div>
       </SidebarInset>
+      <Social data={postData} rootPosts={Array.from(rootPosts)} />
     </SidebarProvider>
   );
 }

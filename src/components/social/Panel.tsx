@@ -77,7 +77,7 @@ export default function Social({
   };
 
   return (
-    <Sidebar variant="sidebar" className="p-0 z-50">
+    <Sidebar variant="sidebar" className="p-0 z-50" side="right">
       <SidebarHeader className="flex items-center mt-3 mb-1 flex-row px-4">
         <Tabs
           defaultValue="all"
@@ -151,23 +151,18 @@ export default function Social({
           </svg>
         </Badge>
       )}
-      <SidebarContent
-        data-theme="light"
-        style={{ direction: "rtl" }}
-        className="pl-6"
-      >
-        <HideScroll direction="rtl" paddingRight={10}>
+      <SidebarContent data-theme="light">
+        <HideScroll paddingLeft={12} paddingRight={10}>
           <AnimatePresence>
             {postToDisplay.map(({ locations, ...res }) => (
               <motion.div
                 key={res.id_str}
-                className="relative pr-5"
+                className="relative pl-4"
                 layout
                 initial={{ opacity: 0, x: 64 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 64 }}
                 transition={{ duration: 0.2, type: "just", ease: "easeOut" }}
-                style={{ direction: "ltr" }}
               >
                 <EmbedPost
                   key={res.id_str}
@@ -175,7 +170,7 @@ export default function Social({
                   getReplies={getReplies}
                   getQuote={getQuote}
                 />
-                <div className="absolute top-0 left-[calc(100%-1.25rem)] flex flex-col space-y-3 h-full py-8">
+                <div className="absolute top-0 left-0 flex flex-col space-y-3 h-full py-8">
                   {locations &&
                     Array.from(locations)?.map((loc) => (
                       <div
@@ -186,7 +181,7 @@ export default function Social({
                         }}
                         id={`post_${res.id_str};loc_${loc}`}
                         onClick={jumpToLocation}
-                        className={`hover:w-7 w-4 transition-translate transition-width duration-200 cursor-pointer max-h-40 rounded-r-2xl`}
+                        className={`hover:-translate-x-3 hover:w-7 w-4 transition-translate transition-width duration-200 cursor-pointer max-h-40 rounded-l-2xl`}
                       />
                     ))}
                 </div>

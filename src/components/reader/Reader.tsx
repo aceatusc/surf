@@ -11,6 +11,7 @@ import {
 import { useContext, useEffect } from "react";
 import Highlight from "./Highlight";
 import { THighlightData } from "../types";
+import { useSidebar } from "../ui/sidebar";
 
 export default function Reader({
   pdfUrl,
@@ -24,6 +25,8 @@ export default function Reader({
   const { setScrollRoot, resetScrollObservers, setScrollThreshold } =
     useContext(ScrollContext);
   const { isLoading } = useContext(UiContext);
+
+  const { open } = useSidebar();
 
   useEffect(() => {
     if (isLoading) return;
@@ -39,7 +42,7 @@ export default function Reader({
       const newWidth =
         (window.innerWidth < 768
           ? window.innerWidth
-          : Math.min(window.innerWidth - 420, 0.64 * window.innerWidth)) - 48;
+          : Math.min(window.innerWidth - 420, 0.7 * window.innerWidth)) - 48;
       setScale(Math.floor((newWidth / pageDimensions.width) * 10) / 10);
     };
     handleResize();
@@ -48,22 +51,27 @@ export default function Reader({
   }, [pageDimensions]);
 
   return (
-    <DocumentWrapper
-      className="w-fit my-0 mx-auto"
-      file={pdfUrl}
-      renderType={RENDER_TYPE.SINGLE_CANVAS}
+    <div
+      style={{ width: open ? "calc(100vw - max(42rem, 30vw))" : "100%" }}
+      className="transition-all h-full overflow-auto"
     >
-      {Array.from({ length: numPages }).map((_, i) => (
-        <PageWrapper
-          key={i}
-          pageIndex={i}
-          renderType={RENDER_TYPE.SINGLE_CANVAS}
-        >
-          <Overlay>
-            {highlightData[i] && <Highlight data={highlightData[i]} />}
-          </Overlay>
-        </PageWrapper>
-      ))}
-    </DocumentWrapper>
+      <DocumentWrapper
+        className="w-fit my-0 mx-auto"
+        file={pdfUrl}
+        renderType={RENDER_TYPE.SINGLE_CANVAS}
+      >
+        {Array.from({ length: numPages }).map((_, i) => (
+          <PageWrapper
+            key={i}
+            pageIndex={i}
+            renderType={RENDER_TYPE.SINGLE_CANVAS}
+          >
+            <Overlay>
+              {highlightData[i] && <Highlight data={highlightData[i]} />}
+            </Overlay>
+          </PageWrapper>
+        ))}
+      </DocumentWrapper>
+    </div>
   );
 }

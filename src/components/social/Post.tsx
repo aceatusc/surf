@@ -19,7 +19,7 @@ export const EmbedPost = ({ getQuote, getReplies, ...post }: TPostEmbed) => {
       tweet={post}
       id={`post-${post.id_str}`}
       onClickReply={post.onClickReply}
-      className="my-2"
+      className="mt-2 mb-4"
     >
       {replies &&
         replies.length > 0 &&

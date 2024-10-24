@@ -4,17 +4,21 @@ import { getScrollbarWidth, scrollbarWidth } from "./Scrollbar";
 type Props = {
   children: React.ReactNode;
   className?: string;
-  paddingX?: number;
+  paddingLeft?: number;
+  paddingRight?: number;
   paddingY?: number;
   scrollRef?: React.RefObject<HTMLDivElement>;
+  direction?: "ltr" | "rtl";
 };
 
 export default function HideScroll({
   children,
   className,
-  paddingX,
+  paddingLeft,
+  paddingRight,
   paddingY,
   scrollRef,
+  direction = "ltr",
   ...props
 }: Props) {
   const [sbWidth, setSbWidth] = useState<number>(0);
@@ -37,14 +41,15 @@ export default function HideScroll({
         style={{
           top: `${paddingY || 0}px`,
           bottom: `${paddingY || 0}px`,
-          right: `-${sbWidth}px`,
+          left: direction === "rtl" ? `-${sbWidth}px` : undefined,
+          right: direction === "ltr" ? `-${sbWidth}px` : undefined,
         }}
       >
         <div
           {...props}
           style={{
-            paddingLeft: `${paddingX || 0}px`,
-            paddingRight: `${paddingX || 0}px`,
+            paddingLeft: `${paddingLeft || 0}px`,
+            paddingRight: `${paddingRight || 0}px`,
             overflow: "hidden",
             height: "fit-content",
           }}

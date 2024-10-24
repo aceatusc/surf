@@ -1,8 +1,6 @@
 import Reader from "./components/reader/Reader";
-import Panel from "./components/panel/Panel";
 import ZoomControl from "./components/reader/ZoomControl";
 import { TPostData, THighlightData } from "./components/types";
-import { Fragment } from "react/jsx-runtime";
 import { useContext, useEffect, useState } from "react";
 import { DevContext } from "./context/DevContext";
 import {
@@ -13,6 +11,12 @@ import {
   useParams,
   Navigate,
 } from "react-router-dom";
+import {
+  SidebarInset,
+  SidebarProvider,
+  SidebarTrigger,
+} from "./components/ui/sidebar";
+import Social from "./components/social/Panel";
 
 const examples = [
   {
@@ -128,14 +132,20 @@ export function AppContent() {
   }
 
   return (
-    <Fragment>
-      {/* <Note /> */}
-      <main className="w-[min(60%,calc(100%-42rem))] flex flex-row">
+    <SidebarProvider>
+      <Social data={postData} rootPosts={Array.from(rootPosts)} />
+      <SidebarInset>
+        <main>
+          <SidebarTrigger className="h-10 w-10 [&_svg]:size-6 m-1.5" />
+          <Reader pdfUrl={paper.url} highlightData={locationData} />
+          <ZoomControl />
+        </main>
+      </SidebarInset>
+      {/* <main className="w-[min(60%,calc(100%-42rem))] flex flex-row">
         <Reader pdfUrl={paper.url} highlightData={locationData} />
         <ZoomControl />
-      </main>
-      <Panel data={postData} rootPosts={Array.from(rootPosts)} />
-    </Fragment>
+      </main> */}
+    </SidebarProvider>
   );
 }
 

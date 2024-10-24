@@ -114,7 +114,7 @@ export default function Panel({
       data-theme="light"
       paddingX={16}
       paddingY={4}
-      className="w-2/5 min-w-[42rem] h-full bg-zinc-50 bg-opacity-85 backdrop-blur-3xl fixed z-40 top-0 right-0 rounded-tl-3xl rounded-bl-3xl shadow-2xl"
+      className="w-2/5 min-w-[42rem] h-full bg-zinc-50 bg-opacity-85 backdrop-blur-3xl fixed z-40 top-0 left-0 rounded-tl-3xl rounded-bl-3xl shadow-2xl"
     >
       <div className="w-full flex items-center mt-4 h-11">
         <Tabs

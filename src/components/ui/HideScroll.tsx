@@ -29,8 +29,6 @@ export default function HideScroll({
     );
   }, []);
 
-  console.log(sbWidth);
-
   return (
     <div
       className={`overflow-hidden overscroll-none ${

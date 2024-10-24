@@ -18,6 +18,8 @@ import { HighlightContext } from "@/context/HighlightContext";
 import { EmbedPost } from "./Post";
 import { getColorForGroup } from "@/context/ColorManager";
 import HideScroll from "../ui/HideScroll";
+import { getStylesForLocation } from "../ui/Utils";
+import { Badge } from "../ui/badge";
 
 const TabTypes = ["all", "author", "tl;dr", "q&a", "critic", "opinion"];
 const FilterTypes = ["time", "location", "popularity"];
@@ -29,7 +31,8 @@ export default function Social({
   data: TPostData;
   rootPosts: string[];
 }) {
-  const { highlightedLocation } = useContext(HighlightContext);
+  const { highlightedLocation, setHighlightedLocation } =
+    useContext(HighlightContext);
   const [filterType, setFilterType] = useState("all");
   const [sortBy, setSortBy] = useState("time");
 
@@ -78,7 +81,7 @@ export default function Social({
       <SidebarHeader className="flex items-center mt-3 mb-1 flex-row px-4">
         <Tabs
           defaultValue="all"
-          className="flex-grow mr-3"
+          className="flex-grow mr-2"
           onValueChange={setFilterType}
         >
           <TabsList className="grid w-full grid-cols-6 h-full bg-zinc-200 rounded-2xl">
@@ -119,6 +122,35 @@ export default function Social({
           </DropdownMenuContent>
         </DropdownMenu>
       </SidebarHeader>
+      {highlightedLocation !== null && (
+        <Badge
+          style={getStylesForLocation(highlightedLocation)}
+          className="mt-1 mb-2 mx-6 text-md rounded-full py-1 pl-4 pr-2 cursor-pointer w-fit"
+          onClick={() => setHighlightedLocation(null)}
+        >
+          🔍 Showing Only Related Posts
+          <svg
+            className="ml-1"
+            width="1.4rem"
+            height="1.4rem"
+            viewBox="0 0 24 24"
+            fill="#fafafa"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z"
+              stroke="#27272a"
+              strokeWidth="2"
+            />
+            <path
+              d="M9 9L15 15M15 9L9 15"
+              stroke="#27272a"
+              strokeWidth="2"
+              strokeLinecap="round"
+            />
+          </svg>
+        </Badge>
+      )}
       <SidebarContent
         data-theme="light"
         style={{ direction: "rtl" }}

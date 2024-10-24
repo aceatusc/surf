@@ -136,7 +136,7 @@ export function AppContent() {
       <Social data={postData} rootPosts={Array.from(rootPosts)} />
       <SidebarInset>
         <main>
-          <SidebarTrigger className="h-10 w-10 [&_svg]:size-6 m-1.5 [&_svg]:text-slate-600" />
+          <SidebarTrigger className="h-10 w-10 [&_svg]:size-6 m-1.5 [&_svg]:text-slate-600 fixed z-50" />
           <Reader pdfUrl={paper.url} highlightData={locationData} />
           <ZoomControl />
         </main>

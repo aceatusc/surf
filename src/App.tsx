@@ -44,6 +44,14 @@ const examples = [
     locationData: null,
     annotated: false,
   },
+  {
+    id: "arxiv:2310.06816",
+    url: "https://arxiv.org/pdf/2310.06816",
+    title: "[For Annotaters] Text Embeddings Reveal (Almost) As Much As Text",
+    postData: "/2310.06816_posts.json",
+    locationData: null,
+    annotated: false,
+  },
 ];
 
 function SelectExample() {

@@ -25,7 +25,6 @@ export default function Reader({
   const { setScrollRoot, resetScrollObservers, setScrollThreshold } =
     useContext(ScrollContext);
   const { isLoading } = useContext(UiContext);
-
   const { open } = useSidebar();
 
   useEffect(() => {

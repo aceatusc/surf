@@ -31,6 +31,15 @@ const examples = [
     locationData: null,
     annotated: false,
   },
+  {
+    id: "arxiv:2309.17453",
+    url: "https://arxiv.org/pdf/2309.17453",
+    title:
+      "[For Annotaters] Efficient Streaming Language Models with Attention Sinks",
+    postData: "/2309.17453_posts.json",
+    locationData: null,
+    annotated: false,
+  },
 ];
 
 function SelectExample() {

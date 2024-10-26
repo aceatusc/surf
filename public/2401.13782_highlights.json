@@ -1,168 +1,316 @@
-{
-    "0": [
-        {
-            "id": "77f3bbb6-9041-11ef-811b-00155d35dd2c",
-            "posts": [
-                "1751002910819795261",
-                "1752425165793759366"
-            ],
-            "bbox": [
-                1,
-                99.86666666666667,
-                278.9866666666667,
-                261.82666666666665,
-                346.2666666666667
-            ]
+[
+    {
+        "content": {
+            "text": "As the number of accepted papers at AI and ML conferences reaches into the thousands, it has become unclear how researchers access and read research publications. In this paper, we investigate the role of social media influencers in enhancing the visibility of machine learning research, particularly the citation counts of papers they share. We have compiled a comprehensive dataset of over 8,000 papers, spanning tweets from December 2018 to October 2023, alongside controls precisely matched by 9 key covariates. Our statistical and causal inference analysis reveals a significant increase in citations for papers endorsed by these influencers, with median citation counts 2-3 times higher than those of the control group. Additionally, the study delves into the geographic, gender, and institutional diversity of highlighted authors. Given these findings, we advocate for a responsible approach to curation, encouraging influencers to uphold the journalistic standard that includes showcasing diverse research topics, authors, and institutions."
         },
-        {
-            "id": "77f3bc56-9041-11ef-811b-00155d35dd2c",
-            "posts": [
-                "1752425165793759366",
-                "1750777835529072648",
-                "1751029578414666035",
-                "1751023987206103244",
-                "1750732070014337101"
+        "position": {
+            "rects": [
+                {
+                    "x1": 74.9,
+                    "y1": 209.24,
+                    "x2": 271.27,
+                    "y2": 468.94,
+                    "width": 612.0,
+                    "height": 792.0,
+                    "pageNumber": 1
+                }
             ],
-            "bbox": [
-                1,
-                227.58666666666664,
-                121.36,
-                340.68,
-                41.120000000000005
-            ]
+            "boundingRect": {
+                "x1": 74.9,
+                "y1": 209.24,
+                "x2": 271.27,
+                "y2": 468.94,
+                "width": 612.0,
+                "height": 792.0,
+                "pageNumber": 1
+            }
         },
-        {
-            "id": "77f3bc74-9041-11ef-811b-00155d35dd2c",
-            "posts": [
-                "1751298202777555438",
-                "1751279042375057724"
-            ],
-            "bbox": [
-                1,
-                409.44,
-                801.3066666666667,
-                314.6933333333334,
-                154.98666666666668
-            ]
-        }
-    ],
-    "1": [
-        {
-            "id": "77f3bc92-9041-11ef-811b-00155d35dd2c",
-            "posts": [
-                "1751298202777555438"
-            ],
-            "bbox": [
-                2,
-                409.29333333333335,
-                649.8666666666667,
-                314.82666666666665,
-                170.9333333333334
-            ]
-        }
-    ],
-    "2": [
-        {
-            "id": "77f3bcce-9041-11ef-811b-00155d35dd2c",
-            "posts": [
-                "1751298202777555438"
-            ],
-            "bbox": [
-                3,
-                409.92,
-                498.68,
-                312.2266666666667,
-                123.10666666666664
-            ]
-        }
-    ],
-    "4": [
-        {
-            "id": "77f3bcf6-9041-11ef-811b-00155d35dd2c",
-            "posts": [
-                "1751298202777555438"
-            ],
-            "bbox": [
-                5,
-                73.44,
-                589.3066666666667,
-                314.68000000000006,
-                91.7466666666666
-            ]
-        }
-    ],
-    "7": [
-        {
-            "id": "77f3bd0a-9041-11ef-811b-00155d35dd2c",
-            "posts": [
-                "1751279042375057724",
-                "1750783025011450254"
-            ],
-            "bbox": [
-                8,
-                409.29333333333335,
-                579.24,
-                314.84,
-                202.79999999999998
-            ]
+        "pageNumber": 1,
+        "posts": [
+            "1751002910819795261",
+            "1752425165793759366"
+        ],
+        "id": "4eca6b1e-936a-11ef-b99e-00155d35dd2c"
+    },
+    {
+        "content": {
+            "text": "Position: AI/ML Influencers Have a Place in the Academic Process"
         },
-        {
-            "id": "77f3bd28-9041-11ef-811b-00155d35dd2c",
-            "posts": [
-                "1751279042375057724",
-                "1750783025011450254"
+        "position": {
+            "rects": [
+                {
+                    "x1": 170.69,
+                    "y1": 91.02,
+                    "x2": 426.2,
+                    "y2": 121.86,
+                    "width": 612.0,
+                    "height": 792.0,
+                    "pageNumber": 1
+                }
             ],
-            "bbox": [
-                8,
-                409.44,
-                834.4400000000002,
-                314.68000000000006,
-                107.15999999999985
-            ]
-        }
-    ],
-    "8": [
-        {
-            "id": "77f3bd28-9041-11ef-811b-00155d35dd2c",
-            "posts": [
-                "1751279042375057724",
-                "1750783025011450254"
-            ],
-            "bbox": [
-                9,
-                73.92,
-                94.05333333333334,
-                314.20000000000005,
-                75.27999999999999
-            ]
-        }
-    ],
-    "14": [
-        {
-            "id": "77f3bd46-9041-11ef-811b-00155d35dd2c",
-            "posts": [
-                "1751298202777555438"
-            ],
-            "bbox": [
-                15,
-                73.92,
-                899.1866666666666,
-                312.0133333333333,
-                43.39999999999994
-            ]
+            "boundingRect": {
+                "x1": 170.69,
+                "y1": 91.02,
+                "x2": 426.2,
+                "y2": 121.86,
+                "width": 612.0,
+                "height": 792.0,
+                "pageNumber": 1
+            }
         },
-        {
-            "id": "77f3bd46-9041-11ef-811b-00155d35dd2c",
-            "posts": [
-                "1751298202777555438"
+        "pageNumber": 1,
+        "posts": [
+            "1752425165793759366",
+            "1750777835529072648",
+            "1751029578414666035",
+            "1751023987206103244",
+            "1750732070014337101"
+        ],
+        "id": "4eca6baa-936a-11ef-b99e-00155d35dd2c"
+    },
+    {
+        "content": {
+            "text": "Acknowledging the vital function of these influencers as curators, we examine the impact of their endorsements on the citation counts of shared papers. However, we also underscore the importance of maintaining a balanced research ecosystem. An over-reliance on a select group of curators may inadvertently skew the research landscape, emphasizing certain topics or perspectives over others. Therefore, we advocate for a responsible approach to curation, encouraging influencers to maintain journalistic standards, showcasing diverse research topics, authors, and institutions."
+        },
+        "position": {
+            "rects": [
+                {
+                    "x1": 307.08,
+                    "y1": 600.98,
+                    "x2": 543.1,
+                    "y2": 717.22,
+                    "width": 612.0,
+                    "height": 792.0,
+                    "pageNumber": 1
+                }
             ],
-            "bbox": [
-                15,
-                409.92,
-                94.05333333333334,
-                314.20000000000005,
-                75.27999999999999
-            ]
-        }
-    ]
-}
+            "boundingRect": {
+                "x1": 307.08,
+                "y1": 600.98,
+                "x2": 543.1,
+                "y2": 717.22,
+                "width": 612.0,
+                "height": 792.0,
+                "pageNumber": 1
+            }
+        },
+        "pageNumber": 1,
+        "posts": [
+            "1751298202777555438",
+            "1751279042375057724"
+        ],
+        "id": "4eca6bc8-936a-11ef-b99e-00155d35dd2c"
+    },
+    {
+        "content": {
+            "text": "We model our analysis on retrospective cohort studies, in which a treatment and control group with identical underlying covariates are compared to determine the average treatment effect. In our case, we assume that a paper's citation count is most strongly influenced by elapsed time, quality, topic, and author prominence. While elapsed time is simple to measure, paper quality and topic are difficult to quantify. We use the publication venue and year as a proxy for quality and use a text embedding of the paper's title and abstract to approximate the topic. We use author citations and h-indices to adjust for their prominence."
+        },
+        "position": {
+            "rects": [
+                {
+                    "x1": 306.97,
+                    "y1": 487.4,
+                    "x2": 543.09,
+                    "y2": 615.6,
+                    "width": 612.0,
+                    "height": 792.0,
+                    "pageNumber": 2
+                }
+            ],
+            "boundingRect": {
+                "x1": 306.97,
+                "y1": 487.4,
+                "x2": 543.09,
+                "y2": 615.6,
+                "width": 612.0,
+                "height": 792.0,
+                "pageNumber": 2
+            }
+        },
+        "pageNumber": 2,
+        "posts": [
+            "1751298202777555438"
+        ],
+        "id": "4eca6bdc-936a-11ef-b99e-00155d35dd2c"
+    },
+    {
+        "content": {
+            "text": "Using this methodology, we match each paper in the Target Set to a paper in the Control Set with respect to the gathered covariates (Table 4 ). We exclude any paper for which we cannot find an exact match on categorical variables. For matching on topic embeddings, we use SPECTER2 (Singh et al., 2022) . Matches between papers were strong, and the distribution of cosine similarities and example matched pairs are detailed in Appendix A."
+        },
+        "position": {
+            "rects": [
+                {
+                    "x1": 307.44,
+                    "y1": 374.01,
+                    "x2": 541.61,
+                    "y2": 466.34,
+                    "width": 612.0,
+                    "height": 792.0,
+                    "pageNumber": 3
+                }
+            ],
+            "boundingRect": {
+                "x1": 307.44,
+                "y1": 374.01,
+                "x2": 541.61,
+                "y2": 466.34,
+                "width": 612.0,
+                "height": 792.0,
+                "pageNumber": 3
+            }
+        },
+        "pageNumber": 3,
+        "posts": [
+            "1751298202777555438"
+        ],
+        "id": "4eca6c22-936a-11ef-b99e-00155d35dd2c"
+    },
+    {
+        "content": {
+            "text": "Causal Inference: Setup. Although we have shown a significant correlation between influencer sharing and citations, we have not investigated a causal link. For this, we turn to the model, techniques, and assumptions presented in Elazar et al. (2023) . For additional background and details, see Appendix C"
+        },
+        "position": {
+            "rects": [
+                {
+                    "x1": 55.08,
+                    "y1": 441.98,
+                    "x2": 291.09000000000003,
+                    "y2": 510.78999999999996,
+                    "width": 612.0,
+                    "height": 792.0,
+                    "pageNumber": 5
+                }
+            ],
+            "boundingRect": {
+                "x1": 55.08,
+                "y1": 441.98,
+                "x2": 291.09000000000003,
+                "y2": 510.78999999999996,
+                "width": 612.0,
+                "height": 792.0,
+                "pageNumber": 5
+            }
+        },
+        "pageNumber": 5,
+        "posts": [
+            "1751298202777555438"
+        ],
+        "id": "4eca6c40-936a-11ef-b99e-00155d35dd2c"
+    },
+    {
+        "content": {
+            "text": "We further discuss the dual role of influencers as both catalysts for visibility and curators of content, emphasizing the need for a balance in their influence to ensure a diversity of perspectives in the AI/ML research landscape. The implications of this influence are profound, suggesting a need for the academic community to reassess traditional methods of paper selection and review. Our findings encourage a dialogue among conference organizers and academic institutions to evolve the peer-review process and adapt to these changing norms. Additionally, we encourage future research into these trends in other scientific fields and the mechanisms behind the influence of social media on academic recognition."
+        },
+        "position": {
+            "rects": [
+                {
+                    "x1": 306.97,
+                    "y1": 434.43,
+                    "x2": 543.1,
+                    "y2": 586.53,
+                    "width": 612.0,
+                    "height": 792.0,
+                    "pageNumber": 8
+                }
+            ],
+            "boundingRect": {
+                "x1": 306.97,
+                "y1": 434.43,
+                "x2": 543.1,
+                "y2": 586.53,
+                "width": 612.0,
+                "height": 792.0,
+                "pageNumber": 8
+            }
+        },
+        "pageNumber": 8,
+        "posts": [
+            "1751279042375057724",
+            "1750783025011450254"
+        ],
+        "id": "4eca6c54-936a-11ef-b99e-00155d35dd2c"
+    },
+    {
+        "content": {
+            "text": "Recognizing the influential role of social media influencers in the academic community, particularly in the fields of AI/ML, it's important to gently encourage them to be aware of their impact. Influencers play a key role in shaping discussions and trends, and there is a growing need for them to consider the diversity and inclusivity of the research they share. This is not to undermine their contributions but to enhance the richness of academic discourse. Similarly, the academic community might benefit from reevaluating traditional metrics of research impact, embracing both peerreviewed channels and digital platforms for a more holistic approach to recognizing scholarly work."
+        },
+        "position": {
+            "rects": [
+                {
+                    "x1": 307.08,
+                    "y1": 625.83,
+                    "x2": 543.09,
+                    "y2": 706.1999999999999,
+                    "width": 612.0,
+                    "height": 792.0,
+                    "pageNumber": 8
+                },
+                {
+                    "x1": 55.44,
+                    "y1": 70.54,
+                    "x2": 291.09000000000003,
+                    "y2": 127.0,
+                    "width": 612.0,
+                    "height": 792.0,
+                    "pageNumber": 9
+                }
+            ],
+            "boundingRect": {
+                "x1": 307.08,
+                "y1": 625.83,
+                "x2": 543.09,
+                "y2": 706.1999999999999,
+                "width": 612.0,
+                "height": 792.0,
+                "pageNumber": 8
+            }
+        },
+        "pageNumber": 8,
+        "posts": [
+            "1751279042375057724",
+            "1750783025011450254"
+        ],
+        "id": "4eca6c72-936a-11ef-b99e-00155d35dd2c"
+    },
+    {
+        "content": {
+            "text": "The study did not include a randomized control trial, often considered the gold standard for establishing causality. Without this, we cannot conclusively determine whether the patterns observed are directly attributable to the influencers' activities or are coincidental. Though we attempt to remedy this through causal inference, such techniques are contingent upon the validity of our assumptions."
+        },
+        "position": {
+            "rects": [
+                {
+                    "x1": 55.44,
+                    "y1": 674.39,
+                    "x2": 289.45,
+                    "y2": 706.9399999999999,
+                    "width": 612.0,
+                    "height": 792.0,
+                    "pageNumber": 15
+                },
+                {
+                    "x1": 307.44,
+                    "y1": 70.54,
+                    "x2": 543.09,
+                    "y2": 127.0,
+                    "width": 612.0,
+                    "height": 792.0,
+                    "pageNumber": 15
+                }
+            ],
+            "boundingRect": {
+                "x1": 55.44,
+                "y1": 70.54,
+                "x2": 543.09,
+                "y2": 706.9399999999999,
+                "width": 612.0,
+                "height": 792.0,
+                "pageNumber": 15
+            }
+        },
+        "pageNumber": 15,
+        "posts": [
+            "1751298202777555438"
+        ],
+        "id": "4eca6c90-936a-11ef-b99e-00155d35dd2c"
+    }
+]

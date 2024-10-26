@@ -1,6 +1,6 @@
 import Reader from "./components/reader/Reader";
 import ZoomControl from "./components/reader/ZoomControl";
-import { TPostData, THighlightData } from "./components/types";
+import { TPostData, THighlight } from "./components/types";
 import { useContext, useEffect, useState } from "react";
 import { DevContext } from "./context/DevContext";
 import {
@@ -78,7 +78,7 @@ export function AppContent() {
   const { id } = useParams();
   const paper = examples.find((example) => example.id === id);
   const [postData, setPostData] = useState<TPostData>({});
-  const [locationData, setLocationData] = useState<THighlightData>({});
+  const [highlightData, setHighlightData] = useState<THighlight[]>([]);
   const [loading, setLoading] = useState(true);
   const { setAnnotationMode } = useContext(DevContext);
 
@@ -95,7 +95,7 @@ export function AppContent() {
         );
 
         setPostData(postRes as TPostData);
-        setLocationData(locationRes as THighlightData);
+        setHighlightData(locationRes as THighlight[]);
       } catch (error) {
         console.error("Failed to load data:", error);
       } finally {
@@ -114,15 +114,13 @@ export function AppContent() {
 
   const rootPosts = new Set<string>();
   if (paper.annotated) {
-    Object.values(locationData)
-      .flat()
-      .forEach((loc) => {
-        loc.posts.forEach((post) => {
-          postData[post].locations = postData[post].locations || new Set();
-          postData[post].locations.add(loc.id);
-          rootPosts.add(post);
-        });
+    highlightData.forEach((loc) => {
+      loc.posts.forEach((post) => {
+        postData[post].locations = postData[post].locations || new Set();
+        postData[post].locations.add(loc.id);
+        rootPosts.add(post);
       });
+    });
   } else {
     Object.values(postData).forEach((post) => {
       if (post.quoted_tweet || !post.in_reply_to_status_id_str) {
@@ -147,7 +145,7 @@ export function AppContent() {
       }}
     >
       <SidebarInset className="h-[100vh] overflow-hidden relative">
-        <Reader url={paper.url} highlightData={locationData} />
+        <Reader url={paper.url} highlights={highlightData} />
         <div className="absolute w-full z-50">
           <SidebarTrigger className=" absolute right-0 top-0 w-10 h-10 [&_svg]:size-6 [&_svg]:text-zinc-600 my-2 mx-1 rounded-lg" />
           <ZoomControl />

@@ -1,84 +1,51 @@
-// import { Fragment, MouseEvent, useCallback, useContext, useState } from "react";
-// import { HighlightContext } from "../../context/HighlightContext";
-// import {
-//   computeBoundingBoxStyle,
-//   // computePageStyle,
-//   DocumentContext,
-//   TransformContext,
-//   // BoundingBox,
-// } from "../pdf";
-// import { getColorForGroup } from "../../context/ColorManager";
-// import { THighlight } from "../types";
+import { MouseEvent, useCallback, useContext, useState } from "react";
+import { Position } from "react-pdf-highlighter";
+import { getColorForGroup } from "@/context/ColorManager";
+import { ReaderContext } from "@/context/ReaderContext";
 
-// export default function Highlight({ data }: { data: THighlight[] }) {
-//   const { setHighlightedLocation } = useContext(HighlightContext);
-//   const { pageDimensions } = useContext(DocumentContext);
-//   const { rotation, scale } = useContext(TransformContext);
-//   const [isHovered, setIsHovered] = useState(false);
+export default function Highlight({
+  position,
+  id,
+}: {
+  position: Position;
+  id: string;
+}) {
+  const { rects } = position;
+  const color = getColorForGroup(id);
+  const { setSelectedHighlight, selectedHighlight } = useContext(ReaderContext);
 
-//   const handleClick = useCallback((e: MouseEvent) => {
-//     e.stopPropagation();
-//     setIsHovered(false);
-//   }, []);
+  const handleMouseEnter = (e: MouseEvent) => {
+    const quoteId = (e.target as HTMLElement).id.split(";")[0].split("_")[1];
+    setSelectedHighlight(quoteId);
+  };
 
-//   const handleMouseEnter = useCallback((e: MouseEvent) => {
-//     const quoteId = (e.target as HTMLElement).id.split("_")[1];
-//     setHighlightedLocation(quoteId);
-//     setIsHovered(true);
-//   }, []);
+  const handleMouseLeave = () => {
+    setSelectedHighlight(null);
+  };
 
-//   const handleMouseLeave = () => {
-//     if (isHovered) {
-//       setHighlightedLocation(null);
-//     }
-//   };
+  console.log(selectedHighlight);
 
-//   // const getPageStyle = useCallback(() => {
-//   //   return computePageStyle(pageDimensions, rotation, scale);
-//   // }, [pageDimensions, rotation, scale]);
-
-//   return (
-//     <Fragment>
-//       {data.map(({ id, bbox }, i) => {
-//         const [page, left, top, width, height] = bbox;
-//         const newLeft =
-//           pageDimensions.width / left > 2 ? left - 14.4 : left + width + 6;
-//         const color = getColorForGroup(id);
-//         return (
-//           <div
-//             key={i + page}
-//             onClick={handleClick}
-//             onMouseEnter={handleMouseEnter}
-//             onMouseLeave={handleMouseLeave}
-//           >
-//             <div
-//               id={`highlight_${id}`}
-//               className="transform transition-transform duration-200 hover:scale-x-[1.3] rounded-lg absolute z-[21] cursor-pointer"
-//               style={{
-//                 backgroundColor: color,
-//                 ...computeBoundingBoxStyle(
-//                   { left: newLeft, top, width: 9, height },
-//                   pageDimensions,
-//                   rotation,
-//                   scale
-//                 ),
-//               }}
-//             />
-//             {/* {height < 50 && (
-//               <BoundingBox
-//                 id={`highlight_${id}_text`}
-//                 isHighlighted={true}
-//                 page={page}
-//                 top={top}
-//                 left={left}
-//                 height={height}
-//                 width={width}
-//                 color={color}
-//               />
-//             )} */}
-//           </div>
-//         );
-//       })}
-//     </Fragment>
-//   );
-// }
+  return (
+    <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      {rects.map((rect, i) => {
+        return (
+          <div
+            key={i}
+            id={`highlight_${id};part_${i}`}
+            className="transform transition-transform duration-200 hover:scale-x-[1.2] rounded-lg absolute z-[21] cursor-pointer"
+            style={{
+              backgroundColor: color,
+              left:
+                rect.left > rect.width
+                  ? rect.left + rect.width + 4
+                  : rect.left - 12,
+              top: rect.top,
+              width: 8,
+              height: rect.height,
+            }}
+          />
+        );
+      })}
+    </div>
+  );
+}

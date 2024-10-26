@@ -1,14 +1,9 @@
+import { IHighlight } from "react-pdf-highlighter";
 import { EnrichedTweet } from "../post/src";
 
 export type THighlight = {
-  bbox: number[];
-  posts: string[];
-  id: string;
-};
-
-export type THighlightData = {
-  [key: string]: THighlight[];
-};
+  posts?: string[];
+} & IHighlight;
 
 export type TPost = EnrichedTweet & {
   replies: string[];

@@ -1,54 +1,17 @@
 import "react-pdf-highlighter/dist/style.css";
-import { Highlight, PdfHighlighter, PdfLoader } from "react-pdf-highlighter";
+import { PdfHighlighter, PdfLoader } from "react-pdf-highlighter";
 import { useContext, useEffect } from "react";
 import { ReaderContext } from "@/context/ReaderContext";
+import { THighlight } from "../types";
+import Highlight from "./Highlight";
 
-const highlights = [
-  {
-    content: {
-      text: "We consider a minimal subset of JavaScript that includes functions, mutable variables, primitivevalues and records",
-    },
-    position: {
-      boundingRect: {
-        x1: 75.578125,
-        y1: 1039.3125,
-        x2: 733.607421875,
-        y2: 1079.234375,
-        width: 809.9999999999999,
-        height: 1200,
-        pageNumber: 4,
-      },
-      rects: [
-        {
-          x1: 75.578125,
-          y1: 1039.3125,
-          x2: 733.607421875,
-          y2: 1059.3125,
-          width: 809.9999999999999,
-          height: 1200,
-          pageNumber: 4,
-        },
-        {
-          x1: 75.953125,
-          y1: 1059.234375,
-          x2: 206.6217041015625,
-          y2: 1079.234375,
-          width: 809.9999999999999,
-          height: 1200,
-          pageNumber: 4,
-        },
-      ],
-      pageNumber: 4,
-    },
-    comment: {
-      text: "",
-      emoji: "",
-    },
-    id: "32839601376722394",
-  },
-];
-
-export default function Reader({ url }: { url: string }) {
+export default function Reader({
+  url,
+  highlights,
+}: {
+  url: string;
+  highlights: THighlight[];
+}) {
   const { scale, setScale } = useContext(ReaderContext);
 
   useEffect(() => {
@@ -79,19 +42,7 @@ export default function Reader({ url }: { url: string }) {
             viewportToScaled,
             screenshot,
             isScrolledTo
-          ) => {
-            console.log(highlight.position.rects);
-            return highlight.position.rects.map((rect, index) => (
-              <div
-                key={index}
-                style={{
-                  backgroundColor: "red",
-                  position: "absolute",
-                  ...rect,
-                }}
-              />
-            ));
-          }}
+          ) => <Highlight {...highlight} />}
         />
       )}
     </PdfLoader>

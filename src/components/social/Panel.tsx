@@ -14,12 +14,12 @@ import { MouseEvent, useContext, useState } from "react";
 import { faArrowUpWideShort } from "@fortawesome/free-solid-svg-icons";
 import { AnimatePresence, motion } from "framer-motion";
 import { TPostData } from "../types";
-import { HighlightContext } from "@/context/HighlightContext";
 import { EmbedPost } from "./Post";
 import { getColorForGroup } from "@/context/ColorManager";
 import HideScroll from "../ui/HideScroll";
 import { getStylesForLocation } from "../ui/Utils";
 import { Badge } from "../ui/badge";
+import { ReaderContext } from "@/context/ReaderContext";
 
 const TabTypes = ["all", "author", "tl;dr", "q&a", "critic", "opinion"];
 const FilterTypes = ["time", "location", "popularity"];
@@ -31,8 +31,7 @@ export default function Social({
   data: TPostData;
   rootPosts: string[];
 }) {
-  const { highlightedLocation, setHighlightedLocation } =
-    useContext(HighlightContext);
+  const { selectedHighlight, setSelectedHighlight } = useContext(ReaderContext);
   const [filterType, setFilterType] = useState("all");
   const [sortBy, setSortBy] = useState("time");
 
@@ -51,8 +50,8 @@ export default function Social({
     .filter(
       (id) =>
         !!data[id] &&
-        (highlightedLocation === null ||
-          data[id].locations?.has(highlightedLocation)) &&
+        (selectedHighlight === null ||
+          data[id].locations?.has(selectedHighlight)) &&
         (filterType === "all" || data[id]?.tweet_type === filterType)
     )
     .map((id) => data[id])
@@ -122,11 +121,11 @@ export default function Social({
           </DropdownMenuContent>
         </DropdownMenu>
       </SidebarHeader>
-      {highlightedLocation !== null && (
+      {selectedHighlight !== null && (
         <Badge
-          style={getStylesForLocation(highlightedLocation)}
+          style={getStylesForLocation(selectedHighlight)}
           className="mt-1 mb-2 mx-6 text-md rounded-full py-1 pl-4 pr-2 cursor-pointer w-fit"
-          onClick={() => setHighlightedLocation(null)}
+          onClick={() => setSelectedHighlight(null)}
         >
           🔍 Showing Only Related Posts
           <svg

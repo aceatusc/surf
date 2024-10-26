@@ -1,76 +1,99 @@
-import {
-  DocumentContext,
-  DocumentWrapper,
-  Overlay,
-  PageWrapper,
-  RENDER_TYPE,
-  ScrollContext,
-  TransformContext,
-  UiContext,
-} from "../pdf";
+import "react-pdf-highlighter/dist/style.css";
+import { Highlight, PdfHighlighter, PdfLoader } from "react-pdf-highlighter";
 import { useContext, useEffect } from "react";
-import Highlight from "./Highlight";
-import { THighlightData } from "../types";
-import { useSidebar } from "../ui/sidebar";
+import { ReaderContext } from "@/context/ReaderContext";
 
-export default function Reader({
-  pdfUrl,
-  highlightData,
-}: {
-  pdfUrl: string;
-  highlightData: THighlightData;
-}) {
-  const { numPages, pageDimensions } = useContext(DocumentContext);
-  const { setScale } = useContext(TransformContext);
-  const { setScrollRoot, resetScrollObservers, setScrollThreshold } =
-    useContext(ScrollContext);
-  const { isLoading } = useContext(UiContext);
-  const { open } = useSidebar();
+const highlights = [
+  {
+    content: {
+      text: "We consider a minimal subset of JavaScript that includes functions, mutable variables, primitivevalues and records",
+    },
+    position: {
+      boundingRect: {
+        x1: 75.578125,
+        y1: 1039.3125,
+        x2: 733.607421875,
+        y2: 1079.234375,
+        width: 809.9999999999999,
+        height: 1200,
+        pageNumber: 4,
+      },
+      rects: [
+        {
+          x1: 75.578125,
+          y1: 1039.3125,
+          x2: 733.607421875,
+          y2: 1059.3125,
+          width: 809.9999999999999,
+          height: 1200,
+          pageNumber: 4,
+        },
+        {
+          x1: 75.953125,
+          y1: 1059.234375,
+          x2: 206.6217041015625,
+          y2: 1079.234375,
+          width: 809.9999999999999,
+          height: 1200,
+          pageNumber: 4,
+        },
+      ],
+      pageNumber: 4,
+    },
+    comment: {
+      text: "",
+      emoji: "",
+    },
+    id: "32839601376722394",
+  },
+];
+
+export default function Reader({ url }: { url: string }) {
+  const { scale, setScale } = useContext(ReaderContext);
 
   useEffect(() => {
-    if (isLoading) return;
-    setScrollRoot(null);
-    resetScrollObservers();
-    setScrollThreshold(0.8);
-  }, [isLoading]);
-
-  useEffect(() => {
-    if (pageDimensions.width == 0 || pageDimensions.height == 0) return;
     const handleResize = () => {
-      if (pageDimensions.width === 0) return;
       const newWidth =
-        (window.innerWidth < 768
+        window.innerWidth < 768
           ? window.innerWidth
-          : Math.min(window.innerWidth - 420, 0.7 * window.innerWidth)) - 48;
-      setScale(Math.floor((newWidth / pageDimensions.width) * 10) / 10);
+          : Math.min(window.innerWidth - 420, 0.7 * window.innerWidth) - 48;
+      setScale(Math.floor((newWidth / 700) * 10) / 10);
     };
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, [pageDimensions]);
+  }, []);
 
   return (
-    <div
-      style={{ width: open ? "calc(100vw - max(42rem, 30vw))" : "100%" }}
-      className="transition-all h-full overflow-auto"
-    >
-      <DocumentWrapper
-        className="w-fit my-0 mx-auto"
-        file={pdfUrl}
-        renderType={RENDER_TYPE.SINGLE_CANVAS}
-      >
-        {Array.from({ length: numPages }).map((_, i) => (
-          <PageWrapper
-            key={i}
-            pageIndex={i}
-            renderType={RENDER_TYPE.SINGLE_CANVAS}
-          >
-            <Overlay>
-              {highlightData[i] && <Highlight data={highlightData[i]} />}
-            </Overlay>
-          </PageWrapper>
-        ))}
-      </DocumentWrapper>
-    </div>
+    <PdfLoader url={url} beforeLoad={<div>Loading...</div>}>
+      {(pdfDocument) => (
+        <PdfHighlighter
+          pdfDocument={pdfDocument}
+          highlights={highlights}
+          pdfScaleValue={scale.toString()}
+          highlightTransform={(
+            highlight,
+            index,
+            setTip,
+            hideTip,
+            viewportToScaled,
+            screenshot,
+            isScrolledTo
+          ) => {
+            console.log(highlight.position.rects);
+            return highlight.position.rects.map((rect, index) => (
+              <div
+                key={index}
+                style={{
+                  backgroundColor: "red",
+                  position: "absolute",
+                  ...rect,
+                }}
+              />
+            ));
+          }}
+        />
+      )}
+    </PdfLoader>
   );
 }

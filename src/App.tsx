@@ -140,9 +140,14 @@ export function AppContent() {
   }
 
   return (
-    <SidebarProvider>
+    <SidebarProvider
+      style={{
+        "--sidebar-width": "max(42rem, 30vw)",
+        "--sidebar-width-mobile": "min(42rem, 90vw)",
+      }}
+    >
       <SidebarInset className="h-[100vh] overflow-hidden relative">
-        <Reader pdfUrl={paper.url} highlightData={locationData} />
+        <Reader url={paper.url} highlightData={locationData} />
         <div className="absolute w-full z-50">
           <SidebarTrigger className=" absolute right-0 top-0 w-10 h-10 [&_svg]:size-6 [&_svg]:text-zinc-600 my-2 mx-1 rounded-lg" />
           <ZoomControl />

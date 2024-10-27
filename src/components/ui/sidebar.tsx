@@ -191,34 +191,37 @@ const Sidebar = React.forwardRef<
       );
     }
 
-    if (isMobile) {
-      return (
-        <Sheet open={openMobile} onOpenChange={setOpenMobile} {...props}>
-          <SheetContent
-            data-sidebar="sidebar"
-            data-mobile="true"
-            className="w-[--sidebar-width] bg-sidebar p-0 text-sidebar-foreground [&>button]:hidden"
-            style={
-              {
-                "--sidebar-width": SIDEBAR_WIDTH_MOBILE,
-              } as React.CSSProperties
-            }
-            side={side}
-          >
-            <div className="flex h-full w-full flex-col">{children}</div>
-          </SheetContent>
-        </Sheet>
-      );
-    }
+    // if (isMobile) {
+    //   return (
+    //     <Sheet open={openMobile} onOpenChange={setOpenMobile} {...props}>
+    //       <SheetContent
+    //         data-sidebar="sidebar"
+    //         data-mobile="true"
+    //         className="w-[--sidebar-width] bg-sidebar p-0 text-sidebar-foreground [&>button]:hidden"
+    //         style={
+    //           {
+    //             "--sidebar-width": SIDEBAR_WIDTH_MOBILE,
+    //           } as React.CSSProperties
+    //         }
+    //         side={side}
+    //       >
+    //         <div className="flex h-full w-full flex-col">{children}</div>
+    //       </SheetContent>
+    //     </Sheet>
+    //   );
+    // }
 
     return (
       <div
         ref={ref}
-        className="group peer hidden md:block text-sidebar-foreground"
         data-state={state}
         data-collapsible={state === "collapsed" ? collapsible : ""}
         data-variant={variant}
         data-side={side}
+        className={cn(
+          "group peer hidden md:block text-sidebar-foreground",
+          variant === "floating" || isMobile ? "fixed z-[99]" : ""
+        )}
       >
         {/* This is what handles the sidebar gap on desktop */}
         <div
@@ -239,7 +242,7 @@ const Sidebar = React.forwardRef<
               : "right-0 group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)]",
             // Adjust the padding for floating and inset variants.
             variant === "floating" || variant === "inset"
-              ? "p-2 group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)_+_theme(spacing.4)_+2px)]"
+              ? "group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)_+_theme(spacing.4)_+2px)]"
               : "group-data-[collapsible=icon]:w-[--sidebar-width-icon] group-data-[side=left]:border-r group-data-[side=right]:border-l",
             className
           )}

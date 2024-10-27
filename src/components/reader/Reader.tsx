@@ -8,16 +8,16 @@ import {
   TransformContext,
   UiContext,
 } from "../pdf";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import Highlight from "./Highlight";
 import { THighlightData } from "../types";
 import { useSidebar } from "../ui/sidebar";
 
 export default function Reader({
-  pdfUrl,
+  url,
   highlightData,
 }: {
-  pdfUrl: string;
+  url: string;
   highlightData: THighlightData;
 }) {
   const { numPages, pageDimensions } = useContext(DocumentContext);
@@ -25,7 +25,7 @@ export default function Reader({
   const { setScrollRoot, resetScrollObservers, setScrollThreshold } =
     useContext(ScrollContext);
   const { isLoading } = useContext(UiContext);
-  const { open } = useSidebar();
+  const { open, isMobile } = useSidebar();
 
   useEffect(() => {
     if (isLoading) return;
@@ -51,19 +51,26 @@ export default function Reader({
 
   return (
     <div
-      style={{ width: open ? "calc(100vw - max(42rem, 30vw))" : "100%" }}
+      style={{
+        width: isMobile
+          ? "100%"
+          : open
+          ? "calc(100vw - max(42rem, 30vw))"
+          : "100%",
+        direction: "rtl",
+      }}
       className="transition-all h-full overflow-auto"
     >
       <DocumentWrapper
         className="w-fit my-0 mx-auto"
-        file={pdfUrl}
-        renderType={RENDER_TYPE.SINGLE_CANVAS}
+        file={url}
+        renderType={RENDER_TYPE.MULTI_CANVAS}
       >
         {Array.from({ length: numPages }).map((_, i) => (
           <PageWrapper
             key={i}
             pageIndex={i}
-            renderType={RENDER_TYPE.SINGLE_CANVAS}
+            renderType={RENDER_TYPE.MULTI_CANVAS}
           >
             <Overlay>
               {highlightData[i] && <Highlight data={highlightData[i]} />}

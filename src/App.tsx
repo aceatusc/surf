@@ -17,6 +17,7 @@ import {
   SidebarTrigger,
 } from "./components/ui/sidebar";
 import Social from "./components/social/Panel";
+import Note from "./components/note/Note";
 
 const examples = [
   {
@@ -140,15 +141,23 @@ export function AppContent() {
   }
 
   return (
-    <SidebarProvider>
-      <SidebarInset className="h-[100vh] overflow-hidden relative">
-        <Reader pdfUrl={paper.url} highlightData={locationData} />
-        <div className="absolute w-full z-50">
-          <SidebarTrigger className=" absolute right-0 top-0 w-10 h-10 [&_svg]:size-6 [&_svg]:text-zinc-600 my-2 mx-1 rounded-lg" />
-          <ZoomControl />
-        </div>
-      </SidebarInset>
-      <Social data={postData} rootPosts={Array.from(rootPosts)} />
+    <SidebarProvider
+      style={{
+        "--sidebar-width": "max(30rem, 16vw)",
+        "--sidebar-width-mobile": "30rem",
+      }}
+      defaultOpen={false}
+    >
+      <Note />
+      <SidebarProvider>
+        <SidebarInset className="h-[100vh] overflow-hidden relative">
+          <Reader url={paper.url} highlightData={locationData} />
+          <div className="absolute w-full z-50">
+            <ZoomControl />
+          </div>
+        </SidebarInset>
+        <Social data={postData} rootPosts={Array.from(rootPosts)} />
+      </SidebarProvider>
     </SidebarProvider>
   );
 }

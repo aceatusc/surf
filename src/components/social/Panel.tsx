@@ -8,7 +8,12 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
-import { Sidebar, SidebarContent, SidebarHeader } from "../ui/sidebar";
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarHeader,
+  SidebarTrigger,
+} from "../ui/sidebar";
 import { Tabs, TabsList, TabsTrigger } from "../ui/tabs";
 import { MouseEvent, useContext, useState } from "react";
 import { faArrowUpWideShort } from "@fortawesome/free-solid-svg-icons";
@@ -190,6 +195,7 @@ export default function Social({
           </AnimatePresence>
         </HideScroll>
       </SidebarContent>
+      <SidebarTrigger className="absolute -left-12 top-5 w-10 h-10 [&_svg]:size-6 [&_svg]:text-zinc-600 rounded-lg" />
     </Sidebar>
   );
 }

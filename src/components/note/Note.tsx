@@ -46,7 +46,7 @@ export default function Note() {
   }, [numPagesLoaded, numPages]);
 
   return (
-    <Sidebar variant="floating">
+    <Sidebar>
       {numPagesLoaded < numPages && (
         <SidebarHeader className="text-center text-lg">
           <b className="text-xl">Waiting for the paper to load...</b>
@@ -56,7 +56,7 @@ export default function Note() {
       )}
       <SidebarContent id="hypothesis-root" className={s.hypothesis_container} />
       <Button
-        className="absolute -right-12 top-6 w-10 h-11 p-0 hover:bg-transparent ring-0"
+        className="absolute -right-[3.2rem] top-6 w-10 h-11 p-0 hover:bg-transparent ring-0"
         variant="ghost"
         onClick={toggleSidebar}
       >

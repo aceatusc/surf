@@ -14,7 +14,6 @@ import {
 import { SidebarInset, SidebarProvider } from "./components/ui/sidebar";
 import Social from "./components/social/Panel";
 import Note from "./components/note/Note";
-import { title } from "process";
 import { Badge } from "./components/ui/badge";
 
 const examples = [

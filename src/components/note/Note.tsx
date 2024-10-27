@@ -1,18 +1,26 @@
-import { useEffect } from "react";
-import { Sidebar, SidebarContent, useSidebar } from "../ui/sidebar";
+import { useContext, useEffect } from "react";
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarHeader,
+  useSidebar,
+} from "../ui/sidebar";
 import {
   deleteBrowserScript,
   loadBrowserScript,
 } from "../pdf/src/utils/browserScripts";
 import s from "./Note.module.css";
 import { Button } from "../ui/button";
+import { DocumentContext } from "../pdf";
 
 const HYPOTHESIS_CLIENT_SCRIPT_URL = "https://hypothes.is/embed.js";
 
 export default function Note() {
   const { toggleSidebar } = useSidebar();
+  const { numPagesLoaded, numPages } = useContext(DocumentContext);
 
   useEffect(() => {
+    if (numPagesLoaded < numPages) return;
     // @ts-expect-error - Hypothesis is loaded in the global scope
     window.hypothesisConfig = () => ({
       externalContainerSelector: "#hypothesis-root",
@@ -35,10 +43,17 @@ export default function Note() {
         annotatorLink.dispatchEvent(destroyEvent);
       }
     };
-  }, []);
+  }, [numPagesLoaded, numPages]);
 
   return (
     <Sidebar variant="floating">
+      {numPagesLoaded < numPages && (
+        <SidebarHeader className="text-center text-lg">
+          <b className="text-xl">Waiting for the paper to load...</b>
+          If it takes more than a minute (e.g., the yellow border is still
+          visible), please refresh the page.
+        </SidebarHeader>
+      )}
       <SidebarContent id="hypothesis-root" className={s.hypothesis_container} />
       <Button
         className="absolute -right-12 top-6 w-10 h-11 p-0 hover:bg-transparent ring-0"

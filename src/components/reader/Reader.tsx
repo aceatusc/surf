@@ -56,7 +56,7 @@ export default function Reader({
         setWarning(false);
         setScale(
           Math.floor(
-            (Math.min(window.innerWidth - 420, 0.7 * window.innerWidth) /
+            ((Math.min(window.innerWidth - 420, 0.7 * window.innerWidth) - 48) /
               pageDimensions.width) *
               10
           ) / 10
@@ -67,8 +67,6 @@ export default function Reader({
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [pageDimensions]);
-
-  console.log(warning);
 
   return (
     <div

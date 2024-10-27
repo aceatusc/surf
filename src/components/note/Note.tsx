@@ -25,7 +25,6 @@ export default function Note() {
 
     return () => {
       deleteBrowserScript(HYPOTHESIS_CLIENT_SCRIPT_URL);
-      console.log("Destroying Hypothesis client");
       const annotatorLink = document.querySelector(
         'link[type="application/annotator+html"]'
       );

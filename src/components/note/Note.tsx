@@ -13,6 +13,7 @@ export default function Note() {
   const { toggleSidebar } = useSidebar();
 
   useEffect(() => {
+    // @ts-expect-error - Hypothesis is loaded in the global scope
     window.hypothesisConfig = () => ({
       externalContainerSelector: "#hypothesis-root",
       sideBySide: {

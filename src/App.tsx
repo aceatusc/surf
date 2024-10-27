@@ -142,10 +142,12 @@ export function AppContent() {
 
   return (
     <SidebarProvider
-      style={{
-        "--sidebar-width": "max(30rem, 16vw)",
-        "--sidebar-width-mobile": "30rem",
-      }}
+      style={
+        {
+          "--sidebar-width": "max(30rem, 16vw)",
+          "--sidebar-width-mobile": "30rem",
+        } as React.CSSProperties
+      }
       defaultOpen={false}
     >
       <Note />

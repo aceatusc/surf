@@ -1,0 +1,4878 @@
+{
+    "1668668484975464448": {
+        "created_at": "Tue Jun 13 17:15:43 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    243
+                ],
+                "type": "text",
+                "text": "A common criticism of LLM watermarks is they can be removed by AI paraphrasing or human editing.  Let's put this theory to the test! Can a watermark be automatically removed by GPT? Can a grad student do any better? The results surprised me 🧵\n"
+            },
+            {
+                "display_url": "arxiv.org/pdf/2306.04634…",
+                "expanded_url": "https://arxiv.org/pdf/2306.04634.pdf",
+                "indices": [
+                    243,
+                    266
+                ],
+                "url": "https://t.co/ZPgzp4sC92",
+                "type": "url",
+                "href": "https://arxiv.org/pdf/2306.04634.pdf",
+                "text": "arxiv.org/pdf/2306.04634…"
+            }
+        ],
+        "favorite_count": 551,
+        "id_str": "1668668484975464448",
+        "tweetDisplayType": "Tweet",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/u3f1ZjFzZs",
+                "expanded_url": "https://x.com/tomgoldsteincs/status/1668668484975464448/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1668622195818659842",
+                "indices": [
+                    267,
+                    290
+                ],
+                "media_key": "3_1668622195818659842",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1668622195818659842"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/FygjC94agAIFJ63.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 504,
+                            "w": 900,
+                            "x": 64,
+                            "y": 0
+                        },
+                        {
+                            "h": 504,
+                            "w": 504,
+                            "x": 460,
+                            "y": 0
+                        },
+                        {
+                            "h": 504,
+                            "w": 442,
+                            "x": 522,
+                            "y": 0
+                        },
+                        {
+                            "h": 504,
+                            "w": 252,
+                            "x": 669,
+                            "y": 0
+                        },
+                        {
+                            "h": 504,
+                            "w": 964,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 504,
+                    "width": 964
+                },
+                "sizes": {
+                    "large": {
+                        "h": 504,
+                        "resize": "fit",
+                        "w": 964
+                    },
+                    "medium": {
+                        "h": 504,
+                        "resize": "fit",
+                        "w": 964
+                    },
+                    "small": {
+                        "h": 356,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/u3f1ZjFzZs"
+            }
+        ],
+        "user": {
+            "id_str": "1086729872305766401",
+            "name": "Tom Goldstein",
+            "screen_name": "tomgoldsteincs",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1194743821369626625/UATmG8qo_normal.jpg",
+            "url": "https://x.com/tomgoldsteincs",
+            "follow_url": "https://x.com/intent/follow?screen_name=tomgoldsteincs"
+        },
+        "url": "https://x.com/tomgoldsteincs/status/1668668484975464448",
+        "like_url": "https://x.com/intent/like?tweet_id=1668668484975464448",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668668484975464448",
+        "replies": [
+            "1668668489761189888",
+            "1668777978195595264",
+            "1669367832537182209",
+            "1668934838957535233",
+            "1668824897450135559",
+            "1668949535932948480",
+            "1668857736090492928",
+            "1668688760932802622",
+            "1668807968840642562",
+            "1668733430358482946",
+            "1669259244099731456",
+            "1668886721235148803",
+            "1669002301619486720",
+            "1668703055108534277",
+            "1668671374054023169",
+            "1668733755316420609",
+            "1668720718673227777"
+        ]
+    },
+    "1670747493439778816": {
+        "created_at": "Mon Jun 19 10:56:58 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    16
+                ],
+                "type": "text",
+                "text": "FinGPT：开源金融 LLM："
+            },
+            {
+                "display_url": "arxiv.org/abs/2306.06031",
+                "expanded_url": "https://arxiv.org/abs/2306.06031",
+                "indices": [
+                    16,
+                    39
+                ],
+                "url": "https://t.co/pxlXUzKMyZ",
+                "type": "url",
+                "href": "https://arxiv.org/abs/2306.06031",
+                "text": "arxiv.org/abs/2306.06031"
+            },
+            {
+                "indices": [
+                    39,
+                    56
+                ],
+                "type": "text",
+                "text": "\n\nLLM 输出内容水印的可靠性："
+            },
+            {
+                "display_url": "arxiv.org/pdf/2306.04634…",
+                "expanded_url": "https://arxiv.org/pdf/2306.04634.pdf",
+                "indices": [
+                    56,
+                    79
+                ],
+                "url": "https://t.co/73yPDSolQW",
+                "type": "url",
+                "href": "https://arxiv.org/pdf/2306.04634.pdf",
+                "text": "arxiv.org/pdf/2306.04634…"
+            },
+            {
+                "indices": [
+                    79,
+                    97
+                ],
+                "type": "text",
+                "text": "\n\nTransformer模型调研："
+            },
+            {
+                "display_url": "arxiv.org/abs/2306.07303",
+                "expanded_url": "https://arxiv.org/abs/2306.07303",
+                "indices": [
+                    97,
+                    120
+                ],
+                "url": "https://t.co/gNqt7JxQbE",
+                "type": "url",
+                "href": "https://arxiv.org/abs/2306.07303",
+                "text": "arxiv.org/abs/2306.07303"
+            },
+            {
+                "indices": [
+                    120,
+                    146
+                ],
+                "type": "text",
+                "text": "\n\nTAPIR：使用每帧初始化和时间细化跟踪任何点："
+            },
+            {
+                "display_url": "arxiv.org/abs/2306.08637",
+                "expanded_url": "https://arxiv.org/abs/2306.08637",
+                "indices": [
+                    146,
+                    169
+                ],
+                "url": "https://t.co/C5IXXVV2CU",
+                "type": "url",
+                "href": "https://arxiv.org/abs/2306.08637",
+                "text": "arxiv.org/abs/2306.08637"
+            }
+        ],
+        "favorite_count": 5,
+        "id_str": "1670747493439778816",
+        "tweetDisplayType": "SelfThread",
+        "in_reply_to_status_id_str": "1670747479237881857",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/SrwI8Q2J9O",
+                "expanded_url": "https://x.com/op7418/status/1670747493439778816/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1670747481314041856",
+                "indices": [
+                    170,
+                    193
+                ],
+                "media_key": "3_1670747481314041856",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1670747481314041856"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/Fy-v-3UaIAA-LR4.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 1120,
+                            "w": 2000,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1455,
+                            "w": 1455,
+                            "x": 521,
+                            "y": 0
+                        },
+                        {
+                            "h": 1455,
+                            "w": 1276,
+                            "x": 610,
+                            "y": 0
+                        },
+                        {
+                            "h": 1455,
+                            "w": 728,
+                            "x": 884,
+                            "y": 0
+                        },
+                        {
+                            "h": 1455,
+                            "w": 2000,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 1455,
+                    "width": 2000
+                },
+                "sizes": {
+                    "large": {
+                        "h": 1455,
+                        "resize": "fit",
+                        "w": 2000
+                    },
+                    "medium": {
+                        "h": 873,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 495,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/SrwI8Q2J9O"
+            }
+        ],
+        "user": {
+            "id_str": "1669276256",
+            "name": "歸藏(guizang.ai)",
+            "screen_name": "op7418",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+            "url": "https://x.com/op7418",
+            "follow_url": "https://x.com/intent/follow?screen_name=op7418"
+        },
+        "url": "https://x.com/op7418/status/1670747493439778816",
+        "like_url": "https://x.com/intent/like?tweet_id=1670747493439778816",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1670747493439778816",
+        "replies": [
+            "1670747497072062466",
+            "1670815810934407169"
+        ]
+    },
+    "1668668489761189888": {
+        "created_at": "Tue Jun 13 17:15:44 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    256
+                ],
+                "type": "text",
+                "text": "First, if you don’t remember how watermarks work, you might revisit my original post on this issue.\nTL;DR The watermark is a subtle pattern embedded in LLM outputs that labels it as machine generated. High accuracy detection usually requires 50-ish words.\n"
+            },
+            {
+                "display_url": "x.com/tomgoldsteincs…",
+                "expanded_url": "https://x.com/tomgoldsteincs/status/1618287665006403585?s=20",
+                "indices": [
+                    256,
+                    279
+                ],
+                "url": "https://t.co/JRo9Jxhyom",
+                "type": "url",
+                "href": "https://x.com/tomgoldsteincs/status/1618287665006403585?s=20",
+                "text": "x.com/tomgoldsteincs…"
+            }
+        ],
+        "favorite_count": 23,
+        "id_str": "1668668489761189888",
+        "tweetDisplayType": "Tweet",
+        "quoted_status_id_str": "1618287665006403585",
+        "in_reply_to_status_id_str": "1668668484975464448",
+        "user": {
+            "id_str": "1086729872305766401",
+            "name": "Tom Goldstein",
+            "screen_name": "tomgoldsteincs",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1194743821369626625/UATmG8qo_normal.jpg",
+            "url": "https://x.com/tomgoldsteincs",
+            "follow_url": "https://x.com/intent/follow?screen_name=tomgoldsteincs"
+        },
+        "url": "https://x.com/tomgoldsteincs/status/1668668489761189888",
+        "like_url": "https://x.com/intent/like?tweet_id=1668668489761189888",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668668489761189888",
+        "replies": [
+            "1668668494391697408"
+        ]
+    },
+    "1668668494391697408": {
+        "created_at": "Tue Jun 13 17:15:46 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    280
+                ],
+                "type": "text",
+                "text": "The experiment: We generated watermarked text using the Llama model, then asked a non-watermarked LLM (GPT-3.5) to re-write it.  We did lots of prompt engineering to try to get rid of the watermark.  Finally, we checked whether we could detect the watermark in the rewritten text."
+            }
+        ],
+        "favorite_count": 24,
+        "id_str": "1668668494391697408",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668489761189888",
+        "user": {
+            "id_str": "1086729872305766401",
+            "name": "Tom Goldstein",
+            "screen_name": "tomgoldsteincs",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1194743821369626625/UATmG8qo_normal.jpg",
+            "url": "https://x.com/tomgoldsteincs",
+            "follow_url": "https://x.com/intent/follow?screen_name=tomgoldsteincs"
+        },
+        "url": "https://x.com/tomgoldsteincs/status/1668668494391697408",
+        "like_url": "https://x.com/intent/like?tweet_id=1668668494391697408",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668668494391697408",
+        "replies": [
+            "1668668498804097025",
+            "1674274009507332096"
+        ]
+    },
+    "1668668498804097025": {
+        "created_at": "Tue Jun 13 17:15:47 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    231
+                ],
+                "type": "text",
+                "text": "Even after AI paraphrasing, we still detect the watermark - BUT we need more text to do it.  Once we observe about 500 tokens (≈ a half page), we can reliably detect the watermark with a false positive rate of about 1 in a million."
+            }
+        ],
+        "favorite_count": 37,
+        "id_str": "1668668498804097025",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668494391697408",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/avvPXqLtoL",
+                "expanded_url": "https://x.com/tomgoldsteincs/status/1668668498804097025/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1668623987528830976",
+                "indices": [
+                    232,
+                    255
+                ],
+                "media_key": "3_1668623987528830976",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1668623987528830976"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/FygkrQhaEAAKThd.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 806,
+                            "w": 1440,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 864,
+                            "w": 864,
+                            "x": 108,
+                            "y": 0
+                        },
+                        {
+                            "h": 864,
+                            "w": 758,
+                            "x": 161,
+                            "y": 0
+                        },
+                        {
+                            "h": 864,
+                            "w": 432,
+                            "x": 324,
+                            "y": 0
+                        },
+                        {
+                            "h": 864,
+                            "w": 1440,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 864,
+                    "width": 1440
+                },
+                "sizes": {
+                    "large": {
+                        "h": 864,
+                        "resize": "fit",
+                        "w": 1440
+                    },
+                    "medium": {
+                        "h": 720,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 408,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/avvPXqLtoL"
+            }
+        ],
+        "user": {
+            "id_str": "1086729872305766401",
+            "name": "Tom Goldstein",
+            "screen_name": "tomgoldsteincs",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1194743821369626625/UATmG8qo_normal.jpg",
+            "url": "https://x.com/tomgoldsteincs",
+            "follow_url": "https://x.com/intent/follow?screen_name=tomgoldsteincs"
+        },
+        "url": "https://x.com/tomgoldsteincs/status/1668668498804097025",
+        "like_url": "https://x.com/intent/like?tweet_id=1668668498804097025",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668668498804097025",
+        "replies": [
+            "1668668503438802945"
+        ]
+    },
+    "1668668503438802945": {
+        "created_at": "Tue Jun 13 17:15:48 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    275
+                ],
+                "type": "text",
+                "text": "Here’s why this happened. GPT is statistically likely to recycle word combinations, multi-token long words, and short phrases from the original text. This preserves the watermark in the paraphrased text. But it's been diluted - it takes 10X more tokens to reliably detect it."
+            }
+        ],
+        "favorite_count": 25,
+        "id_str": "1668668503438802945",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668498804097025",
+        "user": {
+            "id_str": "1086729872305766401",
+            "name": "Tom Goldstein",
+            "screen_name": "tomgoldsteincs",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1194743821369626625/UATmG8qo_normal.jpg",
+            "url": "https://x.com/tomgoldsteincs",
+            "follow_url": "https://x.com/intent/follow?screen_name=tomgoldsteincs"
+        },
+        "url": "https://x.com/tomgoldsteincs/status/1668668503438802945",
+        "like_url": "https://x.com/intent/like?tweet_id=1668668503438802945",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668668503438802945",
+        "replies": [
+            "1668668507628924928",
+            "1668704428021481476"
+        ]
+    },
+    "1668668507628924928": {
+        "created_at": "Tue Jun 13 17:15:49 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    277
+                ],
+                "type": "text",
+                "text": "Now let’s see if humans can do any better. We had CS grad students rewrite passages to remove the watermark.  The top performers got $100 coffee shop gift certificates (if you’ve been to grad school you know that both coffee and free stuff are a big deal).  Here’s the results."
+            }
+        ],
+        "favorite_count": 36,
+        "id_str": "1668668507628924928",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668503438802945",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/usH0OcDltZ",
+                "expanded_url": "https://x.com/tomgoldsteincs/status/1668668507628924928/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1668624870220128256",
+                "indices": [
+                    278,
+                    301
+                ],
+                "media_key": "3_1668624870220128256",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1668624870220128256"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/FygleozaYAAVNOB.png",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 806,
+                            "w": 1440,
+                            "x": 0,
+                            "y": 58
+                        },
+                        {
+                            "h": 864,
+                            "w": 864,
+                            "x": 576,
+                            "y": 0
+                        },
+                        {
+                            "h": 864,
+                            "w": 758,
+                            "x": 682,
+                            "y": 0
+                        },
+                        {
+                            "h": 864,
+                            "w": 432,
+                            "x": 1008,
+                            "y": 0
+                        },
+                        {
+                            "h": 864,
+                            "w": 1440,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 864,
+                    "width": 1440
+                },
+                "sizes": {
+                    "large": {
+                        "h": 864,
+                        "resize": "fit",
+                        "w": 1440
+                    },
+                    "medium": {
+                        "h": 720,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 408,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/usH0OcDltZ"
+            }
+        ],
+        "user": {
+            "id_str": "1086729872305766401",
+            "name": "Tom Goldstein",
+            "screen_name": "tomgoldsteincs",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1194743821369626625/UATmG8qo_normal.jpg",
+            "url": "https://x.com/tomgoldsteincs",
+            "follow_url": "https://x.com/intent/follow?screen_name=tomgoldsteincs"
+        },
+        "url": "https://x.com/tomgoldsteincs/status/1668668507628924928",
+        "like_url": "https://x.com/intent/like?tweet_id=1668668507628924928",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668668507628924928",
+        "replies": [
+            "1668668512418803712",
+            "1670184337617068032"
+        ]
+    },
+    "1668668512418803712": {
+        "created_at": "Tue Jun 13 17:15:50 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    238
+                ],
+                "type": "text",
+                "text": "Grad students do better than GPT.  For an average grad student, we need to observe about 1100 tokens (≈ 1 page) before we can detect the watermark with a 1 in a million error rate.  There’s quite a bit of variation between people, though."
+            }
+        ],
+        "favorite_count": 37,
+        "id_str": "1668668512418803712",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668507628924928",
+        "user": {
+            "id_str": "1086729872305766401",
+            "name": "Tom Goldstein",
+            "screen_name": "tomgoldsteincs",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1194743821369626625/UATmG8qo_normal.jpg",
+            "url": "https://x.com/tomgoldsteincs",
+            "follow_url": "https://x.com/intent/follow?screen_name=tomgoldsteincs"
+        },
+        "url": "https://x.com/tomgoldsteincs/status/1668668512418803712",
+        "like_url": "https://x.com/intent/like?tweet_id=1668668512418803712",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668668512418803712",
+        "replies": [
+            "1668668516684427264",
+            "1668683455561957376"
+        ]
+    },
+    "1668668516684427264": {
+        "created_at": "Tue Jun 13 17:15:51 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    279
+                ],
+                "type": "text",
+                "text": "It seems scrubbing the watermark is tougher than people think. But there’s some caveats worth mentioning.  Maintaining this much security requires the watermark parameters to be secret, otherwise the attacker knows which “green” tokens to remove, which helps scrub the watermark."
+            }
+        ],
+        "favorite_count": 24,
+        "id_str": "1668668516684427264",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668512418803712",
+        "user": {
+            "id_str": "1086729872305766401",
+            "name": "Tom Goldstein",
+            "screen_name": "tomgoldsteincs",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1194743821369626625/UATmG8qo_normal.jpg",
+            "url": "https://x.com/tomgoldsteincs",
+            "follow_url": "https://x.com/intent/follow?screen_name=tomgoldsteincs"
+        },
+        "url": "https://x.com/tomgoldsteincs/status/1668668516684427264",
+        "like_url": "https://x.com/intent/like?tweet_id=1668668516684427264",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668668516684427264",
+        "replies": [
+            "1668668520899702787"
+        ]
+    },
+    "1668668520899702787": {
+        "created_at": "Tue Jun 13 17:15:52 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    270
+                ],
+                "type": "text",
+                "text": "Also, removing the watermark is tough but not impossible. A sophisticated actor might have the capability to remove it through (very) meticulous scrubbing or via an LLM with a specialized decoder. Still, many malicious LLMs users are, shall we say, not so sophisticated."
+            }
+        ],
+        "favorite_count": 35,
+        "id_str": "1668668520899702787",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668516684427264",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/iinqiJUnsg",
+                "expanded_url": "https://x.com/tomgoldsteincs/status/1668668520899702787/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1668626839903023112",
+                "indices": [
+                    271,
+                    294
+                ],
+                "media_key": "3_1668626839903023112",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1668626839903023112"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/FygnRScaMAgmXK4.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 270,
+                            "w": 482,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 270,
+                            "w": 270,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 270,
+                            "w": 237,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 270,
+                            "w": 135,
+                            "x": 12,
+                            "y": 0
+                        },
+                        {
+                            "h": 270,
+                            "w": 639,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 270,
+                    "width": 639
+                },
+                "sizes": {
+                    "large": {
+                        "h": 270,
+                        "resize": "fit",
+                        "w": 639
+                    },
+                    "medium": {
+                        "h": 270,
+                        "resize": "fit",
+                        "w": 639
+                    },
+                    "small": {
+                        "h": 270,
+                        "resize": "fit",
+                        "w": 639
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/iinqiJUnsg"
+            },
+            {
+                "display_url": "pic.x.com/iinqiJUnsg",
+                "expanded_url": "https://x.com/tomgoldsteincs/status/1668668520899702787/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": [
+                            {
+                                "h": 86,
+                                "w": 86,
+                                "x": 37,
+                                "y": 11
+                            }
+                        ]
+                    },
+                    "medium": {
+                        "faces": [
+                            {
+                                "h": 53,
+                                "w": 53,
+                                "x": 23,
+                                "y": 6
+                            }
+                        ]
+                    },
+                    "orig": {
+                        "faces": [
+                            {
+                                "h": 86,
+                                "w": 86,
+                                "x": 37,
+                                "y": 11
+                            }
+                        ]
+                    },
+                    "small": {
+                        "faces": [
+                            {
+                                "h": 30,
+                                "w": 30,
+                                "x": 13,
+                                "y": 3
+                            }
+                        ]
+                    }
+                },
+                "id_str": "1668626859922460673",
+                "indices": [
+                    271,
+                    294
+                ],
+                "media_key": "3_1668626859922460673",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1668626859922460673"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/FygnSdBakAEtcDg.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 806,
+                            "w": 1440,
+                            "x": 0,
+                            "y": 1117
+                        },
+                        {
+                            "h": 1440,
+                            "w": 1440,
+                            "x": 0,
+                            "y": 483
+                        },
+                        {
+                            "h": 1642,
+                            "w": 1440,
+                            "x": 0,
+                            "y": 281
+                        },
+                        {
+                            "h": 1923,
+                            "w": 962,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1923,
+                            "w": 1440,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 1923,
+                    "width": 1440
+                },
+                "sizes": {
+                    "large": {
+                        "h": 1923,
+                        "resize": "fit",
+                        "w": 1440
+                    },
+                    "medium": {
+                        "h": 1200,
+                        "resize": "fit",
+                        "w": 899
+                    },
+                    "small": {
+                        "h": 680,
+                        "resize": "fit",
+                        "w": 509
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/iinqiJUnsg"
+            }
+        ],
+        "user": {
+            "id_str": "1086729872305766401",
+            "name": "Tom Goldstein",
+            "screen_name": "tomgoldsteincs",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1194743821369626625/UATmG8qo_normal.jpg",
+            "url": "https://x.com/tomgoldsteincs",
+            "follow_url": "https://x.com/intent/follow?screen_name=tomgoldsteincs"
+        },
+        "url": "https://x.com/tomgoldsteincs/status/1668668520899702787",
+        "like_url": "https://x.com/intent/like?tweet_id=1668668520899702787",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668668520899702787",
+        "replies": [
+            "1668668526742339585"
+        ]
+    },
+    "1668668526742339585": {
+        "created_at": "Tue Jun 13 17:15:53 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    237
+                ],
+                "type": "text",
+                "text": "Some people argue that we shouldn't watermark because we can’t catch everything. I don't like this argument.  In a world with spam, harassment, misinformation, and bots, I’m ok with stopping some things even if we can’t catch everything."
+            }
+        ],
+        "favorite_count": 70,
+        "id_str": "1668668526742339585",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668520899702787",
+        "user": {
+            "id_str": "1086729872305766401",
+            "name": "Tom Goldstein",
+            "screen_name": "tomgoldsteincs",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1194743821369626625/UATmG8qo_normal.jpg",
+            "url": "https://x.com/tomgoldsteincs",
+            "follow_url": "https://x.com/intent/follow?screen_name=tomgoldsteincs"
+        },
+        "url": "https://x.com/tomgoldsteincs/status/1668668526742339585",
+        "like_url": "https://x.com/intent/like?tweet_id=1668668526742339585",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668668526742339585",
+        "replies": [
+            "1668670857160589312",
+            "1669138913095725057",
+            "1668719207519858688"
+        ]
+    },
+    "1668670857160589312": {
+        "created_at": "Tue Jun 13 17:25:09 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    10
+                ],
+                "type": "text",
+                "text": "Thanks to "
+            },
+            {
+                "id_str": "1576999554142146583",
+                "indices": [
+                    10,
+                    25
+                ],
+                "name": "John Kirchenbauer",
+                "screen_name": "jwkirchenbauer",
+                "type": "mention",
+                "href": "https://x.com/jwkirchenbauer",
+                "text": "@jwkirchenbauer"
+            },
+            {
+                "indices": [
+                    25,
+                    26
+                ],
+                "type": "text",
+                "text": " "
+            },
+            {
+                "id_str": "1443639893083758598",
+                "indices": [
+                    26,
+                    39
+                ],
+                "name": "Jonas Geiping",
+                "screen_name": "jonasgeiping",
+                "type": "mention",
+                "href": "https://x.com/jonasgeiping",
+                "text": "@jonasgeiping"
+            },
+            {
+                "indices": [
+                    39,
+                    40
+                ],
+                "type": "text",
+                "text": " "
+            },
+            {
+                "id_str": "1469693598929145858",
+                "indices": [
+                    40,
+                    47
+                ],
+                "name": "Yuxin Wen",
+                "screen_name": "ywen99",
+                "type": "mention",
+                "href": "https://x.com/ywen99",
+                "text": "@ywen99"
+            },
+            {
+                "indices": [
+                    47,
+                    48
+                ],
+                "type": "text",
+                "text": " "
+            },
+            {
+                "id_str": "1325125504622604296",
+                "indices": [
+                    48,
+                    57
+                ],
+                "name": "Manli Shu",
+                "screen_name": "ManliShu",
+                "type": "mention",
+                "href": "https://x.com/ManliShu",
+                "text": "@ManliShu"
+            },
+            {
+                "indices": [
+                    57,
+                    58
+                ],
+                "type": "text",
+                "text": " "
+            },
+            {
+                "id_str": "3117611679",
+                "indices": [
+                    58,
+                    71
+                ],
+                "name": "khalid",
+                "screen_name": "k_saifullaah",
+                "type": "mention",
+                "href": "https://x.com/k_saifullaah",
+                "text": "@k_saifullaah"
+            },
+            {
+                "indices": [
+                    71,
+                    72
+                ],
+                "type": "text",
+                "text": " "
+            },
+            {
+                "id_str": "1295857882026647552",
+                "indices": [
+                    72,
+                    82
+                ],
+                "name": "Kezhi Kong",
+                "screen_name": "KezhiKong",
+                "type": "mention",
+                "href": "https://x.com/KezhiKong",
+                "text": "@KezhiKong"
+            },
+            {
+                "indices": [
+                    82,
+                    83
+                ],
+                "type": "text",
+                "text": " "
+            },
+            {
+                "id_str": "875659569157910530",
+                "indices": [
+                    83,
+                    95
+                ],
+                "name": "Aniruddha Saha",
+                "screen_name": "ani0075saha",
+                "type": "mention",
+                "href": "https://x.com/ani0075saha",
+                "text": "@ani0075saha"
+            },
+            {
+                "indices": [
+                    95,
+                    96
+                ],
+                "type": "text",
+                "text": " "
+            },
+            {
+                "id_str": "2932062039",
+                "indices": [
+                    96,
+                    110
+                ],
+                "name": "Micah Goldblum",
+                "screen_name": "micahgoldblum",
+                "type": "mention",
+                "href": "https://x.com/micahgoldblum",
+                "text": "@micahgoldblum"
+            }
+        ],
+        "favorite_count": 17,
+        "id_str": "1668670857160589312",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668526742339585",
+        "user": {
+            "id_str": "1086729872305766401",
+            "name": "Tom Goldstein",
+            "screen_name": "tomgoldsteincs",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1194743821369626625/UATmG8qo_normal.jpg",
+            "url": "https://x.com/tomgoldsteincs",
+            "follow_url": "https://x.com/intent/follow?screen_name=tomgoldsteincs"
+        },
+        "url": "https://x.com/tomgoldsteincs/status/1668670857160589312",
+        "like_url": "https://x.com/intent/like?tweet_id=1668670857160589312",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668670857160589312",
+        "replies": [
+            "1668915956519776257"
+        ]
+    },
+    "1670747391417524224": {
+        "created_at": "Mon Jun 19 10:56:33 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    12
+                ],
+                "type": "text",
+                "text": "AIGC Weekly "
+            },
+            {
+                "indices": [
+                    12,
+                    18
+                ],
+                "text": "#26更新了",
+                "type": "hashtag",
+                "href": "https://x.com/hashtag/26更新了"
+            },
+            {
+                "indices": [
+                    18,
+                    181
+                ],
+                "type": "text",
+                "text": "，AI 领域沉寂了一个月之后终于有了一些新东西。本期主要内容有：\n\n• Open AI 大动作，模型更新、函数调用、费用降低\n• Meta  Voicebox，一个全能语音生成模型\n• Midjourney 最新的工作报告进展\n• 谷歌的AI试衣模型\n• Stable Diffusion稳定生成视频的突破\n\n下面是详细信息🧵"
+            }
+        ],
+        "favorite_count": 7,
+        "id_str": "1670747391417524224",
+        "tweetDisplayType": "SelfThread",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/HpnBLccfgN",
+                "expanded_url": "https://x.com/op7418/status/1670747391417524224/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": [
+                            {
+                                "h": 81,
+                                "w": 81,
+                                "x": 136,
+                                "y": 780
+                            }
+                        ]
+                    },
+                    "medium": {
+                        "faces": [
+                            {
+                                "h": 47,
+                                "w": 47,
+                                "x": 79,
+                                "y": 457
+                            }
+                        ]
+                    },
+                    "orig": {
+                        "faces": [
+                            {
+                                "h": 102,
+                                "w": 102,
+                                "x": 170,
+                                "y": 975
+                            }
+                        ]
+                    },
+                    "small": {
+                        "faces": [
+                            {
+                                "h": 27,
+                                "w": 27,
+                                "x": 45,
+                                "y": 258
+                            }
+                        ]
+                    }
+                },
+                "id_str": "1670747375399489536",
+                "indices": [
+                    182,
+                    205
+                ],
+                "media_key": "3_1670747375399489536",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1670747375399489536"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/Fy-v4swaUAAV8yJ.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 1402,
+                            "w": 2504,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1402,
+                            "w": 1402,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1402,
+                            "w": 1230,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1402,
+                            "w": 701,
+                            "x": 226,
+                            "y": 0
+                        },
+                        {
+                            "h": 1402,
+                            "w": 2560,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 1402,
+                    "width": 2560
+                },
+                "sizes": {
+                    "large": {
+                        "h": 1122,
+                        "resize": "fit",
+                        "w": 2048
+                    },
+                    "medium": {
+                        "h": 657,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 372,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/HpnBLccfgN"
+            }
+        ],
+        "user": {
+            "id_str": "1669276256",
+            "name": "歸藏(guizang.ai)",
+            "screen_name": "op7418",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+            "url": "https://x.com/op7418",
+            "follow_url": "https://x.com/intent/follow?screen_name=op7418"
+        },
+        "url": "https://x.com/op7418/status/1670747391417524224",
+        "like_url": "https://x.com/intent/like?tweet_id=1670747391417524224",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1670747391417524224",
+        "replies": [
+            "1670747395372756994"
+        ]
+    },
+    "1670747395372756994": {
+        "created_at": "Mon Jun 19 10:56:34 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    75
+                ],
+                "type": "text",
+                "text": "🥰本周精选：\n\nOpen AI 上周三发布了一大批模型相关的更新，包括了GPT-4和3.5的新版本模型，模型都支持函数调用以及关于模型 费用的调整： "
+            },
+            {
+                "display_url": "openai.com/blog/function-…",
+                "expanded_url": "https://openai.com/blog/function-calling-and-other-api-updates",
+                "indices": [
+                    75,
+                    98
+                ],
+                "url": "https://t.co/snqUQWw0nw",
+                "type": "url",
+                "href": "https://openai.com/blog/function-calling-and-other-api-updates",
+                "text": "openai.com/blog/function-…"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1670747395372756994",
+        "tweetDisplayType": "SelfThread",
+        "in_reply_to_status_id_str": "1670747391417524224",
+        "user": {
+            "id_str": "1669276256",
+            "name": "歸藏(guizang.ai)",
+            "screen_name": "op7418",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+            "url": "https://x.com/op7418",
+            "follow_url": "https://x.com/intent/follow?screen_name=op7418"
+        },
+        "url": "https://x.com/op7418/status/1670747395372756994",
+        "like_url": "https://x.com/intent/like?tweet_id=1670747395372756994",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1670747395372756994",
+        "replies": [
+            "1670747398661111809"
+        ]
+    },
+    "1670747398661111809": {
+        "created_at": "Mon Jun 19 10:56:35 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    62
+                ],
+                "type": "text",
+                "text": "Meta 最近瞄准了除了大语言模型之外的其他媒体生成式模型开始发力，比如上周推出了 Voicebox，一个全能语音生成模型："
+            },
+            {
+                "display_url": "ai.facebook.com/blog/voicebox-…",
+                "expanded_url": "https://ai.facebook.com/blog/voicebox-generative-ai-model-speech/https://ai.facebook.com/blog/voicebox-generative-ai-model-speech/",
+                "indices": [
+                    62,
+                    85
+                ],
+                "url": "https://t.co/l8wVEf9Xco",
+                "type": "url",
+                "href": "https://ai.facebook.com/blog/voicebox-generative-ai-model-speech/https://ai.facebook.com/blog/voicebox-generative-ai-model-speech/",
+                "text": "ai.facebook.com/blog/voicebox-…"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1670747398661111809",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1670747395372756994",
+        "user": {
+            "id_str": "1669276256",
+            "name": "歸藏(guizang.ai)",
+            "screen_name": "op7418",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+            "url": "https://x.com/op7418",
+            "follow_url": "https://x.com/intent/follow?screen_name=op7418"
+        },
+        "url": "https://x.com/op7418/status/1670747398661111809",
+        "like_url": "https://x.com/intent/like?tweet_id=1670747398661111809",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1670747398661111809",
+        "replies": [
+            "1670747401601298433"
+        ]
+    },
+    "1670747401601298433": {
+        "created_at": "Mon Jun 19 10:56:36 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    62
+                ],
+                "type": "text",
+                "text": "上周Midjourney工作时间官方的一些消息，比较重要的有：V6 相关信息、V5.2 相关信息、移动和 web 客户端等："
+            },
+            {
+                "display_url": "x.com/saana_ai/statu…",
+                "expanded_url": "https://x.com/saana_ai/status/1669068602111328256?s=20",
+                "indices": [
+                    62,
+                    85
+                ],
+                "url": "https://t.co/TjrgnK0mBy",
+                "type": "url",
+                "href": "https://x.com/saana_ai/status/1669068602111328256?s=20",
+                "text": "x.com/saana_ai/statu…"
+            },
+            {
+                "indices": [
+                    85,
+                    153
+                ],
+                "type": "text",
+                "text": "\n\n谷歌前两天发了一个AI试衣模型 TryOnDiffusion，想解决的是用户提供一张自己的全身照，就可以获得自己穿上对应服装的样子："
+            },
+            {
+                "display_url": "blog.google/products/shopp…",
+                "expanded_url": "https://blog.google/products/shopping/virtual-try-on-google-generative-ai/",
+                "indices": [
+                    153,
+                    176
+                ],
+                "url": "https://t.co/8V8pgslh4C",
+                "type": "url",
+                "href": "https://blog.google/products/shopping/virtual-try-on-google-generative-ai/",
+                "text": "blog.google/products/shopp…"
+            }
+        ],
+        "favorite_count": 1,
+        "id_str": "1670747401601298433",
+        "tweetDisplayType": "Tweet",
+        "quoted_status_id_str": "1669068602111328256",
+        "in_reply_to_status_id_str": "1670747398661111809",
+        "user": {
+            "id_str": "1669276256",
+            "name": "歸藏(guizang.ai)",
+            "screen_name": "op7418",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+            "url": "https://x.com/op7418",
+            "follow_url": "https://x.com/intent/follow?screen_name=op7418"
+        },
+        "url": "https://x.com/op7418/status/1670747401601298433",
+        "like_url": "https://x.com/intent/like?tweet_id=1670747401601298433",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1670747401601298433",
+        "replies": [
+            "1670747412200316932"
+        ]
+    },
+    "1670747412200316932": {
+        "created_at": "Mon Jun 19 10:56:38 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    36
+                ],
+                "type": "text",
+                "text": "上周发布的这个方案看起来很大程度解决了SD 生成视频的闪烁和稳定性问题："
+            },
+            {
+                "display_url": "anonymous-31415926.github.io",
+                "expanded_url": "https://anonymous-31415926.github.io/",
+                "indices": [
+                    36,
+                    59
+                ],
+                "url": "https://t.co/3OUlDS42x8",
+                "type": "url",
+                "href": "https://anonymous-31415926.github.io/",
+                "text": "anonymous-31415926.github.io"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1670747412200316932",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1670747401601298433",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/sF89StEpLb",
+                "expanded_url": "https://x.com/op7418/status/1670747412200316932/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": [
+                            {
+                                "h": 267,
+                                "w": 267,
+                                "x": 625,
+                                "y": 113
+                            }
+                        ]
+                    },
+                    "medium": {
+                        "faces": [
+                            {
+                                "h": 160,
+                                "w": 160,
+                                "x": 375,
+                                "y": 67
+                            }
+                        ]
+                    },
+                    "orig": {
+                        "faces": [
+                            {
+                                "h": 267,
+                                "w": 267,
+                                "x": 625,
+                                "y": 113
+                            }
+                        ]
+                    },
+                    "small": {
+                        "faces": [
+                            {
+                                "h": 90,
+                                "w": 90,
+                                "x": 212,
+                                "y": 38
+                            }
+                        ]
+                    }
+                },
+                "id_str": "1670747406026309632",
+                "indices": [
+                    60,
+                    83
+                ],
+                "media_key": "3_1670747406026309632",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1670747406026309632"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/Fy-v6e2agAA4OO7.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 601,
+                            "w": 1073,
+                            "x": 814,
+                            "y": 0
+                        },
+                        {
+                            "h": 601,
+                            "w": 601,
+                            "x": 1050,
+                            "y": 0
+                        },
+                        {
+                            "h": 601,
+                            "w": 527,
+                            "x": 1087,
+                            "y": 0
+                        },
+                        {
+                            "h": 601,
+                            "w": 301,
+                            "x": 1200,
+                            "y": 0
+                        },
+                        {
+                            "h": 601,
+                            "w": 2000,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 601,
+                    "width": 2000
+                },
+                "sizes": {
+                    "large": {
+                        "h": 601,
+                        "resize": "fit",
+                        "w": 2000
+                    },
+                    "medium": {
+                        "h": 361,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 204,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/sF89StEpLb"
+            }
+        ],
+        "user": {
+            "id_str": "1669276256",
+            "name": "歸藏(guizang.ai)",
+            "screen_name": "op7418",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+            "url": "https://x.com/op7418",
+            "follow_url": "https://x.com/intent/follow?screen_name=op7418"
+        },
+        "url": "https://x.com/op7418/status/1670747412200316932",
+        "like_url": "https://x.com/intent/like?tweet_id=1670747412200316932",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1670747412200316932",
+        "replies": [
+            "1670747422300196868"
+        ]
+    },
+    "1670747422300196868": {
+        "created_at": "Mon Jun 19 10:56:41 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    30
+                ],
+                "type": "text",
+                "text": "⚒️产品推荐：\n\nFramer AI ：AI 帮你创建网页："
+            },
+            {
+                "display_url": "framer.com/ai",
+                "expanded_url": "https://www.framer.com/ai",
+                "indices": [
+                    30,
+                    53
+                ],
+                "url": "https://t.co/359VBmzhxm",
+                "type": "url",
+                "href": "https://www.framer.com/ai",
+                "text": "framer.com/ai"
+            },
+            {
+                "indices": [
+                    53,
+                    99
+                ],
+                "type": "text",
+                "text": "\n\nForeplay 2.0：大量制作高转化率的 Facebook 和 TikTok 广告："
+            },
+            {
+                "display_url": "foreplay.co",
+                "expanded_url": "https://www.foreplay.co/",
+                "indices": [
+                    99,
+                    122
+                ],
+                "url": "https://t.co/2aE0iyMIpj",
+                "type": "url",
+                "href": "https://www.foreplay.co/",
+                "text": "foreplay.co"
+            },
+            {
+                "indices": [
+                    122,
+                    143
+                ],
+                "type": "text",
+                "text": "\n\n腾讯智影：腾讯推出的 AI 画图应用："
+            },
+            {
+                "display_url": "zenvideo.qq.com/image/create",
+                "expanded_url": "https://zenvideo.qq.com/image/create",
+                "indices": [
+                    143,
+                    166
+                ],
+                "url": "https://t.co/EChZbI8H5V",
+                "type": "url",
+                "href": "https://zenvideo.qq.com/image/create",
+                "text": "zenvideo.qq.com/image/create"
+            }
+        ],
+        "favorite_count": 3,
+        "id_str": "1670747422300196868",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1670747412200316932",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/yzQCoZfuMq",
+                "expanded_url": "https://x.com/op7418/status/1670747422300196868/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1670747414419095554",
+                "indices": [
+                    167,
+                    190
+                ],
+                "media_key": "3_1670747414419095554",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1670747414419095554"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/Fy-v6-HaQAI-CCb.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 1120,
+                            "w": 2000,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1151,
+                            "w": 1151,
+                            "x": 375,
+                            "y": 0
+                        },
+                        {
+                            "h": 1151,
+                            "w": 1010,
+                            "x": 445,
+                            "y": 0
+                        },
+                        {
+                            "h": 1151,
+                            "w": 576,
+                            "x": 662,
+                            "y": 0
+                        },
+                        {
+                            "h": 1151,
+                            "w": 2000,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 1151,
+                    "width": 2000
+                },
+                "sizes": {
+                    "large": {
+                        "h": 1151,
+                        "resize": "fit",
+                        "w": 2000
+                    },
+                    "medium": {
+                        "h": 691,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 391,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/yzQCoZfuMq"
+            }
+        ],
+        "user": {
+            "id_str": "1669276256",
+            "name": "歸藏(guizang.ai)",
+            "screen_name": "op7418",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+            "url": "https://x.com/op7418",
+            "follow_url": "https://x.com/intent/follow?screen_name=op7418"
+        },
+        "url": "https://x.com/op7418/status/1670747422300196868",
+        "like_url": "https://x.com/intent/like?tweet_id=1670747422300196868",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1670747422300196868",
+        "replies": [
+            "1670747439836598273"
+        ]
+    },
+    "1670747439836598273": {
+        "created_at": "Mon Jun 19 10:56:45 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    31
+                ],
+                "type": "text",
+                "text": "Locofy：利用AI 和设计系统直接将设计稿转换为前端代码："
+            },
+            {
+                "display_url": "locofy.ai",
+                "expanded_url": "https://www.locofy.ai/",
+                "indices": [
+                    31,
+                    54
+                ],
+                "url": "https://t.co/IFS3aCHm7g",
+                "type": "url",
+                "href": "https://www.locofy.ai/",
+                "text": "locofy.ai"
+            },
+            {
+                "indices": [
+                    54,
+                    85
+                ],
+                "type": "text",
+                "text": "\n\nBeforeSunset：AI 驱动的 To-Do 应用："
+            },
+            {
+                "display_url": "beforesunset.ai",
+                "expanded_url": "https://www.beforesunset.ai/",
+                "indices": [
+                    85,
+                    108
+                ],
+                "url": "https://t.co/Q01IBgxBC6",
+                "type": "url",
+                "href": "https://www.beforesunset.ai/",
+                "text": "beforesunset.ai"
+            },
+            {
+                "indices": [
+                    108,
+                    133
+                ],
+                "type": "text",
+                "text": "\n\nSpell AI：AI 自动完成你安排的任务："
+            },
+            {
+                "display_url": "spell.so",
+                "expanded_url": "https://spell.so/",
+                "indices": [
+                    133,
+                    156
+                ],
+                "url": "https://t.co/SrV6qIkLcG",
+                "type": "url",
+                "href": "https://spell.so/",
+                "text": "spell.so"
+            },
+            {
+                "indices": [
+                    156,
+                    189
+                ],
+                "type": "text",
+                "text": "\n\nFreeflo：一个精美的 AI 生成图片素材库附带有提示词："
+            },
+            {
+                "display_url": "freeflo.ai",
+                "expanded_url": "https://freeflo.ai/",
+                "indices": [
+                    189,
+                    212
+                ],
+                "url": "https://t.co/8o0ePy1BsK",
+                "type": "url",
+                "href": "https://freeflo.ai/",
+                "text": "freeflo.ai"
+            }
+        ],
+        "favorite_count": 9,
+        "id_str": "1670747439836598273",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1670747422300196868",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/s3vIOSP7N0",
+                "expanded_url": "https://x.com/op7418/status/1670747439836598273/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1670747425219428353",
+                "indices": [
+                    213,
+                    236
+                ],
+                "media_key": "3_1670747425219428353",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1670747425219428353"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/Fy-v7mWaQAE-lN-.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 1120,
+                            "w": 2000,
+                            "x": 0,
+                            "y": 31
+                        },
+                        {
+                            "h": 1151,
+                            "w": 1151,
+                            "x": 849,
+                            "y": 0
+                        },
+                        {
+                            "h": 1151,
+                            "w": 1010,
+                            "x": 990,
+                            "y": 0
+                        },
+                        {
+                            "h": 1151,
+                            "w": 576,
+                            "x": 1262,
+                            "y": 0
+                        },
+                        {
+                            "h": 1151,
+                            "w": 2000,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 1151,
+                    "width": 2000
+                },
+                "sizes": {
+                    "large": {
+                        "h": 1151,
+                        "resize": "fit",
+                        "w": 2000
+                    },
+                    "medium": {
+                        "h": 691,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 391,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/s3vIOSP7N0"
+            }
+        ],
+        "user": {
+            "id_str": "1669276256",
+            "name": "歸藏(guizang.ai)",
+            "screen_name": "op7418",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+            "url": "https://x.com/op7418",
+            "follow_url": "https://x.com/intent/follow?screen_name=op7418"
+        },
+        "url": "https://x.com/op7418/status/1670747439836598273",
+        "like_url": "https://x.com/intent/like?tweet_id=1670747439836598273",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1670747439836598273",
+        "replies": [
+            "1670747449110167552",
+            "1671131293265051648"
+        ]
+    },
+    "1670747449110167552": {
+        "created_at": "Mon Jun 19 10:56:47 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    37
+                ],
+                "type": "text",
+                "text": "Hotjar AI for surveys：AI 帮助创建调研问卷和分析："
+            },
+            {
+                "display_url": "hotjar.com/product-ai-sur…",
+                "expanded_url": "https://www.hotjar.com/product-ai-surveys/",
+                "indices": [
+                    37,
+                    60
+                ],
+                "url": "https://t.co/diV6Rhgem2",
+                "type": "url",
+                "href": "https://www.hotjar.com/product-ai-surveys/",
+                "text": "hotjar.com/product-ai-sur…"
+            },
+            {
+                "indices": [
+                    60,
+                    93
+                ],
+                "type": "text",
+                "text": "\n\nVercel 推出了 AI SDK加速构建 AI 应用的过程："
+            },
+            {
+                "display_url": "vercel.com/blog/introduci…",
+                "expanded_url": "https://vercel.com/blog/introducing-the-vercel-ai-sdk",
+                "indices": [
+                    93,
+                    116
+                ],
+                "url": "https://t.co/qxuLXhbrkm",
+                "type": "url",
+                "href": "https://vercel.com/blog/introducing-the-vercel-ai-sdk",
+                "text": "vercel.com/blog/introduci…"
+            },
+            {
+                "indices": [
+                    116,
+                    132
+                ],
+                "type": "text",
+                "text": "\n\nMillie：AI交友助手："
+            },
+            {
+                "display_url": "meetmillie.app",
+                "expanded_url": "https://www.meetmillie.app/",
+                "indices": [
+                    132,
+                    155
+                ],
+                "url": "https://t.co/d3I335Ltea",
+                "type": "url",
+                "href": "https://www.meetmillie.app/",
+                "text": "meetmillie.app"
+            },
+            {
+                "indices": [
+                    155,
+                    181
+                ],
+                "type": "text",
+                "text": "\n\nLancey：产品增长平台，快速启动PLG实验："
+            },
+            {
+                "display_url": "trylancey.com",
+                "expanded_url": "https://trylancey.com/",
+                "indices": [
+                    181,
+                    204
+                ],
+                "url": "https://t.co/k7BnJxKYJH",
+                "type": "url",
+                "href": "https://trylancey.com/",
+                "text": "trylancey.com"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1670747449110167552",
+        "tweetDisplayType": "SelfThread",
+        "in_reply_to_status_id_str": "1670747439836598273",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/XnzRc57bHj",
+                "expanded_url": "https://x.com/op7418/status/1670747449110167552/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1670747442327990274",
+                "indices": [
+                    205,
+                    228
+                ],
+                "media_key": "3_1670747442327990274",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1670747442327990274"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/Fy-v8mFaMAIzA8F.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 1120,
+                            "w": 2000,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1153,
+                            "w": 1153,
+                            "x": 424,
+                            "y": 0
+                        },
+                        {
+                            "h": 1153,
+                            "w": 1011,
+                            "x": 495,
+                            "y": 0
+                        },
+                        {
+                            "h": 1153,
+                            "w": 577,
+                            "x": 712,
+                            "y": 0
+                        },
+                        {
+                            "h": 1153,
+                            "w": 2000,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 1153,
+                    "width": 2000
+                },
+                "sizes": {
+                    "large": {
+                        "h": 1153,
+                        "resize": "fit",
+                        "w": 2000
+                    },
+                    "medium": {
+                        "h": 692,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 392,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/XnzRc57bHj"
+            }
+        ],
+        "user": {
+            "id_str": "1669276256",
+            "name": "歸藏(guizang.ai)",
+            "screen_name": "op7418",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+            "url": "https://x.com/op7418",
+            "follow_url": "https://x.com/intent/follow?screen_name=op7418"
+        },
+        "url": "https://x.com/op7418/status/1670747449110167552",
+        "like_url": "https://x.com/intent/like?tweet_id=1670747449110167552",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1670747449110167552",
+        "replies": [
+            "1670747458702573568"
+        ]
+    },
+    "1670747458702573568": {
+        "created_at": "Mon Jun 19 10:56:49 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    28
+                ],
+                "type": "text",
+                "text": "Octopulse AI：AI 驱动的用户增长分析平台："
+            },
+            {
+                "display_url": "octopulse.ai",
+                "expanded_url": "https://www.octopulse.ai/",
+                "indices": [
+                    28,
+                    51
+                ],
+                "url": "https://t.co/QScebV825m",
+                "type": "url",
+                "href": "https://www.octopulse.ai/",
+                "text": "octopulse.ai"
+            },
+            {
+                "indices": [
+                    51,
+                    79
+                ],
+                "type": "text",
+                "text": "\n\nWritesonic：AI 辅助你撰写品牌宣传文章："
+            },
+            {
+                "display_url": "writesonic.com/ai-article-wri…",
+                "expanded_url": "https://writesonic.com/ai-article-writer-generator",
+                "indices": [
+                    79,
+                    102
+                ],
+                "url": "https://t.co/kBcymcNyhJ",
+                "type": "url",
+                "href": "https://writesonic.com/ai-article-writer-generator",
+                "text": "writesonic.com/ai-article-wri…"
+            },
+            {
+                "indices": [
+                    102,
+                    127
+                ],
+                "type": "text",
+                "text": "\n\nLogo livery：AI 生成 LOGO："
+            },
+            {
+                "display_url": "logolivery.ai",
+                "expanded_url": "https://logolivery.ai/",
+                "indices": [
+                    127,
+                    150
+                ],
+                "url": "https://t.co/xpMkMb4usl",
+                "type": "url",
+                "href": "https://logolivery.ai/",
+                "text": "logolivery.ai"
+            },
+            {
+                "indices": [
+                    150,
+                    183
+                ],
+                "type": "text",
+                "text": "\n\nObviously AI：无需编写代码即可构建AI模型的工具："
+            },
+            {
+                "display_url": "obviously.ai",
+                "expanded_url": "https://www.obviously.ai/",
+                "indices": [
+                    183,
+                    206
+                ],
+                "url": "https://t.co/w7uk0oaeK5",
+                "type": "url",
+                "href": "https://www.obviously.ai/",
+                "text": "obviously.ai"
+            }
+        ],
+        "favorite_count": 2,
+        "id_str": "1670747458702573568",
+        "tweetDisplayType": "SelfThread",
+        "in_reply_to_status_id_str": "1670747449110167552",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/ccDK3ERL44",
+                "expanded_url": "https://x.com/op7418/status/1670747458702573568/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1670747451337355264",
+                "indices": [
+                    207,
+                    230
+                ],
+                "media_key": "3_1670747451337355264",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1670747451337355264"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/Fy-v9HpaMAA_VPw.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 1120,
+                            "w": 2000,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1151,
+                            "w": 1151,
+                            "x": 275,
+                            "y": 0
+                        },
+                        {
+                            "h": 1151,
+                            "w": 1010,
+                            "x": 345,
+                            "y": 0
+                        },
+                        {
+                            "h": 1151,
+                            "w": 576,
+                            "x": 562,
+                            "y": 0
+                        },
+                        {
+                            "h": 1151,
+                            "w": 2000,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 1151,
+                    "width": 2000
+                },
+                "sizes": {
+                    "large": {
+                        "h": 1151,
+                        "resize": "fit",
+                        "w": 2000
+                    },
+                    "medium": {
+                        "h": 691,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 391,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/ccDK3ERL44"
+            }
+        ],
+        "user": {
+            "id_str": "1669276256",
+            "name": "歸藏(guizang.ai)",
+            "screen_name": "op7418",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+            "url": "https://x.com/op7418",
+            "follow_url": "https://x.com/intent/follow?screen_name=op7418"
+        },
+        "url": "https://x.com/op7418/status/1670747458702573568",
+        "like_url": "https://x.com/intent/like?tweet_id=1670747458702573568",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1670747458702573568",
+        "replies": [
+            "1670747469691650051"
+        ]
+    },
+    "1670747469691650051": {
+        "created_at": "Mon Jun 19 10:56:52 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    20
+                ],
+                "type": "text",
+                "text": "🔬精选文章：\n\n欧盟人工智能法案的介绍："
+            },
+            {
+                "display_url": "forbes.com/sites/forbeseq…",
+                "expanded_url": "https://www.forbes.com/sites/forbeseq/2023/06/15/a-machine-learning-engineers-guide-to-the-ai-act/",
+                "indices": [
+                    20,
+                    43
+                ],
+                "url": "https://t.co/BliBBQWWuM",
+                "type": "url",
+                "href": "https://www.forbes.com/sites/forbeseq/2023/06/15/a-machine-learning-engineers-guide-to-the-ai-act/",
+                "text": "forbes.com/sites/forbeseq…"
+            },
+            {
+                "indices": [
+                    43,
+                    73
+                ],
+                "type": "text",
+                "text": "\n\nChatGPT 代码解释器插件对财务和金融从业者的影响："
+            },
+            {
+                "display_url": "every.to/napkin-math/op…",
+                "expanded_url": "https://every.to/napkin-math/openai-s-code-interpreter-is-about-to-remake-finance",
+                "indices": [
+                    73,
+                    96
+                ],
+                "url": "https://t.co/ibvBm3zAXE",
+                "type": "url",
+                "href": "https://every.to/napkin-math/openai-s-code-interpreter-is-about-to-remake-finance",
+                "text": "every.to/napkin-math/op…"
+            },
+            {
+                "indices": [
+                    96,
+                    135
+                ],
+                "type": "text",
+                "text": "\n\n第一个基于 Yann LeCun 对更像人类 AI 的愿景的 AI 模型："
+            },
+            {
+                "display_url": "ai.facebook.com/blog/yann-lecu…",
+                "expanded_url": "https://ai.facebook.com/blog/yann-lecun-ai-model-i-jepa/",
+                "indices": [
+                    135,
+                    158
+                ],
+                "url": "https://t.co/0F5YuvH0QY",
+                "type": "url",
+                "href": "https://ai.facebook.com/blog/yann-lecun-ai-model-i-jepa/",
+                "text": "ai.facebook.com/blog/yann-lecu…"
+            }
+        ],
+        "favorite_count": 1,
+        "id_str": "1670747469691650051",
+        "tweetDisplayType": "SelfThread",
+        "in_reply_to_status_id_str": "1670747458702573568",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/vMBWSzoDqx",
+                "expanded_url": "https://x.com/op7418/status/1670747469691650051/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": [
+                            {
+                                "h": 134,
+                                "w": 134,
+                                "x": 1160,
+                                "y": 140
+                            }
+                        ]
+                    },
+                    "medium": {
+                        "faces": [
+                            {
+                                "h": 80,
+                                "w": 80,
+                                "x": 696,
+                                "y": 84
+                            }
+                        ]
+                    },
+                    "orig": {
+                        "faces": [
+                            {
+                                "h": 134,
+                                "w": 134,
+                                "x": 1160,
+                                "y": 140
+                            }
+                        ]
+                    },
+                    "small": {
+                        "faces": [
+                            {
+                                "h": 45,
+                                "w": 45,
+                                "x": 394,
+                                "y": 47
+                            }
+                        ]
+                    }
+                },
+                "id_str": "1670747461152030720",
+                "indices": [
+                    159,
+                    182
+                ],
+                "media_key": "3_1670747461152030720",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1670747461152030720"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/Fy-v9sNaQAAOhju.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 1120,
+                            "w": 2000,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1153,
+                            "w": 1153,
+                            "x": 674,
+                            "y": 0
+                        },
+                        {
+                            "h": 1153,
+                            "w": 1011,
+                            "x": 745,
+                            "y": 0
+                        },
+                        {
+                            "h": 1153,
+                            "w": 577,
+                            "x": 962,
+                            "y": 0
+                        },
+                        {
+                            "h": 1153,
+                            "w": 2000,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 1153,
+                    "width": 2000
+                },
+                "sizes": {
+                    "large": {
+                        "h": 1153,
+                        "resize": "fit",
+                        "w": 2000
+                    },
+                    "medium": {
+                        "h": 692,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 392,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/vMBWSzoDqx"
+            }
+        ],
+        "user": {
+            "id_str": "1669276256",
+            "name": "歸藏(guizang.ai)",
+            "screen_name": "op7418",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+            "url": "https://x.com/op7418",
+            "follow_url": "https://x.com/intent/follow?screen_name=op7418"
+        },
+        "url": "https://x.com/op7418/status/1670747469691650051",
+        "like_url": "https://x.com/intent/like?tweet_id=1670747469691650051",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1670747469691650051",
+        "replies": [
+            "1670747479237881857"
+        ]
+    },
+    "1670747479237881857": {
+        "created_at": "Mon Jun 19 10:56:54 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    11
+                ],
+                "type": "text",
+                "text": "LLM的不同发展路径："
+            },
+            {
+                "display_url": "interconnects.ai/p/llm-developm…",
+                "expanded_url": "https://www.interconnects.ai/p/llm-development-paths",
+                "indices": [
+                    11,
+                    34
+                ],
+                "url": "https://t.co/dDE6ufQMTV",
+                "type": "url",
+                "href": "https://www.interconnects.ai/p/llm-development-paths",
+                "text": "interconnects.ai/p/llm-developm…"
+            },
+            {
+                "indices": [
+                    34,
+                    51
+                ],
+                "type": "text",
+                "text": "\n\n成规模的 AI 领域市场地图："
+            },
+            {
+                "display_url": "alexsandu.substack.com/p/market-map-g…",
+                "expanded_url": "https://alexsandu.substack.com/p/market-map-gen-ai-companies-with",
+                "indices": [
+                    51,
+                    74
+                ],
+                "url": "https://t.co/GqYBE1TTab",
+                "type": "url",
+                "href": "https://alexsandu.substack.com/p/market-map-gen-ai-companies-with",
+                "text": "alexsandu.substack.com/p/market-map-g…"
+            },
+            {
+                "indices": [
+                    74,
+                    97
+                ],
+                "type": "text",
+                "text": "\n\nReddit实际上是OpenAI的护城河："
+            },
+            {
+                "display_url": "cyberdemon.org/2023/06/14/red…",
+                "expanded_url": "https://www.cyberdemon.org/2023/06/14/reddit-moat.html",
+                "indices": [
+                    97,
+                    120
+                ],
+                "url": "https://t.co/OdzLFT9y5e",
+                "type": "url",
+                "href": "https://www.cyberdemon.org/2023/06/14/reddit-moat.html",
+                "text": "cyberdemon.org/2023/06/14/red…"
+            },
+            {
+                "indices": [
+                    120,
+                    134
+                ],
+                "type": "text",
+                "text": "\n\n用长期记忆增强语言模型："
+            },
+            {
+                "display_url": "huggingface.co/papers/2306.07…",
+                "expanded_url": "https://huggingface.co/papers/2306.07174",
+                "indices": [
+                    134,
+                    157
+                ],
+                "url": "https://t.co/ubghtE7sbr",
+                "type": "url",
+                "href": "https://huggingface.co/papers/2306.07174",
+                "text": "huggingface.co/papers/2306.07…"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1670747479237881857",
+        "tweetDisplayType": "SelfThread",
+        "in_reply_to_status_id_str": "1670747469691650051",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/EqkvixyOoj",
+                "expanded_url": "https://x.com/op7418/status/1670747479237881857/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1670747472086581249",
+                "indices": [
+                    158,
+                    181
+                ],
+                "media_key": "3_1670747472086581249",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1670747472086581249"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/Fy-v-U8aQAEDjZ2.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 1120,
+                            "w": 2000,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 1126,
+                            "w": 1126,
+                            "x": 387,
+                            "y": 0
+                        },
+                        {
+                            "h": 1126,
+                            "w": 988,
+                            "x": 456,
+                            "y": 0
+                        },
+                        {
+                            "h": 1126,
+                            "w": 563,
+                            "x": 669,
+                            "y": 0
+                        },
+                        {
+                            "h": 1126,
+                            "w": 2000,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 1126,
+                    "width": 2000
+                },
+                "sizes": {
+                    "large": {
+                        "h": 1126,
+                        "resize": "fit",
+                        "w": 2000
+                    },
+                    "medium": {
+                        "h": 676,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 383,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/EqkvixyOoj"
+            }
+        ],
+        "user": {
+            "id_str": "1669276256",
+            "name": "歸藏(guizang.ai)",
+            "screen_name": "op7418",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+            "url": "https://x.com/op7418",
+            "follow_url": "https://x.com/intent/follow?screen_name=op7418"
+        },
+        "url": "https://x.com/op7418/status/1670747479237881857",
+        "like_url": "https://x.com/intent/like?tweet_id=1670747479237881857",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1670747479237881857",
+        "replies": [
+            "1670747493439778816"
+        ]
+    },
+    "1670747497072062466": {
+        "created_at": "Mon Jun 19 10:56:58 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    0,
+                    62
+                ],
+                "type": "text",
+                "text": "感谢大家看到这里，在此我也想给大家介绍一下有趣的内容和信息，如果你也觉得有意思的话可以私信我或者给我发邮件投稿。 订阅周刊："
+            },
+            {
+                "display_url": "op7418.zhubai.love/posts/22825313…",
+                "expanded_url": "https://op7418.zhubai.love/posts/2282531383102836736",
+                "indices": [
+                    62,
+                    85
+                ],
+                "url": "https://t.co/1xgj1FpBau",
+                "type": "url",
+                "href": "https://op7418.zhubai.love/posts/2282531383102836736",
+                "text": "op7418.zhubai.love/posts/22825313…"
+            }
+        ],
+        "favorite_count": 2,
+        "id_str": "1670747497072062466",
+        "tweetDisplayType": "SelfThread",
+        "in_reply_to_status_id_str": "1670747493439778816",
+        "user": {
+            "id_str": "1669276256",
+            "name": "歸藏(guizang.ai)",
+            "screen_name": "op7418",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+            "url": "https://x.com/op7418",
+            "follow_url": "https://x.com/intent/follow?screen_name=op7418"
+        },
+        "url": "https://x.com/op7418/status/1670747497072062466",
+        "like_url": "https://x.com/intent/like?tweet_id=1670747497072062466",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1670747497072062466",
+        "replies": []
+    },
+    "1668777978195595264": {
+        "created_at": "Wed Jun 14 00:30:49 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    171
+                ],
+                "type": "text",
+                "text": "++ In your research, what experimental setup or methodology did you employ to test the effectiveness of GPT in automatically removing watermarks from text?"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1668777978195595264",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668484975464448",
+        "user": {
+            "id_str": "1229991659812704257",
+            "name": "Naina Chaturvedi",
+            "screen_name": "NainaChaturved8",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1379560061727477762/J_vZJfyO_normal.jpg",
+            "url": "https://x.com/NainaChaturved8",
+            "follow_url": "https://x.com/intent/follow?screen_name=NainaChaturved8"
+        },
+        "url": "https://x.com/NainaChaturved8/status/1668777978195595264",
+        "like_url": "https://x.com/intent/like?tweet_id=1668777978195595264",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668777978195595264",
+        "replies": [
+            "1669367228091756548",
+            "1668975171653255168"
+        ]
+    },
+    "1669367228091756548": {
+        "created_at": "Thu Jun 15 15:32:17 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    17,
+                    229
+                ],
+                "type": "text",
+                "text": "In short, we asked GPT to rewrite a watermarked passage in its own words, then we ran then output through a watermark detector.  We did a lot of prompt engineering to try to break the watermark.  See Appendix A4."
+            }
+        ],
+        "favorite_count": 1,
+        "id_str": "1669367228091756548",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668777978195595264",
+        "user": {
+            "id_str": "1086729872305766401",
+            "name": "Tom Goldstein",
+            "screen_name": "tomgoldsteincs",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1194743821369626625/UATmG8qo_normal.jpg",
+            "url": "https://x.com/tomgoldsteincs",
+            "follow_url": "https://x.com/intent/follow?screen_name=tomgoldsteincs"
+        },
+        "url": "https://x.com/tomgoldsteincs/status/1669367228091756548",
+        "like_url": "https://x.com/intent/like?tweet_id=1669367228091756548",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1669367228091756548",
+        "replies": [
+            "1669368554737528838"
+        ]
+    },
+    "1669367832537182209": {
+        "created_at": "Thu Jun 15 15:34:41 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    292
+                ],
+                "type": "text",
+                "text": "So you end up with an LLM that's highly unlikely to generate tokens from some 20% of its vocab? Have you measured the results with human ratings, not perplexity? What good is a model that can't answer a question with a very specific answer because that answer is in blacklist?"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1669367832537182209",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668484975464448",
+        "user": {
+            "id_str": "1585921459486183424",
+            "name": "Ivan Korotkov",
+            "screen_name": "tw33dl3dee",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1585921570983247873/iVJArwrE_normal.png",
+            "url": "https://x.com/tw33dl3dee",
+            "follow_url": "https://x.com/intent/follow?screen_name=tw33dl3dee"
+        },
+        "url": "https://x.com/tw33dl3dee/status/1669367832537182209",
+        "like_url": "https://x.com/intent/like?tweet_id=1669367832537182209",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1669367832537182209",
+        "replies": [
+            "1669370576517967872"
+        ]
+    },
+    "1669370576517967872": {
+        "created_at": "Thu Jun 15 15:45:35 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    12,
+                    258
+                ],
+                "type": "text",
+                "text": "The watermark has negligible impact on the selection of tokens when the model is very confident of its token selection, i.e., it does not prohibit any token from being selected.  Our paper does contain a study of human preferences in Appendix A9."
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1669370576517967872",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1669367832537182209",
+        "user": {
+            "id_str": "1086729872305766401",
+            "name": "Tom Goldstein",
+            "screen_name": "tomgoldsteincs",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1194743821369626625/UATmG8qo_normal.jpg",
+            "url": "https://x.com/tomgoldsteincs",
+            "follow_url": "https://x.com/intent/follow?screen_name=tomgoldsteincs"
+        },
+        "url": "https://x.com/tomgoldsteincs/status/1669370576517967872",
+        "like_url": "https://x.com/intent/like?tweet_id=1669370576517967872",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1669370576517967872",
+        "replies": [
+            "1669389713193435150"
+        ]
+    },
+    "1668934838957535233": {
+        "created_at": "Wed Jun 14 10:54:07 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    158
+                ],
+                "type": "text",
+                "text": "Have you considered the chance that a human writes the \"green\" tokens when writing a text, so it is accidentally labeled as machine-generated?"
+            }
+        ],
+        "favorite_count": 1,
+        "id_str": "1668934838957535233",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668484975464448",
+        "user": {
+            "id_str": "1156996304968540161",
+            "name": "l'ingegnosofo",
+            "screen_name": "eraclitech",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1432730880062246914/NiosB2fC_normal.jpg",
+            "url": "https://x.com/eraclitech",
+            "follow_url": "https://x.com/intent/follow?screen_name=eraclitech"
+        },
+        "url": "https://x.com/eraclitech/status/1668934838957535233",
+        "like_url": "https://x.com/intent/like?tweet_id=1668934838957535233",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668934838957535233",
+        "replies": [
+            "1668974124465627139"
+        ]
+    },
+    "1668824897450135559": {
+        "created_at": "Wed Jun 14 03:37:15 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    44
+                ],
+                "type": "text",
+                "text": "This looks really awesome 👏🏼"
+            }
+        ],
+        "favorite_count": 1,
+        "id_str": "1668824897450135559",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668484975464448",
+        "user": {
+            "id_str": "767094649181704192",
+            "name": "Seth Neel",
+            "screen_name": "SethInternet",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1759952755194810369/OrQ_2MpU_normal.jpg",
+            "url": "https://x.com/SethInternet",
+            "follow_url": "https://x.com/intent/follow?screen_name=SethInternet"
+        },
+        "url": "https://x.com/SethInternet/status/1668824897450135559",
+        "like_url": "https://x.com/intent/like?tweet_id=1668824897450135559",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668824897450135559",
+        "replies": []
+    },
+    "1668949535932948480": {
+        "created_at": "Wed Jun 14 11:52:31 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    15,
+                    15
+                ],
+                "type": "text",
+                "text": ""
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1668949535932948480",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668484975464448",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/0ZGnF4Rs57",
+                "expanded_url": "https://x.com/nickolai89/status/1668949535932948480/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": [
+                            {
+                                "h": 44,
+                                "w": 44,
+                                "x": 215,
+                                "y": 120
+                            }
+                        ]
+                    },
+                    "medium": {
+                        "faces": [
+                            {
+                                "h": 44,
+                                "w": 44,
+                                "x": 215,
+                                "y": 120
+                            }
+                        ]
+                    },
+                    "orig": {
+                        "faces": [
+                            {
+                                "h": 44,
+                                "w": 44,
+                                "x": 215,
+                                "y": 120
+                            }
+                        ]
+                    },
+                    "small": {
+                        "faces": [
+                            {
+                                "h": 44,
+                                "w": 44,
+                                "x": 215,
+                                "y": 120
+                            }
+                        ]
+                    }
+                },
+                "id_str": "1668949516337262593",
+                "indices": [
+                    16,
+                    39
+                ],
+                "media_key": "3_1668949516337262593",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1668949516337262593"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/FylMvh1XsAE0gcH.png",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 279,
+                            "w": 498,
+                            "x": 0,
+                            "y": 1
+                        },
+                        {
+                            "h": 280,
+                            "w": 280,
+                            "x": 218,
+                            "y": 0
+                        },
+                        {
+                            "h": 280,
+                            "w": 246,
+                            "x": 252,
+                            "y": 0
+                        },
+                        {
+                            "h": 280,
+                            "w": 140,
+                            "x": 358,
+                            "y": 0
+                        },
+                        {
+                            "h": 280,
+                            "w": 498,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 280,
+                    "width": 498
+                },
+                "sizes": {
+                    "large": {
+                        "h": 280,
+                        "resize": "fit",
+                        "w": 498
+                    },
+                    "medium": {
+                        "h": 280,
+                        "resize": "fit",
+                        "w": 498
+                    },
+                    "small": {
+                        "h": 280,
+                        "resize": "fit",
+                        "w": 498
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/0ZGnF4Rs57"
+            }
+        ],
+        "user": {
+            "id_str": "47843754",
+            "name": "Nickolai Belakovski",
+            "screen_name": "nickolai89",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/266470565/n1326990142_30068449_6133_normal.jpg",
+            "url": "https://x.com/nickolai89",
+            "follow_url": "https://x.com/intent/follow?screen_name=nickolai89"
+        },
+        "url": "https://x.com/nickolai89/status/1668949535932948480",
+        "like_url": "https://x.com/intent/like?tweet_id=1668949535932948480",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668949535932948480",
+        "replies": [
+            "1668949686751723520"
+        ]
+    },
+    "1668857736090492928": {
+        "created_at": "Wed Jun 14 05:47:44 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    119
+                ],
+                "type": "text",
+                "text": "How many false positives do you get? Have you tried to find the watermark in text completely by humans?"
+            }
+        ],
+        "favorite_count": 2,
+        "id_str": "1668857736090492928",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668484975464448",
+        "user": {
+            "id_str": "1374978518",
+            "name": "Nicola Pirastu",
+            "screen_name": "NPirastu",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1351976881030123520/qkeYiHIa_normal.jpg",
+            "url": "https://x.com/NPirastu",
+            "follow_url": "https://x.com/intent/follow?screen_name=NPirastu"
+        },
+        "url": "https://x.com/NPirastu/status/1668857736090492928",
+        "like_url": "https://x.com/intent/like?tweet_id=1668857736090492928",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668857736090492928",
+        "replies": [
+            "1668973288955994114"
+        ]
+    },
+    "1668688760932802622": {
+        "created_at": "Tue Jun 13 18:36:18 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    211
+                ],
+                "type": "text",
+                "text": "Even if watermarking doesn’t identify every AI-generated text, it can quantitatively compare between different text-generating “authors” — so long as watermarking doesn’t produce false negatives."
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1668688760932802622",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668484975464448",
+        "user": {
+            "id_str": "47376438",
+            "name": "Parade O’ Crap™",
+            "screen_name": "HeyThereItsEric",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1657492158717255683/TKQz7Q8k_normal.jpg",
+            "url": "https://x.com/HeyThereItsEric",
+            "follow_url": "https://x.com/intent/follow?screen_name=HeyThereItsEric"
+        },
+        "url": "https://x.com/HeyThereItsEric/status/1668688760932802622",
+        "like_url": "https://x.com/intent/like?tweet_id=1668688760932802622",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668688760932802622",
+        "replies": [
+            "1668821273495961600"
+        ]
+    },
+    "1668807968840642562": {
+        "created_at": "Wed Jun 14 02:29:59 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    226
+                ],
+                "type": "text",
+                "text": "I didn’t catch if your method was aware of the watermark and testing for it or determining the likelihood of an unknown watermark being present.  Speaks to system implementation.  Is that detailed in the paper?"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1668807968840642562",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668484975464448",
+        "user": {
+            "id_str": "1086946514092638209",
+            "name": "robfritts",
+            "screen_name": "robfritts",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1086950877326336000/Hd_3p7h6_normal.jpg",
+            "url": "https://x.com/robfritts",
+            "follow_url": "https://x.com/intent/follow?screen_name=robfritts"
+        },
+        "url": "https://x.com/robfritts/status/1668807968840642562",
+        "like_url": "https://x.com/intent/like?tweet_id=1668807968840642562",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668807968840642562",
+        "replies": [
+            "1668974945911595009"
+        ]
+    },
+    "1671131293265051648": {
+        "created_at": "Tue Jun 20 12:22:03 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    8,
+                    31
+                ],
+                "type": "text",
+                "text": "Thanks for the mention🙏"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1671131293265051648",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1670747439836598273",
+        "user": {
+            "id_str": "1397064648860463109",
+            "name": "Locofy.ai",
+            "screen_name": "locofy_ai",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1747070705265721344/yAHQDX1N_normal.jpg",
+            "url": "https://x.com/locofy_ai",
+            "follow_url": "https://x.com/intent/follow?screen_name=locofy_ai"
+        },
+        "url": "https://x.com/locofy_ai/status/1671131293265051648",
+        "like_url": "https://x.com/intent/like?tweet_id=1671131293265051648",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1671131293265051648",
+        "replies": [
+            "1671132740077641731"
+        ]
+    },
+    "1671132740077641731": {
+        "created_at": "Tue Jun 20 12:27:48 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    11,
+                    110
+                ],
+                "type": "text",
+                "text": "Your product works very well, but the requirements for the designer's design drafts are a bit high."
+            }
+        ],
+        "favorite_count": 1,
+        "id_str": "1671132740077641731",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1671131293265051648",
+        "user": {
+            "id_str": "1669276256",
+            "name": "歸藏(guizang.ai)",
+            "screen_name": "op7418",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg",
+            "url": "https://x.com/op7418",
+            "follow_url": "https://x.com/intent/follow?screen_name=op7418"
+        },
+        "url": "https://x.com/op7418/status/1671132740077641731",
+        "like_url": "https://x.com/intent/like?tweet_id=1671132740077641731",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1671132740077641731",
+        "replies": []
+    },
+    "1668733430358482946": {
+        "created_at": "Tue Jun 13 21:33:48 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    111
+                ],
+                "type": "text",
+                "text": "Thanks for doing this work. Seems incredibly important to get some empirics on these questions."
+            }
+        ],
+        "favorite_count": 6,
+        "id_str": "1668733430358482946",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668484975464448",
+        "user": {
+            "id_str": "381501277",
+            "name": "Markus Anderljung",
+            "screen_name": "Manderljung",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1514340570600284163/EGxYQVtU_normal.jpg",
+            "url": "https://x.com/Manderljung",
+            "follow_url": "https://x.com/intent/follow?screen_name=Manderljung"
+        },
+        "url": "https://x.com/Manderljung/status/1668733430358482946",
+        "like_url": "https://x.com/intent/like?tweet_id=1668733430358482946",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668733430358482946",
+        "replies": []
+    },
+    "1669259244099731456": {
+        "created_at": "Thu Jun 15 08:23:11 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    48
+                ],
+                "type": "text",
+                "text": "Great explanation of watermarks!"
+            }
+        ],
+        "favorite_count": 1,
+        "id_str": "1669259244099731456",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668484975464448",
+        "user": {
+            "id_str": "1275612924480905216",
+            "name": "Sarat Bhargava Chinni",
+            "screen_name": "SaratChinni",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1677205511157186560/Tr9PepQ9_normal.jpg",
+            "url": "https://x.com/SaratChinni",
+            "follow_url": "https://x.com/intent/follow?screen_name=SaratChinni"
+        },
+        "url": "https://x.com/SaratChinni/status/1669259244099731456",
+        "like_url": "https://x.com/intent/like?tweet_id=1669259244099731456",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1669259244099731456",
+        "replies": []
+    },
+    "1668886721235148803": {
+        "created_at": "Wed Jun 14 07:42:55 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    43
+                ],
+                "type": "text",
+                "text": "=DEEME902040LOADAFBAFG90=30"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1668886721235148803",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668484975464448",
+        "user": {
+            "id_str": "1376605912983552000",
+            "name": "وحیدسلیمانی",
+            "screen_name": "Vahid99931517",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1409801661183373312/8lbJZ0z1_normal.jpg",
+            "url": "https://x.com/Vahid99931517",
+            "follow_url": "https://x.com/intent/follow?screen_name=Vahid99931517"
+        },
+        "url": "https://x.com/Vahid99931517/status/1668886721235148803",
+        "like_url": "https://x.com/intent/like?tweet_id=1668886721235148803",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668886721235148803",
+        "replies": []
+    },
+    "1669002301619486720": {
+        "created_at": "Wed Jun 14 15:22:11 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    272
+                ],
+                "type": "text",
+                "text": "I read through your paper, and have some follow up. While the detection of human paraphrasers (p. 8-9) is promising, I also know that simply because someone is a graduate student does not make them a great writer or wordsmith, as evidenced by the fact that"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1669002301619486720",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668484975464448",
+        "user": {
+            "id_str": "157968795",
+            "name": "Aaron",
+            "screen_name": "AMSlemp",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1320587763943702528/yxgjaZh9_normal.jpg",
+            "url": "https://x.com/AMSlemp",
+            "follow_url": "https://x.com/intent/follow?screen_name=AMSlemp"
+        },
+        "url": "https://x.com/AMSlemp/status/1669002301619486720",
+        "like_url": "https://x.com/intent/like?tweet_id=1669002301619486720",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1669002301619486720",
+        "replies": [
+            "1669002357877645315"
+        ]
+    },
+    "1668703055108534277": {
+        "created_at": "Tue Jun 13 19:33:05 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    72
+                ],
+                "type": "text",
+                "text": "Nice work! And really like your larger body of research."
+            }
+        ],
+        "favorite_count": 2,
+        "id_str": "1668703055108534277",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668484975464448",
+        "user": {
+            "id_str": "136913019",
+            "name": "Rahul Panicker",
+            "screen_name": "RahulAPanicker",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1282316744476913667/isl3D9W8_normal.jpg",
+            "url": "https://x.com/RahulAPanicker",
+            "follow_url": "https://x.com/intent/follow?screen_name=RahulAPanicker"
+        },
+        "url": "https://x.com/RahulAPanicker/status/1668703055108534277",
+        "like_url": "https://x.com/intent/like?tweet_id=1668703055108534277",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668703055108534277",
+        "replies": []
+    },
+    "1668671374054023169": {
+        "created_at": "Tue Jun 13 17:27:12 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    218
+                ],
+                "type": "text",
+                "text": "What if I translate all of my text into Icelandic , then back again into English? Aha your marking of the water not can find investigate myself's works using artifice machines at then point in timeline."
+            }
+        ],
+        "favorite_count": 12,
+        "id_str": "1668671374054023169",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668484975464448",
+        "user": {
+            "id_str": "21261227",
+            "name": "Hoàng Anh Ngo 🪷",
+            "screen_name": "peter_ngo",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1589041776073097216/rQld6ePB_normal.jpg",
+            "url": "https://x.com/peter_ngo",
+            "follow_url": "https://x.com/intent/follow?screen_name=peter_ngo"
+        },
+        "url": "https://x.com/peter_ngo/status/1668671374054023169",
+        "like_url": "https://x.com/intent/like?tweet_id=1668671374054023169",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668671374054023169",
+        "replies": [
+            "1668737811380404224"
+        ]
+    },
+    "1668733755316420609": {
+        "created_at": "Tue Jun 13 21:35:05 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    39
+                ],
+                "type": "text",
+                "text": "Very interesting work, "
+            },
+            {
+                "id_str": "1086729872305766401",
+                "indices": [
+                    39,
+                    54
+                ],
+                "name": "Tom Goldstein",
+                "screen_name": "tomgoldsteincs",
+                "type": "mention",
+                "href": "https://x.com/tomgoldsteincs",
+                "text": "@tomgoldsteincs"
+            },
+            {
+                "indices": [
+                    54,
+                    55
+                ],
+                "type": "text",
+                "text": "."
+            }
+        ],
+        "favorite_count": 2,
+        "id_str": "1668733755316420609",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668484975464448",
+        "user": {
+            "id_str": "111593100",
+            "name": "Mario Figueiredo",
+            "screen_name": "mariotelfig",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1746608282943291392/zfBROTx__normal.jpg",
+            "url": "https://x.com/mariotelfig",
+            "follow_url": "https://x.com/intent/follow?screen_name=mariotelfig"
+        },
+        "url": "https://x.com/mariotelfig/status/1668733755316420609",
+        "like_url": "https://x.com/intent/like?tweet_id=1668733755316420609",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668733755316420609",
+        "replies": []
+    },
+    "1668720718673227777": {
+        "created_at": "Tue Jun 13 20:43:17 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    15,
+                    15
+                ],
+                "type": "text",
+                "text": ""
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1668720718673227777",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668484975464448",
+        "mediaDetails": [
+            {
+                "display_url": "pic.x.com/mCBYHG2ENj",
+                "expanded_url": "https://x.com/JOSourcing/status/1668720718673227777/photo/1",
+                "ext_media_availability": {
+                    "status": "Available"
+                },
+                "features": {
+                    "large": {
+                        "faces": []
+                    },
+                    "medium": {
+                        "faces": []
+                    },
+                    "orig": {
+                        "faces": []
+                    },
+                    "small": {
+                        "faces": []
+                    }
+                },
+                "id_str": "1668720701766008832",
+                "indices": [
+                    16,
+                    39
+                ],
+                "media_key": "3_1668720701766008832",
+                "media_results": {
+                    "result": {
+                        "media_key": "3_1668720701766008832"
+                    }
+                },
+                "media_url_https": "https://pbs.twimg.com/media/Fyh8oxIagAACCYO.jpg",
+                "original_info": {
+                    "focus_rects": [
+                        {
+                            "h": 137,
+                            "w": 244,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 220,
+                            "w": 220,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 220,
+                            "w": 193,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 220,
+                            "w": 110,
+                            "x": 0,
+                            "y": 0
+                        },
+                        {
+                            "h": 220,
+                            "w": 244,
+                            "x": 0,
+                            "y": 0
+                        }
+                    ],
+                    "height": 220,
+                    "width": 244
+                },
+                "sizes": {
+                    "large": {
+                        "h": 220,
+                        "resize": "fit",
+                        "w": 244
+                    },
+                    "medium": {
+                        "h": 220,
+                        "resize": "fit",
+                        "w": 244
+                    },
+                    "small": {
+                        "h": 220,
+                        "resize": "fit",
+                        "w": 244
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "url": "https://t.co/mCBYHG2ENj"
+            }
+        ],
+        "user": {
+            "id_str": "19519463",
+            "name": "Nicole Miller 🏛️ ‍⚖️",
+            "screen_name": "JOSourcing",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1641526343841255425/pZdh9EF6_normal.jpg",
+            "url": "https://x.com/JOSourcing",
+            "follow_url": "https://x.com/intent/follow?screen_name=JOSourcing"
+        },
+        "url": "https://x.com/JOSourcing/status/1668720718673227777",
+        "like_url": "https://x.com/intent/like?tweet_id=1668720718673227777",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668720718673227777",
+        "replies": []
+    },
+    "1670815810934407169": {
+        "created_at": "Mon Jun 19 15:28:26 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    8,
+                    19
+                ],
+                "type": "text",
+                "text": "这个图是什么软件做的啊"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1670815810934407169",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1670747493439778816",
+        "user": {
+            "id_str": "1657065240381788160",
+            "name": "n yu",
+            "screen_name": "nyu934806420303",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1657065284560367616/pf5QJ3Qw_normal.png",
+            "url": "https://x.com/nyu934806420303",
+            "follow_url": "https://x.com/intent/follow?screen_name=nyu934806420303"
+        },
+        "url": "https://x.com/nyu934806420303/status/1670815810934407169",
+        "like_url": "https://x.com/intent/like?tweet_id=1670815810934407169",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1670815810934407169",
+        "replies": []
+    },
+    "1674274009507332096": {
+        "created_at": "Thu Jun 29 04:30:05 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    120
+                ],
+                "type": "text",
+                "text": "How does the temperature/randomness of the LLM generation correlate to its ability to remove watermarks?"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1674274009507332096",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668494391697408",
+        "user": {
+            "id_str": "1543864209322156032",
+            "name": "Ryan Sun",
+            "screen_name": "sun_hanchi",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1543864289638875137/2YbdR1FO_normal.png",
+            "url": "https://x.com/sun_hanchi",
+            "follow_url": "https://x.com/intent/follow?screen_name=sun_hanchi"
+        },
+        "url": "https://x.com/sun_hanchi/status/1674274009507332096",
+        "like_url": "https://x.com/intent/like?tweet_id=1674274009507332096",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1674274009507332096",
+        "replies": []
+    },
+    "1668704428021481476": {
+        "created_at": "Tue Jun 13 19:38:33 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    284
+                ],
+                "type": "text",
+                "text": "Nice work! I would also attempt to ask GPT to first extract bullet points or tabularise the original text and then rewrite it (in a new context window). I find this approach helpful if I don’t want GPT to quote verbatim (e.g. for creating new prompts for experiments)."
+            }
+        ],
+        "favorite_count": 1,
+        "id_str": "1668704428021481476",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668503438802945",
+        "user": {
+            "id_str": "1656191",
+            "name": "Janek Mann",
+            "screen_name": "janekm",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/29857182/39239824_N00_normal.jpg",
+            "url": "https://x.com/janekm",
+            "follow_url": "https://x.com/intent/follow?screen_name=janekm"
+        },
+        "url": "https://x.com/janekm/status/1668704428021481476",
+        "like_url": "https://x.com/intent/like?tweet_id=1668704428021481476",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668704428021481476",
+        "replies": [
+            "1668983121054711809"
+        ]
+    },
+    "1670184337617068032": {
+        "created_at": "Sat Jun 17 21:39:11 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    159
+                ],
+                "type": "text",
+                "text": "you could and should have paid them for their time directly\n\nnot surprising that someone involved in ai exploits human labor for his own profit"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1670184337617068032",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668507628924928",
+        "user": {
+            "id_str": "1346176889719836673",
+            "name": "Radical Rose 🏳️‍⚧️ 🏳️‍🌈",
+            "screen_name": "QuartsClock",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1349630768302223361/j-uKdOBM_normal.jpg",
+            "url": "https://x.com/QuartsClock",
+            "follow_url": "https://x.com/intent/follow?screen_name=QuartsClock"
+        },
+        "url": "https://x.com/QuartsClock/status/1670184337617068032",
+        "like_url": "https://x.com/intent/like?tweet_id=1670184337617068032",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1670184337617068032",
+        "replies": []
+    },
+    "1668683455561957376": {
+        "created_at": "Tue Jun 13 18:15:13 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    50
+                ],
+                "type": "text",
+                "text": "This is a really interesting work "
+            },
+            {
+                "id_str": "1086729872305766401",
+                "indices": [
+                    50,
+                    65
+                ],
+                "name": "Tom Goldstein",
+                "screen_name": "tomgoldsteincs",
+                "type": "mention",
+                "href": "https://x.com/tomgoldsteincs",
+                "text": "@tomgoldsteincs"
+            },
+            {
+                "indices": [
+                    65,
+                    150
+                ],
+                "type": "text",
+                "text": " . The analysis is very well-synced with our theoretical &amp; empirical findings in "
+            },
+            {
+                "display_url": "arxiv.org/abs/2304.04736",
+                "expanded_url": "https://arxiv.org/abs/2304.04736",
+                "indices": [
+                    150,
+                    173
+                ],
+                "url": "https://t.co/kEXML5UmYf",
+                "type": "url",
+                "href": "https://arxiv.org/abs/2304.04736",
+                "text": "arxiv.org/abs/2304.04736"
+            },
+            {
+                "indices": [
+                    173,
+                    248
+                ],
+                "type": "text",
+                "text": " , where we observe the dependence of length and sample complexity.  check "
+            },
+            {
+                "id_str": "1276046477727379456",
+                "indices": [
+                    248,
+                    264
+                ],
+                "name": "Amrit Singh Bedi",
+                "screen_name": "amritsinghbedi3",
+                "type": "mention",
+                "href": "https://x.com/amritsinghbedi3",
+                "text": "@amritsinghbedi3"
+            }
+        ],
+        "favorite_count": 3,
+        "id_str": "1668683455561957376",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668512418803712",
+        "user": {
+            "id_str": "1135038999297314817",
+            "name": "Souradip Chakraborty",
+            "screen_name": "SOURADIPCHAKR18",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1588305202825904130/V9BJF5xh_normal.jpg",
+            "url": "https://x.com/SOURADIPCHAKR18",
+            "follow_url": "https://x.com/intent/follow?screen_name=SOURADIPCHAKR18"
+        },
+        "url": "https://x.com/SOURADIPCHAKR18/status/1668683455561957376",
+        "like_url": "https://x.com/intent/like?tweet_id=1668683455561957376",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668683455561957376",
+        "replies": [
+            "1668692563807576085"
+        ]
+    },
+    "1669138913095725057": {
+        "created_at": "Thu Jun 15 00:25:02 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    254
+                ],
+                "type": "text",
+                "text": "my concern is more that the focus on watermarks plays into the business strategy of LLM platform providers that argue that the only way to make the tech safe is to regulate it so only they can use it, since they can embed watermarks, etc."
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1669138913095725057",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668526742339585",
+        "user": {
+            "id_str": "892306984610824192",
+            "name": "jonny saunders",
+            "screen_name": "json_dirs",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1801388588032266242/coxFbBEd_normal.jpg",
+            "url": "https://x.com/json_dirs",
+            "follow_url": "https://x.com/intent/follow?screen_name=json_dirs"
+        },
+        "url": "https://x.com/json_dirs/status/1669138913095725057",
+        "like_url": "https://x.com/intent/like?tweet_id=1669138913095725057",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1669138913095725057",
+        "replies": []
+    },
+    "1668719207519858688": {
+        "created_at": "Tue Jun 13 20:37:17 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    146
+                ],
+                "type": "text",
+                "text": "I agree. A key consideration is that many bad actors will be producing in volume, which increases the likelihood of catching them!"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1668719207519858688",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668668526742339585",
+        "user": {
+            "id_str": "3054549258",
+            "name": "Edwin Herdman",
+            "screen_name": "EdHerdman",
+            "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+            "url": "https://x.com/EdHerdman",
+            "follow_url": "https://x.com/intent/follow?screen_name=EdHerdman"
+        },
+        "url": "https://x.com/EdHerdman/status/1668719207519858688",
+        "like_url": "https://x.com/intent/like?tweet_id=1668719207519858688",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668719207519858688",
+        "replies": []
+    },
+    "1668915956519776257": {
+        "created_at": "Wed Jun 14 09:39:05 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    117,
+                    382
+                ],
+                "type": "text",
+                "text": "One approach I’ve heard proposed is to modify the original prompt to ask the model 😃 to 😃 insert 😃 smilies😃 in 😃 between 😃each 😃 token, then remove the smilies with find/replace. This could defeat watermarking based on next-token probabilities. Think it would work?"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1668915956519776257",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668670857160589312",
+        "user": {
+            "id_str": "2633104852",
+            "name": "Spencer Peters",
+            "screen_name": "spencerjpeters",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1559742815483138051/LyKv6LKg_normal.jpg",
+            "url": "https://x.com/spencerjpeters",
+            "follow_url": "https://x.com/intent/follow?screen_name=spencerjpeters"
+        },
+        "url": "https://x.com/spencerjpeters/status/1668915956519776257",
+        "like_url": "https://x.com/intent/like?tweet_id=1668915956519776257",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668915956519776257",
+        "replies": [
+            "1668966074123943939"
+        ]
+    },
+    "1669368554737528838": {
+        "created_at": "Thu Jun 15 15:37:33 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    24
+                ],
+                "type": "text",
+                "text": "Thanks 😌"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1669368554737528838",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1669367228091756548",
+        "user": {
+            "id_str": "1229991659812704257",
+            "name": "Naina Chaturvedi",
+            "screen_name": "NainaChaturved8",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1379560061727477762/J_vZJfyO_normal.jpg",
+            "url": "https://x.com/NainaChaturved8",
+            "follow_url": "https://x.com/intent/follow?screen_name=NainaChaturved8"
+        },
+        "url": "https://x.com/NainaChaturved8/status/1669368554737528838",
+        "like_url": "https://x.com/intent/like?tweet_id=1669368554737528838",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1669368554737528838",
+        "replies": []
+    },
+    "1668975171653255168": {
+        "created_at": "Wed Jun 14 13:34:23 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    33,
+                    89
+                ],
+                "type": "text",
+                "text": "Hi! You can find details in Section 4.1 and Appendix A4."
+            }
+        ],
+        "favorite_count": 2,
+        "id_str": "1668975171653255168",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668777978195595264",
+        "user": {
+            "id_str": "1443639893083758598",
+            "name": "Jonas Geiping",
+            "screen_name": "jonasgeiping",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1709278770345959424/_5S-Cnko_normal.jpg",
+            "url": "https://x.com/jonasgeiping",
+            "follow_url": "https://x.com/intent/follow?screen_name=jonasgeiping"
+        },
+        "url": "https://x.com/jonasgeiping/status/1668975171653255168",
+        "like_url": "https://x.com/intent/like?tweet_id=1668975171653255168",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668975171653255168",
+        "replies": []
+    },
+    "1669389713193435150": {
+        "created_at": "Thu Jun 15 17:01:38 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    214
+                ],
+                "type": "text",
+                "text": "Ah, I see. But wouldn't this only work until community crowd-sources the blacklist by collecting lots of generated text and checking which words occur much rarer compared to their natural frequency?"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1669389713193435150",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1669370576517967872",
+        "user": {
+            "id_str": "1585921459486183424",
+            "name": "Ivan Korotkov",
+            "screen_name": "tw33dl3dee",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1585921570983247873/iVJArwrE_normal.png",
+            "url": "https://x.com/tw33dl3dee",
+            "follow_url": "https://x.com/intent/follow?screen_name=tw33dl3dee"
+        },
+        "url": "https://x.com/tw33dl3dee/status/1669389713193435150",
+        "like_url": "https://x.com/intent/like?tweet_id=1669389713193435150",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1669389713193435150",
+        "replies": []
+    },
+    "1668974124465627139": {
+        "created_at": "Wed Jun 14 13:30:13 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    28,
+                    271
+                ],
+                "type": "text",
+                "text": "Hi! To simplify, because the watermark is pseudorandom, the chance that a human will accidentally write N green tokens is equal to N successive coin-flips coming up heads.\n\nWe can estimate this probability well, and set thresholds accordingly."
+            }
+        ],
+        "favorite_count": 1,
+        "id_str": "1668974124465627139",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668934838957535233",
+        "user": {
+            "id_str": "1443639893083758598",
+            "name": "Jonas Geiping",
+            "screen_name": "jonasgeiping",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1709278770345959424/_5S-Cnko_normal.jpg",
+            "url": "https://x.com/jonasgeiping",
+            "follow_url": "https://x.com/intent/follow?screen_name=jonasgeiping"
+        },
+        "url": "https://x.com/jonasgeiping/status/1668974124465627139",
+        "like_url": "https://x.com/intent/like?tweet_id=1668974124465627139",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668974124465627139",
+        "replies": [
+            "1668996344550248450"
+        ]
+    },
+    "1668996344550248450": {
+        "created_at": "Wed Jun 14 14:58:31 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    30,
+                    309
+                ],
+                "type": "text",
+                "text": "Thanks! Another question: are green tokens non-trivial? For example, \"John is a [guy]\". The word \"guy\" is for sure in the whitelist, so it contribute to signal a machine-generate text. Can it happen that this token is green? Trying to understand this from a theoretic perspective"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1668996344550248450",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668974124465627139",
+        "user": {
+            "id_str": "1156996304968540161",
+            "name": "l'ingegnosofo",
+            "screen_name": "eraclitech",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1432730880062246914/NiosB2fC_normal.jpg",
+            "url": "https://x.com/eraclitech",
+            "follow_url": "https://x.com/intent/follow?screen_name=eraclitech"
+        },
+        "url": "https://x.com/eraclitech/status/1668996344550248450",
+        "like_url": "https://x.com/intent/like?tweet_id=1668996344550248450",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668996344550248450",
+        "replies": [
+            "1668998660871409670"
+        ]
+    },
+    "1668949686751723520": {
+        "created_at": "Wed Jun 14 11:53:07 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    45
+                ],
+                "type": "text",
+                "text": "Apparently gif's don't paste "
+            },
+            {
+                "display_url": "tenor.com/view/west-worl…",
+                "expanded_url": "https://tenor.com/view/west-world-bernard-lowe-gif-7420096",
+                "indices": [
+                    45,
+                    68
+                ],
+                "url": "https://t.co/SgKtmShkJj",
+                "type": "url",
+                "href": "https://tenor.com/view/west-world-bernard-lowe-gif-7420096",
+                "text": "tenor.com/view/west-worl…"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1668949686751723520",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668949535932948480",
+        "user": {
+            "id_str": "47843754",
+            "name": "Nickolai Belakovski",
+            "screen_name": "nickolai89",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/266470565/n1326990142_30068449_6133_normal.jpg",
+            "url": "https://x.com/nickolai89",
+            "follow_url": "https://x.com/intent/follow?screen_name=nickolai89"
+        },
+        "url": "https://x.com/nickolai89/status/1668949686751723520",
+        "like_url": "https://x.com/intent/like?tweet_id=1668949686751723520",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668949686751723520",
+        "replies": []
+    },
+    "1668973288955994114": {
+        "created_at": "Wed Jun 14 13:26:54 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    26,
+                    299
+                ],
+                "type": "text",
+                "text": "Hi, because of the way the watermark is designed,  we have a tight control over the rate at which humans hit the watermark, we always check against human text.  Check out the ROC curves in Fig.8, or set your own threshold for the z-scores elsewhere in the paper, p=1-cdf(z)"
+            }
+        ],
+        "favorite_count": 2,
+        "id_str": "1668973288955994114",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668857736090492928",
+        "user": {
+            "id_str": "1443639893083758598",
+            "name": "Jonas Geiping",
+            "screen_name": "jonasgeiping",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1709278770345959424/_5S-Cnko_normal.jpg",
+            "url": "https://x.com/jonasgeiping",
+            "follow_url": "https://x.com/intent/follow?screen_name=jonasgeiping"
+        },
+        "url": "https://x.com/jonasgeiping/status/1668973288955994114",
+        "like_url": "https://x.com/intent/like?tweet_id=1668973288955994114",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668973288955994114",
+        "replies": [
+            "1668973643144081415"
+        ]
+    },
+    "1668974945911595009": {
+        "created_at": "Wed Jun 14 13:33:29 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    27,
+                    297
+                ],
+                "type": "text",
+                "text": "Hi! This is detailed in the paper, we are testing for a watermark that \"we\" (or rather the entity doing the detection) are aware of. \n\nWe also argue that for a longer context width, a watermark is safer, because it becomes harder for other entities to find the watermark"
+            }
+        ],
+        "favorite_count": 3,
+        "id_str": "1668974945911595009",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668807968840642562",
+        "user": {
+            "id_str": "1443639893083758598",
+            "name": "Jonas Geiping",
+            "screen_name": "jonasgeiping",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1709278770345959424/_5S-Cnko_normal.jpg",
+            "url": "https://x.com/jonasgeiping",
+            "follow_url": "https://x.com/intent/follow?screen_name=jonasgeiping"
+        },
+        "url": "https://x.com/jonasgeiping/status/1668974945911595009",
+        "like_url": "https://x.com/intent/like?tweet_id=1668974945911595009",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668974945911595009",
+        "replies": []
+    },
+    "1668821273495961600": {
+        "created_at": "Wed Jun 14 03:22:51 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    33,
+                    68
+                ],
+                "type": "text",
+                "text": "No nothing produces false negatives"
+            }
+        ],
+        "favorite_count": 2,
+        "id_str": "1668821273495961600",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668688760932802622",
+        "user": {
+            "id_str": "1020104728041140225",
+            "name": "Kevin Ramnauth",
+            "screen_name": "ramnautk",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1602812357675290627/bG1-Jg6L_normal.jpg",
+            "url": "https://x.com/ramnautk",
+            "follow_url": "https://x.com/intent/follow?screen_name=ramnautk"
+        },
+        "url": "https://x.com/ramnautk/status/1668821273495961600",
+        "like_url": "https://x.com/intent/like?tweet_id=1668821273495961600",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668821273495961600",
+        "replies": []
+    },
+    "1669002357877645315": {
+        "created_at": "Wed Jun 14 15:22:25 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    246
+                ],
+                "type": "text",
+                "text": "two of your subjects were detected with only 250 tokens or 200 words while the mean was 800 tokens before detection. I would be very interested in this type of study but with deliberate selection of great graduate student writers."
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1669002357877645315",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1669002301619486720",
+        "user": {
+            "id_str": "157968795",
+            "name": "Aaron",
+            "screen_name": "AMSlemp",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1320587763943702528/yxgjaZh9_normal.jpg",
+            "url": "https://x.com/AMSlemp",
+            "follow_url": "https://x.com/intent/follow?screen_name=AMSlemp"
+        },
+        "url": "https://x.com/AMSlemp/status/1669002357877645315",
+        "like_url": "https://x.com/intent/like?tweet_id=1669002357877645315",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1669002357877645315",
+        "replies": [
+            "1669002427217985543"
+        ]
+    },
+    "1669002427217985543": {
+        "created_at": "Wed Jun 14 15:22:41 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    295
+                ],
+                "type": "text",
+                "text": "Perhaps a stratified sample of students who have capabilities at varying levels. My suspicion is, students who come from strong writing backgrounds, and are not just believed to be strong writers because they are graduate students, will take much longer to be detected if at all."
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1669002427217985543",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1669002357877645315",
+        "user": {
+            "id_str": "157968795",
+            "name": "Aaron",
+            "screen_name": "AMSlemp",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1320587763943702528/yxgjaZh9_normal.jpg",
+            "url": "https://x.com/AMSlemp",
+            "follow_url": "https://x.com/intent/follow?screen_name=AMSlemp"
+        },
+        "url": "https://x.com/AMSlemp/status/1669002427217985543",
+        "like_url": "https://x.com/intent/like?tweet_id=1669002427217985543",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1669002427217985543",
+        "replies": [
+            "1669002606985768960"
+        ]
+    },
+    "1668737811380404224": {
+        "created_at": "Tue Jun 13 21:51:12 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    27,
+                    297
+                ],
+                "type": "text",
+                "text": "Hi! This is fundamentally not so different from paraphrasing. \nHow strong the paraphrase will be depends on the quality of the translation model. A better translation model would be more stable in its back-translation, which would make it easier to detect the watermark."
+            }
+        ],
+        "favorite_count": 5,
+        "id_str": "1668737811380404224",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668671374054023169",
+        "user": {
+            "id_str": "1443639893083758598",
+            "name": "Jonas Geiping",
+            "screen_name": "jonasgeiping",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1709278770345959424/_5S-Cnko_normal.jpg",
+            "url": "https://x.com/jonasgeiping",
+            "follow_url": "https://x.com/intent/follow?screen_name=jonasgeiping"
+        },
+        "url": "https://x.com/jonasgeiping/status/1668737811380404224",
+        "like_url": "https://x.com/intent/like?tweet_id=1668737811380404224",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668737811380404224",
+        "replies": [
+            "1668746402523156480",
+            "1668738089794129921"
+        ]
+    },
+    "1668746402523156480": {
+        "created_at": "Tue Jun 13 22:25:20 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    30,
+                    40
+                ],
+                "type": "text",
+                "text": "I got it 🙂"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1668746402523156480",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668737811380404224",
+        "user": {
+            "id_str": "21261227",
+            "name": "Hoàng Anh Ngo 🪷",
+            "screen_name": "peter_ngo",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1589041776073097216/rQld6ePB_normal.jpg",
+            "url": "https://x.com/peter_ngo",
+            "follow_url": "https://x.com/intent/follow?screen_name=peter_ngo"
+        },
+        "url": "https://x.com/peter_ngo/status/1668746402523156480",
+        "like_url": "https://x.com/intent/like?tweet_id=1668746402523156480",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668746402523156480",
+        "replies": []
+    },
+    "1668983121054711809": {
+        "created_at": "Wed Jun 14 14:05:58 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    24,
+                    286
+                ],
+                "type": "text",
+                "text": "Interesting approach! How do you get GPT to retain all (or even most) of the content of the original text? In most versions we tried GPT was heavily summarizing the text, and leaving out details. I worry this would be even worse in a 2-phrase approach like this?"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1668983121054711809",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668704428021481476",
+        "user": {
+            "id_str": "1443639893083758598",
+            "name": "Jonas Geiping",
+            "screen_name": "jonasgeiping",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1709278770345959424/_5S-Cnko_normal.jpg",
+            "url": "https://x.com/jonasgeiping",
+            "follow_url": "https://x.com/intent/follow?screen_name=jonasgeiping"
+        },
+        "url": "https://x.com/jonasgeiping/status/1668983121054711809",
+        "like_url": "https://x.com/intent/like?tweet_id=1668983121054711809",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668983121054711809",
+        "replies": [
+            "1669024730777632768"
+        ]
+    },
+    "1669024730777632768": {
+        "created_at": "Wed Jun 14 16:51:19 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    30,
+                    249
+                ],
+                "type": "text",
+                "text": "For my use case that’s desired as I want it to make something transformative, with new details. I suppose for trying to remove a watermark it may be problematic if it strays too far from the originally desired content 🤔"
+            }
+        ],
+        "favorite_count": 1,
+        "id_str": "1669024730777632768",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668983121054711809",
+        "user": {
+            "id_str": "1656191",
+            "name": "Janek Mann",
+            "screen_name": "janekm",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/29857182/39239824_N00_normal.jpg",
+            "url": "https://x.com/janekm",
+            "follow_url": "https://x.com/intent/follow?screen_name=janekm"
+        },
+        "url": "https://x.com/janekm/status/1669024730777632768",
+        "like_url": "https://x.com/intent/like?tweet_id=1669024730777632768",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1669024730777632768",
+        "replies": []
+    },
+    "1668692563807576085": {
+        "created_at": "Tue Jun 13 18:51:24 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    33,
+                    59
+                ],
+                "type": "text",
+                "text": "Indeed, very interesting ("
+            },
+            {
+                "id_str": "1086729872305766401",
+                "indices": [
+                    59,
+                    74
+                ],
+                "name": "Tom Goldstein",
+                "screen_name": "tomgoldsteincs",
+                "type": "mention",
+                "href": "https://x.com/tomgoldsteincs",
+                "text": "@tomgoldsteincs"
+            },
+            {
+                "indices": [
+                    74,
+                    127
+                ],
+                "type": "text",
+                "text": " ) and supports our theoretical and empirical claims "
+            },
+            {
+                "display_url": "arxiv.org/abs/2304.04736",
+                "expanded_url": "http://arxiv.org/abs/2304.04736",
+                "indices": [
+                    127,
+                    150
+                ],
+                "url": "https://t.co/n8uywT3uxK",
+                "type": "url",
+                "href": "http://arxiv.org/abs/2304.04736",
+                "text": "arxiv.org/abs/2304.04736"
+            },
+            {
+                "indices": [
+                    150,
+                    262
+                ],
+                "type": "text",
+                "text": "\n\nThe critical performance measure of the detector is sample complexity (no. of tokens required for detection)!!"
+            }
+        ],
+        "favorite_count": 3,
+        "id_str": "1668692563807576085",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668683455561957376",
+        "user": {
+            "id_str": "1276046477727379456",
+            "name": "Amrit Singh Bedi",
+            "screen_name": "amritsinghbedi3",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1605654443386671132/bGyj4MIa_normal.jpg",
+            "url": "https://x.com/amritsinghbedi3",
+            "follow_url": "https://x.com/intent/follow?screen_name=amritsinghbedi3"
+        },
+        "url": "https://x.com/amritsinghbedi3/status/1668692563807576085",
+        "like_url": "https://x.com/intent/like?tweet_id=1668692563807576085",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668692563807576085",
+        "replies": [
+            "1668989480932368386"
+        ]
+    },
+    "1668989480932368386": {
+        "created_at": "Wed Jun 14 14:31:15 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    34,
+                    178
+                ],
+                "type": "text",
+                "text": "I agree - we discuss your paper, which accurately predicts that watermark accuracy recovers with increased token observations, in several spots."
+            }
+        ],
+        "favorite_count": 2,
+        "id_str": "1668989480932368386",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668692563807576085",
+        "user": {
+            "id_str": "1086729872305766401",
+            "name": "Tom Goldstein",
+            "screen_name": "tomgoldsteincs",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1194743821369626625/UATmG8qo_normal.jpg",
+            "url": "https://x.com/tomgoldsteincs",
+            "follow_url": "https://x.com/intent/follow?screen_name=tomgoldsteincs"
+        },
+        "url": "https://x.com/tomgoldsteincs/status/1668989480932368386",
+        "like_url": "https://x.com/intent/like?tweet_id=1668989480932368386",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668989480932368386",
+        "replies": [
+            "1668995092030406657"
+        ]
+    },
+    "1668998660871409670": {
+        "created_at": "Wed Jun 14 15:07:43 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    28,
+                    284
+                ],
+                "type": "text",
+                "text": "I'm not quite sure I understand the question correctly, what do you define as a whitelist? \n\nLet's say the context width is 3 and tokenization is [John_ is_ a_ guy]. Then a hash of the first three tokens {John, is, a} determines whether {guy} is green/red."
+            }
+        ],
+        "favorite_count": 2,
+        "id_str": "1668998660871409670",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668996344550248450",
+        "user": {
+            "id_str": "1443639893083758598",
+            "name": "Jonas Geiping",
+            "screen_name": "jonasgeiping",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1709278770345959424/_5S-Cnko_normal.jpg",
+            "url": "https://x.com/jonasgeiping",
+            "follow_url": "https://x.com/intent/follow?screen_name=jonasgeiping"
+        },
+        "url": "https://x.com/jonasgeiping/status/1668998660871409670",
+        "like_url": "https://x.com/intent/like?tweet_id=1668998660871409670",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668998660871409670",
+        "replies": []
+    },
+    "1668966074123943939": {
+        "created_at": "Wed Jun 14 12:58:14 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    119,
+                    394
+                ],
+                "type": "text",
+                "text": "that might have been from us, we talk about it in previous work (linked further up the thread). We didn't do this attack here because it requires us to reliably get llama/vicuna to follow the cypher(adding 😃). \n\nWith longer hash contexts you also need proportionally more 😀😀😀"
+            }
+        ],
+        "favorite_count": 2,
+        "id_str": "1668966074123943939",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668915956519776257",
+        "user": {
+            "id_str": "1443639893083758598",
+            "name": "Jonas Geiping",
+            "screen_name": "jonasgeiping",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1709278770345959424/_5S-Cnko_normal.jpg",
+            "url": "https://x.com/jonasgeiping",
+            "follow_url": "https://x.com/intent/follow?screen_name=jonasgeiping"
+        },
+        "url": "https://x.com/jonasgeiping/status/1668966074123943939",
+        "like_url": "https://x.com/intent/like?tweet_id=1668966074123943939",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668966074123943939",
+        "replies": []
+    },
+    "1668973643144081415": {
+        "created_at": "Wed Jun 14 13:28:19 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    26,
+                    207
+                ],
+                "type": "text",
+                "text": "To simplify, because the watermark is pseudorandom, the chance that a human will accidentally write N tokens of watermarked text is equal to N successive coin-flips coming up heads."
+            }
+        ],
+        "favorite_count": 3,
+        "id_str": "1668973643144081415",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668973288955994114",
+        "user": {
+            "id_str": "1443639893083758598",
+            "name": "Jonas Geiping",
+            "screen_name": "jonasgeiping",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1709278770345959424/_5S-Cnko_normal.jpg",
+            "url": "https://x.com/jonasgeiping",
+            "follow_url": "https://x.com/intent/follow?screen_name=jonasgeiping"
+        },
+        "url": "https://x.com/jonasgeiping/status/1668973643144081415",
+        "like_url": "https://x.com/intent/like?tweet_id=1668973643144081415",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668973643144081415",
+        "replies": []
+    },
+    "1669002606985768960": {
+        "created_at": "Wed Jun 14 15:23:24 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    287
+                ],
+                "type": "text",
+                "text": "Specifically, if you got some students whose undergrad was English, History, or Philosophy and who are working on master’s degrees in similar fields, how easy would it be to detect them? All these fields require hundreds of pages of writing throughout their undergrad and"
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1669002606985768960",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1669002427217985543",
+        "user": {
+            "id_str": "157968795",
+            "name": "Aaron",
+            "screen_name": "AMSlemp",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1320587763943702528/yxgjaZh9_normal.jpg",
+            "url": "https://x.com/AMSlemp",
+            "follow_url": "https://x.com/intent/follow?screen_name=AMSlemp"
+        },
+        "url": "https://x.com/AMSlemp/status/1669002606985768960",
+        "like_url": "https://x.com/intent/like?tweet_id=1669002606985768960",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1669002606985768960",
+        "replies": [
+            "1669002911844642816"
+        ]
+    },
+    "1668738089794129921": {
+        "created_at": "Tue Jun 13 21:52:18 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    27,
+                    242
+                ],
+                "type": "text",
+                "text": "a weaker translation model would be stronger and it would probably take longer to detect the watermark. \n\nWe have code available for our attacks and while evaluation pipeline if you ever want to test this variant :)"
+            }
+        ],
+        "favorite_count": 1,
+        "id_str": "1668738089794129921",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668737811380404224",
+        "user": {
+            "id_str": "1443639893083758598",
+            "name": "Jonas Geiping",
+            "screen_name": "jonasgeiping",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1709278770345959424/_5S-Cnko_normal.jpg",
+            "url": "https://x.com/jonasgeiping",
+            "follow_url": "https://x.com/intent/follow?screen_name=jonasgeiping"
+        },
+        "url": "https://x.com/jonasgeiping/status/1668738089794129921",
+        "like_url": "https://x.com/intent/like?tweet_id=1668738089794129921",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668738089794129921",
+        "replies": [
+            "1668747182856454144"
+        ]
+    },
+    "1669002911844642816": {
+        "created_at": "Wed Jun 14 15:24:37 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    16,
+                    239
+                ],
+                "type": "text",
+                "text": "and graduate programs. Conversely, a student who comes from an engineering background, the vast majority of the time, has fairly poor writing and limited wordsmithing abilities compared to their liberal arts contemporaries."
+            }
+        ],
+        "favorite_count": 0,
+        "id_str": "1669002911844642816",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1669002606985768960",
+        "user": {
+            "id_str": "157968795",
+            "name": "Aaron",
+            "screen_name": "AMSlemp",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1320587763943702528/yxgjaZh9_normal.jpg",
+            "url": "https://x.com/AMSlemp",
+            "follow_url": "https://x.com/intent/follow?screen_name=AMSlemp"
+        },
+        "url": "https://x.com/AMSlemp/status/1669002911844642816",
+        "like_url": "https://x.com/intent/like?tweet_id=1669002911844642816",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1669002911844642816",
+        "replies": []
+    },
+    "1668995092030406657": {
+        "created_at": "Wed Jun 14 14:53:33 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    33,
+                    218
+                ],
+                "type": "text",
+                "text": "Yes, interestingly, watermarking is improving the sample complexity of detection. So the real question is how many tokens observations before we detect...will connect soon to discuss :)"
+            }
+        ],
+        "favorite_count": 2,
+        "id_str": "1668995092030406657",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668989480932368386",
+        "user": {
+            "id_str": "1276046477727379456",
+            "name": "Amrit Singh Bedi",
+            "screen_name": "amritsinghbedi3",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1605654443386671132/bGyj4MIa_normal.jpg",
+            "url": "https://x.com/amritsinghbedi3",
+            "follow_url": "https://x.com/intent/follow?screen_name=amritsinghbedi3"
+        },
+        "url": "https://x.com/amritsinghbedi3/status/1668995092030406657",
+        "like_url": "https://x.com/intent/like?tweet_id=1668995092030406657",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668995092030406657",
+        "replies": []
+    },
+    "1668747182856454144": {
+        "created_at": "Tue Jun 13 22:28:26 +0000 2023",
+        "entities": [
+            {
+                "indices": [
+                    30,
+                    125
+                ],
+                "type": "text",
+                "text": "Haha! Thanks. Really appreciate the generous response and feel bad that I was just doing a bit."
+            }
+        ],
+        "favorite_count": 1,
+        "id_str": "1668747182856454144",
+        "tweetDisplayType": "Tweet",
+        "in_reply_to_status_id_str": "1668738089794129921",
+        "user": {
+            "id_str": "21261227",
+            "name": "Hoàng Anh Ngo 🪷",
+            "screen_name": "peter_ngo",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1589041776073097216/rQld6ePB_normal.jpg",
+            "url": "https://x.com/peter_ngo",
+            "follow_url": "https://x.com/intent/follow?screen_name=peter_ngo"
+        },
+        "url": "https://x.com/peter_ngo/status/1668747182856454144",
+        "like_url": "https://x.com/intent/like?tweet_id=1668747182856454144",
+        "reply_url": "https://x.com/intent/tweet?in_reply_to=1668747182856454144",
+        "replies": []
+    }
+}

@@ -14,6 +14,8 @@ import {
 import { SidebarInset, SidebarProvider } from "./components/ui/sidebar";
 import Social from "./components/social/Panel";
 import Note from "./components/note/Note";
+import { title } from "process";
+import { Badge } from "./components/ui/badge";
 
 const examples = [
   {
@@ -25,18 +27,9 @@ const examples = [
     annotated: true,
   },
   {
-    id: "arxiv:2409.14586",
-    url: "https://arxiv.org/pdf/2409.14586",
-    title: "[For Annotaters] Backtracking Improves Generation Safety",
-    postData: "/2409.14586_posts.json",
-    locationData: null,
-    annotated: false,
-  },
-  {
     id: "arxiv:2309.17453",
     url: "https://arxiv.org/pdf/2309.17453",
-    title:
-      "[For Annotaters] Efficient Streaming Language Models with Attention Sinks",
+    title: "[NLP] Efficient Streaming Language Models with Attention Sinks",
     postData: "/2309.17453_posts.json",
     locationData: null,
     annotated: false,
@@ -44,8 +37,24 @@ const examples = [
   {
     id: "arxiv:2310.06816",
     url: "https://arxiv.org/pdf/2310.06816",
-    title: "[For Annotaters] Text Embeddings Reveal (Almost) As Much As Text",
+    title: "[NLP] Text Embeddings Reveal (Almost) As Much As Text",
     postData: "/2310.06816_posts.json",
+    locationData: null,
+    annotated: false,
+  },
+  // {
+  //   id: "arxiv:2306.04634",
+  //   url: "https://arxiv.org/pdf/2306.04634",
+  //   title: "[NLP] On the Reliability of Watermarks for Large Language Models",
+  //   postData: "/2306.04634_posts.json",
+  //   locationData: null,
+  //   annotated: false,
+  // },
+  {
+    id: "arxiv:2303.15343",
+    url: "https://arxiv.org/pdf/2303.15343",
+    title: "[CV] Sigmoid Loss for Language Image Pre-Training",
+    postData: "/2303.15343_posts.json",
     locationData: null,
     annotated: false,
   },
@@ -63,7 +72,10 @@ function SelectExample() {
             className="cursor-pointer hover:underline text-blue-500"
             onClick={() => navigate(`/${example.id}`)}
           >
-            {example.title}
+            {!example.annotated && (
+              <Badge className="px-1 py-0.5 mr-1.5">For Annotators</Badge>
+            )}
+            {example.title}{" "}
           </li>
         ))}
       </ul>

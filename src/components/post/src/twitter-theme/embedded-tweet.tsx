@@ -34,7 +34,7 @@ export const EmbeddedTweetReply = ({
   onClickReply,
   id,
 }: Props) => {
-  const { annotationMode } = useContext(DevContext);
+  const { studyPhase } = useContext(DevContext);
 
   const childrenWithProps = React.Children.map(children, (child) => {
     if (React.isValidElement(child)) {
@@ -47,7 +47,7 @@ export const EmbeddedTweetReply = ({
 
   return (
     <TweetContainer inThread={tweet.is_reply} id={id} className={className}>
-      {annotationMode && (
+      {studyPhase === "annotation" && (
         <div className="font-bold text-xl text-gray-800 mb-3">
           Tweet ID:
           <br /> {tweet.id_str}
@@ -76,7 +76,7 @@ export const EmbeddedTweet = ({
   className,
   id,
 }: Props) => {
-  const { annotationMode } = useContext(DevContext);
+  const { studyPhase } = useContext(DevContext);
   const [replyTo, setReplyTo] = useState<{
     id: null | string;
     name: null | string;
@@ -105,7 +105,7 @@ export const EmbeddedTweet = ({
 
   return (
     <TweetContainer inThread={tweet.is_reply} id={id} className={className}>
-      {annotationMode && (
+      {studyPhase === "annotation" && (
         <div className="font-bold text-xl text-gray-800 mb-3">
           Tweet ID:
           <br /> {tweet.id_str}

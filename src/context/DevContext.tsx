@@ -1,20 +1,20 @@
 import { createContext, useState } from "react";
 
 export interface IDevContext {
-  annotationMode: boolean;
-  setAnnotationMode: (mode: boolean) => void;
+  studyPhase: string;
+  setStudyPhase: (phase: string) => void;
 }
 
 export const DevContext = createContext<IDevContext>({
-  annotationMode: false,
-  setAnnotationMode: () => {},
+  studyPhase: "annotation",
+  setStudyPhase: () => {},
 });
 
 export function useDevContextProps(): IDevContext {
-  const [annotationMode, setAnnotationMode] = useState<boolean>(false);
+  const [studyPhase, setStudyPhase] = useState<string>("annotation");
 
   return {
-    annotationMode,
-    setAnnotationMode,
+    studyPhase,
+    setStudyPhase,
   };
 }

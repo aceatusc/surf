@@ -56,7 +56,7 @@ export default function Note() {
       )}
       <SidebarContent id="hypothesis-root" className={s.hypothesis_container} />
       <Button
-        className="absolute -right-[3.2rem] top-6 w-10 h-11 p-0 hover:bg-transparent ring-0"
+        className="absolute -right-[3.2rem] top-6 w-10 h-11 p-0 hover:bg-transparent ring-0 z-[999]"
         variant="ghost"
         onClick={toggleSidebar}
       >

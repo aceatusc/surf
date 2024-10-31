@@ -23,7 +23,7 @@ const examples = [
     title: "Position: AI/ML Influencers Have a Place in the Academic Process",
     postData: "/2401.13782_posts.json",
     locationData: "/2401.13782_highlights.json",
-    annotated: true,
+    phase: "formative",
   },
   {
     id: "arxiv:2309.17453",
@@ -31,15 +31,15 @@ const examples = [
     title: "[NLP] Efficient Streaming Language Models with Attention Sinks",
     postData: "/2309.17453_posts.json",
     locationData: null,
-    annotated: false,
+    phase: "annotation",
   },
   {
     id: "arxiv:2310.06816",
     url: "https://arxiv.org/pdf/2310.06816",
-    title: "[NLP] Text Embeddings Reveal (Almost) As Much As Text",
+    title: "Text Embeddings Reveal (Almost) As Much As Text",
     postData: "/2310.06816_posts.json",
-    locationData: null,
-    annotated: false,
+    locationData: "/2310.06816_highlights.json",
+    phase: "formative",
   },
   // {
   //   id: "arxiv:2306.04634",
@@ -55,7 +55,7 @@ const examples = [
     title: "[CV] Sigmoid Loss for Language Image Pre-Training",
     postData: "/2303.15343_posts.json",
     locationData: null,
-    annotated: false,
+    phase: "annotation",
   },
 ];
 
@@ -71,7 +71,7 @@ function SelectExample() {
             className="cursor-pointer hover:underline text-blue-500"
             onClick={() => navigate(`/${example.id}`)}
           >
-            {!example.annotated && (
+            {!example.locationData && (
               <Badge className="px-1 py-0.5 mr-1.5">For Annotators</Badge>
             )}
             {example.title}{" "}
@@ -88,7 +88,9 @@ export function AppContent() {
   const [postData, setPostData] = useState<TPostData>({});
   const [locationData, setLocationData] = useState<THighlightData>({});
   const [loading, setLoading] = useState(true);
-  const { setAnnotationMode } = useContext(DevContext);
+
+  const { setStudyPhase, studyPhase } = useContext(DevContext);
+  setStudyPhase(paper?.phase || "annotation");
 
   useEffect(() => {
     if (!paper) return;
@@ -118,14 +120,18 @@ export function AppContent() {
     return <Navigate to="/" replace />;
   }
 
-  setAnnotationMode(!paper.annotated);
-
   const rootPosts = new Set<string>();
-  if (paper.annotated) {
+  if (paper.locationData) {
     Object.values(locationData)
       .flat()
       .forEach((loc) => {
         loc.posts.forEach((post) => {
+          if (
+            postData[post].in_reply_to_status_id_str &&
+            studyPhase !== "usability"
+          ) {
+            return;
+          }
           postData[post].locations = postData[post].locations || new Set();
           postData[post].locations.add(loc.id);
           rootPosts.add(post);

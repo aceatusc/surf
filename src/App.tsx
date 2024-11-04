@@ -166,7 +166,11 @@ export function AppContent() {
       <Note />
       <SidebarProvider>
         <SidebarInset className="h-[100vh] overflow-hidden relative">
-          <Reader url={paper.url} highlightData={locationData} />
+          <Reader
+            url={paper.url}
+            rootPosts={Array.from(rootPosts)}
+            highlightData={locationData}
+          />
           <div className="absolute w-full z-50">
             <ZoomControl />
           </div>

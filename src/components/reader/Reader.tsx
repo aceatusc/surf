@@ -23,14 +23,18 @@ import {
   AlertDialogDescription,
   AlertDialogTitle,
 } from "../ui/alert-dialog";
+import { DevContext } from "@/context/DevContext";
 
 export default function Reader({
   url,
+  rootPosts,
   highlightData,
 }: {
   url: string;
+  rootPosts: string[];
   highlightData: THighlightData;
 }) {
+  const { studyPhase } = useContext(DevContext);
   const { numPages, pageDimensions } = useContext(DocumentContext);
   const { setScale } = useContext(TransformContext);
   const { setScrollRoot, resetScrollObservers, setScrollThreshold } =
@@ -92,7 +96,15 @@ export default function Reader({
             renderType={RENDER_TYPE.MULTI_CANVAS}
           >
             <Overlay>
-              {highlightData[i] && <Highlight data={highlightData[i]} />}
+              {highlightData[i] && (
+                <Highlight
+                  data={highlightData[i].filter(
+                    (data) =>
+                      studyPhase === "usability" ||
+                      data.posts.some((p) => rootPosts.includes(p))
+                  )}
+                />
+              )}
             </Overlay>
           </PageWrapper>
         ))}

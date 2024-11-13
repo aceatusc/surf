@@ -23,7 +23,7 @@ const examples = [
     title: "Position: AI/ML Influencers Have a Place in the Academic Process",
     postData: "/2401.13782_posts.json",
     locationData: "/2401.13782_highlights.json",
-    phase: "annotation",
+    phase: "formative",
   },
   {
     id: "arxiv:2309.17453",

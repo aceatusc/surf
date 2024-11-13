@@ -4,6 +4,7 @@ export type THighlight = {
   bbox: number[];
   posts: string[];
   id: string;
+  type: string;
 };
 
 export type THighlightData = {

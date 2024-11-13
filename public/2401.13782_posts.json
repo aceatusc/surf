@@ -31,8 +31,7 @@
             "1751422795593179595",
             "1751414624619286604",
             "1751424874713919530"
-        ],
-        "tweet_type": "critic"
+        ]
     },
     "1751002910819795261": {
         "created_at": "Fri Jan 26 22:03:20 +0000 2024",
@@ -61,16 +60,15 @@
         "url": "https://x.com/ElanRosenfeld/status/1751002910819795261",
         "like_url": "https://x.com/intent/like?tweet_id=1751002910819795261",
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1751002910819795261",
-        "replies": [],
-        "tweet_type": "opinion"
+        "replies": []
     },
     "1803466135041708307": {
         "created_at": "Wed Jun 19 16:33:28 +0000 2024",
         "entities": [
             {
                 "indices": [
-                    11,
-                    60
+                    0,
+                    49
                 ],
                 "type": "text",
                 "text": "Sorry to disappoint you. Inspired by this paper: "
@@ -79,18 +77,18 @@
                 "display_url": "arxiv.org/abs/2401.13782",
                 "expanded_url": "https://arxiv.org/abs/2401.13782",
                 "indices": [
-                    60,
-                    83
+                    49,
+                    72
                 ],
-                "url": "https://t.co/VIZVnLP5x8",
+                "url": "https://t.co/tfQzQzCtSS",
                 "type": "url",
                 "href": "https://arxiv.org/abs/2401.13782",
                 "text": "arxiv.org/abs/2401.13782"
             },
             {
                 "indices": [
-                    83,
-                    224
+                    72,
+                    213
                 ],
                 "type": "text",
                 "text": ", I did the same thing by clicking the promote button on the top right corner of the post and spending x hundred bucks trying to promote it:\n"
@@ -99,21 +97,41 @@
                 "display_url": "x.com/simon_zhai/sta…",
                 "expanded_url": "https://x.com/simon_zhai/status/1801992414758055950",
                 "indices": [
-                    224,
-                    247
+                    213,
+                    236
                 ],
-                "url": "https://t.co/RQC9dgLWHK",
+                "url": "https://t.co/t0ZD6ilEwA",
                 "type": "url",
                 "href": "https://x.com/simon_zhai/status/1801992414758055950",
                 "text": "x.com/simon_zhai/sta…"
             },
             {
                 "indices": [
-                    247,
-                    288
+                    236,
+                    594
                 ],
                 "type": "text",
-                "text": ". \n\nBut honestly, it is very hard to use…"
+                "text": ". \n\nBut honestly, it is very hard to use this \"promote\", and an \"ads specialist\" from Twitter actually called me sometimes trying to teach me how to do advertisements better. 😀\n\nIn case anyone wants to advertise their work better, do not naively click the prompt button like I did, as it will throw your posts to some random people. I was taught to use this "
+            },
+            {
+                "display_url": "ads.x.com",
+                "expanded_url": "https://ads.x.com/",
+                "indices": [
+                    594,
+                    617
+                ],
+                "url": "https://t.co/ByQZpMDxSv",
+                "type": "url",
+                "href": "https://ads.x.com/",
+                "text": "ads.x.com"
+            },
+            {
+                "indices": [
+                    617,
+                    957
+                ],
+                "type": "text",
+                "text": " to make the promotion more \"targeted\", but it will cost more as well. \n\n[quote from an anonymous friend from CVPR] These days doing research is just crazily hard as one needs to do:\n1. front end eng (preparing for project website)\n2. back end eng (code up the project)\n3. demo (teaser fig / gif / video)\n4. advertisement (on social media)"
             }
         ],
         "favorite_count": 6,
@@ -166,8 +184,7 @@
             "1751289021869781353",
             "1751429017809670524",
             "1751349091618226224"
-        ],
-        "tweet_type": "opinion"
+        ]
     },
     "1750783025011450254": {
         "created_at": "Fri Jan 26 07:29:35 +0000 2024",
@@ -203,8 +220,7 @@
             "1750852576818401479",
             "1752091796748869701",
             "1751084825744732479"
-        ],
-        "tweet_type": "opinion"
+        ]
     },
     "1752425165793759366": {
         "created_at": "Tue Jan 30 20:14:52 +0000 2024",
@@ -431,6 +447,28 @@
                     "height": 1360,
                     "width": 1922
                 },
+                "sizes": {
+                    "large": {
+                        "h": 1360,
+                        "resize": "fit",
+                        "w": 1922
+                    },
+                    "medium": {
+                        "h": 849,
+                        "resize": "fit",
+                        "w": 1200
+                    },
+                    "small": {
+                        "h": 481,
+                        "resize": "fit",
+                        "w": 680
+                    },
+                    "thumb": {
+                        "h": 150,
+                        "resize": "crop",
+                        "w": 150
+                    }
+                },
                 "type": "photo",
                 "url": "https://t.co/GjYXis6Fsc"
             }
@@ -446,8 +484,7 @@
         "url": "https://x.com/CatalinaGoanta/status/1752425165793759366",
         "like_url": "https://x.com/intent/like?tweet_id=1752425165793759366",
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1752425165793759366",
-        "replies": [],
-        "tweet_type": "opinion"
+        "replies": []
     },
     "1750805744255951085": {
         "created_at": "Fri Jan 26 08:59:52 +0000 2024",
@@ -667,8 +704,7 @@
             "1750859032481427652",
             "1751083146127245489",
             "1750974418397065614"
-        ],
-        "tweet_type": "opinion"
+        ]
     },
     "1751029578414666035": {
         "created_at": "Fri Jan 26 23:49:18 +0000 2024",
@@ -688,7 +724,7 @@
                     103,
                     126
                 ],
-                "url": "https://t.co/DJX4F1Q4eH",
+                "url": "https://t.co/FoEcbA3oxY",
                 "type": "url",
                 "href": "https://arxiv.org/abs/2401.13782",
                 "text": "arxiv.org/abs/2401.13782"
@@ -696,10 +732,10 @@
             {
                 "indices": [
                     126,
-                    278
+                    654
                 ],
                 "type": "text",
-                "text": "  \n\nSocial media influencers significantly increase the citation counts of machine learning research papers they share, with median citation counts 2-3…"
+                "text": "  \n\nSocial media influencers significantly increase the citation counts of machine learning research papers they share, with median citation counts 2-3 times higher than control group. The study reveals the expanding influence of social media in scholarly communication and highlights the importance of a balanced and diverse research ecosystem. The findings emphasize the need for responsible curation practices by influencers and conference organizers to ensure a comprehensive understanding of research quality and relevance."
             }
         ],
         "favorite_count": 1,
@@ -960,8 +996,7 @@
         "url": "https://x.com/fly51fly/status/1751029578414666035",
         "like_url": "https://x.com/intent/like?tweet_id=1751029578414666035",
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1751029578414666035",
-        "replies": [],
-        "tweet_type": "tl;dr"
+        "replies": []
     },
     "1750938896316399800": {
         "created_at": "Fri Jan 26 17:48:58 +0000 2024",
@@ -1569,8 +1604,7 @@
             "1751277046938968137",
             "1751039007721709935",
             "1751083556258959597"
-        ],
-        "tweet_type": "author"
+        ]
     },
     "1751424913754259829": {
         "created_at": "Sun Jan 28 02:00:13 +0000 2024",
@@ -4338,8 +4372,8 @@
         "entities": [
             {
                 "indices": [
-                    9,
-                    104
+                    0,
+                    95
                 ],
                 "type": "text",
                 "text": "I am the only human to follow 70,000 in AI here and I mapped the entire industry for you here: "
@@ -4348,21 +4382,21 @@
                 "display_url": "x.com/scobleizer/lis…",
                 "expanded_url": "https://x.com/scobleizer/lists",
                 "indices": [
-                    104,
-                    127
+                    95,
+                    118
                 ],
-                "url": "https://t.co/fasUz7PuHq",
+                "url": "https://t.co/9eRY65x3IQ",
                 "type": "url",
                 "href": "https://x.com/scobleizer/lists",
                 "text": "x.com/scobleizer/lis…"
             },
             {
                 "indices": [
-                    127,
-                    287
+                    118,
+                    320
                 ],
                 "type": "text",
-                "text": "\n\nTwo books in spatial computing and Siri was launched in my house. First AI consumer app. \n\nI kick out a lot of traffic to papers too. And to these two. Would…"
+                "text": "\n\nTwo books in spatial computing and Siri was launched in my house. First AI consumer app. \n\nI kick out a lot of traffic to papers too. And to these two. Would have been interesting to see a wider look."
             }
         ],
         "favorite_count": 0,
@@ -5702,11 +5736,31 @@
         "entities": [
             {
                 "indices": [
-                    16,
-                    295
+                    0,
+                    566
                 ],
                 "type": "text",
-                "text": "I should've tweeted about RWKV paper, but I think I was being a bit busy / lazy on the day of the release. I tend to tweet only the papers that are released on the day of the tweet. If a tweet was made by someone else (other than AK), then I don't tweet but just retweet to give…"
+                "text": "I should've tweeted about RWKV paper, but I think I was being a bit busy / lazy on the day of the release. I tend to tweet only the papers that are released on the day of the tweet. If a tweet was made by someone else (other than AK), then I don't tweet but just retweet to give better visibility to the author. I also spend less time for tweeting than people think. Overall, there are so many papers I miss.\n\nThere are many great papers that have been cited very few, which is a pity. A good recent example is that Group Query Attention paper got only 36 citations "
+            },
+            {
+                "display_url": "arxiv.org/abs/2305.13245",
+                "expanded_url": "https://arxiv.org/abs/2305.13245",
+                "indices": [
+                    566,
+                    589
+                ],
+                "url": "https://t.co/Ke57VdG7AZ",
+                "type": "url",
+                "href": "https://arxiv.org/abs/2305.13245",
+                "text": "arxiv.org/abs/2305.13245"
+            },
+            {
+                "indices": [
+                    589,
+                    590
+                ],
+                "type": "text",
+                "text": "."
             }
         ],
         "favorite_count": 4,
@@ -6727,8 +6781,8 @@
         "entities": [
             {
                 "indices": [
-                    11,
-                    44
+                    0,
+                    33
                 ],
                 "type": "text",
                 "text": "I raised this exact point during "
@@ -6736,8 +6790,8 @@
             {
                 "id_str": "844220917974732800",
                 "indices": [
-                    44,
-                    58
+                    33,
+                    47
                 ],
                 "name": "Defence Research Network",
                 "screen_name": "DefenceResNet",
@@ -6747,11 +6801,11 @@
             },
             {
                 "indices": [
-                    58,
-                    292
+                    47,
+                    799
                 ],
                 "type": "text",
-                "text": "'s Twitter hour last month. The biggest disconnect between academia and research in any field and the public is communication. Many people refuse to use the scientific method or believe in science because academia and research are so…"
+                "text": "'s Twitter hour last month. The biggest disconnect between academia and research in any field and the public is communication. Many people refuse to use the scientific method or believe in science because academia and research are so alien to everyday people.\n\nEvery well-known professor spends a considerable amount of time in the limelight and gets free press that results in research grants, the ability to hire more research students, students, etc. \n\nWhat's the issue when students do the same? Let's encourage everyone to rebuild their trust in science by communicating and teaching students how to build their social media presence. Communication has been a critical challenge for students who spend too much time researching related activities."
             }
         ],
         "favorite_count": 0,
@@ -7036,11 +7090,11 @@
         "entities": [
             {
                 "indices": [
-                    26,
-                    303
+                    0,
+                    357
                 ],
                 "type": "text",
-                "text": "Now apply the same logic to what you consider good work. Surely greater and broader reach is a good thing?\n\nAnother way to frame this is what kind of game is research? If it's a zero-sum game, then spending $ for reach is negative for other researchers. If it's a positive sum…"
+                "text": "Now apply the same logic to what you consider good work. Surely greater and broader reach is a good thing?\n\nAnother way to frame this is what kind of game is research? If it's a zero-sum game, then spending $ for reach is negative for other researchers. If it's a positive sum game, which I believe it is, then efficient audience building is a net positive."
             }
         ],
         "favorite_count": 1,
@@ -7542,11 +7596,31 @@
         "entities": [
             {
                 "indices": [
-                    27,
-                    300
+                    0,
+                    270
                 ],
                 "type": "text",
-                "text": "Another way to look at it - Nature journals, for instance, charge &gt;$10K USD to publish open access - universities would usually cover the fee. Or one could just publish in a CS conference and spend $10K on ads instead. Both are inherently fees for promotion :)  Source:…"
+                "text": "Another way to look at it - Nature journals, for instance, charge >$10K USD to publish open access - universities would usually cover the fee. Or one could just publish in a CS conference and spend $10K on ads instead. Both are inherently fees for promotion :)  Source: "
+            },
+            {
+                "display_url": "nature.com/articles/d4158…",
+                "expanded_url": "https://www.nature.com/articles/d41586-020-03324-y#:~:text=From%202021%2C%20the%20publisher%20will,and%20are%20financed%20by%20subscriptions",
+                "indices": [
+                    270,
+                    293
+                ],
+                "url": "https://t.co/0Ih9DJ36dR",
+                "type": "url",
+                "href": "https://www.nature.com/articles/d41586-020-03324-y#:~:text=From%202021%2C%20the%20publisher%20will,and%20are%20financed%20by%20subscriptions",
+                "text": "nature.com/articles/d4158…"
+            },
+            {
+                "indices": [
+                    293,
+                    294
+                ],
+                "type": "text",
+                "text": "."
             }
         ],
         "favorite_count": 13,
@@ -7802,7 +7876,7 @@
                     140,
                     163
                 ],
-                "url": "https://t.co/ZIH9VJIXAF",
+                "url": "https://t.co/zkkk8KmdRR",
                 "type": "url",
                 "href": "https://huggingface.co/papers/2401.13974",
                 "text": "huggingface.co/papers/2401.13…"
@@ -7810,10 +7884,10 @@
             {
                 "indices": [
                     163,
-                    278
+                    1687
                 ],
                 "type": "text",
-                "text": "\n\nRecent text-to-image generation models have demonstrated incredible success in generating images that faithfully…"
+                "text": "\n\nRecent text-to-image generation models have demonstrated incredible success in generating images that faithfully follow input prompts. However, the requirement of using words to describe a desired concept provides limited control over the appearance of the generated concepts. In this work, we address this shortcoming by proposing an approach to enable personalization capabilities in existing text-to-image diffusion models. We propose a novel architecture (BootPIG) that allows a user to provide reference images of an object in order to guide the appearance of a concept in the generated images. The proposed BootPIG architecture makes minimal modifications to a pretrained text-to-image diffusion model and utilizes a separate UNet model to steer the generations toward the desired appearance. We introduce a training procedure that allows us to bootstrap personalization capabilities in the BootPIG architecture using data generated from pretrained text-to-image models, LLM chat agents, and image segmentation models. In contrast to existing methods that require several days of pretraining, the BootPIG architecture can be trained in approximately 1 hour. Experiments on the DreamBooth dataset demonstrate that BootPIG outperforms existing zero-shot methods while being comparable with test-time finetuning approaches. Through a user study, we validate the preference for BootPIG generations over existing methods both in maintaining fidelity to the reference object's appearance and aligning with textual prompts."
             }
         ],
         "favorite_count": 154,
@@ -8402,8 +8476,7 @@
             "1750769849155092927",
             "1750850092125294990",
             "1751251887003693321"
-        ],
-        "tweet_type": "tl;dr"
+        ]
     },
     "1750746124531454277": {
         "created_at": "Fri Jan 26 05:02:58 +0000 2024",
@@ -11132,11 +11205,11 @@
         "entities": [
             {
                 "indices": [
-                    39,
-                    315
+                    0,
+                    745
                 ],
                 "type": "text",
-                "text": "Unlike math, deep money in deep learning means recommendations from influencers are not always for the merit. Plus AI folks have big lab bias. The AKs are well-informed and yet predictably miss gems from small groups while tweeting out ok-ish results from big labs, adding to…"
+                "text": "Unlike math, deep money in deep learning means recommendations from influencers are not always for the merit. Plus AI folks have big lab bias. The AKs are well-informed and yet predictably miss gems from small groups while tweeting out ok-ish results from big labs, adding to whatever exponent factor big labs enjoy in citation network effects. \n\nFinally, if you consider influencers outside of the AKs (the majority of the influencers), most don't even have a strong AI research experience but have built a large following using social media growth tactics. And many of them are incentive-driven.  So comparisons to Tao or Gowers don't hold for AI.\n\nAlso, being most online != being an influencer (it's a necessary but not sufficient condition)"
             }
         ],
         "favorite_count": 15,
@@ -11163,11 +11236,23 @@
         "entities": [
             {
                 "indices": [
-                    10,
-                    290
+                    0,
+                    350
                 ],
                 "type": "text",
-                "text": "Sources aren’t weighted, but it’s easy for me to tweak. Been iterating on it a lot. I’d love feedback on how to improve it.\n\nRegarding a dataset: no, but I could start tracking that and provide it at a URL if it would be useful. How would you use it if it existed?\n\nWould love to…"
+                "text": "Sources aren’t weighted, but it’s easy for me to tweak. Been iterating on it a lot. I’d love feedback on how to improve it.\n\nRegarding a dataset: no, but I could start tracking that and provide it at a URL if it would be useful. How would you use it if it existed?\n\nWould love to chat more with you or anyone with suggestions for improving the site: "
+            },
+            {
+                "display_url": "emergentmind.com/hi",
+                "expanded_url": "https://www.emergentmind.com/hi",
+                "indices": [
+                    350,
+                    373
+                ],
+                "url": "https://t.co/vQjO59396A",
+                "type": "url",
+                "href": "https://www.emergentmind.com/hi",
+                "text": "emergentmind.com/hi"
             }
         ],
         "favorite_count": 1,

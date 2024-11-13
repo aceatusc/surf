@@ -1,11 +1,11 @@
 import { Fragment, MouseEvent, useCallback, useContext, useState } from "react";
 import { HighlightContext } from "../../context/HighlightContext";
 import {
+  BoundingBox,
   computeBoundingBoxStyle,
   // computePageStyle,
   DocumentContext,
   TransformContext,
-  // BoundingBox,
 } from "../pdf";
 import { getColorForGroup } from "../../context/ColorManager";
 import { THighlight } from "../types";
@@ -39,7 +39,7 @@ export default function Highlight({ data }: { data: THighlight[] }) {
 
   return (
     <Fragment>
-      {data.map(({ id, bbox }, i) => {
+      {data.map(({ id, bbox, type }, i) => {
         const [page, left, top, width, height] = bbox;
         const newLeft =
           pageDimensions.width / left > 2 ? left - 14.4 : left + width + 6;
@@ -64,7 +64,7 @@ export default function Highlight({ data }: { data: THighlight[] }) {
                 ),
               }}
             />
-            {/* {height < 50 && (
+            {type === "sentence" && (
               <BoundingBox
                 id={`highlight_${id}_text`}
                 isHighlighted={true}
@@ -75,7 +75,7 @@ export default function Highlight({ data }: { data: THighlight[] }) {
                 width={width}
                 color={color}
               />
-            )} */}
+            )}
           </div>
         );
       })}

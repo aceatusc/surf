@@ -23,15 +23,15 @@ const examples = [
     title: "Position: AI/ML Influencers Have a Place in the Academic Process",
     postData: "/2401.13782_posts.json",
     locationData: "/2401.13782_highlights.json",
-    phase: "formative",
+    phase: "annotation",
   },
   {
     id: "arxiv:2309.17453",
     url: "https://arxiv.org/pdf/2309.17453",
     title: "[NLP] Efficient Streaming Language Models with Attention Sinks",
     postData: "/2309.17453_posts.json",
-    locationData: null,
-    phase: "annotation",
+    locationData: "/2309.17453_highlights.json",
+    phase: "usability",
   },
   {
     id: "arxiv:2310.06816",
@@ -54,8 +54,8 @@ const examples = [
     url: "https://arxiv.org/pdf/2303.15343",
     title: "[CV] Sigmoid Loss for Language Image Pre-Training",
     postData: "/2303.15343_posts.json",
-    locationData: null,
-    phase: "annotation",
+    locationData: "/2303.15343_highlights.json",
+    phase: "formative",
   },
 ];
 
@@ -137,13 +137,12 @@ export function AppContent() {
           rootPosts.add(post);
         });
       });
-  } else {
-    Object.values(postData).forEach((post) => {
-      if (post.quoted_tweet || !post.in_reply_to_status_id_str) {
-        rootPosts.add(post.id_str);
-      }
-    });
   }
+  Object.values(postData).forEach((post) => {
+    if (post.quoted_tweet || !post.in_reply_to_status_id_str) {
+      rootPosts.add(post.id_str);
+    }
+  });
 
   if (loading) {
     return (

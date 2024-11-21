@@ -1,6 +1,7 @@
 {
     "1751298202777555438": {
         "created_at": "Sat Jan 27 17:36:43 +0000 2024",
+        "tweet_type": "critic",
         "entities": [
             {
                 "indices": [
@@ -35,6 +36,7 @@
     },
     "1751002910819795261": {
         "created_at": "Fri Jan 26 22:03:20 +0000 2024",
+        "tweet_type": "opinion",
         "entities": [
             {
                 "indices": [
@@ -154,6 +156,7 @@
     },
     "1751279042375057724": {
         "created_at": "Sat Jan 27 16:20:35 +0000 2024",
+        "tweet_type": "opinion",
         "entities": [
             {
                 "indices": [
@@ -187,6 +190,7 @@
         ]
     },
     "1750783025011450254": {
+        "tweet_type": "opinion",
         "created_at": "Fri Jan 26 07:29:35 +0000 2024",
         "entities": [
             {
@@ -224,6 +228,7 @@
     },
     "1752425165793759366": {
         "created_at": "Tue Jan 30 20:14:52 +0000 2024",
+        "tweet_type": "opinion",
         "entities": [
             {
                 "indices": [
@@ -488,6 +493,7 @@
     },
     "1750805744255951085": {
         "created_at": "Fri Jan 26 08:59:52 +0000 2024",
+        "tweet_type": "opinion",
         "entities": [
             {
                 "indices": [
@@ -521,6 +527,7 @@
         ]
     },
     "1750777835529072648": {
+        "tweet_type": "opinion",
         "created_at": "Fri Jan 26 07:08:58 +0000 2024",
         "entities": [
             {
@@ -708,6 +715,7 @@
     },
     "1751029578414666035": {
         "created_at": "Fri Jan 26 23:49:18 +0000 2024",
+        "tweet_type": "tl;dr",
         "entities": [
             {
                 "indices": [
@@ -1121,6 +1129,7 @@
     },
     "1753932736987890054": {
         "created_at": "Sun Feb 04 00:05:25 +0000 2024",
+        "tweet_type": "opinion",
         "entities": [
             {
                 "indices": [
@@ -1442,6 +1451,7 @@
     },
     "1751023987206103244": {
         "created_at": "Fri Jan 26 23:27:05 +0000 2024",
+        "tweet_type": "author",
         "entities": [
             {
                 "indices": [
@@ -7858,149 +7868,6 @@
         "reply_url": "https://x.com/intent/tweet?in_reply_to=1750852052173930640",
         "replies": []
     },
-    "1750703140901388634": {
-        "created_at": "Fri Jan 26 02:12:09 +0000 2024",
-        "entities": [
-            {
-                "indices": [
-                    0,
-                    140
-                ],
-                "type": "text",
-                "text": "Salesforce presents BootPIG\n\nBootstrapping Zero-shot Personalized Image Generation Capabilities in Pretrained Diffusion Models\n\npaper page: "
-            },
-            {
-                "display_url": "huggingface.co/papers/2401.13…",
-                "expanded_url": "https://huggingface.co/papers/2401.13974",
-                "indices": [
-                    140,
-                    163
-                ],
-                "url": "https://t.co/zkkk8KmdRR",
-                "type": "url",
-                "href": "https://huggingface.co/papers/2401.13974",
-                "text": "huggingface.co/papers/2401.13…"
-            },
-            {
-                "indices": [
-                    163,
-                    1687
-                ],
-                "type": "text",
-                "text": "\n\nRecent text-to-image generation models have demonstrated incredible success in generating images that faithfully follow input prompts. However, the requirement of using words to describe a desired concept provides limited control over the appearance of the generated concepts. In this work, we address this shortcoming by proposing an approach to enable personalization capabilities in existing text-to-image diffusion models. We propose a novel architecture (BootPIG) that allows a user to provide reference images of an object in order to guide the appearance of a concept in the generated images. The proposed BootPIG architecture makes minimal modifications to a pretrained text-to-image diffusion model and utilizes a separate UNet model to steer the generations toward the desired appearance. We introduce a training procedure that allows us to bootstrap personalization capabilities in the BootPIG architecture using data generated from pretrained text-to-image models, LLM chat agents, and image segmentation models. In contrast to existing methods that require several days of pretraining, the BootPIG architecture can be trained in approximately 1 hour. Experiments on the DreamBooth dataset demonstrate that BootPIG outperforms existing zero-shot methods while being comparable with test-time finetuning approaches. Through a user study, we validate the preference for BootPIG generations over existing methods both in maintaining fidelity to the reference object's appearance and aligning with textual prompts."
-            }
-        ],
-        "favorite_count": 154,
-        "id_str": "1750703140901388634",
-        "tweetDisplayType": "Tweet",
-        "mediaDetails": [
-            {
-                "display_url": "pic.x.com/nNUKzVAqZ4",
-                "expanded_url": "https://x.com/_akhaliq/status/1750703140901388634/photo/1",
-                "ext_media_availability": {
-                    "status": "Available"
-                },
-                "features": {
-                    "large": {
-                        "faces": []
-                    },
-                    "medium": {
-                        "faces": []
-                    },
-                    "orig": {
-                        "faces": []
-                    },
-                    "small": {
-                        "faces": []
-                    }
-                },
-                "id_str": "1750703059695456257",
-                "indices": [
-                    279,
-                    302
-                ],
-                "media_key": "3_1750703059695456257",
-                "media_results": {
-                    "result": {
-                        "media_key": "3_1750703059695456257"
-                    }
-                },
-                "media_url_https": "https://pbs.twimg.com/media/GEu_KDxWUAE32Bi.jpg",
-                "original_info": {
-                    "focus_rects": [
-                        {
-                            "h": 604,
-                            "w": 1078,
-                            "x": 0,
-                            "y": 0
-                        },
-                        {
-                            "h": 888,
-                            "w": 888,
-                            "x": 13,
-                            "y": 0
-                        },
-                        {
-                            "h": 888,
-                            "w": 779,
-                            "x": 68,
-                            "y": 0
-                        },
-                        {
-                            "h": 888,
-                            "w": 444,
-                            "x": 235,
-                            "y": 0
-                        },
-                        {
-                            "h": 888,
-                            "w": 1078,
-                            "x": 0,
-                            "y": 0
-                        }
-                    ],
-                    "height": 888,
-                    "width": 1078
-                },
-                "sizes": {
-                    "large": {
-                        "h": 888,
-                        "resize": "fit",
-                        "w": 1078
-                    },
-                    "medium": {
-                        "h": 888,
-                        "resize": "fit",
-                        "w": 1078
-                    },
-                    "small": {
-                        "h": 560,
-                        "resize": "fit",
-                        "w": 680
-                    },
-                    "thumb": {
-                        "h": 150,
-                        "resize": "crop",
-                        "w": 150
-                    }
-                },
-                "type": "photo",
-                "url": "https://t.co/nNUKzVAqZ4"
-            }
-        ],
-        "user": {
-            "id_str": "2465283662",
-            "name": "AK",
-            "screen_name": "_akhaliq",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1451191636810092553/kpM5Fe12_normal.jpg",
-            "url": "https://x.com/_akhaliq",
-            "follow_url": "https://x.com/intent/follow?screen_name=_akhaliq"
-        },
-        "url": "https://x.com/_akhaliq/status/1750703140901388634",
-        "like_url": "https://x.com/intent/like?tweet_id=1750703140901388634",
-        "reply_url": "https://x.com/intent/tweet?in_reply_to=1750703140901388634",
-        "replies": []
-    },
     "1801992414758055950": {
         "created_at": "Sat Jun 15 14:57:25 +0000 2024",
         "entities": [
@@ -8476,7 +8343,8 @@
             "1750769849155092927",
             "1750850092125294990",
             "1751251887003693321"
-        ]
+        ],
+        "tweet_type": "tl;dr"
     },
     "1750746124531454277": {
         "created_at": "Fri Jan 26 05:02:58 +0000 2024",

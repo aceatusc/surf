@@ -13,11 +13,14 @@ type Props = {
 
 export const ptypeConfig = {
   all: { backgroundColor: "#002d9c", color: "#F4F1DE", icon: "🔎" },
-  author: { backgroundColor: "#198038", color: "#F4F1DE", icon: "✍️" },
-  opinion: { backgroundColor: "#1192e8", color: "#F4F1DE", icon: "🧠" },
-  critic: { backgroundColor: "#570408", color: "#F4F1DE", icon: "🧐" },
-  "tl;dr": { backgroundColor: "#72383d", color: "#F4F1DE", icon: "🎯" },
-  question: { backgroundColor: "#6929c4", color: "#F4F1DE", icon: "🙋" },
+  Pointer: { backgroundColor: "#198038", color: "#F4F1DE", icon: "🔗" },
+  Perspective: { backgroundColor: "#1192e8", color: "#F4F1DE", icon: "💡" },
+  Critique: { backgroundColor: "#570408", color: "#F4F1DE", icon: "❌" },
+  Overview: { backgroundColor: "#72383d", color: "#F4F1DE", icon: "⏳" },
+  Viral: { backgroundColor: "#f59e0b", color: "#F4F1DE", icon: "🔥" },
+  Takeaway: { backgroundColor: "#6d28d9", color: "#F4F1DE", icon: "✅" },
+  "Q&A": { backgroundColor: "#6929c4", color: "#F4F1DE", icon: "❓" },
+  Misc: { backgroundColor: "#6b7280", color: "#F4F1DE", icon: "📦" },
 };
 
 export const TweetHeader = ({ tweet, components }: Props) => {
@@ -93,7 +96,7 @@ export const TweetHeader = ({ tweet, components }: Props) => {
           <div
             className={`mr-1.5 ${is_reply ? "text-[1.2rem]" : "text-[1.6rem]"}`}
           >
-            {ptypeConfig[tweet_type as keyof typeof ptypeConfig].icon}
+            {ptypeConfig[tweet_type as keyof typeof ptypeConfig]?.icon}
           </div>
           <span className={is_reply ? "text-[1rem]" : "text-lg"}>
             {tweet_type}

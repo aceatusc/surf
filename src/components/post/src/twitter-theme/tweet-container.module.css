@@ -1,6 +1,6 @@
 .root {
   width: 100%;
-  min-width: 250px;
+  /* min-width: 250px; */
   /* max-width: 550px; */
   overflow: hidden;
   /* Base font styles */
@@ -30,7 +30,7 @@
   border: none;
   border-left: var(--tweet-border);
   border-width: 1.6px;
-  margin: 0.5rem 0 0.2rem 0.3rem;
+  margin: 0.5rem 0 0.2rem 0rem;
 }
 
 .root[data-in-thread="true"] .article {

@@ -1,7 +1,7 @@
 {
     "1726992299362848808": {
         "created_at": "Tue Nov 21 15:53:44 +0000 2023",
-        "tweet_type": "author",
+        "tweet_type": "Pointer",
         "entities": [
             {
                 "indices": [
@@ -484,6 +484,7 @@
     },
     "1849109164863168616": {
         "created_at": "Wed Oct 23 15:22:34 +0000 2024",
+        "tweet_type": "Pointer",
         "entities": [
             {
                 "indices": [
@@ -533,7 +534,7 @@
     },
     "1712559472491811221": {
         "created_at": "Thu Oct 12 20:02:50 +0000 2023",
-        "tweet_type": "author",
+        "tweet_type": "Overview",
         "entities": [
             {
                 "indices": [
@@ -660,6 +661,7 @@
     },
     "1746501801128407255": {
         "created_at": "Sun Jan 14 11:57:32 +0000 2024",
+        "tweet_type": "Pointer",
         "entities": [
             {
                 "indices": [
@@ -711,7 +713,7 @@
     },
     "1727029496560402490": {
         "created_at": "Tue Nov 21 18:21:33 +0000 2023",
-        "tweet_type": "opinion",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -743,7 +745,7 @@
     },
     "1712720009158398161": {
         "created_at": "Fri Oct 13 06:40:45 +0000 2023",
-        "tweet_type": "tl;dr",
+        "tweet_type": "Takeaway",
         "entities": [
             {
                 "indices": [
@@ -1055,7 +1057,7 @@
     },
     "1753487394425508204": {
         "created_at": "Fri Feb 02 18:35:47 +0000 2024",
-        "tweet_type": "author",
+        "tweet_type": "Pointer",
         "entities": [
             {
                 "indices": [
@@ -1264,6 +1266,7 @@
     },
     "1726992302214893707": {
         "created_at": "Tue Nov 21 15:53:45 +0000 2023",
+        "tweet_type": "Overview",
         "entities": [
             {
                 "indices": [
@@ -1296,6 +1299,7 @@
     },
     "1726992303766798837": {
         "created_at": "Tue Nov 21 15:53:45 +0000 2023",
+        "tweet_type": "Pointer",
         "entities": [
             {
                 "indices": [
@@ -1397,6 +1401,7 @@
     },
     "1727033453391360419": {
         "created_at": "Tue Nov 21 18:37:16 +0000 2023",
+        "tweet_type": "Critique",
         "entities": [
             {
                 "indices": [
@@ -1429,6 +1434,7 @@
     },
     "1727044052552729014": {
         "created_at": "Tue Nov 21 19:19:23 +0000 2023",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -1492,7 +1498,7 @@
     },
     "1746306584504848770": {
         "created_at": "Sat Jan 13 23:01:49 +0000 2024",
-        "tweet_type": "question",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -1618,6 +1624,7 @@
     },
     "1712559476157648999": {
         "created_at": "Thu Oct 12 20:02:51 +0000 2023",
+        "tweet_type": "Overview",
         "entities": [
             {
                 "indices": [
@@ -1756,6 +1763,7 @@
     },
     "1712559478946566190": {
         "created_at": "Thu Oct 12 20:02:52 +0000 2023",
+        "tweet_type": "Overview",
         "entities": [
             {
                 "indices": [
@@ -1883,6 +1891,7 @@
     },
     "1712559480779792870": {
         "created_at": "Thu Oct 12 20:02:52 +0000 2023",
+        "tweet_type": "Pointer",
         "entities": [
             {
                 "indices": [
@@ -1927,6 +1936,7 @@
     },
     "1712589980533391813": {
         "created_at": "Thu Oct 12 22:04:04 +0000 2023",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -1958,6 +1968,7 @@
     },
     "1712601662710264281": {
         "created_at": "Thu Oct 12 22:50:29 +0000 2023",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -1987,6 +1998,7 @@
     },
     "1712749810976002161": {
         "created_at": "Fri Oct 13 08:39:10 +0000 2023",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [
@@ -2018,6 +2030,7 @@
     },
     "1712805961461588344": {
         "created_at": "Fri Oct 13 12:22:18 +0000 2023",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [
@@ -2047,6 +2060,7 @@
     },
     "1712600829692395659": {
         "created_at": "Thu Oct 12 22:47:11 +0000 2023",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -2078,6 +2092,7 @@
     },
     "1712602297346257018": {
         "created_at": "Thu Oct 12 22:53:00 +0000 2023",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -2109,6 +2124,7 @@
     },
     "1712826018036125909": {
         "created_at": "Fri Oct 13 13:42:00 +0000 2023",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [
@@ -2140,6 +2156,7 @@
     },
     "1712827875508760807": {
         "created_at": "Fri Oct 13 13:49:22 +0000 2023",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [
@@ -2189,7 +2206,7 @@
     },
     "1849108414384701486": {
         "created_at": "Wed Oct 23 15:19:35 +0000 2024",
-        "tweet_type": "author",
+        "tweet_type": "Takeaway",
         "entities": [
             {
                 "indices": [
@@ -2324,6 +2341,7 @@
     },
     "1849135797204607205": {
         "created_at": "Wed Oct 23 17:08:23 +0000 2024",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [
@@ -2477,6 +2495,7 @@
     },
     "1849227757323985291": {
         "created_at": "Wed Oct 23 23:13:48 +0000 2024",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [
@@ -2568,6 +2587,7 @@
     },
     "1712720938037362979": {
         "created_at": "Fri Oct 13 06:44:27 +0000 2023",
+        "tweet_type": "Pointer",
         "entities": [
             {
                 "indices": [
@@ -2610,7 +2630,7 @@
     },
     "1798254699138973849": {
         "created_at": "Wed Jun 05 07:25:04 +0000 2024",
-        "tweet_type": "author",
+        "tweet_type": "Pointer",
         "entities": [
             {
                 "indices": [
@@ -4421,6 +4441,7 @@
     },
     "1727044729148420514": {
         "created_at": "Tue Nov 21 19:22:05 +0000 2023",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -4450,6 +4471,7 @@
     },
     "1746506679737573507": {
         "created_at": "Sun Jan 14 12:16:55 +0000 2024",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -4512,6 +4534,7 @@
     },
     "1746510233726231031": {
         "created_at": "Sun Jan 14 12:31:02 +0000 2024",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -4574,6 +4597,7 @@
     },
     "1712586073883247081": {
         "created_at": "Thu Oct 12 21:48:32 +0000 2023",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -4637,6 +4661,7 @@
     },
     "1712637122203779203": {
         "created_at": "Fri Oct 13 01:11:23 +0000 2023",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [
@@ -4668,6 +4693,7 @@
     },
     "1712641557218648100": {
         "created_at": "Fri Oct 13 01:29:01 +0000 2023",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [
@@ -4697,6 +4723,7 @@
     },
     "1712571109026021860": {
         "created_at": "Thu Oct 12 20:49:05 +0000 2023",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [
@@ -4728,6 +4755,7 @@
     },
     "1712573440270471502": {
         "created_at": "Thu Oct 12 20:58:20 +0000 2023",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [
@@ -4757,6 +4785,7 @@
     },
     "1712735570546548801": {
         "created_at": "Fri Oct 13 07:42:35 +0000 2023",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [
@@ -4788,6 +4817,7 @@
     },
     "1712826324320968941": {
         "created_at": "Fri Oct 13 13:43:13 +0000 2023",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -5236,6 +5266,7 @@
     },
     "1849228079807238627": {
         "created_at": "Wed Oct 23 23:15:05 +0000 2024",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -5737,6 +5768,7 @@
     },
     "1712596420187074888": {
         "created_at": "Thu Oct 12 22:29:39 +0000 2023",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [
@@ -5768,6 +5800,7 @@
     },
     "1712600501177520240": {
         "created_at": "Thu Oct 12 22:45:52 +0000 2023",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [
@@ -5828,6 +5861,7 @@
     },
     "1712605483402715336": {
         "created_at": "Thu Oct 12 23:05:40 +0000 2023",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [
@@ -5857,6 +5891,7 @@
     },
     "1712714709533688112": {
         "created_at": "Fri Oct 13 06:19:42 +0000 2023",
+        "tweet_type": "Pointer",
         "entities": [
             {
                 "id_str": "4558314927",
@@ -5938,6 +5973,7 @@
     },
     "1712643888186589356": {
         "created_at": "Fri Oct 13 01:38:16 +0000 2023",
+        "tweet_type": "Pointer",
         "entities": [
             {
                 "indices": [
@@ -5987,6 +6023,7 @@
     },
     "1712870346662002906": {
         "created_at": "Fri Oct 13 16:38:08 +0000 2023",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -6018,6 +6055,7 @@
     },
     "1713235394811085046": {
         "created_at": "Sat Oct 14 16:48:43 +0000 2023",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -6047,6 +6085,7 @@
     },
     "1712735696379855145": {
         "created_at": "Fri Oct 13 07:43:05 +0000 2023",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [
@@ -6078,6 +6117,7 @@
     },
     "1712736623786655984": {
         "created_at": "Fri Oct 13 07:46:46 +0000 2023",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [
@@ -6109,6 +6149,7 @@
     },
     "1712600799920996446": {
         "created_at": "Thu Oct 12 22:47:03 +0000 2023",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [
@@ -6138,6 +6179,7 @@
     },
     "1712807430059327769": {
         "created_at": "Fri Oct 13 12:28:08 +0000 2023",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [
@@ -6167,7 +6209,7 @@
     },
     "1726626681249726619": {
         "created_at": "Mon Nov 20 15:40:54 +0000 2023",
-        "tweet_type": "author",
+        "tweet_type": "Pointer",
         "entities": [
             {
                 "indices": [
@@ -6239,6 +6281,7 @@
     },
     "1726626682822615397": {
         "created_at": "Mon Nov 20 15:40:55 +0000 2023",
+        "tweet_type": "Pointer",
         "entities": [
             {
                 "indices": [
@@ -6300,6 +6343,7 @@
     },
     "1726647578660594041": {
         "created_at": "Mon Nov 20 17:03:56 +0000 2023",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [
@@ -6331,6 +6375,7 @@
     },
     "1726700721901649920": {
         "created_at": "Mon Nov 20 20:35:07 +0000 2023",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [

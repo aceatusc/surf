@@ -28,10 +28,10 @@ const examples = [
   {
     id: "arxiv:2309.17453",
     url: "https://arxiv.org/pdf/2309.17453",
-    title: "[NLP] Efficient Streaming Language Models with Attention Sinks",
+    title: "Efficient Streaming Language Models with Attention Sinks",
     postData: "/2309.17453_posts.json",
     locationData: "/2309.17453_highlights.json",
-    phase: "usability",
+    phase: "formative",
   },
   {
     id: "arxiv:2310.06816",
@@ -52,7 +52,7 @@ const examples = [
   {
     id: "arxiv:2303.15343",
     url: "https://arxiv.org/pdf/2303.15343",
-    title: "[CV] Sigmoid Loss for Language Image Pre-Training",
+    title: "Sigmoid Loss for Language Image Pre-Training",
     postData: "/2303.15343_posts.json",
     locationData: "/2303.15343_highlights.json",
     phase: "formative",

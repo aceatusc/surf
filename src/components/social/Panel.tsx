@@ -18,7 +18,7 @@ import { Tabs, TabsList, TabsTrigger } from "../ui/tabs";
 import { MouseEvent, useContext, useState } from "react";
 import { faArrowUpWideShort } from "@fortawesome/free-solid-svg-icons";
 import { AnimatePresence, motion } from "framer-motion";
-import { TPostData } from "../types";
+import { TPost, TPostData } from "../types";
 import { HighlightContext } from "@/context/HighlightContext";
 import { EmbedPost } from "./Post";
 import { getColorForGroup } from "@/context/ColorManager";
@@ -26,8 +26,20 @@ import HideScroll from "../ui/HideScroll";
 import { getStylesForLocation } from "../ui/Utils";
 import { Badge } from "../ui/badge";
 
-const TabTypes = ["all", "author", "tl;dr", "q&a", "critic", "opinion"];
+const TabTypes = [
+  "All",
+  "Overview",
+  "Q&A",
+  "Critique",
+  "Takeaway",
+  "Perspective",
+];
 const FilterTypes = ["time", "location", "popularity"];
+
+const getFirstLocation = (item: TPost) => {
+  const locations = Array.from(item.locations || []);
+  return locations.length > 0 ? locations.sort()[0] : undefined;
+};
 
 export default function Social({
   data,
@@ -38,8 +50,8 @@ export default function Social({
 }) {
   const { highlightedLocation, setHighlightedLocation } =
     useContext(HighlightContext);
-  const [filterType, setFilterType] = useState("all");
-  const [sortBy, setSortBy] = useState("time");
+  const [filterType, setFilterType] = useState("All");
+  const [sortBy, setSortBy] = useState("popularity");
 
   const getReplies = (id: string) => {
     return data[id]?.replies?.map((replyId) => data[replyId]).filter(Boolean);
@@ -58,7 +70,7 @@ export default function Social({
         !!data[id] &&
         (highlightedLocation === null ||
           data[id].locations?.has(highlightedLocation)) &&
-        (filterType === "all" || data[id]?.tweet_type === filterType)
+        (filterType === "All" || data[id]?.tweet_type === filterType)
     )
     .map((id) => data[id])
     .sort((a, b) => {
@@ -69,9 +81,12 @@ export default function Social({
       } else if (sortBy === "popularity") {
         return b.favorite_count - a.favorite_count;
       }
-      return Array.from(a.locations || [])
-        .sort()[0]
-        .localeCompare(Array.from(b.locations || []).sort()[0]);
+      const aLoc = getFirstLocation(a);
+      const bLoc = getFirstLocation(b);
+
+      if (!aLoc) return 1; // a has no location, move to end
+      if (!bLoc) return -1; // b has no location, move to end
+      return aLoc.localeCompare(bLoc);
     });
 
   const jumpToLocation = (e: MouseEvent) => {
@@ -83,18 +98,18 @@ export default function Social({
 
   return (
     <Sidebar variant="sidebar" className="p-0 z-50" side="right">
-      <SidebarHeader className="flex items-center mt-3 mb-1 flex-row px-4">
+      <SidebarHeader className="flex items-center mt-2 mb-1 flex-row px-3">
         <Tabs
-          defaultValue="all"
-          className="flex-grow mr-2"
+          defaultValue="All"
+          className="flex-grow mr-0.5"
           onValueChange={setFilterType}
         >
-          <TabsList className="grid w-full grid-cols-6 h-full bg-zinc-200 rounded-2xl">
+          <TabsList className="flex bg-zinc-200 rounded-xl justify-between h-[3.2rem] py-1.5">
             {TabTypes.map((type) => (
               <TabsTrigger
                 key={type}
                 value={type}
-                className="text-lg font-semibold h-full rounded-2xl"
+                className="text-lg font-semibold px-3.5 h-full rounded-2xl"
               >
                 {type}
               </TabsTrigger>

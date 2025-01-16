@@ -14,7 +14,6 @@ import {
   SidebarHeader,
   SidebarTrigger,
 } from "../ui/sidebar";
-import { Tabs, TabsList, TabsTrigger } from "../ui/tabs";
 import { MouseEvent, useContext, useState } from "react";
 import { faArrowUpWideShort } from "@fortawesome/free-solid-svg-icons";
 import { AnimatePresence, motion } from "framer-motion";
@@ -27,14 +26,15 @@ import { getStylesForLocation } from "../ui/Utils";
 import { Badge } from "../ui/badge";
 
 const TabTypes = [
-  "All",
   "Overview",
+  "Insight",
   "Q&A",
   "Critique",
-  "Takeaway",
   "Perspective",
+  "Related Work",
+  "Resource",
 ];
-const FilterTypes = ["time", "location", "popularity"];
+const FilterTypes = ["Time", "Location", "Popularity"];
 
 const getFirstLocation = (item: TPost) => {
   const locations = Array.from(item.locations || []);
@@ -51,7 +51,7 @@ export default function Social({
   const { highlightedLocation, setHighlightedLocation } =
     useContext(HighlightContext);
   const [filterType, setFilterType] = useState("All");
-  const [sortBy, setSortBy] = useState("popularity");
+  const [sortBy, setSortBy] = useState("Location");
 
   const getReplies = (id: string) => {
     return data[id]?.replies?.map((replyId) => data[replyId]).filter(Boolean);
@@ -74,19 +74,21 @@ export default function Social({
     )
     .map((id) => data[id])
     .sort((a, b) => {
-      if (sortBy === "time") {
+      if (sortBy === "Popularity") {
+        return b.favorite_count - a.favorite_count;
+      }
+      if (sortBy === "Time") {
         return (
           new Date(a.created_at).getTime() - new Date(b.created_at).getTime()
         );
-      } else if (sortBy === "popularity") {
-        return b.favorite_count - a.favorite_count;
       }
       const aLoc = getFirstLocation(a);
       const bLoc = getFirstLocation(b);
 
+      if (!aLoc && !bLoc) return b.favorite_count - a.favorite_count;
       if (!aLoc) return 1; // a has no location, move to end
       if (!bLoc) return -1; // b has no location, move to end
-      return aLoc.localeCompare(bLoc);
+      return aLoc.localeCompare(bLoc) || b.favorite_count - a.favorite_count;
     });
 
   const jumpToLocation = (e: MouseEvent) => {
@@ -98,31 +100,38 @@ export default function Social({
 
   return (
     <Sidebar variant="sidebar" className="p-0 z-50" side="right">
-      <SidebarHeader className="flex items-center mt-2 mb-1 flex-row px-3">
-        <Tabs
-          defaultValue="All"
-          className="flex-grow mr-0.5"
-          onValueChange={setFilterType}
-        >
-          <TabsList className="flex bg-zinc-200 rounded-xl justify-between h-[3.2rem] py-1.5">
-            {TabTypes.map((type) => (
-              <TabsTrigger
-                key={type}
-                value={type}
-                className="text-lg font-semibold px-3.5 h-full rounded-2xl"
-              >
-                {type}
-              </TabsTrigger>
-            ))}
-          </TabsList>
-        </Tabs>
+      <SidebarHeader className="my-2 px-3">
+        <div className="text-lg font-semibold">
+          <span className="mr-2">Filter by:</span>
+          {TabTypes.map((type) => (
+            <Button
+              key={type}
+              variant="secondary"
+              onClick={() => {
+                if (type === filterType) {
+                  setFilterType("All");
+                } else {
+                  setFilterType(type);
+                }
+              }}
+              className={`text-[1rem] rounded-3xl px-3 h-8 mb-2.5 mr-2.5 ${
+                type === filterType
+                  ? "bg-zinc-700 text-secondary hover:bg-zinc-600"
+                  : "bg-zinc-200 hover:bg-zinc-400"
+              }`}
+            >
+              {type}
+            </Button>
+          ))}
+        </div>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button className="bg-zinc-200 h-full rounded-xl hover:bg-zinc-300 focus-visible:ring-transparent">
+            <Button className="text-primary font-semibold bg-zinc-200 h-full rounded-xl hover:bg-zinc-300 focus-visible:ring-transparent">
               <FontAwesomeIcon
                 icon={faArrowUpWideShort}
                 className="text-zinc-500"
-              />
+              />{" "}
+              Sort by: <span>{sortBy}</span>
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent>

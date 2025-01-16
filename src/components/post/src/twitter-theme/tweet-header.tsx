@@ -12,15 +12,15 @@ type Props = {
 };
 
 export const ptypeConfig = {
-  all: { backgroundColor: "#002d9c", color: "#F4F1DE", icon: "🔎" },
-  Pointer: { backgroundColor: "#198038", color: "#F4F1DE", icon: "🔗" },
-  Perspective: { backgroundColor: "#1192e8", color: "#F4F1DE", icon: "💡" },
+  "Related Work": { backgroundColor: "#198038", color: "#F4F1DE", icon: "🔗" },
+  Perspective: { backgroundColor: "#1192e8", color: "#F4F1DE", icon: "🧠" },
   Critique: { backgroundColor: "#570408", color: "#F4F1DE", icon: "❌" },
   Overview: { backgroundColor: "#72383d", color: "#F4F1DE", icon: "⏳" },
   Viral: { backgroundColor: "#f59e0b", color: "#F4F1DE", icon: "🔥" },
-  Takeaway: { backgroundColor: "#6d28d9", color: "#F4F1DE", icon: "✅" },
+  Insight: { backgroundColor: "#6d28d9", color: "#F4F1DE", icon: "💡" },
   "Q&A": { backgroundColor: "#6929c4", color: "#F4F1DE", icon: "❓" },
-  Misc: { backgroundColor: "#6b7280", color: "#F4F1DE", icon: "📦" },
+  Resource: { backgroundColor: "#6b7280", color: "#F4F1DE", icon: "📦" },
+  Author: { color: "#F4F1DE", icon: "✍️" },
 };
 
 export const TweetHeader = ({ tweet, components }: Props) => {

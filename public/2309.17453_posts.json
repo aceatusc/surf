@@ -1,7 +1,7 @@
 {
     "1717019337653998029": {
         "created_at": "Wed Oct 25 03:24:45 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "indices": [
@@ -128,7 +128,7 @@
     },
     "1712832240969830536": {
         "created_at": "Fri Oct 13 14:06:43 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "indices": [
@@ -886,7 +886,7 @@
     },
     "1708916333411541112": {
         "created_at": "Mon Oct 02 18:46:18 +0000 2023",
-        "tweet_type": "Takeaway",
+        "tweet_type": "Insight",
         "entities": [
             {
                 "indices": [
@@ -1028,7 +1028,7 @@
     },
     "1787634151572766723": {
         "created_at": "Tue May 07 00:02:49 +0000 2024",
-        "tweet_type": "Pointer",
+        "tweet_type": "Related Work",
         "entities": [
             {
                 "indices": [
@@ -1143,7 +1143,7 @@
     },
     "1733207565616759097": {
         "created_at": "Fri Dec 08 19:30:59 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "indices": [
@@ -1308,7 +1308,7 @@
     },
     "1731778956330971507": {
         "created_at": "Mon Dec 04 20:54:12 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Related Work",
         "entities": [
             {
                 "indices": [
@@ -1360,7 +1360,7 @@
     },
     "1709328471124770887": {
         "created_at": "Tue Oct 03 22:03:59 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "indices": [
@@ -1522,7 +1522,7 @@
     },
     "1709320810404679744": {
         "created_at": "Tue Oct 03 21:33:33 +0000 2023",
-        "tweet_type": "Takeaway",
+        "tweet_type": "Viral",
         "entities": [
             {
                 "indices": [
@@ -1895,7 +1895,7 @@
     },
     "1708978841027330248": {
         "created_at": "Mon Oct 02 22:54:41 +0000 2023",
-        "tweet_type": "Takeaway",
+        "tweet_type": "Author",
         "entities": [
             {
                 "indices": [
@@ -2113,7 +2113,7 @@
     },
     "1718990821519659516": {
         "created_at": "Mon Oct 30 13:58:43 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "indices": [
@@ -2400,7 +2400,7 @@
     },
     "1709254815312719938": {
         "created_at": "Tue Oct 03 17:11:19 +0000 2023",
-        "tweet_type": "Takeaway",
+        "tweet_type": "Viral",
         "entities": [
             {
                 "indices": [
@@ -2558,7 +2558,6 @@
     },
     "1708937280205787154": {
         "created_at": "Mon Oct 02 20:09:32 +0000 2023",
-        "tweet_type": "Takeaway",
         "entities": [
             {
                 "indices": [
@@ -2633,7 +2632,6 @@
     },
     "1709470891321549195": {
         "created_at": "Wed Oct 04 07:29:55 +0000 2023",
-        "tweet_type": "Takeaway",
         "entities": [
             {
                 "indices": [
@@ -2946,7 +2944,7 @@
     },
     "1708989443980583312": {
         "created_at": "Mon Oct 02 23:36:49 +0000 2023",
-        "tweet_type": "Takeaway",
+        "tweet_type": "Author",
         "entities": [
             {
                 "indices": [
@@ -2996,7 +2994,7 @@
     },
     "1747320047369146415": {
         "created_at": "Tue Jan 16 18:08:57 +0000 2024",
-        "tweet_type": "Pointer",
+        "tweet_type": "Related Work",
         "entities": [
             {
                 "indices": [
@@ -6407,7 +6405,7 @@
     },
     "1709752321146810519": {
         "created_at": "Thu Oct 05 02:08:13 +0000 2023",
-        "tweet_type": "Takeaway",
+        "tweet_type": "Insight",
         "entities": [
             {
                 "indices": [
@@ -7431,7 +7429,7 @@
     },
     "1708954711930650866": {
         "created_at": "Mon Oct 02 21:18:48 +0000 2023",
-        "tweet_type": "Overview",
+        "tweet_type": "Related Work",
         "entities": [
             {
                 "indices": [
@@ -7737,7 +7735,7 @@
     },
     "1709060101863288873": {
         "created_at": "Tue Oct 03 04:17:35 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "indices": [
@@ -7846,7 +7844,7 @@
     },
     "1708963589170856395": {
         "created_at": "Mon Oct 02 21:54:05 +0000 2023",
-        "tweet_type": "Q&A",
+        "tweet_type": "Insight",
         "entities": [
             {
                 "indices": [
@@ -7899,6 +7897,7 @@
     },
     "1810398667377095154": {
         "created_at": "Mon Jul 08 19:40:52 +0000 2024",
+        "tweet_type": "Related Work",
         "entities": [
             {
                 "indices": [
@@ -12242,7 +12241,7 @@
     },
     "1709023537959153842": {
         "created_at": "Tue Oct 03 01:52:18 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Related Work",
         "entities": [
             {
                 "indices": [
@@ -12341,7 +12340,7 @@
     },
     "1709065322697753011": {
         "created_at": "Tue Oct 03 04:38:20 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Related Work",
         "entities": [
             {
                 "indices": [
@@ -13079,6 +13078,7 @@
     },
     "1731769136739483736": {
         "created_at": "Mon Dec 04 20:15:11 +0000 2023",
+        "tweet_type": "Related Work",
         "entities": [
             {
                 "indices": [
@@ -14572,7 +14572,7 @@
     },
     "1708924918119776749": {
         "created_at": "Mon Oct 02 19:20:25 +0000 2023",
-        "tweet_type": "Takeaway",
+        "tweet_type": "Overview",
         "entities": [
             {
                 "indices": [
@@ -14605,7 +14605,7 @@
     },
     "1708925085904465957": {
         "created_at": "Mon Oct 02 19:21:05 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "indices": [
@@ -14649,7 +14649,7 @@
     },
     "1709159128696782940": {
         "created_at": "Tue Oct 03 10:51:05 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "indices": [
@@ -17293,7 +17293,7 @@
     },
     "1709277577536283005": {
         "created_at": "Tue Oct 03 18:41:45 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "indices": [
@@ -18806,7 +18806,7 @@
     },
     "1709207366502088966": {
         "created_at": "Tue Oct 03 14:02:46 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "indices": [

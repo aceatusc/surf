@@ -10,6 +10,7 @@ import {
   useNavigate,
   useParams,
   Navigate,
+  useLocation,
 } from "react-router-dom";
 import { SidebarInset, SidebarProvider } from "./components/ui/sidebar";
 import Social from "./components/social/Panel";
@@ -23,7 +24,6 @@ const examples = [
     title: "Position: AI/ML Influencers Have a Place in the Academic Process",
     postData: "/2401.13782_posts.json",
     locationData: "/2401.13782_highlights.json",
-    phase: "formative",
   },
   {
     id: "arxiv:2309.17453",
@@ -31,7 +31,6 @@ const examples = [
     title: "Efficient Streaming Language Models with Attention Sinks",
     postData: "/2309.17453_posts.json",
     locationData: "/2309.17453_highlights.json",
-    phase: "formative",
   },
   {
     id: "arxiv:2310.06816",
@@ -39,7 +38,6 @@ const examples = [
     title: "Text Embeddings Reveal (Almost) As Much As Text",
     postData: "/2310.06816_posts.json",
     locationData: "/2310.06816_highlights.json",
-    phase: "formative",
   },
   // {
   //   id: "arxiv:2306.04634",
@@ -88,9 +86,14 @@ export function AppContent() {
   const [postData, setPostData] = useState<TPostData>({});
   const [locationData, setLocationData] = useState<THighlightData>({});
   const [loading, setLoading] = useState(true);
+  const { setStudyPhase } = useContext(DevContext);
 
-  const { setStudyPhase, studyPhase } = useContext(DevContext);
-  setStudyPhase(paper?.phase || "annotation");
+  const urlLocation = useLocation();
+  const studyPhase = urlLocation.hash?.slice(1) || "formative";
+
+  useEffect(() => {
+    setStudyPhase(studyPhase);
+  }, [studyPhase]);
 
   useEffect(() => {
     if (!paper) return;
@@ -121,6 +124,36 @@ export function AppContent() {
   }
 
   const rootPosts = new Set<string>();
+  if (studyPhase === "probe1") {
+    if (paper.id === "arxiv:2309.17453") {
+      [
+        "1708947543890317413",
+        "1708950271064449273",
+        "1708950466514854372",
+        "1708953190291632432",
+        "1708954711930650866",
+        "1708973460612125021",
+      ].forEach((id) => {
+        if (!postData[id]) return;
+        rootPosts.add(id);
+        postData[id].quoted_status_id_str =
+          postData[id].in_reply_to_status_id_str;
+      });
+    }
+  }
+  // if (paper.id === "arxiv:2310.06816") {
+  //   [
+  //     "1712559476157648999",
+  //     "1712559478946566190",
+  //     "1712559480779792870",
+  //     "1712596420187074888",
+  //   ].forEach((id) => {
+  //     if (!postData[id]) return;
+  //     rootPosts.add(id);
+  //     postData[id].quoted_status_id_str =
+  //       postData[id].in_reply_to_status_id_str;
+  //   });
+  // }
   if (paper.locationData) {
     Object.values(locationData)
       .flat()

@@ -1891,7 +1891,7 @@
     },
     "1712559480779792870": {
         "created_at": "Thu Oct 12 20:02:52 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "indices": [
@@ -2060,7 +2060,7 @@
     },
     "1712600829692395659": {
         "created_at": "Thu Oct 12 22:47:11 +0000 2023",
-        "tweet_type": "Perspective",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [

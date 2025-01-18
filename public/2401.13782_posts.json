@@ -36,6 +36,7 @@
     },
     "1751002910819795261": {
         "created_at": "Fri Jan 26 22:03:20 +0000 2024",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -155,7 +156,7 @@
     },
     "1751279042375057724": {
         "created_at": "Sat Jan 27 16:20:35 +0000 2024",
-        "tweet_type": "Viral",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -227,7 +228,7 @@
     },
     "1752425165793759366": {
         "created_at": "Tue Jan 30 20:14:52 +0000 2024",
-        "tweet_type": "Pointer",
+        "tweet_type": "Related Work",
         "entities": [
             {
                 "indices": [
@@ -4094,7 +4095,7 @@
     },
     "1751026009653346513": {
         "created_at": "Fri Jan 26 23:35:07 +0000 2024",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "indices": [
@@ -8432,7 +8433,7 @@
     },
     "1750758512307929443": {
         "created_at": "Fri Jan 26 05:52:11 +0000 2024",
-        "tweet_type": "Takeaway",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -8650,7 +8651,7 @@
     },
     "1750766220104663222": {
         "created_at": "Fri Jan 26 06:22:49 +0000 2024",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "indices": [
@@ -11035,7 +11036,7 @@
     },
     "1750860099181043923": {
         "created_at": "Fri Jan 26 12:35:51 +0000 2024",
-        "tweet_type": "Perspective",
+        "tweet_type": "Q&A",
         "entities": [
             {
                 "indices": [

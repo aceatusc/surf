@@ -2,6 +2,7 @@
     "1717019337653998029": {
         "created_at": "Wed Oct 25 03:24:45 +0000 2023",
         "tweet_type": "Resource",
+        "is_subject": false,
         "entities": [
             {
                 "indices": [
@@ -129,6 +130,7 @@
     "1712832240969830536": {
         "created_at": "Fri Oct 13 14:06:43 +0000 2023",
         "tweet_type": "Resource",
+        "is_subject": false,
         "entities": [
             {
                 "indices": [
@@ -886,7 +888,7 @@
     },
     "1708916333411541112": {
         "created_at": "Mon Oct 02 18:46:18 +0000 2023",
-        "tweet_type": "Insight",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -1029,6 +1031,7 @@
     "1787634151572766723": {
         "created_at": "Tue May 07 00:02:49 +0000 2024",
         "tweet_type": "Related Work",
+        "is_subject": false,
         "entities": [
             {
                 "indices": [
@@ -1212,6 +1215,7 @@
     },
     "1838236532177862984": {
         "created_at": "Mon Sep 23 15:18:36 +0000 2024",
+        "is_subject": false,
         "entities": [
             {
                 "indices": [
@@ -1309,6 +1313,7 @@
     "1731778956330971507": {
         "created_at": "Mon Dec 04 20:54:12 +0000 2023",
         "tweet_type": "Related Work",
+        "is_subject": false,
         "entities": [
             {
                 "indices": [
@@ -1895,7 +1900,6 @@
     },
     "1708978841027330248": {
         "created_at": "Mon Oct 02 22:54:41 +0000 2023",
-        "tweet_type": "Author",
         "entities": [
             {
                 "indices": [
@@ -2114,6 +2118,7 @@
     "1718990821519659516": {
         "created_at": "Mon Oct 30 13:58:43 +0000 2023",
         "tweet_type": "Resource",
+        "is_subject": false,
         "entities": [
             {
                 "indices": [
@@ -2944,7 +2949,6 @@
     },
     "1708989443980583312": {
         "created_at": "Mon Oct 02 23:36:49 +0000 2023",
-        "tweet_type": "Author",
         "entities": [
             {
                 "indices": [
@@ -2995,6 +2999,7 @@
     "1747320047369146415": {
         "created_at": "Tue Jan 16 18:08:57 +0000 2024",
         "tweet_type": "Related Work",
+        "is_subject": false,
         "entities": [
             {
                 "indices": [
@@ -3473,6 +3478,8 @@
     },
     "1711840108125585519": {
         "created_at": "Tue Oct 10 20:24:20 +0000 2023",
+        "tweet_type": "Resource",
+        "is_subject": false,
         "entities": [
             {
                 "indices": [
@@ -3661,6 +3668,7 @@
     },
     "1780514232951304497": {
         "created_at": "Wed Apr 17 08:30:48 +0000 2024",
+        "tweet_type": "Related Work",
         "entities": [
             {
                 "indices": [
@@ -6405,7 +6413,7 @@
     },
     "1709752321146810519": {
         "created_at": "Thu Oct 05 02:08:13 +0000 2023",
-        "tweet_type": "Insight",
+        "tweet_type": "Overview",
         "entities": [
             {
                 "indices": [
@@ -7844,7 +7852,7 @@
     },
     "1708963589170856395": {
         "created_at": "Mon Oct 02 21:54:05 +0000 2023",
-        "tweet_type": "Insight",
+        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -7898,6 +7906,7 @@
     "1810398667377095154": {
         "created_at": "Mon Jul 08 19:40:52 +0000 2024",
         "tweet_type": "Related Work",
+        "is_subject": false,
         "entities": [
             {
                 "indices": [
@@ -8965,6 +8974,7 @@
     },
     "1826988620986650733": {
         "created_at": "Fri Aug 23 14:23:25 +0000 2024",
+        "is_subject": false,
         "entities": [
             {
                 "indices": [
@@ -13079,6 +13089,7 @@
     "1731769136739483736": {
         "created_at": "Mon Dec 04 20:15:11 +0000 2023",
         "tweet_type": "Related Work",
+        "is_subject": false,
         "entities": [
             {
                 "indices": [
@@ -13851,6 +13862,7 @@
     },
     "1716779732967068131": {
         "created_at": "Tue Oct 24 11:32:39 +0000 2023",
+        "is_subject": false,
         "entities": [
             {
                 "indices": [

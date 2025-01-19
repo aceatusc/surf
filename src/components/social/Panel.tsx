@@ -27,12 +27,13 @@ import { Badge } from "../ui/badge";
 
 const TabTypes = [
   "Overview",
-  "Insight",
+  // "Author",
   "Q&A",
   "Critique",
   "Perspective",
   "Related Work",
   "Resource",
+  "Viral",
 ];
 const FilterTypes = ["Time", "Location", "Popularity"];
 

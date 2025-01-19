@@ -190,8 +190,8 @@
         ]
     },
     "1750783025011450254": {
-        "tweet_type": "Viral",
         "created_at": "Fri Jan 26 07:29:35 +0000 2024",
+        "tweet_type": "Viral",
         "entities": [
             {
                 "indices": [
@@ -229,6 +229,7 @@
     "1752425165793759366": {
         "created_at": "Tue Jan 30 20:14:52 +0000 2024",
         "tweet_type": "Related Work",
+        "is_subject": false,
         "entities": [
             {
                 "indices": [
@@ -493,6 +494,7 @@
     },
     "1750805744255951085": {
         "created_at": "Fri Jan 26 08:59:52 +0000 2024",
+        "is_subject": false,
         "entities": [
             {
                 "indices": [
@@ -526,8 +528,8 @@
         ]
     },
     "1750777835529072648": {
-        "tweet_type": "Viral",
         "created_at": "Fri Jan 26 07:08:58 +0000 2024",
+        "tweet_type": "Viral",
         "entities": [
             {
                 "indices": [
@@ -1007,6 +1009,7 @@
     },
     "1750938896316399800": {
         "created_at": "Fri Jan 26 17:48:58 +0000 2024",
+        "is_subject": false,
         "entities": [
             {
                 "indices": [
@@ -1631,7 +1634,7 @@
     },
     "1751508888405295326": {
         "created_at": "Sun Jan 28 07:33:55 +0000 2024",
-        "tweet_type": "Perspective",
+        "tweet_type": "Critique",
         "entities": [
             {
                 "indices": [
@@ -2247,6 +2250,7 @@
     },
     "1803317256375640471": {
         "created_at": "Wed Jun 19 06:41:52 +0000 2024",
+        "is_subject": false,
         "entities": [
             {
                 "indices": [
@@ -3264,7 +3268,7 @@
     },
     "1751483874042167669": {
         "created_at": "Sun Jan 28 05:54:31 +0000 2024",
-        "tweet_type": "Perspective",
+        "tweet_type": "Critique",
         "entities": [
             {
                 "indices": [
@@ -7718,6 +7722,7 @@
     },
     "1801992414758055950": {
         "created_at": "Sat Jun 15 14:57:25 +0000 2024",
+        "is_subject": false,
         "entities": [
             {
                 "indices": [
@@ -7957,6 +7962,7 @@
     },
     "1750732070014337101": {
         "created_at": "Fri Jan 26 04:07:07 +0000 2024",
+        "tweet_type": "Viral",
         "entities": [
             {
                 "indices": [
@@ -8191,8 +8197,7 @@
             "1750769849155092927",
             "1750850092125294990",
             "1751251887003693321"
-        ],
-        "tweet_type": "Viral"
+        ]
     },
     "1750746124531454277": {
         "created_at": "Fri Jan 26 05:02:58 +0000 2024",

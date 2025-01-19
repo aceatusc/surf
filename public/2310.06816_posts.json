@@ -1,7 +1,7 @@
 {
     "1726992299362848808": {
         "created_at": "Tue Nov 21 15:53:44 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "indices": [
@@ -484,7 +484,7 @@
     },
     "1849109164863168616": {
         "created_at": "Wed Oct 23 15:22:34 +0000 2024",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "indices": [
@@ -661,7 +661,6 @@
     },
     "1746501801128407255": {
         "created_at": "Sun Jan 14 11:57:32 +0000 2024",
-        "tweet_type": "Pointer",
         "entities": [
             {
                 "indices": [
@@ -745,7 +744,6 @@
     },
     "1712720009158398161": {
         "created_at": "Fri Oct 13 06:40:45 +0000 2023",
-        "tweet_type": "Takeaway",
         "entities": [
             {
                 "indices": [
@@ -1057,7 +1055,8 @@
     },
     "1753487394425508204": {
         "created_at": "Fri Feb 02 18:35:47 +0000 2024",
-        "tweet_type": "Pointer",
+        "tweet_type": "Related Work",
+        "is_subject": false,
         "entities": [
             {
                 "indices": [
@@ -1299,7 +1298,7 @@
     },
     "1726992303766798837": {
         "created_at": "Tue Nov 21 15:53:45 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "indices": [
@@ -1498,7 +1497,8 @@
     },
     "1746306584504848770": {
         "created_at": "Sat Jan 13 23:01:49 +0000 2024",
-        "tweet_type": "Perspective",
+        "is_subject": false,
+        "tweet_type": "Related Work",
         "entities": [
             {
                 "indices": [
@@ -2206,7 +2206,6 @@
     },
     "1849108414384701486": {
         "created_at": "Wed Oct 23 15:19:35 +0000 2024",
-        "tweet_type": "Takeaway",
         "entities": [
             {
                 "indices": [
@@ -2587,7 +2586,7 @@
     },
     "1712720938037362979": {
         "created_at": "Fri Oct 13 06:44:27 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "indices": [
@@ -2630,7 +2629,8 @@
     },
     "1798254699138973849": {
         "created_at": "Wed Jun 05 07:25:04 +0000 2024",
-        "tweet_type": "Pointer",
+        "tweet_type": "Related Work",
+        "is_subject": false,
         "entities": [
             {
                 "indices": [
@@ -4471,7 +4471,6 @@
     },
     "1746506679737573507": {
         "created_at": "Sun Jan 14 12:16:55 +0000 2024",
-        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -4534,7 +4533,6 @@
     },
     "1746510233726231031": {
         "created_at": "Sun Jan 14 12:31:02 +0000 2024",
-        "tweet_type": "Perspective",
         "entities": [
             {
                 "indices": [
@@ -5891,7 +5889,7 @@
     },
     "1712714709533688112": {
         "created_at": "Fri Oct 13 06:19:42 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "id_str": "4558314927",
@@ -5973,7 +5971,7 @@
     },
     "1712643888186589356": {
         "created_at": "Fri Oct 13 01:38:16 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Related Work",
         "entities": [
             {
                 "indices": [
@@ -6209,7 +6207,7 @@
     },
     "1726626681249726619": {
         "created_at": "Mon Nov 20 15:40:54 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "indices": [
@@ -6281,7 +6279,7 @@
     },
     "1726626682822615397": {
         "created_at": "Mon Nov 20 15:40:55 +0000 2023",
-        "tweet_type": "Pointer",
+        "tweet_type": "Resource",
         "entities": [
             {
                 "indices": [

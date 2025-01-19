@@ -140,6 +140,21 @@ export function AppContent() {
           postData[id].in_reply_to_status_id_str;
       });
     }
+    if (paper.id === "arxiv:2401.13782") {
+      [
+        "1751024300243796379",
+        "1751024871126229355",
+        "1751025185149628877",
+        "1751025610267475977",
+        "1750857474108739706",
+        "1750775632181485767",
+      ].forEach((id) => {
+        if (!postData[id]) return;
+        rootPosts.add(id);
+        postData[id].quoted_status_id_str =
+          postData[id].in_reply_to_status_id_str;
+      });
+    }
   }
   // if (paper.id === "arxiv:2310.06816") {
   //   [

@@ -155,20 +155,21 @@ export function AppContent() {
           postData[id].in_reply_to_status_id_str;
       });
     }
+    if (paper.id === "arxiv:2310.06816") {
+      [
+        "1712559476157648999",
+        "1712559478946566190",
+        "1712559480779792870",
+        "1712596420187074888",
+        "1712589980533391813",
+      ].forEach((id) => {
+        if (!postData[id]) return;
+        rootPosts.add(id);
+        postData[id].quoted_status_id_str =
+          postData[id].in_reply_to_status_id_str;
+      });
+    }
   }
-  // if (paper.id === "arxiv:2310.06816") {
-  //   [
-  //     "1712559476157648999",
-  //     "1712559478946566190",
-  //     "1712559480779792870",
-  //     "1712596420187074888",
-  //   ].forEach((id) => {
-  //     if (!postData[id]) return;
-  //     rootPosts.add(id);
-  //     postData[id].quoted_status_id_str =
-  //       postData[id].in_reply_to_status_id_str;
-  //   });
-  // }
   if (paper.locationData) {
     Object.values(locationData)
       .flat()

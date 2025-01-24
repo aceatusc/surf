@@ -2,11 +2,11 @@
   margin-top: 0.75rem;
   overflow: hidden;
   position: relative;
-  max-height: 8rem;
-  transition: max-height 0.2s ease-in-out;
+  /* max-height: 8rem;
+  transition: max-height 0.2s ease-in-out; */
 }
 
-.root::after {
+/* .root::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -16,20 +16,20 @@
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
   pointer-events: none;
   transition: height 0.12s ease-in;
-}
+} */
 
-:global(.react-tweet-theme:hover) .root,
+/* :global(.react-tweet-theme:hover) .root,
 :global(.react-tweet-theme:focus) .root {
   max-height: 20rem;
-}
+} */
 
-:global(.react-tweet-theme:hover) .root::after,
+/* :global(.react-tweet-theme:hover) .root::after,
 :global(.react-tweet-theme:focus) .root::after {
   height: 0rem;
-}
+} */
 
 .rounded {
-  /* border: var(--tweet-border); */
+  border: var(--tweet-border);
   border-radius: 12px;
 }
 

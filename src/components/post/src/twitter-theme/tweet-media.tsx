@@ -57,13 +57,13 @@ export const TweetMedia = ({ tweet, components, quoted }: Props) => {
               >
                 <div
                   className={s.skeleton}
-                  // style={getSkeletonStyle(media, length)}
+                  style={getSkeletonStyle(media, length)}
                 />
                 <Img
                   src={getMediaUrl(media, "small")}
                   alt={media.ext_alt_text || "Image"}
                   className={s.image}
-                  draggable={false}
+                  draggable
                 />
               </div>
             ) : (

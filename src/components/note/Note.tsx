@@ -16,7 +16,7 @@ import { DocumentContext } from "../pdf";
 const HYPOTHESIS_CLIENT_SCRIPT_URL = "https://hypothes.is/embed.js";
 
 export default function Note() {
-  const { toggleSidebar } = useSidebar();
+  const { toggleSidebar, setOpen } = useSidebar();
   const { numPagesLoaded, numPages } = useContext(DocumentContext);
 
   useEffect(() => {
@@ -26,7 +26,9 @@ export default function Note() {
       externalContainerSelector: "#hypothesis-root",
       sideBySide: {
         mode: "manual",
-        // isActive: () => true,
+      },
+      onLayoutChange: ({ expanded }: { expanded: boolean }) => {
+        setOpen(expanded);
       },
     });
     loadBrowserScript(HYPOTHESIS_CLIENT_SCRIPT_URL);
@@ -46,7 +48,7 @@ export default function Note() {
   }, [numPagesLoaded, numPages]);
 
   return (
-    <Sidebar>
+    <Sidebar variant="floating">
       {numPagesLoaded < numPages && (
         <SidebarHeader className="text-center text-lg">
           <b className="text-xl">Waiting for the paper to load...</b>

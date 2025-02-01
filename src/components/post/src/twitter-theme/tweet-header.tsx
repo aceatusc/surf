@@ -4,7 +4,6 @@ import type { TwitterComponents } from "./types.jsx";
 import { AvatarImg } from "./avatar-img.jsx";
 import s from "./tweet-header.module.css";
 import { VerifiedBadge } from "./verified-badge.jsx";
-import { Badge } from "../../../ui/badge";
 
 type Props = {
   tweet: EnrichedTweet;
@@ -12,20 +11,19 @@ type Props = {
 };
 
 export const ptypeConfig = {
-  "Related Work": { backgroundColor: "#198038", color: "#F4F1DE", icon: "🔗" },
-  Perspective: { backgroundColor: "#1192e8", color: "#F4F1DE", icon: "🧠" },
-  Critique: { backgroundColor: "#570408", color: "#F4F1DE", icon: "❌" },
-  Overview: { backgroundColor: "#72383d", color: "#F4F1DE", icon: "⏳" },
-  Viral: { backgroundColor: "#f59e0b", color: "#F4F1DE", icon: "🔥" },
-  Insight: { backgroundColor: "#6d28d9", color: "#F4F1DE", icon: "💡" },
-  "Q&A": { backgroundColor: "#6929c4", color: "#F4F1DE", icon: "❓" },
-  Resource: { backgroundColor: "#6b7280", color: "#F4F1DE", icon: "📦" },
-  Author: { color: "#F4F1DE", icon: "✍️" },
+  "Related Work": { icon: "📖", priority: 5 },
+  Perspective: { icon: "💬", priority: 4 },
+  Critique: { icon: "❗", priority: 3 },
+  Overview: { icon: "🧵", priority: 1 },
+  Viral: { icon: "🔥", priority: 7 },
+  "Q&A": { icon: "❓", priority: 2 },
+  Resource: { icon: "🔗", priority: 6 },
+  Author: { icon: "✍️", priority: 0 },
 };
 
 export const TweetHeader = ({ tweet, components }: Props) => {
   const Img = components?.AvatarImg ?? AvatarImg;
-  const { user, tweet_type, is_reply: is_reply } = tweet;
+  const { user, is_reply: is_reply } = tweet;
 
   const userUrl = `https://twitter.com/${user.screen_name}`;
   const avatarSize = is_reply ? 20 : 32;
@@ -91,18 +89,6 @@ export const TweetHeader = ({ tweet, components }: Props) => {
           </div>
         )}
       </div>
-      {tweet_type && (
-        <Badge className="ml-auto px-3 py-1 rounded-full bg-zinc-200 text-zinc-800 hover:bg-zinc-300">
-          <div
-            className={`mr-1.5 ${is_reply ? "text-[1.2rem]" : "text-[1.6rem]"}`}
-          >
-            {ptypeConfig[tweet_type as keyof typeof ptypeConfig]?.icon}
-          </div>
-          <span className={is_reply ? "text-[1rem]" : "text-lg"}>
-            {tweet_type}
-          </span>
-        </Badge>
-      )}
     </div>
   );
 };

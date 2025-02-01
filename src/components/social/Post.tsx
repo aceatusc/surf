@@ -13,13 +13,14 @@ export const EmbedPost = ({ getQuote, getReplies, ...post }: TPostEmbed) => {
   const replies = getReplies(post.id_str);
   post.quoted_tweet = getQuote(post.id_str);
   post.conversation_count = replies?.length || 0;
+  console.log(post);
 
   return (
     <Embed
       tweet={post}
       id={`post-${post.id_str}`}
       onClickReply={post.onClickReply}
-      className="mt-2 mb-4"
+      className="mt-2 mb-4 relative z-10"
     >
       {replies &&
         replies.length > 0 &&

@@ -7,6 +7,7 @@ type Props = {
   paddingLeft?: number;
   paddingRight?: number;
   paddingY?: number;
+  paddingBottom?: number;
   scrollRef?: React.RefObject<HTMLDivElement>;
   direction?: "ltr" | "rtl";
 };
@@ -17,6 +18,7 @@ export default function HideScroll({
   paddingLeft,
   paddingRight,
   paddingY,
+  paddingBottom,
   scrollRef,
   direction = "ltr",
   ...props
@@ -40,7 +42,7 @@ export default function HideScroll({
         ref={scrollRef}
         style={{
           top: `${paddingY || 0}px`,
-          bottom: `${paddingY || 0}px`,
+          bottom: `${paddingY || paddingBottom || 0}px`,
           left: direction === "rtl" ? `-${sbWidth || 16}px` : undefined,
           right: direction === "ltr" ? `-${sbWidth || 16}px` : undefined,
           paddingLeft: direction === "rtl" && !sbWidth ? "16px" : undefined,

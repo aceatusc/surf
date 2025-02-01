@@ -1,19 +1,22 @@
 import { Fragment, MouseEvent, useCallback, useContext, useState } from "react";
 import { HighlightContext } from "../../context/HighlightContext";
-import {
-  BoundingBox,
-  computeBoundingBoxStyle,
-  // computePageStyle,
-  DocumentContext,
-  TransformContext,
-} from "../pdf";
-import { getColorForGroup } from "../../context/ColorManager";
+import { BoundingBox, DocumentContext, TransformContext } from "../pdf";
 import { THighlight } from "../types";
+import { Button } from "../ui/button";
+import { getColor } from "../../context/ColorManager";
+import { ptypeConfig } from "../post/src/twitter-theme/tweet-header";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "../ui/tooltip";
 
 export default function Highlight({ data }: { data: THighlight[] }) {
-  const { setHighlightedLocation } = useContext(HighlightContext);
+  const { setHighlightedLocation, setHighlightedType } =
+    useContext(HighlightContext);
   const { pageDimensions } = useContext(DocumentContext);
-  const { rotation, scale } = useContext(TransformContext);
+  const { scale } = useContext(TransformContext);
   const [isHovered, setIsHovered] = useState(false);
 
   const handleClick = useCallback((e: MouseEvent) => {
@@ -22,48 +25,72 @@ export default function Highlight({ data }: { data: THighlight[] }) {
   }, []);
 
   const handleMouseEnter = useCallback((e: MouseEvent) => {
-    const quoteId = (e.target as HTMLElement).id.split("_")[1];
+    const eleId = (e.target as HTMLElement).id;
+    const quoteId = eleId.split("_")[1];
+    const type = eleId.split("_")[2];
     setHighlightedLocation(quoteId);
+    setHighlightedType(type);
     setIsHovered(true);
   }, []);
 
   const handleMouseLeave = () => {
     if (isHovered) {
       setHighlightedLocation(null);
+      setHighlightedType(null);
     }
   };
 
-  // const getPageStyle = useCallback(() => {
-  //   return computePageStyle(pageDimensions, rotation, scale);
-  // }, [pageDimensions, rotation, scale]);
-
   return (
     <Fragment>
-      {data.map(({ id, bbox, type }, i) => {
+      {data.map(({ id, bbox, type, types }, i) => {
         const [page, left, top, width, height] = bbox;
-        const newLeft =
-          pageDimensions.width / left > 2 ? left - 14.4 : left + width + 6;
-        const color = getColorForGroup(id);
+        const isLeft = pageDimensions.width / left > 2;
+        const newLeft = isLeft ? left - 32 : left + width + 8;
+        const color = getColor(id);
         return (
-          <div
-            key={i + page}
-            onClick={handleClick}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
+          <Fragment key={i + page}>
             <div
               id={`highlight_${id}`}
-              className="transform transition-transform duration-200 hover:scale-x-[1.3] rounded-lg absolute z-[21] cursor-pointer"
+              className="absolute z-[21] flex flex-col"
               style={{
-                backgroundColor: color,
-                ...computeBoundingBoxStyle(
-                  { left: newLeft, top, width: 9, height },
-                  pageDimensions,
-                  rotation,
-                  scale
-                ),
+                left: newLeft * scale,
+                top: top * scale,
+                maxHeight: height * scale,
               }}
-            />
+            >
+              {types?.map((type) => (
+                <TooltipProvider key={type}>
+                  <Tooltip delayDuration={120}>
+                    <TooltipTrigger asChild>
+                      <Button
+                        key={type}
+                        id={`highlight_${id}_${type}`}
+                        onClick={handleClick}
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                        className="rounded-full hover:scale-110 transition-transform duration-100"
+                        style={{
+                          backgroundColor: color,
+                          width: `${20 * scale}px`,
+                          height: `${20 * scale}px`,
+                          fontSize: `${12 * scale}px`,
+                          padding: `${12 * scale}px`,
+                          marginBottom: `${6 * scale}px`,
+                        }}
+                      >
+                        {ptypeConfig[type as keyof typeof ptypeConfig].icon}
+                      </Button>
+                    </TooltipTrigger>
+                    <TooltipContent
+                      className="py-1 px-2 font-mono"
+                      side={isLeft ? "left" : "right"}
+                    >
+                      {type}
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              ))}
+            </div>
             {type === "sentence" && (
               <BoundingBox
                 id={`highlight_${id}_text`}
@@ -76,7 +103,7 @@ export default function Highlight({ data }: { data: THighlight[] }) {
                 color={color}
               />
             )}
-          </div>
+          </Fragment>
         );
       })}
     </Fragment>

@@ -2,7 +2,7 @@
   width: 100%;
   /* min-width: 250px; */
   /* max-width: 550px; */
-  overflow: hidden;
+  /* overflow: hidden; */
   /* Base font styles */
   color: var(--tweet-font-color);
   font-family: var(--tweet-font-family);

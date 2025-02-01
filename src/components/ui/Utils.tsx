@@ -1,4 +1,4 @@
-import { getColorForGroup } from "@/context/ColorManager";
+import { getColor } from "@/context/ColorManager";
 
 export function isColorDark(color: string | undefined): boolean {
   if (!color) return false;
@@ -15,6 +15,6 @@ export function getContrastColor(color: string | undefined): string {
 }
 
 export function getStylesForLocation(quote: string) {
-  const bgColor = getColorForGroup(quote);
+  const bgColor = getColor(quote);
   return { backgroundColor: bgColor, color: getContrastColor(bgColor) };
 }

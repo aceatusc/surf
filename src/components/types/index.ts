@@ -5,6 +5,7 @@ export type THighlight = {
   posts: string[];
   id: string;
   type: string;
+  types?: string[];
 };
 
 export type THighlightData = {

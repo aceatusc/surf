@@ -14,6 +14,7 @@ import { Button } from "../../../ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { DevContext } from "../../../../context/DevContext";
+import uniqolor from "uniqolor";
 
 type Props = {
   tweet: EnrichedTweet;

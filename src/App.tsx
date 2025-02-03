@@ -176,8 +176,9 @@ export function AppContent() {
       .forEach((loc) => {
         loc.posts.forEach((post) => {
           if (
-            postData[post].in_reply_to_status_id_str &&
-            studyPhase !== "usability"
+            !postData[post] ||
+            (postData[post].in_reply_to_status_id_str &&
+              studyPhase !== "usability")
           ) {
             return;
           }

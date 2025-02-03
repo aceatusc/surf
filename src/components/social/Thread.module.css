@@ -33,7 +33,7 @@
   display: none;
   height: 1.25rem;
   width: 1.25rem;
-  animation: slideLeft 0.16s ease-in-out alternate;
+  animation: slideLeft 0.15s ease-in-out alternate;
   animation-iteration-count: 2.5;
   animation-fill-mode: forwards;
 }

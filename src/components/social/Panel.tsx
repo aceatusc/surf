@@ -1,4 +1,3 @@
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "../ui/button";
 // import {
 //   DropdownMenu,
@@ -15,16 +14,13 @@ import {
   SidebarHeader,
   SidebarTrigger,
 } from "../ui/sidebar";
-import { Fragment, MouseEvent, useContext, useState } from "react";
-// import { faArrowUpWideShort } from "@fortawesome/free-solid-svg-icons";
+import { MouseEvent, useContext } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { TPost, TPostData } from "../types";
 import { HighlightContext } from "@/context/HighlightContext";
-import { EmbedPost } from "./Post";
 import HideScroll from "../ui/HideScroll";
 import { getStylesForLocation } from "../ui/Utils";
 import { Badge } from "../ui/badge";
-import { getColor } from "@/context/ColorManager";
 import { ptypeConfig } from "../post/src/twitter-theme/tweet-header";
 import Thread from "./Thread";
 

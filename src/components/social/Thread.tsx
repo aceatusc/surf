@@ -6,15 +6,15 @@ import {
   TweetHeader,
   TweetMedia,
 } from "../post/src";
-import { TPost } from "../types";
 import { Button } from "../ui/button";
 import { useState } from "react";
 import { SIDEBAR_WIDTH } from "../ui/sidebar";
 import { Card, CardHeader } from "../ui/card";
 import HideScroll from "../ui/HideScroll";
-import { ArrowBigLeft, ArrowLeft, ChevronsUpDown } from "lucide-react";
+import { ArrowLeft, ChevronsUpDown } from "lucide-react";
 import { getColor } from "@/context/ColorManager";
 import s from "./Thread.module.css";
+import { TPost } from "../types";
 
 type TThread = {
   post: TPost;

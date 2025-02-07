@@ -1,7 +1,7 @@
 import { Fragment, MouseEvent, useCallback, useContext, useState } from "react";
 import { HighlightContext } from "../../context/HighlightContext";
-import { BoundingBox, DocumentContext, TransformContext } from "../pdf";
-import { THighlight } from "../types";
+import { DocumentContext, TransformContext } from "../pdf";
+import { TLocation } from "../types";
 import { Button } from "../ui/button";
 import { getColor } from "../../context/ColorManager";
 import { ptypeConfig } from "../post/src/twitter-theme/tweet-header";
@@ -12,7 +12,7 @@ import {
   TooltipTrigger,
 } from "../ui/tooltip";
 
-export default function Highlight({ data }: { data: THighlight[] }) {
+export default function Highlight({ data }: { data: TLocation[] }) {
   const { setHighlightedLocation, setHighlightedType } =
     useContext(HighlightContext);
   const { pageDimensions } = useContext(DocumentContext);
@@ -42,68 +42,56 @@ export default function Highlight({ data }: { data: THighlight[] }) {
 
   return (
     <Fragment>
-      {data.map(({ id, bbox, type, types }, i) => {
-        const [page, left, top, width, height] = bbox;
-        const isLeft = pageDimensions.width / left > 2;
-        const newLeft = isLeft ? left - 32 : left + width + 8;
-        const color = getColor(id);
+      {data.map(({ title, box, types, dimensions }, i) => {
+        const [page, left, top, width, height] = box;
+        const isLeft = dimensions.width / left > 2;
+        const newLeft = isLeft ? left - 24 : left + width + 8;
+        const color = getColor(title);
+        const pageScale = (scale * pageDimensions.width) / dimensions.width;
         return (
-          <Fragment key={i + page}>
-            <div
-              id={`highlight_${id}`}
-              className="absolute z-[21] flex flex-col"
-              style={{
-                left: newLeft * scale,
-                top: top * scale,
-                maxHeight: height * scale,
-              }}
-            >
-              {types?.map((type) => (
-                <TooltipProvider key={type}>
-                  <Tooltip delayDuration={120}>
-                    <TooltipTrigger asChild>
-                      <Button
-                        key={type}
-                        id={`highlight_${id}_${type}`}
-                        onClick={handleClick}
-                        onMouseEnter={handleMouseEnter}
-                        onMouseLeave={handleMouseLeave}
-                        className="rounded-full hover:scale-110 transition-transform duration-100"
-                        style={{
-                          backgroundColor: color,
-                          width: `${20 * scale}px`,
-                          height: `${20 * scale}px`,
-                          fontSize: `${12 * scale}px`,
-                          padding: `${12 * scale}px`,
-                          marginBottom: `${6 * scale}px`,
-                        }}
-                      >
-                        {ptypeConfig[type as keyof typeof ptypeConfig].icon}
-                      </Button>
-                    </TooltipTrigger>
-                    <TooltipContent
-                      className="py-1 px-2 font-mono"
-                      side={isLeft ? "left" : "right"}
+          <div
+            id={`highlight_${title}`}
+            className="absolute z-[21] flex flex-col"
+            style={{
+              left: newLeft * pageScale,
+              top: (top - 4) * pageScale,
+              maxHeight: height * pageScale,
+            }}
+            key={i}
+          >
+            {types?.map((type) => (
+              <TooltipProvider key={type}>
+                <Tooltip delayDuration={120}>
+                  <TooltipTrigger asChild>
+                    <Button
+                      key={type}
+                      id={`highlight_${title}_${type}`}
+                      onClick={handleClick}
+                      onMouseEnter={handleMouseEnter}
+                      onMouseLeave={handleMouseLeave}
+                      className="rounded-full hover:scale-110 transition-transform duration-100"
+                      style={{
+                        backgroundColor: color,
+                        width: `${20 * scale}px`,
+                        height: `${20 * scale}px`,
+                        fontSize: `${13 * scale}px`,
+                        padding: `${12 * scale}px`,
+                        marginBottom: `${5 * scale}px`,
+                      }}
                     >
-                      {type}
-                    </TooltipContent>
-                  </Tooltip>
-                </TooltipProvider>
-              ))}
-            </div>
-            {type === "sentence" && (
-              <BoundingBox
-                id={`highlight_${id}_text`}
-                isHighlighted={true}
-                page={page}
-                top={top}
-                left={left}
-                height={height}
-                width={width}
-                color={color}
-              />
-            )}
-          </Fragment>
+                      {ptypeConfig[type as keyof typeof ptypeConfig].icon}
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent
+                    className="py-1 px-2 font-mono"
+                    side={isLeft ? "left" : "right"}
+                  >
+                    {type}
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            ))}
+          </div>
         );
       })}
     </Fragment>

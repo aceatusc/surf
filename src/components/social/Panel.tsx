@@ -33,11 +33,6 @@ const TabTypes = Object.keys(ptypeConfig).sort((a, b) => {
 
 // const FilterTypes = ["Time", "Location", "Popularity"];
 
-const getFirstLocation = (item: TPost) => {
-  const locations = Array.from(item.locations || []);
-  return locations.length > 0 ? locations.sort()[0] : undefined;
-};
-
 export default function Social({
   data,
   rootPosts,
@@ -70,19 +65,19 @@ export default function Social({
       (id) =>
         !!data[id] &&
         (highlightedLocation === null ||
-          data[id].locations?.has(highlightedLocation)) &&
+          data[id].location === highlightedLocation) &&
         (highlightedType === null || data[id]?.tweet_type === highlightedType)
     )
-    .map((id) => data[id])
-    .sort((a, b) => {
-      const aLoc = getFirstLocation(a);
-      const bLoc = getFirstLocation(b);
+    .map((id) => data[id]);
+  // .sort((a, b) => {
+  //   const aLoc = getFirstLocation(a);
+  //   const bLoc = getFirstLocation(b);
 
-      if (!aLoc && !bLoc) return b.favorite_count - a.favorite_count;
-      if (!aLoc) return 1; // a has no location, move to end
-      if (!bLoc) return -1; // b has no location, move to end
-      return aLoc.localeCompare(bLoc) || b.favorite_count - a.favorite_count;
-    });
+  //   if (!aLoc && !bLoc) return b.favorite_count - a.favorite_count;
+  //   if (!aLoc) return 1; // a has no location, move to end
+  //   if (!bLoc) return -1; // b has no location, move to end
+  //   return aLoc.localeCompare(bLoc) || b.favorite_count - a.favorite_count;
+  // });
   // .sort((a, b) => {
   //   if (sortBy === "Popularity") {
   //     return b.favorite_count - a.favorite_count;
@@ -200,21 +195,17 @@ export default function Social({
       <SidebarContent data-theme="light">
         <HideScroll paddingLeft={8} paddingRight={8}>
           <AnimatePresence>
-            {postToDisplay.map(({ locations, ...res }) => (
+            {postToDisplay.map((post) => (
               <motion.div
-                key={res.id_str}
-                className={`relative ${res.tweet_type ? "mt-11" : "mt-3"}`}
+                key={post.id_str}
+                className={`relative ${post.tweet_type ? "mt-11" : "mt-3"}`}
                 layout
                 initial={{ opacity: 0, x: 64 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 64 }}
                 transition={{ duration: 0.2, type: "just", ease: "easeOut" }}
               >
-                <Thread
-                  post={res}
-                  getReplies={getReplies}
-                  location={Array.from(locations || [])[0]}
-                />
+                <Thread post={post} getReplies={getReplies} />
               </motion.div>
             ))}
           </AnimatePresence>

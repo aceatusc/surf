@@ -19,7 +19,6 @@ import { TPost } from "../types";
 type TThread = {
   post: TPost;
   getReplies: (id: string) => TPost[];
-  location: string;
 };
 
 const flattenSelfThreads = (
@@ -45,12 +44,12 @@ const Post = ({ post, children }: TThread & { children: React.ReactNode }) => {
 };
 
 // Thread is the root post of a thread
-export default function Thread({ getReplies, post, location }: TThread) {
+export default function Thread({ getReplies, post }: TThread) {
   const selfThreads = flattenSelfThreads(post, getReplies);
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <Post post={post} getReplies={getReplies} location={location}>
+    <Post post={post} getReplies={getReplies}>
       {selfThreads.length ? (
         <Button
           className="w-full rounded-full font-semibold font-mono text-[1rem] bg-stone-100 hover:bg-stone-200 mt-3 flex justify-between"
@@ -69,15 +68,14 @@ export default function Thread({ getReplies, post, location }: TThread) {
           post={post}
           onClick={() => setIsExpanded(false)}
           selfThreads={selfThreads}
-          location={location}
         />
       ) : null}
-      {post.tweet_type && (
+      {post.tweet_type && post.tweet_type !== "Misc" && (
         <div className={s.tagContainer}>
           <div
             className={`rounded-tl-xl rounded-tr-xl px-4 pt-[0.2rem] text-lg flex items-center font-mono cursor-pointer ${s.tag}`}
             style={{
-              backgroundColor: getColor(location),
+              backgroundColor: getColor(post.location),
             }}
           >
             <ArrowLeft className={`${s.arrowIcon} mt-0.5 mr-3`} />
@@ -96,12 +94,10 @@ const SelfThread = ({
   post,
   onClick,
   selfThreads,
-  location,
 }: {
   post: TPost;
   onClick: () => void;
   selfThreads: TPost[];
-  location: string;
 }) => {
   return (
     <Card

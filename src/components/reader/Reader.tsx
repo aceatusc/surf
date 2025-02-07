@@ -10,7 +10,7 @@ import {
 } from "../pdf";
 import { useContext, useEffect, useState } from "react";
 import Highlight from "./Highlight";
-import { THighlightData } from "../types";
+import { TLocationData } from "../types";
 import { useSidebar } from "../ui/sidebar";
 import {
   AlertDialog,
@@ -27,12 +27,10 @@ import { DevContext } from "@/context/DevContext";
 
 export default function Reader({
   url,
-  rootPosts,
-  highlightData,
+  locationData,
 }: {
   url: string;
-  rootPosts: string[];
-  highlightData: THighlightData;
+  locationData: TLocationData;
 }) {
   const { studyPhase } = useContext(DevContext);
   const { numPages, pageDimensions } = useContext(DocumentContext);
@@ -96,15 +94,7 @@ export default function Reader({
             renderType={RENDER_TYPE.MULTI_CANVAS}
           >
             <Overlay>
-              {highlightData[i] && (
-                <Highlight
-                  data={highlightData[i].filter(
-                    (data) =>
-                      studyPhase === "usability" ||
-                      data.posts.some((p) => rootPosts.includes(p))
-                  )}
-                />
-              )}
+              {locationData[i] && <Highlight data={locationData[i]} />}
             </Overlay>
           </PageWrapper>
         ))}

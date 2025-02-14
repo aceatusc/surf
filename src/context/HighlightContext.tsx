@@ -1,6 +1,8 @@
 import { createContext, useState } from "react";
 
 export interface IHighlightContext {
+  highlight: string | null;
+  setHighlight: (id: string | null) => void;
   highlightedLocation: string | null;
   setHighlightedLocation: (id: string | null) => void;
   highlightedType: string | null;
@@ -12,6 +14,8 @@ export const HighlightContext = createContext<IHighlightContext>({
   setHighlightedLocation: () => {},
   highlightedType: null,
   setHighlightedType: () => {},
+  highlight: null,
+  setHighlight: () => {},
 });
 
 export function useHighlightContextProps(): IHighlightContext {
@@ -19,10 +23,13 @@ export function useHighlightContextProps(): IHighlightContext {
     null
   );
   const [highlightedType, setHighlightedType] = useState<string | null>(null);
+  const [highlight, setHighlight] = useState<string | null>(null);
   return {
     highlightedLocation,
     setHighlightedLocation,
     highlightedType,
     setHighlightedType,
+    highlight,
+    setHighlight,
   };
 }

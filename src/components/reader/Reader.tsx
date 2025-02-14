@@ -11,7 +11,6 @@ import {
 import { useContext, useEffect, useState } from "react";
 import Highlight from "./Highlight";
 import { TLocationData } from "../types";
-import { useSidebar } from "../ui/sidebar";
 import {
   AlertDialog,
   AlertDialogContent,
@@ -23,7 +22,6 @@ import {
   AlertDialogDescription,
   AlertDialogTitle,
 } from "../ui/alert-dialog";
-import { DevContext } from "@/context/DevContext";
 
 export default function Reader({
   url,
@@ -32,13 +30,11 @@ export default function Reader({
   url: string;
   locationData: TLocationData;
 }) {
-  const { studyPhase } = useContext(DevContext);
   const { numPages, pageDimensions } = useContext(DocumentContext);
   const { setScale } = useContext(TransformContext);
   const { setScrollRoot, resetScrollObservers, setScrollThreshold } =
     useContext(ScrollContext);
   const { isLoading } = useContext(UiContext);
-  const { open, isMobile } = useSidebar();
   const [warning, setWarning] = useState(false);
 
   useEffect(() => {
@@ -58,7 +54,7 @@ export default function Reader({
         setWarning(false);
         setScale(
           Math.floor(
-            ((Math.min(window.innerWidth - 420, 0.7 * window.innerWidth) - 48) /
+            ((Math.min(window.innerWidth - 420, 0.6 * window.innerWidth) - 48) /
               pageDimensions.width) *
               10
           ) / 10
@@ -73,11 +69,7 @@ export default function Reader({
   return (
     <div
       style={{
-        width: isMobile
-          ? "100%"
-          : open
-          ? "calc(100vw - max(42rem, 30vw))"
-          : "100%",
+        width: "100%",
         direction: "rtl",
       }}
       className="transition-all h-full overflow-auto"

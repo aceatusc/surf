@@ -12,16 +12,21 @@ export type TLocation = {
   dimensions: TDimensions;
 };
 
-export type TPost = EnrichedTweet & {
-  replies: string[];
-  quoted_status_id_str?: string;
-  location: string;
-};
-
 export type TPostData = {
-  [key: string]: TPost;
+  [key: string]: EnrichedTweet;
 };
 
 export type TLocationData = {
   [key: string]: TLocation[];
+};
+
+export const ptypeConfig = {
+  "Related Work": { icon: "📖", priority: 5 },
+  Perspective: { icon: "💬", priority: 4 },
+  Critique: { icon: "❗", priority: 3 },
+  Overview: { icon: "🧵", priority: 1 },
+  Teaser: { icon: "🔎", priority: 7 },
+  "Q&A": { icon: "❓", priority: 2 },
+  Resource: { icon: "🔗", priority: 6 },
+  Author: { icon: "✍️", priority: 0 },
 };

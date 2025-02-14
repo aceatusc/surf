@@ -11,29 +11,25 @@ import {
 } from "../../../ui/hover-card.jsx";
 import { Separator } from "../../../ui/separator.jsx";
 import { Fragment } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
+import { Toggle } from "../../../ui/toggle.jsx";
+import { Button } from "../../../ui/button.jsx";
+import { ptypeConfig } from "../../../types/index.js";
+import { getColor } from "../../../../context/ColorManager.jsx";
+import { ArrowLeft } from "lucide-react";
 
 type Props = {
   tweet: EnrichedTweet;
   components?: TwitterComponents;
 };
 
-export const ptypeConfig = {
-  "Related Work": { icon: "📖", priority: 5 },
-  Perspective: { icon: "💬", priority: 4 },
-  Critique: { icon: "❗", priority: 3 },
-  Overview: { icon: "🧵", priority: 1 },
-  Viral: { icon: "🔥", priority: 7 },
-  "Q&A": { icon: "❓", priority: 2 },
-  Resource: { icon: "🔗", priority: 6 },
-  Author: { icon: "✍️", priority: 0 },
-};
-
 export const TweetHeader = ({ tweet, components }: Props) => {
   const Img = components?.AvatarImg ?? AvatarImg;
-  const { user, is_reply: is_reply } = tweet;
+  const { user, is_reply: is_reply, location, tweet_type } = tweet;
 
   const userUrl = `https://twitter.com/${user.screen_name}`;
-  const avatarSize = is_reply ? 20 : 32;
+  const avatarSize = is_reply ? 20 : 36;
 
   return (
     <div className={s.header} data-in-thread={is_reply}>
@@ -50,12 +46,7 @@ export const TweetHeader = ({ tweet, components }: Props) => {
               user.profile_image_shape === "Square" && s.avatarSquare
             )}
           >
-            <Img
-              src={user.profile_image_url_https}
-              alt={user.name}
-              width={avatarSize}
-              height={avatarSize}
-            />
+            <img src={user.profile_image_url_https} alt={user.name} />
           </div>
           <div className={s.avatarOverflow}>
             <div className={s.avatarShadow}></div>
@@ -99,8 +90,7 @@ export const TweetHeader = ({ tweet, components }: Props) => {
         </div>
         <HoverCardContent
           className="max-w-[20rem] rounded-2xl w-full"
-          side="left"
-          sideOffset={40}
+          sideOffset={8}
         >
           <div className="text-center">
             <span className="text-xl font-bold block">
@@ -151,6 +141,21 @@ export const TweetHeader = ({ tweet, components }: Props) => {
           </div>
         </HoverCardContent>
       </HoverCard>
+      {/* <Button
+        className="ml-auto text-lg font-semibold text-stone-700"
+        variant="ghost"
+      >
+        <FontAwesomeIcon
+          icon={faHeart}
+          className="text-red-500"
+          style={{
+            width: "1.44rem",
+            height: "1.44rem",
+            strokeWidth: 2,
+          }}
+        />
+        {tweet.favorite_count}
+      </Button> */}
     </div>
   );
 };

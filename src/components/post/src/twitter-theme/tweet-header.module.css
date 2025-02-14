@@ -1,18 +1,20 @@
 .header {
   display: flex;
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
   line-height: var(--tweet-header-line-height);
   font-size: var(--tweet-header-font-size);
   white-space: nowrap;
   overflow-wrap: break-word;
   overflow: hidden;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .avatar {
   position: relative;
-  height: 32px;
-  width: 32px;
+  height: 3.6rem;
+  width: 3.6rem;
 }
 
 .header[data-in-thread="true"] {
@@ -142,3 +144,17 @@
   line-height: 16px;
   padding: 0 0.75rem;
 }
+
+/* 
+:global(.react-tweet-theme):hover > article > .header .linker_container > span {
+  display: none;
+}
+
+:global(.react-tweet-theme):hover > article > .header .linker_container > svg {
+  display: inline-block;
+}
+
+:global(.react-tweet-theme):hover > article > .header .linker_container {
+  width: auto;
+  padding: 0 1.2rem;
+} */

@@ -1,12 +1,12 @@
 import { Button } from "../ui/button";
-// import {
-//   DropdownMenu,
-//   DropdownMenuContent,
-//   DropdownMenuItem,
-//   DropdownMenuLabel,
-//   DropdownMenuSeparator,
-//   DropdownMenuTrigger,
-// } from "../ui/dropdown-menu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "../ui/dropdown-menu";
 import { Separator } from "@/components/ui/separator";
 import {
   Sidebar,
@@ -14,15 +14,22 @@ import {
   SidebarHeader,
   SidebarTrigger,
 } from "../ui/sidebar";
-import { MouseEvent, useContext } from "react";
+import { MouseEvent, useContext, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { TPost, TPostData } from "../types";
+import { TPostData, ptypeConfig } from "../types";
 import { HighlightContext } from "@/context/HighlightContext";
 import HideScroll from "../ui/HideScroll";
 import { getStylesForLocation } from "../ui/Utils";
 import { Badge } from "../ui/badge";
-import { ptypeConfig } from "../post/src/twitter-theme/tweet-header";
 import Thread from "./Thread";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "../ui/select";
+import { getColor } from "@/context/ColorManager";
 
 const TabTypes = Object.keys(ptypeConfig).sort((a, b) => {
   return (
@@ -36,16 +43,15 @@ const TabTypes = Object.keys(ptypeConfig).sort((a, b) => {
 export default function Social({
   data,
   rootPosts,
+  allLocations,
 }: {
   data: TPostData;
   rootPosts: string[];
+  allLocations: string[];
 }) {
-  const {
-    highlightedLocation,
-    setHighlightedLocation,
-    highlightedType,
-    setHighlightedType,
-  } = useContext(HighlightContext);
+  const { setHighlightedLocation, setHighlightedType, highlight } =
+    useContext(HighlightContext);
+  const [section, setSection] = useState("All");
   // const [filterType, setFilterType] = useState("All");
   // const [sortBy, setSortBy] = useState("Location");
 
@@ -60,6 +66,11 @@ export default function Social({
     return undefined;
   };
 
+  const [highlightedLocation, highlightedType] = highlight?.split("^^") ?? [
+    null,
+    null,
+  ];
+
   const postToDisplay = rootPosts
     .filter(
       (id) =>
@@ -68,33 +79,8 @@ export default function Social({
           data[id].location === highlightedLocation) &&
         (highlightedType === null || data[id]?.tweet_type === highlightedType)
     )
-    .map((id) => data[id]);
-  // .sort((a, b) => {
-  //   const aLoc = getFirstLocation(a);
-  //   const bLoc = getFirstLocation(b);
-
-  //   if (!aLoc && !bLoc) return b.favorite_count - a.favorite_count;
-  //   if (!aLoc) return 1; // a has no location, move to end
-  //   if (!bLoc) return -1; // b has no location, move to end
-  //   return aLoc.localeCompare(bLoc) || b.favorite_count - a.favorite_count;
-  // });
-  // .sort((a, b) => {
-  //   if (sortBy === "Popularity") {
-  //     return b.favorite_count - a.favorite_count;
-  //   }
-  //   if (sortBy === "Time") {
-  //     return (
-  //       new Date(a.created_at).getTime() - new Date(b.created_at).getTime()
-  //     );
-  //   }
-  //   const aLoc = getFirstLocation(a);
-  //   const bLoc = getFirstLocation(b);
-
-  //   if (!aLoc && !bLoc) return b.favorite_count - a.favorite_count;
-  //   if (!aLoc) return 1; // a has no location, move to end
-  //   if (!bLoc) return -1; // b has no location, move to end
-  //   return aLoc.localeCompare(bLoc) || b.favorite_count - a.favorite_count;
-  // });
+    .map((id) => data[id])
+    .sort((a, b) => (b.thread_score || 0) - (a.thread_score || 0));
 
   const jumpToLocation = (e: MouseEvent) => {
     e.stopPropagation();
@@ -104,63 +90,77 @@ export default function Social({
   };
 
   return (
-    <Sidebar
-      variant="sidebar"
-      className="p-0 z-50 font-mono"
-      side="right"
-      id="social-panel"
-    >
+    <Sidebar variant="sidebar" className="p-0 z-50 font-mono" side="right">
       <SidebarHeader className="pt-4 pb-1 px-3">
         <div className="text-lg">
-          <span className="mr-2 font-semibold">Filter by:</span>
-          {TabTypes.map((type) => (
-            <Button
-              key={type}
-              variant="secondary"
-              onClick={() => {
-                if (type === highlightedType) {
-                  setHighlightedType(null);
-                } else {
-                  setHighlightedType(type);
-                }
-              }}
-              className={`text-[1rem] rounded-3xl px-3 h-8 mb-2.5 mr-2.5 ${
-                type === highlightedType
-                  ? "bg-stone-800 text-secondary hover:bg-stone-700"
-                  : "bg-stone-200 hover:bg-stone-300"
-              }`}
-            >
-              {ptypeConfig[type as keyof typeof ptypeConfig].icon} {type}
-            </Button>
-          ))}
+          <div>
+            <span className="mr-2 font-semibold">Discussion:</span>
+            {TabTypes.map((type) => (
+              <Button
+                key={type}
+                variant="outline"
+                onClick={() => {
+                  if (type === highlightedType) {
+                    setHighlightedType(null);
+                  } else {
+                    setHighlightedType(type);
+                  }
+                }}
+                className={`text-[1rem] rounded-3xl px-3 h-8 mb-2.5 mr-2.5`}
+              >
+                {ptypeConfig[type as keyof typeof ptypeConfig].icon} {type}
+              </Button>
+            ))}
+          </div>
+          <div className="grid-cols-3 grid gap-4">
+            <div className="flex items-center mt-1.5 col-span-2">
+              <div className="mr-2 font-semibold">Section:</div>
+              <Select>
+                <SelectTrigger
+                  className="rounded-3xl bg-white text-[1rem] overflow-hidden"
+                  style={{
+                    backgroundColor:
+                      section != "All" ? getColor(section) : undefined,
+                  }}
+                >
+                  <SelectValue placeholder={section} />
+                </SelectTrigger>
+                <SelectContent>
+                  {["All", ...allLocations].map((location) => (
+                    <SelectItem value={location} key={location}>
+                      {location}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+            <div className="flex items-center mt-1.5">
+              <div className="mr-2 font-semibold whitespace-nowrap">
+                Sort By:
+              </div>
+              <Select>
+                <SelectTrigger
+                  className="rounded-3xl text-[1rem] bg-white overflow-hidden"
+                  style={{
+                    backgroundColor:
+                      section != "All" ? getColor(section) : undefined,
+                  }}
+                >
+                  <SelectValue placeholder={section} />
+                </SelectTrigger>
+                <SelectContent>
+                  {["All", ...allLocations].map((location) => (
+                    <SelectItem value={location} key={location}>
+                      {location}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
           <Separator className="mt-1.5 -mb-1" />
         </div>
-        {/* <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button className="text-primary font-semibold bg-zinc-200 h-full rounded-xl hover:bg-zinc-300 focus-visible:ring-transparent">
-              <FontAwesomeIcon
-                icon={faArrowUpWideShort}
-                className="text-zinc-500"
-              />{" "}
-              Sort by: <span>{sortBy}</span>
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuLabel>Sort by</DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            {FilterTypes.map((type) => (
-              <DropdownMenuItem
-                key={type}
-                onClick={() => setSortBy(type)}
-                className={
-                  type === sortBy ? "font-bold capitalize" : "capitalize"
-                }
-              >
-                {type}
-              </DropdownMenuItem>
-            ))}
-          </DropdownMenuContent>
-        </DropdownMenu> */}
+
         {highlightedLocation !== null && (
           <Badge
             style={getStylesForLocation(highlightedLocation)}
@@ -198,12 +198,11 @@ export default function Social({
             {postToDisplay.map((post) => (
               <motion.div
                 key={post.id_str}
-                className={`relative ${post.tweet_type ? "mt-11" : "mt-3"}`}
-                layout
+                className="relative"
                 initial={{ opacity: 0, x: 64 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 64 }}
-                transition={{ duration: 0.2, type: "just", ease: "easeOut" }}
+                transition={{ duration: 0.16, type: "just", ease: "easeIn" }}
               >
                 <Thread post={post} getReplies={getReplies} />
               </motion.div>

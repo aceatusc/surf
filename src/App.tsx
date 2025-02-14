@@ -25,6 +25,12 @@ const examples = [
       "GSM-Symbolic: Understanding the Limitations of Mathematical Reasoning in Large Language Models",
     data: "/2410.05229.json",
   },
+  {
+    id: "arxiv:2303.15343",
+    url: "https://arxiv.org/pdf/2303.15343",
+    title: "Sigmoid Loss for Language Image Pre-Training",
+    data: "/2303.15343.json",
+  },
   // {
   //   id: "arxiv:2401.13782",
   //   url: "https://arxiv.org/pdf/2401.13782",
@@ -134,6 +140,12 @@ export function AppContent() {
     }
   });
 
+  const allLocations = new Set<string>([
+    ...Object.values(locationData).flatMap((page) =>
+      page.map((loc) => loc.title)
+    ),
+  ]);
+
   if (loading) {
     return (
       <div className="flex items-center justify-center h-screen">
@@ -160,7 +172,11 @@ export function AppContent() {
             <ZoomControl />
           </div>
         </SidebarInset>
-        <Social data={postData} rootPosts={Array.from(rootPosts)} />
+        <Social
+          data={postData}
+          rootPosts={Array.from(rootPosts)}
+          allLocations={Array.from(allLocations)}
+        />
       </SidebarProvider>
     </SidebarProvider>
   );

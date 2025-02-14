@@ -129,6 +129,13 @@ export type EnrichedTweet = Omit<Tweet, "entities" | "quoted_tweet"> & {
   in_reply_to_url?: string;
   entities: Entity[];
   quoted_tweet?: EnrichedTweet;
+  tweet_type?: string;
+  replies: string[];
+  quoted_status_id_str?: string;
+  location?: string;
+  thread_score?: number;
+  score?: number;
+  in_thread?: boolean;
 };
 
 export type EnrichedQuotedTweet = Omit<QuotedTweet, "entities"> & {

@@ -1,10 +1,10 @@
 import {
-  ptypeConfig,
   TweetActions,
   TweetBody,
   TweetContainer,
   TweetHeader,
   TweetMedia,
+  EnrichedTweet,
 } from "../post/src";
 import { Button } from "../ui/button";
 import { useState } from "react";
@@ -13,56 +13,116 @@ import { Card, CardHeader } from "../ui/card";
 import HideScroll from "../ui/HideScroll";
 import { ArrowLeft, ChevronsUpDown } from "lucide-react";
 import { getColor } from "@/context/ColorManager";
+import { ptypeConfig } from "../types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 import s from "./Thread.module.css";
-import { TPost } from "../types";
 
 type TThread = {
-  post: TPost;
-  getReplies: (id: string) => TPost[];
+  post: EnrichedTweet;
+  getReplies: (id: string) => EnrichedTweet[];
 };
 
 const flattenSelfThreads = (
-  tail: TPost,
-  getReplies: (id: string) => TPost[],
-  ret: TPost[] = []
+  tail: EnrichedTweet,
+  getReplies: (id: string) => EnrichedTweet[],
+  ret: EnrichedTweet[] = []
 ) => {
   const replies = getReplies(tail.id_str);
-  const selfThread = replies.find((r) => r.tweetDisplayType === "SelfThread");
+  const selfThread = replies.find((r) => r?.in_thread);
   if (!selfThread) return ret;
   return flattenSelfThreads(selfThread, getReplies, [...ret, selfThread]);
 };
 
-const Post = ({ post, children }: TThread & { children: React.ReactNode }) => {
+export const LocationTag = ({
+  location,
+  tweet_type,
+  className,
+  size = "large",
+}: {
+  location: string;
+  tweet_type: string;
+  className?: string;
+  size?: "small" | "large";
+}) => {
+  const tagSize = size === "large" ? 3.2 : 2.2;
+  const textSize = size === "large" ? "4xl" : "2xl";
   return (
-    <TweetContainer>
-      <TweetHeader tweet={post} />
-      <TweetBody tweet={post} />
-      {post.mediaDetails?.length ? <TweetMedia tweet={post} /> : null}
-      {children}
-    </TweetContainer>
+    <div
+      className={`rounded-full mr-2 text-center overflow-hidden text-${textSize} font-mono cursor-pointer hover:brightness-90 ${className} ${s.tag}`}
+      style={{
+        backgroundColor: getColor(location),
+        width: `${tagSize}rem`,
+        height: `${tagSize}rem`,
+        lineHeight: `${tagSize}rem`,
+      }}
+    >
+      <ArrowLeft
+        className={`h-[${tagSize / 2}rem] w-[${
+          tagSize / 2
+        }rem] text-stone-600 hidden`}
+      />
+      <span>{ptypeConfig[tweet_type as keyof typeof ptypeConfig].icon}</span>
+    </div>
   );
 };
 
 // Thread is the root post of a thread
 export default function Thread({ getReplies, post }: TThread) {
-  const selfThreads = flattenSelfThreads(post, getReplies);
   const [isExpanded, setIsExpanded] = useState(false);
 
+  const selfThreads = flattenSelfThreads(post, getReplies);
+  const previewThread = selfThreads.length ? selfThreads[0] : null;
+
+  const replies = getReplies(post.id_str).sort(
+    (a, b) => (b.score || 0) - (a.score || 0)
+  );
+  const previewReply =
+    replies.length && (replies[0].score || 0) > 0.5 ? replies[0] : null;
+
   return (
-    <Post post={post} getReplies={getReplies}>
-      {selfThreads.length ? (
-        <Button
-          className="w-full rounded-full font-semibold font-mono text-[1rem] bg-stone-100 hover:bg-stone-200 mt-3 flex justify-between"
-          variant="outline"
-          onClick={() => setIsExpanded(!isExpanded)}
-        >
-          <ChevronsUpDown />
-          (🧵1/{selfThreads.length + 1}) Expand Thread
-          <ChevronsUpDown />
-        </Button>
-      ) : (
-        <TweetActions tweet={post} />
-      )}
+    <TweetContainer className={s.tag_parent}>
+      <TweetHeader tweet={post} />
+      {post.location && post.tweet_type ? (
+        <LocationTag
+          location={post.location}
+          tweet_type={post.tweet_type}
+          className="absolute -top-5 -left-2 z-0"
+        />
+      ) : null}
+      <TweetBody tweet={post} />
+      {post.mediaDetails?.length ? <TweetMedia tweet={post} /> : null}
+      <TweetActions tweet={post} />
+      {previewThread ? (
+        <div className="relative overflow-hidden">
+          <div
+            className="flex-col mt-1 pointer-events-none max-h-64"
+            style={{
+              maskImage:
+                "linear-gradient(to bottom, black 0%, transparent 96%)",
+              WebkitMaskImage:
+                "linear-gradient(to bottom, black 0%, transparent 96%)",
+            }}
+          >
+            <TweetBody tweet={previewThread} />
+            {previewThread.mediaDetails?.length ? (
+              <TweetMedia tweet={previewThread} />
+            ) : null}
+          </div>
+          <Button
+            className="absolute bottom-[20%] left-0 right-0 mx-auto w-fit font-semibold text-base z-50 rounded-full h-8"
+            // variant="secondary"
+            onClick={() => setIsExpanded(true)}
+          >
+            Show full thread
+          </Button>
+        </div>
+      ) : previewReply ? (
+        <TweetContainer inThread>
+          <TweetHeader tweet={previewReply} />
+          <TweetBody tweet={previewReply} />
+        </TweetContainer>
+      ) : null}
       {isExpanded ? (
         <SelfThread
           post={post}
@@ -70,23 +130,7 @@ export default function Thread({ getReplies, post }: TThread) {
           selfThreads={selfThreads}
         />
       ) : null}
-      {post.tweet_type && post.tweet_type !== "Misc" && (
-        <div className={s.tagContainer}>
-          <div
-            className={`rounded-tl-xl rounded-tr-xl px-4 pt-[0.2rem] text-lg flex items-center font-mono cursor-pointer ${s.tag}`}
-            style={{
-              backgroundColor: getColor(post.location),
-            }}
-          >
-            <ArrowLeft className={`${s.arrowIcon} mt-0.5 mr-3`} />
-            <span className="mt-0.5 mr-1.5">
-              {ptypeConfig[post.tweet_type as keyof typeof ptypeConfig].icon}
-            </span>
-            {post.tweet_type}
-          </div>
-        </div>
-      )}
-    </Post>
+    </TweetContainer>
   );
 }
 
@@ -95,9 +139,9 @@ const SelfThread = ({
   onClick,
   selfThreads,
 }: {
-  post: TPost;
+  post: EnrichedTweet;
   onClick: () => void;
-  selfThreads: TPost[];
+  selfThreads: EnrichedTweet[];
 }) => {
   return (
     <Card

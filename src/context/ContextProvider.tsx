@@ -1,4 +1,5 @@
 import { ContextProvider as BaseContextProvider } from "../components/pdf";
+import { DataContext, useDataContextProps } from "./DataContext";
 import { DevContext, useDevContextProps } from "./DevContext";
 import { HighlightContext, useHighlightContextProps } from "./HighlightContext";
 
@@ -13,7 +14,9 @@ export default function ContextProvider({
     <BaseContextProvider>
       <DevContext.Provider value={devProps}>
         <HighlightContext.Provider value={highlightProps}>
-          {children}
+          <DataContext.Provider value={useDataContextProps()}>
+            {children}
+          </DataContext.Provider>
         </HighlightContext.Provider>
       </DevContext.Provider>
     </BaseContextProvider>

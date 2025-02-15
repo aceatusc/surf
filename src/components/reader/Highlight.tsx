@@ -12,33 +12,18 @@ import {
 } from "../ui/tooltip";
 
 export default function Highlight({ data }: { data: TLocation[] }) {
-  const { setHighlight } = useContext(HighlightContext);
+  const { setHighlightedLocation, setHighlightedType } =
+    useContext(HighlightContext);
   const { pageDimensions } = useContext(DocumentContext);
   const { scale } = useContext(TransformContext);
-  const [isHovered, setIsHovered] = useState(false);
 
   const handleClick = useCallback((e: MouseEvent) => {
     e.stopPropagation();
     const eleId = (e.target as HTMLElement).id;
-    const quoteId = eleId.split("_")[1];
-    const type = eleId.split("_")[2];
-    setHighlight(`${quoteId}^^${type}`);
-    setIsHovered(false);
+    const [location, type] = eleId.split("$%^");
+    setHighlightedLocation(location);
+    setHighlightedType(type);
   }, []);
-
-  const handleMouseEnter = useCallback((e: MouseEvent) => {
-    const eleId = (e.target as HTMLElement).id;
-    const quoteId = eleId.split("_")[1];
-    const type = eleId.split("_")[2];
-    setHighlight(`${quoteId}^^${type}`);
-    setIsHovered(true);
-  }, []);
-
-  const handleMouseLeave = () => {
-    if (isHovered) {
-      setHighlight(null);
-    }
-  };
 
   return (
     <Fragment>
@@ -64,10 +49,8 @@ export default function Highlight({ data }: { data: TLocation[] }) {
                   <TooltipTrigger asChild>
                     <Button
                       key={type}
-                      id={`highlight_${title}_${type}`}
+                      id={`${title}$%^${type}`}
                       onClick={handleClick}
-                      // onMouseEnter={handleMouseEnter}
-                      // onMouseLeave={handleMouseLeave}
                       className="rounded-full transition-all duration-100 opacity-60 hover:opacity-100"
                       style={{
                         backgroundColor: color,

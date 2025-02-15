@@ -31,37 +31,31 @@ html {
 
 @media (min-width: 1200px) {
   html {
-    font-size: 70%; /* 12.4px */
+    font-size: 67.5%; /* 12.4px */
   }
 }
 
 @media (min-width: 1366px) {
   html {
-    font-size: 72.5%; /* 13.2px */
+    font-size: 70%; /* 13.2px */
   }
 }
 
 @media (min-width: 1600px) {
   html {
-    font-size: 75%; /* 14px */
+    font-size: 72.5%; /* 14px */
   }
 }
 
 @media (min-width: 1920px) {
   html {
-    font-size: 80%; /* 14.8px */
-  }
-}
-
-@media (min-width: 2048px) {
-  html {
-    font-size: 95%; /* 15.2px */
+    font-size: 75%; /* 14.8px */
   }
 }
 
 @media (min-width: 2560px) {
   html {
-    font-size: 100%; /* 16px */
+    font-size: 80%; /* 16px */
   }
 }
 
@@ -80,8 +74,6 @@ body {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
-  overflow-x: hidden;
-  background-color: #f6eee3;
 }
 
 /*

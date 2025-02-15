@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import type { EnrichedTweet } from "../utils.js";
-import type { TwitterComponents } from "./types.jsx";
 import { AvatarImg } from "./avatar-img.jsx";
 import s from "./tweet-header.module.css";
 import { VerifiedBadge } from "./verified-badge.jsx";
@@ -10,7 +9,7 @@ import {
   HoverCardTrigger,
 } from "../../../ui/hover-card.jsx";
 import { Separator } from "../../../ui/separator.jsx";
-import { Fragment } from "react";
+import { Fragment, ReactNode } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { Toggle } from "../../../ui/toggle.jsx";
@@ -21,22 +20,22 @@ import { ArrowLeft } from "lucide-react";
 
 type Props = {
   tweet: EnrichedTweet;
-  components?: TwitterComponents;
+  component?: ReactNode;
 };
 
-export const TweetHeader = ({ tweet, components }: Props) => {
-  const Img = components?.AvatarImg ?? AvatarImg;
-  const { user, is_reply: is_reply, location, tweet_type } = tweet;
+export const TweetHeader = ({ tweet, component }: Props) => {
+  const { user, is_reply: is_reply } = tweet;
 
   const userUrl = `https://twitter.com/${user.screen_name}`;
   const avatarSize = is_reply ? 20 : 36;
 
   return (
     <div className={s.header} data-in-thread={is_reply}>
+      {component}
       <HoverCard openDelay={160} closeDelay={200}>
         <HoverCardTrigger
           href={userUrl}
-          className={s.avatar}
+          className={`${s.avatar} relative z-10`}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -141,21 +140,6 @@ export const TweetHeader = ({ tweet, components }: Props) => {
           </div>
         </HoverCardContent>
       </HoverCard>
-      {/* <Button
-        className="ml-auto text-lg font-semibold text-stone-700"
-        variant="ghost"
-      >
-        <FontAwesomeIcon
-          icon={faHeart}
-          className="text-red-500"
-          style={{
-            width: "1.44rem",
-            height: "1.44rem",
-            strokeWidth: 2,
-          }}
-        />
-        {tweet.favorite_count}
-      </Button> */}
     </div>
   );
 };

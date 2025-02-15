@@ -16,6 +16,7 @@ import { SidebarInset, SidebarProvider } from "./components/ui/sidebar";
 import Social from "./components/social/Panel";
 import Note from "./components/note/Note";
 import { Badge } from "./components/ui/badge";
+import { DataContext } from "./context/DataContext";
 
 const examples = [
   {
@@ -96,8 +97,7 @@ function SelectExample() {
 export function AppContent() {
   const { id } = useParams();
   const paper = examples.find((example) => example.id === id);
-  const [postData, setPostData] = useState<TPostData>({});
-  const [locationData, setLocationData] = useState<TLocationData>({});
+  const { setPosts, setLocations, posts, locations } = useContext(DataContext);
   const [loading, setLoading] = useState(true);
   const { setStudyPhase } = useContext(DevContext);
 
@@ -117,8 +117,8 @@ export function AppContent() {
         const { posts, locations } = await fetch(paper.data).then((res) =>
           res.json()
         );
-        setPostData(posts);
-        setLocationData(locations);
+        setPosts(posts);
+        setLocations(locations);
       } catch (error) {
         console.error("Failed to load data:", error);
       } finally {
@@ -134,16 +134,14 @@ export function AppContent() {
   }
 
   const rootPosts = new Set<string>();
-  Object.values(postData).forEach((post) => {
+  Object.values(posts).forEach((post) => {
     if (!post.in_reply_to_status_id_str) {
       rootPosts.add(post.id_str);
     }
   });
 
   const allLocations = new Set<string>([
-    ...Object.values(locationData).flatMap((page) =>
-      page.map((loc) => loc.title)
-    ),
+    ...Object.values(locations).flatMap((page) => page.map((loc) => loc.title)),
   ]);
 
   if (loading) {
@@ -156,6 +154,7 @@ export function AppContent() {
 
   return (
     <SidebarProvider
+      className="flex flex-row"
       style={
         {
           "--sidebar-width": "max(30rem, 16vw)",
@@ -165,19 +164,16 @@ export function AppContent() {
       defaultOpen={false}
     >
       <Note />
-      <SidebarProvider>
-        <SidebarInset className="h-[100vh] overflow-hidden relative">
-          <Reader url={paper.url} locationData={locationData} />
-          <div className="absolute w-full z-50">
-            <ZoomControl />
-          </div>
-        </SidebarInset>
-        <Social
-          data={postData}
-          rootPosts={Array.from(rootPosts)}
-          allLocations={Array.from(allLocations)}
-        />
-      </SidebarProvider>
+      <Reader url={paper.url} />
+      <Social allLocations={Array.from(allLocations)} />
+      <div
+        className="fixed top-0 right-0 z-[500]"
+        style={{
+          left: "calc(calc(100% - 53rem) / 2)",
+        }}
+      >
+        <ZoomControl />
+      </div>
     </SidebarProvider>
   );
 }

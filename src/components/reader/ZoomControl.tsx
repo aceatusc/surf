@@ -13,10 +13,10 @@ export default function ZoomControl() {
   }, [scale]);
 
   return (
-    <div className="rounded-b-2xl flex flex-row mx-auto w-48 justify-around items-center bg-[#f3f3f3] opacity-95 shadow-xl backdrop-blur-3xl">
-      <ZoomOutButton className="text-3xl w-10 h-10 rounded-full cursor-pointer -mt-1 text-zinc-700" />
+    <div className="rounded-b-2xl flex flex-row w-48 justify-around items-center bg-zinc-200  opacity-95 shadow-xl">
+      <ZoomOutButton className="text-3xl w-10 h-10 rounded-full cursor-pointer -mt-1 " />
       <span className="font-semibold text-sm">{renderLabel()}</span>
-      <ZoomInButton className="text-2xl w-10 h-10 rounded-full cursor-pointer -mt-1 text-zinc-700" />
+      <ZoomInButton className="text-2xl w-10 h-10 rounded-full cursor-pointer -mt-1 " />
     </div>
   );
 }

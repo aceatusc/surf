@@ -7,7 +7,7 @@ import {
   EnrichedTweet,
 } from "../post/src";
 import { Button } from "../ui/button";
-import { useState } from "react";
+import { MouseEvent, useContext, useState } from "react";
 import { SIDEBAR_WIDTH } from "../ui/sidebar";
 import { Card, CardHeader } from "../ui/card";
 import HideScroll from "../ui/HideScroll";
@@ -17,11 +17,7 @@ import { ptypeConfig } from "../types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 import s from "./Thread.module.css";
-
-type TThread = {
-  post: EnrichedTweet;
-  getReplies: (id: string) => EnrichedTweet[];
-};
+import { DataContext } from "@/context/DataContext";
 
 const flattenSelfThreads = (
   tail: EnrichedTweet,
@@ -38,29 +34,26 @@ export const LocationTag = ({
   location,
   tweet_type,
   className,
-  size = "large",
 }: {
   location: string;
   tweet_type: string;
   className?: string;
-  size?: "small" | "large";
 }) => {
-  const tagSize = size === "large" ? 3.2 : 2.2;
-  const textSize = size === "large" ? "4xl" : "2xl";
   return (
     <div
-      className={`rounded-full mr-2 text-center overflow-hidden text-${textSize} font-mono cursor-pointer hover:brightness-90 ${className} ${s.tag}`}
+      className={`rounded-l-xl mr-2 text-center overflow-hidden text-2xl font-mono cursor-pointer hover:brightness-90 ${className} ${s.tag} py-2`}
       style={{
         backgroundColor: getColor(location),
-        width: `${tagSize}rem`,
-        height: `${tagSize}rem`,
-        lineHeight: `${tagSize}rem`,
+        width: "2rem",
+        // height: `6rem`,
       }}
     >
       <ArrowLeft
-        className={`h-[${tagSize / 2}rem] w-[${
-          tagSize / 2
-        }rem] text-stone-600 hidden`}
+        className={`text-stone-600 hidden`}
+        // style={{
+        //   height: `${tagSize / 1.8}rem`,
+        //   width: `${tagSize / 1.8}rem`,
+        // }}
       />
       <span>{ptypeConfig[tweet_type as keyof typeof ptypeConfig].icon}</span>
     </div>
@@ -68,32 +61,50 @@ export const LocationTag = ({
 };
 
 // Thread is the root post of a thread
-export default function Thread({ getReplies, post }: TThread) {
+export default function Thread({ post }: { post: EnrichedTweet }) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const { posts } = useContext(DataContext);
 
-  const selfThreads = flattenSelfThreads(post, getReplies);
-  const previewThread = selfThreads.length ? selfThreads[0] : null;
+  // const selfThreads = flattenSelfThreads(post, getReplies);
+  // const previewThread = selfThreads.length ? selfThreads[0] : null;
 
-  const replies = getReplies(post.id_str).sort(
-    (a, b) => (b.score || 0) - (a.score || 0)
-  );
+  const replies = posts[post.id_str]?.replies
+    ?.map((rid) => posts[rid])
+    .sort((a, b) => (b.score || 0) - (a.score || 0));
   const previewReply =
     replies.length && (replies[0].score || 0) > 0.5 ? replies[0] : null;
+
+  const jumpToLocation = (event: MouseEvent) => {
+    event.preventDefault();
+    const locID = event.currentTarget.getAttribute("data-id");
+    if (!locID) return;
+    const locEle = document.getElementById(locID);
+    if (locEle) {
+      locEle.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
 
   return (
     <TweetContainer className={s.tag_parent}>
       <TweetHeader tweet={post} />
-      {post.location && post.tweet_type ? (
-        <LocationTag
-          location={post.location}
-          tweet_type={post.tweet_type}
-          className="absolute -top-5 -left-2 z-0"
-        />
-      ) : null}
+      {post.location && post.tweet_type && (
+        <div
+          data-id={`${post.location}$%^${post.tweet_type}`}
+          onClick={jumpToLocation}
+          className={`rounded-full text-md font-mono flex items-center px-2 h-9 justify-center ${s.tag} hover:brightness-95 cursor-pointer text-stone-800 absolute -top-4 left-3 opacity-90 -z-0`}
+          style={{ backgroundColor: getColor(post.location) }}
+        >
+          {/* <ArrowLeft className={`${s.arrowIcon} h-4 w-4 -ml-[0.12rem]`} /> */}
+          <div className="text-xl">
+            {ptypeConfig[post.tweet_type as keyof typeof ptypeConfig].icon}
+          </div>
+          <div className="ml-[0.2rem]">{post.tweet_type}</div>
+        </div>
+      )}
       <TweetBody tweet={post} />
       {post.mediaDetails?.length ? <TweetMedia tweet={post} /> : null}
       <TweetActions tweet={post} />
-      {previewThread ? (
+      {/* {previewThread ? (
         <div className="relative overflow-hidden">
           <div
             className="flex-col mt-1 pointer-events-none max-h-64"
@@ -110,11 +121,11 @@ export default function Thread({ getReplies, post }: TThread) {
             ) : null}
           </div>
           <Button
-            className="absolute bottom-[20%] left-0 right-0 mx-auto w-fit font-semibold text-base z-50 rounded-full h-8"
-            // variant="secondary"
+            className="absolute bottom-[20%] left-0 right-0 mx-auto w-fit font-semibold text-base z-50 rounded-full h-10 px-8 bg-zinc-100 shadow-md hover:bg-zinc-200 text-stone-700"
+            variant="secondary"
             onClick={() => setIsExpanded(true)}
           >
-            Show full thread
+            Read full thread
           </Button>
         </div>
       ) : previewReply ? (
@@ -129,7 +140,7 @@ export default function Thread({ getReplies, post }: TThread) {
           onClick={() => setIsExpanded(false)}
           selfThreads={selfThreads}
         />
-      ) : null}
+      ) : null} */}
     </TweetContainer>
   );
 }
@@ -160,7 +171,7 @@ const SelfThread = ({
           x
         </Button>
       </CardHeader>
-      <HideScroll paddingLeft={4} paddingRight={4} paddingBottom={56}>
+      <HideScroll paddingLeft={0.4} paddingRight={0.4} paddingBottom={4}>
         {[post, ...selfThreads].map((t) => (
           <div
             id={t.id_str}

@@ -1,25 +1,10 @@
 import { Button } from "../ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "../ui/dropdown-menu";
 import { Separator } from "@/components/ui/separator";
-import {
-  Sidebar,
-  SidebarContent,
-  SidebarHeader,
-  SidebarTrigger,
-} from "../ui/sidebar";
-import { MouseEvent, useContext, useEffect, useState } from "react";
+import { MouseEvent, useContext, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { TPostData, ptypeConfig } from "../types";
 import { HighlightContext } from "@/context/HighlightContext";
 import HideScroll from "../ui/HideScroll";
-import { getStylesForLocation } from "../ui/Utils";
 import { Badge } from "../ui/badge";
 import Thread from "./Thread";
 import {
@@ -30,6 +15,7 @@ import {
   SelectValue,
 } from "../ui/select";
 import { getColor } from "@/context/ColorManager";
+import { DataContext } from "@/context/DataContext";
 
 const TabTypes = Object.keys(ptypeConfig).sort((a, b) => {
   return (
@@ -40,65 +26,42 @@ const TabTypes = Object.keys(ptypeConfig).sort((a, b) => {
 
 // const FilterTypes = ["Time", "Location", "Popularity"];
 
-export default function Social({
-  data,
-  rootPosts,
-  allLocations,
-}: {
-  data: TPostData;
-  rootPosts: string[];
-  allLocations: string[];
-}) {
-  const { setHighlightedLocation, setHighlightedType, highlight } =
-    useContext(HighlightContext);
+export default function Social({ allLocations }: { allLocations: string[] }) {
+  const {
+    setHighlightedLocation,
+    setHighlightedType,
+    highlightedLocation,
+    highlightedType,
+  } = useContext(HighlightContext);
+  const { posts } = useContext(DataContext);
   const [section, setSection] = useState("All");
   // const [filterType, setFilterType] = useState("All");
   // const [sortBy, setSortBy] = useState("Location");
 
-  const getReplies = (id: string) => {
-    return data[id]?.replies?.map((replyId) => data[replyId]).filter(Boolean);
-  };
-
-  const getQuote = (id: string) => {
-    if (data[id]?.["quoted_status_id_str"]) {
-      return data[data[id]?.["quoted_status_id_str"]];
-    }
-    return undefined;
-  };
-
-  const [highlightedLocation, highlightedType] = highlight?.split("^^") ?? [
-    null,
-    null,
-  ];
-
-  const postToDisplay = rootPosts
+  const postToDisplay = Object.values(posts)
     .filter(
-      (id) =>
-        !!data[id] &&
-        (highlightedLocation === null ||
-          data[id].location === highlightedLocation) &&
-        (highlightedType === null || data[id]?.tweet_type === highlightedType)
+      (post) =>
+        post?.tweet_type &&
+        post?.tweet_type !== "Trivia" &&
+        !post?.in_thread &&
+        (!highlightedType || post.tweet_type === highlightedType) &&
+        (!highlightedLocation || post.location === highlightedLocation)
     )
-    .map((id) => data[id])
     .sort((a, b) => (b.thread_score || 0) - (a.thread_score || 0));
 
-  const jumpToLocation = (e: MouseEvent) => {
-    e.stopPropagation();
-    const quoteId = (e.target as HTMLElement).id.split(";loc_")[1];
-    const element = document.getElementById(`highlight_${quoteId}`);
-    element?.scrollIntoView({ behavior: "smooth", block: "center" });
-  };
-
   return (
-    <Sidebar variant="sidebar" className="p-0 z-50 font-mono" side="right">
-      <SidebarHeader className="pt-4 pb-1 px-3">
+    <div
+      className="h-[100vh] mr-auto sticky top-0 z-[999]"
+      style={{ maxWidth: "42rem", height: "100vh" }}
+    >
+      <div className="pt-4 pb-1 px-3">
         <div className="text-lg">
           <div>
             <span className="mr-2 font-semibold">Discussion:</span>
             {TabTypes.map((type) => (
               <Button
                 key={type}
-                variant="outline"
+                variant="secondary"
                 onClick={() => {
                   if (type === highlightedType) {
                     setHighlightedType(null);
@@ -106,7 +69,11 @@ export default function Social({
                     setHighlightedType(type);
                   }
                 }}
-                className={`text-[1rem] rounded-3xl px-3 h-8 mb-2.5 mr-2.5`}
+                className={`text-[1rem] rounded-3xl px-3 h-8 mb-2.5 mr-2.5 ${
+                  type === highlightedType
+                    ? "bg-stone-700 text-white hover:bg-stone-600"
+                    : "bg-stone-100 hover:bg-stone-200"
+                }`}
               >
                 {ptypeConfig[type as keyof typeof ptypeConfig].icon} {type}
               </Button>
@@ -158,14 +125,17 @@ export default function Social({
               </Select>
             </div>
           </div>
-          <Separator className="mt-1.5 -mb-1" />
+          <Separator className="mt-3 -mb-1" />
         </div>
 
         {highlightedLocation !== null && (
           <Badge
-            style={getStylesForLocation(highlightedLocation)}
-            className="mt-3 mb-2 text-md rounded-full py-1 pl-4 pr-2 cursor-pointer w-fit font-semibold"
-            onClick={() => setHighlightedLocation(null)}
+            style={{ backgroundColor: getColor(highlightedLocation) }}
+            className="mt-4 mb-1 text-md rounded-full py-1 pl-4 pr-2 cursor-pointer w-fit text-stone-700"
+            onClick={() => {
+              setHighlightedLocation(null);
+              setHighlightedType(null);
+            }}
           >
             Showing Only Related Posts
             <svg
@@ -190,10 +160,10 @@ export default function Social({
             </svg>
           </Badge>
         )}
-      </SidebarHeader>
+      </div>
 
-      <SidebarContent data-theme="light">
-        <HideScroll paddingLeft={8} paddingRight={8}>
+      <div className="h-full" data-theme="light">
+        <HideScroll paddingLeft={0.8} paddingRight={0.8} paddingBottom={8}>
           <AnimatePresence>
             {postToDisplay.map((post) => (
               <motion.div
@@ -204,13 +174,12 @@ export default function Social({
                 exit={{ opacity: 0, x: 64 }}
                 transition={{ duration: 0.16, type: "just", ease: "easeIn" }}
               >
-                <Thread post={post} getReplies={getReplies} />
+                <Thread post={post} />
               </motion.div>
             ))}
           </AnimatePresence>
         </HideScroll>
-      </SidebarContent>
-      <SidebarTrigger className="absolute -left-12 top-5 w-10 h-10 [&_svg]:size-6 [&_svg]:text-zinc-600 rounded-lg" />
-    </Sidebar>
+      </div>
+    </div>
   );
 }

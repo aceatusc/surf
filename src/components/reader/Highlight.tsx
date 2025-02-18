@@ -1,81 +1,81 @@
 import { Fragment, MouseEvent, useCallback, useContext, useState } from "react";
 import { HighlightContext } from "../../context/HighlightContext";
+import { DocumentContext, TransformContext } from "../pdf";
+import { TLocation, TSummaryData, ptypeConfig } from "../types";
+import { Button } from "../ui/button";
+import { getColor } from "../../context/ColorManager";
 import {
-  BoundingBox,
-  computeBoundingBoxStyle,
-  // computePageStyle,
-  DocumentContext,
-  TransformContext,
-} from "../pdf";
-import { getColorForGroup } from "../../context/ColorManager";
-import { THighlight } from "../types";
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "../ui/hover-card";
 
-export default function Highlight({ data }: { data: THighlight[] }) {
-  const { setHighlightedLocation } = useContext(HighlightContext);
+export default function Highlight({
+  data,
+  summaries,
+}: {
+  data: TLocation[];
+  summaries: TSummaryData;
+}) {
+  const { setHighlightedLocation, setHighlightedType } =
+    useContext(HighlightContext);
   const { pageDimensions } = useContext(DocumentContext);
-  const { rotation, scale } = useContext(TransformContext);
-  const [isHovered, setIsHovered] = useState(false);
+  const { scale } = useContext(TransformContext);
 
   const handleClick = useCallback((e: MouseEvent) => {
     e.stopPropagation();
-    setIsHovered(false);
+    const eleId = (e.target as HTMLElement).id;
+    const [location, type] = eleId.split("$%^");
+    setHighlightedLocation(location);
+    setHighlightedType(type);
   }, []);
-
-  const handleMouseEnter = useCallback((e: MouseEvent) => {
-    const quoteId = (e.target as HTMLElement).id.split("_")[1];
-    setHighlightedLocation(quoteId);
-    setIsHovered(true);
-  }, []);
-
-  const handleMouseLeave = () => {
-    if (isHovered) {
-      setHighlightedLocation(null);
-    }
-  };
-
-  // const getPageStyle = useCallback(() => {
-  //   return computePageStyle(pageDimensions, rotation, scale);
-  // }, [pageDimensions, rotation, scale]);
 
   return (
     <Fragment>
-      {data.map(({ id, bbox, type }, i) => {
-        const [page, left, top, width, height] = bbox;
-        const newLeft =
-          pageDimensions.width / left > 2 ? left - 14.4 : left + width + 6;
-        const color = getColorForGroup(id);
+      {data.map(({ title, box, types, dimensions }, i) => {
+        const [page, left, right, top] = box;
+        const isLeft = dimensions.width / left > 2;
+        const color = getColor(title);
+        const pageScale = (scale * pageDimensions.width) / dimensions.width;
+
         return (
           <div
-            key={i + page}
-            onClick={handleClick}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            id={`highlight_${title}`}
+            className="absolute z-50 flex flex-col"
+            style={{
+              left: isLeft ? (left - 24) * pageScale : (right + 4) * pageScale,
+              top: top * pageScale,
+            }}
+            key={i}
           >
-            <div
-              id={`highlight_${id}`}
-              className="transform transition-transform duration-200 hover:scale-x-[1.3] rounded-lg absolute z-[21] cursor-pointer"
-              style={{
-                backgroundColor: color,
-                ...computeBoundingBoxStyle(
-                  { left: newLeft, top, width: 9, height },
-                  pageDimensions,
-                  rotation,
-                  scale
-                ),
-              }}
-            />
-            {type === "sentence" && (
-              <BoundingBox
-                id={`highlight_${id}_text`}
-                isHighlighted={true}
-                page={page}
-                top={top}
-                left={left}
-                height={height}
-                width={width}
-                color={color}
-              />
-            )}
+            {types?.map((type) => (
+              <HoverCard key={type} openDelay={200} closeDelay={100}>
+                <HoverCardTrigger asChild>
+                  <Button
+                    key={type}
+                    id={`${title}$%^${type}`}
+                    onClick={handleClick}
+                    className="rounded-full transition-all duration-100 opacity-60 hover:opacity-100"
+                    style={{
+                      backgroundColor: color,
+                      width: `${20 * scale}px`,
+                      height: `${20 * scale}px`,
+                      fontSize: `${13 * scale}px`,
+                      padding: `${12 * scale}px`,
+                      marginBottom: `${5 * scale}px`,
+                    }}
+                  >
+                    {ptypeConfig[type as keyof typeof ptypeConfig].icon}
+                  </Button>
+                </HoverCardTrigger>
+                <HoverCardContent
+                  className="py-1 px-2 relative z-10 w-[24rem]"
+                  side={isLeft ? "left" : "right"}
+                >
+                  {summaries[title]?.[type]}
+                </HoverCardContent>
+              </HoverCard>
+            ))}
           </div>
         );
       })}

@@ -28,7 +28,7 @@
   --tweet-actions-font-weight: 600;
   --tweet-actions-icon-size: 1.6em;
   --tweet-actions-icon-wrapper-size: calc(
-    var(--tweet-actions-icon-size) + 0.5em
+    var(--tweet-actions-icon-size) + 0.4em
   );
 
   /* Reply button */

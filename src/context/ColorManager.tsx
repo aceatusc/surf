@@ -1,24 +1,28 @@
-import uniqolor from "uniqolor";
+declare const randomColor: (options?: any) => string;
+const predefinedColors = [
+  "#636EFA",
+  "#EF553B",
+  "#00CC96",
+  "#8c564b",
+  //   "#AB63FA",
+  "#FFA15A",
+  "#AF0048",
+  "#19D3F3",
+  "#FF6692",
+  "#B6E880",
+  "#FF97FF",
+  "#FECB52",
+];
+const colors: { [key: string]: string } = {};
 
-function stringToHash(str: string): number {
-  const encoder = new TextEncoder();
-  const data = encoder.encode(str);
-  const hashArray = new Uint32Array(1);
-  hashArray[0] = data.reduce((hash, byte) => {
-    return (hash << 5) - hash + byte;
-  }, 0);
-  return Math.abs(hashArray[0]);
-}
-
-export function getColor(loc: string | undefined, ligher: boolean = true) {
-  return uniqolor(stringToHash(loc?.repeat(5) || "default"), {
-    lightness: ligher ? 80 : 60,
-    saturation: [30, 100],
-  }).color;
-  // loc = loc || "default";
-  // if (!nameToColor[loc]) {
-  //   nameToColor[loc] =
-  //     palette.shift() || uniqolor(loc, { lightness: ligher ? 90 : 80 }).color;
-  // }
-  // return nameToColor[loc];
+export function getColorForGroup(pgroup: string) {
+  if (colors[pgroup]) {
+    return colors[pgroup];
+  }
+  if (Object.keys(colors).length < predefinedColors.length) {
+    colors[pgroup] = predefinedColors[Object.keys(colors).length];
+    return colors[pgroup];
+  }
+  colors[pgroup] = randomColor();
+  return colors[pgroup];
 }

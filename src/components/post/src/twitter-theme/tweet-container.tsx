@@ -19,11 +19,11 @@ export const TweetContainer = ({
   style,
 }: Props) => (
   <div
-    className={clsx("react-tweet-theme", s.root)}
+    className={clsx("react-tweet-theme", s.root, className)}
     data-in-thread={inThread}
     id={id}
     style={style}
   >
-    <article className={clsx(s.article, className)}>{children}</article>
+    <article className={s.article}>{children}</article>
   </div>
 );

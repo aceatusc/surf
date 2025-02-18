@@ -19,43 +19,48 @@
 }
 
 html {
-  font-size: 62.5%; /* Base: 10px */
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 @media (min-width: 960px) {
+  /* Add your styles here */
   html {
-    font-size: 65%; /* 11.6px */
+    font-size: 64%; /* Example: Increase font size */
   }
 }
 
 @media (min-width: 1200px) {
+  /* Add your styles here */
   html {
-    font-size: 67.5%; /* 12.4px */
+    font-size: 68%; /* Example: Increase font size */
   }
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1440px) {
+  /* Add your styles here */
   html {
-    font-size: 70%; /* 13.2px */
+    font-size: 72%; /* Example: Increase font size */
   }
 }
 
 @media (min-width: 1600px) {
+  /* Add your styles here */
   html {
-    font-size: 72.5%; /* 14px */
+    font-size: 75%; /* Example: Increase font size */
   }
 }
 
 @media (min-width: 1920px) {
+  /* Add your styles here */
   html {
-    font-size: 75%; /* 14.8px */
+    font-size: 80%; /* Example: Increase font size */
   }
 }
 
 @media (min-width: 2560px) {
   html {
-    font-size: 80%; /* 16px */
+    font-size: 100%;
   }
 }
 
@@ -74,6 +79,8 @@ body {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
+  overflow-x: hidden;
+  background-color: #f6eee3;
 }
 
 /*

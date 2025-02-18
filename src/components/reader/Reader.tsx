@@ -4,27 +4,91 @@ import {
   Overlay,
   PageWrapper,
   RENDER_TYPE,
+  ScrollContext,
+  TransformContext,
+  UiContext,
 } from "../pdf";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import Highlight from "./Highlight";
-import { DataContext } from "@/context/DataContext";
-import { UIContext } from "@/context/UIContext";
-import ZoomControl from "./ZoomControl";
-export default function Reader({ url }: { url: string }) {
-  const { numPages } = useContext(DocumentContext);
-  const { locations, summaries } = useContext(DataContext);
-  const { sidebarOpen } = useContext(UIContext);
+import { THighlightData } from "../types";
+import { useSidebar } from "../ui/sidebar";
+import {
+  AlertDialog,
+  AlertDialogContent,
+  AlertDialogFooter,
+  AlertDialogHeader,
+} from "../ui/alert-dialog";
+import {
+  AlertDialogAction,
+  AlertDialogDescription,
+  AlertDialogTitle,
+} from "../ui/alert-dialog";
+import { DevContext } from "@/context/DevContext";
+
+export default function Reader({
+  url,
+  rootPosts,
+  highlightData,
+}: {
+  url: string;
+  rootPosts: string[];
+  highlightData: THighlightData;
+}) {
+  const { studyPhase } = useContext(DevContext);
+  const { numPages, pageDimensions } = useContext(DocumentContext);
+  const { setScale } = useContext(TransformContext);
+  const { setScrollRoot, resetScrollObservers, setScrollThreshold } =
+    useContext(ScrollContext);
+  const { isLoading } = useContext(UiContext);
+  const { open, isMobile } = useSidebar();
+  const [warning, setWarning] = useState(false);
+
+  useEffect(() => {
+    if (isLoading) return;
+    setScrollRoot(null);
+    resetScrollObservers();
+    setScrollThreshold(0.8);
+  }, [isLoading]);
+
+  useEffect(() => {
+    if (pageDimensions.width == 0 || pageDimensions.height == 0) return;
+    const handleResize = () => {
+      if (pageDimensions.width === 0) return;
+      if (window.innerWidth < 768) {
+        setWarning(true);
+      } else {
+        setWarning(false);
+        setScale(
+          Math.floor(
+            ((Math.min(window.innerWidth - 420, 0.7 * window.innerWidth) - 48) /
+              pageDimensions.width) *
+              10
+          ) / 10
+        );
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [pageDimensions]);
 
   return (
     <div
-      className={`ml-auto [&>*]:overflow-x-auto [&>*]:overflow-y-hidden`}
       style={{
+        width: isMobile
+          ? "100%"
+          : open
+          ? "calc(100vw - max(42rem, 30vw))"
+          : "100%",
         direction: "rtl",
-        maxWidth: sidebarOpen ? "calc(100% - 42rem)" : "100%",
-        transition: "max-width 0.2s",
       }}
+      className="transition-all h-full overflow-auto"
     >
-      <DocumentWrapper file={url} renderType={RENDER_TYPE.MULTI_CANVAS}>
+      <DocumentWrapper
+        className="w-fit my-0 mx-auto"
+        file={url}
+        renderType={RENDER_TYPE.MULTI_CANVAS}
+      >
         {Array.from({ length: numPages }).map((_, i) => (
           <PageWrapper
             key={i}
@@ -32,24 +96,38 @@ export default function Reader({ url }: { url: string }) {
             renderType={RENDER_TYPE.MULTI_CANVAS}
           >
             <Overlay>
-              {locations[i] && (
-                <Highlight data={locations[i]} summaries={summaries} />
+              {highlightData[i] && (
+                <Highlight
+                  data={highlightData[i].filter(
+                    (data) =>
+                      studyPhase === "usability" ||
+                      data.posts.some((p) => rootPosts.includes(p))
+                  )}
+                />
               )}
             </Overlay>
           </PageWrapper>
         ))}
       </DocumentWrapper>
-      <div
-        className="fixed top-2 z-20 overflow-visible shadow-md rounded-xl"
-        style={{
-          left: sidebarOpen
-            ? "calc(calc(100% - 53rem) / 2)"
-            : "calc(50% - 5rem)",
-          transition: "left 0.2s",
-        }}
-      >
-        <ZoomControl />
-      </div>
+      {warning && (
+        <AlertDialog open={warning} onOpenChange={setWarning}>
+          <AlertDialogContent className="select-none">
+            <AlertDialogHeader>
+              <AlertDialogTitle className="text-2xl">
+                Incompatible Screen Resolution
+              </AlertDialogTitle>
+              <AlertDialogDescription className="text-md">
+                This app requires a screen width of at least 768px to function
+                properly. Some features may not be available on smaller screens,
+                but you can still view the PDF.
+              </AlertDialogDescription>
+            </AlertDialogHeader>
+            <AlertDialogFooter>
+              <AlertDialogAction>I Understand</AlertDialogAction>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialog>
+      )}
     </div>
   );
 }

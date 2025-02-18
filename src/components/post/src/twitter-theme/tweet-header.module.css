@@ -1,30 +1,29 @@
 .header {
   display: flex;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.75rem;
   line-height: var(--tweet-header-line-height);
   font-size: var(--tweet-header-font-size);
   white-space: nowrap;
   overflow-wrap: break-word;
   overflow: hidden;
   align-items: center;
-  position: relative;
 }
 
 .avatar {
   position: relative;
-  height: 3.2rem;
-  width: 3.2rem;
+  height: 32px;
+  width: 32px;
 }
 
 .header[data-in-thread="true"] {
   line-height: calc(0.86 * var(--tweet-header-line-height));
   font-size: calc(0.86 * var(--tweet-header-font-size));
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.5rem;
 }
 
 .header[data-in-thread="true"] .avatar {
-  height: 2.4rem;
-  width: 2.4rem;
+  height: 20px;
+  width: 20px;
 }
 
 .avatarOverflow {
@@ -127,4 +126,19 @@
   display: flex;
   align-items: center;
   margin-inline-start: auto;
+}
+
+.tag {
+  height: 20px;
+  line-height: 20px;
+  padding: 0 1rem;
+  border-radius: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.header[data-in-thread="true"] .tag {
+  height: 16px;
+  line-height: 16px;
+  padding: 0 0.75rem;
 }

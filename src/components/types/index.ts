@@ -20,6 +20,14 @@ export type TLocationData = {
   [key: string]: TLocation[];
 };
 
+export type TSummary = {
+  [key: string]: string;
+};
+
+export type TSummaryData = {
+  [key: string]: TSummary;
+};
+
 export const ptypeConfig = {
   "Related Work": { icon: "📖", priority: 5 },
   Perspective: { icon: "💬", priority: 4 },
@@ -28,5 +36,5 @@ export const ptypeConfig = {
   Teaser: { icon: "🔎", priority: 7 },
   "Q&A": { icon: "❓", priority: 2 },
   Resource: { icon: "🔗", priority: 6 },
-  Author: { icon: "✍️", priority: 0 },
+  // Author: { icon: "✍️", priority: 0 },
 };

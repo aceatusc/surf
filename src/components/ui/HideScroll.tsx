@@ -33,12 +33,12 @@ export default function HideScroll({
 
   return (
     <div
-      className={`overflow-y-hidden overflow-x-visible ${
+      className={`overflow-hidden overscroll-contain ${
         className || "relative w-full h-full"
       }`}
     >
       <div
-        className="absolute top-0 bottom-0 left-0 overflow-y-scroll overflow-x-visible"
+        className="absolute top-0 bottom-0 left-0 overflow-y-scroll overflow-x-visible overscroll-contain"
         ref={scrollRef}
         style={{
           top: `${paddingY || 0}rem`,

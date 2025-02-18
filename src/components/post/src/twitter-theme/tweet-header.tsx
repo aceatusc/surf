@@ -21,16 +21,15 @@ import { ArrowLeft } from "lucide-react";
 type Props = {
   tweet: EnrichedTweet;
   component?: ReactNode;
+  inThread?: boolean;
 };
 
-export const TweetHeader = ({ tweet, component }: Props) => {
-  const { user, is_reply: is_reply } = tweet;
-
+export const TweetHeader = ({ tweet, component, inThread = false }: Props) => {
+  const { user } = tweet;
   const userUrl = `https://twitter.com/${user.screen_name}`;
-  const avatarSize = is_reply ? 20 : 36;
 
   return (
-    <div className={s.header} data-in-thread={is_reply}>
+    <div className={s.header} data-in-thread={inThread}>
       {component}
       <HoverCard openDelay={160} closeDelay={200}>
         <HoverCardTrigger
@@ -63,7 +62,7 @@ export const TweetHeader = ({ tweet, component }: Props) => {
             </div>
             <VerifiedBadge user={user} className={s.authorVerified} />
           </HoverCardTrigger>
-          {!tweet.is_reply && (
+          {!inThread && (
             <div className={s.authorMeta}>
               <HoverCardTrigger
                 href={userUrl}

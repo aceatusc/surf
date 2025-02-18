@@ -2,13 +2,16 @@ import type { EnrichedTweet } from "../utils.js";
 import { TweetLink } from "./tweet-link.jsx";
 import s from "./tweet-body.module.css";
 
-export const TweetBody = ({ tweet }: { tweet: EnrichedTweet }) => (
-  <p
-    className={s.root}
-    lang={tweet.lang}
-    dir="auto"
-    data-in-thread={tweet.is_reply}
-  >
+export const TweetBody = ({
+  tweet,
+  inThread = false,
+  children,
+}: {
+  tweet: EnrichedTweet;
+  inThread?: Boolean;
+  children?: React.ReactNode;
+}) => (
+  <p className={s.root} lang={tweet.lang} dir="auto" data-in-thread={inThread}>
     {tweet.entities.map((item, i) => {
       switch (item.type) {
         case "hashtag":
@@ -32,5 +35,6 @@ export const TweetBody = ({ tweet }: { tweet: EnrichedTweet }) => (
           );
       }
     })}
+    {children}
   </p>
 );

@@ -1,17 +1,22 @@
 import { Fragment, MouseEvent, useCallback, useContext, useState } from "react";
 import { HighlightContext } from "../../context/HighlightContext";
 import { DocumentContext, TransformContext } from "../pdf";
-import { TLocation, ptypeConfig } from "../types";
+import { TLocation, TSummaryData, ptypeConfig } from "../types";
 import { Button } from "../ui/button";
 import { getColor } from "../../context/ColorManager";
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "../ui/tooltip";
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "../ui/hover-card";
 
-export default function Highlight({ data }: { data: TLocation[] }) {
+export default function Highlight({
+  data,
+  summaries,
+}: {
+  data: TLocation[];
+  summaries: TSummaryData;
+}) {
   const { setHighlightedLocation, setHighlightedType } =
     useContext(HighlightContext);
   const { pageDimensions } = useContext(DocumentContext);
@@ -36,7 +41,7 @@ export default function Highlight({ data }: { data: TLocation[] }) {
         return (
           <div
             id={`highlight_${title}`}
-            className="absolute z-[21] flex flex-col"
+            className="absolute z-50 flex flex-col"
             style={{
               left: isLeft ? (left - 24) * pageScale : (right + 4) * pageScale,
               top: top * pageScale,
@@ -44,34 +49,32 @@ export default function Highlight({ data }: { data: TLocation[] }) {
             key={i}
           >
             {types?.map((type) => (
-              <TooltipProvider key={type}>
-                <Tooltip delayDuration={600}>
-                  <TooltipTrigger asChild>
-                    <Button
-                      key={type}
-                      id={`${title}$%^${type}`}
-                      onClick={handleClick}
-                      className="rounded-full transition-all duration-100 opacity-60 hover:opacity-100"
-                      style={{
-                        backgroundColor: color,
-                        width: `${20 * scale}px`,
-                        height: `${20 * scale}px`,
-                        fontSize: `${13 * scale}px`,
-                        padding: `${12 * scale}px`,
-                        marginBottom: `${5 * scale}px`,
-                      }}
-                    >
-                      {ptypeConfig[type as keyof typeof ptypeConfig].icon}
-                    </Button>
-                  </TooltipTrigger>
-                  <TooltipContent
-                    className="py-1 px-2 font-mono"
-                    side={isLeft ? "left" : "right"}
+              <HoverCard key={type} openDelay={200} closeDelay={100}>
+                <HoverCardTrigger asChild>
+                  <Button
+                    key={type}
+                    id={`${title}$%^${type}`}
+                    onClick={handleClick}
+                    className="rounded-full transition-all duration-100 opacity-60 hover:opacity-100"
+                    style={{
+                      backgroundColor: color,
+                      width: `${20 * scale}px`,
+                      height: `${20 * scale}px`,
+                      fontSize: `${13 * scale}px`,
+                      padding: `${12 * scale}px`,
+                      marginBottom: `${5 * scale}px`,
+                    }}
                   >
-                    {type}
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
+                    {ptypeConfig[type as keyof typeof ptypeConfig].icon}
+                  </Button>
+                </HoverCardTrigger>
+                <HoverCardContent
+                  className="py-1 px-2 relative z-10 w-[24rem]"
+                  side={isLeft ? "left" : "right"}
+                >
+                  {summaries[title]?.[type]}
+                </HoverCardContent>
+              </HoverCard>
             ))}
           </div>
         );

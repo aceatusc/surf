@@ -1,20 +1,16 @@
-/* .tag_parent:hover .tag > svg {
+.tag_parent:hover .tag > svg {
   display: inline-block;
-} */
+}
 
-/* .tag_parent:hover .tag > div:first-of-type {
+.tag_parent:hover .tag > div:first-of-type {
   display: none;
-} */
-
-/* .tag_parent:hover .tag {
-  width: fit-content;
-  padding: 0 0.8rem;
-} */
-
-/* .tag_parent:hover .tag > div:last-of-type {
-  display: inline-block;
-} */
+}
 
 .tag_parent:hover .tag {
-  opacity: 1;
+  width: fit-content;
+  padding: 0 0.8rem;
+}
+
+.tag_parent:hover .tag > div:last-of-type {
+  display: inline-block;
 }

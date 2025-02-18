@@ -12,20 +12,12 @@ import {
   Navigate,
   useLocation,
 } from "react-router-dom";
-import { SidebarInset, SidebarProvider } from "./components/ui/sidebar";
+import { SidebarProvider } from "./components/ui/sidebar";
 import Social from "./components/social/Panel";
 import Note from "./components/note/Note";
-import { Badge } from "./components/ui/badge";
 import { DataContext } from "./context/DataContext";
 
 const examples = [
-  {
-    id: "arxiv:2410.05229",
-    url: "https://arxiv.org/pdf/2410.05229",
-    title:
-      "GSM-Symbolic: Understanding the Limitations of Mathematical Reasoning in Large Language Models",
-    data: "/2410.05229.json",
-  },
   {
     id: "arxiv:2303.15343",
     url: "https://arxiv.org/pdf/2303.15343",
@@ -97,7 +89,7 @@ function SelectExample() {
 export function AppContent() {
   const { id } = useParams();
   const paper = examples.find((example) => example.id === id);
-  const { setPosts, setLocations, posts, locations } = useContext(DataContext);
+  const { setPosts, setLocations, setSummaries } = useContext(DataContext);
   const [loading, setLoading] = useState(true);
   const { setStudyPhase } = useContext(DevContext);
 
@@ -114,11 +106,12 @@ export function AppContent() {
 
     const fetchData = async () => {
       try {
-        const { posts, locations } = await fetch(paper.data).then((res) =>
-          res.json()
+        const { posts, locations, summaries } = await fetch(paper.data).then(
+          (res) => res.json()
         );
         setPosts(posts);
         setLocations(locations);
+        setSummaries(summaries);
       } catch (error) {
         console.error("Failed to load data:", error);
       } finally {
@@ -132,17 +125,6 @@ export function AppContent() {
   if (!paper) {
     return <Navigate to="/" replace />;
   }
-
-  const rootPosts = new Set<string>();
-  Object.values(posts).forEach((post) => {
-    if (!post.in_reply_to_status_id_str) {
-      rootPosts.add(post.id_str);
-    }
-  });
-
-  const allLocations = new Set<string>([
-    ...Object.values(locations).flatMap((page) => page.map((loc) => loc.title)),
-  ]);
 
   if (loading) {
     return (
@@ -165,15 +147,7 @@ export function AppContent() {
     >
       <Note />
       <Reader url={paper.url} />
-      <Social allLocations={Array.from(allLocations)} />
-      <div
-        className="fixed top-0 right-0 z-[500]"
-        style={{
-          left: "calc(calc(100% - 53rem) / 2)",
-        }}
-      >
-        <ZoomControl />
-      </div>
+      <Social />
     </SidebarProvider>
   );
 }

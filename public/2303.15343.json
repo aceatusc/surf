@@ -198,7 +198,8 @@
                 "1705663397231255607"
             ],
             "tweet_type": "Teaser",
-            "thread_score": 0.2
+            "thread_score": 2.2,
+            "isAuthor": true
         },
         "1705564440983224561": {
             "created_at": "Sat Sep 23 12:47:05 +0000 2023",
@@ -473,13 +474,12 @@
             "url": "https://x.com/giffmana/status/1692641751901606007",
             "like_url": "https://x.com/intent/like?tweet_id=1692641751901606007",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692641751901606007",
-            "replies": [
-                "1692641754124570952"
-            ],
+            "replies": [],
+            "in_thread": "1692641733459267713",
             "tweet_type": "Overview",
-            "thread_score": 2,
+            "thread_score": 4,
             "location": "Conclusion",
-            "in_thread": true
+            "isAuthor": true
         },
         "1640519301726629889": {
             "created_at": "Tue Mar 28 01:00:55 +0000 2023",
@@ -759,10 +759,10 @@
             "like_url": "https://x.com/intent/like?tweet_id=1831493021197902330",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1831493021197902330",
             "replies": [],
+            "in_thread": "1831492993448342000",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Conclusion",
-            "in_thread": true
+            "location": null
         },
         "1663282554710155277": {
             "created_at": "Mon May 29 20:33:57 +0000 2023",
@@ -827,9 +827,7 @@
                 "1663547497799880708",
                 "1663289766358683648"
             ],
-            "tweet_type": "Resource",
-            "thread_score": 0.4,
-            "location": "Related Work"
+            "isAuthor": true
         },
         "1797636065995706601": {
             "created_at": "Mon Jun 03 14:26:51 +0000 2024",
@@ -1404,8 +1402,11 @@
             "url": "https://x.com/cyrilzakka/status/1692992879554183382",
             "like_url": "https://x.com/intent/like?tweet_id=1692992879554183382",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692992879554183382",
-            "replies": [
-                "1692992881210888609"
+            "replies": [],
+            "thread_posts": [
+                "1692992879554183382",
+                "1692992881210888609",
+                "1692992882888589636"
             ],
             "tweet_type": "Overview",
             "thread_score": 2,
@@ -1582,9 +1583,9 @@
             "replies": [
                 "1835764718343946345"
             ],
-            "tweet_type": "Teaser",
-            "thread_score": 0.2,
-            "score": 0.3
+            "score": 1.1,
+            "thread_score": 1.1,
+            "isAuthor": true
         },
         "1640573741531897859": {
             "created_at": "Tue Mar 28 04:37:15 +0000 2023",
@@ -1752,9 +1753,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1640573741531897859",
             "replies": [
                 "1640574354705764353"
-            ],
-            "tweet_type": "Teaser",
-            "thread_score": 0.2
+            ]
         },
         "1707327112523215274": {
             "created_at": "Thu Sep 28 09:31:18 +0000 2023",
@@ -1929,10 +1928,11 @@
             "replies": [
                 "1707789910537650358"
             ],
+            "in_thread": "1707327094982672666",
             "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": null,
-            "in_thread": true
+            "thread_score": 4,
+            "location": "Abstract",
+            "isAuthor": true
         },
         "1809267184025346529": {
             "created_at": "Fri Jul 05 16:44:45 +0000 2024",
@@ -2647,8 +2647,7 @@
             ],
             "tweet_type": "Resource",
             "thread_score": 0.4,
-            "score": 0.2,
-            "location": "Related Work"
+            "location": null
         },
         "1707327109331362008": {
             "created_at": "Thu Sep 28 09:31:18 +0000 2023",
@@ -2841,12 +2840,20 @@
             "url": "https://x.com/XiaohuaZhai/status/1707327109331362008",
             "like_url": "https://x.com/intent/like?tweet_id=1707327109331362008",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707327109331362008",
-            "replies": [
-                "1707327112439321081"
+            "replies": [],
+            "thread_posts": [
+                "1707327109331362008",
+                "1707327112439321081",
+                "1707327115245367550",
+                "1707327117594149271",
+                "1707327120563749173",
+                "1707327123315191894",
+                "1707327125642936335"
             ],
             "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "Author"
+            "thread_score": 3,
+            "location": "Author",
+            "isAuthor": true
         },
         "1764772773484753119": {
             "created_at": "Mon Mar 04 21:59:51 +0000 2024",
@@ -3117,7 +3124,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864175655811735774",
             "replies": [
                 "1864175658579943644"
-            ]
+            ],
+            "isAuthor": true
         },
         "1640652396782026752": {
             "created_at": "Tue Mar 28 09:49:47 +0000 2023",
@@ -3273,10 +3281,7 @@
             "url": "https://x.com/sroy907/status/1640652396782026752",
             "like_url": "https://x.com/intent/like?tweet_id=1640652396782026752",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1640652396782026752",
-            "replies": [],
-            "tweet_type": "Related Work",
-            "thread_score": 0.4,
-            "location": "Related Work"
+            "replies": []
         },
         "1693976326665842928": {
             "created_at": "Tue Aug 22 13:20:03 +0000 2023",
@@ -3346,10 +3351,7 @@
             "url": "https://x.com/ComputingByArts/status/1693976326665842928",
             "like_url": "https://x.com/intent/like?tweet_id=1693976326665842928",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693976326665842928",
-            "replies": [],
-            "tweet_type": "Q&A",
-            "thread_score": 1,
-            "location": "Results"
+            "replies": []
         },
         "1696887927093997660": {
             "created_at": "Wed Aug 30 14:09:43 +0000 2023",
@@ -3921,9 +3923,7 @@
             "url": "https://x.com/fly51fly/status/1640648613184385025",
             "like_url": "https://x.com/intent/like?tweet_id=1640648613184385025",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1640648613184385025",
-            "replies": [],
-            "tweet_type": "Teaser",
-            "thread_score": 0.2
+            "replies": []
         },
         "1778788689646072283": {
             "created_at": "Fri Apr 12 14:14:06 +0000 2024",
@@ -4134,8 +4134,7 @@
             "url": "https://x.com/FlorianFervers/status/1666043209196208128",
             "like_url": "https://x.com/intent/like?tweet_id=1666043209196208128",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1666043209196208128",
-            "replies": [],
-            "score": 0.7
+            "replies": []
         },
         "1764747173042979143": {
             "created_at": "Mon Mar 04 20:18:08 +0000 2024",
@@ -4340,8 +4339,9 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707328464645234738",
             "replies": [],
             "tweet_type": "Resource",
-            "thread_score": 0.4,
-            "location": "Related Work"
+            "thread_score": 2.4,
+            "location": "Related Work",
+            "isAuthor": true
         },
         "1703761043842077092": {
             "created_at": "Mon Sep 18 13:21:01 +0000 2023",
@@ -4494,8 +4494,19 @@
             "url": "https://x.com/Athekunal/status/1827564905127670238",
             "like_url": "https://x.com/intent/like?tweet_id=1827564905127670238",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1827564905127670238",
-            "replies": [
-                "1827565282711531718"
+            "replies": [],
+            "thread_posts": [
+                "1827564905127670238",
+                "1827565282711531718",
+                "1827565856303542660",
+                "1827566317572125131",
+                "1827567012446662735",
+                "1827567480304193712",
+                "1827567868080484464",
+                "1827568167989792978",
+                "1827570905704493118",
+                "1827571802157281361",
+                "1827572051533840822"
             ],
             "tweet_type": "Overview",
             "thread_score": 2,
@@ -4580,9 +4591,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1869545685609226693",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1869545685609226693",
             "replies": [],
-            "tweet_type": "Related Work",
-            "thread_score": 0.4,
-            "location": "Related Work"
+            "tweet_type": "Teaser",
+            "thread_score": 0.2
         },
         "1666771271470940160": {
             "created_at": "Thu Jun 08 11:36:52 +0000 2023",
@@ -4884,13 +4894,12 @@
             "like_url": "https://x.com/intent/like?tweet_id=1663269506289135616",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1663269506289135616",
             "replies": [
-                "1663269507677208581",
                 "1663482934043746304"
             ],
+            "in_thread": "1663269502971199511",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Sigmoid loss for language image pre-training",
-            "in_thread": true
+            "location": "Abstract"
         },
         "1693631281047761336": {
             "created_at": "Mon Aug 21 14:28:58 +0000 2023",
@@ -5202,7 +5211,7 @@
             "replies": [],
             "tweet_type": "Teaser",
             "thread_score": 0.1,
-            "score": 0.0
+            "score": 0.1
         },
         "1693339758041149797": {
             "created_at": "Sun Aug 20 19:10:33 +0000 2023",
@@ -5584,9 +5593,7 @@
             "url": "https://x.com/Takomo_ai/status/1640926870072881152",
             "like_url": "https://x.com/intent/like?tweet_id=1640926870072881152",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1640926870072881152",
-            "replies": [],
-            "tweet_type": "Teaser",
-            "thread_score": 0.2
+            "replies": []
         },
         "1666098665184985091": {
             "created_at": "Tue Jun 06 15:04:11 +0000 2023",
@@ -6216,13 +6223,12 @@
             "url": "https://x.com/giffmana/status/1707327109306212810",
             "like_url": "https://x.com/intent/like?tweet_id=1707327109306212810",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707327109306212810",
-            "replies": [
-                "1707327112523215274"
-            ],
+            "replies": [],
+            "in_thread": "1707327094982672666",
             "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "Bias term in sigmoid loss",
-            "in_thread": true
+            "thread_score": 4,
+            "location": "Lij",
+            "isAuthor": true
         },
         "1705496435494383638": {
             "created_at": "Sat Sep 23 08:16:51 +0000 2023",
@@ -6362,7 +6368,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1705680018599198759",
             "replies": [
                 "1705729726634213420"
-            ]
+            ],
+            "isAuthor": true
         },
         "1831492993448342000": {
             "created_at": "Thu Sep 05 00:42:11 +0000 2024",
@@ -6577,8 +6584,12 @@
             "url": "https://x.com/mrdbourke/status/1831492993448342000",
             "like_url": "https://x.com/intent/like?tweet_id=1831492993448342000",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1831492993448342000",
-            "replies": [
-                "1831493005234307175"
+            "replies": [],
+            "thread_posts": [
+                "1831492993448342000",
+                "1831493005234307175",
+                "1831493011886494071",
+                "1831493021197902330"
             ],
             "tweet_type": "Overview",
             "thread_score": 2,
@@ -6750,13 +6761,11 @@
             "url": "https://x.com/mrdbourke/status/1831493005234307175",
             "like_url": "https://x.com/intent/like?tweet_id=1831493005234307175",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1831493005234307175",
-            "replies": [
-                "1831493011886494071"
-            ],
+            "replies": [],
+            "in_thread": "1831492993448342000",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Method",
-            "in_thread": true
+            "location": "Method"
         },
         "1831493011886494071": {
             "created_at": "Thu Sep 05 00:42:16 +0000 2024",
@@ -6826,14 +6835,13 @@
             "like_url": "https://x.com/intent/like?tweet_id=1831493011886494071",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1831493011886494071",
             "replies": [
-                "1831493021197902330",
                 "1833908268655403385",
                 "1832272816617689168"
             ],
+            "in_thread": "1831492993448342000",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Results",
-            "in_thread": true
+            "location": "Conclusion"
         },
         "1663312230421520384": {
             "created_at": "Mon May 29 22:31:53 +0000 2023",
@@ -7189,7 +7197,6 @@
             "like_url": "https://x.com/intent/like?tweet_id=1692641733459267713",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692641733459267713",
             "replies": [
-                "1692641736059728281",
                 "1692934265087152626",
                 "1692833858725843274",
                 "1692678733042249873",
@@ -7215,9 +7222,21 @@
                 "1693143785574908147",
                 "1694060591034384525"
             ],
+            "thread_posts": [
+                "1692641733459267713",
+                "1692641736059728281",
+                "1692641738198757409",
+                "1692641741805916364",
+                "1692641744054100217",
+                "1692641746159649227",
+                "1692641748445438301",
+                "1692641751901606007",
+                "1692641754124570952"
+            ],
             "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "Author"
+            "thread_score": 3,
+            "location": "Author",
+            "isAuthor": true
         },
         "1692641736059728281": {
             "created_at": "Fri Aug 18 20:56:52 +0000 2023",
@@ -7373,15 +7392,15 @@
             "like_url": "https://x.com/intent/like?tweet_id=1692641736059728281",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692641736059728281",
             "replies": [
-                "1692641738198757409",
                 "1692825105846735311",
                 "1692926798365954215",
                 "1693279126143037916"
             ],
+            "in_thread": "1692641733459267713",
             "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "Sigmoid loss for language image pre-training",
-            "in_thread": true
+            "thread_score": 4,
+            "location": "Method",
+            "isAuthor": true
         },
         "1692641738198757409": {
             "created_at": "Fri Aug 18 20:56:52 +0000 2023",
@@ -7536,13 +7555,12 @@
             "url": "https://x.com/giffmana/status/1692641738198757409",
             "like_url": "https://x.com/intent/like?tweet_id=1692641738198757409",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692641738198757409",
-            "replies": [
-                "1692641741805916364"
-            ],
+            "replies": [],
+            "in_thread": "1692641733459267713",
             "tweet_type": "Overview",
-            "thread_score": 2,
+            "thread_score": 4,
             "location": "Efficient \"chunked\" implementation",
-            "in_thread": true
+            "isAuthor": true
         },
         "1692641741805916364": {
             "created_at": "Fri Aug 18 20:56:53 +0000 2023",
@@ -7839,15 +7857,15 @@
             "like_url": "https://x.com/intent/like?tweet_id=1692641741805916364",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692641741805916364",
             "replies": [
-                "1692641744054100217",
                 "1692961052542353724",
                 "1693301205886480733",
                 "1693012495852515550"
             ],
+            "in_thread": "1692641733459267713",
             "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "SigLiT: Scaling batch size to the limit",
-            "in_thread": true
+            "thread_score": 4,
+            "location": "Caption 1",
+            "isAuthor": true
         },
         "1692641744054100217": {
             "created_at": "Fri Aug 18 20:56:54 +0000 2023",
@@ -8031,16 +8049,16 @@
             "like_url": "https://x.com/intent/like?tweet_id=1692641744054100217",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692641744054100217",
             "replies": [
-                "1692641746159649227",
                 "1692674120310296765",
                 "1708404728990765178",
                 "1708405650412261559",
                 "1708405787482063173"
             ],
+            "in_thread": "1692641733459267713",
             "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "SigLIP with a small amount of TPU-v4 chips",
-            "in_thread": true
+            "thread_score": 4,
+            "location": "SigLiT: Scaling batch size to the limit",
+            "isAuthor": true
         },
         "1692641746159649227": {
             "created_at": "Fri Aug 18 20:56:54 +0000 2023",
@@ -8195,13 +8213,12 @@
             "url": "https://x.com/giffmana/status/1692641746159649227",
             "like_url": "https://x.com/intent/like?tweet_id=1692641746159649227",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692641746159649227",
-            "replies": [
-                "1692641748445438301"
-            ],
+            "replies": [],
+            "in_thread": "1692641733459267713",
             "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "Results",
-            "in_thread": true
+            "thread_score": 4,
+            "location": "SigLIP: Sigmoid loss is beneficial for language-image pre-training",
+            "isAuthor": true
         },
         "1692641748445438301": {
             "created_at": "Fri Aug 18 20:56:55 +0000 2023",
@@ -8478,13 +8495,13 @@
             "like_url": "https://x.com/intent/like?tweet_id=1692641748445438301",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692641748445438301",
             "replies": [
-                "1692641751901606007",
                 "1692981956739530962"
             ],
+            "in_thread": "1692641733459267713",
             "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "Stabilizing large-batch training",
-            "in_thread": true
+            "thread_score": 4,
+            "location": "Caption 12",
+            "isAuthor": true
         },
         "1692641754124570952": {
             "created_at": "Fri Aug 18 20:56:56 +0000 2023",
@@ -8549,10 +8566,11 @@
                 "1692711990425256316",
                 "1694233509227856373"
             ],
+            "in_thread": "1692641733459267713",
             "tweet_type": "Overview",
-            "thread_score": 2,
+            "thread_score": 4,
             "location": null,
-            "in_thread": true
+            "isAuthor": true
         },
         "1692934265087152626": {
             "created_at": "Sat Aug 19 16:19:16 +0000 2023",
@@ -8608,7 +8626,7 @@
             "tweet_type": "Q&A",
             "thread_score": 0.6,
             "score": 0.6,
-            "location": "Results"
+            "location": "Conclusion"
         },
         "1693009418974056590": {
             "created_at": "Sat Aug 19 21:17:54 +0000 2023",
@@ -8776,7 +8794,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1693009418974056590",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693009418974056590",
             "replies": [],
-            "score": 0.7
+            "score": 1.6,
+            "isAuthor": true
         },
         "1835750607782838683": {
             "created_at": "Mon Sep 16 18:40:26 +0000 2024",
@@ -8839,7 +8858,10 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1835750607782838683",
             "replies": [
                 "1835764432347005032"
-            ]
+            ],
+            "tweet_type": "Q&A",
+            "thread_score": 1,
+            "location": "Stabilizing large-batch training"
         },
         "1835764718343946345": {
             "created_at": "Mon Sep 16 19:36:30 +0000 2024",
@@ -9063,7 +9085,7 @@
                 "1797712684886171926",
                 "1797754416411619811"
             ],
-            "tweet_type": "Related Work",
+            "tweet_type": "Resource",
             "thread_score": 0.4,
             "location": "Related Work"
         },
@@ -10047,13 +10069,11 @@
             "url": "https://x.com/cyrilzakka/status/1692992881210888609",
             "like_url": "https://x.com/intent/like?tweet_id=1692992881210888609",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692992881210888609",
-            "replies": [
-                "1692992882888589636"
-            ],
+            "replies": [],
+            "in_thread": "1692992879554183382",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Results",
-            "in_thread": true
+            "location": "Conclusion"
         },
         "1692992882888589636": {
             "created_at": "Sat Aug 19 20:12:12 +0000 2023",
@@ -10106,10 +10126,10 @@
             "replies": [
                 "1693002054501810487"
             ],
+            "in_thread": "1692992879554183382",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Lij",
-            "in_thread": true
+            "location": "Lij"
         },
         "1640574354705764353": {
             "created_at": "Tue Mar 28 04:39:41 +0000 2023",
@@ -10160,8 +10180,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1640574354705764353",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1640574354705764353",
             "replies": [],
-            "score": 0.0,
-            "thread_score": 0.0
+            "score": 0.1,
+            "thread_score": 0.1
         },
         "1707327094982672666": {
             "created_at": "Thu Sep 28 09:31:14 +0000 2023",
@@ -10302,7 +10322,6 @@
             "like_url": "https://x.com/intent/like?tweet_id=1707327094982672666",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707327094982672666",
             "replies": [
-                "1707327099797667879",
                 "1707362009430298700",
                 "1707383268012638427",
                 "1707361786171691151",
@@ -10317,9 +10336,18 @@
                 "1707334842084368562",
                 "1707354016240300113"
             ],
+            "thread_posts": [
+                "1707327094982672666",
+                "1707327099797667879",
+                "1707327103253852396",
+                "1707327106143633771",
+                "1707327109306212810",
+                "1707327112523215274"
+            ],
             "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "Author"
+            "thread_score": 3,
+            "location": "Author",
+            "isAuthor": true
         },
         "1707327099797667879": {
             "created_at": "Thu Sep 28 09:31:15 +0000 2023",
@@ -10551,13 +10579,13 @@
             "like_url": "https://x.com/intent/like?tweet_id=1707327099797667879",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707327099797667879",
             "replies": [
-                "1707327103253852396",
                 "1707452590991241426"
             ],
+            "in_thread": "1707327094982672666",
             "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "Results",
-            "in_thread": true
+            "thread_score": 4,
+            "location": "Caption 1",
+            "isAuthor": true
         },
         "1707327103253852396": {
             "created_at": "Thu Sep 28 09:31:16 +0000 2023",
@@ -10712,13 +10740,12 @@
             "url": "https://x.com/giffmana/status/1707327103253852396",
             "like_url": "https://x.com/intent/like?tweet_id=1707327103253852396",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707327103253852396",
-            "replies": [
-                "1707327106143633771"
-            ],
+            "replies": [],
+            "in_thread": "1707327094982672666",
             "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "mSigLIP: Multi-lingual pre-training",
-            "in_thread": true
+            "thread_score": 4,
+            "location": "Results",
+            "isAuthor": true
         },
         "1707327106143633771": {
             "created_at": "Thu Sep 28 09:31:17 +0000 2023",
@@ -10873,13 +10900,12 @@
             "url": "https://x.com/giffmana/status/1707327106143633771",
             "like_url": "https://x.com/intent/like?tweet_id=1707327106143633771",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707327106143633771",
-            "replies": [
-                "1707327109306212810"
-            ],
+            "replies": [],
+            "in_thread": "1707327094982672666",
             "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "Sigmoid loss for language image pre-training",
-            "in_thread": true
+            "thread_score": 4,
+            "location": "SigLIP: Sigmoid loss is beneficial for language-image pre-training",
+            "isAuthor": true
         },
         "1707362009430298700": {
             "created_at": "Thu Sep 28 11:49:58 +0000 2023",
@@ -10919,7 +10945,7 @@
             "replies": [
                 "1707420666775883925"
             ],
-            "score": 0.2,
+            "score": 0.1,
             "thread_score": 0.1
         },
         "1707420666775883925": {
@@ -10983,7 +11009,8 @@
             "replies": [
                 "1707427752763162761"
             ],
-            "score": 0.1
+            "score": 1.1,
+            "isAuthor": true
         },
         "1707383268012638427": {
             "created_at": "Thu Sep 28 13:14:27 +0000 2023",
@@ -11025,8 +11052,8 @@
             ],
             "tweet_type": "Resource",
             "thread_score": 0.1,
-            "score": 0.2,
-            "location": "Abstract"
+            "score": 0.1,
+            "location": "Related Work"
         },
         "1707423090852978931": {
             "created_at": "Thu Sep 28 15:52:41 +0000 2023",
@@ -11087,7 +11114,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1707423090852978931",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707423090852978931",
             "replies": [],
-            "score": 0.1
+            "score": 1.1,
+            "isAuthor": true
         },
         "1707361786171691151": {
             "created_at": "Thu Sep 28 11:49:05 +0000 2023",
@@ -11140,10 +11168,8 @@
             "replies": [
                 "1707420409954500771"
             ],
-            "tweet_type": "Q&A",
-            "thread_score": 0.1,
-            "score": 0.1,
-            "location": "SigLIP: Sigmoid loss is beneficial for languageimage pre-training"
+            "score": 0.4,
+            "thread_score": 0.4
         },
         "1707420409954500771": {
             "created_at": "Thu Sep 28 15:42:02 +0000 2023",
@@ -11203,7 +11229,8 @@
             "url": "https://x.com/giffmana/status/1707420409954500771",
             "like_url": "https://x.com/intent/like?tweet_id=1707420409954500771",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707420409954500771",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1869491662453637425": {
             "created_at": "Wed Dec 18 21:15:20 +0000 2024",
@@ -11541,7 +11568,7 @@
                 "1814378784398995525",
                 "1809356357843181787"
             ],
-            "tweet_type": "Resource",
+            "tweet_type": "Related Work",
             "thread_score": 0.4,
             "location": "Related Work"
         },
@@ -12991,13 +13018,12 @@
             "url": "https://x.com/XiaohuaZhai/status/1707327112439321081",
             "like_url": "https://x.com/intent/like?tweet_id=1707327112439321081",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707327112439321081",
-            "replies": [
-                "1707327115245367550"
-            ],
+            "replies": [],
+            "in_thread": "1707327109331362008",
             "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "Abstract",
-            "in_thread": true
+            "thread_score": 4,
+            "location": null,
+            "isAuthor": true
         },
         "1707327115245367550": {
             "created_at": "Thu Sep 28 09:31:19 +0000 2023",
@@ -13129,13 +13155,12 @@
             "url": "https://x.com/XiaohuaZhai/status/1707327115245367550",
             "like_url": "https://x.com/intent/like?tweet_id=1707327115245367550",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707327115245367550",
-            "replies": [
-                "1707327117594149271"
-            ],
+            "replies": [],
+            "in_thread": "1707327109331362008",
             "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "Scaling up SigLIP and mSigLIP",
-            "in_thread": true
+            "thread_score": 4,
+            "location": "Related Work",
+            "isAuthor": true
         },
         "1707327117594149271": {
             "created_at": "Thu Sep 28 09:31:20 +0000 2023",
@@ -13295,13 +13320,12 @@
             "url": "https://x.com/XiaohuaZhai/status/1707327117594149271",
             "like_url": "https://x.com/intent/like?tweet_id=1707327117594149271",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707327117594149271",
-            "replies": [
-                "1707327120563749173"
-            ],
+            "replies": [],
+            "in_thread": "1707327109331362008",
             "tweet_type": "Overview",
-            "thread_score": 2,
+            "thread_score": 4,
             "location": "mSigLIP: Multi-lingual pre-training",
-            "in_thread": true
+            "isAuthor": true
         },
         "1707327120563749173": {
             "created_at": "Thu Sep 28 09:31:20 +0000 2023",
@@ -13434,13 +13458,13 @@
             "like_url": "https://x.com/intent/like?tweet_id=1707327120563749173",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707327120563749173",
             "replies": [
-                "1707327123315191894",
                 "1824076631889084550"
             ],
+            "in_thread": "1707327109331362008",
             "tweet_type": "Overview",
-            "thread_score": 2,
+            "thread_score": 4,
             "location": "mSigLIP: Multi-lingual pre-training",
-            "in_thread": true
+            "isAuthor": true
         },
         "1707327123315191894": {
             "created_at": "Thu Sep 28 09:31:21 +0000 2023",
@@ -13572,13 +13596,12 @@
             "url": "https://x.com/XiaohuaZhai/status/1707327123315191894",
             "like_url": "https://x.com/intent/like?tweet_id=1707327123315191894",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707327123315191894",
-            "replies": [
-                "1707327125642936335"
-            ],
+            "replies": [],
+            "in_thread": "1707327109331362008",
             "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "Scaling up SigLIP and mSigLIP",
-            "in_thread": true
+            "thread_score": 4,
+            "location": null,
+            "isAuthor": true
         },
         "1707327125642936335": {
             "created_at": "Thu Sep 28 09:31:22 +0000 2023",
@@ -13716,10 +13739,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1707327125642936335",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707327125642936335",
             "replies": [],
+            "in_thread": "1707327109331362008",
             "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "Author",
-            "in_thread": true
+            "thread_score": 4,
+            "location": "Abstract",
+            "isAuthor": true
         },
         "1858429282474684532": {
             "created_at": "Mon Nov 18 08:37:23 +0000 2024",
@@ -13781,11 +13805,7 @@
             "url": "https://x.com/mervenoyann/status/1858429282474684532",
             "like_url": "https://x.com/intent/like?tweet_id=1858429282474684532",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1858429282474684532",
-            "replies": [],
-            "tweet_type": "Resource",
-            "thread_score": 0.1,
-            "score": 0.0,
-            "location": "Related Work"
+            "replies": []
         },
         "1858435146329792807": {
             "created_at": "Mon Nov 18 09:00:41 +0000 2024",
@@ -14480,7 +14500,8 @@
                 "1864697899600498820",
                 "1864698504570130570",
                 "1864325108774437239"
-            ]
+            ],
+            "isAuthor": true
         },
         "1864175658579943644": {
             "created_at": "Wed Dec 04 05:11:26 +0000 2024",
@@ -14539,7 +14560,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864175658579943644",
             "replies": [
                 "1864188763603112031"
-            ]
+            ],
+            "isAuthor": true
         },
         "1864188763603112031": {
             "created_at": "Wed Dec 04 06:03:30 +0000 2024",
@@ -14632,7 +14654,8 @@
             "replies": [
                 "1864291767232635361",
                 "1864189897965236557"
-            ]
+            ],
+            "isAuthor": true
         },
         "1864192904652312602": {
             "created_at": "Wed Dec 04 06:19:58 +0000 2024",
@@ -15017,10 +15040,7 @@
                 "1665617646551724032",
                 "1665701398279847936",
                 "1665613017550057474"
-            ],
-            "tweet_type": "Perspective",
-            "thread_score": 0.6,
-            "location": "Method"
+            ]
         },
         "1665830475833790466": {
             "created_at": "Mon Jun 05 21:18:29 +0000 2023",
@@ -15072,11 +15092,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1665830475833790466",
             "replies": [
                 "1665835613428301826"
-            ],
-            "tweet_type": "Q&A",
-            "thread_score": 0.6,
-            "score": 0.6,
-            "location": "Sigmoid loss for language image pre-training"
+            ]
         },
         "1665835613428301826": {
             "created_at": "Mon Jun 05 21:38:54 +0000 2023",
@@ -15128,8 +15144,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1665835613428301826",
             "replies": [
                 "1666043209196208128"
-            ],
-            "score": 0.5
+            ]
         },
         "1665611781128036354": {
             "created_at": "Mon Jun 05 06:49:28 +0000 2023",
@@ -16925,13 +16940,11 @@
             "url": "https://x.com/Athekunal/status/1827565282711531718",
             "like_url": "https://x.com/intent/like?tweet_id=1827565282711531718",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1827565282711531718",
-            "replies": [
-                "1827565856303542660"
-            ],
+            "replies": [],
+            "in_thread": "1827564905127670238",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Method",
-            "in_thread": true
+            "location": "Introduction"
         },
         "1827565856303542660": {
             "created_at": "Sun Aug 25 04:37:09 +0000 2024",
@@ -16981,13 +16994,11 @@
             "url": "https://x.com/Athekunal/status/1827565856303542660",
             "like_url": "https://x.com/intent/like?tweet_id=1827565856303542660",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1827565856303542660",
-            "replies": [
-                "1827566317572125131"
-            ],
+            "replies": [],
+            "in_thread": "1827564905127670238",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Softmax loss for language image pre-training",
-            "in_thread": true
+            "location": "Softmax loss for language image pre-training"
         },
         "1827566317572125131": {
             "created_at": "Sun Aug 25 04:38:59 +0000 2024",
@@ -17038,13 +17049,12 @@
             "like_url": "https://x.com/intent/like?tweet_id=1827566317572125131",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1827566317572125131",
             "replies": [
-                "1827567012446662735",
                 "1827567724475629933"
             ],
+            "in_thread": "1827564905127670238",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Softmax loss for language image pre-training",
-            "in_thread": true
+            "location": "Method"
         },
         "1827567012446662735": {
             "created_at": "Sun Aug 25 04:41:44 +0000 2024",
@@ -17094,13 +17104,11 @@
             "url": "https://x.com/Athekunal/status/1827567012446662735",
             "like_url": "https://x.com/intent/like?tweet_id=1827567012446662735",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1827567012446662735",
-            "replies": [
-                "1827567480304193712"
-            ],
+            "replies": [],
+            "in_thread": "1827564905127670238",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Sigmoid loss for language image pre-training",
-            "in_thread": true
+            "location": "Sigmoid loss for language image pre-training"
         },
         "1827567480304193712": {
             "created_at": "Sun Aug 25 04:43:36 +0000 2024",
@@ -17150,13 +17158,11 @@
             "url": "https://x.com/Athekunal/status/1827567480304193712",
             "like_url": "https://x.com/intent/like?tweet_id=1827567480304193712",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1827567480304193712",
-            "replies": [
-                "1827567868080484464"
-            ],
+            "replies": [],
+            "in_thread": "1827564905127670238",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Sigmoid loss for language image pre-training",
-            "in_thread": true
+            "location": "Lij"
         },
         "1827567868080484464": {
             "created_at": "Sun Aug 25 04:45:08 +0000 2024",
@@ -17206,13 +17212,11 @@
             "url": "https://x.com/Athekunal/status/1827567868080484464",
             "like_url": "https://x.com/intent/like?tweet_id=1827567868080484464",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1827567868080484464",
-            "replies": [
-                "1827568167989792978"
-            ],
+            "replies": [],
+            "in_thread": "1827564905127670238",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "SigLIP: Sigmoid loss is beneficial for languageimage pre-training",
-            "in_thread": true
+            "location": "Efficient \"chunked\" implementation"
         },
         "1827568167989792978": {
             "created_at": "Sun Aug 25 04:46:20 +0000 2024",
@@ -17262,13 +17266,11 @@
             "url": "https://x.com/Athekunal/status/1827568167989792978",
             "like_url": "https://x.com/intent/like?tweet_id=1827568167989792978",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1827568167989792978",
-            "replies": [
-                "1827570905704493118"
-            ],
+            "replies": [],
+            "in_thread": "1827564905127670238",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Results",
-            "in_thread": true
+            "location": "Results"
         },
         "1827570905704493118": {
             "created_at": "Sun Aug 25 04:57:13 +0000 2024",
@@ -17318,13 +17320,11 @@
             "url": "https://x.com/Athekunal/status/1827570905704493118",
             "like_url": "https://x.com/intent/like?tweet_id=1827570905704493118",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1827570905704493118",
-            "replies": [
-                "1827571802157281361"
-            ],
+            "replies": [],
+            "in_thread": "1827564905127670238",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Results",
-            "in_thread": true
+            "location": "SigLiT: Scaling batch size to the limit"
         },
         "1827571802157281361": {
             "created_at": "Sun Aug 25 05:00:46 +0000 2024",
@@ -17374,13 +17374,11 @@
             "url": "https://x.com/Athekunal/status/1827571802157281361",
             "like_url": "https://x.com/intent/like?tweet_id=1827571802157281361",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1827571802157281361",
-            "replies": [
-                "1827572051533840822"
-            ],
+            "replies": [],
+            "in_thread": "1827564905127670238",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Lij",
-            "in_thread": true
+            "location": "SigLIP: Sigmoid loss is beneficial for languageimage pre-training"
         },
         "1827572051533840822": {
             "created_at": "Sun Aug 25 05:01:46 +0000 2024",
@@ -17431,10 +17429,10 @@
             "like_url": "https://x.com/intent/like?tweet_id=1827572051533840822",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1827572051533840822",
             "replies": [],
+            "in_thread": "1827564905127670238",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Lij",
-            "in_thread": true
+            "location": "mSigLIP: Multi-lingual pre-training"
         },
         "1717375881650573630": {
             "created_at": "Thu Oct 26 03:01:32 +0000 2023",
@@ -17863,10 +17861,7 @@
             "replies": [
                 "1666771257914974209",
                 "1666771778839154688"
-            ],
-            "tweet_type": "Resource",
-            "thread_score": 0.4,
-            "location": "Related Work"
+            ]
         },
         "1666771257914974209": {
             "created_at": "Thu Jun 08 11:36:49 +0000 2023",
@@ -18822,12 +18817,20 @@
             "url": "https://x.com/borisdayma/status/1663269502971199511",
             "like_url": "https://x.com/intent/like?tweet_id=1663269502971199511",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1663269502971199511",
-            "replies": [
-                "1663269504569229338"
+            "replies": [],
+            "thread_posts": [
+                "1663269502971199511",
+                "1663269504569229338",
+                "1663269506289135616",
+                "1663269507677208581",
+                "1663269509535285262",
+                "1663269511015874563",
+                "1663269512177696777",
+                "1663269514211913728"
             ],
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Author"
+            "location": "Abstract"
         },
         "1663269504569229338": {
             "created_at": "Mon May 29 19:42:06 +0000 2023",
@@ -18877,13 +18880,11 @@
             "url": "https://x.com/borisdayma/status/1663269504569229338",
             "like_url": "https://x.com/intent/like?tweet_id=1663269504569229338",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1663269504569229338",
-            "replies": [
-                "1663269506289135616"
-            ],
+            "replies": [],
+            "in_thread": "1663269502971199511",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Efficient \"chunked\" implementation",
-            "in_thread": true
+            "location": null
         },
         "1663269507677208581": {
             "created_at": "Mon May 29 19:42:07 +0000 2023",
@@ -19028,13 +19029,11 @@
             "url": "https://x.com/borisdayma/status/1663269507677208581",
             "like_url": "https://x.com/intent/like?tweet_id=1663269507677208581",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1663269507677208581",
-            "replies": [
-                "1663269509535285262"
-            ],
+            "replies": [],
+            "in_thread": "1663269502971199511",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Efficient \"chunked\" implementation",
-            "in_thread": true
+            "location": "Efficient \"chunked\" implementation"
         },
         "1663269509535285262": {
             "created_at": "Mon May 29 19:42:07 +0000 2023",
@@ -19207,13 +19206,11 @@
             "url": "https://x.com/borisdayma/status/1663269509535285262",
             "like_url": "https://x.com/intent/like?tweet_id=1663269509535285262",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1663269509535285262",
-            "replies": [
-                "1663269511015874563"
-            ],
+            "replies": [],
+            "in_thread": "1663269502971199511",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Efficient \"chunked\" implementation",
-            "in_thread": true
+            "location": "Efficient \"chunked\" implementation"
         },
         "1663269511015874563": {
             "created_at": "Mon May 29 19:42:08 +0000 2023",
@@ -19263,13 +19260,11 @@
             "url": "https://x.com/borisdayma/status/1663269511015874563",
             "like_url": "https://x.com/intent/like?tweet_id=1663269511015874563",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1663269511015874563",
-            "replies": [
-                "1663269512177696777"
-            ],
+            "replies": [],
+            "in_thread": "1663269502971199511",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Conclusion",
-            "in_thread": true
+            "location": "Method"
         },
         "1663269512177696777": {
             "created_at": "Mon May 29 19:42:08 +0000 2023",
@@ -19339,13 +19334,11 @@
             "url": "https://x.com/borisdayma/status/1663269512177696777",
             "like_url": "https://x.com/intent/like?tweet_id=1663269512177696777",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1663269512177696777",
-            "replies": [
-                "1663269514211913728"
-            ],
+            "replies": [],
+            "in_thread": "1663269502971199511",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Results",
-            "in_thread": true
+            "location": null
         },
         "1663269514211913728": {
             "created_at": "Mon May 29 19:42:08 +0000 2023",
@@ -19398,10 +19391,10 @@
             "replies": [
                 "1663403086164144128"
             ],
+            "in_thread": "1663269502971199511",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Conclusion",
-            "in_thread": true
+            "location": null
         },
         "1704151772095226082": {
             "created_at": "Tue Sep 19 15:13:38 +0000 2023",
@@ -19496,10 +19489,9 @@
             "replies": [
                 "1704152222479663390"
             ],
-            "tweet_type": "Resource",
-            "thread_score": 0.4,
-            "score": 0.2,
-            "location": "Related Work"
+            "tweet_type": "Perspective",
+            "thread_score": 0.6,
+            "location": "Abstract"
         },
         "1693626952496640202": {
             "created_at": "Mon Aug 21 14:11:46 +0000 2023",
@@ -21405,8 +21397,8 @@
             "replies": [
                 "1693006249946648612"
             ],
-            "score": 0.05,
-            "thread_score": 0.1
+            "score": 0.2,
+            "thread_score": 0.2
         },
         "1693006249946648612": {
             "created_at": "Sat Aug 19 21:05:19 +0000 2023",
@@ -21489,7 +21481,8 @@
             "replies": [
                 "1693231162158911655"
             ],
-            "score": 0.2
+            "score": 1.3,
+            "isAuthor": true
         },
         "1692678733042249873": {
             "created_at": "Fri Aug 18 23:23:53 +0000 2023",
@@ -21609,7 +21602,8 @@
                 "1692877910166638826",
                 "1692961520769007696"
             ],
-            "score": 0.8
+            "score": 1.7,
+            "isAuthor": true
         },
         "1692733765963944155": {
             "created_at": "Sat Aug 19 03:02:33 +0000 2023",
@@ -21664,8 +21658,8 @@
                 "1692954371145765020"
             ],
             "tweet_type": "Q&A",
-            "thread_score": 0.7,
-            "score": 0.6,
+            "thread_score": 0.4,
+            "score": 0.4,
             "location": "Method"
         },
         "1692812263248245017": {
@@ -21730,7 +21724,8 @@
                 "1692925202357797156",
                 "1803951586693325157"
             ],
-            "score": 0.7
+            "score": 1.4,
+            "isAuthor": true
         },
         "1692666398340776378": {
             "created_at": "Fri Aug 18 22:34:52 +0000 2023",
@@ -21783,8 +21778,8 @@
             "replies": [
                 "1692800459499516364"
             ],
-            "score": 0.05,
-            "thread_score": 0.05
+            "score": 0.1,
+            "thread_score": 0.1
         },
         "1692800459499516364": {
             "created_at": "Sat Aug 19 07:27:34 +0000 2023",
@@ -21845,7 +21840,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1692800459499516364",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692800459499516364",
             "replies": [],
-            "score": 0.05
+            "score": 1.1,
+            "isAuthor": true
         },
         "1692749993680011531": {
             "created_at": "Sat Aug 19 04:07:02 +0000 2023",
@@ -21898,8 +21894,8 @@
             "replies": [
                 "1692812600617173085"
             ],
-            "score": 0.0,
-            "thread_score": 0.0
+            "score": 0.1,
+            "thread_score": 0.1
         },
         "1692812600617173085": {
             "created_at": "Sat Aug 19 08:15:49 +0000 2023",
@@ -21960,7 +21956,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1692812600617173085",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692812600617173085",
             "replies": [],
-            "score": 0.0
+            "score": 1.1,
+            "isAuthor": true
         },
         "1802631980367925467": {
             "created_at": "Mon Jun 17 09:18:50 +0000 2024",
@@ -22110,7 +22107,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1797676615583039667",
             "replies": [
                 "1797678844432019693"
-            ]
+            ],
+            "isAuthor": true
         },
         "1797678844432019693": {
             "created_at": "Mon Jun 03 17:16:50 +0000 2024",
@@ -22503,8 +22501,9 @@
             "replies": [
                 "1693005052129292312"
             ],
-            "score": 0.3,
-            "thread_score": 0.2
+            "score": 1.1,
+            "thread_score": 1.1,
+            "isAuthor": true
         },
         "1693005052129292312": {
             "created_at": "Sat Aug 19 21:00:33 +0000 2023",
@@ -22555,7 +22554,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1693005052129292312",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693005052129292312",
             "replies": [],
-            "score": 0.0
+            "score": 0.1
         },
         "1707674195721945092": {
             "created_at": "Fri Sep 29 08:30:29 +0000 2023",
@@ -22607,7 +22606,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707674195721945092",
             "replies": [],
             "score": 0.1,
-            "thread_score": 0.0
+            "thread_score": 0.1
         },
         "1707510910544429568": {
             "created_at": "Thu Sep 28 21:41:39 +0000 2023",
@@ -22729,7 +22728,7 @@
                 "1707415759683821834"
             ],
             "score": 0.1,
-            "thread_score": 0.05
+            "thread_score": 0.1
         },
         "1707678560901546118": {
             "created_at": "Fri Sep 29 08:47:50 +0000 2023",
@@ -22767,8 +22766,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1707678560901546118",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707678560901546118",
             "replies": [],
-            "score": 0.0,
-            "thread_score": 0.0
+            "score": 0.1,
+            "thread_score": 0.1
         },
         "1707684017959555447": {
             "created_at": "Fri Sep 29 09:09:31 +0000 2023",
@@ -22829,8 +22828,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1707684017959555447",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707684017959555447",
             "replies": [],
-            "score": 0.05,
-            "thread_score": 0.0
+            "score": 0.1,
+            "thread_score": 0.1
         },
         "1707363888545796110": {
             "created_at": "Thu Sep 28 11:57:26 +0000 2023",
@@ -22928,8 +22927,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1707366150298841274",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707366150298841274",
             "replies": [],
-            "score": 0.05,
-            "thread_score": 0.05
+            "score": 0.1,
+            "thread_score": 0.1
         },
         "1707342636388872424": {
             "created_at": "Thu Sep 28 10:33:00 +0000 2023",
@@ -22967,8 +22966,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1707342636388872424",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707342636388872424",
             "replies": [],
-            "score": 0.05,
-            "thread_score": 0.05
+            "score": 0.1,
+            "thread_score": 0.1
         },
         "1707334842084368562": {
             "created_at": "Thu Sep 28 10:02:01 +0000 2023",
@@ -23006,10 +23005,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1707334842084368562",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707334842084368562",
             "replies": [],
-            "tweet_type": "Perspective",
-            "thread_score": 0.1,
-            "score": 0.15,
-            "location": null
+            "score": 0.2,
+            "thread_score": 0.2
         },
         "1707354016240300113": {
             "created_at": "Thu Sep 28 11:18:13 +0000 2023",
@@ -23060,7 +23057,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1707354016240300113",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707354016240300113",
             "replies": [],
-            "score": 0.05,
+            "score": 0.1,
             "thread_score": 0.1
         },
         "1869493373582852140": {
@@ -23459,9 +23456,9 @@
                 "1824190045819130321"
             ],
             "tweet_type": "Q&A",
-            "thread_score": 0.7,
-            "score": 0.7,
-            "location": "Results"
+            "thread_score": 0.6,
+            "score": 0.5,
+            "location": null
         },
         "1824190045819130321": {
             "created_at": "Thu Aug 15 21:02:53 +0000 2024",
@@ -23501,7 +23498,8 @@
             "replies": [
                 "1824201391084360040"
             ],
-            "score": 0.8
+            "score": 1.7,
+            "isAuthor": true
         },
         "1858536368814616917": {
             "created_at": "Mon Nov 18 15:42:54 +0000 2024",
@@ -24719,7 +24717,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1789685429090021779",
             "replies": [
                 "1789694329260577099"
-            ]
+            ],
+            "isAuthor": true
         },
         "1789694329260577099": {
             "created_at": "Sun May 12 16:29:13 +0000 2024",
@@ -25422,8 +25421,8 @@
                 "1827569673287954630"
             ],
             "tweet_type": "Q&A",
-            "thread_score": 0.7,
-            "score": 0.6,
+            "thread_score": 0.4,
+            "score": 0.4,
             "location": "Caption 1"
         },
         "1827569673287954630": {
@@ -25477,7 +25476,7 @@
             "replies": [
                 "1827570199098487067"
             ],
-            "score": 0.7
+            "score": 0.4
         },
         "1667012305014472706": {
             "created_at": "Fri Jun 09 03:34:39 +0000 2023",
@@ -25554,10 +25553,8 @@
             "replies": [
                 "1663556641906905089"
             ],
-            "tweet_type": "Q&A",
-            "thread_score": 0.4,
-            "score": 0.5,
-            "location": "Efficient \"chunked\" implementation"
+            "score": 0.3,
+            "thread_score": 0.3
         },
         "1663556641906905089": {
             "created_at": "Tue May 30 14:43:05 +0000 2023",
@@ -25610,7 +25607,7 @@
             "replies": [
                 "1663629152531144705"
             ],
-            "score": 0.6
+            "score": 0.3
         },
         "1663403086164144128": {
             "created_at": "Tue May 30 04:32:54 +0000 2023",
@@ -25661,10 +25658,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1663403086164144128",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1663403086164144128",
             "replies": [],
-            "tweet_type": "Q&A",
-            "thread_score": 0.1,
-            "score": 0.1,
-            "location": "Results"
+            "score": 0.2,
+            "thread_score": 0.2
         },
         "1881153954228375554": {
             "created_at": "Mon Jan 20 01:37:07 +0000 2025",
@@ -26124,8 +26119,8 @@
             ],
             "tweet_type": "Q&A",
             "thread_score": 0.6,
-            "score": 0.3,
-            "location": "Bias term in sigmoid loss"
+            "score": 0.6,
+            "location": "Method"
         },
         "1692647428770484279": {
             "created_at": "Fri Aug 18 21:19:29 +0000 2023",
@@ -26209,7 +26204,8 @@
             "replies": [
                 "1693322291508334877"
             ],
-            "score": 0.8
+            "score": 1.7,
+            "isAuthor": true
         },
         "1695131625187573908": {
             "created_at": "Fri Aug 25 17:50:48 +0000 2023",
@@ -26356,9 +26352,9 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1695131625187573908",
             "replies": [],
             "tweet_type": "Q&A",
-            "thread_score": 0.1,
-            "score": 0.1,
-            "location": "Caption 6"
+            "thread_score": 0.4,
+            "score": 0.4,
+            "location": "Caption 2"
         },
         "1696708871342141668": {
             "created_at": "Wed Aug 30 02:18:12 +0000 2023",
@@ -26411,7 +26407,7 @@
             "replies": [],
             "tweet_type": "Q&A",
             "thread_score": 0.4,
-            "score": 0.5,
+            "score": 0.4,
             "location": "Method"
         },
         "1692959853260554572": {
@@ -26451,7 +26447,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692959853260554572",
             "replies": [],
             "score": 0.1,
-            "thread_score": 0.3
+            "thread_score": 0.1
         },
         "1692825594428314001": {
             "created_at": "Sat Aug 19 09:07:27 +0000 2023",
@@ -26542,9 +26538,9 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692730202604896657",
             "replies": [],
             "tweet_type": "Critique",
-            "thread_score": 0.7,
-            "score": 0.7,
-            "location": "SigLiT: Scaling batch size to the limit"
+            "thread_score": 0.5,
+            "score": 0.5,
+            "location": "Caption 1"
         },
         "1693164876506837237": {
             "created_at": "Sun Aug 20 07:35:38 +0000 2023",
@@ -26583,9 +26579,9 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693164876506837237",
             "replies": [],
             "tweet_type": "Q&A",
-            "thread_score": 0.2,
-            "score": 0.2,
-            "location": "Sigmoid loss for language image pre-training"
+            "thread_score": 0.6,
+            "score": 0.7,
+            "location": null
         },
         "1693250818512695484": {
             "created_at": "Sun Aug 20 13:17:08 +0000 2023",
@@ -26636,8 +26632,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1693250818512695484",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693250818512695484",
             "replies": [],
-            "score": 0.0,
-            "thread_score": 0.0
+            "score": 0.1,
+            "thread_score": 0.1
         },
         "1692813024363512135": {
             "created_at": "Sat Aug 19 08:17:30 +0000 2023",
@@ -26690,8 +26686,8 @@
                 "1692838852673568876"
             ],
             "tweet_type": "Related Work",
-            "thread_score": 0.1,
-            "score": 0.2,
+            "thread_score": 0.2,
+            "score": 0.4,
             "location": "Related Work"
         },
         "1797693091954201065": {
@@ -26861,10 +26857,8 @@
                 "1707452667386331360",
                 "1707743729736405174"
             ],
-            "tweet_type": "Resource",
-            "thread_score": 0.7,
-            "score": 0.7,
-            "location": "Related Work"
+            "score": 0.8,
+            "thread_score": 0.7
         },
         "1707529118051447051": {
             "created_at": "Thu Sep 28 22:54:00 +0000 2023",
@@ -26925,7 +26919,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1707529118051447051",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707529118051447051",
             "replies": [],
-            "score": 0.7
+            "score": 1.6,
+            "isAuthor": true
         },
         "1707670949896527896": {
             "created_at": "Fri Sep 29 08:17:36 +0000 2023",
@@ -26985,9 +26980,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1707670949896527896",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707670949896527896",
             "replies": [],
-            "tweet_type": "Resource",
-            "thread_score": 0.4,
-            "location": "Efficient \"chunked\" implementation"
+            "isAuthor": true
         },
         "1707789910537650358": {
             "created_at": "Fri Sep 29 16:10:18 +0000 2023",
@@ -27037,10 +27030,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1707789910537650358",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707789910537650358",
             "replies": [],
-            "tweet_type": "Resource",
-            "thread_score": 0.0,
             "score": 0.0,
-            "location": "Related Work"
+            "thread_score": 0.0
         },
         "1707427752763162761": {
             "created_at": "Thu Sep 28 16:11:13 +0000 2023",
@@ -27129,7 +27120,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1707415759683821834",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707415759683821834",
             "replies": [],
-            "score": 0.01
+            "score": 0.0
         },
         "1869494850242093467": {
             "created_at": "Wed Dec 18 21:28:00 +0000 2024",
@@ -28714,7 +28705,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1827570199098487067",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1827570199098487067",
             "replies": [],
-            "score": 0.8
+            "score": 0.4
         },
         "1663629152531144705": {
             "created_at": "Tue May 30 19:31:13 +0000 2023",
@@ -29105,8 +29096,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693333547149668574",
             "replies": [],
             "tweet_type": "Q&A",
-            "thread_score": 0.3,
-            "score": 0.2,
+            "thread_score": 0.6,
+            "score": 0.6,
             "location": "Results"
         },
         "1692860613175996505": {
@@ -29145,7 +29136,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1692860613175996505",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692860613175996505",
             "replies": [],
-            "score": 0.0,
+            "score": 0.1,
             "thread_score": 0.1
         },
         "1693177540817392115": {
@@ -29234,9 +29225,9 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693283249001230679",
             "replies": [],
             "tweet_type": "Q&A",
-            "thread_score": 0.2,
-            "score": 0.55,
-            "location": "Bias term in sigmoid loss"
+            "thread_score": 0.3,
+            "score": 0.4,
+            "location": "Lij"
         },
         "1693121240679215287": {
             "created_at": "Sun Aug 20 04:42:15 +0000 2023",
@@ -29289,7 +29280,7 @@
             "replies": [],
             "tweet_type": "Q&A",
             "thread_score": 0.6,
-            "score": 0.6,
+            "score": 0.7,
             "location": "Method"
         },
         "1693143785574908147": {
@@ -29341,8 +29332,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1693143785574908147",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693143785574908147",
             "replies": [],
-            "score": 0.0,
-            "thread_score": 0.3
+            "score": 0.1,
+            "thread_score": 0.1
         },
         "1694060591034384525": {
             "created_at": "Tue Aug 22 18:54:53 +0000 2023",
@@ -29382,8 +29373,8 @@
             "replies": [
                 "1694255766897647767"
             ],
-            "score": 0.0,
-            "thread_score": 0.0
+            "score": 0.1,
+            "thread_score": 0.1
         },
         "1692812898207187401": {
             "created_at": "Sat Aug 19 08:17:00 +0000 2023",
@@ -29443,9 +29434,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1692812898207187401",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692812898207187401",
             "replies": [],
-            "tweet_type": "Related Work",
-            "thread_score": 0.4,
-            "location": "Related Work"
+            "isAuthor": true
         },
         "1707452667386331360": {
             "created_at": "Thu Sep 28 17:50:13 +0000 2023",
@@ -29547,10 +29536,9 @@
             "replies": [
                 "1707768149041619374"
             ],
-            "tweet_type": "Q&A",
-            "thread_score": 0.2,
-            "score": 0.3,
-            "location": "Results"
+            "score": 1.2,
+            "thread_score": 1.2,
+            "isAuthor": true
         },
         "1707768149041619374": {
             "created_at": "Fri Sep 29 14:43:50 +0000 2023",
@@ -30441,7 +30429,7 @@
             ],
             "tweet_type": "Q&A",
             "thread_score": 0.7,
-            "score": 0.6,
+            "score": 0.7,
             "location": "Method"
         },
         "1693005123725742421": {
@@ -30507,7 +30495,8 @@
                 "1693084749219147880",
                 "1693026158604894685"
             ],
-            "score": 0.8
+            "score": 1.7,
+            "isAuthor": true
         },
         "1692926798365954215": {
             "created_at": "Sat Aug 19 15:49:36 +0000 2023",
@@ -30560,10 +30549,10 @@
             "replies": [
                 "1693007656007467413"
             ],
-            "tweet_type": "Related Work",
+            "tweet_type": "Q&A",
             "thread_score": 0.3,
             "score": 0.4,
-            "location": "Related Work"
+            "location": null
         },
         "1693007656007467413": {
             "created_at": "Sat Aug 19 21:10:54 +0000 2023",
@@ -30624,7 +30613,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1693007656007467413",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693007656007467413",
             "replies": [],
-            "score": 0.2
+            "score": 1.2,
+            "isAuthor": true
         },
         "1881156743927112043": {
             "created_at": "Mon Jan 20 01:48:12 +0000 2025",
@@ -30895,9 +30885,9 @@
                 "1693010320476790831"
             ],
             "tweet_type": "Q&A",
-            "thread_score": 0.3,
-            "score": 0.3,
-            "location": "SigLIP: Sigmoid loss is beneficial for languageimage pre-training"
+            "thread_score": 0.2,
+            "score": 0.2,
+            "location": "Caption 1"
         },
         "1693010320476790831": {
             "created_at": "Sat Aug 19 21:21:29 +0000 2023",
@@ -30962,7 +30952,8 @@
             "url": "https://x.com/giffmana/status/1693010320476790831",
             "like_url": "https://x.com/intent/like?tweet_id=1693010320476790831",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693010320476790831",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1693301205886480733": {
             "created_at": "Sun Aug 20 16:37:22 +0000 2023",
@@ -31016,7 +31007,7 @@
             "tweet_type": "Q&A",
             "thread_score": 0.6,
             "score": 0.6,
-            "location": "Caption 1"
+            "location": "Efficient \"chunked\" implementation"
         },
         "1693012495852515550": {
             "created_at": "Sat Aug 19 21:30:08 +0000 2023",
@@ -31089,9 +31080,9 @@
                 "1693016271921524965"
             ],
             "tweet_type": "Q&A",
-            "thread_score": 0.2,
+            "thread_score": 0.3,
             "score": 0.4,
-            "location": "Results"
+            "location": null
         },
         "1693016271921524965": {
             "created_at": "Sat Aug 19 21:45:08 +0000 2023",
@@ -31153,7 +31144,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1693016271921524965",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693016271921524965",
             "replies": [],
-            "score": 0.1
+            "score": 1.1,
+            "isAuthor": true
         },
         "1692674120310296765": {
             "created_at": "Fri Aug 18 23:05:33 +0000 2023",
@@ -31208,8 +31200,8 @@
             ],
             "tweet_type": "Q&A",
             "thread_score": 0.7,
-            "score": 0.6,
-            "location": "Efficient \"chunked\" implementation"
+            "score": 0.7,
+            "location": "Method"
         },
         "1692801455114031398": {
             "created_at": "Sat Aug 19 07:31:32 +0000 2023",
@@ -31270,7 +31262,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1692801455114031398",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692801455114031398",
             "replies": [],
-            "score": 0.8
+            "score": 1.7,
+            "isAuthor": true
         },
         "1708404728990765178": {
             "created_at": "Sun Oct 01 08:53:22 +0000 2023",
@@ -31344,9 +31337,9 @@
                 "1708611235611066791"
             ],
             "tweet_type": "Critique",
-            "thread_score": 0.7,
-            "score": 0.75,
-            "location": "Results"
+            "thread_score": 0.6,
+            "score": 0.6,
+            "location": null
         },
         "1708611235611066791": {
             "created_at": "Sun Oct 01 22:33:57 +0000 2023",
@@ -31407,7 +31400,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1708611235611066791",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1708611235611066791",
             "replies": [],
-            "score": 0.7
+            "score": 1.6,
+            "isAuthor": true
         },
         "1708405650412261559": {
             "created_at": "Sun Oct 01 08:57:02 +0000 2023",
@@ -31458,8 +31452,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1708405650412261559",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1708405650412261559",
             "replies": [],
-            "score": 0.3,
-            "thread_score": 0.3
+            "score": 0.4,
+            "thread_score": 0.4
         },
         "1708405787482063173": {
             "created_at": "Sun Oct 01 08:57:35 +0000 2023",
@@ -31530,10 +31524,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1708405787482063173",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1708405787482063173",
             "replies": [],
-            "tweet_type": "Resource",
-            "thread_score": 0.7,
-            "score": 0.7,
-            "location": "Related Work"
+            "score": 0.2,
+            "thread_score": 0.2
         },
         "1692981956739530962": {
             "created_at": "Sat Aug 19 19:28:47 +0000 2023",
@@ -31586,10 +31578,8 @@
             "replies": [
                 "1693002486615826457"
             ],
-            "tweet_type": "Q&A",
-            "thread_score": 0.2,
-            "score": 0.4,
-            "location": "Conclusion"
+            "score": 0.2,
+            "thread_score": 0.2
         },
         "1693002486615826457": {
             "created_at": "Sat Aug 19 20:50:21 +0000 2023",
@@ -31652,7 +31642,8 @@
             "replies": [
                 "1800176697721143322"
             ],
-            "score": 0.3
+            "score": 1.2,
+            "isAuthor": true
         },
         "1693231162158911655": {
             "created_at": "Sun Aug 20 11:59:02 +0000 2023",
@@ -31690,7 +31681,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1693231162158911655",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693231162158911655",
             "replies": [],
-            "score": 0.05
+            "score": 0.1
         },
         "1692729153064194467": {
             "created_at": "Sat Aug 19 02:44:14 +0000 2023",
@@ -31754,9 +31745,9 @@
                 "1692803516778119440"
             ],
             "tweet_type": "Q&A",
-            "thread_score": 0.1,
+            "thread_score": 0.2,
             "score": 0.2,
-            "location": "Results"
+            "location": null
         },
         "1692803516778119440": {
             "created_at": "Sat Aug 19 07:39:43 +0000 2023",
@@ -31817,7 +31808,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1692803516778119440",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692803516778119440",
             "replies": [],
-            "score": 0.05
+            "score": 1.2,
+            "isAuthor": true
         },
         "1692711990425256316": {
             "created_at": "Sat Aug 19 01:36:02 +0000 2023",
@@ -31890,10 +31882,10 @@
             "replies": [
                 "1692802718581002396"
             ],
-            "score": 0.1,
-            "thread_score": 0.1,
             "tweet_type": "Resource",
-            "location": "Related Work"
+            "thread_score": 0.1,
+            "score": 0.1,
+            "location": null
         },
         "1692802718581002396": {
             "created_at": "Sat Aug 19 07:36:33 +0000 2023",
@@ -31954,7 +31946,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1692802718581002396",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692802718581002396",
             "replies": [],
-            "score": 0.1
+            "score": 1.1,
+            "isAuthor": true
         },
         "1694233509227856373": {
             "created_at": "Wed Aug 23 06:22:00 +0000 2023",
@@ -32123,7 +32116,8 @@
             "replies": [
                 "1693012090955391117"
             ],
-            "score": 0.8
+            "score": 1.7,
+            "isAuthor": true
         },
         "1692961520769007696": {
             "created_at": "Sat Aug 19 18:07:34 +0000 2023",
@@ -32177,9 +32171,9 @@
                 "1693003046790242595"
             ],
             "tweet_type": "Q&A",
-            "thread_score": 0.4,
+            "thread_score": 0.6,
             "score": 0.6,
-            "location": "Results"
+            "location": null
         },
         "1693003046790242595": {
             "created_at": "Sat Aug 19 20:52:35 +0000 2023",
@@ -32242,7 +32236,8 @@
             "replies": [
                 "1693015258288316687"
             ],
-            "score": 0.5
+            "score": 1.6,
+            "isAuthor": true
         },
         "1692925202357797156": {
             "created_at": "Sat Aug 19 15:43:15 +0000 2023",
@@ -32313,7 +32308,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1692925202357797156",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692925202357797156",
             "replies": [],
-            "score": 0.8
+            "score": 0.4
         },
         "1692954371145765020": {
             "created_at": "Sat Aug 19 17:39:10 +0000 2023",
@@ -32373,10 +32368,8 @@
             "replies": [
                 "1693679147933982815"
             ],
-            "tweet_type": "Related Work",
-            "thread_score": 0.7,
-            "score": 0.75,
-            "location": "Related Work"
+            "score": 0.1,
+            "thread_score": 0.1
         },
         "1693679147933982815": {
             "created_at": "Mon Aug 21 17:39:10 +0000 2023",
@@ -32427,7 +32420,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1693679147933982815",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693679147933982815",
             "replies": [],
-            "score": 0.65
+            "score": 0.1
         },
         "1803951586693325157": {
             "created_at": "Fri Jun 21 00:42:28 +0000 2024",
@@ -32469,8 +32462,8 @@
             ],
             "tweet_type": "Perspective",
             "thread_score": 0.4,
-            "score": 0.6,
-            "location": "Conclusion"
+            "score": 0.4,
+            "location": "Abstract"
         },
         "1804032451876102619": {
             "created_at": "Fri Jun 21 06:03:48 +0000 2024",
@@ -32531,7 +32524,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1804032451876102619",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1804032451876102619",
             "replies": [],
-            "score": 0.1
+            "score": 1.1,
+            "isAuthor": true
         },
         "1693322291508334877": {
             "created_at": "Sun Aug 20 18:01:09 +0000 2023",
@@ -32835,7 +32829,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1694255766897647767",
             "replies": [
                 "1694256616927867048"
-            ]
+            ],
+            "isAuthor": true
         },
         "1694256616927867048": {
             "created_at": "Wed Aug 23 07:53:49 +0000 2023",
@@ -33636,10 +33631,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1693279126143037916",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693279126143037916",
             "replies": [],
-            "tweet_type": "Q&A",
-            "thread_score": 0.2,
             "score": 0.2,
-            "location": "Method"
+            "thread_score": 0.2
         },
         "1693008024208548201": {
             "created_at": "Sat Aug 19 21:12:22 +0000 2023",
@@ -33700,9 +33693,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1693008024208548201",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693008024208548201",
             "replies": [],
-            "tweet_type": "Related Work",
-            "thread_score": 0.4,
-            "location": "Related Work"
+            "isAuthor": true
         },
         "1881157936053174696": {
             "created_at": "Mon Jan 20 01:52:56 +0000 2025",
@@ -34167,7 +34158,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1800176697721143322",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1800176697721143322",
             "replies": [],
-            "score": 0.0
+            "score": 0.1
         },
         "1694233945062134116": {
             "created_at": "Wed Aug 23 06:23:44 +0000 2023",
@@ -34283,7 +34274,7 @@
             "replies": [
                 "1693016118036754499"
             ],
-            "score": 0.5
+            "score": 0.2
         },
         "1693016118036754499": {
             "created_at": "Sat Aug 19 21:44:31 +0000 2023",
@@ -34346,7 +34337,8 @@
             "replies": [
                 "1693017972028129323"
             ],
-            "score": 0.6
+            "score": 1.2,
+            "isAuthor": true
         },
         "1693015258288316687": {
             "created_at": "Sat Aug 19 21:41:06 +0000 2023",
@@ -34462,7 +34454,8 @@
             "replies": [
                 "1693017282652352857"
             ],
-            "score": 0.4
+            "score": 1.6,
+            "isAuthor": true
         },
         "1692879776761930042": {
             "created_at": "Sat Aug 19 12:42:45 +0000 2023",
@@ -34577,7 +34570,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1693006563349303699",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693006563349303699",
             "replies": [],
-            "score": 0.0
+            "score": 1.1,
+            "isAuthor": true
         },
         "1665844768826335232": {
             "created_at": "Mon Jun 05 22:15:17 +0000 2023",
@@ -35246,7 +35240,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1693006635797766478",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693006635797766478",
             "replies": [],
-            "score": 0.3
+            "score": 0.6
         },
         "1693084749219147880": {
             "created_at": "Sun Aug 20 02:17:14 +0000 2023",
@@ -35287,7 +35281,7 @@
             "tweet_type": "Critique",
             "thread_score": 0.2,
             "score": 0.2,
-            "location": "Results"
+            "location": null
         },
         "1693026158604894685": {
             "created_at": "Sat Aug 19 22:24:25 +0000 2023",
@@ -35349,9 +35343,9 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693026158604894685",
             "replies": [],
             "tweet_type": "Q&A",
-            "thread_score": 0.2,
-            "score": 0.2,
-            "location": "Results"
+            "thread_score": 0.3,
+            "score": 0.3,
+            "location": null
         },
         "1790767676702511529": {
             "created_at": "Wed May 15 15:34:19 +0000 2024",
@@ -35558,7 +35552,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1693017972028129323",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693017972028129323",
             "replies": [],
-            "score": 0.7
+            "score": 0.2
         },
         "1693017282652352857": {
             "created_at": "Sat Aug 19 21:49:09 +0000 2023",
@@ -35622,7 +35616,8 @@
                 "1693018327617073317",
                 "1694727791911080181"
             ],
-            "score": 0.2
+            "score": 1.2,
+            "isAuthor": true
         },
         "1881160948813340708": {
             "created_at": "Mon Jan 20 02:04:55 +0000 2025",
@@ -36667,7 +36662,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1693018327617073317",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693018327617073317",
             "replies": [],
-            "score": 0.1
+            "score": 0.2
         },
         "1694727791911080181": {
             "created_at": "Thu Aug 24 15:06:06 +0000 2023",
@@ -38556,7 +38551,8 @@
             "url": "https://x.com/giffmana/status/1864289175987462266",
             "like_url": "https://x.com/intent/like?tweet_id=1864289175987462266",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864289175987462266",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864291767232635361": {
             "created_at": "Wed Dec 04 12:52:48 +0000 2024",
@@ -38724,7 +38720,8 @@
             "url": "https://x.com/giffmana/status/1864283520069247369",
             "like_url": "https://x.com/intent/like?tweet_id=1864283520069247369",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864283520069247369",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1790772925378830384": {
             "created_at": "Wed May 15 15:55:11 +0000 2024",
@@ -39005,7 +39002,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864390503875195065",
             "replies": [
                 "1864407415094980878"
-            ]
+            ],
+            "isAuthor": true
         },
         "1864407415094980878": {
             "created_at": "Wed Dec 04 20:32:21 +0000 2024",
@@ -39158,7 +39156,8 @@
             "replies": [
                 "1864295279526047801",
                 "1864292120552439989"
-            ]
+            ],
+            "isAuthor": true
         },
         "1864386278642389071": {
             "created_at": "Wed Dec 04 19:08:22 +0000 2024",
@@ -39218,7 +39217,8 @@
             "url": "https://x.com/giffmana/status/1864386278642389071",
             "like_url": "https://x.com/intent/like?tweet_id=1864386278642389071",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864386278642389071",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864390022717227491": {
             "created_at": "Wed Dec 04 19:23:14 +0000 2024",
@@ -39278,7 +39278,8 @@
             "url": "https://x.com/giffmana/status/1864390022717227491",
             "like_url": "https://x.com/intent/like?tweet_id=1864390022717227491",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864390022717227491",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864285003540042039": {
             "created_at": "Wed Dec 04 12:25:56 +0000 2024",
@@ -39338,7 +39339,8 @@
             "url": "https://x.com/giffmana/status/1864285003540042039",
             "like_url": "https://x.com/intent/like?tweet_id=1864285003540042039",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864285003540042039",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864390257182916744": {
             "created_at": "Wed Dec 04 19:24:10 +0000 2024",
@@ -39398,7 +39400,8 @@
             "url": "https://x.com/giffmana/status/1864390257182916744",
             "like_url": "https://x.com/intent/like?tweet_id=1864390257182916744",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864390257182916744",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864583869321617671": {
             "created_at": "Thu Dec 05 08:13:31 +0000 2024",
@@ -39458,7 +39461,8 @@
             "url": "https://x.com/giffmana/status/1864583869321617671",
             "like_url": "https://x.com/intent/like?tweet_id=1864583869321617671",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864583869321617671",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864294250801770536": {
             "created_at": "Wed Dec 04 13:02:40 +0000 2024",
@@ -39518,7 +39522,8 @@
             "url": "https://x.com/__kolesnikov__/status/1864294250801770536",
             "like_url": "https://x.com/intent/like?tweet_id=1864294250801770536",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864294250801770536",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864217719773478970": {
             "created_at": "Wed Dec 04 07:58:34 +0000 2024",
@@ -39625,7 +39630,8 @@
             "url": "https://x.com/giffmana/status/1864287852185391329",
             "like_url": "https://x.com/intent/like?tweet_id=1864287852185391329",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864287852185391329",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864217591973335362": {
             "created_at": "Wed Dec 04 07:58:04 +0000 2024",
@@ -39809,7 +39815,8 @@
             "url": "https://x.com/giffmana/status/1864583406849241108",
             "like_url": "https://x.com/intent/like?tweet_id=1864583406849241108",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864583406849241108",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864709549942243787": {
             "created_at": "Thu Dec 05 16:32:55 +0000 2024",
@@ -39962,7 +39969,8 @@
                 "1864335731659035131",
                 "1864289575188721952",
                 "1864357666816184606"
-            ]
+            ],
+            "isAuthor": true
         },
         "1864335731659035131": {
             "created_at": "Wed Dec 04 15:47:30 +0000 2024",
@@ -40111,7 +40119,8 @@
             "url": "https://x.com/giffmana/status/1864283629985161413",
             "like_url": "https://x.com/intent/like?tweet_id=1864283629985161413",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864283629985161413",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864390912375202302": {
             "created_at": "Wed Dec 04 19:26:46 +0000 2024",
@@ -40173,7 +40182,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864390912375202302",
             "replies": [
                 "1864396351770853404"
-            ]
+            ],
+            "isAuthor": true
         },
         "1864396351770853404": {
             "created_at": "Wed Dec 04 19:48:23 +0000 2024",
@@ -40283,7 +40293,8 @@
             "url": "https://x.com/giffmana/status/1864286196714672544",
             "like_url": "https://x.com/intent/like?tweet_id=1864286196714672544",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864286196714672544",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864386575183847922": {
             "created_at": "Wed Dec 04 19:09:32 +0000 2024",
@@ -40345,7 +40356,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864386575183847922",
             "replies": [
                 "1864387288513249303"
-            ]
+            ],
+            "isAuthor": true
         },
         "1864387288513249303": {
             "created_at": "Wed Dec 04 19:12:22 +0000 2024",
@@ -40455,7 +40467,8 @@
             "url": "https://x.com/giffmana/status/1864289378849243629",
             "like_url": "https://x.com/intent/like?tweet_id=1864289378849243629",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864289378849243629",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864289797319098658": {
             "created_at": "Wed Dec 04 12:44:59 +0000 2024",
@@ -40515,7 +40528,8 @@
             "url": "https://x.com/giffmana/status/1864289797319098658",
             "like_url": "https://x.com/intent/like?tweet_id=1864289797319098658",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864289797319098658",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864295279526047801": {
             "created_at": "Wed Dec 04 13:06:46 +0000 2024",
@@ -40675,7 +40689,8 @@
             "url": "https://x.com/giffmana/status/1864410271000809580",
             "like_url": "https://x.com/intent/like?tweet_id=1864410271000809580",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864410271000809580",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864407960182550898": {
             "created_at": "Wed Dec 04 20:34:31 +0000 2024",
@@ -40795,7 +40810,8 @@
             "url": "https://x.com/giffmana/status/1864387148062871802",
             "like_url": "https://x.com/intent/like?tweet_id=1864387148062871802",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864387148062871802",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864289575188721952": {
             "created_at": "Wed Dec 04 12:44:06 +0000 2024",
@@ -40928,7 +40944,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864292707604042132",
             "replies": [
                 "1864293264268120252"
-            ]
+            ],
+            "isAuthor": true
         },
         "1864357666816184606": {
             "created_at": "Wed Dec 04 17:14:40 +0000 2024",
@@ -41042,7 +41059,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864386428538339799",
             "replies": [
                 "1864397263663190447"
-            ]
+            ],
+            "isAuthor": true
         },
         "1864397263663190447": {
             "created_at": "Wed Dec 04 19:52:01 +0000 2024",
@@ -41251,8 +41269,9 @@
                 "1797726650857328783"
             ],
             "tweet_type": "Related Work",
-            "thread_score": 0.4,
-            "location": "Related Work"
+            "thread_score": 2.4,
+            "location": "Related Work",
+            "isAuthor": true
         },
         "1797661643939414484": {
             "created_at": "Mon Jun 03 16:08:29 +0000 2024",
@@ -41333,10 +41352,7 @@
             "url": "https://x.com/roboflow/status/1797661643939414484",
             "like_url": "https://x.com/intent/like?tweet_id=1797661643939414484",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1797661643939414484",
-            "replies": [],
-            "tweet_type": "Resource",
-            "thread_score": 0.4,
-            "location": "Related Work"
+            "replies": []
         },
         "1797637320440717806": {
             "created_at": "Mon Jun 03 14:31:50 +0000 2024",
@@ -41483,10 +41499,7 @@
             "url": "https://x.com/neeldey/status/1640847535945162754",
             "like_url": "https://x.com/intent/like?tweet_id=1640847535945162754",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1640847535945162754",
-            "replies": [],
-            "tweet_type": "Perspective",
-            "thread_score": 0.6,
-            "location": "Introduction"
+            "replies": []
         },
         "1640820996696576002": {
             "created_at": "Tue Mar 28 20:59:45 +0000 2023",
@@ -41541,7 +41554,7 @@
             ],
             "tweet_type": "Perspective",
             "thread_score": 0.6,
-            "location": null
+            "location": "Method"
         },
         "1640962171130478593": {
             "created_at": "Wed Mar 29 06:20:43 +0000 2023",
@@ -41871,10 +41884,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1809298450770547191",
             "replies": [
                 "1809349331205656795"
-            ],
-            "tweet_type": "Related Work",
-            "thread_score": 0.4,
-            "location": "Related Work"
+            ]
         },
         "1809270419372884132": {
             "created_at": "Fri Jul 05 16:57:37 +0000 2024",
@@ -41938,9 +41948,7 @@
                 "1811404259553886667",
                 "1809676842884116547"
             ],
-            "tweet_type": "Resource",
-            "thread_score": 0.4,
-            "location": "Related Work"
+            "isAuthor": true
         },
         "1692813158996385832": {
             "created_at": "Sat Aug 19 08:18:02 +0000 2023",
@@ -42043,8 +42051,14 @@
             "like_url": "https://x.com/intent/like?tweet_id=1694051896141717718",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1694051896141717718",
             "replies": [
-                "1694052039914111172",
                 "1694077470956494994"
+            ],
+            "thread_posts": [
+                "1694051896141717718",
+                "1694052039914111172",
+                "1694052061229523128",
+                "1694052187725537445",
+                "1694052200555913233"
             ],
             "tweet_type": "Overview",
             "thread_score": 2,
@@ -42293,10 +42307,7 @@
             "url": "https://x.com/Faty_404/status/1710644313468580334",
             "like_url": "https://x.com/intent/like?tweet_id=1710644313468580334",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1710644313468580334",
-            "replies": [],
-            "tweet_type": "Teaser",
-            "thread_score": 0.2,
-            "score": 0.2
+            "replies": []
         },
         "1794488277828829198": {
             "created_at": "Sat May 25 21:58:40 +0000 2024",
@@ -42679,10 +42690,9 @@
             "like_url": "https://x.com/intent/like?tweet_id=1707446742663459117",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707446742663459117",
             "replies": [],
-            "tweet_type": "Resource",
-            "thread_score": 0.7,
-            "score": 0.7,
-            "location": "Related Work"
+            "tweet_type": "Teaser",
+            "thread_score": 0.4,
+            "score": 0.4
         },
         "1697754187986345998": {
             "created_at": "Fri Sep 01 23:31:55 +0000 2023",
@@ -42753,7 +42763,9 @@
             "url": "https://x.com/SamuelAinsworth/status/1697754187986345998",
             "like_url": "https://x.com/intent/like?tweet_id=1697754187986345998",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1697754187986345998",
-            "replies": []
+            "replies": [],
+            "score": 0.7,
+            "thread_score": 0.7
         },
         "1692794271206891614": {
             "created_at": "Sat Aug 19 07:02:59 +0000 2023",
@@ -42927,9 +42939,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1696019281056854296",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1696019281056854296",
             "replies": [],
-            "tweet_type": "Perspective",
-            "thread_score": 0.6,
-            "location": "Conclusion"
+            "tweet_type": "Teaser",
+            "thread_score": 0.2
         },
         "1803881005406957865": {
             "created_at": "Thu Jun 20 20:02:00 +0000 2024",
@@ -43039,7 +43050,8 @@
             "url": "https://x.com/XiaohuaZhai/status/1803881005406957865",
             "like_url": "https://x.com/intent/like?tweet_id=1803881005406957865",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803881005406957865",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1704022907939156328": {
             "created_at": "Tue Sep 19 06:41:35 +0000 2023",
@@ -43103,7 +43115,7 @@
             "replies": [
                 "1704031560284946845"
             ],
-            "score": 0.6
+            "isAuthor": true
         },
         "1707515324440936811": {
             "created_at": "Thu Sep 28 21:59:12 +0000 2023",
@@ -43323,8 +43335,7 @@
             "replies": [
                 "1707517367410967004"
             ],
-            "tweet_type": "Teaser",
-            "thread_score": 0.2
+            "isAuthor": true
         },
         "1721370796814180774": {
             "created_at": "Mon Nov 06 03:35:54 +0000 2023",
@@ -43474,7 +43485,7 @@
             ],
             "tweet_type": "Perspective",
             "thread_score": 0.6,
-            "location": "Results"
+            "location": null
         },
         "1707446740671201605": {
             "created_at": "Thu Sep 28 17:26:40 +0000 2023",
@@ -43619,10 +43630,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707442395326120037",
             "replies": [
                 "1713092090010251618"
-            ],
-            "tweet_type": "Perspective",
-            "thread_score": 0.6,
-            "location": "Results"
+            ]
         },
         "1767078218182300159": {
             "created_at": "Mon Mar 11 06:40:52 +0000 2024",
@@ -44035,7 +44043,7 @@
             "replies": [
                 "1716205382975054240"
             ],
-            "score": 0.8
+            "isAuthor": true
         },
         "1715340028388253816": {
             "created_at": "Fri Oct 20 12:11:46 +0000 2023",
@@ -44111,9 +44119,7 @@
             "replies": [
                 "1715340030439235651"
             ],
-            "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": null
+            "isAuthor": true
         },
         "1828164161643098116": {
             "created_at": "Mon Aug 26 20:14:36 +0000 2024",
@@ -44177,7 +44183,8 @@
             "replies": [
                 "1828164366610444362"
             ],
-            "score": 0.6
+            "score": 1.4,
+            "isAuthor": true
         },
         "1869499252088680606": {
             "created_at": "Wed Dec 18 21:45:29 +0000 2024",
@@ -44307,7 +44314,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1869607187464819042",
             "replies": [],
             "score": 0.1,
-            "thread_score": 0.2
+            "thread_score": 0.1
         },
         "1640669537262530562": {
             "created_at": "Tue Mar 28 10:57:54 +0000 2023",
@@ -44399,7 +44406,10 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1640669537262530562",
             "replies": [
                 "1640674121624190978"
-            ]
+            ],
+            "tweet_type": "Q&A",
+            "thread_score": 1,
+            "location": "Method"
         },
         "1640649789871206406": {
             "created_at": "Tue Mar 28 09:39:26 +0000 2023",
@@ -44717,7 +44727,10 @@
                 "1790444429108461714",
                 "1790370336011108647",
                 "1790034915104309396"
-            ]
+            ],
+            "tweet_type": "Related Work",
+            "thread_score": 0.4,
+            "location": "Related Work"
         },
         "1790031169968357864": {
             "created_at": "Mon May 13 14:47:42 +0000 2024",
@@ -46501,8 +46514,7 @@
             "replies": [
                 "1864195932809805907",
                 "1864304189691531481"
-            ],
-            "score": 0.1
+            ]
         },
         "1864194003496825205": {
             "created_at": "Wed Dec 04 06:24:20 +0000 2024",
@@ -47217,7 +47229,8 @@
                 "1864398165878648884",
                 "1864410086665539846",
                 "1864399182817317151"
-            ]
+            ],
+            "isAuthor": true
         },
         "1864243728975540392": {
             "created_at": "Wed Dec 04 09:41:55 +0000 2024",
@@ -47474,7 +47487,7 @@
             ],
             "tweet_type": "Resource",
             "thread_score": 0.4,
-            "location": "Related Work"
+            "location": "Method"
         },
         "1703163140224237801": {
             "created_at": "Sat Sep 16 21:45:10 +0000 2023",
@@ -47568,11 +47581,7 @@
                 "1703163141616800216",
                 "1703308904749322285",
                 "1703174443072098547"
-            ],
-            "tweet_type": "Resource",
-            "thread_score": 0.4,
-            "score": 0.6,
-            "location": "Related Work"
+            ]
         },
         "1703163141616800216": {
             "created_at": "Sat Sep 16 21:45:10 +0000 2023",
@@ -47645,8 +47654,7 @@
             "replies": [
                 "1706048868360560649",
                 "1703222268342743481"
-            ],
-            "score": 0.6
+            ]
         },
         "1703308904749322285": {
             "created_at": "Sun Sep 17 07:24:23 +0000 2023",
@@ -47730,7 +47738,7 @@
             "replies": [
                 "1703658032872460702"
             ],
-            "score": 0.4
+            "isAuthor": true
         },
         "1703658032872460702": {
             "created_at": "Mon Sep 18 06:31:42 +0000 2023",
@@ -47780,8 +47788,7 @@
             "url": "https://x.com/wightmanr/status/1703658032872460702",
             "like_url": "https://x.com/intent/like?tweet_id=1703658032872460702",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1703658032872460702",
-            "replies": [],
-            "score": 0.2
+            "replies": []
         },
         "1703174443072098547": {
             "created_at": "Sat Sep 16 22:30:05 +0000 2023",
@@ -47833,8 +47840,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1703174443072098547",
             "replies": [
                 "1703309208681148716"
-            ],
-            "score": 0.5
+            ]
         },
         "1693276683799806371": {
             "created_at": "Sun Aug 20 14:59:55 +0000 2023",
@@ -47946,9 +47952,7 @@
             "url": "https://x.com/crinzo_/status/1693281747713102259",
             "like_url": "https://x.com/intent/like?tweet_id=1693281747713102259",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693281747713102259",
-            "replies": [],
-            "score": 0.0,
-            "thread_score": 0.0
+            "replies": []
         },
         "1694052039914111172": {
             "created_at": "Tue Aug 22 18:20:54 +0000 2023",
@@ -48122,13 +48126,12 @@
             "like_url": "https://x.com/intent/like?tweet_id=1694052039914111172",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1694052039914111172",
             "replies": [
-                "1694052061229523128",
                 "1694080701904080970"
             ],
+            "in_thread": "1694051896141717718",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Lij",
-            "in_thread": true
+            "location": "Caption 3"
         },
         "1694052061229523128": {
             "created_at": "Tue Aug 22 18:21:00 +0000 2023",
@@ -48326,13 +48329,12 @@
             "like_url": "https://x.com/intent/like?tweet_id=1694052061229523128",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1694052061229523128",
             "replies": [
-                "1694052187725537445",
                 "1694090698788901238"
             ],
+            "in_thread": "1694051896141717718",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Caption 1",
-            "in_thread": true
+            "location": "Caption 1"
         },
         "1694052187725537445": {
             "created_at": "Tue Aug 22 18:21:30 +0000 2023",
@@ -48768,15 +48770,14 @@
             "like_url": "https://x.com/intent/like?tweet_id=1694052187725537445",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1694052187725537445",
             "replies": [
-                "1694052200555913233",
                 "1704023888382906578",
                 "1694276876422754471",
                 "1694271970911654080"
             ],
+            "in_thread": "1694051896141717718",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "mSigLIP: Multi-lingual pre-training",
-            "in_thread": true
+            "location": "mSigLIP: Multi-lingual pre-training"
         },
         "1694052200555913233": {
             "created_at": "Tue Aug 22 18:21:33 +0000 2023",
@@ -49181,11 +49182,10 @@
                 "1694125220297429081",
                 "1694066373175943672"
             ],
+            "in_thread": "1694051896141717718",
             "tweet_type": "Overview",
             "thread_score": 2,
-            "location": "Conclusion",
-            "score": 0.5,
-            "in_thread": true
+            "location": "SigLIP: Sigmoid loss is beneficial for languageimage pre-training"
         },
         "1694077470956494994": {
             "created_at": "Tue Aug 22 20:01:58 +0000 2023",
@@ -49223,7 +49223,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1694077470956494994",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1694077470956494994",
             "replies": [],
-            "score": 0.0,
+            "score": 0.1,
             "thread_score": 0.1
         },
         "1710236831940292847": {
@@ -49414,7 +49414,8 @@
             "replies": [
                 "1697754187986345998",
                 "1697784527773647268"
-            ]
+            ],
+            "score": 0.7
         },
         "1693252099134324828": {
             "created_at": "Sun Aug 20 13:22:14 +0000 2023",
@@ -49869,8 +49870,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1693097267190981111",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1693097267190981111",
             "replies": [],
-            "score": 0.0,
-            "thread_score": 0.0
+            "score": 0.1,
+            "thread_score": 0.1
         },
         "1692813168446202044": {
             "created_at": "Sat Aug 19 08:18:04 +0000 2023",
@@ -49930,7 +49931,8 @@
             "url": "https://x.com/giffmana/status/1692813168446202044",
             "like_url": "https://x.com/intent/like?tweet_id=1692813168446202044",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1692813168446202044",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1803853139831066900": {
             "created_at": "Thu Jun 20 18:11:17 +0000 2024",
@@ -50272,7 +50274,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803853139831066900",
             "replies": [
                 "1803881005406957865"
-            ]
+            ],
+            "isAuthor": true
         },
         "1703842486911992279": {
             "created_at": "Mon Sep 18 18:44:39 +0000 2023",
@@ -50476,10 +50479,7 @@
                 "1704023301155164320",
                 "1704037395027362304",
                 "1703878591371485560"
-            ],
-            "tweet_type": "Related Work",
-            "thread_score": 0.4,
-            "location": "Related Work"
+            ]
         },
         "1703948857443545380": {
             "created_at": "Tue Sep 19 01:47:20 +0000 2023",
@@ -50518,11 +50518,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1703948857443545380",
             "replies": [
                 "1704022907939156328"
-            ],
-            "tweet_type": "Critique",
-            "thread_score": 0.6,
-            "score": 0.6,
-            "location": "Method"
+            ]
         },
         "1704031560284946845": {
             "created_at": "Tue Sep 19 07:15:58 +0000 2023",
@@ -50585,7 +50581,7 @@
             "replies": [
                 "1704034726426599581"
             ],
-            "score": 0.7
+            "isAuthor": true
         },
         "1640831736228597762": {
             "created_at": "Tue Mar 28 21:42:25 +0000 2023",
@@ -50623,10 +50619,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1640831736228597762",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1640831736228597762",
             "replies": [],
-            "tweet_type": "Perspective",
-            "thread_score": 0.3,
             "score": 0.4,
-            "location": "Sigmoid loss for language image pre-training"
+            "thread_score": 0.4
         },
         "1797726180025811143": {
             "created_at": "Mon Jun 03 20:24:56 +0000 2024",
@@ -50783,7 +50777,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1797726180025811143",
             "replies": [
                 "1797726923726193123"
-            ]
+            ],
+            "isAuthor": true
         },
         "1797726650857328783": {
             "created_at": "Mon Jun 03 20:26:48 +0000 2024",
@@ -50925,8 +50920,9 @@
             "replies": [
                 "1707523437730713863"
             ],
-            "score": 0.1,
-            "thread_score": 0.1
+            "score": 1.1,
+            "thread_score": 1.1,
+            "isAuthor": true
         },
         "1721422491954888912": {
             "created_at": "Mon Nov 06 07:01:19 +0000 2023",
@@ -50989,8 +50985,9 @@
             "replies": [
                 "1721876109405372705"
             ],
-            "score": 0.3,
-            "thread_score": 0.2
+            "score": 1.2,
+            "thread_score": 1.2,
+            "isAuthor": true
         },
         "1721876109405372705": {
             "created_at": "Tue Nov 07 13:03:50 +0000 2023",
@@ -51041,7 +51038,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1721876109405372705",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1721876109405372705",
             "replies": [],
-            "score": 0.1
+            "score": 0.2
         },
         "1713092090010251618": {
             "created_at": "Sat Oct 14 07:19:16 +0000 2023",
@@ -51092,10 +51089,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1713092090010251618",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1713092090010251618",
             "replies": [],
-            "tweet_type": "Q&A",
-            "thread_score": 0.1,
-            "score": 0.1,
-            "location": null
+            "score": 0.2,
+            "thread_score": 0.2
         },
         "1707529563927195657": {
             "created_at": "Thu Sep 28 22:55:47 +0000 2023",
@@ -51785,10 +51780,7 @@
                 "1767191541662040360",
                 "1767124201788375465",
                 "1767079194306007080"
-            ],
-            "tweet_type": "Related Work",
-            "thread_score": 0.4,
-            "location": "Related Work"
+            ]
         },
         "1767075519504281802": {
             "created_at": "Mon Mar 11 06:30:09 +0000 2024",
@@ -52183,7 +52175,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1767101998707421601",
             "replies": [
                 "1779285339246305757"
-            ]
+            ],
+            "isAuthor": true
         },
         "1779285339246305757": {
             "created_at": "Sat Apr 13 23:07:37 +0000 2024",
@@ -52857,8 +52850,9 @@
                 "1715604128250868200"
             ],
             "tweet_type": "Related Work",
-            "thread_score": 0.4,
-            "location": "Related Work"
+            "thread_score": 2.4,
+            "location": "Related Work",
+            "isAuthor": true
         },
         "1715340012961636642": {
             "created_at": "Fri Oct 20 12:11:43 +0000 2023",
@@ -53016,9 +53010,7 @@
             "replies": [
                 "1715340015482351914"
             ],
-            "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "Introduction"
+            "isAuthor": true
         },
         "1715340015482351914": {
             "created_at": "Fri Oct 20 12:11:43 +0000 2023",
@@ -53179,9 +53171,7 @@
                 "1715419637863924033",
                 "1715790653999726668"
             ],
-            "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "Method"
+            "isAuthor": true
         },
         "1715340017805963595": {
             "created_at": "Fri Oct 20 12:11:44 +0000 2023",
@@ -53367,9 +53357,7 @@
             "replies": [
                 "1715340020649693441"
             ],
-            "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "Results"
+            "isAuthor": true
         },
         "1715340020649693441": {
             "created_at": "Fri Oct 20 12:11:45 +0000 2023",
@@ -53527,9 +53515,7 @@
             "replies": [
                 "1715340022935621968"
             ],
-            "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "Scaling up SigLIP and mSigLIP"
+            "isAuthor": true
         },
         "1715340022935621968": {
             "created_at": "Fri Oct 20 12:11:45 +0000 2023",
@@ -53809,9 +53795,7 @@
                 "1715340025825505432",
                 "1715718046596096244"
             ],
-            "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "Conclusion"
+            "isAuthor": true
         },
         "1715340025825505432": {
             "created_at": "Fri Oct 20 12:11:46 +0000 2023",
@@ -53969,9 +53953,7 @@
             "replies": [
                 "1715340028388253816"
             ],
-            "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": "mSigLIP: Multi-lingual pre-training"
+            "isAuthor": true
         },
         "1715340030439235651": {
             "created_at": "Fri Oct 20 12:11:47 +0000 2023",
@@ -54187,9 +54169,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1715340030439235651",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715340030439235651",
             "replies": [],
-            "tweet_type": "Overview",
-            "thread_score": 2,
-            "location": null
+            "isAuthor": true
         },
         "1869433401486520424": {
             "created_at": "Wed Dec 18 17:23:49 +0000 2024",
@@ -54283,7 +54263,10 @@
                 "1869442089798475952",
                 "1869434170466078842",
                 "1869442705220309177"
-            ]
+            ],
+            "tweet_type": "Related Work",
+            "thread_score": 0.4,
+            "location": "Related Work"
         },
         "1869694538539016553": {
             "created_at": "Thu Dec 19 10:41:29 +0000 2024",
@@ -54404,8 +54387,7 @@
                 "1717248586558460278",
                 "1716435339194347914"
             ],
-            "tweet_type": "Teaser",
-            "thread_score": 0.2
+            "isAuthor": true
         },
         "1716205378294174098": {
             "created_at": "Sun Oct 22 21:30:22 +0000 2023",
@@ -54564,10 +54546,7 @@
                 "1716205380865262006",
                 "1732379944632942631"
             ],
-            "tweet_type": "Resource",
-            "thread_score": 0.6,
-            "score": 0.7,
-            "location": "Related Work"
+            "isAuthor": true
         },
         "1716205382975054240": {
             "created_at": "Sun Oct 22 21:30:23 +0000 2023",
@@ -54644,7 +54623,7 @@
                 "1716205385109889093",
                 "1716306355533828493"
             ],
-            "score": 0.7
+            "isAuthor": true
         },
         "1716205385109889093": {
             "created_at": "Sun Oct 22 21:30:24 +0000 2023",
@@ -54842,7 +54821,7 @@
             "replies": [
                 "1716205387626565994"
             ],
-            "score": 0.7
+            "isAuthor": true
         },
         "1716205387626565994": {
             "created_at": "Sun Oct 22 21:30:24 +0000 2023",
@@ -54918,7 +54897,7 @@
             "replies": [
                 "1716205389639725265"
             ],
-            "score": 0.7
+            "isAuthor": true
         },
         "1716205389639725265": {
             "created_at": "Sun Oct 22 21:30:25 +0000 2023",
@@ -54994,7 +54973,7 @@
             "replies": [
                 "1716205392043147690"
             ],
-            "score": 0.7
+            "isAuthor": true
         },
         "1716205392043147690": {
             "created_at": "Sun Oct 22 21:30:25 +0000 2023",
@@ -55192,7 +55171,7 @@
             "replies": [
                 "1716205395394404537"
             ],
-            "score": 0.6
+            "isAuthor": true
         },
         "1716205395394404537": {
             "created_at": "Sun Oct 22 21:30:26 +0000 2023",
@@ -55255,7 +55234,7 @@
             "replies": [
                 "1716205406328848464"
             ],
-            "score": 0.5
+            "isAuthor": true
         },
         "1716205406328848464": {
             "created_at": "Sun Oct 22 21:30:29 +0000 2023",
@@ -55515,7 +55494,7 @@
                 "1717247017930354747",
                 "1716228477077311748"
             ],
-            "score": 0.5
+            "isAuthor": true
         },
         "1828081489784820076": {
             "created_at": "Mon Aug 26 14:46:05 +0000 2024",
@@ -55740,9 +55719,9 @@
                 "1828164161643098116"
             ],
             "tweet_type": "Resource",
-            "thread_score": 0.4,
-            "score": 0.4,
-            "location": "Related Work"
+            "thread_score": 0.3,
+            "score": 0.2,
+            "location": "Introduction"
         },
         "1828164366610444362": {
             "created_at": "Mon Aug 26 20:15:25 +0000 2024",
@@ -55805,7 +55784,8 @@
             "replies": [
                 "1828164706407747964"
             ],
-            "score": 0.1
+            "score": 1.1,
+            "isAuthor": true
         },
         "1828164706407747964": {
             "created_at": "Mon Aug 26 20:16:46 +0000 2024",
@@ -56006,10 +55986,9 @@
                 "1869949164433617314",
                 "1869608684931993638"
             ],
-            "tweet_type": "Resource",
-            "thread_score": 0.4,
-            "score": 0.3,
-            "location": "Related Work"
+            "tweet_type": "Perspective",
+            "thread_score": 0.6,
+            "location": null
         },
         "1823684914476409326": {
             "created_at": "Wed Aug 14 11:35:40 +0000 2024",
@@ -56084,7 +56063,7 @@
             "tweet_type": "Perspective",
             "thread_score": 0.6,
             "score": 0.6,
-            "location": null
+            "location": "Introduction"
         },
         "1823773878981734817": {
             "created_at": "Wed Aug 14 17:29:11 +0000 2024",
@@ -56269,7 +56248,8 @@
             "url": "https://x.com/XiaohuaZhai/status/1823772369933959319",
             "like_url": "https://x.com/intent/like?tweet_id=1823772369933959319",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1823772369933959319",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1823678944006029613": {
             "created_at": "Wed Aug 14 11:11:57 +0000 2024",
@@ -56329,7 +56309,8 @@
             "url": "https://x.com/giffmana/status/1823678944006029613",
             "like_url": "https://x.com/intent/like?tweet_id=1823678944006029613",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1823678944006029613",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864707616477188589": {
             "created_at": "Thu Dec 05 16:25:15 +0000 2024",
@@ -56498,9 +56479,7 @@
             "url": "https://x.com/Hangsiin/status/1864292427206676919",
             "like_url": "https://x.com/intent/like?tweet_id=1864292427206676919",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864292427206676919",
-            "replies": [],
-            "score": 0.0,
-            "thread_score": 0.0
+            "replies": []
         },
         "1864697245917929922": {
             "created_at": "Thu Dec 05 15:44:02 +0000 2024",
@@ -56730,7 +56709,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864288958936465475",
             "replies": [
                 "1864318677299953827"
-            ]
+            ],
+            "isAuthor": true
         },
         "1864071734560800835": {
             "created_at": "Tue Dec 03 22:18:28 +0000 2024",
@@ -56812,7 +56792,8 @@
                 "1864305893858529631",
                 "1864356599982125112",
                 "1864207297305887082"
-            ]
+            ],
+            "isAuthor": true
         },
         "1864289713873392082": {
             "created_at": "Wed Dec 04 12:44:39 +0000 2024",
@@ -56872,7 +56853,8 @@
             "url": "https://x.com/giffmana/status/1864289713873392082",
             "like_url": "https://x.com/intent/like?tweet_id=1864289713873392082",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864289713873392082",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864293569395056748": {
             "created_at": "Wed Dec 04 12:59:58 +0000 2024",
@@ -56935,9 +56917,7 @@
             "url": "https://x.com/din0s_/status/1864293569395056748",
             "like_url": "https://x.com/intent/like?tweet_id=1864293569395056748",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864293569395056748",
-            "replies": [],
-            "score": 0.1,
-            "thread_score": 0.1
+            "replies": []
         },
         "1864195932809805907": {
             "created_at": "Wed Dec 04 06:32:00 +0000 2024",
@@ -57052,9 +57032,7 @@
             "url": "https://x.com/stochasticchasm/status/1864304189691531481",
             "like_url": "https://x.com/intent/like?tweet_id=1864304189691531481",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864304189691531481",
-            "replies": [],
-            "score": 0.01,
-            "thread_score": 0.05
+            "replies": []
         },
         "1864197864731328548": {
             "created_at": "Wed Dec 04 06:39:40 +0000 2024",
@@ -58277,9 +58255,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864529112481612020",
             "replies": [
                 "1864569391100088484"
-            ],
-            "score": 0.05,
-            "thread_score": 0.05
+            ]
         },
         "1864569391100088484": {
             "created_at": "Thu Dec 05 07:15:59 +0000 2024",
@@ -58342,7 +58318,7 @@
             "replies": [
                 "1864589855621071181"
             ],
-            "score": 0.05
+            "isAuthor": true
         },
         "1864403393353064804": {
             "created_at": "Wed Dec 04 20:16:22 +0000 2024",
@@ -58454,7 +58430,8 @@
             "url": "https://x.com/giffmana/status/1864409267081548001",
             "like_url": "https://x.com/intent/like?tweet_id=1864409267081548001",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864409267081548001",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864404263990099972": {
             "created_at": "Wed Dec 04 20:19:50 +0000 2024",
@@ -59317,7 +59294,9 @@
             "url": "https://x.com/3scorciav/status/1640674121624190978",
             "like_url": "https://x.com/intent/like?tweet_id=1640674121624190978",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1640674121624190978",
-            "replies": []
+            "replies": [],
+            "score": 0.1,
+            "thread_score": 0.1
         },
         "1726749956059603060": {
             "created_at": "Mon Nov 20 23:50:45 +0000 2023",
@@ -62333,8 +62312,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1706048868360560649",
             "replies": [
                 "1706055157325406468"
-            ],
-            "score": 0.5
+            ]
         },
         "1706055157325406468": {
             "created_at": "Sun Sep 24 21:17:01 +0000 2023",
@@ -62384,8 +62362,7 @@
             "url": "https://x.com/wightmanr/status/1706055157325406468",
             "like_url": "https://x.com/intent/like?tweet_id=1706055157325406468",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1706055157325406468",
-            "replies": [],
-            "score": 0.5
+            "replies": []
         },
         "1703222268342743481": {
             "created_at": "Sun Sep 17 01:40:07 +0000 2023",
@@ -62432,8 +62409,7 @@
             "url": "https://x.com/rybavery/status/1703222268342743481",
             "like_url": "https://x.com/intent/like?tweet_id=1703222268342743481",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1703222268342743481",
-            "replies": [],
-            "score": 0.3
+            "replies": []
         },
         "1703309208681148716": {
             "created_at": "Sun Sep 17 07:25:35 +0000 2023",
@@ -62494,7 +62470,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1703309208681148716",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1703309208681148716",
             "replies": [],
-            "score": 0.4
+            "isAuthor": true
         },
         "1694080701904080970": {
             "created_at": "Tue Aug 22 20:14:48 +0000 2023",
@@ -62555,8 +62531,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1694080701904080970",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1694080701904080970",
             "replies": [],
-            "score": 0.2,
-            "thread_score": 0.5
+            "score": 0.3,
+            "thread_score": 0.3
         },
         "1704023888382906578": {
             "created_at": "Tue Sep 19 06:45:28 +0000 2023",
@@ -62617,8 +62593,9 @@
             "like_url": "https://x.com/intent/like?tweet_id=1704023888382906578",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1704023888382906578",
             "replies": [],
-            "score": 0.1,
-            "thread_score": 0.1
+            "score": 1.1,
+            "thread_score": 1.1,
+            "isAuthor": true
         },
         "1694276876422754471": {
             "created_at": "Wed Aug 23 09:14:20 +0000 2023",
@@ -62670,8 +62647,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1694276876422754471",
             "replies": [],
             "tweet_type": "Related Work",
-            "thread_score": 0.3,
-            "score": 0.3,
+            "thread_score": 0.4,
+            "score": 0.2,
             "location": "Related Work"
         },
         "1694271970911654080": {
@@ -62725,8 +62702,8 @@
             "replies": [],
             "tweet_type": "Q&A",
             "thread_score": 0.3,
-            "score": 0.3,
-            "location": "Method"
+            "score": 0.4,
+            "location": null
         },
         "1694090698788901238": {
             "created_at": "Tue Aug 22 20:54:31 +0000 2023",
@@ -62821,7 +62798,7 @@
                 "1694070276143882658"
             ],
             "score": 0.0,
-            "thread_score": 0.2
+            "thread_score": 0.0
         },
         "1694070276143882658": {
             "created_at": "Tue Aug 22 19:33:22 +0000 2023",
@@ -62955,10 +62932,9 @@
             "replies": [
                 "1704028560401248556"
             ],
-            "tweet_type": "Q&A",
-            "thread_score": 0.8,
-            "score": 0.7,
-            "location": "Stabilizing large-batch training"
+            "score": 1.1,
+            "thread_score": 1.1,
+            "isAuthor": true
         },
         "1694125220297429081": {
             "created_at": "Tue Aug 22 23:11:42 +0000 2023",
@@ -62999,8 +62975,8 @@
                 "1704024706486026251"
             ],
             "tweet_type": "Related Work",
-            "thread_score": 0.3,
-            "score": 0.4,
+            "thread_score": 0.2,
+            "score": 0.2,
             "location": "Related Work"
         },
         "1694066373175943672": {
@@ -63052,9 +63028,9 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1694066373175943672",
             "replies": [],
             "tweet_type": "Resource",
-            "thread_score": 0.6,
-            "score": 0.6,
-            "location": "Related Work"
+            "thread_score": 0.2,
+            "score": 0.2,
+            "location": "Abstract"
         },
         "1697784527773647268": {
             "created_at": "Sat Sep 02 01:32:29 +0000 2023",
@@ -63892,7 +63868,8 @@
             "replies": [
                 "1797729122799759568",
                 "1797729014389625068"
-            ]
+            ],
+            "isAuthor": true
         },
         "1703842488623255787": {
             "created_at": "Mon Sep 18 18:44:39 +0000 2023",
@@ -64464,7 +64441,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1704037395027362304",
             "replies": [
                 "1704042147882660214"
-            ]
+            ],
+            "isAuthor": true
         },
         "1703878591371485560": {
             "created_at": "Mon Sep 18 21:08:07 +0000 2023",
@@ -64594,8 +64572,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1704034726426599581",
             "replies": [
                 "1704038491938546157"
-            ],
-            "score": 0.8
+            ]
         },
         "1704038491938546157": {
             "created_at": "Tue Sep 19 07:43:30 +0000 2023",
@@ -64658,7 +64635,7 @@
             "replies": [
                 "1704072255595024834"
             ],
-            "score": 0.5
+            "isAuthor": true
         },
         "1707523437730713863": {
             "created_at": "Thu Sep 28 22:31:26 +0000 2023",
@@ -64719,7 +64696,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1707523437730713863",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1707523437730713863",
             "replies": [],
-            "score": 0.1
+            "score": 1.1,
+            "isAuthor": true
         },
         "1767097392451440939": {
             "created_at": "Mon Mar 11 07:57:04 +0000 2024",
@@ -65086,7 +65064,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1779289017197965548",
             "replies": [
                 "1779290698925089209"
-            ]
+            ],
+            "isAuthor": true
         },
         "1767237022735880236": {
             "created_at": "Mon Mar 11 17:11:54 +0000 2024",
@@ -65358,11 +65337,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715676575520198964",
             "replies": [
                 "1715781533380812969"
-            ],
-            "tweet_type": "Q&A",
-            "thread_score": 0.6,
-            "score": 0.5,
-            "location": "Results"
+            ]
         },
         "1715781533380812969": {
             "created_at": "Sat Oct 21 17:26:09 +0000 2023",
@@ -65423,7 +65398,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1715781533380812969",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715781533380812969",
             "replies": [],
-            "score": 0.7
+            "isAuthor": true
         },
         "1717794588096921762": {
             "created_at": "Fri Oct 27 06:45:19 +0000 2023",
@@ -65475,11 +65450,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1717794588096921762",
             "replies": [
                 "1717865769352999178"
-            ],
-            "tweet_type": "Q&A",
-            "thread_score": 0.55,
-            "score": 0.6,
-            "location": "Results"
+            ]
         },
         "1717865769352999178": {
             "created_at": "Fri Oct 27 11:28:10 +0000 2023",
@@ -65543,7 +65514,7 @@
                 "1717889186613899675",
                 "1717889614625792263"
             ],
-            "score": 0.7
+            "isAuthor": true
         },
         "1715419637863924033": {
             "created_at": "Fri Oct 20 17:28:07 +0000 2023",
@@ -65582,11 +65553,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715419637863924033",
             "replies": [
                 "1715480455972090352"
-            ],
-            "tweet_type": "Q&A",
-            "thread_score": 0.6,
-            "score": 0.6,
-            "location": "Results"
+            ]
         },
         "1715480455972090352": {
             "created_at": "Fri Oct 20 21:29:47 +0000 2023",
@@ -65649,7 +65616,7 @@
             "replies": [
                 "1715483548889862421"
             ],
-            "score": 0.7
+            "isAuthor": true
         },
         "1869442089798475952": {
             "created_at": "Wed Dec 18 17:58:21 +0000 2024",
@@ -66009,11 +65976,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715718046596096244",
             "replies": [
                 "1715780233058554288"
-            ],
-            "tweet_type": "Resource",
-            "thread_score": 0.2,
-            "score": 0.3,
-            "location": "Related Work"
+            ]
         },
         "1715780233058554288": {
             "created_at": "Sat Oct 21 17:20:59 +0000 2023",
@@ -66076,7 +66039,7 @@
             "replies": [
                 "1715815871354966061"
             ],
-            "score": 0.4
+            "isAuthor": true
         },
         "1716458942270959784": {
             "created_at": "Mon Oct 23 14:17:56 +0000 2023",
@@ -66188,7 +66151,8 @@
             "url": "https://x.com/giffmana/status/1716523957812072698",
             "like_url": "https://x.com/intent/like?tweet_id=1716523957812072698",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1716523957812072698",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1732379944632942631": {
             "created_at": "Wed Dec 06 12:42:19 +0000 2023",
@@ -66251,8 +66215,7 @@
             "url": "https://x.com/dribnet/status/1732379944632942631",
             "like_url": "https://x.com/intent/like?tweet_id=1732379944632942631",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1732379944632942631",
-            "replies": [],
-            "score": 0.6
+            "replies": []
         },
         "1716306355533828493": {
             "created_at": "Mon Oct 23 04:11:37 +0000 2023",
@@ -66374,7 +66337,8 @@
             "url": "https://x.com/giffmana/status/1716214358059991503",
             "like_url": "https://x.com/intent/like?tweet_id=1716214358059991503",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1716214358059991503",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1717247017930354747": {
             "created_at": "Wed Oct 25 18:29:28 +0000 2023",
@@ -66426,8 +66390,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1717247017930354747",
             "replies": [
                 "1717261469052534919"
-            ],
-            "score": 0.3
+            ]
         },
         "1717261469052534919": {
             "created_at": "Wed Oct 25 19:26:54 +0000 2023",
@@ -66488,7 +66451,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1717261469052534919",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1717261469052534919",
             "replies": [],
-            "score": 0.3
+            "isAuthor": true
         },
         "1716228477077311748": {
             "created_at": "Sun Oct 22 23:02:09 +0000 2023",
@@ -66548,8 +66511,7 @@
             "url": "https://x.com/jeremyphoward/status/1716228477077311748",
             "like_url": "https://x.com/intent/like?tweet_id=1716228477077311748",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1716228477077311748",
-            "replies": [],
-            "score": 0.2
+            "replies": []
         },
         "1828166616116535552": {
             "created_at": "Mon Aug 26 20:24:21 +0000 2024",
@@ -66589,7 +66551,7 @@
             "replies": [
                 "1828167184163709129"
             ],
-            "score": 0.3
+            "score": 0.2
         },
         "1828167184163709129": {
             "created_at": "Mon Aug 26 20:26:37 +0000 2024",
@@ -67924,7 +67886,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864292320595579216",
             "replies": [
                 "1864293286464082261"
-            ]
+            ],
+            "isAuthor": true
         },
         "1864293286464082261": {
             "created_at": "Wed Dec 04 12:58:51 +0000 2024",
@@ -68085,7 +68048,8 @@
             "url": "https://x.com/giffmana/status/1864389925258268783",
             "like_url": "https://x.com/intent/like?tweet_id=1864389925258268783",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864389925258268783",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864184258299933067": {
             "created_at": "Wed Dec 04 05:45:36 +0000 2024",
@@ -68197,7 +68161,8 @@
             "url": "https://x.com/giffmana/status/1864289601055006821",
             "like_url": "https://x.com/intent/like?tweet_id=1864289601055006821",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864289601055006821",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864211643426594952": {
             "created_at": "Wed Dec 04 07:34:25 +0000 2024",
@@ -68296,7 +68261,8 @@
             "url": "https://x.com/giffmana/status/1864287962709500308",
             "like_url": "https://x.com/intent/like?tweet_id=1864287962709500308",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864287962709500308",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864326723741098262": {
             "created_at": "Wed Dec 04 15:11:43 +0000 2024",
@@ -68408,7 +68374,8 @@
             "url": "https://x.com/giffmana/status/1864387479534522791",
             "like_url": "https://x.com/intent/like?tweet_id=1864387479534522791",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864387479534522791",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864293276096057590": {
             "created_at": "Wed Dec 04 12:58:48 +0000 2024",
@@ -68528,7 +68495,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864293794968994052",
             "replies": [
                 "1864294076327317897"
-            ]
+            ],
+            "isAuthor": true
         },
         "1866000754038780380": {
             "created_at": "Mon Dec 09 06:03:43 +0000 2024",
@@ -70395,7 +70363,8 @@
             "replies": [
                 "1704031259104538832"
             ],
-            "score": 0.8
+            "score": 1.1,
+            "isAuthor": true
         },
         "1704031259104538832": {
             "created_at": "Tue Sep 19 07:14:46 +0000 2023",
@@ -70456,7 +70425,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1704031259104538832",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1704031259104538832",
             "replies": [],
-            "score": 0.2
+            "score": 1.1,
+            "isAuthor": true
         },
         "1704024706486026251": {
             "created_at": "Tue Sep 19 06:48:43 +0000 2023",
@@ -70517,7 +70487,8 @@
             "like_url": "https://x.com/intent/like?tweet_id=1704024706486026251",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1704024706486026251",
             "replies": [],
-            "score": 0.4
+            "score": 1.2,
+            "isAuthor": true
         },
         "1693232921862459836": {
             "created_at": "Sun Aug 20 12:06:01 +0000 2023",
@@ -70705,7 +70676,8 @@
             "url": "https://x.com/__kolesnikov__/status/1797729122799759568",
             "like_url": "https://x.com/intent/like?tweet_id=1797729122799759568",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1797729122799759568",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1797729014389625068": {
             "created_at": "Mon Jun 03 20:36:11 +0000 2024",
@@ -71102,7 +71074,8 @@
             "replies": [
                 "1704049860360524012",
                 "1704072519857459669"
-            ]
+            ],
+            "isAuthor": true
         },
         "1704212402126922059": {
             "created_at": "Tue Sep 19 19:14:34 +0000 2023",
@@ -71247,10 +71220,7 @@
             "url": "https://x.com/nthngdy/status/1704069018779369504",
             "like_url": "https://x.com/intent/like?tweet_id=1704069018779369504",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1704069018779369504",
-            "replies": [],
-            "tweet_type": "Resource",
-            "thread_score": 0.4,
-            "location": "Related Work"
+            "replies": []
         },
         "1704072255595024834": {
             "created_at": "Tue Sep 19 09:57:40 +0000 2023",
@@ -71302,8 +71272,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1704072255595024834",
             "replies": [
                 "1704136235911147853"
-            ],
-            "score": 0.6
+            ]
         },
         "1811433745242640803": {
             "created_at": "Thu Jul 11 16:13:54 +0000 2024",
@@ -71414,11 +71383,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715683374491210088",
             "replies": [
                 "1715781017683009779"
-            ],
-            "tweet_type": "Q&A",
-            "thread_score": 0.2,
-            "score": 0.3,
-            "location": "Conclusion"
+            ]
         },
         "1715781017683009779": {
             "created_at": "Sat Oct 21 17:24:06 +0000 2023",
@@ -71479,7 +71444,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1715781017683009779",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715781017683009779",
             "replies": [],
-            "score": 0.2
+            "isAuthor": true
         },
         "1715694848966295974": {
             "created_at": "Sat Oct 21 11:41:42 +0000 2023",
@@ -71518,11 +71483,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715694848966295974",
             "replies": [
                 "1715780460192661549"
-            ],
-            "tweet_type": "Q&A",
-            "thread_score": 0.3,
-            "score": 0.4,
-            "location": null
+            ]
         },
         "1715780460192661549": {
             "created_at": "Sat Oct 21 17:21:54 +0000 2023",
@@ -71585,7 +71546,7 @@
             "replies": [
                 "1715988747882529226"
             ],
-            "score": 0.5
+            "isAuthor": true
         },
         "1715739442558996734": {
             "created_at": "Sat Oct 21 14:38:54 +0000 2023",
@@ -71637,11 +71598,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715739442558996734",
             "replies": [
                 "1715779214048129248"
-            ],
-            "tweet_type": "Q&A",
-            "thread_score": 0.6,
-            "score": 0.7,
-            "location": "Conclusion"
+            ]
         },
         "1715779214048129248": {
             "created_at": "Sat Oct 21 17:16:56 +0000 2023",
@@ -71704,7 +71661,7 @@
             "replies": [
                 "1715782001234690324"
             ],
-            "score": 0.7
+            "isAuthor": true
         },
         "1715759831846436922": {
             "created_at": "Sat Oct 21 15:59:55 +0000 2023",
@@ -71756,11 +71713,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715759831846436922",
             "replies": [
                 "1715778261727223833"
-            ],
-            "tweet_type": "Q&A",
-            "thread_score": 0.6,
-            "score": 0.7,
-            "location": "Results"
+            ]
         },
         "1715778261727223833": {
             "created_at": "Sat Oct 21 17:13:09 +0000 2023",
@@ -71821,7 +71774,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1715778261727223833",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715778261727223833",
             "replies": [],
-            "score": 0.5
+            "isAuthor": true
         },
         "1715346369408340314": {
             "created_at": "Fri Oct 20 12:36:58 +0000 2023",
@@ -71873,11 +71826,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715346369408340314",
             "replies": [
                 "1715353864780624191"
-            ],
-            "tweet_type": "Resource",
-            "thread_score": 0.4,
-            "score": 0.5,
-            "location": "Related Work"
+            ]
         },
         "1715353864780624191": {
             "created_at": "Fri Oct 20 13:06:45 +0000 2023",
@@ -72038,7 +71987,7 @@
                 "1715354356311310689",
                 "1715447223419379898"
             ],
-            "score": 0.6
+            "isAuthor": true
         },
         "1715790653999726668": {
             "created_at": "Sat Oct 21 18:02:24 +0000 2023",
@@ -72085,9 +72034,7 @@
             "url": "https://x.com/yacineMTB/status/1715790653999726668",
             "like_url": "https://x.com/intent/like?tweet_id=1715790653999726668",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715790653999726668",
-            "replies": [],
-            "score": 0.05,
-            "thread_score": 0.05
+            "replies": []
         },
         "1869713312948376048": {
             "created_at": "Thu Dec 19 11:56:06 +0000 2024",
@@ -72301,7 +72248,8 @@
             "url": "https://x.com/giffmana/status/1716524575607988661",
             "like_url": "https://x.com/intent/like?tweet_id=1716524575607988661",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1716524575607988661",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1716331719836749939": {
             "created_at": "Mon Oct 23 05:52:24 +0000 2023",
@@ -72413,7 +72361,8 @@
             "url": "https://x.com/giffmana/status/1716523815755264453",
             "like_url": "https://x.com/intent/like?tweet_id=1716523815755264453",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1716523815755264453",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1716270100045820349": {
             "created_at": "Mon Oct 23 01:47:33 +0000 2023",
@@ -72591,7 +72540,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1716525100709589296",
             "replies": [
                 "1716526563511140678"
-            ]
+            ],
+            "isAuthor": true
         },
         "1716263815698919589": {
             "created_at": "Mon Oct 23 01:22:34 +0000 2023",
@@ -72764,7 +72714,8 @@
             "url": "https://x.com/giffmana/status/1716524889098584478",
             "like_url": "https://x.com/intent/like?tweet_id=1716524889098584478",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1716524889098584478",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1716340144129667564": {
             "created_at": "Mon Oct 23 06:25:53 +0000 2023",
@@ -72863,7 +72814,8 @@
             "url": "https://x.com/giffmana/status/1716523517779316988",
             "like_url": "https://x.com/intent/like?tweet_id=1716523517779316988",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1716523517779316988",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1715815871354966061": {
             "created_at": "Sat Oct 21 19:42:36 +0000 2023",
@@ -72913,8 +72865,7 @@
             "url": "https://x.com/evgeniyzhe/status/1715815871354966061",
             "like_url": "https://x.com/intent/like?tweet_id=1715815871354966061",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715815871354966061",
-            "replies": [],
-            "score": 0.2
+            "replies": []
         },
         "1828291657277558843": {
             "created_at": "Tue Aug 27 04:41:13 +0000 2024",
@@ -73606,7 +73557,8 @@
             "url": "https://x.com/giffmana/status/1864291718058725680",
             "like_url": "https://x.com/intent/like?tweet_id=1864291718058725680",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864291718058725680",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864073315733606843": {
             "created_at": "Tue Dec 03 22:24:45 +0000 2024",
@@ -73707,7 +73659,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864291792188809647",
             "replies": [
                 "1864321450024255937"
-            ]
+            ],
+            "isAuthor": true
         },
         "1864183297753989535": {
             "created_at": "Wed Dec 04 05:41:47 +0000 2024",
@@ -74042,8 +73995,7 @@
             "url": "https://x.com/the9nthbit/status/1864589855621071181",
             "like_url": "https://x.com/intent/like?tweet_id=1864589855621071181",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864589855621071181",
-            "replies": [],
-            "score": 0.05
+            "replies": []
         },
         "1864345515736920170": {
             "created_at": "Wed Dec 04 16:26:23 +0000 2024",
@@ -74857,7 +74809,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1797738529407283707",
             "replies": [
                 "1797738881489768902"
-            ]
+            ],
+            "isAuthor": true
         },
         "1704049860360524012": {
             "created_at": "Tue Sep 19 08:28:41 +0000 2023",
@@ -75023,8 +74976,7 @@
             "url": "https://x.com/generatorman_ai/status/1704136235911147853",
             "like_url": "https://x.com/intent/like?tweet_id=1704136235911147853",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1704136235911147853",
-            "replies": [],
-            "score": 0.7
+            "replies": []
         },
         "1811434393698980262": {
             "created_at": "Thu Jul 11 16:16:28 +0000 2024",
@@ -75121,9 +75073,7 @@
             "url": "https://x.com/yacineMTB/status/1715369745522823177",
             "like_url": "https://x.com/intent/like?tweet_id=1715369745522823177",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715369745522823177",
-            "replies": [],
-            "score": 0.0,
-            "thread_score": 0.0
+            "replies": []
         },
         "1715604128250868200": {
             "created_at": "Sat Oct 21 05:41:13 +0000 2023",
@@ -75185,9 +75135,7 @@
             "url": "https://x.com/kiai2357/status/1715604128250868200",
             "like_url": "https://x.com/intent/like?tweet_id=1715604128250868200",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715604128250868200",
-            "replies": [],
-            "score": 0.1,
-            "thread_score": 0.1
+            "replies": []
         },
         "1717889186613899675": {
             "created_at": "Fri Oct 27 13:01:13 +0000 2023",
@@ -75237,8 +75185,7 @@
             "url": "https://x.com/JerryLau520/status/1717889186613899675",
             "like_url": "https://x.com/intent/like?tweet_id=1717889186613899675",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1717889186613899675",
-            "replies": [],
-            "score": 0.4
+            "replies": []
         },
         "1715483548889862421": {
             "created_at": "Fri Oct 20 21:42:04 +0000 2023",
@@ -75275,8 +75222,7 @@
             "url": "https://x.com/gupta__abhay/status/1715483548889862421",
             "like_url": "https://x.com/intent/like?tweet_id=1715483548889862421",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715483548889862421",
-            "replies": [],
-            "score": 0.3
+            "replies": []
         },
         "1717889614625792263": {
             "created_at": "Fri Oct 27 13:02:55 +0000 2023",
@@ -75328,11 +75274,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1717889614625792263",
             "replies": [
                 "1717988327972905436"
-            ],
-            "tweet_type": "Q&A",
-            "thread_score": 0.6,
-            "score": 0.1,
-            "location": "Method"
+            ]
         },
         "1717988327972905436": {
             "created_at": "Fri Oct 27 19:35:10 +0000 2023",
@@ -75396,7 +75338,7 @@
                 "1717988513541484821",
                 "1718132497048113624"
             ],
-            "score": 0.7
+            "isAuthor": true
         },
         "1716272226377605464": {
             "created_at": "Mon Oct 23 01:56:00 +0000 2023",
@@ -75495,7 +75437,8 @@
             "url": "https://x.com/giffmana/status/1716524626736501162",
             "like_url": "https://x.com/intent/like?tweet_id=1716524626736501162",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1716524626736501162",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1717248586558460278": {
             "created_at": "Wed Oct 25 18:35:42 +0000 2023",
@@ -75664,7 +75607,8 @@
             "url": "https://x.com/giffmana/status/1716523697773715737",
             "like_url": "https://x.com/intent/like?tweet_id=1716523697773715737",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1716523697773715737",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864264375525118062": {
             "created_at": "Wed Dec 04 11:03:58 +0000 2024",
@@ -76900,7 +76844,8 @@
             "replies": [
                 "1797739380637085959",
                 "1797739034971967595"
-            ]
+            ],
+            "isAuthor": true
         },
         "1797739380637085959": {
             "created_at": "Mon Jun 03 21:17:23 +0000 2024",
@@ -76960,7 +76905,8 @@
             "url": "https://x.com/__kolesnikov__/status/1797739380637085959",
             "like_url": "https://x.com/intent/like?tweet_id=1797739380637085959",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1797739380637085959",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1715988747882529226": {
             "created_at": "Sun Oct 22 07:09:33 +0000 2023",
@@ -77032,8 +76978,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715988747882529226",
             "replies": [
                 "1716005109820215460"
-            ],
-            "score": 0.2
+            ]
         },
         "1716005109820215460": {
             "created_at": "Sun Oct 22 08:14:34 +0000 2023",
@@ -77094,7 +77039,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1716005109820215460",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1716005109820215460",
             "replies": [],
-            "score": 0.2
+            "isAuthor": true
         },
         "1715782001234690324": {
             "created_at": "Sat Oct 21 17:28:01 +0000 2023",
@@ -77146,8 +77091,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715782001234690324",
             "replies": [
                 "1715783774728806450"
-            ],
-            "score": 0.6
+            ]
         },
         "1715783774728806450": {
             "created_at": "Sat Oct 21 17:35:04 +0000 2023",
@@ -77210,7 +77154,7 @@
             "replies": [
                 "1715785289095159998"
             ],
-            "score": 0.6
+            "isAuthor": true
         },
         "1715373084146798961": {
             "created_at": "Fri Oct 20 14:23:08 +0000 2023",
@@ -77282,8 +77226,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715373084146798961",
             "replies": [
                 "1715693551424786922"
-            ],
-            "score": 0.7
+            ]
         },
         "1717988513541484821": {
             "created_at": "Fri Oct 27 19:35:54 +0000 2023",
@@ -77344,7 +77287,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1717988513541484821",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1717988513541484821",
             "replies": [],
-            "score": 0.2
+            "isAuthor": true
         },
         "1716518901172044224": {
             "created_at": "Mon Oct 23 18:16:12 +0000 2023",
@@ -77383,11 +77326,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1716518901172044224",
             "replies": [
                 "1716528596016046526"
-            ],
-            "tweet_type": "Q&A",
-            "thread_score": 0.1,
-            "score": 0.1,
-            "location": "Conclusion"
+            ]
         },
         "1716528596016046526": {
             "created_at": "Mon Oct 23 18:54:43 +0000 2023",
@@ -77448,7 +77387,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1716528596016046526",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1716528596016046526",
             "replies": [],
-            "score": 0.1
+            "isAuthor": true
         },
         "1715354356311310689": {
             "created_at": "Fri Oct 20 13:08:42 +0000 2023",
@@ -77501,9 +77440,7 @@
             "replies": [
                 "1715355632914563119",
                 "1715355014192095652"
-            ],
-            "score": 0.1,
-            "thread_score": 0.2
+            ]
         },
         "1715355632914563119": {
             "created_at": "Fri Oct 20 13:13:47 +0000 2023",
@@ -77630,7 +77567,7 @@
             "replies": [
                 "1715358730148249978"
             ],
-            "score": 0.2
+            "isAuthor": true
         },
         "1715447223419379898": {
             "created_at": "Fri Oct 20 19:17:44 +0000 2023",
@@ -77667,9 +77604,7 @@
             "url": "https://x.com/iamgrigorev/status/1715447223419379898",
             "like_url": "https://x.com/intent/like?tweet_id=1715447223419379898",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715447223419379898",
-            "replies": [],
-            "score": 0.1,
-            "thread_score": 0.1
+            "replies": []
         },
         "1718132497048113624": {
             "created_at": "Sat Oct 28 05:08:03 +0000 2023",
@@ -77719,9 +77654,7 @@
             "url": "https://x.com/JerryLau520/status/1718132497048113624",
             "like_url": "https://x.com/intent/like?tweet_id=1718132497048113624",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1718132497048113624",
-            "replies": [],
-            "score": 0.1,
-            "thread_score": 0.1
+            "replies": []
         },
         "1716526563511140678": {
             "created_at": "Mon Oct 23 18:46:38 +0000 2023",
@@ -77883,7 +77816,8 @@
             "url": "https://x.com/giffmana/status/1717262908873179556",
             "like_url": "https://x.com/intent/like?tweet_id=1717262908873179556",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1717262908873179556",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1828416515038663078": {
             "created_at": "Tue Aug 27 12:57:22 +0000 2024",
@@ -78522,7 +78456,8 @@
             "url": "https://x.com/giffmana/status/1864289267175878675",
             "like_url": "https://x.com/intent/like?tweet_id=1864289267175878675",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864289267175878675",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864321450024255937": {
             "created_at": "Wed Dec 04 14:50:45 +0000 2024",
@@ -78673,7 +78608,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864383868557476288",
             "replies": [
                 "1864386456308855212"
-            ]
+            ],
+            "isAuthor": true
         },
         "1864282433463456188": {
             "created_at": "Wed Dec 04 12:15:43 +0000 2024",
@@ -78733,7 +78669,8 @@
             "url": "https://x.com/giffmana/status/1864282433463456188",
             "like_url": "https://x.com/intent/like?tweet_id=1864282433463456188",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864282433463456188",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1864411465173569973": {
             "created_at": "Wed Dec 04 20:48:27 +0000 2024",
@@ -78795,7 +78732,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864411465173569973",
             "replies": [
                 "1864414793022537925"
-            ]
+            ],
+            "isAuthor": true
         },
         "1864414793022537925": {
             "created_at": "Wed Dec 04 21:01:40 +0000 2024",
@@ -78946,7 +78884,8 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1797739034971967595",
             "replies": [
                 "1797746410248671650"
-            ]
+            ],
+            "isAuthor": true
         },
         "1715785289095159998": {
             "created_at": "Sat Oct 21 17:41:05 +0000 2023",
@@ -78998,8 +78937,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715785289095159998",
             "replies": [
                 "1715792083707920522"
-            ],
-            "score": 0.6
+            ]
         },
         "1715792083707920522": {
             "created_at": "Sat Oct 21 18:08:05 +0000 2023",
@@ -79060,7 +78998,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1715792083707920522",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715792083707920522",
             "replies": [],
-            "score": 0.6
+            "isAuthor": true
         },
         "1715693551424786922": {
             "created_at": "Sat Oct 21 11:36:33 +0000 2023",
@@ -79100,8 +79038,7 @@
             "replies": [
                 "1715780725075574942",
                 "1715699493146853693"
-            ],
-            "score": 0.7
+            ]
         },
         "1715780725075574942": {
             "created_at": "Sat Oct 21 17:22:57 +0000 2023",
@@ -79182,7 +79119,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1715780725075574942",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715780725075574942",
             "replies": [],
-            "score": 0.1
+            "isAuthor": true
         },
         "1715358730148249978": {
             "created_at": "Fri Oct 20 13:26:05 +0000 2023",
@@ -79236,8 +79173,7 @@
                 "1715361030979649736",
                 "1715361215873232938",
                 "1718530432353112319"
-            ],
-            "score": 0.3
+            ]
         },
         "1715361030979649736": {
             "created_at": "Fri Oct 20 13:35:14 +0000 2023",
@@ -79298,7 +79234,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1715361030979649736",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715361030979649736",
             "replies": [],
-            "score": 0.2
+            "isAuthor": true
         },
         "1715355014192095652": {
             "created_at": "Fri Oct 20 13:11:19 +0000 2023",
@@ -79348,9 +79284,7 @@
             "url": "https://x.com/Suhail/status/1715355014192095652",
             "like_url": "https://x.com/intent/like?tweet_id=1715355014192095652",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715355014192095652",
-            "replies": [],
-            "score": 0.0,
-            "thread_score": 0.0
+            "replies": []
         },
         "1864386456308855212": {
             "created_at": "Wed Dec 04 19:09:04 +0000 2024",
@@ -79995,7 +79929,8 @@
             "url": "https://x.com/giffmana/status/1864383645466681607",
             "like_url": "https://x.com/intent/like?tweet_id=1864383645466681607",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1864383645466681607",
-            "replies": []
+            "replies": [],
+            "isAuthor": true
         },
         "1797746410248671650": {
             "created_at": "Mon Jun 03 21:45:19 +0000 2024",
@@ -80114,11 +80049,7 @@
             "url": "https://x.com/felix_red_panda/status/1715699493146853693",
             "like_url": "https://x.com/intent/like?tweet_id=1715699493146853693",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715699493146853693",
-            "replies": [],
-            "tweet_type": "Resource",
-            "thread_score": 0.2,
-            "score": 0.3,
-            "location": "Related Work"
+            "replies": []
         },
         "1715361215873232938": {
             "created_at": "Fri Oct 20 13:35:58 +0000 2023",
@@ -80170,9 +80101,7 @@
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715361215873232938",
             "replies": [
                 "1715361670984303004"
-            ],
-            "score": 0.1,
-            "thread_score": 0.1
+            ]
         },
         "1715361670984303004": {
             "created_at": "Fri Oct 20 13:37:46 +0000 2023",
@@ -80233,7 +80162,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1715361670984303004",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1715361670984303004",
             "replies": [],
-            "score": 0.1
+            "isAuthor": true
         },
         "1718530432353112319": {
             "created_at": "Sun Oct 29 07:29:18 +0000 2023",
@@ -80282,9 +80211,7 @@
             "url": "https://x.com/PMOHANSRINIVAS1/status/1718530432353112319",
             "like_url": "https://x.com/intent/like?tweet_id=1718530432353112319",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1718530432353112319",
-            "replies": [],
-            "score": 0.0,
-            "thread_score": 0.0
+            "replies": []
         },
         "1828084017167778252": {
             "created_at": "Mon Aug 26 14:56:08 +0000 2024",
@@ -86072,6 +85999,7 @@
             {
                 "title": "Abstract",
                 "types": [
+                    "Perspective",
                     "Resource",
                     "Overview"
                 ],
@@ -86089,7 +86017,9 @@
             {
                 "title": "Introduction",
                 "types": [
-                    "Perspective"
+                    "Perspective",
+                    "Resource",
+                    "Overview"
                 ],
                 "dimensions": {
                     "width": 612.0,
@@ -86103,30 +86033,12 @@
                 ]
             }
         ],
-        "3": [
+        "1": [
             {
-                "title": "Results",
+                "title": "Related Work",
                 "types": [
-                    "Critique",
-                    "Overview",
-                    "Q&A",
-                    "Perspective"
-                ],
-                "dimensions": {
-                    "width": 612.0,
-                    "height": 792.0
-                },
-                "box": [
-                    3,
-                    50.11,
-                    286.37,
-                    586.77
-                ]
-            },
-            {
-                "title": "SigLiT: Scaling batch size to the limit",
-                "types": [
-                    "Critique",
+                    "Resource",
+                    "Related Work",
                     "Overview"
                 ],
                 "dimensions": {
@@ -86134,10 +86046,45 @@
                     "height": 792.0
                 },
                 "box": [
-                    3,
+                    1,
+                    50.11,
+                    286.37,
+                    432.59
+                ]
+            },
+            {
+                "title": "Softmax loss for language image pre-training",
+                "types": [
+                    "Overview"
+                ],
+                "dimensions": {
+                    "width": 612.0,
+                    "height": 792.0
+                },
+                "box": [
+                    1,
                     308.86,
-                    545.11,
-                    434.45
+                    545.12,
+                    668.38
+                ]
+            },
+            {
+                "title": "Method",
+                "types": [
+                    "Perspective",
+                    "Resource",
+                    "Overview",
+                    "Q&A"
+                ],
+                "dimensions": {
+                    "width": 612.0,
+                    "height": 792.0
+                },
+                "box": [
+                    1,
+                    308.86,
+                    545.12,
+                    483.45
                 ]
             }
         ],
@@ -86161,8 +86108,7 @@
             {
                 "title": "SigLIP: Sigmoid loss is beneficial for languageimage pre-training",
                 "types": [
-                    "Overview",
-                    "Q&A"
+                    "Overview"
                 ],
                 "dimensions": {
                     "width": 612.0,
@@ -86174,15 +86120,29 @@
                     286.37,
                     456.76
                 ]
+            },
+            {
+                "title": "Caption 2",
+                "types": [
+                    "Q&A"
+                ],
+                "dimensions": {
+                    "width": 612.0,
+                    "height": 792.0
+                },
+                "box": [
+                    4,
+                    308.86,
+                    545.11,
+                    79.31
+                ]
             }
         ],
         "2": [
             {
                 "title": "Sigmoid loss for language image pre-training",
                 "types": [
-                    "Overview",
-                    "Q&A",
-                    "Perspective"
+                    "Overview"
                 ],
                 "dimensions": {
                     "width": 612.0,
@@ -86198,7 +86158,8 @@
             {
                 "title": "Lij",
                 "types": [
-                    "Overview"
+                    "Overview",
+                    "Q&A"
                 ],
                 "dimensions": {
                     "width": 612.0,
@@ -86214,7 +86175,6 @@
             {
                 "title": "Efficient \"chunked\" implementation",
                 "types": [
-                    "Resource",
                     "Overview",
                     "Q&A"
                 ],
@@ -86232,6 +86192,7 @@
             {
                 "title": "Caption 1",
                 "types": [
+                    "Critique",
                     "Overview",
                     "Q&A"
                 ],
@@ -86247,9 +86208,9 @@
                 ]
             }
         ],
-        "8": [
+        "3": [
             {
-                "title": "Bias term in sigmoid loss",
+                "title": "Results",
                 "types": [
                     "Overview",
                     "Q&A"
@@ -86259,33 +86220,14 @@
                     "height": 792.0
                 },
                 "box": [
-                    8,
+                    3,
                     50.11,
                     286.37,
-                    459.27
-                ]
-            }
-        ],
-        "1": [
-            {
-                "title": "Method",
-                "types": [
-                    "Overview",
-                    "Q&A"
-                ],
-                "dimensions": {
-                    "width": 612.0,
-                    "height": 792.0
-                },
-                "box": [
-                    1,
-                    308.86,
-                    545.12,
-                    483.45
+                    586.77
                 ]
             },
             {
-                "title": "Softmax loss for language image pre-training",
+                "title": "SigLiT: Scaling batch size to the limit",
                 "types": [
                     "Overview"
                 ],
@@ -86294,27 +86236,28 @@
                     "height": 792.0
                 },
                 "box": [
-                    1,
+                    3,
                     308.86,
-                    545.12,
-                    668.38
+                    545.11,
+                    434.45
                 ]
-            },
+            }
+        ],
+        "5": [
             {
-                "title": "Related Work",
+                "title": "Caption 12",
                 "types": [
-                    "Resource",
-                    "Related Work"
+                    "Overview"
                 ],
                 "dimensions": {
                     "width": 612.0,
                     "height": 792.0
                 },
                 "box": [
-                    1,
-                    50.11,
-                    286.37,
-                    432.59
+                    5,
+                    308.86,
+                    545.11,
+                    300.35
                 ]
             }
         ],
@@ -86323,8 +86266,7 @@
                 "title": "Conclusion",
                 "types": [
                     "Overview",
-                    "Q&A",
-                    "Perspective"
+                    "Q&A"
                 ],
                 "dimensions": {
                     "width": 612.0,
@@ -86338,9 +86280,9 @@
                 ]
             }
         ],
-        "5": [
+        "8": [
             {
-                "title": "SigLIP with a small amount of TPU-v4 chips",
+                "title": "Caption 3",
                 "types": [
                     "Overview"
                 ],
@@ -86349,10 +86291,10 @@
                     "height": 792.0
                 },
                 "box": [
-                    5,
-                    308.86,
-                    545.12,
-                    624.12
+                    8,
+                    50.11,
+                    286.36,
+                    569.77
                 ]
             }
         ],
@@ -86360,7 +86302,6 @@
             {
                 "title": "Stabilizing large-batch training",
                 "types": [
-                    "Overview",
                     "Q&A"
                 ],
                 "dimensions": {
@@ -86373,41 +86314,54 @@
                     545.12,
                     648.88
                 ]
-            },
-            {
-                "title": "Scaling up SigLIP and mSigLIP",
-                "types": [
-                    "Overview"
-                ],
-                "dimensions": {
-                    "width": 612.0,
-                    "height": 792.0
-                },
-                "box": [
-                    6,
-                    308.86,
-                    545.12,
-                    344.21
-                ]
-            }
-        ],
-        "15": [
-            {
-                "title": "Caption 6",
-                "types": [
-                    "Q&A"
-                ],
-                "dimensions": {
-                    "width": 612.0,
-                    "height": 792.0
-                },
-                "box": [
-                    15,
-                    50.11,
-                    545.11,
-                    623.62
-                ]
             }
         ]
+    },
+    "summaries": {
+        "Introduction": {
+            "Resource": "{{NotEvenTrying\u23e7}}<1828107019062284719> suggested that PaliGemma could be used to automate image labeling for local search, complementing SigLIP's focus on efficient pre-training for large-scale image-text retrieval. {{Lucas Beyer (bl16)}}<1828164161643098116> suggested SigLIP as a simpler alternative for freeform language search, potentially outperforming other large-scale image search applications.",
+            "Perspective": "{{Daniel Bourke}}<1823684914476409326> praises SigLIP's performance, highlighting its daily use for auto-labeling and its ability to recognize text like OCR."
+        },
+        "null": {
+            "Q&A": "{{Clarence Hu}}<1824076631889084550> questioned the model's struggle with \"lion head\" detection, to which {{Xiaohua Zhai}}<1824190045819130321> explained that it was a test for cultural diversity, with the Chinese translation having different image associations. {{Clarence Hu}}<1824201391084360040> further pointed out interesting results with \"cow\" image classification. {{Nathan Cooper}}<1692729153064194467> inquired about embedding comparisons with CLIP, and {{Lucas Beyer (bl16)}}<1692803516778119440> asked for suggestions on how to perform the comparison.  {{Clarence Hu}}<1693012495852515550> asked about the plateau at 32k. {{Alexander Visheratin}}<1692961520769007696> questioned the calculation of top-1 accuracy for image-to-text retrieval, receiving clarification and further discussion with {{Lucas Beyer (bl16)}}<1693003046790242595>. {{Shuming Hu}}<1693164876506837237> asked about the intuition behind SigLIP outperforming softmax.",
+            "Resource": "{{merve}}<1858429282474684532> shared a Hugging Face model link related to the discussed paper.",
+            "Critique": "{{Romain Beaumont}}<1708404728990765178> pointed out the significant impact of dataset choice (WebLI, Laion2B, WIT) on zero-shot accuracies, referencing arxiv.org/abs/2304.14108. {{Lucas Beyer (bl16)}}<1708611235611066791> responded that experiments were conducted in a consistent setting to avoid confounders, except for the \"SOTA table\" which reflects off-the-shelf model performance.  {{generatorman}}<1693084749219147880> suggested calculating near-duplicate statistics to check the plausibility of an unspecified explanation.",
+            "Perspective": "{{Alexander Visheratin}}<1721370796814180774> reported a 10% performance boost using SigLIP models and loss with a smaller visual encoder. {{wh}}<1869576274722816364> recommended the SigLIP paper as an excellent introductory resource due to its dense and insightful content."
+        },
+        "Caption 1": {
+            "Q&A": "{{Abhishek Mishra}}<1827567724475629933> inquired about the impact of smaller batch sizes on CLIP's gradient stability. {{Astarag Mogapatra}}<1827569673287954630> responded by referring to Figure 2, noting that smaller batch sizes favor sigmoid loss but performance converges with increasing size, while also offering an intuition about the difference between sigmoid and softmax losses. {{Rabin Adhikari \ud83c\uddf3\ud83c\uddf5}}<1692961052542353724> questioned the decreased SigLIP performance with larger batch sizes. The provided context explains that both sigmoid and softmax losses saturate and very large batch sizes negatively impact performance, with 32k being sufficient for mSigLIP.",
+            "Critique": "{{Antreas Antoniou}}<1692730202604896657> questioned the paper's assertion about the role of batch size in CLIP's performance, citing the figure that shows performance improvement up to 32k batch size (\"Why are you saying that the batch size is not part of the recipe for why CLIP works, and then show a figure that clearly shows that batch size does matter up to 32K\"). They also discussed the nuances of sigmoid and softmax loss functions, arguing for the flexibility of sigmoid (\"sigmoid and softmax while different, both try to optimize for similar things, hence, there is still contrast being captured, but more so in a less coupled way, hence allowing for more flexibility\")."
+        },
+        "Related Work": {
+            "Resource": "{{SkalskiP}}<1797636065995706601> mentioned SigLIP and Gemma papers as integral parts of PaliGemma. {{SkalskiP}}<1797636065995706601> also pointed to HuggingFace spaces for SigLIP and Gemma. {{Aritra Roy Gosthipaty}}<1797681608000258292> and {{SkalskiP}}<1797685900211826817> shared their respective notebooks demonstrating fine-tuning of PaliGemma. {{Alexander Kolesnikov}}<1707328464645234738> announced the release of SigLIP models and provided a Colab link for experimentation.",
+            "Related Work": "{{G\u00fcnter Klambauer}}<1692813024363512135> suggested that CLAMP (arxiv.org/abs/2303.03363) uses the same contrastive loss as SigLIP. {{Muhammad Naufil}}<1708431854389620829> mentioned CLIP-Lite as a related work using only one negative example. {{Christian Szegedy}}<1693120666898481328> highlighted their 2019 work (arxiv.org/abs/1905.10006) which uses the same loss as SigLIP and employs semi-hard negative mining. {{Simo Ryu}}<1666086583005769728> shared a thread of papers related to efficient CLIP training, including {{Orchid Majumder}}<1666098665184985091>'s comment on SigLIP's sigmoid loss and memory benefits. {{Clive Chan}}<1703761043842077092> included SigLIP in a list of models moving away from softmax. {{Alexander Kolesnikov}}<1797725025757475328> referenced a paper (arxiv.org/abs/2302.08242) on improving object detection with log-likelihood models. {{Boris Dayma \ud83d\udd8d\ufe0f}}<1809267167726059650> mentioned using SigLiT, derived from SigLIP, to improve CapPa's zero-shot performance. {{Dimitris Papailiopoulos}}<1790024970824740949> discussed the impact of batch size on model training, a key aspect explored by SigLIP. {{Lucas Beyer (bl16)}}<1715340010759565562> highlighted PaLI-3's use of SigLIP pre-training for achieving state-of-the-art results in vision-language tasks."
+        },
+        "Method": {
+            "Q&A": "{{Miguel Martin}}<1692674120310296765> inquired about the improved training time with the sigmoid loss, speculating about the impact of the loss term and batch-wise computation. {{Lucas Beyer (bl16)}}<1692801455114031398> clarified that the efficiency gains stem from not materializing the entire matrix. {{Nick Burns}}<1692825105846735311> questioned the assumption of positive image-text pairs within a batch and negative pairs otherwise. {{Lucas Beyer (bl16)}}<1693005123725742421> confirmed this assumption, acknowledging its limitations with very large batch sizes. {{Vlad Feinberg}}<1692733765963944155> wondered about the competitiveness of BYOL losses, prompting {{Lucas Beyer (bl16)}}<1692812263248245017> to discuss the potential applicability of self-supervised methods like BYOL and SimCLR in the image-text context. {{Artur Chakhvadze}}<1692645165511430165> asked about techniques like hard negative mining, to which {{Lucas Beyer (bl16)}}<1692647428770484279> pointed out the importance of the learnable bias and its initialization. {{Samuel \"curry-howard fanboi\" Ainsworth}}<1696708871342141668> questioned the normalization factor of 1/B. {{Cade Gordon}}<1693121240679215287> inquired about theoretical results similar to InfoNCE's lower bound on mutual information.",
+            "Resource": "{{Ross Wightman}}<1703163140224237801> discussed implementing SigLIP in PyTorch, referencing the need to create a custom implementation due to the lack of a `jax.lax.ppermute` equivalent. {{Ross Wightman}}<1703163141616800216> mentioned integrating the packed vision transformer implementation with HuggingFace's `transformers` library. {{Romain Beaumont}}<1706048868360560649> inquired about using NaViT in OpenCLIP via the Timm integration. {{Ross Wightman}}<1706055157325406468> confirmed its potential use in OpenCLIP and document AI projects. {{Ryan Avery}}<1703222268342743481> expressed interest in applying the work to satellite imagery. {{Haoxiang Wang}}<1703174443072098547> compared SigLIP's computational needs favorably to CLIP, highlighting its suitability for academic GPU servers. {{Lucas Beyer (bl16)}}<1703308904749322285> mentioned the forthcoming open-sourcing of the JAX code.",
+            "Perspective": "{{Ross Wightman}}<1640820996696576002> expressed surprise at the effectiveness of using a sigmoid function in place of the standard softmax loss for image-text pre-training, referencing the paper's proposal. {{Jun Wu}}<1640831736228597762> agreed, arguing that determining the presence of a class in an image should be an independent measurement, not relative to other classes, echoing the paper's motivation for exploring sigmoid."
+        },
+        "Efficient \"chunked\" implementation": {
+            "Q&A": "{{rohan anil}}<1693301205886480733> questioned how the per-core batch size affects the behavior of the model, specifically asking whether a 32k batch size on two cores would behave differently from a 32k batch size on 64 cores, referencing the paper's discussion of scaling batch size and efficient loss computation."
+        },
+        "Conclusion": {
+            "Q&A": "{{Dan Kondratyuk}}<1692934265087152626> questioned the applicability of the sigmoid loss technique to fixed vocabularies used in LMs. {{Lucas Beyer (bl16)}}<1693009418974056590> responded that it might be feasible, citing prior success with ImageNet classification using a similar approach in their SigLIP work."
+        },
+        "Results": {
+            "Q&A": "{{Alexander Visheratin}}<1692678733042249873> inquired about the missing text-to-image retrieval metric, to which {{Lucas Beyer (bl16)}}<1692801825622065212> responded with \"Top1\" and later clarified as \"R@1\".  {{Steven Walton}}<1693333547149668574> questioned the seemingly lower performance compared to the prior LiT paper, given similar ViT-g and JFT-3B pre-training, and expressed confusion about the low OpenCLIP scores."
+        },
+        "Abstract": {
+            "Perspective": "{{Nick Burns}}<1803951586693325157> reported positive anecdotal results using SigLIP with aerial imagery, highlighting good retrieval and rich features. {{Ashutosh Narang}}<1704151772095226082> described implementing SigLIP for fMRI to natural scene image retrieval, noting that initial performance requires further work.",
+            "Resource": "{{activewarp}}<1694066373175943672> suggested that the \"scaling vision transformer paper\" uses the same big_vision library and describes a similar weight decay application as the current paper."
+        },
+        "Caption 2": {
+            "Q&A": "{{Alexander Visheratin}}<1695131625187573908> questioned the absence of a Hebrew language code ('he') in Table 2, which presents multilingual SigLIP results on datasets like ImageNet and XM3600."
+        },
+        "Lij": {
+            "Q&A": "{{\u200c \u200d\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\u1160\ud83c\udd70\ud83c\udd78\u1160\u1d3ea\u1d63\u209c\u1d62c\u2097\u2091s}}<1693283249001230679> questioned if initializing the bias term 'b' to t/2 with t=-20 would achieve similar performance as the proposed initialization of t=log(10) and b=-10, given that x_i.y_j is near zero early in training."
+        },
+        "Stabilizing large-batch training": {
+            "Q&A": "{{RonaldRichman}}<1835750607782838683> inquired about the source of a recommendation to set beta_2=0.95 in the Adam optimizer. {{LucasBeyer}}<1835764432347005032> provided the link to the SigLIP paper, which discusses this setting in the context of stabilizing training with large batch sizes."
+        }
     }
 }

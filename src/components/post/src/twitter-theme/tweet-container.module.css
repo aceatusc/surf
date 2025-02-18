@@ -1,5 +1,9 @@
 .root {
   width: 100%;
+  /* min-width: 250px; */
+  /* max-width: 550px; */
+  overflow: hidden;
+  /* Base font styles */
   color: var(--tweet-font-color);
   font-family: var(--tweet-font-family);
   font-weight: 400;
@@ -25,10 +29,10 @@
 .root[data-in-thread="true"] {
   border: none;
   border-left: var(--tweet-border);
-  border-width: 1px;
-  margin: 0.5rem 0 0.1rem 0rem;
+  border-width: 1.6px;
+  margin: 0.5rem 0 0.2rem 0rem;
 }
 
 .root[data-in-thread="true"] .article {
-  padding: 0.5rem 0.25rem 0.05rem 0.6rem;
+  padding: 0.5rem 0.25rem 0.3rem 1rem;
 }

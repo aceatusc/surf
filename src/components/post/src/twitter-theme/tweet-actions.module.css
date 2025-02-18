@@ -66,8 +66,8 @@
 
 .actions[data-in-thread="true"] .likeIconWrapper,
 .actions[data-in-thread="true"] .replyIconWrapper {
-  width: calc(0.7 * var(--tweet-actions-icon-wrapper-size));
-  height: calc(0.7 * var(--tweet-actions-icon-wrapper-size));
+  width: calc(0.6 * var(--tweet-actions-icon-wrapper-size));
+  height: calc(0.6 * var(--tweet-actions-icon-wrapper-size));
 }
 
 .likeIcon {
@@ -86,6 +86,7 @@
 .actions[data-in-thread="true"] .likeCount,
 .actions[data-in-thread="true"] .replyText {
   font-size: calc(0.9 * var(--tweet-actions-font-size));
+  font-weight: 600;
   line-height: calc(0.8 * var(--tweet-actions-line-height));
 }
 

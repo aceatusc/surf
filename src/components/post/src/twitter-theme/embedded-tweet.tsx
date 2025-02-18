@@ -47,23 +47,21 @@ export const EmbeddedTweetReply = ({
   });
 
   return (
-    <TweetContainer inThread={tweet.is_reply} id={id} className={className}>
+    <TweetContainer id={id} className={className}>
       {studyPhase === "annotation" && (
         <div className="font-bold text-xl text-gray-800 mb-3">
           Tweet ID:
           <br /> {tweet.id_str}
         </div>
       )}
-      <TweetHeader tweet={tweet} components={components} />
-      {tweet.in_reply_to_status_id_str && !tweet.is_reply && (
-        <TweetInReplyTo tweet={tweet} />
-      )}
+      <TweetHeader tweet={tweet} />
+      {tweet.in_reply_to_status_id_str && <TweetInReplyTo tweet={tweet} />}
       <TweetBody tweet={tweet} />
       {tweet.mediaDetails?.length ? (
         <TweetMedia tweet={tweet} components={components} />
       ) : null}
       {tweet.quoted_tweet && <QuotedTweet tweet={tweet.quoted_tweet} />}
-      {!tweet.is_reply && <TweetInfo tweet={tweet} />}
+      <TweetInfo tweet={tweet} />
       <TweetActions tweet={tweet} onClickDiscussion={onClickReply} />
       {childrenWithProps}
     </TweetContainer>
@@ -105,17 +103,15 @@ export const EmbeddedTweet = ({
   });
 
   return (
-    <TweetContainer inThread={tweet.is_reply} id={id} className={className}>
+    <TweetContainer id={id} className={className}>
       {studyPhase === "annotation" && (
         <div className="font-bold text-xl text-gray-800 mb-3">
           Tweet ID:
           <br /> {tweet.id_str}
         </div>
       )}
-      <TweetHeader tweet={tweet} components={components} />
-      {tweet.in_reply_to_status_id_str && !tweet.is_reply && (
-        <TweetInReplyTo tweet={tweet} />
-      )}
+      <TweetHeader tweet={tweet} />
+      {tweet.in_reply_to_status_id_str && <TweetInReplyTo tweet={tweet} />}
       <TweetBody tweet={tweet} />
       {tweet.mediaDetails?.length ? (
         <TweetMedia tweet={tweet} components={components} />

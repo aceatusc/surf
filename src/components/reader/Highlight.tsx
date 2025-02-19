@@ -41,7 +41,7 @@ export default function Highlight({
         return (
           <div
             id={`highlight_${title}`}
-            className="absolute z-50 flex flex-col"
+            className="absolute z-[21] flex flex-col"
             style={{
               left: isLeft ? (left - 24) * pageScale : (right + 4) * pageScale,
               top: top * pageScale,

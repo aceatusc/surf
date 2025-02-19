@@ -63,8 +63,8 @@ export const TweetActions = ({
                 data-pid={tweet.id_str}
                 data-name={tweet.user.screen_name}
               >
-                {tweet.replies.length}{" "}
-                {tweet.replies.length > 1 ? "Replies" : "Reply"}
+                {tweet.reply_count}{" "}
+                {tweet.reply_count > 1 ? "Replies" : "Reply"}
               </span>
             </div>
           </TooltipTrigger>

@@ -11,7 +11,8 @@ function stringToHash(str: string): number {
 }
 
 export function getColor(loc: string | undefined, ligher: boolean = true) {
-  return uniqolor(stringToHash(loc?.repeat(5) || "default"), {
+  if (!loc) return "#dadada";
+  return uniqolor(stringToHash(loc?.repeat(5)), {
     lightness: ligher ? 80 : 60,
     saturation: [30, 100],
   }).color;

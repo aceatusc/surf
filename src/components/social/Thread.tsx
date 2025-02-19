@@ -103,10 +103,13 @@ export default function Thread({ post }: { post: EnrichedTweet }) {
           <TweetBody tweet={previewReply} />
         </TweetContainer>
       ) : null}
-      {isExpanded ? (
-        <SelfThread
+      {isExpanded && (post.thread_posts || replies.length) ? (
+        <ThreadView
           onClick={() => setIsExpanded(false)}
-          selfThreads={post.thread_posts?.map((id) => posts[id]) || []}
+          threads={
+            post.thread_posts?.map((id) => posts[id]) || [post, ...replies]
+          }
+          isSelf={!!previewThread}
         />
       ) : null}
     </TweetContainer>
@@ -123,7 +126,9 @@ const PreviewReply = ({
   return (
     <TweetContainer inThread>
       <TweetHeader tweet={post} inThread />
-      <TweetBody tweet={post} inThread />
+      <TweetBody tweet={post} inThread>
+        <ThreadTag post={post} />
+      </TweetBody>
       <div
         className="mt-1 text-[#006fd6] cursor-pointer hover:text-pink-600 inline-block font-semibold"
         onClick={onClick}
@@ -132,6 +137,48 @@ const PreviewReply = ({
       </div>
     </TweetContainer>
   );
+};
+
+const ThreadTag = ({
+  post,
+  isSelf = false,
+  idx,
+  length,
+}: {
+  post: EnrichedTweet;
+  isSelf?: boolean;
+  idx?: number;
+  length?: number;
+}) => {
+  return post.tweet_type ? (
+    <div
+      className={`absolute top-3 right-[100%] flex items-center justify-center rounded-l-full py-2 pl-3 ${
+        isSelf ? "pr-1" : ""
+      } transition-all ${
+        post.location ? "cursor-pointer hover:pr-1.5 hover:pl-4" : ""
+      } opacity-${isSelf ? "90" : "60"} hover:opacity-100`}
+      style={{
+        backgroundColor: getColor(post.location),
+      }}
+      onClick={jumpToLocation}
+      data-id={`${post.location}$%^${post.tweet_type}`}
+    >
+      {/* <ArrowLeft className="w-5 h-5" /> */}
+      {isSelf ? (
+        <div className="text-md whitespace-nowrap font-mono">
+          <b className="underline">{idx}</b>
+          <i className="text-sm">/{length}</i>
+        </div>
+      ) : post.tweet_type ? (
+        <div
+          className="rounded-full h-6 w-6"
+          style={{ backgroundColor: getColor(post.location) }}
+        >
+          {ptypeConfig[post.tweet_type as keyof typeof ptypeConfig].icon}
+        </div>
+      ) : null}
+    </div>
+  ) : null;
 };
 
 const ThreadReply = ({
@@ -181,7 +228,9 @@ const ThreadReply = ({
           {replies.map((reply) => (
             <TweetContainer key={reply.id_str} inThread>
               <TweetHeader tweet={reply} inThread />
-              <TweetBody tweet={reply} inThread />
+              <TweetBody tweet={reply} inThread>
+                <ThreadTag post={reply} />
+              </TweetBody>
               {reply.mediaDetails?.length ? <TweetMedia tweet={reply} /> : null}
               <ThreadReply
                 post={reply}
@@ -211,48 +260,42 @@ const ThreadReply = ({
   );
 };
 
-const SelfThreadItem = ({
+const ThreadItem = ({
   post,
   idx,
   length,
+  isSelf = false,
 }: {
   post: EnrichedTweet;
   idx: number;
   length: number;
+  isSelf?: boolean;
 }) => {
   return (
     <div
       id={post.id_str}
       className="hover:bg-[#f8f8f8] px-3 rounded-2xl transition-colors pt-2 pb-0.5 relative"
     >
+      {isSelf ? null : <TweetHeader tweet={post} inThread />}
       <TweetBody tweet={post} inThread>
-        <div
-          className="absolute top-3 right-[100%] flex items-center justify-center rounded-l-full py-2 pl-3 pr-1 hover:pr-1.5 hover:pl-4 transition-all cursor-pointer opacity-90 hover:opacity-100"
-          style={{
-            backgroundColor: getColor(post.location),
-          }}
-          onClick={jumpToLocation}
-          data-id={`${post.location}$%^${post.tweet_type}`}
-        >
-          {/* <ArrowLeft className="w-5 h-5" /> */}
-          <div className="text-md whitespace-nowrap font-mono">
-            <b className="underline">{idx}</b>
-            <i className="text-sm">/{length}</i>
-          </div>
-        </div>
+        <ThreadTag post={post} idx={idx} length={length} isSelf={isSelf} />
       </TweetBody>
       {post.mediaDetails?.length ? <TweetMedia tweet={post} /> : null}
-      <ThreadReply post={post} expand={false} preview />
+      {(idx > 1 || isSelf) && (
+        <ThreadReply post={post} expand={!isSelf} preview={isSelf} />
+      )}
     </div>
   );
 };
 
-const SelfThread = ({
+const ThreadView = ({
   onClick,
-  selfThreads,
+  threads,
+  isSelf = false,
 }: {
   onClick: () => void;
-  selfThreads: EnrichedTweet[];
+  threads: EnrichedTweet[];
+  isSelf?: boolean;
 }) => {
   return (
     <div
@@ -262,28 +305,47 @@ const SelfThread = ({
         marginLeft: "-4.5rem",
       }}
     >
-      <div className="flex justify-between bg-white border-b border-stone-200 pt-4 pl-2 pr-1 pb-0 ml-[3rem] rounded-t-3xl shadow-md h-[4.8rem]">
-        <TweetHeader tweet={selfThreads[0]} />
+      <div className="flex justify-between bg-white border-b border-stone-200 pt-2.5 pl-2 pr-1 pb-0 ml-[3.2rem] rounded-t-3xl shadow-md h-[4.8rem]">
+        {isSelf ? (
+          <TweetHeader tweet={threads[0]} />
+        ) : (
+          <div className="flex flex-row items-center">
+            <div
+              className="w-12 h-12 text-3xl ml-1 rounded-full flex items-center justify-center"
+              style={{ backgroundColor: getColor(threads[0].location) }}
+            >
+              {
+                ptypeConfig[threads[0].tweet_type as keyof typeof ptypeConfig]
+                  .icon
+              }
+            </div>
+            <div className="text-xl ml-3 font-mono">
+              {threads[0].tweet_type}
+            </div>
+          </div>
+        )}
         <Button
           variant="secondary"
-          className="rounded-full font-mono w-10 h-10 bg-stone-200 hover:bg-stone-300 text-stone-600 mt-1"
+          className="rounded-full w-10 h-10 bg-stone-200 hover:bg-stone-300 text-stone-600 mt-2.5"
           onClick={onClick}
         >
           <FontAwesomeIcon icon={faClose} />
         </Button>
       </div>
       <HideScroll
-        paddingLeft={3}
+        paddingLeft={3.2}
         paddingBottom={4.8}
         className="relative w-full h-full shadow-xl rounded-b-3xl"
+        fullHeight
       >
-        <div className="bg-white shadow-md rounded-b-3xl border-l border-r border-b">
-          {selfThreads.map((t, idx) => (
-            <SelfThreadItem
+        <div className="bg-white shadow-md rounded-b-3xl border-l border-r border-b min-h-[calc(100vh-8rem)]">
+          {threads.map((t, idx) => (
+            <ThreadItem
               key={t.id_str}
               post={t}
               idx={idx + 1}
-              length={selfThreads.length}
+              length={threads.length}
+              isSelf={isSelf}
             />
           ))}
         </div>

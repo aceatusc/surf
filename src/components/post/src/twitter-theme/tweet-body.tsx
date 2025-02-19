@@ -11,7 +11,12 @@ export const TweetBody = ({
   inThread?: Boolean;
   children?: React.ReactNode;
 }) => (
-  <p className={s.root} lang={tweet.lang} dir="auto" data-in-thread={inThread}>
+  <div
+    className={s.root}
+    lang={tweet.lang}
+    dir="auto"
+    data-in-thread={inThread}
+  >
     {tweet.entities.map((item, i) => {
       switch (item.type) {
         case "hashtag":
@@ -36,5 +41,5 @@ export const TweetBody = ({
       }
     })}
     {children}
-  </p>
+  </div>
 );

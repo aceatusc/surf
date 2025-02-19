@@ -10,6 +10,7 @@ type Props = {
   paddingBottom?: number;
   scrollRef?: React.RefObject<HTMLDivElement>;
   direction?: "ltr" | "rtl";
+  fullHeight?: boolean;
 };
 
 export default function HideScroll({
@@ -21,6 +22,7 @@ export default function HideScroll({
   paddingBottom,
   scrollRef,
   direction = "ltr",
+  fullHeight = false,
   ...props
 }: Props) {
   const [sbWidth, setSbWidth] = useState<number>(0);
@@ -57,6 +59,7 @@ export default function HideScroll({
             overflowY: "hidden",
             overflowX: "visible",
             height: "fit-content",
+            minHeight: fullHeight ? "100%" : undefined,
           }}
         >
           {children}

@@ -1,0 +1,18 @@
+.react-pdf__Page__annotations {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.react-pdf__Page__annotations section {
+  position: absolute;
+  z-index: 9999;
+}
+
+.react-pdf__Page__annotations section a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

@@ -2,7 +2,6 @@ import classnames from "classnames";
 import * as React from "react";
 import { Page } from "react-pdf";
 import { RenderFunction } from "react-pdf/dist/Page";
-
 import { DocumentContext } from "../context/DocumentContext";
 import { PageRenderContext } from "../context/PageRenderContext";
 import { TransformContext } from "../context/TransformContext";
@@ -15,6 +14,7 @@ import { generatePageIdFromIndex } from "../utils/scroll";
 import { computePageStyle, getPageWidth } from "../utils/style";
 import { HighlightOverlay } from "./HighlightOverlay";
 import { Overlay } from "./Overlay";
+import "./PageWrapper.css";
 
 /**
  * A subset of react-pdf's Page component props exposed by this wrapper
@@ -105,6 +105,8 @@ export const PageWrapper: React.FunctionComponent<Props> = ({
       style={{
         ...getPageStyle(),
         marginRight: "1.2rem",
+        marginTop: 0,
+        borderTop: pageIndex ? undefined : "1.6px solid #f8f8f8",
       }}
       {...extraProps}
     >

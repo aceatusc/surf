@@ -22,14 +22,15 @@ export default function Reader({ url }: { url: string }) {
         direction: "rtl",
         maxWidth: sidebarOpen ? "calc(100% - 42rem)" : "100%",
         transition: "max-width 0.2s",
+        paddingTop: "2.4rem",
       }}
     >
-      <DocumentWrapper file={url} renderType={RENDER_TYPE.MULTI_CANVAS}>
+      <DocumentWrapper file={url} renderType={RENDER_TYPE.SINGLE_CANVAS}>
         {Array.from({ length: numPages }).map((_, i) => (
           <PageWrapper
             key={i}
             pageIndex={i}
-            renderType={RENDER_TYPE.MULTI_CANVAS}
+            renderType={RENDER_TYPE.SINGLE_CANVAS}
           >
             <Overlay>
               {locations[i] && (

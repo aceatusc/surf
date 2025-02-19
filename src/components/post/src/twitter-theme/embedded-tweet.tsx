@@ -61,7 +61,7 @@ export const EmbeddedTweetReply = ({
       ) : null}
       {tweet.quoted_tweet && <QuotedTweet tweet={tweet.quoted_tweet} />}
       <TweetInfo tweet={tweet} />
-      <TweetActions tweet={tweet} onClickDiscussion={onClickReply} />
+      <TweetActions tweet={tweet} onClickReply={onClickReply} />
       {childrenWithProps}
     </TweetContainer>
   );

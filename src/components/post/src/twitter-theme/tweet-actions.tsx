@@ -1,29 +1,12 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { EnrichedTweet, formatNumber } from "../utils.js";
+import { type EnrichedTweet, formatNumber } from "../utils.js";
 import s from "./tweet-actions.module.css";
 import { TweetInfo } from "./tweet-info.js";
-import { faReply } from "@fortawesome/free-solid-svg-icons";
-import clsx from "clsx";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "../../../ui/tooltip.jsx";
 
-export const TweetActions = ({
-  tweet,
-  onClickDiscussion,
-  inThread = false,
-}: {
-  tweet: EnrichedTweet;
-  onClickDiscussion?: (event: React.MouseEvent) => void;
-  inThread?: Boolean;
-}) => {
+export const TweetActions = ({ tweet, onClickReply }: { tweet: EnrichedTweet, onClickReply?: (event: React.MouseEvent) => void; }) => {
   const favoriteCount = formatNumber(tweet.favorite_count);
 
   return (
-    <div className={s.actions} data-in-thread={inThread}>
+    <div className={s.actions} data-in-thread={tweet.is_reply}>
       <a
         className={s.like}
         href={tweet.like_url}
@@ -40,51 +23,16 @@ export const TweetActions = ({
         </div>
         <span className={s.likeCount}>{favoriteCount}</span>
       </a>
-      <TooltipProvider>
-        <Tooltip delayDuration={160}>
-          <TooltipTrigger>
-            <div
-              className={clsx(s.reply, "cursor-pointer")}
-              onClick={onClickDiscussion}
-            >
-              <div className={s.replyIconWrapper}>
-                <svg
-                  viewBox="0 0 24 24"
-                  className={s.replyIcon}
-                  aria-hidden="true"
-                >
-                  <g>
-                    <path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z"></path>
-                  </g>
-                </svg>
-              </div>
-              <span
-                className={s.replyText}
-                data-pid={tweet.id_str}
-                data-name={tweet.user.screen_name}
-              >
-                {tweet.replies.length}{" "}
-                {tweet.replies.length > 1 ? "Replies" : "Reply"}
-              </span>
-            </div>
-          </TooltipTrigger>
-          <TooltipContent className="text-md">
-            Click to view or hide replies
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
-      <div className={clsx(s.reply, "cursor-pointer")}>
+      <div
+        className={s.reply}      >
         <div className={s.replyIconWrapper}>
-          <FontAwesomeIcon
-            icon={faReply}
-            className="text-zinc-400"
-            style={{
-              width: inThread ? "1.25rem" : "1.4rem",
-              height: inThread ? "1.25rem" : "1.4rem",
-            }}
-          />
+          <svg viewBox="0 0 24 24" className={s.replyIcon} aria-hidden="true">
+            <g>
+              <path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z"></path>
+            </g>
+          </svg>
         </div>
-        <span className={s.replyText}>Reply</span>
+        <span onClick={onClickReply} className={`${s.replyText} cursor-pointer`} data-pid={tweet.id_str} data-name={tweet.user.screen_name}>{tweet.conversation_count} Comment{tweet.conversation_count && tweet.conversation_count > 1 ? "s" : ""}</span>
       </div>
       <TweetInfo
         tweet={tweet}

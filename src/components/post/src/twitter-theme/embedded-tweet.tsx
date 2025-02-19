@@ -14,7 +14,6 @@ import { Button } from "../../../ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { DevContext } from "../../../../context/DevContext";
-import uniqolor from "uniqolor";
 
 type Props = {
   tweet: EnrichedTweet;
@@ -117,7 +116,7 @@ export const EmbeddedTweet = ({
         <TweetMedia tweet={tweet} components={components} />
       ) : null}
       {tweet.quoted_tweet && <QuotedTweet tweet={tweet.quoted_tweet} />}
-      <TweetActions tweet={tweet} onClickDiscussion={handleClickReply} />
+      <TweetActions tweet={tweet} onClickReply={handleClickReply} />
       {replyTo.id && (
         <div className="flex w-full items-center space-x-2 h-11 mt-2 mb-3.5">
           <Input

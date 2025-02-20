@@ -9,6 +9,7 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "../ui/hover-card";
+import Summary from "../ui/Summary";
 
 export default function Highlight({
   data,
@@ -68,12 +69,14 @@ export default function Highlight({
                     {ptypeConfig[type as keyof typeof ptypeConfig].icon}
                   </Button>
                 </HoverCardTrigger>
-                <HoverCardContent
-                  className="py-1 px-2 relative z-10 w-[24rem]"
-                  side={isLeft ? "left" : "right"}
-                >
-                  {summaries[title]?.[type]}
-                </HoverCardContent>
+                {summaries[title]?.[type] ? (
+                  <HoverCardContent
+                    className="py-1 px-2 relative z-10 w-[24rem]"
+                    side={isLeft ? "left" : "right"}
+                  >
+                    <Summary raw={summaries[title]?.[type]} />
+                  </HoverCardContent>
+                ) : null}
               </HoverCard>
             ))}
           </div>

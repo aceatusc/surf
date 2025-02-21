@@ -7290,7 +7290,7 @@
                 "1692641754124570952"
             ],
             "tweet_type": "Overview",
-            "thread_score": 3,
+            "thread_score": 100,
             "location": "Author",
             "isAuthor": true,
             "reply_count": 56
@@ -42624,7 +42624,7 @@
                 "1694052200555913233"
             ],
             "tweet_type": "Overview",
-            "thread_score": 2,
+            "thread_score": 200,
             "location": "Abstract",
             "reply_count": 1
         },

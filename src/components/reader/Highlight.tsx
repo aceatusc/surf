@@ -10,6 +10,8 @@ import {
   HoverCardTrigger,
 } from "../ui/hover-card";
 import Summary from "../ui/Summary";
+import { Separator } from "../ui/separator";
+import { ArrowRight } from "lucide-react";
 
 export default function Highlight({
   data,
@@ -25,7 +27,7 @@ export default function Highlight({
 
   const handleClick = useCallback((e: MouseEvent) => {
     e.stopPropagation();
-    const eleId = (e.target as HTMLElement).id;
+    const eleId = (e.target as HTMLElement).getAttribute("data-loc") || "";
     const [location, type] = eleId.split("$%^");
     setHighlightedLocation(location);
     setHighlightedType(type);
@@ -54,7 +56,7 @@ export default function Highlight({
                 <HoverCardTrigger asChild>
                   <Button
                     key={type}
-                    id={`${title}$%^${type}`}
+                    data-loc={`${title}$%^${type}`}
                     onClick={handleClick}
                     className="rounded-full transition-all duration-100 opacity-60 hover:opacity-100"
                     style={{
@@ -71,9 +73,21 @@ export default function Highlight({
                 </HoverCardTrigger>
                 {summaries[title]?.[type] ? (
                   <HoverCardContent
-                    className="py-1 px-2 relative z-10 w-[24rem]"
+                    className="px-5 py-2 relative z-10 w-[24rem]"
                     side={isLeft ? "left" : "right"}
+                    style={{ direction: "ltr" }}
                   >
+                    <div className="flex items-center justify-between">
+                      <div className="text-2xl font-mono mb-1 underline font-semibold">
+                        {type}
+                      </div>
+                      <ArrowRight
+                        className="w-10 h-10 hover:bg-stone-100 p-2 rounded-full cursor-pointer"
+                        onClick={handleClick}
+                        data-loc={`${title}$%^${type}`}
+                      />
+                    </div>
+                    <Separator className="mb-2" />
                     <Summary raw={summaries[title]?.[type]} />
                   </HoverCardContent>
                 ) : null}

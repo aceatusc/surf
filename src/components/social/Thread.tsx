@@ -26,7 +26,7 @@ import clsx from "clsx";
 
 const jumpToLocation = (event: MouseEvent) => {
   event.preventDefault();
-  const locID = event.currentTarget.getAttribute("data-id");
+  const locID = event.currentTarget.getAttribute("data-loc");
   if (!locID) return;
   const locEle = document.getElementById(locID);
   if (locEle) {
@@ -52,7 +52,7 @@ export default function Thread({ post }: { post: EnrichedTweet }) {
       <TweetHeader tweet={post} />
       {post.tweet_type && (
         <div
-          data-id={`${post.location}$%^${post.tweet_type}`}
+          data-loc={`${post.location}$%^${post.tweet_type}`}
           onClick={jumpToLocation}
           className={`rounded-full text-md font-mono flex items-center px-2 h-9 justify-center ${s.tag} hover:brightness-95 cursor-pointer text-stone-800 absolute -top-4 left-3 opacity-90 -z-0`}
           style={{ backgroundColor: getColor(post.location) }}
@@ -178,7 +178,7 @@ const ThreadTag = ({
         backgroundColor: getColor(post.location),
       }}
       onClick={jumpToLocation}
-      data-id={`${post.location}$%^${post.tweet_type}`}
+      data-loc={`${post.location}$%^${post.tweet_type}`}
     >
       {/* <ArrowLeft className="w-5 h-5" /> */}
       {isSelf ? (
@@ -219,7 +219,8 @@ const ThreadReply = ({
     .sort((a, b) => (b.score || 0) - (a.score || 0));
 
   useEffect(() => {
-    if (focusMode && replies.length && layer === 3) {
+    // console.log(post.id_str, focusMode, replies.length, layer);
+    if (focusMode && replies.length && layer == 3 && preview) {
       setRenderReplies(
         replies
           .filter((r) => (r.thread_score || r.score || 0) > 0.2)
@@ -333,6 +334,10 @@ const ThreadView = ({
   threads: EnrichedTweet[];
   isSelf?: boolean;
 }) => {
+  const { focusMode } = useContext(DataContext);
+  if (focusMode && !isSelf) {
+    threads = threads.filter((t) => (t.thread_score || t.score || 0) > 0.2);
+  }
   return (
     <div
       className="fixed top-8 bottom-1 z-50 overflow-hidden w-[44rem] 2xl:w-[45rem]"

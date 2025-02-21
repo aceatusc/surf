@@ -41,8 +41,6 @@ const formatText = (inputText: string) => {
 
 export default function Summary({ raw }: { raw: string }) {
   return (
-    <div style={{ direction: "ltr" }} className="text-lg text-stone-800">
-      {formatText(raw)}
-    </div>
+    <div className="text-lg text-stone-800 leading-6">{formatText(raw)}</div>
   );
 }

@@ -22,6 +22,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import s from "./Thread.module.css";
 import { DataContext } from "@/context/DataContext";
+import clsx from "clsx";
 
 const jumpToLocation = (event: MouseEvent) => {
   event.preventDefault();
@@ -49,14 +50,18 @@ export default function Thread({ post }: { post: EnrichedTweet }) {
   return (
     <TweetContainer className={s.tag_parent}>
       <TweetHeader tweet={post} />
-      {post.location && post.tweet_type && (
+      {post.tweet_type && (
         <div
           data-id={`${post.location}$%^${post.tweet_type}`}
           onClick={jumpToLocation}
           className={`rounded-full text-md font-mono flex items-center px-2 h-9 justify-center ${s.tag} hover:brightness-95 cursor-pointer text-stone-800 absolute -top-4 left-3 opacity-90 -z-0`}
           style={{ backgroundColor: getColor(post.location) }}
         >
-          <ArrowLeft className={`${s.arrowIcon} hidden w-5 h-5`} />
+          {post.location && (
+            <div className="hidden">
+              <ArrowLeft className={`${s.arrowIcon} w-5 h-5`} />
+            </div>
+          )}
           <div className="text-xl">
             {ptypeConfig[post.tweet_type as keyof typeof ptypeConfig].icon}
           </div>
@@ -98,10 +103,7 @@ export default function Thread({ post }: { post: EnrichedTweet }) {
           </Button>
         </div>
       ) : previewReply ? (
-        <TweetContainer inThread>
-          <TweetHeader tweet={previewReply} />
-          <TweetBody tweet={previewReply} />
-        </TweetContainer>
+        <PreviewReply post={previewReply} onClick={() => setIsExpanded(true)} />
       ) : null}
       {isExpanded && (post.thread_posts || replies.length) ? (
         <ThreadView
@@ -116,12 +118,32 @@ export default function Thread({ post }: { post: EnrichedTweet }) {
   );
 }
 
+const ReadMore = ({
+  onClick,
+  className,
+}: {
+  onClick: () => void;
+  className?: string;
+}) => {
+  return (
+    <div
+      className={clsx(
+        "text-[#006fd6] cursor-pointer hover:text-pink-600 inline-block font-semibold",
+        className
+      )}
+      onClick={onClick}
+    >
+      Read more
+    </div>
+  );
+};
+
 const PreviewReply = ({
   post,
   onClick,
 }: {
   post: EnrichedTweet;
-  onClick?: () => void;
+  onClick: () => void;
 }) => {
   return (
     <TweetContainer inThread>
@@ -129,12 +151,7 @@ const PreviewReply = ({
       <TweetBody tweet={post} inThread>
         <ThreadTag post={post} />
       </TweetBody>
-      <div
-        className="mt-1 text-[#006fd6] cursor-pointer hover:text-pink-600 inline-block font-semibold"
-        onClick={onClick}
-      >
-        Read more
-      </div>
+      <ReadMore onClick={onClick} />
     </TweetContainer>
   );
 };
@@ -192,23 +209,36 @@ const ThreadReply = ({
   expand: boolean;
   preview?: boolean;
 }) => {
-  const { posts } = useContext(DataContext);
+  const { posts, focusMode } = useContext(DataContext);
   const [childExpand, setChildExpand] = useState(expand);
   const [childLayer, setChildLayer] = useState(layer);
+  const [renderReplies, setRenderReplies] = useState<EnrichedTweet[]>([]);
 
   const replies = posts[post.id_str]?.replies
     ?.map((rid) => posts[rid])
     .sort((a, b) => (b.score || 0) - (a.score || 0));
+
+  useEffect(() => {
+    if (focusMode && replies.length && layer === 3) {
+      setRenderReplies(
+        replies
+          .filter((r) => (r.thread_score || r.score || 0) > 0.2)
+          .sort(
+            (a, b) =>
+              (b.thread_score || b.score || 0) -
+              (a.thread_score || a.score || 0)
+          )
+      );
+    } else {
+      setRenderReplies(replies);
+    }
+  }, []);
 
   const previewReply = replies.length
     ? (replies[0].score || 0) > 0.5
       ? replies[0]
       : null
     : null;
-  replies.sort(
-    (a, b) =>
-      (b.thread_score || b.score || 0) - (a.thread_score || a.score || 0)
-  );
 
   return (
     <Fragment>
@@ -223,9 +253,9 @@ const ThreadReply = ({
         }}
         inThread={!preview}
       />
-      {childExpand && replies.length && childLayer ? (
+      {childExpand && childLayer ? (
         <Fragment>
-          {replies.map((reply) => (
+          {(focusMode ? renderReplies : replies).map((reply) => (
             <TweetContainer key={reply.id_str} inThread>
               <TweetHeader tweet={reply} inThread />
               <TweetBody tweet={reply} inThread>
@@ -239,6 +269,15 @@ const ThreadReply = ({
               />
             </TweetContainer>
           ))}
+          {focusMode && replies.length > renderReplies.length ? (
+            <div className="bg-stone-100 px-3 ml-1 w-[28rem] py-2 rounded-xl mt-2">
+              <div className="text-stone-600 w-full">
+                You are in focus mode. We've hidden some discussions. Click here
+                to see more.
+              </div>
+              <ReadMore onClick={() => setRenderReplies(replies)} />
+            </div>
+          ) : null}
         </Fragment>
       ) : preview && previewReply ? (
         <PreviewReply
@@ -246,15 +285,12 @@ const ThreadReply = ({
           onClick={() => setChildExpand((prev) => !prev)}
         />
       ) : !layer && replies.length ? (
-        <div
-          className="text-[#006fd6] cursor-pointer hover:text-pink-600 inline-block font-semibold"
+        <ReadMore
           onClick={() => {
             setChildExpand(true);
             setChildLayer(100);
           }}
-        >
-          Read more
-        </div>
+        />
       ) : null}
     </Fragment>
   );

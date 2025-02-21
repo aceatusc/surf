@@ -1,14 +1,11 @@
-.tag_parent:hover .tag > svg {
-  display: inline-block;
-}
-
 .tag_parent:hover .tag > div:first-of-type {
-  display: none;
+  display: inline-block;
+  padding-left: 0.4rem;
+  padding-right: 0.1rem;
 }
 
-.tag_parent:hover .tag {
-  width: fit-content;
-  padding: 0 0.8rem;
+.tag_parent:hover .tag > div:nth-of-type(2) {
+  display: none;
 }
 
 .tag_parent:hover .tag > div:last-of-type {

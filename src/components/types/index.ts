@@ -31,7 +31,7 @@ export type TSummaryData = {
 export const ptypeConfig = {
   "Related Work": { icon: "📖", priority: 5 },
   Perspective: { icon: "💬", priority: 4 },
-  Critique: { icon: "❗", priority: 3 },
+  Critique: { icon: "❌", priority: 3 },
   Overview: { icon: "🧵", priority: 1 },
   Teaser: { icon: "🔎", priority: 7 },
   "Q&A": { icon: "❓", priority: 2 },

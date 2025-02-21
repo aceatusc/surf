@@ -20,6 +20,7 @@ import { Switch } from "../ui/switch";
 import { Label } from "../ui/label";
 import { SidebarCloseIcon } from "lucide-react";
 import { UIContext } from "@/context/UIContext";
+import clsx from "clsx";
 
 const TabTypes = Object.keys(ptypeConfig).sort((a, b) => {
   return (
@@ -27,8 +28,6 @@ const TabTypes = Object.keys(ptypeConfig).sort((a, b) => {
     ptypeConfig[b as keyof typeof ptypeConfig].priority
   );
 });
-
-// const FilterTypes = ["Time", "Location", "Popularity"];
 
 export default function Social() {
   const {
@@ -47,7 +46,11 @@ export default function Social() {
         post?.tweet_type !== "Trivia" &&
         !post?.in_thread &&
         (!highlightedType || post.tweet_type === highlightedType) &&
-        (!highlightedLocation || post.location === highlightedLocation)
+        (!highlightedLocation || post.location === highlightedLocation) &&
+        (focusMode && post.thread_score ? post.thread_score > 0.2 : true) &&
+        (!highlightedLocation && !highlightedType
+          ? !post.in_reply_to_status_id_str
+          : true)
     )
     .sort((a, b) => {
       const score_diff = (b.thread_score || 0) - (a.thread_score || 0);
@@ -98,13 +101,20 @@ export default function Social() {
           ))}
         </div>
         <Separator className="mt-1 mb-3" />
-        <div className="flex items-center space-x-2 border w-fit px-5 py-2 rounded-full bg-stone-100">
-          <div className="flex flex-col">
+        <div
+          className={clsx(
+            "items-center border px-6 justify-between py-2 rounded-full bg-stone-100 w-72 mb-1 flex",
+            sidebarOpen ? "flex" : "hidden"
+          )}
+        >
+          <div className="flex flex-col mr-2">
             <Label htmlFor="#focus-mode-switch" className="text-lg">
-              {focusMode ? "Focus Mode" : "Social Mode"}
+              {focusMode ? "Focus Mode" : "Social Mode "}
             </Label>
             <div className="text-stone-600 text-sm">
-              {focusMode ? "Show only key discussions" : "Show all "}
+              {focusMode
+                ? "Show only key discussions"
+                : "Show more discussions"}
             </div>
           </div>
           <Switch
@@ -155,7 +165,7 @@ export default function Social() {
           display: sidebarOpen ? "block" : "none",
         }}
       >
-        <HideScroll paddingLeft={0.8} paddingRight={0.8} paddingBottom={8}>
+        <HideScroll paddingLeft={0.8} paddingRight={0.8} paddingBottom={12}>
           <AnimatePresence>
             {postToDisplay.map((post) => (
               <motion.div

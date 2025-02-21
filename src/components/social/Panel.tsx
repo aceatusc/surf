@@ -37,11 +37,8 @@ export default function Social() {
     highlightedLocation,
     highlightedType,
   } = useContext(HighlightContext);
-  const { posts } = useContext(DataContext);
+  const { posts, focusMode, setFocusMode } = useContext(DataContext);
   const { sidebarOpen, setSidebarOpen } = useContext(UIContext);
-  const [section, setSection] = useState("All");
-  // const [filterType, setFilterType] = useState("All");
-  // const [sortBy, setSortBy] = useState("Location");
 
   const postToDisplay = Object.values(posts)
     .filter(
@@ -100,7 +97,22 @@ export default function Social() {
             </Button>
           ))}
         </div>
-        <Separator className="mt-3 -mb-1" />
+        <Separator className="mt-1 mb-3" />
+        <div className="flex items-center space-x-2 border w-fit px-5 py-2 rounded-full bg-stone-100">
+          <div className="flex flex-col">
+            <Label htmlFor="#focus-mode-switch" className="text-lg">
+              {focusMode ? "Focus Mode" : "Social Mode"}
+            </Label>
+            <div className="text-stone-600 text-sm">
+              {focusMode ? "Show only key discussions" : "Show all "}
+            </div>
+          </div>
+          <Switch
+            id="focus-mode-switch"
+            checked={focusMode}
+            onClick={() => setFocusMode(!focusMode)}
+          />
+        </div>
 
         {highlightedLocation !== null && (
           <Badge

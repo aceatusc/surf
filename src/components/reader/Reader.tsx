@@ -25,12 +25,12 @@ export default function Reader({ url }: { url: string }) {
         paddingTop: "2.4rem",
       }}
     >
-      <DocumentWrapper file={url} renderType={RENDER_TYPE.SINGLE_CANVAS}>
+      <DocumentWrapper file={url} renderType={RENDER_TYPE.MULTI_CANVAS}>
         {Array.from({ length: numPages }).map((_, i) => (
           <PageWrapper
             key={i}
             pageIndex={i}
-            renderType={RENDER_TYPE.SINGLE_CANVAS}
+            renderType={RENDER_TYPE.MULTI_CANVAS}
           >
             <Overlay>
               {locations[i] && (

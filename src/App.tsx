@@ -1,6 +1,4 @@
 import Reader from "./components/reader/Reader";
-import ZoomControl from "./components/reader/ZoomControl";
-import { TLocationData, TPostData } from "./components/types";
 import { useContext, useEffect, useState } from "react";
 import { DevContext } from "./context/DevContext";
 import {
@@ -24,13 +22,12 @@ const examples = [
     title: "Sigmoid Loss for Language Image Pre-Training",
     data: "/2303.15343.json",
   },
-  // {
-  //   id: "arxiv:2401.13782",
-  //   url: "https://arxiv.org/pdf/2401.13782",
-  //   title: "Position: AI/ML Influencers Have a Place in the Academic Process",
-  //   postData: "/2401.13782_posts.json",
-  //   locationData: "/2401.13782_highlights.json",
-  // },
+  {
+    id: "arxiv:2401.13782",
+    url: "https://arxiv.org/pdf/2401.13782",
+    title: "Position: AI/ML Influencers Have a Place in the Academic Process",
+    data: "/2401.13782.json",
+  },
   // {
   //   id: "arxiv:2309.17453",
   //   url: "https://arxiv.org/pdf/2309.17453",
@@ -75,9 +72,6 @@ function SelectExample() {
             className="cursor-pointer hover:underline text-blue-500"
             onClick={() => navigate(`/${example.id}`)}
           >
-            {/* {!example.locationData && (
-              <Badge className="px-1 py-0.5 mr-1.5">For Annotators</Badge>
-            )} */}
             {example.title}{" "}
           </li>
         ))}

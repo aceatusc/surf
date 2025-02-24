@@ -21,11 +21,19 @@ export type TLocationData = {
 };
 
 export type TSummary = {
-  [key: string]: string;
+  [key: string]: string[];
 };
 
 export type TSummaryData = {
   [key: string]: TSummary;
+};
+
+export type TContext = {
+  [key: string]: string;
+};
+
+export type TContextData = {
+  [key: string]: TContext;
 };
 
 export const ptypeConfig = {

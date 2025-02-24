@@ -23,6 +23,7 @@ import {
 import s from "./Thread.module.css";
 import { DataContext } from "@/context/DataContext";
 import clsx from "clsx";
+import { ThreadContext } from "@/context/ThreadContext";
 
 const jumpToLocation = (event: MouseEvent) => {
   event.preventDefault();
@@ -36,10 +37,10 @@ const jumpToLocation = (event: MouseEvent) => {
 
 // Thread is the root post of a thread
 export default function Thread({ post }: { post: EnrichedTweet }) {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const { expandThread, setExpandThread } = useContext(ThreadContext);
   const { posts } = useContext(DataContext);
 
-  const previewThread = post.thread_posts && posts[post.thread_posts[1]];
+  const previewThread = post.in_thread && posts[post.in_thread[1]];
 
   const replies = posts[post.id_str]?.replies
     ?.map((rid) => posts[rid])
@@ -72,7 +73,7 @@ export default function Thread({ post }: { post: EnrichedTweet }) {
       {post.mediaDetails?.length ? <TweetMedia tweet={post} /> : null}
       <TweetActions
         tweet={post}
-        onClickDiscussion={() => setIsExpanded(true)}
+        onClickDiscussion={() => setExpandThread(post.id_str)}
       />
       {previewThread ? (
         <div className="relative">
@@ -93,7 +94,7 @@ export default function Thread({ post }: { post: EnrichedTweet }) {
           <Button
             className="absolute bottom-0 left-1 right-0 mr-auto w-fit font-semibold text-base z-10 rounded-full h-10 px-8 hover:bg-zinc-50 text-stone-700 shadow-md bg-white"
             variant="ghost"
-            onClick={() => setIsExpanded(true)}
+            onClick={() => setExpandThread(post.id_str)}
           >
             <FontAwesomeIcon
               icon={faAngleDoubleDown}
@@ -103,14 +104,15 @@ export default function Thread({ post }: { post: EnrichedTweet }) {
           </Button>
         </div>
       ) : previewReply ? (
-        <PreviewReply post={previewReply} onClick={() => setIsExpanded(true)} />
+        <PreviewReply
+          post={previewReply}
+          onClick={() => setExpandThread(post.id_str)}
+        />
       ) : null}
-      {isExpanded && (post.thread_posts || replies.length) ? (
+      {expandThread === post.id_str && (post.in_thread || replies.length) ? (
         <ThreadView
-          onClick={() => setIsExpanded(false)}
-          threads={
-            post.thread_posts?.map((id) => posts[id]) || [post, ...replies]
-          }
+          onClick={() => setExpandThread(null)}
+          threads={post.in_thread?.map((id) => posts[id]) || [post, ...replies]}
           isSelf={!!previewThread}
         />
       ) : null}

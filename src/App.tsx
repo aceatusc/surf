@@ -83,7 +83,8 @@ function SelectExample() {
 export function AppContent() {
   const { id } = useParams();
   const paper = examples.find((example) => example.id === id);
-  const { setPosts, setLocations, setSummaries } = useContext(DataContext);
+  const { setPosts, setLocations, setSummaries, setContext } =
+    useContext(DataContext);
   const [loading, setLoading] = useState(true);
   const { setStudyPhase } = useContext(DevContext);
 
@@ -100,12 +101,13 @@ export function AppContent() {
 
     const fetchData = async () => {
       try {
-        const { posts, locations, summaries } = await fetch(paper.data).then(
-          (res) => res.json()
-        );
+        const { posts, locations, summaries, context } = await fetch(
+          paper.data
+        ).then((res) => res.json());
         setPosts(posts);
         setLocations(locations);
         setSummaries(summaries);
+        setContext(context);
       } catch (error) {
         console.error("Failed to load data:", error);
       } finally {

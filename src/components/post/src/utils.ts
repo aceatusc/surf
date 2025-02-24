@@ -135,9 +135,10 @@ export type EnrichedTweet = Omit<Tweet, "entities" | "quoted_tweet"> & {
   location?: string;
   thread_score?: number;
   score?: number;
-  in_thread?: boolean;
-  thread_posts?: string[];
   reply_count: number;
+  root: string;
+  in_thread?: string[];
+  is_branch?: boolean;
 };
 
 export type EnrichedQuotedTweet = Omit<QuotedTweet, "entities"> & {

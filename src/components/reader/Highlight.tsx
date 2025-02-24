@@ -71,7 +71,7 @@ export default function Highlight({
                     {ptypeConfig[type as keyof typeof ptypeConfig].icon}
                   </Button>
                 </HoverCardTrigger>
-                {summaries[title]?.[type] ? (
+                {summaries[type]?.[title] ? (
                   <HoverCardContent
                     className="px-5 py-2 relative z-10 w-[24rem]"
                     side={isLeft ? "left" : "right"}
@@ -88,7 +88,7 @@ export default function Highlight({
                       />
                     </div>
                     <Separator className="mb-2" />
-                    <Summary raw={summaries[title]?.[type]} />
+                    <Summary raw={summaries[type]?.[title]} />
                   </HoverCardContent>
                 ) : null}
               </HoverCard>

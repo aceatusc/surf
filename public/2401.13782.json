@@ -34,10 +34,12 @@
                 "1751414624619286604",
                 "1751424874713919530"
             ],
+            "root": "1751298202777555438",
             "reply_count": 15,
             "score": 0,
             "thread_score": 0.8,
-            "location": "Analysis"
+            "location": "Analysis",
+            "is_branch": true
         },
         "1751002910819795261": {
             "created_at": "Fri Jan 26 22:03:20 +0000 2024",
@@ -68,9 +70,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751002910819795261",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751002910819795261",
             "replies": [],
+            "root": "1751002910819795261",
             "reply_count": 0,
             "score": 0,
-            "thread_score": 0
+            "thread_score": 0,
+            "is_branch": true
         },
         "1803466135041708307": {
             "created_at": "Wed Jun 19 16:33:28 +0000 2024",
@@ -161,9 +165,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803466135041708307",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803466135041708307",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.4,
-            "thread_score": 0.4
+            "thread_score": 0.4,
+            "is_branch": true
         },
         "1751279042375057724": {
             "created_at": "Sat Jan 27 16:20:35 +0000 2024",
@@ -199,10 +205,12 @@
                 "1751429017809670524",
                 "1751349091618226224"
             ],
+            "root": "1751279042375057724",
             "reply_count": 9,
             "score": 0,
             "thread_score": 0.6,
-            "location": null
+            "location": "Conclusion",
+            "is_branch": true
         },
         "1750783025011450254": {
             "created_at": "Fri Jan 26 07:29:35 +0000 2024",
@@ -240,10 +248,12 @@
                 "1752091796748869701",
                 "1751084825744732479"
             ],
+            "root": "1750783025011450254",
             "reply_count": 42,
             "score": 0,
             "thread_score": 0.6,
-            "location": "Discussion"
+            "location": "Discussion",
+            "is_branch": true
         },
         "1752425165793759366": {
             "created_at": "Tue Jan 30 20:14:52 +0000 2024",
@@ -510,10 +520,12 @@
             "like_url": "https://x.com/intent/like?tweet_id=1752425165793759366",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1752425165793759366",
             "replies": [],
+            "root": "1752425165793759366",
             "reply_count": 0,
             "score": 0,
             "thread_score": 0.4,
-            "location": "Related Work"
+            "location": "Related Work",
+            "is_branch": true
         },
         "1750805744255951085": {
             "created_at": "Fri Jan 26 08:59:52 +0000 2024",
@@ -549,9 +561,11 @@
                 "1750908985991921689",
                 "1750808667761303703"
             ],
+            "root": "1750805744255951085",
             "reply_count": 4,
             "score": 0,
-            "thread_score": 0
+            "thread_score": 0,
+            "is_branch": true
         },
         "1750777835529072648": {
             "created_at": "Fri Jan 26 07:08:58 +0000 2024",
@@ -739,9 +753,11 @@
                 "1751083146127245489",
                 "1750974418397065614"
             ],
+            "root": "1750777835529072648",
             "reply_count": 23,
             "score": 0,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1751029578414666035": {
             "created_at": "Fri Jan 26 23:49:18 +0000 2024",
@@ -1035,9 +1051,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751029578414666035",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751029578414666035",
             "replies": [],
+            "root": "1751029578414666035",
             "reply_count": 0,
             "score": 0,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1750938896316399800": {
             "created_at": "Fri Jan 26 17:48:58 +0000 2024",
@@ -1160,9 +1178,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750938896316399800",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750938896316399800",
             "replies": [],
+            "root": "1750938896316399800",
             "reply_count": 0,
             "score": 0,
-            "thread_score": 0
+            "thread_score": 0,
+            "is_branch": true
         },
         "1753932736987890054": {
             "created_at": "Sun Feb 04 00:05:25 +0000 2024",
@@ -1309,9 +1329,11 @@
             "replies": [
                 "1753932743048560765"
             ],
+            "root": "1753932736987890054",
             "reply_count": 3,
             "score": 0,
-            "thread_score": 0
+            "thread_score": 0,
+            "is_branch": true
         },
         "1751023987206103244": {
             "created_at": "Fri Jan 26 23:27:05 +0000 2024",
@@ -1478,7 +1500,8 @@
                 "1751039007721709935",
                 "1751083556258959597"
             ],
-            "thread_posts": [
+            "root": "1751023987206103244",
+            "in_thread": [
                 "1751023987206103244",
                 "1751024300243796379",
                 "1751024871126229355",
@@ -1490,7 +1513,8 @@
             "score": 0.1,
             "thread_score": 2.1,
             "isAuthor": true,
-            "location": "Author"
+            "location": "Author",
+            "is_branch": true
         },
         "1751424913754259829": {
             "created_at": "Sun Jan 28 02:00:13 +0000 2024",
@@ -1618,11 +1642,13 @@
                 "1751507361540321586",
                 "1751483874042167669"
             ],
+            "root": "1751298202777555438",
             "reply_count": 7,
             "score": 0.2,
             "thread_score": 0.4,
             "tweet_type": "Critique",
-            "location": "Analysis"
+            "location": "Data Collection",
+            "is_branch": true
         },
         "1751507361540321586": {
             "created_at": "Sun Jan 28 07:27:51 +0000 2024",
@@ -1654,6 +1680,7 @@
             "replies": [
                 "1751570070264750433"
             ],
+            "root": "1751298202777555438",
             "reply_count": 1,
             "score": 0.3,
             "thread_score": 0
@@ -1689,11 +1716,13 @@
             "replies": [
                 "1751508888405295326"
             ],
+            "root": "1751298202777555438",
             "reply_count": 2,
             "score": 0.7,
             "thread_score": 0.7999999999999999,
             "isAuthor": true,
-            "location": "Analysis"
+            "location": "Analysis",
+            "is_branch": true
         },
         "1751508888405295326": {
             "created_at": "Sun Jan 28 07:33:55 +0000 2024",
@@ -1726,6 +1755,7 @@
             "replies": [
                 "1751595766005534751"
             ],
+            "root": "1751298202777555438",
             "reply_count": 1,
             "score": 0.8,
             "thread_score": 0
@@ -1760,9 +1790,11 @@
             "replies": [
                 "1751415114878640608"
             ],
+            "root": "1751298202777555438",
             "reply_count": 2,
             "score": 0.7,
-            "thread_score": 0.6
+            "thread_score": 0.6,
+            "is_branch": true
         },
         "1751424874713919530": {
             "created_at": "Sun Jan 28 02:00:04 +0000 2024",
@@ -1804,11 +1836,13 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751424874713919530",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751424874713919530",
             "replies": [],
+            "root": "1751298202777555438",
             "reply_count": 0,
             "score": 0.7,
             "thread_score": 0.7,
             "tweet_type": "Critique",
-            "location": null
+            "location": "Analysis",
+            "is_branch": true
         },
         "1751418052447739923": {
             "created_at": "Sun Jan 28 01:32:58 +0000 2024",
@@ -1840,9 +1874,11 @@
             "replies": [
                 "1751503718586220571"
             ],
+            "root": "1751279042375057724",
             "reply_count": 1,
             "score": 0.2,
-            "thread_score": 0.3
+            "thread_score": 0.3,
+            "is_branch": true
         },
         "1751503718586220571": {
             "created_at": "Sun Jan 28 07:13:22 +0000 2024",
@@ -1872,6 +1908,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751503718586220571",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751503718586220571",
             "replies": [],
+            "root": "1751279042375057724",
             "reply_count": 0,
             "score": 0.4,
             "thread_score": 0
@@ -1906,9 +1943,11 @@
             "replies": [
                 "1751301117357765077"
             ],
+            "root": "1751279042375057724",
             "reply_count": 1,
             "score": 0.2,
-            "thread_score": 0.4
+            "thread_score": 0.4,
+            "is_branch": true
         },
         "1751301117357765077": {
             "created_at": "Sat Jan 27 17:48:18 +0000 2024",
@@ -1938,6 +1977,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751301117357765077",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751301117357765077",
             "replies": [],
+            "root": "1751279042375057724",
             "reply_count": 0,
             "score": 0.4,
             "thread_score": 0
@@ -1972,9 +2012,11 @@
             "replies": [
                 "1751504005992534267"
             ],
+            "root": "1751279042375057724",
             "reply_count": 1,
             "score": 0.5,
-            "thread_score": 0.6
+            "thread_score": 0.6,
+            "is_branch": true
         },
         "1751504005992534267": {
             "created_at": "Sun Jan 28 07:14:31 +0000 2024",
@@ -2004,6 +2046,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751504005992534267",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751504005992534267",
             "replies": [],
+            "root": "1751279042375057724",
             "reply_count": 0,
             "score": 0.7,
             "thread_score": 0
@@ -2040,10 +2083,12 @@
                 "1751519580491862424",
                 "1751408691822125525"
             ],
+            "root": "1751279042375057724",
             "reply_count": 2,
             "score": 0.8,
             "thread_score": 0.7,
-            "location": "Analysis"
+            "location": "Data Collection",
+            "is_branch": true
         },
         "1751519580491862424": {
             "created_at": "Sun Jan 28 08:16:24 +0000 2024",
@@ -2074,6 +2119,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751519580491862424",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751519580491862424",
             "replies": [],
+            "root": "1751279042375057724",
             "reply_count": 0,
             "score": 0.7,
             "thread_score": 0
@@ -2111,9 +2157,11 @@
                 "1751149927714213897",
                 "1751028461857038464"
             ],
+            "root": "1750783025011450254",
             "reply_count": 14,
             "score": 0.6,
-            "thread_score": 0.4
+            "thread_score": 0.4,
+            "is_branch": true
         },
         "1750938777218863546": {
             "created_at": "Fri Jan 26 17:48:30 +0000 2024",
@@ -2145,6 +2193,7 @@
             "replies": [
                 "1750939207743472020"
             ],
+            "root": "1750783025011450254",
             "reply_count": 7,
             "score": 0.5,
             "thread_score": 0
@@ -2181,9 +2230,11 @@
                 "1750845343674089494",
                 "1750973012235682050"
             ],
+            "root": "1750783025011450254",
             "reply_count": 5,
             "score": 0.3,
-            "thread_score": 0.4
+            "thread_score": 0.4,
+            "is_branch": true
         },
         "1750845343674089494": {
             "created_at": "Fri Jan 26 11:37:13 +0000 2024",
@@ -2215,6 +2266,7 @@
             "replies": [
                 "1750845585383362920"
             ],
+            "root": "1750783025011450254",
             "reply_count": 1,
             "score": 0.1,
             "thread_score": 0
@@ -2251,10 +2303,12 @@
                 "1750838361785242041",
                 "1750979610911936652"
             ],
+            "root": "1750783025011450254",
             "reply_count": 15,
             "score": 0.4,
             "thread_score": 0.6,
-            "location": null
+            "location": "Introduction",
+            "is_branch": true
         },
         "1750852576818401479": {
             "created_at": "Fri Jan 26 12:05:58 +0000 2024",
@@ -2288,10 +2342,12 @@
                 "1750975713329492358",
                 "1750936804617036009"
             ],
+            "root": "1750783025011450254",
             "reply_count": 2,
             "score": 0.7,
             "thread_score": 0.7,
-            "location": "C. Causal Inference"
+            "location": "Analysis",
+            "is_branch": true
         },
         "1752091796748869701": {
             "created_at": "Mon Jan 29 22:10:11 +0000 2024",
@@ -2333,9 +2389,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1752091796748869701",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1752091796748869701",
             "replies": [],
+            "root": "1750783025011450254",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1751084825744732479": {
             "created_at": "Sat Jan 27 03:28:50 +0000 2024",
@@ -2369,11 +2427,13 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751084825744732479",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751084825744732479",
             "replies": [],
+            "root": "1750783025011450254",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0.1,
             "tweet_type": "Resource",
-            "location": "Related Work"
+            "location": "Related Work",
+            "is_branch": true
         },
         "1803317256375640471": {
             "created_at": "Wed Jun 19 06:41:52 +0000 2024",
@@ -2430,9 +2490,11 @@
                 "1803473266168000847",
                 "1803559545794670831"
             ],
+            "root": "1803317256375640471",
             "reply_count": 60,
             "score": 0,
-            "thread_score": 0
+            "thread_score": 0,
+            "is_branch": true
         },
         "1803664447166357709": {
             "created_at": "Thu Jun 20 05:41:29 +0000 2024",
@@ -2464,9 +2526,11 @@
             "replies": [
                 "1803665104023724255"
             ],
+            "root": "1803317256375640471",
             "reply_count": 3,
             "score": 0.2,
-            "thread_score": 0.3
+            "thread_score": 0.3,
+            "is_branch": true
         },
         "1803665104023724255": {
             "created_at": "Thu Jun 20 05:44:05 +0000 2024",
@@ -2498,6 +2562,7 @@
             "replies": [
                 "1803880409585045955"
             ],
+            "root": "1803317256375640471",
             "reply_count": 2,
             "score": 0.3,
             "thread_score": 0
@@ -2532,9 +2597,11 @@
             "replies": [
                 "1803661385982943351"
             ],
+            "root": "1803317256375640471",
             "reply_count": 2,
             "score": 0.2,
-            "thread_score": 0.4
+            "thread_score": 0.4,
+            "is_branch": true
         },
         "1803661385982943351": {
             "created_at": "Thu Jun 20 05:29:19 +0000 2024",
@@ -2566,6 +2633,7 @@
             "replies": [
                 "1803664498085015603"
             ],
+            "root": "1803317256375640471",
             "reply_count": 1,
             "score": 0.4,
             "thread_score": 0
@@ -2600,9 +2668,11 @@
             "replies": [
                 "1803567378472772036"
             ],
+            "root": "1803317256375640471",
             "reply_count": 2,
             "score": 0.5,
-            "thread_score": 0.5
+            "thread_score": 0.5,
+            "is_branch": true
         },
         "1803567378472772036": {
             "created_at": "Wed Jun 19 23:15:46 +0000 2024",
@@ -2634,6 +2704,7 @@
             "replies": [
                 "1803569411669770268"
             ],
+            "root": "1803317256375640471",
             "reply_count": 1,
             "score": 0.5,
             "thread_score": 0
@@ -2668,9 +2739,11 @@
             "replies": [
                 "1803838857286422560"
             ],
+            "root": "1803317256375640471",
             "reply_count": 1,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1803838857286422560": {
             "created_at": "Thu Jun 20 17:14:31 +0000 2024",
@@ -2700,6 +2773,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803838857286422560",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803838857286422560",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.2,
             "thread_score": 0
@@ -2735,9 +2809,11 @@
                 "1803656528597332450",
                 "1803622013053051304"
             ],
+            "root": "1803317256375640471",
             "reply_count": 2,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1803656528597332450": {
             "created_at": "Thu Jun 20 05:10:01 +0000 2024",
@@ -2767,6 +2843,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803656528597332450",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803656528597332450",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.2,
             "thread_score": 0
@@ -2814,9 +2891,11 @@
                 "1750782614523330591",
                 "1750829648156733589"
             ],
+            "root": "1750777835529072648",
             "reply_count": 3,
             "score": 0.4,
-            "thread_score": 0.4
+            "thread_score": 0.4,
+            "is_branch": true
         },
         "1750782614523330591": {
             "created_at": "Fri Jan 26 07:27:57 +0000 2024",
@@ -2860,6 +2939,7 @@
             "replies": [
                 "1750786385324265827"
             ],
+            "root": "1750777835529072648",
             "reply_count": 1,
             "score": 0.4,
             "thread_score": 0
@@ -2987,9 +3067,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750916435529158901",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750916435529158901",
             "replies": [],
+            "root": "1750777835529072648",
             "reply_count": 0,
             "score": 0.0,
-            "thread_score": 0.0
+            "thread_score": 0.0,
+            "is_branch": true
         },
         "1750806613089567150": {
             "created_at": "Fri Jan 26 09:03:19 +0000 2024",
@@ -3031,9 +3113,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750806613089567150",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750806613089567150",
             "replies": [],
+            "root": "1750777835529072648",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1750986671473258965": {
             "created_at": "Fri Jan 26 20:58:48 +0000 2024",
@@ -3063,9 +3147,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750986671473258965",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750986671473258965",
             "replies": [],
+            "root": "1750777835529072648",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1750880987037175969": {
             "created_at": "Fri Jan 26 13:58:51 +0000 2024",
@@ -3095,9 +3181,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750880987037175969",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750880987037175969",
             "replies": [],
+            "root": "1750777835529072648",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1750783274916393329": {
             "created_at": "Fri Jan 26 07:30:35 +0000 2024",
@@ -3130,10 +3218,12 @@
             "replies": [
                 "1750813649143222704"
             ],
+            "root": "1750777835529072648",
             "reply_count": 10,
             "score": 0.7,
             "thread_score": 0.5,
-            "location": "Analysis"
+            "location": "Analysis",
+            "is_branch": true
         },
         "1751060553886527982": {
             "created_at": "Sat Jan 27 01:52:23 +0000 2024",
@@ -3176,9 +3266,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751060553886527982",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751060553886527982",
             "replies": [],
+            "root": "1750777835529072648",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1750859032481427652": {
             "created_at": "Fri Jan 26 12:31:37 +0000 2024",
@@ -3272,9 +3364,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750859032481427652",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750859032481427652",
             "replies": [],
+            "root": "1750777835529072648",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1751083146127245489": {
             "created_at": "Sat Jan 27 03:22:10 +0000 2024",
@@ -3308,11 +3402,13 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751083146127245489",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751083146127245489",
             "replies": [],
+            "root": "1750777835529072648",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0.1,
             "tweet_type": "Resource",
-            "location": "Related Work"
+            "location": "Related Work",
+            "is_branch": true
         },
         "1750851163530957128": {
             "created_at": "Fri Jan 26 12:00:21 +0000 2024",
@@ -3342,9 +3438,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750851163530957128",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750851163530957128",
             "replies": [],
+            "root": "1750805744255951085",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1751018578600513777": {
             "created_at": "Fri Jan 26 23:05:36 +0000 2024",
@@ -3374,9 +3472,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751018578600513777",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751018578600513777",
             "replies": [],
+            "root": "1750805744255951085",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1750908985991921689": {
             "created_at": "Fri Jan 26 15:50:07 +0000 2024",
@@ -3406,9 +3506,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750908985991921689",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750908985991921689",
             "replies": [],
+            "root": "1750805744255951085",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1750808667761303703": {
             "created_at": "Fri Jan 26 09:11:29 +0000 2024",
@@ -3438,9 +3540,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750808667761303703",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750808667761303703",
             "replies": [],
+            "root": "1750805744255951085",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1751570070264750433": {
             "created_at": "Sun Jan 28 11:37:02 +0000 2024",
@@ -3470,6 +3574,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751570070264750433",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751570070264750433",
             "replies": [],
+            "root": "1751298202777555438",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0
@@ -3505,6 +3610,7 @@
             "replies": [
                 "1751570506363371596"
             ],
+            "root": "1751298202777555438",
             "reply_count": 4,
             "score": 0.3,
             "thread_score": 0
@@ -3539,6 +3645,7 @@
             "replies": [
                 "1751595217466097911"
             ],
+            "root": "1751298202777555438",
             "reply_count": 3,
             "score": 0.2,
             "thread_score": 0
@@ -3605,10 +3712,12 @@
             "replies": [
                 "1753932748002070574"
             ],
+            "root": "1753932736987890054",
             "reply_count": 2,
             "score": 0.1,
             "thread_score": 0.1,
-            "tweet_type": "Teaser"
+            "tweet_type": "Teaser",
+            "is_branch": true
         },
         "1753932748002070574": {
             "created_at": "Sun Feb 04 00:05:28 +0000 2024",
@@ -3652,6 +3761,7 @@
             "replies": [
                 "1753932767203664056"
             ],
+            "root": "1753932736987890054",
             "reply_count": 1,
             "score": 0.1,
             "thread_score": 0
@@ -3792,6 +3902,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1753932767203664056",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1753932767203664056",
             "replies": [],
+            "root": "1753932736987890054",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0
@@ -3920,7 +4031,15 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751024300243796379",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751024300243796379",
             "replies": [],
-            "in_thread": "1751023987206103244",
+            "root": "1751023987206103244",
+            "in_thread": [
+                "1751023987206103244",
+                "1751024300243796379",
+                "1751024871126229355",
+                "1751025185149628877",
+                "1751025610267475977",
+                "1751026009653346513"
+            ],
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 2.1,
@@ -4051,7 +4170,15 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751024871126229355",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751024871126229355",
             "replies": [],
-            "in_thread": "1751023987206103244",
+            "root": "1751023987206103244",
+            "in_thread": [
+                "1751023987206103244",
+                "1751024300243796379",
+                "1751024871126229355",
+                "1751025185149628877",
+                "1751025610267475977",
+                "1751026009653346513"
+            ],
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 2.1,
@@ -4182,7 +4309,15 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751025185149628877",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751025185149628877",
             "replies": [],
-            "in_thread": "1751023987206103244",
+            "root": "1751023987206103244",
+            "in_thread": [
+                "1751023987206103244",
+                "1751024300243796379",
+                "1751024871126229355",
+                "1751025185149628877",
+                "1751025610267475977",
+                "1751026009653346513"
+            ],
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 2.1,
@@ -4330,7 +4465,15 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751025610267475977",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751025610267475977",
             "replies": [],
-            "in_thread": "1751023987206103244",
+            "root": "1751023987206103244",
+            "in_thread": [
+                "1751023987206103244",
+                "1751024300243796379",
+                "1751024871126229355",
+                "1751025185149628877",
+                "1751025610267475977",
+                "1751026009653346513"
+            ],
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 2.1,
@@ -4458,7 +4601,15 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751026009653346513",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751026009653346513",
             "replies": [],
-            "in_thread": "1751023987206103244",
+            "root": "1751023987206103244",
+            "in_thread": [
+                "1751023987206103244",
+                "1751024300243796379",
+                "1751024871126229355",
+                "1751025185149628877",
+                "1751025610267475977",
+                "1751026009653346513"
+            ],
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 2.1,
@@ -4513,9 +4664,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751217968506454053",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751217968506454053",
             "replies": [],
+            "root": "1751023987206103244",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1751277046938968137": {
             "created_at": "Sat Jan 27 16:12:39 +0000 2024",
@@ -4568,9 +4721,11 @@
             "replies": [
                 "1751277806351196668"
             ],
+            "root": "1751023987206103244",
             "reply_count": 1,
             "score": 0.3,
-            "thread_score": 0.3
+            "thread_score": 0.3,
+            "is_branch": true
         },
         "1751039007721709935": {
             "created_at": "Sat Jan 27 00:26:46 +0000 2024",
@@ -4600,9 +4755,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751039007721709935",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751039007721709935",
             "replies": [],
+            "root": "1751023987206103244",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1751083556258959597": {
             "created_at": "Sat Jan 27 03:23:48 +0000 2024",
@@ -4636,11 +4793,13 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751083556258959597",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751083556258959597",
             "replies": [],
+            "root": "1751023987206103244",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0.1,
             "tweet_type": "Resource",
-            "location": null
+            "location": "Related Work",
+            "is_branch": true
         },
         "1751595766005534751": {
             "created_at": "Sun Jan 28 13:19:08 +0000 2024",
@@ -4670,6 +4829,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751595766005534751",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751595766005534751",
             "replies": [],
+            "root": "1751298202777555438",
             "reply_count": 0,
             "score": 0.7,
             "thread_score": 0
@@ -4704,6 +4864,7 @@
             "replies": [
                 "1751415566999675330"
             ],
+            "root": "1751298202777555438",
             "reply_count": 1,
             "score": 0.2,
             "thread_score": 0
@@ -4736,6 +4897,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751415566999675330",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751415566999675330",
             "replies": [],
+            "root": "1751298202777555438",
             "reply_count": 0,
             "score": 0.2,
             "thread_score": 0
@@ -4768,6 +4930,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751408691822125525",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751408691822125525",
             "replies": [],
+            "root": "1751279042375057724",
             "reply_count": 0,
             "score": 0.6,
             "thread_score": 0
@@ -4803,6 +4966,7 @@
                 "1750943214599565317",
                 "1750940213403123716"
             ],
+            "root": "1750783025011450254",
             "reply_count": 6,
             "score": 0.4,
             "thread_score": 0
@@ -4838,6 +5002,7 @@
                 "1751153185115324559",
                 "1751199251504193927"
             ],
+            "root": "1750783025011450254",
             "reply_count": 4,
             "score": 0.6,
             "thread_score": 0
@@ -4871,6 +5036,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751028461857038464",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751028461857038464",
             "replies": [],
+            "root": "1750783025011450254",
             "reply_count": 0,
             "score": 0.5,
             "thread_score": 0
@@ -4905,6 +5071,7 @@
             "replies": [
                 "1751015918841327835"
             ],
+            "root": "1750783025011450254",
             "reply_count": 1,
             "score": 0.4,
             "thread_score": 0
@@ -4937,6 +5104,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750845585383362920",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750845585383362920",
             "replies": [],
+            "root": "1750783025011450254",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0
@@ -4971,6 +5139,7 @@
             "replies": [
                 "1750974799751319832"
             ],
+            "root": "1750783025011450254",
             "reply_count": 2,
             "score": 0.5,
             "thread_score": 0
@@ -5005,6 +5174,7 @@
             "replies": [
                 "1751045824052924610"
             ],
+            "root": "1750783025011450254",
             "reply_count": 1,
             "score": 0.4,
             "thread_score": 0
@@ -5037,6 +5207,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750975713329492358",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750975713329492358",
             "replies": [],
+            "root": "1750783025011450254",
             "reply_count": 0,
             "score": 0.7,
             "thread_score": 0
@@ -5069,6 +5240,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750936804617036009",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750936804617036009",
             "replies": [],
+            "root": "1750783025011450254",
             "reply_count": 0,
             "score": 0.7,
             "thread_score": 0
@@ -5103,6 +5275,7 @@
             "replies": [
                 "1750840323725570264"
             ],
+            "root": "1750783025011450254",
             "reply_count": 13,
             "score": 0.6,
             "thread_score": 0
@@ -5138,6 +5311,7 @@
                 "1750842461692313711",
                 "1750842414388908064"
             ],
+            "root": "1750783025011450254",
             "reply_count": 12,
             "score": 0.7,
             "thread_score": 0
@@ -5170,6 +5344,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750979610911936652",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750979610911936652",
             "replies": [],
+            "root": "1750783025011450254",
             "reply_count": 0,
             "score": 0.5,
             "thread_score": 0
@@ -5207,9 +5382,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750974418397065614",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750974418397065614",
             "replies": [],
+            "root": "1750777835529072648",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1803351110037430596": {
             "created_at": "Wed Jun 19 08:56:23 +0000 2024",
@@ -5243,11 +5420,13 @@
                 "1803372292401135812",
                 "1803432452641144989"
             ],
+            "root": "1803317256375640471",
             "reply_count": 9,
             "score": 0.3,
             "thread_score": 0.3,
             "tweet_type": "Perspective",
-            "location": "Discussion"
+            "location": "Discussion",
+            "is_branch": true
         },
         "1803487713120887176": {
             "created_at": "Wed Jun 19 17:59:12 +0000 2024",
@@ -5280,6 +5459,7 @@
                 "1803525802262405205",
                 "1803498655296659713"
             ],
+            "root": "1803317256375640471",
             "reply_count": 3,
             "score": 0.4,
             "thread_score": 0
@@ -5314,9 +5494,11 @@
             "replies": [
                 "1803325173149663571"
             ],
+            "root": "1803317256375640471",
             "reply_count": 3,
             "score": 0.2,
-            "thread_score": 0.3
+            "thread_score": 0.3,
+            "is_branch": true
         },
         "1803325173149663571": {
             "created_at": "Wed Jun 19 07:13:20 +0000 2024",
@@ -5348,6 +5530,7 @@
             "replies": [
                 "1803325819361890510"
             ],
+            "root": "1803317256375640471",
             "reply_count": 2,
             "score": 0.2,
             "thread_score": 0
@@ -5382,11 +5565,13 @@
             "replies": [
                 "1803487356827414749"
             ],
+            "root": "1803317256375640471",
             "reply_count": 8,
             "score": 0.2,
             "thread_score": 0.3,
             "tweet_type": "Perspective",
-            "location": "Discussion"
+            "location": "Discussion",
+            "is_branch": true
         },
         "1803487356827414749": {
             "created_at": "Wed Jun 19 17:57:47 +0000 2024",
@@ -5421,6 +5606,7 @@
                 "1803563678484025738",
                 "1803547798048014576"
             ],
+            "root": "1803317256375640471",
             "reply_count": 7,
             "score": 0.4,
             "thread_score": 0
@@ -5453,9 +5639,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803318000403317039",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803318000403317039",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1803651394496545134": {
             "created_at": "Thu Jun 20 04:49:37 +0000 2024",
@@ -5485,9 +5673,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803651394496545134",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803651394496545134",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1803436402492813377": {
             "created_at": "Wed Jun 19 14:35:19 +0000 2024",
@@ -5519,9 +5709,11 @@
             "replies": [
                 "1803437675594080336"
             ],
+            "root": "1803317256375640471",
             "reply_count": 1,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1803416192260121015": {
             "created_at": "Wed Jun 19 13:15:00 +0000 2024",
@@ -5551,9 +5743,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803416192260121015",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803416192260121015",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1751595217466097911": {
             "created_at": "Sun Jan 28 13:16:57 +0000 2024",
@@ -5586,6 +5780,7 @@
             "replies": [
                 "1751596693831762310"
             ],
+            "root": "1751298202777555438",
             "reply_count": 2,
             "score": 0.4,
             "thread_score": 0
@@ -5620,6 +5815,7 @@
             "replies": [
                 "1751599837886267782"
             ],
+            "root": "1751298202777555438",
             "reply_count": 1,
             "score": 0.4,
             "thread_score": 0
@@ -5652,6 +5848,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751277806351196668",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751277806351196668",
             "replies": [],
+            "root": "1751023987206103244",
             "reply_count": 0,
             "score": 0.3,
             "thread_score": 0
@@ -5686,6 +5883,7 @@
             "replies": [
                 "1750941773961089526"
             ],
+            "root": "1750783025011450254",
             "reply_count": 3,
             "score": 0.6,
             "thread_score": 0
@@ -5720,6 +5918,7 @@
             "replies": [
                 "1751156983561117959"
             ],
+            "root": "1750783025011450254",
             "reply_count": 2,
             "score": 0.2,
             "thread_score": 0
@@ -5754,6 +5953,7 @@
             "replies": [
                 "1751160782853746740"
             ],
+            "root": "1750783025011450254",
             "reply_count": 1,
             "score": 0.1,
             "thread_score": 0
@@ -5786,6 +5986,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751199251504193927",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751199251504193927",
             "replies": [],
+            "root": "1750783025011450254",
             "reply_count": 0,
             "score": 0.2,
             "thread_score": 0
@@ -5831,6 +6032,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751015918841327835",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751015918841327835",
             "replies": [],
+            "root": "1750783025011450254",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0
@@ -5863,6 +6065,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751045824052924610",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751045824052924610",
             "replies": [],
+            "root": "1750783025011450254",
             "reply_count": 0,
             "score": 0.5,
             "thread_score": 0
@@ -5897,6 +6100,7 @@
             "replies": [
                 "1750842874025959535"
             ],
+            "root": "1750783025011450254",
             "reply_count": 1,
             "score": 0.6,
             "thread_score": 0
@@ -5931,6 +6135,7 @@
             "replies": [
                 "1750844527898739139"
             ],
+            "root": "1750783025011450254",
             "reply_count": 9,
             "score": 0.6,
             "thread_score": 0
@@ -5963,6 +6168,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750829648156733589",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750829648156733589",
             "replies": [],
+            "root": "1750777835529072648",
             "reply_count": 0,
             "score": 0.2,
             "thread_score": 0
@@ -6015,6 +6221,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750786385324265827",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750786385324265827",
             "replies": [],
+            "root": "1750777835529072648",
             "reply_count": 0,
             "score": 0.5,
             "thread_score": 0
@@ -6050,6 +6257,7 @@
             "replies": [
                 "1750819649724318076"
             ],
+            "root": "1750777835529072648",
             "reply_count": 9,
             "score": 0.7,
             "thread_score": 0.1,
@@ -6086,6 +6294,7 @@
             "replies": [
                 "1750821964917211270"
             ],
+            "root": "1750777835529072648",
             "reply_count": 8,
             "score": 0.6,
             "thread_score": 0
@@ -6118,6 +6327,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751599837886267782",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751599837886267782",
             "replies": [],
+            "root": "1751298202777555438",
             "reply_count": 0,
             "score": 0.2,
             "thread_score": 0
@@ -6152,9 +6362,11 @@
             "replies": [
                 "1803472435007856762"
             ],
+            "root": "1803317256375640471",
             "reply_count": 1,
             "score": 0.3,
-            "thread_score": 0.3
+            "thread_score": 0.3,
+            "is_branch": true
         },
         "1803504451488985376": {
             "created_at": "Wed Jun 19 19:05:43 +0000 2024",
@@ -6186,9 +6398,11 @@
             "replies": [
                 "1803811235722358819"
             ],
+            "root": "1803317256375640471",
             "reply_count": 2,
             "score": 0.2,
-            "thread_score": 0.3
+            "thread_score": 0.3,
+            "is_branch": true
         },
         "1803882596864053670": {
             "created_at": "Thu Jun 20 20:08:20 +0000 2024",
@@ -6218,9 +6432,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803882596864053670",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803882596864053670",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1803486605757575569": {
             "created_at": "Wed Jun 19 17:54:48 +0000 2024",
@@ -6250,11 +6466,13 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803486605757575569",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803486605757575569",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.2,
             "thread_score": 0.2,
             "tweet_type": "Perspective",
-            "location": null
+            "location": "Discussion",
+            "is_branch": true
         },
         "1803557690586616035": {
             "created_at": "Wed Jun 19 22:37:16 +0000 2024",
@@ -6284,9 +6502,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803557690586616035",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803557690586616035",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.3,
-            "thread_score": 0.3
+            "thread_score": 0.3,
+            "is_branch": true
         },
         "1803541779494711682": {
             "created_at": "Wed Jun 19 21:34:03 +0000 2024",
@@ -6316,9 +6536,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803541779494711682",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803541779494711682",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1803639336010727660": {
             "created_at": "Thu Jun 20 04:01:42 +0000 2024",
@@ -6348,9 +6570,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803639336010727660",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803639336010727660",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1803718951807193091": {
             "created_at": "Thu Jun 20 09:18:04 +0000 2024",
@@ -6380,9 +6604,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803718951807193091",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803718951807193091",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.3,
-            "thread_score": 0.3
+            "thread_score": 0.3,
+            "is_branch": true
         },
         "1803633201564492101": {
             "created_at": "Thu Jun 20 03:37:19 +0000 2024",
@@ -6412,9 +6638,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803633201564492101",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803633201564492101",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.3,
-            "thread_score": 0.3
+            "thread_score": 0.3,
+            "is_branch": true
         },
         "1803450421395993023": {
             "created_at": "Wed Jun 19 15:31:01 +0000 2024",
@@ -6449,9 +6677,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803450421395993023",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803450421395993023",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1750941773961089526": {
             "created_at": "Fri Jan 26 18:00:24 +0000 2024",
@@ -6483,6 +6713,7 @@
             "replies": [
                 "1750944370118041816"
             ],
+            "root": "1750783025011450254",
             "reply_count": 2,
             "score": 0.7,
             "thread_score": 0
@@ -6515,6 +6746,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751160782853746740",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751160782853746740",
             "replies": [],
+            "root": "1750783025011450254",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0
@@ -6550,6 +6782,7 @@
                 "1750846466568994909",
                 "1750845334937366581"
             ],
+            "root": "1750783025011450254",
             "reply_count": 8,
             "score": 0.4,
             "thread_score": 0
@@ -6584,6 +6817,7 @@
             "replies": [
                 "1750848055169954059"
             ],
+            "root": "1750783025011450254",
             "reply_count": 2,
             "score": 0.5,
             "thread_score": 0
@@ -6620,6 +6854,7 @@
                 "1750823169923985434",
                 "1751077094220579134"
             ],
+            "root": "1750777835529072648",
             "reply_count": 7,
             "score": 0.7,
             "thread_score": 0.1,
@@ -6653,6 +6888,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750842874025959535",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750842874025959535",
             "replies": [],
+            "root": "1750783025011450254",
             "reply_count": 0,
             "score": 0.5,
             "thread_score": 0
@@ -6688,6 +6924,7 @@
             "replies": [
                 "1750824372552499703"
             ],
+            "root": "1750777835529072648",
             "reply_count": 3,
             "score": 0.3,
             "thread_score": 0
@@ -6720,9 +6957,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803586908360155339",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803586908360155339",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1803473266168000847": {
             "created_at": "Wed Jun 19 17:01:48 +0000 2024",
@@ -6752,9 +6991,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803473266168000847",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803473266168000847",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1803559545794670831": {
             "created_at": "Wed Jun 19 22:44:38 +0000 2024",
@@ -6784,9 +7025,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803559545794670831",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803559545794670831",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1750845334937366581": {
             "created_at": "Fri Jan 26 11:37:11 +0000 2024",
@@ -6818,6 +7061,7 @@
             "replies": [
                 "1750847879697125539"
             ],
+            "root": "1750783025011450254",
             "reply_count": 4,
             "score": 0.6,
             "thread_score": 0
@@ -6852,6 +7096,7 @@
             "replies": [
                 "1750849362509418514"
             ],
+            "root": "1750783025011450254",
             "reply_count": 1,
             "score": 0.6,
             "thread_score": 0
@@ -6884,6 +7129,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750849362509418514",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750849362509418514",
             "replies": [],
+            "root": "1750783025011450254",
             "reply_count": 0,
             "score": 0.3,
             "thread_score": 0
@@ -6918,6 +7164,7 @@
             "replies": [
                 "1750978461974610186"
             ],
+            "root": "1750783025011450254",
             "reply_count": 1,
             "score": 0.6,
             "thread_score": 0
@@ -6950,6 +7197,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750978461974610186",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750978461974610186",
             "replies": [],
+            "root": "1750783025011450254",
             "reply_count": 0,
             "score": 0.3,
             "thread_score": 0
@@ -6985,6 +7233,7 @@
             "replies": [
                 "1750825218216456210"
             ],
+            "root": "1750777835529072648",
             "reply_count": 2,
             "score": 0.4,
             "thread_score": 0.1,
@@ -7021,6 +7270,7 @@
             "replies": [
                 "1751077672052990246"
             ],
+            "root": "1750777835529072648",
             "reply_count": 2,
             "score": 0.7,
             "thread_score": 0
@@ -7055,6 +7305,7 @@
             "replies": [
                 "1750826612327686388"
             ],
+            "root": "1750777835529072648",
             "reply_count": 1,
             "score": 0.2,
             "thread_score": 0
@@ -7089,6 +7340,7 @@
             "replies": [
                 "1803884243447337202"
             ],
+            "root": "1803317256375640471",
             "reply_count": 1,
             "score": 0.3,
             "thread_score": 0
@@ -7121,6 +7373,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803884243447337202",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803884243447337202",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.3,
             "thread_score": 0
@@ -7173,6 +7426,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803664498085015603",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803664498085015603",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.5,
             "thread_score": 0
@@ -7225,6 +7479,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803569411669770268",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803569411669770268",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.5,
             "thread_score": 0
@@ -7257,6 +7512,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803622013053051304",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803622013053051304",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0
@@ -7291,6 +7547,7 @@
             "replies": [
                 "1803380478969336175"
             ],
+            "root": "1803317256375640471",
             "reply_count": 2,
             "score": 0.1,
             "thread_score": 0
@@ -7325,6 +7582,7 @@
             "replies": [
                 "1803381609992954202"
             ],
+            "root": "1803317256375640471",
             "reply_count": 1,
             "score": 0.1,
             "thread_score": 0
@@ -7359,6 +7617,7 @@
             "replies": [
                 "1803563459914899518"
             ],
+            "root": "1803317256375640471",
             "reply_count": 1,
             "score": 0.3,
             "thread_score": 0
@@ -7393,6 +7652,7 @@
             "replies": [
                 "1803459952758911304"
             ],
+            "root": "1803317256375640471",
             "reply_count": 1,
             "score": 0.1,
             "thread_score": 0
@@ -7425,6 +7685,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803459952758911304",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803459952758911304",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.2,
             "thread_score": 0
@@ -7457,6 +7718,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803563459914899518",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803563459914899518",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.3,
             "thread_score": 0
@@ -7489,6 +7751,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803498655296659713",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803498655296659713",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.4,
             "thread_score": 0
@@ -7523,6 +7786,7 @@
             "replies": [
                 "1803436476405043613"
             ],
+            "root": "1803317256375640471",
             "reply_count": 1,
             "score": 0.3,
             "thread_score": 0
@@ -7555,6 +7819,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803472435007856762",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803472435007856762",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.3,
             "thread_score": 0
@@ -7587,6 +7852,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803437675594080336",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803437675594080336",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.2,
             "thread_score": 0
@@ -7619,6 +7885,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803527670455742866",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803527670455742866",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.3,
             "thread_score": 0
@@ -7651,6 +7918,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803655429278540043",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803655429278540043",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0
@@ -7685,6 +7953,7 @@
             "replies": [
                 "1803567670824149340"
             ],
+            "root": "1803317256375640471",
             "reply_count": 3,
             "score": 0.3,
             "thread_score": 0
@@ -7719,6 +7988,7 @@
             "replies": [
                 "1803569245055234353"
             ],
+            "root": "1803317256375640471",
             "reply_count": 2,
             "score": 0.2,
             "thread_score": 0
@@ -7751,6 +8021,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803547798048014576",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803547798048014576",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.2,
             "thread_score": 0
@@ -7785,6 +8056,7 @@
             "replies": [
                 "1803811808068698459"
             ],
+            "root": "1803317256375640471",
             "reply_count": 1,
             "score": 0.3,
             "thread_score": 0
@@ -7817,6 +8089,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803811808068698459",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803811808068698459",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.3,
             "thread_score": 0
@@ -7852,6 +8125,7 @@
                 "1750848992169144450",
                 "1750848476064219301"
             ],
+            "root": "1750783025011450254",
             "reply_count": 3,
             "score": 0.7,
             "thread_score": 0
@@ -7884,6 +8158,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750848992169144450",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750848992169144450",
             "replies": [],
+            "root": "1750783025011450254",
             "reply_count": 0,
             "score": 0.6,
             "thread_score": 0
@@ -7919,6 +8194,7 @@
             "replies": [
                 "1751190579906547820"
             ],
+            "root": "1750777835529072648",
             "reply_count": 1,
             "score": 0.5,
             "thread_score": 0
@@ -7951,6 +8227,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750826612327686388",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750826612327686388",
             "replies": [],
+            "root": "1750777835529072648",
             "reply_count": 0,
             "score": 0.4,
             "thread_score": 0
@@ -7983,6 +8260,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803381609992954202",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803381609992954202",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0
@@ -8015,6 +8293,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803436476405043613",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803436476405043613",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.2,
             "thread_score": 0
@@ -8069,6 +8348,7 @@
             "replies": [
                 "1803633823646965839"
             ],
+            "root": "1803317256375640471",
             "reply_count": 1,
             "score": 0.4,
             "thread_score": 0
@@ -8103,6 +8383,7 @@
             "replies": [
                 "1750852052173930640"
             ],
+            "root": "1750783025011450254",
             "reply_count": 1,
             "score": 0.4,
             "thread_score": 0
@@ -8135,6 +8416,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751190579906547820",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751190579906547820",
             "replies": [],
+            "root": "1750777835529072648",
             "reply_count": 0,
             "score": 0.5,
             "thread_score": 0
@@ -8265,6 +8547,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1803633823646965839",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1803633823646965839",
             "replies": [],
+            "root": "1803317256375640471",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0
@@ -8297,6 +8580,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750852052173930640",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750852052173930640",
             "replies": [],
+            "root": "1750783025011450254",
             "reply_count": 0,
             "score": 0.2,
             "thread_score": 0
@@ -8482,9 +8766,11 @@
                 "1802014393892557073",
                 "1801999994532036963"
             ],
+            "root": "1801992414758055950",
             "reply_count": 2,
             "score": 0,
-            "thread_score": 0
+            "thread_score": 0,
+            "is_branch": true
         },
         "1802014393892557073": {
             "created_at": "Sat Jun 15 16:24:45 +0000 2024",
@@ -8514,6 +8800,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1802014393892557073",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1802014393892557073",
             "replies": [],
+            "root": "1801992414758055950",
             "reply_count": 0,
             "score": 0,
             "thread_score": 0
@@ -8546,6 +8833,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1801999994532036963",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1801999994532036963",
             "replies": [],
+            "root": "1801992414758055950",
             "reply_count": 0,
             "score": 0,
             "thread_score": 0
@@ -8788,10 +9076,12 @@
                 "1750850092125294990",
                 "1751251887003693321"
             ],
+            "root": "1750732070014337101",
             "reply_count": 110,
             "score": 0,
             "thread_score": 0.6,
-            "location": null
+            "location": "Discussion",
+            "is_branch": true
         },
         "1750746124531454277": {
             "created_at": "Fri Jan 26 05:02:58 +0000 2024",
@@ -8835,9 +9125,11 @@
             "replies": [
                 "1750906524497842423"
             ],
+            "root": "1750732070014337101",
             "reply_count": 3,
             "score": 0.1,
-            "thread_score": 0.3
+            "thread_score": 0.3,
+            "is_branch": true
         },
         "1750747569687286124": {
             "created_at": "Fri Jan 26 05:08:42 +0000 2024",
@@ -8911,9 +9203,11 @@
                 "1750779045581869558",
                 "1750825807021281383"
             ],
+            "root": "1750732070014337101",
             "reply_count": 8,
             "score": 0.2,
-            "thread_score": 0.3
+            "thread_score": 0.3,
+            "is_branch": true
         },
         "1750852195082494327": {
             "created_at": "Fri Jan 26 12:04:27 +0000 2024",
@@ -8946,10 +9240,12 @@
             "replies": [
                 "1750867668389826573"
             ],
+            "root": "1750732070014337101",
             "reply_count": 1,
             "score": 0.4,
             "thread_score": 0.3,
-            "location": "Analysis"
+            "location": "Analysis",
+            "is_branch": true
         },
         "1750867668389826573": {
             "created_at": "Fri Jan 26 13:05:56 +0000 2024",
@@ -8979,6 +9275,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750867668389826573",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750867668389826573",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0
@@ -9013,9 +9310,11 @@
             "replies": [
                 "1751048376593092610"
             ],
+            "root": "1750732070014337101",
             "reply_count": 1,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1751048376593092610": {
             "created_at": "Sat Jan 27 01:04:00 +0000 2024",
@@ -9045,6 +9344,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751048376593092610",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751048376593092610",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.2,
             "thread_score": 0
@@ -9080,10 +9380,12 @@
             "replies": [
                 "1750759080652616117"
             ],
+            "root": "1750732070014337101",
             "reply_count": 9,
             "score": 0.3,
             "thread_score": 0.4,
-            "location": "Analysis"
+            "location": "Discussion",
+            "is_branch": true
         },
         "1750759080652616117": {
             "created_at": "Fri Jan 26 05:54:27 +0000 2024",
@@ -9115,6 +9417,7 @@
             "replies": [
                 "1750761396684701742"
             ],
+            "root": "1750732070014337101",
             "reply_count": 8,
             "score": 0.3,
             "thread_score": 0
@@ -9244,9 +9547,11 @@
             "replies": [
                 "1750876474133868598"
             ],
+            "root": "1750732070014337101",
             "reply_count": 1,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1750876474133868598": {
             "created_at": "Fri Jan 26 13:40:55 +0000 2024",
@@ -9276,6 +9581,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750876474133868598",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750876474133868598",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0
@@ -9344,9 +9650,11 @@
             "replies": [
                 "1750772486805790890"
             ],
+            "root": "1750732070014337101",
             "reply_count": 2,
             "score": 0.2,
-            "thread_score": 0.3
+            "thread_score": 0.3,
+            "is_branch": true
         },
         "1750772486805790890": {
             "created_at": "Fri Jan 26 06:47:43 +0000 2024",
@@ -9378,6 +9686,7 @@
             "replies": [
                 "1750774309184774239"
             ],
+            "root": "1750732070014337101",
             "reply_count": 1,
             "score": 0.4,
             "thread_score": 0
@@ -9426,10 +9735,12 @@
                 "1750786486004269320",
                 "1750795820151238749"
             ],
+            "root": "1750732070014337101",
             "reply_count": 2,
             "score": 0.30000000000000004,
             "thread_score": 0.2,
-            "isAuthor": true
+            "isAuthor": true,
+            "is_branch": true
         },
         "1750786486004269320": {
             "created_at": "Fri Jan 26 07:43:20 +0000 2024",
@@ -9459,6 +9770,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750786486004269320",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750786486004269320",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0
@@ -9491,9 +9803,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750772032999207309",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750772032999207309",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.3,
-            "thread_score": 0.3
+            "thread_score": 0.3,
+            "is_branch": true
         },
         "1750878238681768110": {
             "created_at": "Fri Jan 26 13:47:56 +0000 2024",
@@ -9556,10 +9870,12 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750878238681768110",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750878238681768110",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.6,
             "thread_score": 0.6,
-            "location": "Analysis"
+            "location": "Analysis",
+            "is_branch": true
         },
         "1750819563745227103": {
             "created_at": "Fri Jan 26 09:54:47 +0000 2024",
@@ -9589,9 +9905,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750819563745227103",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750819563745227103",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.6,
-            "thread_score": 0.6
+            "thread_score": 0.6,
+            "is_branch": true
         },
         "1750857474108739706": {
             "created_at": "Fri Jan 26 12:25:25 +0000 2024",
@@ -9626,10 +9944,12 @@
                 "1750958869650808938",
                 "1750860665877659718"
             ],
+            "root": "1750732070014337101",
             "reply_count": 8,
             "score": 0.8,
             "thread_score": 0.7,
-            "location": null
+            "location": "Analysis",
+            "is_branch": true
         },
         "1750795018611106092": {
             "created_at": "Fri Jan 26 08:17:15 +0000 2024",
@@ -9659,11 +9979,13 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750795018611106092",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750795018611106092",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.6,
             "thread_score": 0.6,
             "tweet_type": "Perspective",
-            "location": null
+            "location": "Discussion",
+            "is_branch": true
         },
         "1750874128351916141": {
             "created_at": "Fri Jan 26 13:31:36 +0000 2024",
@@ -9694,10 +10016,12 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750874128351916141",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750874128351916141",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.6,
             "thread_score": 0.6,
-            "location": null
+            "location": "Analysis",
+            "is_branch": true
         },
         "1750738513111503220": {
             "created_at": "Fri Jan 26 04:32:43 +0000 2024",
@@ -9727,9 +10051,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750738513111503220",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750738513111503220",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1751022947614044346": {
             "created_at": "Fri Jan 26 23:22:57 +0000 2024",
@@ -9760,10 +10086,12 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751022947614044346",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751022947614044346",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.7,
             "thread_score": 0.7,
-            "location": "Data Collection"
+            "location": "Data Collection",
+            "is_branch": true
         },
         "1750896950403072497": {
             "created_at": "Fri Jan 26 15:02:17 +0000 2024",
@@ -9793,9 +10121,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750896950403072497",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750896950403072497",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1750762702572847128": {
             "created_at": "Fri Jan 26 06:08:50 +0000 2024",
@@ -9825,9 +10155,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750762702572847128",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750762702572847128",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1750769323764007107": {
             "created_at": "Fri Jan 26 06:35:09 +0000 2024",
@@ -9861,10 +10193,12 @@
                 "1750773113669750951",
                 "1750878179495969038"
             ],
+            "root": "1750732070014337101",
             "reply_count": 2,
             "score": 0.4,
             "thread_score": 0.4,
-            "location": "Analysis"
+            "location": "Analysis",
+            "is_branch": true
         },
         "1750780327512166616": {
             "created_at": "Fri Jan 26 07:18:52 +0000 2024",
@@ -9894,9 +10228,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750780327512166616",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750780327512166616",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1750956016911409552": {
             "created_at": "Fri Jan 26 18:57:00 +0000 2024",
@@ -9926,9 +10262,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750956016911409552",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750956016911409552",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.6,
-            "thread_score": 0.6
+            "thread_score": 0.6,
+            "is_branch": true
         },
         "1750877906736148916": {
             "created_at": "Fri Jan 26 13:46:37 +0000 2024",
@@ -9958,9 +10296,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750877906736148916",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750877906736148916",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1750840796524298638": {
             "created_at": "Fri Jan 26 11:19:09 +0000 2024",
@@ -9993,10 +10333,12 @@
             "replies": [
                 "1751426657255297153"
             ],
+            "root": "1750732070014337101",
             "reply_count": 3,
             "score": 0.7,
             "thread_score": 0.7,
-            "location": "Analysis"
+            "location": "Analysis",
+            "is_branch": true
         },
         "1750737637907071351": {
             "created_at": "Fri Jan 26 04:29:14 +0000 2024",
@@ -10026,9 +10368,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750737637907071351",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750737637907071351",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1750920679556251950": {
             "created_at": "Fri Jan 26 16:36:35 +0000 2024",
@@ -10058,9 +10402,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750920679556251950",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750920679556251950",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1750737653639880751": {
             "created_at": "Fri Jan 26 04:29:18 +0000 2024",
@@ -10090,9 +10436,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750737653639880751",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750737653639880751",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1750889593224790087": {
             "created_at": "Fri Jan 26 14:33:03 +0000 2024",
@@ -10122,9 +10470,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750889593224790087",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750889593224790087",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1750812451510395276": {
             "created_at": "Fri Jan 26 09:26:31 +0000 2024",
@@ -10155,10 +10505,12 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750812451510395276",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750812451510395276",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.4,
             "thread_score": 0.4,
-            "location": null
+            "location": "Discussion",
+            "is_branch": true
         },
         "1750794340069212454": {
             "created_at": "Fri Jan 26 08:14:33 +0000 2024",
@@ -10188,9 +10540,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750794340069212454",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750794340069212454",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1750856276144242811": {
             "created_at": "Fri Jan 26 12:20:40 +0000 2024",
@@ -10252,9 +10606,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750856276144242811",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750856276144242811",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.3,
-            "thread_score": 0.3
+            "thread_score": 0.3,
+            "is_branch": true
         },
         "1750985094985085160": {
             "created_at": "Fri Jan 26 20:52:33 +0000 2024",
@@ -10284,9 +10640,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750985094985085160",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750985094985085160",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.3,
-            "thread_score": 0.3
+            "thread_score": 0.3,
+            "is_branch": true
         },
         "1750937085350150402": {
             "created_at": "Fri Jan 26 17:41:46 +0000 2024",
@@ -10380,9 +10738,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750937085350150402",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750937085350150402",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.0,
-            "thread_score": 0.0
+            "thread_score": 0.0,
+            "is_branch": true
         },
         "1750786881162186877": {
             "created_at": "Fri Jan 26 07:44:55 +0000 2024",
@@ -10412,9 +10772,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750786881162186877",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750786881162186877",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1750801764192829484": {
             "created_at": "Fri Jan 26 08:44:03 +0000 2024",
@@ -10444,9 +10806,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750801764192829484",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750801764192829484",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1750785464154358148": {
             "created_at": "Fri Jan 26 07:39:17 +0000 2024",
@@ -10476,11 +10840,13 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750785464154358148",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750785464154358148",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.2,
             "thread_score": 0.2,
             "tweet_type": "Q&A",
-            "location": "Analysis"
+            "location": "Analysis",
+            "is_branch": true
         },
         "1750938326096372052": {
             "created_at": "Fri Jan 26 17:46:42 +0000 2024",
@@ -10511,10 +10877,12 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750938326096372052",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750938326096372052",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.7,
             "thread_score": 0.7,
-            "location": "Conclusion"
+            "location": "Analysis",
+            "is_branch": true
         },
         "1750734076297019544": {
             "created_at": "Fri Jan 26 04:15:05 +0000 2024",
@@ -10548,11 +10916,13 @@
                 "1750775632181485767",
                 "1750829178486985010"
             ],
+            "root": "1750732070014337101",
             "reply_count": 6,
             "score": 0.6,
             "thread_score": 0.6,
             "tweet_type": "Critique",
-            "location": "Analysis"
+            "location": "Analysis",
+            "is_branch": true
         },
         "1751579392965321018": {
             "created_at": "Sun Jan 28 12:14:04 +0000 2024",
@@ -10582,11 +10952,13 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751579392965321018",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751579392965321018",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.4,
             "thread_score": 0.4,
             "tweet_type": "Q&A",
-            "location": null
+            "location": null,
+            "is_branch": true
         },
         "1750789882761367906": {
             "created_at": "Fri Jan 26 07:56:50 +0000 2024",
@@ -10628,9 +11000,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750789882761367906",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750789882761367906",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1750849540649853281": {
             "created_at": "Fri Jan 26 11:53:54 +0000 2024",
@@ -10660,9 +11034,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750849540649853281",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750849540649853281",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1750949584258404632": {
             "created_at": "Fri Jan 26 18:31:26 +0000 2024",
@@ -10692,11 +11068,13 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750949584258404632",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750949584258404632",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.6,
             "thread_score": 0.6,
             "tweet_type": "Perspective",
-            "location": null
+            "location": null,
+            "is_branch": true
         },
         "1750848082017730870": {
             "created_at": "Fri Jan 26 11:48:06 +0000 2024",
@@ -10727,10 +11105,12 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750848082017730870",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750848082017730870",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.6,
             "thread_score": 0.6,
-            "location": "Causal Inference"
+            "location": "Analysis",
+            "is_branch": true
         },
         "1750757655629766805": {
             "created_at": "Fri Jan 26 05:48:47 +0000 2024",
@@ -10760,9 +11140,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750757655629766805",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750757655629766805",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1750864313856753905": {
             "created_at": "Fri Jan 26 12:52:36 +0000 2024",
@@ -10833,9 +11215,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750864313856753905",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750864313856753905",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.6,
-            "thread_score": 0.6
+            "thread_score": 0.6,
+            "is_branch": true
         },
         "1750770701093785724": {
             "created_at": "Fri Jan 26 06:40:37 +0000 2024",
@@ -10866,10 +11250,12 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750770701093785724",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750770701093785724",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.6,
             "thread_score": 0.6,
-            "location": null
+            "location": "Introduction",
+            "is_branch": true
         },
         "1750897729713099186": {
             "created_at": "Fri Jan 26 15:05:23 +0000 2024",
@@ -10899,9 +11285,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750897729713099186",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750897729713099186",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1751232115205668972": {
             "created_at": "Sat Jan 27 13:14:07 +0000 2024",
@@ -10931,9 +11319,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751232115205668972",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751232115205668972",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.6,
-            "thread_score": 0.6
+            "thread_score": 0.6,
+            "is_branch": true
         },
         "1750754344406786472": {
             "created_at": "Fri Jan 26 05:35:37 +0000 2024",
@@ -10963,9 +11353,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750754344406786472",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750754344406786472",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1751687712065630490": {
             "created_at": "Sun Jan 28 19:24:29 +0000 2024",
@@ -10995,9 +11387,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751687712065630490",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751687712065630490",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1750819768821514533": {
             "created_at": "Fri Jan 26 09:55:36 +0000 2024",
@@ -11027,9 +11421,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750819768821514533",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750819768821514533",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.6,
-            "thread_score": 0.6
+            "thread_score": 0.6,
+            "is_branch": true
         },
         "1750737167180242999": {
             "created_at": "Fri Jan 26 04:27:22 +0000 2024",
@@ -11059,9 +11455,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750737167180242999",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750737167180242999",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1750860403104518558": {
             "created_at": "Fri Jan 26 12:37:04 +0000 2024",
@@ -11091,9 +11489,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750860403104518558",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750860403104518558",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1750740384546947245": {
             "created_at": "Fri Jan 26 04:40:09 +0000 2024",
@@ -11137,9 +11537,11 @@
             "replies": [
                 "1750849392901288349"
             ],
+            "root": "1750732070014337101",
             "reply_count": 1,
             "score": 0.6,
-            "thread_score": 0.6
+            "thread_score": 0.6,
+            "is_branch": true
         },
         "1751056374509789324": {
             "created_at": "Sat Jan 27 01:35:47 +0000 2024",
@@ -11169,9 +11571,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751056374509789324",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751056374509789324",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1750755802154185199": {
             "created_at": "Fri Jan 26 05:41:25 +0000 2024",
@@ -11201,9 +11605,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750755802154185199",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750755802154185199",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1751003569627550182": {
             "created_at": "Fri Jan 26 22:05:57 +0000 2024",
@@ -11233,9 +11639,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751003569627550182",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751003569627550182",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.6,
-            "thread_score": 0.6
+            "thread_score": 0.6,
+            "is_branch": true
         },
         "1750772891086401855": {
             "created_at": "Fri Jan 26 06:49:19 +0000 2024",
@@ -11265,9 +11673,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750772891086401855",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750772891086401855",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1750863160486007096": {
             "created_at": "Fri Jan 26 12:48:01 +0000 2024",
@@ -11317,9 +11727,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750863160486007096",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750863160486007096",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.2,
-            "thread_score": 0.2
+            "thread_score": 0.2,
+            "is_branch": true
         },
         "1750811456092979250": {
             "created_at": "Fri Jan 26 09:22:34 +0000 2024",
@@ -11363,9 +11775,11 @@
             "replies": [
                 "1750812507193962775"
             ],
+            "root": "1750732070014337101",
             "reply_count": 1,
             "score": 0.0,
-            "thread_score": 0.1
+            "thread_score": 0.1,
+            "is_branch": true
         },
         "1750769849155092927": {
             "created_at": "Fri Jan 26 06:37:14 +0000 2024",
@@ -11396,10 +11810,12 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750769849155092927",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750769849155092927",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.7,
             "thread_score": 0.7,
-            "isAuthor": true
+            "isAuthor": true,
+            "is_branch": true
         },
         "1750850092125294990": {
             "created_at": "Fri Jan 26 11:56:05 +0000 2024",
@@ -11441,11 +11857,13 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750850092125294990",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750850092125294990",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.2,
             "thread_score": 0.2,
             "tweet_type": "Q&A",
-            "location": "Data Collection"
+            "location": "Data Collection",
+            "is_branch": true
         },
         "1751251887003693321": {
             "created_at": "Sat Jan 27 14:32:41 +0000 2024",
@@ -11539,9 +11957,11 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751251887003693321",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751251887003693321",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.0,
-            "thread_score": 0.0
+            "thread_score": 0.0,
+            "is_branch": true
         },
         "1750906524497842423": {
             "created_at": "Fri Jan 26 15:40:20 +0000 2024",
@@ -11573,6 +11993,7 @@
             "replies": [
                 "1750917470502719829"
             ],
+            "root": "1750732070014337101",
             "reply_count": 2,
             "score": 0.4,
             "thread_score": 0
@@ -11607,6 +12028,7 @@
             "replies": [
                 "1750933242142949547"
             ],
+            "root": "1750732070014337101",
             "reply_count": 1,
             "score": 0.2,
             "thread_score": 0
@@ -11641,6 +12063,7 @@
             "replies": [
                 "1750958351066750999"
             ],
+            "root": "1750732070014337101",
             "reply_count": 3,
             "score": 0.2,
             "thread_score": 0
@@ -11675,6 +12098,7 @@
             "replies": [
                 "1751025066014626241"
             ],
+            "root": "1750732070014337101",
             "reply_count": 2,
             "score": 0.1,
             "thread_score": 0
@@ -11709,6 +12133,7 @@
             "replies": [
                 "1750779467675390249"
             ],
+            "root": "1750732070014337101",
             "reply_count": 2,
             "score": 0.2,
             "thread_score": 0
@@ -11742,6 +12167,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750825807021281383",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750825807021281383",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.4,
             "thread_score": 0
@@ -11778,6 +12204,7 @@
                 "1750766514586993135",
                 "1750761900894535866"
             ],
+            "root": "1750732070014337101",
             "reply_count": 7,
             "score": 0.4,
             "thread_score": 0
@@ -11813,6 +12240,7 @@
             "replies": [
                 "1750820274503626941"
             ],
+            "root": "1750732070014337101",
             "reply_count": 3,
             "score": 0.5,
             "thread_score": 0
@@ -11857,6 +12285,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750774309184774239",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750774309184774239",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.2,
             "thread_score": 0
@@ -11889,6 +12318,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750795820151238749",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750795820151238749",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0
@@ -11924,6 +12354,7 @@
             "replies": [
                 "1750868046581768238"
             ],
+            "root": "1750732070014337101",
             "reply_count": 5,
             "score": 0.7,
             "thread_score": 0
@@ -11960,6 +12391,7 @@
                 "1750871946542104601",
                 "1750870041791197641"
             ],
+            "root": "1750732070014337101",
             "reply_count": 4,
             "score": 0.7,
             "thread_score": 0
@@ -12209,6 +12641,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750958869650808938",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750958869650808938",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.5,
             "thread_score": 0
@@ -12241,6 +12674,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750860665877659718",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750860665877659718",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.2,
             "thread_score": 0
@@ -12313,6 +12747,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750773113669750951",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750773113669750951",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.3,
             "thread_score": 0
@@ -12346,6 +12781,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750878179495969038",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750878179495969038",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.4,
             "thread_score": 0
@@ -12380,6 +12816,7 @@
             "replies": [
                 "1751554889077965100"
             ],
+            "root": "1750732070014337101",
             "reply_count": 2,
             "score": 0.7999999999999999,
             "thread_score": 0.1,
@@ -12416,6 +12853,7 @@
             "replies": [
                 "1751558223109431359"
             ],
+            "root": "1750732070014337101",
             "reply_count": 1,
             "score": 0.7,
             "thread_score": 0
@@ -12449,6 +12887,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750819797909086709",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750819797909086709",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.6,
             "thread_score": 0.1,
@@ -12486,6 +12925,7 @@
                 "1750816290044830201",
                 "1750801940823310663"
             ],
+            "root": "1750732070014337101",
             "reply_count": 3,
             "score": 0.7,
             "thread_score": 0
@@ -12519,6 +12959,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750829178486985010",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750829178486985010",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.5,
             "thread_score": 0
@@ -12571,6 +13012,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750849392901288349",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750849392901288349",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.6,
             "thread_score": 0
@@ -12603,6 +13045,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750812507193962775",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750812507193962775",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0
@@ -12635,6 +13078,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750933242142949547",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750933242142949547",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0
@@ -12669,6 +13113,7 @@
             "replies": [
                 "1751027755855081733"
             ],
+            "root": "1750732070014337101",
             "reply_count": 1,
             "score": 0.1,
             "thread_score": 0
@@ -12701,6 +13146,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751027755855081733",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751027755855081733",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0
@@ -12735,6 +13181,7 @@
             "replies": [
                 "1750782181213950218"
             ],
+            "root": "1750732070014337101",
             "reply_count": 1,
             "score": 0.3,
             "thread_score": 0
@@ -12874,6 +13321,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750782181213950218",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750782181213950218",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.2,
             "thread_score": 0
@@ -12908,6 +13356,7 @@
             "replies": [
                 "1750820428468117752"
             ],
+            "root": "1750732070014337101",
             "reply_count": 2,
             "score": 0.3,
             "thread_score": 0
@@ -12955,6 +13404,7 @@
             "replies": [
                 "1750773780132098284"
             ],
+            "root": "1750732070014337101",
             "reply_count": 1,
             "score": 0.5,
             "thread_score": 0
@@ -12988,6 +13438,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750773780132098284",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750773780132098284",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0
@@ -13020,6 +13471,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750761900894535866",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750761900894535866",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.2,
             "thread_score": 0
@@ -13055,6 +13507,7 @@
             "replies": [
                 "1750880680915914980"
             ],
+            "root": "1750732070014337101",
             "reply_count": 2,
             "score": 0.6,
             "thread_score": 0
@@ -13090,6 +13543,7 @@
             "replies": [
                 "1751094899334660331"
             ],
+            "root": "1750732070014337101",
             "reply_count": 1,
             "score": 0.6,
             "thread_score": 0
@@ -13124,6 +13578,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750870041791197641",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750870041791197641",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.4,
             "thread_score": 0
@@ -13157,6 +13612,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751558223109431359",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751558223109431359",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.7999999999999999,
             "thread_score": 0.1,
@@ -13193,6 +13649,7 @@
             "replies": [
                 "1750830321904594998"
             ],
+            "root": "1750732070014337101",
             "reply_count": 1,
             "score": 0.5,
             "thread_score": 0.1,
@@ -13226,6 +13683,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750801940823310663",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750801940823310663",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.3,
             "thread_score": 0
@@ -13260,6 +13718,7 @@
             "replies": [
                 "1750968580114420151"
             ],
+            "root": "1750732070014337101",
             "reply_count": 1,
             "score": 0.1,
             "thread_score": 0
@@ -13293,6 +13752,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1751094899334660331",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1751094899334660331",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.7,
             "thread_score": 0
@@ -13326,6 +13786,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750830321904594998",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750830321904594998",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.8,
             "thread_score": 0
@@ -13378,6 +13839,7 @@
             "like_url": "https://x.com/intent/like?tweet_id=1750968580114420151",
             "reply_url": "https://x.com/intent/tweet?in_reply_to=1750968580114420151",
             "replies": [],
+            "root": "1750732070014337101",
             "reply_count": 0,
             "score": 0.1,
             "thread_score": 0
@@ -13415,6 +13877,22 @@
                     74.9,
                     271.27,
                     209.24
+                ]
+            },
+            {
+                "title": "Introduction",
+                "types": [
+                    "Perspective"
+                ],
+                "dimensions": {
+                    "width": 612.0,
+                    "height": 792.0
+                },
+                "box": [
+                    0,
+                    55.44,
+                    291.09000000000003,
+                    493.09
                 ]
             }
         ],
@@ -13495,29 +13973,11 @@
                 ]
             }
         ],
-        "13": [
-            {
-                "title": "C. Causal Inference",
-                "types": [
-                    "Critique"
-                ],
-                "dimensions": {
-                    "width": 612.0,
-                    "height": 792.0
-                },
-                "box": [
-                    13,
-                    55.44,
-                    289.44,
-                    68.77
-                ]
-            }
-        ],
         "7": [
             {
                 "title": "Conclusion",
                 "types": [
-                    "Critique"
+                    "Perspective"
                 ],
                 "dimensions": {
                     "width": 612.0,
@@ -13533,36 +13993,78 @@
         ]
     },
     "summaries": {
-        "null": {
-            "Perspective": "<1750836982341652567> raised the issue of influence during the peer-review process, suggesting similar dynamics might be at play.\n<1750838361785242041> argued that science has always involved recommendations and influence, with the current situation simply highlighting existing networks.\n<1750840323725570264> countered that the study focuses on centralized influence from a few individuals, distinct from personal recommendations.\n<1750795018611106092> suggested exploring the impact of open-source code on citations, hypothesizing it might have more lasting influence than social media mentions.\n<1750812451510395276> argued that influencer-driven attention is inevitable in fields with low barriers to entry and information overload, offering a potentially better alternative to traditional gatekeeping.\n\nOther discussions touched on the role of algorithms in shaping research interests, the potential for paid promotion of papers, and the comparison of social media influence to traditional forms of academic promotion like conference presentations and press releases.",
-            "Critique": "<1750857474108739706> questioned whether the study controlled for the potential bias of influencers tweeting higher-impact papers.\n<1750860099181043923> wondered how one could objectively compare the selected papers to the \"average\" paper.\n<1750868046581768238> suggested a study design where participants tweet both randomly assigned and self-selected papers.\n<1750871946542104601> countered that influencers might not participate in such a study due to reputational concerns.\n<1750880680915914980> argued that tweeting a random paper isn't harmful and is necessary for a rigorous study.\n\nOther discussions touched on the inherent bias in influencer selection processes and the potential influence of the academic institution or research lab associated with the papers.  One user even suggested a prospective study involving randomized paper choices for influencers.",
-            "Q&A": "<1751579392965321018> inquired about the availability of the data used in the analysis.",
-            "Resource": ""
+        "Perspective": {
+            "Introduction": [
+                "<1750842414388908064> argued that Google Scholar and Twitter's algorithms have a greater impact on shaping research interests than individual influencers. <1750848476064219301> added that platforms could manipulate research trends by boosting certain fields, creating a distorted landscape.",
+                "<1750770701093785724> downplayed the paper's findings, suggesting that academic papers are already used as marketing tools and the influence of social media is an extension of this trend."
+            ],
+            "Analysis": [
+                "<1750878238681768110> suggests that the influencers' ability to select impactful papers might be a stronger factor than the \"matching\" process used in the study."
+            ],
+            "Discussion": [
+                "<1750732070014337101> points out the significant impact of ML influencers on citation counts, sparking a discussion about the \"TikTokification\" of academia. <1750906524497842423> criticizes the non-randomized nature of the study, suggesting it's a publicity stunt itself.",
+                "<1750767115085263228> argues that deep learning's financial incentives make influencer recommendations less merit-based and prone to big lab bias, unlike math. <1750820274503626941> suggests a \"Product Hunt\" for papers to address the discoverability challenge.",
+                "<1750783025011450254> expresses concern about the influencer-driven science dissemination. <1750936587683438899> questions if it's different from established researchers influencing paper traction through talks. <1750941773961089526> likens influencer accounts to venues with a one-person acceptance committee.",
+                "<1803487713120887176> argues that paid promotion in research creates wrong incentives, potentially rewarding low-quality work. <1803498655296659713> counters, suggesting broader reach is positive if research is a positive-sum game.",
+                "Other discussions touched upon the role of open-source code in citations, the potential benefits of influencer-driven dissemination in overcoming gatekeeping, and the comparison of paid promotion with open-access publication fees."
+            ],
+            "General": [
+                "<1750949584258404632> suggested exploring the correlation between the existence of a project page (e.g., website, GitHub repo) and citation count, hypothesizing that influencers might favor papers with good visualization, potentially leading to higher visibility and citations."
+            ],
+            "Conclusion": [
+                "<1751279042375057724> raises concerns about the potential for \"AI influencers\" to be paid to advertise papers, bypassing peer review. <1751418052447739923> points out they receive payment for sharing papers on Twitter. <1751503718586220571> argues that this is acceptable as long as there's no external pressure on what to share."
+            ]
         },
-        "C. Causal Inference": {
-            "Critique": "<1750852576818401479> argues that the observed correlation between influencer sharing and citation count might be due to influencers selecting already high-quality papers, not the sharing itself causing increased citations.\n\n<1750975713329492358> adds that the selection bias is further compounded by influencers focusing on trending topics like LLMs and generative models, which inherently receive more visibility.\n\n<1750936804617036009> agrees with the concerns about causality and suggests a controlled experiment would be ideal, but acknowledges its impracticality.\n\nOther discussions did not offer substantial insights into the paper's core arguments."
+        "Critique": {
+            "Analysis": [
+                "<1751298202777555438> argued that the study's controls are insufficient to establish causation, as influencers don't tweet randomly.  <1751424913754259829> pointed out that review scores were also compared, but <1751507361540321586> noted their weak correlation with citations.",
+                "<1750783274916393329> questioned the causal claim. <1750813649143222704> clarified the methodology involving control samples based on various factors.  <1750819649724318076> remained skeptical about the causal link, citing potential confounds.",
+                "<1750857474108739706> questioned if influencers select higher-impact papers, making causal inference difficult. <1750860099181043923> echoed this concern. <1750868046581768238> suggested a randomized tweeting experiment.",
+                "Several users, including <1750852576818401479> and <1750852195082494327>, pointed out the correlation vs. causation issue, suggesting that influencers sharing papers might be a consequence of the papers' quality, not the cause of increased citations.",
+                "Other discussions highlighted the difficulty in controlling for paper quality, the potential bias due to the influencers' selection process, and the need for more rigorous causal inference methods."
+            ],
+            "Data Collection": [
+                "<1751022947614044346> questions the assumption of a true underlying paper quality and whether AI can accurately track it, implying that the observed citation increase might be due to the AI's inherent bias towards certain papers.",
+                "<1751349091618226224> points out the study's assumption that papers at the same conference should have similar citations, arguing that the conference cycle's mismatch with ML's rapid pace might introduce a first-to-market bias.",
+                "<1751519580491862424> raises the concern of potential paid promotions by influencers, highlighting the lack of mechanisms to prevent such practices and their potential impact on citation counts.",
+                "<1751424913754259829> and <1751507361540321586> discuss the use of review scores, with the latter pointing out that review scores have been shown to be uncorrelated with future impact or citations.",
+                "Other noteworthy discussions explore potential interventions for causal analysis and the correlation between post engagements (likes, retweets) and citation counts."
+            ]
+        },
+        "Q&A": {
+            "Analysis": [
+                "<1750785464154358148> questioned the causality between influencer sharing and citation counts. The paper primarily focuses on correlation, acknowledging the need for further investigation into a causal link."
+            ],
+            "Data Collection": [
+                "<1750850092125294990> asked if the analysis included videos, suggesting a potential broadening of the scope."
+            ],
+            "General": []
+        },
+        "Resource": {
+            "Related Work": []
         },
         "Related Work": {
-            "Resource": "<1751084825744732479> Darling et al. (2013) discusses the role of Twitter in academic publishing, providing a broader context for the paper's focus on AI/ML influencers.\n<1751084825744732479> Eysenbach (2011) offers early evidence of social media's impact on citations, specifically in medical publications, which predates the AI/ML focused study.\n<1751084825744732479> Peoples et al. (2016) and Vaghjiani et al. (2021) strengthen the paper's argument by showing a positive correlation between Twitter presence and citation counts.\n<1751084825744732479> Conversely, Tonia et al. (2016) and Branch et al. (2023) offer contrasting viewpoints, suggesting a lack of significant correlation between tweets and citations.",
-            "Related Work": "<1752425165793759366> mentioned a related EMNLP 2023 paper which explores the implications of AI academic influencers, complementing the given paper's focus on citation impact.  The context also highlights Darling et al. (2013) [[Not Found]] which discusses Twitter's role in academic publishing, providing a broader perspective on social media's influence. Eysenbach (2011) [[Not Found]] offers early evidence of social media sharing predicting higher citations, while Peoples et al. (2016) [[Not Found]] and Vaghjiani et al. (2021) [[Not Found]] show a statistically significant relationship between Twitter presence and citations.  Conversely, Tonia et al. (2016) [[Not Found]] and Branch et al. (2023) [[Not Found]] found an insignificant correlation."
+            "Related Work": [
+                "<1752425165793759366> mentioned a related study by Goanta et al. (2023) [[aclanthology.org/2023.emnlp-mai\u2026]] which explores the broader implications of AI academic influencers, complementing the given paper's focus on citation impact by examining the role of influencers in shaping scientific discourse."
+            ]
+        }
+    },
+    "context": {
+        "Perspective": {
+            "Introduction": "The authors studied the impact of two AI/ML influencers on Twitter (X) on paper citations. They found that papers shared by these influencers receive significantly more citations. The study also explored the demographics of the shared papers and proposed future discussions on the evolving role of social media in AI/ML research dissemination.",
+            "Analysis": "The authors investigated whether papers shared by AI/ML influencers receive more citations. They compared citation counts of influencer-shared papers to a control group and found a statistically significant difference, suggesting a correlation between influencer sharing and higher citation counts.",
+            "Discussion": "The authors studied the impact of social media promotion by prominent AI/ML researchers on paper citations. They found that papers tweeted by these influencers received significantly more citations. The study explores the implications of this trend for the research community, including potential biases and the need for greater equity in visibility.",
+            "General": "The authors investigated the impact of AI/ML social media influencers on paper visibility and citation counts.  Their analysis of over 8,000 papers found that influencer endorsement significantly increased citations.",
+            "Conclusion": "The authors studied the impact of AI/ML influencers on paper citations, finding that papers endorsed by influencers receive significantly more citations. This suggests influencers play a key role in shaping research visibility and necessitates a re-evaluation of traditional academic processes."
         },
-        "Analysis": {
-            "Critique": "<1750783274916393329> questioned the causal link between influencer endorsements and citation counts, prompting a discussion on the methodology used in the paper.\n<1751298202777555438> argued that the study's controls are insufficient to establish causality, suggesting that influencers' ability to select promising papers could explain the observed correlation.\n<1750852195082494327> suggested the causal direction might be reversed, with papers' popularity driving influencer endorsements.\n<1751349091618226224> raised the issue of \"first-to-market\" bias, suggesting that early exposure through influencer sharing could inflate citation counts regardless of inherent quality.\n<1751077094220579134> criticized the paper's title for implying causality despite the study's correlational nature.\n\nOther discussions touched on the use of review scores as a control, the potential for geographic and gender biases in shared papers, and the overall implications of influencer-driven dissemination of research.",
-            "Perspective": "<1750758512307929443> agrees with the paper's premise that research is a social activity and traditional paper discovery methods are no longer sufficient.\n<1750759080652616117> expresses skepticism, viewing influencer-driven research dissemination as a problematic symptom.\n<1750761396684701742> counters by citing mathematicians like Gowers and Tao as positive examples of online influence in research.\n<1750767115085263228> argues that deep learning's financial incentives and \"big lab bias\" make comparisons to math inaccurate.\n<1750766514586993135> raises a methodological concern about the paper's control for quality.\n\nOther discussions touched on the difficulty of discovering papers solely on merit due to the sheer volume of publications and the potential for a \"Product Hunt\" style platform for research papers.  One participant also questioned the adequacy of existing platforms like Papers with Code.",
-            "Q&A": "<1750785464154358148> questioned the causal link between influencer sharing and citation counts, highlighting a key challenge in the study's methodology.\n\nOther discussions touched on the geographical and gender distributions of the papers shared by influencers, noting a potential bias towards US-based and male authors."
+        "Critique": {
+            "Analysis": "The authors compared citation counts of papers shared by two AI influencers against a control group matched by topic, venue, and review scores.  They found significantly higher citation counts for the shared papers but acknowledged limitations in establishing causality.",
+            "Data Collection": "The authors compare citation counts of papers tweeted by AI/ML influencers to a control group matched by publication year, venue, and topic. They use text embeddings for topic similarity and control for author prominence using h-index and citation counts.  Review scores are also examined to ensure quality control."
         },
-        "Data Collection": {
-            "Critique": "<1751022947614044346> questioned the validity of the control group, suggesting that the higher citation counts of AI-tweeted papers might be due to inherent quality differences rather than the influence of the AI accounts.",
-            "Q&A": "Other discussions touched on the scope of the analysis, with <1750850092125294990> inquiring about the inclusion of YouTube videos in the study, highlighting the broader influence of online content beyond academic papers."
-        },
-        "Conclusion": {
-            "Critique": "<1750938326096372052> questions whether the observed higher citation counts for influencer-endorsed papers are due to the influencers selecting inherently high-profile papers rather than their endorsement itself."
-        },
-        "Causal Inference": {
-            "Critique": "<1750848082017730870> questioned the causal relationship between review scores and perceived paper quality, suggesting other factors like public relations, hype, and presentation might play a role and advocating for an intervention experiment."
-        },
-        "Discussion": {
-            "Perspective": "<1803487713120887176> argues that prioritizing paid visibility over quality research creates flawed incentives.\n<1803498655296659713> counters that broader reach is beneficial, especially if research is a positive-sum game.\n<1750936587683438899> questions whether social media influence differs significantly from the impact of established researchers.\n<1750941773961089526> compares influencer accounts to venues, highlighting the centralized nature of their influence.\n<1751153185115324559> raises concerns about the focus on influencer monetization and its potential impact on \"brain drain.\"\n\nOther discussions touched on the role of influencers in promoting diversity and equity, the potential for community notes on research, and the need for the academic community to adapt to the changing landscape of research dissemination."
+        "Q&A": {
+            "Analysis": "The authors investigated the correlation between papers shared by AI/ML influencers and their citation counts. They found a statistically significant positive correlation, suggesting that influencer sharing is a significant indicator of future research impact. However, they acknowledge the study's limitations in establishing causality.",
+            "Data Collection": "The authors investigated the impact of AI/ML influencers on paper citations by comparing papers tweeted by influencers to a control group matched on publication year, venue, and topic similarity.  They used Semantic Scholar data and controlled for author prominence and paper quality.",
+            "General": "The authors investigated the impact of social media influencers on the visibility and citation counts of machine learning research papers. Their analysis revealed a significant increase in citations for papers endorsed by influencers."
         }
     }
 }

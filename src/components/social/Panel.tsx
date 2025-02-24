@@ -18,9 +18,17 @@ import { getColor } from "@/context/ColorManager";
 import { DataContext } from "@/context/DataContext";
 import { Switch } from "../ui/switch";
 import { Label } from "../ui/label";
-import { SidebarCloseIcon } from "lucide-react";
+import { ArrowLeft, SidebarCloseIcon } from "lucide-react";
 import { UIContext } from "@/context/UIContext";
 import clsx from "clsx";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../ui/accordion";
+import Summary from "../ui/Summary";
+import { EnrichedTweet } from "../post/src";
 
 const TabTypes = Object.keys(ptypeConfig).sort((a, b) => {
   return (
@@ -28,6 +36,70 @@ const TabTypes = Object.keys(ptypeConfig).sort((a, b) => {
     ptypeConfig[b as keyof typeof ptypeConfig].priority
   );
 });
+
+const AccordionPanel = ({ data }: { data: EnrichedTweet[] }) => {
+  const { highlightedType, highlightedLocation, setHighlightedLocation } =
+    useContext(HighlightContext);
+  const { summaries, context } = useContext(DataContext);
+  const locationList = Object.keys(summaries[highlightedType] || {});
+
+  return highlightedType === "Overview" ? (
+    data.map((post) => <Thread post={post} key={post.id_str} />)
+  ) : (
+    <Accordion
+      type="single"
+      value={highlightedLocation}
+      onValueChange={(loc) => {
+        if (loc === highlightedLocation) setHighlightedLocation(undefined);
+        else setHighlightedLocation(loc);
+      }}
+      collapsible
+    >
+      {locationList.map((loc, i) => (
+        <AccordionItem value={loc} key={i} className="mb-3 border-none">
+          <AccordionTrigger
+            className={clsx(
+              "text-xl font-mono px-4 rounded-t-3xl flex-wrap",
+              loc === highlightedLocation ? "pb-1.5" : "rounded-b-3xl"
+            )}
+            style={{
+              backgroundColor: getColor(loc),
+            }}
+          >
+            <span>
+              <b className="mr-2">Section:</b>
+              {loc}
+            </span>
+          </AccordionTrigger>
+          <AccordionContent>
+            {context[highlightedType] ? (
+              <div
+                className="text-lg px-4 pb-2 rounded-b-3xl"
+                style={{
+                  backgroundColor: getColor(loc),
+                }}
+              >
+                <span>{context[highlightedType][loc]}</span>
+              </div>
+            ) : null}
+            <Summary
+              raw={summaries[highlightedType][loc]}
+              className="text-stone-600 px-2 py-3"
+            />
+            {data
+              .filter(
+                (post) =>
+                  post.location === loc || (!post.location && loc === "General")
+              )
+              .map((post) => (
+                <Thread post={post} key={post.id_str} />
+              ))}
+          </AccordionContent>
+        </AccordionItem>
+      ))}
+    </Accordion>
+  );
+};
 
 export default function Social() {
   const {
@@ -39,24 +111,33 @@ export default function Social() {
   const { posts, focusMode, setFocusMode } = useContext(DataContext);
   const { sidebarOpen, setSidebarOpen } = useContext(UIContext);
 
-  const postToDisplay = Object.values(posts)
-    .filter(
-      (post) =>
-        post?.tweet_type &&
-        post?.tweet_type !== "Trivia" &&
-        !post?.in_thread &&
-        (!highlightedType || post.tweet_type === highlightedType) &&
-        (!highlightedLocation || post.location === highlightedLocation) &&
-        (focusMode && post.thread_score ? post.thread_score > 0.2 : true) &&
-        (!highlightedLocation && !highlightedType
-          ? !post.in_reply_to_status_id_str
-          : true)
-    )
+  let postToDisplay = Object.values(posts)
+    .filter((p) => p.tweet_type === highlightedType && p.is_branch)
     .sort((a, b) => {
       const score_diff = (b.thread_score || 0) - (a.thread_score || 0);
       if (score_diff !== 0) return score_diff;
       return b.favorite_count - a.favorite_count;
     });
+
+  // const postToDisplay = Object.values(posts)
+  //   .filter(
+  //     (post) =>
+  //       post?.tweet_type &&
+  //       post?.tweet_type !== "Trivia" &&
+  //       !post?.in_thread &&
+  //       (!highlightedType || post.tweet_type === highlightedType) &&
+  //       (!highlightedLocation || post.location === highlightedLocation) &&
+  //       (focusMode && post.thread_score ? post.thread_score > 0.2 : true) &&
+  //       (!highlightedLocation && !highlightedType
+  //         ? !post.in_reply_to_status_id_str
+  //         : true) &&
+  //       post.is_branch
+  //   )
+  //   .sort((a, b) => {
+  //     const score_diff = (b.thread_score || 0) - (a.thread_score || 0);
+  //     if (score_diff !== 0) return score_diff;
+  //     return b.favorite_count - a.favorite_count;
+  //   });
 
   return (
     <div
@@ -84,15 +165,13 @@ export default function Social() {
               key={type}
               variant="secondary"
               onClick={() => {
-                if (type === highlightedType) {
-                  setHighlightedType(null);
-                } else {
+                if (type !== highlightedType) {
                   setHighlightedType(type);
                 }
               }}
               className={`text-[1rem] rounded-3xl px-3 h-8 mb-3 mr-2.5 ${
                 type === highlightedType
-                  ? "bg-stone-700 text-white hover:bg-stone-600"
+                  ? "bg-stone-800 text-stone-50 hover:bg-stone-700"
                   : "bg-stone-100 hover:bg-stone-200"
               }`}
             >
@@ -101,7 +180,7 @@ export default function Social() {
           ))}
         </div>
         <Separator className="mt-1 mb-3" />
-        <div
+        {/* <div
           className={clsx(
             "items-center border px-6 justify-between py-2 rounded-full bg-stone-100 w-72 mb-1 flex",
             sidebarOpen ? "flex" : "hidden"
@@ -122,15 +201,15 @@ export default function Social() {
             checked={focusMode}
             onClick={() => setFocusMode(!focusMode)}
           />
-        </div>
+        </div> */}
 
-        {highlightedLocation !== null && (
+        {/* {highlightedLocation !== null && (
           <Badge
             style={{ backgroundColor: getColor(highlightedLocation) }}
             className="mt-4 mb-1 text-md rounded-full py-1 pl-4 pr-2 cursor-pointer w-fit text-stone-700"
             onClick={() => {
               setHighlightedLocation(null);
-              setHighlightedType(null);
+              // setHighlightedType(null);
             }}
           >
             Showing Only Related Posts
@@ -155,7 +234,7 @@ export default function Social() {
               />
             </svg>
           </Badge>
-        )}
+        )} */}
       </div>
 
       <div
@@ -165,19 +244,9 @@ export default function Social() {
           display: sidebarOpen ? "block" : "none",
         }}
       >
-        <HideScroll paddingLeft={0.8} paddingRight={0.8} paddingBottom={12}>
+        <HideScroll paddingLeft={0.8} paddingRight={0.8} paddingBottom={7.2}>
           <AnimatePresence>
-            {postToDisplay.map((post) => (
-              <motion.div
-                key={post.id_str}
-                initial={{ opacity: 0, x: 64 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 64 }}
-                transition={{ duration: 0.16, type: "just", ease: "easeIn" }}
-              >
-                <Thread post={post} />
-              </motion.div>
-            ))}
+            <AccordionPanel data={postToDisplay} />
           </AnimatePresence>
         </HideScroll>
       </div>

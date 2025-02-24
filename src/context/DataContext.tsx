@@ -1,4 +1,9 @@
-import { TLocationData, TPostData, TSummaryData } from "@/components/types";
+import {
+  TContextData,
+  TLocationData,
+  TPostData,
+  TSummaryData,
+} from "@/components/types";
 import { createContext, useState } from "react";
 
 export interface IDataContext {
@@ -8,6 +13,8 @@ export interface IDataContext {
   setLocations: (locations: TLocationData) => void;
   summaries: TSummaryData;
   setSummaries: (summaries: TSummaryData) => void;
+  context: TContextData;
+  setContext: (context: TContextData) => void;
   focusMode: boolean;
   setFocusMode: (focusMode: boolean) => void;
 }
@@ -21,13 +28,16 @@ export const DataContext = createContext<IDataContext>({
   setSummaries: () => {},
   focusMode: true,
   setFocusMode: () => {},
+  context: {},
+  setContext: () => {},
 });
 
 export function useDataContextProps(): IDataContext {
   const [posts, setPosts] = useState<TPostData>({});
   const [locations, setLocations] = useState<TLocationData>({});
   const [summaries, setSummaries] = useState<TSummaryData>({});
-  const [focusMode, setFocusMode] = useState<boolean>(true);
+  const [focusMode, setFocusMode] = useState<boolean>(false);
+  const [context, setContext] = useState<TContextData>({});
 
   return {
     posts,
@@ -38,5 +48,7 @@ export function useDataContextProps(): IDataContext {
     setSummaries,
     focusMode,
     setFocusMode,
+    context,
+    setContext,
   };
 }

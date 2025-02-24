@@ -1,24 +1,24 @@
 import { createContext, useState } from "react";
 
 export interface IHighlightContext {
-  highlightedLocation: string | null;
-  setHighlightedLocation: (id: string | null) => void;
-  highlightedType: string | null;
-  setHighlightedType: (type: string | null) => void;
+  highlightedLocation: string | undefined;
+  setHighlightedLocation: (id: string | undefined) => void;
+  highlightedType: string;
+  setHighlightedType: (type: string) => void;
 }
 
 export const HighlightContext = createContext<IHighlightContext>({
-  highlightedLocation: null,
+  highlightedLocation: undefined,
   setHighlightedLocation: () => {},
-  highlightedType: null,
+  highlightedType: "Overview",
   setHighlightedType: () => {},
 });
 
 export function useHighlightContextProps(): IHighlightContext {
-  const [highlightedLocation, setHighlightedLocation] = useState<string | null>(
-    null
-  );
-  const [highlightedType, setHighlightedType] = useState<string | null>(null);
+  const [highlightedLocation, setHighlightedLocation] = useState<
+    string | undefined
+  >(undefined);
+  const [highlightedType, setHighlightedType] = useState<string>("Overview");
   return {
     highlightedLocation,
     setHighlightedLocation,

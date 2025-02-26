@@ -8,18 +8,12 @@ import {
 } from "../post/src";
 import { Button } from "../ui/button";
 import { Fragment, MouseEvent, useContext, useEffect, useState } from "react";
-import { SIDEBAR_WIDTH } from "../ui/sidebar";
-import { Card, CardHeader } from "../ui/card";
 import HideScroll from "../ui/HideScroll";
-import { ArrowLeft, ChevronsUpDown } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { getColor } from "@/context/ColorManager";
 import { ptypeConfig } from "../types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAngleDoubleDown,
-  faClose,
-  faEllipsisVertical,
-} from "@fortawesome/free-solid-svg-icons";
+import { faAngleDoubleDown, faClose } from "@fortawesome/free-solid-svg-icons";
 import s from "./Thread.module.css";
 import { DataContext } from "@/context/DataContext";
 import clsx from "clsx";
@@ -395,7 +389,7 @@ const ThreadView = ({
             >
               {
                 ptypeConfig[threads[0].tweet_type as keyof typeof ptypeConfig]
-                  .icon
+                  ?.icon
               }
             </div>
             <div className="text-xl ml-3 font-mono">

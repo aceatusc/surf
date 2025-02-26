@@ -1,24 +1,15 @@
 import { Button } from "../ui/button";
 import { Separator } from "@/components/ui/separator";
-import { MouseEvent, useContext, useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { TPostData, ptypeConfig } from "../types";
+import { useContext, useEffect, useState } from "react";
+import { ptypeConfig } from "../types";
 import { HighlightContext } from "@/context/HighlightContext";
 import HideScroll from "../ui/HideScroll";
-import { Badge } from "../ui/badge";
 import Thread, { ReadMore } from "./Thread";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "../ui/select";
 import { getColor } from "@/context/ColorManager";
 import { DataContext } from "@/context/DataContext";
 import { Switch } from "../ui/switch";
 import { Label } from "../ui/label";
-import { ArrowLeft, SidebarCloseIcon } from "lucide-react";
+import { SidebarCloseIcon } from "lucide-react";
 import { UIContext } from "@/context/UIContext";
 import clsx from "clsx";
 import {
@@ -28,7 +19,6 @@ import {
   AccordionTrigger,
 } from "../ui/accordion";
 import Summary from "../ui/Summary";
-import { EnrichedTweet } from "../post/src";
 
 const TabTypes = Object.keys(ptypeConfig).sort((a, b) => {
   return (
@@ -38,8 +28,7 @@ const TabTypes = Object.keys(ptypeConfig).sort((a, b) => {
 });
 
 const AccordionPanelItem = ({ loc }: { loc: string }) => {
-  const { highlightedType, highlightedLocation, setHighlightedLocation } =
-    useContext(HighlightContext);
+  const { highlightedType, highlightedLocation } = useContext(HighlightContext);
   const { context, posts, focusMode } = useContext(DataContext);
   const [localFocusMode, setLocalFocusMode] = useState(focusMode);
 
@@ -70,7 +59,7 @@ const AccordionPanelItem = ({ loc }: { loc: string }) => {
   });
 
   return (
-    <AccordionItem value={loc} className="mb-3 border-none">
+    <AccordionItem value={loc} className="mt-3 border-none">
       <AccordionTrigger
         className={clsx(
           "text-xl font-mono px-4 rounded-t-3xl flex-wrap",
@@ -171,34 +160,9 @@ const AccordionPanel = () => {
 };
 
 export default function Social() {
-  const {
-    setHighlightedLocation,
-    setHighlightedType,
-    highlightedLocation,
-    highlightedType,
-  } = useContext(HighlightContext);
-  const { focusMode, setFocusMode } = useContext(DataContext);
+  const { setHighlightedType, highlightedType } = useContext(HighlightContext);
   const { sidebarOpen, setSidebarOpen } = useContext(UIContext);
-
-  // const postToDisplay = Object.values(posts)
-  //   .filter(
-  //     (post) =>
-  //       post?.tweet_type &&
-  //       post?.tweet_type !== "Trivia" &&
-  //       !post?.in_thread &&
-  //       (!highlightedType || post.tweet_type === highlightedType) &&
-  //       (!highlightedLocation || post.location === highlightedLocation) &&
-  //       (focusMode && post.thread_score ? post.thread_score > 0.2 : true) &&
-  //       (!highlightedLocation && !highlightedType
-  //         ? !post.in_reply_to_status_id_str
-  //         : true) &&
-  //       post.is_branch
-  //   )
-  //   .sort((a, b) => {
-  //     const score_diff = (b.thread_score || 0) - (a.thread_score || 0);
-  //     if (score_diff !== 0) return score_diff;
-  //     return b.favorite_count - a.favorite_count;
-  //   });
+  const { focusMode, setFocusMode } = useContext(DataContext);
 
   return (
     <div
@@ -239,30 +203,30 @@ export default function Social() {
               {ptypeConfig[type as keyof typeof ptypeConfig].icon} {type}
             </Button>
           ))}
-        </div>
-        <Separator className="mt-1 mb-3" />
-        {/* <div
-          className={clsx(
-            "items-center border px-6 justify-between py-2 rounded-full bg-stone-100 w-72 mb-1 flex",
-            sidebarOpen ? "flex" : "hidden"
-          )}
-        >
-          <div className="flex flex-col mr-2">
-            <Label htmlFor="#focus-mode-switch" className="text-lg">
-              {focusMode ? "Focus Mode" : "Social Mode "}
-            </Label>
-            <div className="text-stone-600 text-sm">
-              {focusMode
-                ? "Show only key discussions"
-                : "Show more discussions"}
+          <div
+            className={clsx(
+              "items-center px-5 h-9 border border-stone-700 rounded-full",
+              sidebarOpen ? "inline-flex" : "hidden",
+              focusMode ? "bg-lime-100" : "bg-pink-100"
+            )}
+          >
+            <div className="flex flex-col mr-4">
+              <Label htmlFor="#focus-mode-switch" className="text-[1rem]">
+                {focusMode ? "Focus Mode" : "Social Mode "}
+              </Label>
+              {/* <div className="text-stone-600 text-xs whitespace-nowrap">
+                {focusMode ? "Key discussions only" : "Show more interactions"}
+              </div> */}
             </div>
+            <Switch
+              id="focus-mode-switch"
+              checked={focusMode}
+              onClick={() => setFocusMode(!focusMode)}
+            />
           </div>
-          <Switch
-            id="focus-mode-switch"
-            checked={focusMode}
-            onClick={() => setFocusMode(!focusMode)}
-          />
-        </div> */}
+        </div>
+
+        <Separator className="mt-1" />
       </div>
 
       <div
@@ -273,9 +237,7 @@ export default function Social() {
         }}
       >
         <HideScroll paddingLeft={0.8} paddingRight={0.8} paddingBottom={7.2}>
-          <AnimatePresence>
-            <AccordionPanel />
-          </AnimatePresence>
+          <AccordionPanel />
         </HideScroll>
       </div>
     </div>

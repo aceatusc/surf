@@ -88,7 +88,7 @@ export default function Highlight({
                       />
                     </div>
                     <Separator className="mb-2" />
-                    <Summary raw={summaries[type]?.[title]} />
+                    <Summary type={type} loc={title} />
                   </HoverCardContent>
                 ) : null}
               </HoverCard>

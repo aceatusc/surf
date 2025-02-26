@@ -28,6 +28,13 @@ const examples = [
     title: "Position: AI/ML Influencers Have a Place in the Academic Process",
     data: "/2401.13782.json",
   },
+  {
+    id: "arxiv:2401.01335",
+    url: "https://arxiv.org/pdf/2401.01335",
+    title:
+      "Self-Play Fine-Tuning Converts Weak Language Models to Strong Language Models",
+    data: "/2401.01335.json",
+  },
   // {
   //   id: "arxiv:2309.17453",
   //   url: "https://arxiv.org/pdf/2309.17453",

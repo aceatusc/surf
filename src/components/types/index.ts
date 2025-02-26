@@ -46,3 +46,7 @@ export const ptypeConfig = {
   Resource: { icon: "🔗", priority: 6 },
   // Author: { icon: "✍️", priority: 0 },
 };
+
+export const FOCUS_THRESHOLD = (type: string) => {
+  return type in ["Critique", "Q&A", "Perspective"] ? 0.5 : 0.3;
+};

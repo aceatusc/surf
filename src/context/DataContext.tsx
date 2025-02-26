@@ -36,7 +36,7 @@ export function useDataContextProps(): IDataContext {
   const [posts, setPosts] = useState<TPostData>({});
   const [locations, setLocations] = useState<TLocationData>({});
   const [summaries, setSummaries] = useState<TSummaryData>({});
-  const [focusMode, setFocusMode] = useState<boolean>(false);
+  const [focusMode, setFocusMode] = useState<boolean>(true);
   const [context, setContext] = useState<TContextData>({});
 
   return {

@@ -133,8 +133,8 @@ export type EnrichedTweet = Omit<Tweet, "entities" | "quoted_tweet"> & {
   replies: string[];
   quoted_status_id_str?: string;
   location?: string;
-  thread_score?: number;
-  score?: number;
+  thread_score: number;
+  score: number;
   reply_count: number;
   root: string;
   in_thread?: string[];

@@ -44,9 +44,11 @@ export default function Thread({ post }: { post: EnrichedTweet }) {
 
   const replies = posts[post.id_str]?.replies
     ?.map((rid) => posts[rid])
-    .sort((a, b) => (b.score || 0) - (a.score || 0));
+    .sort((a, b) => b.score - a.score);
   const previewReply =
-    replies.length && (replies[0].score || 0) > 0.5 ? replies[0] : null;
+    replies.length && (replies[0].score > 0.5 || replies[0].thread_score > 0.7)
+      ? replies[0]
+      : null;
 
   return (
     <TweetContainer className={s.tag_parent}>
@@ -120,7 +122,7 @@ export default function Thread({ post }: { post: EnrichedTweet }) {
   );
 }
 
-const ReadMore = ({
+export const ReadMore = ({
   onClick,
   className,
 }: {
@@ -214,31 +216,54 @@ const ThreadReply = ({
   const { posts, focusMode } = useContext(DataContext);
   const [childExpand, setChildExpand] = useState(expand);
   const [childLayer, setChildLayer] = useState(layer);
-  const [renderReplies, setRenderReplies] = useState<EnrichedTweet[]>([]);
-
-  const replies = posts[post.id_str]?.replies
-    ?.map((rid) => posts[rid])
-    .sort((a, b) => (b.score || 0) - (a.score || 0));
+  const [localFocusMode, setLocalFocusMode] = useState(focusMode);
 
   useEffect(() => {
     // console.log(post.id_str, focusMode, replies.length, layer);
-    if (focusMode && replies.length && layer == 3 && preview) {
-      setRenderReplies(
-        replies
-          .filter((r) => (r.thread_score || r.score || 0) > 0.2)
-          .sort(
-            (a, b) =>
-              (b.thread_score || b.score || 0) -
-              (a.thread_score || a.score || 0)
-          )
-      );
+    if (
+      focusMode &&
+      replies.length &&
+      layer == 3 &&
+      preview &&
+      focusMode !== localFocusMode
+    ) {
+      setLocalFocusMode(focusMode);
     } else {
-      setRenderReplies(replies);
+      setLocalFocusMode(false);
     }
-  }, []);
+    // if (focusMode && replies.length && layer == 3 && preview) {
+    //   setRenderReplies(
+    //     replies
+    //       .filter((r) => Math.max(r.thread_score, r.score) > 0.3)
+    //       .sort(
+    //         (a, b) =>
+    //           Math.max(b.thread_score, b.score) -
+    //             Math.max(a.thread_score, a.score) ||
+    //           b.favorite_count - a.favorite_count
+    //       )
+    //   );
+    // } else {
+    //   setRenderReplies(replies);
+    // }
+  }, [focusMode]);
+
+  const replies = posts[post.id_str]?.replies
+    ?.map((rid) => posts[rid])
+    .sort((a, b) => b.score - a.score);
+
+  const renderReplies = (
+    localFocusMode
+      ? replies.filter((r) => Math.max(r.thread_score, r.score) >= 0.5)
+      : replies
+  ).sort((a, b) => {
+    const score_diff =
+      Math.max(b.thread_score, b.score) - Math.max(a.thread_score, a.score);
+    if (score_diff !== 0) return score_diff;
+    return b.favorite_count - a.favorite_count;
+  });
 
   const previewReply = replies.length
-    ? (replies[0].score || 0) > 0.5
+    ? replies[0].score > 0.5
       ? replies[0]
       : null
     : null;
@@ -274,11 +299,14 @@ const ThreadReply = ({
           ))}
           {focusMode && replies.length > renderReplies.length ? (
             <div className="bg-stone-100 px-3 ml-1 w-[28rem] py-2 rounded-xl mt-2">
-              <div className="text-stone-600 w-full">
-                You are in focus mode. We've hidden some discussions. Click here
-                to see more.
+              <div className="text-stone-600 w-full text-base">
+                You are in focus mode. We've hidden{" "}
+                <b className="text-pink-600">
+                  {replies.length - renderReplies.length}
+                </b>{" "}
+                discussions that could be distracting. Click to see more.
               </div>
-              <ReadMore onClick={() => setRenderReplies(replies)} />
+              <ReadMore onClick={() => setLocalFocusMode(false)} />
             </div>
           ) : null}
         </Fragment>
@@ -337,9 +365,17 @@ const ThreadView = ({
   isSelf?: boolean;
 }) => {
   const { focusMode } = useContext(DataContext);
-  if (focusMode && !isSelf) {
-    threads = threads.filter((t) => (t.thread_score || t.score || 0) > 0.2);
-  }
+  const [localFocusMode, setLocalFocusMode] = useState(focusMode);
+
+  useEffect(() => {
+    if (localFocusMode !== focusMode) setLocalFocusMode(focusMode);
+  }, [focusMode]);
+
+  threads =
+    localFocusMode && !isSelf
+      ? threads.filter((t) => Math.max(t.thread_score, t.score) >= 0.4)
+      : threads;
+
   return (
     <div
       className="fixed top-8 bottom-1 z-50 overflow-hidden w-[44rem] 2xl:w-[45rem]"
@@ -381,16 +417,18 @@ const ThreadView = ({
         className="relative w-full h-full shadow-xl rounded-b-3xl"
         fullHeight
       >
-        <div className="bg-white shadow-md rounded-b-3xl border-l border-r border-b min-h-[calc(100vh-8rem)]">
-          {threads.map((t, idx) => (
-            <ThreadItem
-              key={t.id_str}
-              post={t}
-              idx={idx + 1}
-              length={threads.length}
-              isSelf={isSelf}
-            />
-          ))}
+        <div className="bg-white shadow-md rounded-b-3xl border-l border-r border-b min-h-[calc(100vh-8rem)] flex flex-nowrap flex-row">
+          <div className="my-auto">
+            {threads.map((t, idx) => (
+              <ThreadItem
+                key={t.id_str}
+                post={t}
+                idx={idx + 1}
+                length={threads.length}
+                isSelf={isSelf}
+              />
+            ))}
+          </div>
         </div>
       </HideScroll>
     </div>

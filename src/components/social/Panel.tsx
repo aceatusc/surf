@@ -1,12 +1,12 @@
 import { Button } from "../ui/button";
 import { Separator } from "@/components/ui/separator";
-import { MouseEvent, useContext, useState } from "react";
+import { MouseEvent, useContext, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { TPostData, ptypeConfig } from "../types";
 import { HighlightContext } from "@/context/HighlightContext";
 import HideScroll from "../ui/HideScroll";
 import { Badge } from "../ui/badge";
-import Thread from "./Thread";
+import Thread, { ReadMore } from "./Thread";
 import {
   Select,
   SelectContent,
@@ -37,14 +37,122 @@ const TabTypes = Object.keys(ptypeConfig).sort((a, b) => {
   );
 });
 
-const AccordionPanel = ({ data }: { data: EnrichedTweet[] }) => {
+const AccordionPanelItem = ({ loc }: { loc: string }) => {
   const { highlightedType, highlightedLocation, setHighlightedLocation } =
     useContext(HighlightContext);
-  const { summaries, context } = useContext(DataContext);
+  const { context, posts, focusMode } = useContext(DataContext);
+  const [localFocusMode, setLocalFocusMode] = useState(focusMode);
+
+  useEffect(() => {
+    if (localFocusMode !== focusMode) setLocalFocusMode(focusMode);
+  }, [focusMode]);
+
+  const postToDisplay = Object.values(posts).filter(
+    (p) =>
+      p.tweet_type === highlightedType &&
+      p.is_branch &&
+      (p.location === loc || (!p.location && loc === "General"))
+  );
+
+  const threshold =
+    highlightedType in ["Critique", "Q&A", "Perspective"] ? 0.5 : 0.3;
+
+  const postToRender = (
+    localFocusMode
+      ? postToDisplay.filter(
+          (p) => p.thread_score && p.thread_score > threshold
+        )
+      : postToDisplay
+  ).sort((a, b) => {
+    const score_diff = (b.thread_score || 0) - (a.thread_score || 0);
+    if (score_diff !== 0) return score_diff;
+    return b.favorite_count - a.favorite_count;
+  });
+
+  return (
+    <AccordionItem value={loc} className="mb-3 border-none">
+      <AccordionTrigger
+        className={clsx(
+          "text-xl font-mono px-4 rounded-t-3xl flex-wrap",
+          loc === highlightedLocation ? "pb-1.5" : "rounded-b-3xl"
+        )}
+        style={{
+          backgroundColor: getColor(loc),
+        }}
+      >
+        <span>
+          <b className="mr-2">Section:</b>
+          {loc}
+        </span>
+      </AccordionTrigger>
+      <AccordionContent>
+        {context[highlightedType] ? (
+          <div
+            className="text-lg px-4 pb-2 rounded-b-3xl"
+            style={{
+              backgroundColor: getColor(loc),
+            }}
+          >
+            <span>{context[highlightedType][loc]}</span>
+          </div>
+        ) : null}
+        <Summary
+          className="text-stone-600 px-2 py-3"
+          type={highlightedType}
+          loc={loc}
+        />
+        {postToRender.map((post) => (
+          <Thread post={post} key={post.id_str} />
+        ))}
+        {localFocusMode && postToDisplay.length > postToRender.length ? (
+          <div className="bg-stone-100 px-3 ml-1 w-[28rem] py-2 rounded-xl mt-2">
+            <div className="text-stone-600 w-full text-base">
+              You are in focus mode. We've hidden{" "}
+              <b className="text-pink-600">
+                {postToDisplay.length - postToRender.length}
+              </b>{" "}
+              discussions that could be distracting. Click to see more.
+            </div>
+            <ReadMore onClick={() => setLocalFocusMode(false)} />
+          </div>
+        ) : null}
+      </AccordionContent>
+    </AccordionItem>
+  );
+};
+
+const AccordionPanel = () => {
+  const { highlightedType, highlightedLocation, setHighlightedLocation } =
+    useContext(HighlightContext);
+  const { summaries, posts, focusMode } = useContext(DataContext);
   const locationList = Object.keys(summaries[highlightedType] || {});
+  const [localFocusMode, setLocalFocusMode] = useState(focusMode);
+
+  useEffect(() => {
+    if (localFocusMode !== focusMode) setLocalFocusMode(focusMode);
+  }, [focusMode]);
+
+  const postToDisplay = Object.values(posts).filter(
+    (p) => p.tweet_type === highlightedType && p.is_branch
+  );
+
+  const threshold =
+    highlightedType in ["Critique", "Q&A", "Perspective"] ? 0.5 : 0.3;
+
+  const postToRender = (
+    localFocusMode
+      ? postToDisplay.filter(
+          (p) => p.thread_score && p.thread_score > threshold
+        )
+      : postToDisplay
+  ).sort((a, b) => {
+    const score_diff = (b.thread_score || 0) - (a.thread_score || 0);
+    if (score_diff !== 0) return score_diff;
+    return b.favorite_count - a.favorite_count;
+  });
 
   return highlightedType === "Overview" ? (
-    data.map((post) => <Thread post={post} key={post.id_str} />)
+    postToRender.map((post) => <Thread post={post} key={post.id_str} />)
   ) : (
     <Accordion
       type="single"
@@ -56,46 +164,7 @@ const AccordionPanel = ({ data }: { data: EnrichedTweet[] }) => {
       collapsible
     >
       {locationList.map((loc, i) => (
-        <AccordionItem value={loc} key={i} className="mb-3 border-none">
-          <AccordionTrigger
-            className={clsx(
-              "text-xl font-mono px-4 rounded-t-3xl flex-wrap",
-              loc === highlightedLocation ? "pb-1.5" : "rounded-b-3xl"
-            )}
-            style={{
-              backgroundColor: getColor(loc),
-            }}
-          >
-            <span>
-              <b className="mr-2">Section:</b>
-              {loc}
-            </span>
-          </AccordionTrigger>
-          <AccordionContent>
-            {context[highlightedType] ? (
-              <div
-                className="text-lg px-4 pb-2 rounded-b-3xl"
-                style={{
-                  backgroundColor: getColor(loc),
-                }}
-              >
-                <span>{context[highlightedType][loc]}</span>
-              </div>
-            ) : null}
-            <Summary
-              raw={summaries[highlightedType][loc]}
-              className="text-stone-600 px-2 py-3"
-            />
-            {data
-              .filter(
-                (post) =>
-                  post.location === loc || (!post.location && loc === "General")
-              )
-              .map((post) => (
-                <Thread post={post} key={post.id_str} />
-              ))}
-          </AccordionContent>
-        </AccordionItem>
+        <AccordionPanelItem key={i} loc={loc} />
       ))}
     </Accordion>
   );
@@ -108,16 +177,8 @@ export default function Social() {
     highlightedLocation,
     highlightedType,
   } = useContext(HighlightContext);
-  const { posts, focusMode, setFocusMode } = useContext(DataContext);
+  const { focusMode, setFocusMode } = useContext(DataContext);
   const { sidebarOpen, setSidebarOpen } = useContext(UIContext);
-
-  let postToDisplay = Object.values(posts)
-    .filter((p) => p.tweet_type === highlightedType && p.is_branch)
-    .sort((a, b) => {
-      const score_diff = (b.thread_score || 0) - (a.thread_score || 0);
-      if (score_diff !== 0) return score_diff;
-      return b.favorite_count - a.favorite_count;
-    });
 
   // const postToDisplay = Object.values(posts)
   //   .filter(
@@ -202,39 +263,6 @@ export default function Social() {
             onClick={() => setFocusMode(!focusMode)}
           />
         </div> */}
-
-        {/* {highlightedLocation !== null && (
-          <Badge
-            style={{ backgroundColor: getColor(highlightedLocation) }}
-            className="mt-4 mb-1 text-md rounded-full py-1 pl-4 pr-2 cursor-pointer w-fit text-stone-700"
-            onClick={() => {
-              setHighlightedLocation(null);
-              // setHighlightedType(null);
-            }}
-          >
-            Showing Only Related Posts
-            <svg
-              className="ml-1"
-              width="1.4rem"
-              height="1.4rem"
-              viewBox="0 0 24 24"
-              fill="#fafafa"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z"
-                stroke="#27272a"
-                strokeWidth="2"
-              />
-              <path
-                d="M9 9L15 15M15 9L9 15"
-                stroke="#27272a"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-            </svg>
-          </Badge>
-        )} */}
       </div>
 
       <div
@@ -246,7 +274,7 @@ export default function Social() {
       >
         <HideScroll paddingLeft={0.8} paddingRight={0.8} paddingBottom={7.2}>
           <AnimatePresence>
-            <AccordionPanel data={postToDisplay} />
+            <AccordionPanel />
           </AnimatePresence>
         </HideScroll>
       </div>

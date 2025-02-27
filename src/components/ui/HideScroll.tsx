@@ -41,6 +41,7 @@ export default function HideScroll({
     >
       <div
         className="absolute top-0 bottom-0 left-0 overflow-y-scroll overflow-x-visible overscroll-contain"
+        data-hide-scroll
         ref={scrollRef}
         style={{
           top: `${paddingY || 0}rem`,

@@ -1,7 +1,7 @@
 import { Button } from "../ui/button";
 import { Separator } from "@/components/ui/separator";
 import { useContext, useEffect, useState } from "react";
-import { ptypeConfig } from "../types";
+import { FOCUS_THRESHOLD, getIcon, ptypeConfig } from "../types";
 import { HighlightContext } from "@/context/HighlightContext";
 import HideScroll from "../ui/HideScroll";
 import Thread, { ReadMore } from "./Thread";
@@ -43,17 +43,15 @@ const AccordionPanelItem = ({ loc }: { loc: string }) => {
       (p.location === loc || (!p.location && loc === "General"))
   );
 
-  const threshold =
-    highlightedType in ["Critique", "Q&A", "Perspective"] ? 0.5 : 0.3;
-
   const postToRender = (
     localFocusMode
       ? postToDisplay.filter(
-          (p) => p.thread_score && p.thread_score > threshold
+          (p) =>
+            p.thread_score && p.thread_score > FOCUS_THRESHOLD(highlightedType)
         )
       : postToDisplay
   ).sort((a, b) => {
-    const score_diff = (b.thread_score || 0) - (a.thread_score || 0);
+    const score_diff = b.thread_score - a.thread_score;
     if (score_diff !== 0) return score_diff;
     return b.favorite_count - a.favorite_count;
   });
@@ -125,17 +123,15 @@ const AccordionPanel = () => {
     (p) => p.tweet_type === highlightedType && p.is_branch
   );
 
-  const threshold =
-    highlightedType in ["Critique", "Q&A", "Perspective"] ? 0.5 : 0.3;
-
   const postToRender = (
     localFocusMode
       ? postToDisplay.filter(
-          (p) => p.thread_score && p.thread_score > threshold
+          (p) =>
+            p.thread_score && p.thread_score > FOCUS_THRESHOLD(highlightedType)
         )
       : postToDisplay
   ).sort((a, b) => {
-    const score_diff = (b.thread_score || 0) - (a.thread_score || 0);
+    const score_diff = b.thread_score - a.thread_score;
     if (score_diff !== 0) return score_diff;
     return b.favorite_count - a.favorite_count;
   });
@@ -200,7 +196,7 @@ export default function Social() {
                   : "bg-stone-100 hover:bg-stone-200"
               }`}
             >
-              {ptypeConfig[type as keyof typeof ptypeConfig].icon} {type}
+              {getIcon(type)} {type}
             </Button>
           ))}
           <div
@@ -225,7 +221,6 @@ export default function Social() {
             />
           </div>
         </div>
-
         <Separator className="mt-1" />
       </div>
 

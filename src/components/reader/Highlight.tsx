@@ -27,7 +27,7 @@ export default function Highlight({
 
   const handleClick = useCallback((e: MouseEvent) => {
     e.stopPropagation();
-    const eleId = (e.target as HTMLElement).getAttribute("data-loc") || "";
+    const eleId = (e.target as HTMLElement).id || "";
     const [location, type] = eleId.split("$%^");
     setHighlightedLocation(location);
     setHighlightedType(type);
@@ -56,7 +56,7 @@ export default function Highlight({
                 <HoverCardTrigger asChild>
                   <Button
                     key={type}
-                    data-loc={`${title}$%^${type}`}
+                    id={`${title}$%^${type}`}
                     onClick={handleClick}
                     className="rounded-full transition-all duration-100 opacity-60 hover:opacity-100"
                     style={{

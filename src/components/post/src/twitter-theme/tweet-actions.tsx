@@ -40,39 +40,41 @@ export const TweetActions = ({
         </div>
         <span className={s.likeCount}>{favoriteCount}</span>
       </a>
-      <TooltipProvider>
-        <Tooltip delayDuration={160}>
-          <TooltipTrigger>
-            <div
-              className={clsx(s.reply, "cursor-pointer")}
-              onClick={onClickDiscussion}
-            >
-              <div className={s.replyIconWrapper}>
-                <svg
-                  viewBox="0 0 24 24"
-                  className={s.replyIcon}
-                  aria-hidden="true"
-                >
-                  <g>
-                    <path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z"></path>
-                  </g>
-                </svg>
-              </div>
-              <span
-                className={s.replyText}
-                data-pid={tweet.id_str}
-                data-name={tweet.user.screen_name}
+      {onClickDiscussion && (
+        <TooltipProvider>
+          <Tooltip delayDuration={160}>
+            <TooltipTrigger>
+              <div
+                className={clsx(s.reply, "cursor-pointer")}
+                onClick={onClickDiscussion}
               >
-                {tweet.reply_count}{" "}
-                {tweet.reply_count > 1 ? "Replies" : "Reply"}
-              </span>
-            </div>
-          </TooltipTrigger>
-          <TooltipContent className="text-md">
-            Click to view or hide replies
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
+                <div className={s.replyIconWrapper}>
+                  <svg
+                    viewBox="0 0 24 24"
+                    className={s.replyIcon}
+                    aria-hidden="true"
+                  >
+                    <g>
+                      <path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z"></path>
+                    </g>
+                  </svg>
+                </div>
+                <span
+                  className={s.replyText}
+                  data-pid={tweet.id_str}
+                  data-name={tweet.user.screen_name}
+                >
+                  {tweet.reply_count}{" "}
+                  {tweet.reply_count > 1 ? "Replies" : "Reply"}
+                </span>
+              </div>
+            </TooltipTrigger>
+            <TooltipContent className="text-md">
+              Click to view or hide replies
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+      )}
       <div className={clsx(s.reply, "cursor-pointer")}>
         <div className={s.replyIconWrapper}>
           <FontAwesomeIcon

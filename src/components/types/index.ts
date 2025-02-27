@@ -39,14 +39,21 @@ export type TContextData = {
 export const ptypeConfig = {
   "Related Work": { icon: "📖", priority: 5 },
   Perspective: { icon: "💬", priority: 4 },
-  Critique: { icon: "⚠️", priority: 3 },
+  Critique: { icon: "⚠️", priority: 2 },
   Overview: { icon: "🧵", priority: 1 },
   Teaser: { icon: "🔎", priority: 7 },
-  "Q&A": { icon: "❓", priority: 2 },
+  "Q&A": { icon: "❓", priority: 3 },
   Resource: { icon: "🔗", priority: 6 },
   // Author: { icon: "✍️", priority: 0 },
 };
 
 export const FOCUS_THRESHOLD = (type: string) => {
   return type in ["Critique", "Q&A", "Perspective"] ? 0.5 : 0.3;
+};
+
+export const getIcon = (type: string) => {
+  if (type in ptypeConfig) {
+    return ptypeConfig[type as keyof typeof ptypeConfig].icon;
+  }
+  return null;
 };

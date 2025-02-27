@@ -31,7 +31,7 @@ export const TweetHeader = ({ tweet, component, inThread = false }: Props) => {
   return (
     <div className={s.header} data-in-thread={inThread}>
       {component}
-      <HoverCard openDelay={160} closeDelay={200}>
+      <HoverCard openDelay={360} closeDelay={100}>
         <HoverCardTrigger
           href={userUrl}
           className={`${s.avatar} relative z-10`}

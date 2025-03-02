@@ -139,7 +139,7 @@ export function AppContent() {
 
   return (
     <SidebarProvider
-      className="flex flex-row"
+      className="flex flex-row overflow-hidden"
       style={
         {
           "--sidebar-width": "max(30rem, 16vw)",

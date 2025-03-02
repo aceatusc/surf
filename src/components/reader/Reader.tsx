@@ -10,19 +10,20 @@ import Highlight from "./Highlight";
 import { DataContext } from "@/context/DataContext";
 import { UIContext } from "@/context/UIContext";
 import ZoomControl from "./ZoomControl";
+import { ScrollArea } from "../ui/scroll-area";
 export default function Reader({ url }: { url: string }) {
   const { numPages } = useContext(DocumentContext);
   const { locations, summaries } = useContext(DataContext);
   const { sidebarOpen } = useContext(UIContext);
 
   return (
-    <div
-      className={`ml-auto [&>*]:overflow-x-auto [&>*]:overflow-y-hidden`}
+    <ScrollArea
+      className={`ml-auto`}
       style={{
-        direction: "rtl",
         maxWidth: sidebarOpen ? "calc(100% - 42rem)" : "100%",
         transition: "max-width 0.2s",
         paddingTop: "2.4rem",
+        height: "100vh",
       }}
     >
       <DocumentWrapper file={url} renderType={RENDER_TYPE.MULTI_CANVAS}>
@@ -51,6 +52,6 @@ export default function Reader({ url }: { url: string }) {
       >
         <ZoomControl />
       </div>
-    </div>
+    </ScrollArea>
   );
 }

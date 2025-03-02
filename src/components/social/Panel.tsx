@@ -162,7 +162,7 @@ export default function Social() {
 
   return (
     <div
-      className="h-[100vh] mr-auto sticky top-0 z-20"
+      className="h-[100vh] mr-auto relative"
       style={{
         width: sidebarOpen ? "42rem" : "0",
         height: "100vh",

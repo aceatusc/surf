@@ -51,48 +51,54 @@ export default function Highlight({
             }}
             key={i}
           >
-            {types?.map((type) => (
-              <HoverCard key={type} openDelay={200} closeDelay={100}>
-                <HoverCardTrigger asChild>
-                  <Button
-                    key={type}
-                    id={`${title}$%^${type}`}
-                    onClick={handleClick}
-                    className="rounded-full transition-all duration-100 opacity-60 hover:opacity-100"
-                    style={{
-                      backgroundColor: color,
-                      width: `${20 * scale}px`,
-                      height: `${20 * scale}px`,
-                      fontSize: `${13 * scale}px`,
-                      padding: `${12 * scale}px`,
-                      marginBottom: `${5 * scale}px`,
-                    }}
-                  >
-                    {ptypeConfig[type as keyof typeof ptypeConfig].icon}
-                  </Button>
-                </HoverCardTrigger>
-                {summaries[type]?.[title] ? (
-                  <HoverCardContent
-                    className="px-5 py-2 relative z-10 w-[24rem]"
-                    side={isLeft ? "left" : "right"}
-                    style={{ direction: "ltr" }}
-                  >
-                    <div className="flex items-center justify-between">
-                      <div className="text-2xl font-mono mb-1 underline font-semibold">
-                        {type}
+            {types
+              ?.sort(
+                (a, b) =>
+                  ptypeConfig[a as keyof typeof ptypeConfig].priority -
+                  ptypeConfig[b as keyof typeof ptypeConfig].priority
+              )
+              ?.map((type) => (
+                <HoverCard key={type} openDelay={200} closeDelay={100}>
+                  <HoverCardTrigger asChild>
+                    <Button
+                      key={type}
+                      id={`${title}$%^${type}`}
+                      onClick={handleClick}
+                      className="rounded-full transition-all duration-100 opacity-60 hover:opacity-100"
+                      style={{
+                        backgroundColor: color,
+                        width: `${20 * scale}px`,
+                        height: `${20 * scale}px`,
+                        fontSize: `${13 * scale}px`,
+                        padding: `${12 * scale}px`,
+                        marginBottom: `${5 * scale}px`,
+                      }}
+                    >
+                      {ptypeConfig[type as keyof typeof ptypeConfig].icon}
+                    </Button>
+                  </HoverCardTrigger>
+                  {summaries[type]?.[title] ? (
+                    <HoverCardContent
+                      className="px-5 py-2 relative z-10 w-[24rem]"
+                      side={isLeft ? "left" : "right"}
+                      style={{ direction: "ltr" }}
+                    >
+                      <div className="flex items-center justify-between">
+                        <div className="text-2xl font-mono mb-1 underline font-semibold">
+                          {type}
+                        </div>
+                        <ArrowRight
+                          className="w-10 h-10 hover:bg-stone-100 p-2 rounded-full cursor-pointer"
+                          onClick={handleClick}
+                          data-loc={`${title}$%^${type}`}
+                        />
                       </div>
-                      <ArrowRight
-                        className="w-10 h-10 hover:bg-stone-100 p-2 rounded-full cursor-pointer"
-                        onClick={handleClick}
-                        data-loc={`${title}$%^${type}`}
-                      />
-                    </div>
-                    <Separator className="mb-2" />
-                    <Summary type={type} loc={title} />
-                  </HoverCardContent>
-                ) : null}
-              </HoverCard>
-            ))}
+                      <Separator className="mb-2" />
+                      <Summary type={type} loc={title} />
+                    </HoverCardContent>
+                  ) : null}
+                </HoverCard>
+              ))}
           </div>
         );
       })}

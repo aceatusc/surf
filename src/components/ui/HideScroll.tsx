@@ -7,8 +7,10 @@ type Props = {
   paddingLeft?: number;
   paddingRight?: number;
   paddingY?: number;
+  paddingBottom?: number;
   scrollRef?: React.RefObject<HTMLDivElement>;
   direction?: "ltr" | "rtl";
+  fullHeight?: boolean;
 };
 
 export default function HideScroll({
@@ -17,8 +19,10 @@ export default function HideScroll({
   paddingLeft,
   paddingRight,
   paddingY,
+  paddingBottom,
   scrollRef,
   direction = "ltr",
+  fullHeight = false,
   ...props
 }: Props) {
   const [sbWidth, setSbWidth] = useState<number>(0);
@@ -31,16 +35,17 @@ export default function HideScroll({
 
   return (
     <div
-      className={`overflow-hidden overscroll-none ${
+      className={`overflow-hidden overscroll-contain ${
         className || "relative w-full h-full"
       }`}
     >
       <div
-        className="absolute top-0 bottom-0 left-0 overflow-y-scroll"
+        className="absolute top-0 bottom-0 left-0 overflow-y-scroll overflow-x-visible overscroll-contain"
+        data-hide-scroll
         ref={scrollRef}
         style={{
-          top: `${paddingY || 0}px`,
-          bottom: `${paddingY || 0}px`,
+          top: `${paddingY || 0}rem`,
+          bottom: `${paddingY || paddingBottom || 0}rem`,
           left: direction === "rtl" ? `-${sbWidth || 16}px` : undefined,
           right: direction === "ltr" ? `-${sbWidth || 16}px` : undefined,
           paddingLeft: direction === "rtl" && !sbWidth ? "16px" : undefined,
@@ -50,10 +55,12 @@ export default function HideScroll({
         <div
           {...props}
           style={{
-            paddingLeft: `${paddingLeft || 0}px`,
-            paddingRight: `${paddingRight || 0}px`,
-            overflow: "hidden",
+            paddingLeft: `${paddingLeft || 0}rem`,
+            paddingRight: `${paddingRight || 0}rem`,
+            overflowY: "hidden",
+            overflowX: "visible",
             height: "fit-content",
+            minHeight: fullHeight ? "100%" : undefined,
           }}
         >
           {children}

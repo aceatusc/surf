@@ -2,6 +2,7 @@ import {
   TContextData,
   TLocationData,
   TPostData,
+  TQualityData,
   TSummaryData,
 } from "@/components/types";
 import { createContext, useState } from "react";
@@ -15,6 +16,8 @@ export interface IDataContext {
   setSummaries: (summaries: TSummaryData) => void;
   context: TContextData;
   setContext: (context: TContextData) => void;
+  quality: TQualityData;
+  setQuality: (quality: TQualityData) => void;
   focusMode: boolean;
   setFocusMode: (focusMode: boolean) => void;
 }
@@ -30,6 +33,8 @@ export const DataContext = createContext<IDataContext>({
   setFocusMode: () => {},
   context: {},
   setContext: () => {},
+  quality: {},
+  setQuality: () => {},
 });
 
 export function useDataContextProps(): IDataContext {
@@ -38,6 +43,7 @@ export function useDataContextProps(): IDataContext {
   const [summaries, setSummaries] = useState<TSummaryData>({});
   const [focusMode, setFocusMode] = useState<boolean>(true);
   const [context, setContext] = useState<TContextData>({});
+  const [quality, setQuality] = useState<TQualityData>({});
 
   return {
     posts,
@@ -50,5 +56,7 @@ export function useDataContextProps(): IDataContext {
     setFocusMode,
     context,
     setContext,
+    quality,
+    setQuality,
   };
 }

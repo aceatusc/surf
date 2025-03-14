@@ -17,6 +17,12 @@ import { Button } from "../../../ui/button.jsx";
 import { ptypeConfig } from "../../../types/index.js";
 import { getColor } from "../../../../context/ColorManager.jsx";
 import { ArrowLeft } from "lucide-react";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+} from "../../../ui/tooltip.jsx";
+import { TooltipTrigger } from "@radix-ui/react-tooltip";
 
 type Props = {
   tweet: EnrichedTweet;
@@ -139,6 +145,20 @@ export const TweetHeader = ({ tweet, component, inThread = false }: Props) => {
           </div>
         </HoverCardContent>
       </HoverCard>
+      {(tweet.thread_score >= 0.7 || tweet.is_author) && (
+        <div className="ml-auto">
+          <TooltipProvider delayDuration={160}>
+            <Tooltip>
+              <TooltipTrigger className="text-[1.6rem] ml-3">
+                {tweet.is_author ? "✍️" : "🔥"}
+              </TooltipTrigger>
+              <TooltipContent className="text-lg">
+                {tweet.is_author ? "Author" : "High quality"}
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+        </div>
+      )}
     </div>
   );
 };

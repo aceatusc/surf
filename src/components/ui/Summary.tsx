@@ -3,6 +3,7 @@ import clsx from "clsx";
 import { Fragment, useContext } from "react";
 import { TPostData } from "../types";
 import { ThreadContext } from "@/context/ThreadContext";
+import { HighlightContext } from "@/context/HighlightContext";
 
 const findParent = (pid: string, posts: TPostData, loc: string) => {
   const post = posts[pid];
@@ -32,6 +33,7 @@ const formatText = ({
     if (pidMatch) {
       const pid = pidMatch[1];
       const post = posts[pid];
+      if (!post) return null;
       return (
         <span
           key={idx}
@@ -74,10 +76,14 @@ export default function Summary({
 }) {
   const { posts, summaries } = useContext(DataContext);
   const { setExpandThread } = useContext(ThreadContext);
+  const { setHighlightedLocation, setHighlightedType } =
+    useContext(HighlightContext);
 
   const onClick = (pid: string) => {
     const threadToExpand = findParent(pid, posts, loc);
     setExpandThread(threadToExpand);
+    setHighlightedLocation(loc);
+    setHighlightedType(type);
     setTimeout(() => {
       const element = document.getElementById(pid);
       if (element) {
@@ -120,7 +126,10 @@ export default function Summary({
     <Fragment>
       {summaries[type][loc].map((r, idx) => (
         <div
-          className={clsx("text-lg text-stone-700 leading-6 pb-1.5", className)}
+          className={clsx(
+            "text-[1.2rem] text-stone-800 leading-6 pb-1.5",
+            className
+          )}
           style={style}
           key={idx}
         >

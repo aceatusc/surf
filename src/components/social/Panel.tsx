@@ -29,7 +29,7 @@ const TabTypes = Object.keys(ptypeConfig).sort((a, b) => {
 
 const AccordionPanelItem = ({ loc }: { loc: string }) => {
   const { highlightedType, highlightedLocation } = useContext(HighlightContext);
-  const { context, posts, focusMode } = useContext(DataContext);
+  const { context, posts, focusMode, quality } = useContext(DataContext);
   const [localFocusMode, setLocalFocusMode] = useState(focusMode);
 
   useEffect(() => {
@@ -69,13 +69,18 @@ const AccordionPanelItem = ({ loc }: { loc: string }) => {
       >
         <span>
           <b className="mr-2">Section:</b>
-          {loc}
+          {loc}{" "}
+          {quality[highlightedType]?.[loc] >= 0.7 ? (
+            <span>🔥</span>
+          ) : (
+            quality[highlightedType]?.[loc] >= 0.5 && <span>📌</span>
+          )}
         </span>
       </AccordionTrigger>
       <AccordionContent>
         {context[highlightedType] ? (
           <div
-            className="text-lg px-4 pb-2 rounded-b-3xl"
+            className="text-[1.2rem] leading-6 px-4 pb-2 rounded-b-3xl"
             style={{
               backgroundColor: getColor(loc),
             }}
@@ -120,7 +125,10 @@ const AccordionPanel = () => {
   }, [focusMode]);
 
   const postToDisplay = Object.values(posts).filter(
-    (p) => p.tweet_type === highlightedType && p.is_branch
+    (p) =>
+      (p.tweet_type === highlightedType ||
+        (p.is_author && highlightedType === "Author")) &&
+      p.is_branch
   );
 
   const postToRender = (
@@ -136,9 +144,13 @@ const AccordionPanel = () => {
     return b.favorite_count - a.favorite_count;
   });
 
-  return highlightedType === "Overview" ? (
-    postToRender.map((post) => <Thread post={post} key={post.id_str} />)
-  ) : (
+  if (["Overview", "Teaser", "Author"].includes(highlightedType)) {
+    return postToRender
+      ?.filter((p) => !p.in_reply_to_status_id_str)
+      ?.map((post) => <Thread post={post} key={post.id_str} />);
+  }
+
+  return (
     <Accordion
       type="single"
       value={highlightedLocation}
@@ -169,7 +181,7 @@ export default function Social() {
         transition: "width 0.2s",
       }}
     >
-      <div className="pt-4 pb-1 px-3">
+      <div className="pt-6 pb-1 px-3">
         <SidebarCloseIcon
           className="absolute top-4 -left-10 h-10 w-10 bg-zinc-100 opacity-80 cursor-pointer hover:bg-zinc-200 p-2 rounded-xl shadow-md"
           onClick={() => setSidebarOpen(!sidebarOpen)}
@@ -180,7 +192,7 @@ export default function Social() {
             display: sidebarOpen ? "block" : "none",
           }}
         >
-          <span className="mr-2.5 font-semibold">Discussion:</span>
+          {/* <span className="mr-2.5 font-semibold">Discussion:</span> */}
           {TabTypes.map((type) => (
             <Button
               key={type}

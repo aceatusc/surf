@@ -36,15 +36,23 @@ export type TContextData = {
   [key: string]: TContext;
 };
 
+export type TQuality = {
+  [key: string]: number;
+};
+
+export type TQualityData = {
+  [key: string]: TQuality;
+};
+
 export const ptypeConfig = {
   "Related Work": { icon: "📖", priority: 5 },
   Perspective: { icon: "💬", priority: 4 },
   Critique: { icon: "⚠️", priority: 2 },
-  Overview: { icon: "🧵", priority: 1 },
+  Overview: { icon: "🧵", priority: 0 },
   Teaser: { icon: "🔎", priority: 7 },
   "Q&A": { icon: "❓", priority: 3 },
   Resource: { icon: "🔗", priority: 6 },
-  // Author: { icon: "✍️", priority: 0 },
+  Author: { icon: "✍️", priority: 1 },
 };
 
 export const FOCUS_THRESHOLD = (type: string) => {

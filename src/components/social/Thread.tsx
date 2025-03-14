@@ -5,6 +5,7 @@ import {
   TweetHeader,
   TweetMedia,
   EnrichedTweet,
+  QuotedTweet,
 } from "../post/src";
 import { Button } from "../ui/button";
 import { Fragment, MouseEvent, useContext, useEffect, useState } from "react";
@@ -49,16 +50,16 @@ export default function Thread({ post }: { post: EnrichedTweet }) {
 
   const previewThread = post.in_thread && posts[post.in_thread[1]];
 
-  const replies = getReplies(post.id_str, posts)?.sort(
-    (a, b) => b.score - a.score
-  );
+  const replies = getReplies(post.id_str, posts)
+    ?.filter((p) => !!p)
+    ?.sort((a, b) => b.score - a.score);
+
   const previewReply =
-    replies.length && (replies[0].score > 0.5 || replies[0].thread_score > 0.7)
+    replies?.length && (replies[0].score > 0.5 || replies[0].thread_score > 0.7)
       ? replies[0]
       : null;
 
-  const parentTweet =
-    post.in_reply_to_status_id_str || post.quoted_status_id_str || null;
+  const parentTweet = post.in_reply_to_status_id_str || null;
 
   return (
     <TweetContainer className={s.tag_parent}>
@@ -79,7 +80,7 @@ export default function Thread({ post }: { post: EnrichedTweet }) {
           <div className="ml-[0.2rem]">{post.tweet_type}</div>
         </div>
       )}
-      {parentTweet ? (
+      {parentTweet && posts[parentTweet] ? (
         <HoverCard openDelay={420} closeDelay={100}>
           <HoverCardTrigger asChild>
             <div
@@ -98,6 +99,12 @@ export default function Thread({ post }: { post: EnrichedTweet }) {
           <HoverCardContent className="w-[32rem] rounded-3xl" side="top">
             <TweetHeader tweet={posts[parentTweet]} />
             <TweetBody tweet={posts[parentTweet]} />
+            {posts[parentTweet].quoted_status_id_str &&
+            posts[posts[parentTweet].quoted_status_id_str] ? (
+              <QuotedTweet
+                tweet={posts[posts[parentTweet].quoted_status_id_str]}
+              />
+            ) : null}
             <ReadMore
               onClick={() => setExpandThread(post.id_str)}
               className="mt-2 w-full border rounded-full text-center py-1 text-base hover:bg-stone-100 hover:text-[#006fd6]"
@@ -107,6 +114,9 @@ export default function Thread({ post }: { post: EnrichedTweet }) {
       ) : null}
       <TweetBody tweet={post} />
       {post.mediaDetails?.length ? <TweetMedia tweet={post} /> : null}
+      {post.quoted_status_id_str && posts[post.quoted_status_id_str] ? (
+        <QuotedTweet tweet={posts[post.quoted_status_id_str]} />
+      ) : null}
       <TweetActions
         tweet={post}
         onClickDiscussion={() => setExpandThread(post.id_str)}
@@ -148,7 +158,7 @@ export default function Thread({ post }: { post: EnrichedTweet }) {
       {expandThread === post.id_str ? (
         <ThreadView
           onClick={setExpandThread}
-          threads={post.in_thread?.map((id) => posts[id]) || [post, ...replies]}
+          threads={post.in_thread?.map((id) => posts[id]) || [post]}
           isSelf={!!previewThread}
         />
       ) : null}
@@ -255,41 +265,21 @@ const ThreadReply = ({
   const [localFocusMode, setLocalFocusMode] = useState(focusMode);
 
   useEffect(() => {
-    // console.log(post.id_str, focusMode, replies.length, layer);
-    if (
-      focusMode &&
-      replies.length &&
-      layer == 3 &&
-      preview &&
-      focusMode !== localFocusMode
-    ) {
+    if (layer == 3) {
       setLocalFocusMode(focusMode);
     } else {
       setLocalFocusMode(false);
     }
-    // if (focusMode && replies.length && layer == 3 && preview) {
-    //   setRenderReplies(
-    //     replies
-    //       .filter((r) => Math.max(r.thread_score, r.score) > 0.3)
-    //       .sort(
-    //         (a, b) =>
-    //           Math.max(b.thread_score, b.score) -
-    //             Math.max(a.thread_score, a.score) ||
-    //           b.favorite_count - a.favorite_count
-    //       )
-    //   );
-    // } else {
-    //   setRenderReplies(replies);
-    // }
-  }, [focusMode]);
+  }, [focusMode, layer]);
 
   const replies = posts[post.id_str]?.replies
+    ?.filter((r) => !!posts[r])
     ?.map((rid) => posts[rid])
     .sort((a, b) => b.score - a.score);
 
   const renderReplies = (
     localFocusMode
-      ? replies.filter((r) => Math.max(r.thread_score, r.score) >= 0.5)
+      ? replies.filter((r) => Math.max(r.thread_score, r.score) >= 0.3)
       : replies
   ).sort((a, b) => {
     const score_diff =
@@ -319,13 +309,17 @@ const ThreadReply = ({
       />
       {childExpand && childLayer ? (
         <Fragment>
-          {(focusMode ? renderReplies : replies).map((reply) => (
+          {(localFocusMode ? renderReplies : replies).map((reply) => (
             <TweetContainer key={reply.id_str} inThread id={reply.id_str}>
               <TweetHeader tweet={reply} inThread />
               <TweetBody tweet={reply} inThread>
                 <ThreadTag post={reply} />
               </TweetBody>
               {reply.mediaDetails?.length ? <TweetMedia tweet={reply} /> : null}
+              {reply.quoted_status_id_str &&
+              posts[reply.quoted_status_id_str] ? (
+                <QuotedTweet tweet={posts[reply.quoted_status_id_str]} />
+              ) : null}
               <ThreadReply
                 post={reply}
                 expand={childExpand}
@@ -333,7 +327,7 @@ const ThreadReply = ({
               />
             </TweetContainer>
           ))}
-          {focusMode && replies.length > renderReplies.length ? (
+          {localFocusMode && replies.length > renderReplies.length ? (
             <div className="bg-stone-100 px-3 ml-1 w-[28rem] py-2 rounded-xl mt-2">
               <div className="text-stone-600 w-full text-base">
                 You are in focus mode. We've hidden{" "}
@@ -369,25 +363,30 @@ const ThreadItem = ({
   length,
   isSelf = false,
 }: {
-  post: EnrichedTweet;
+  post: string;
   idx: number;
   length: number;
   isSelf?: boolean;
 }) => {
+  const { posts } = useContext(DataContext);
+  const t = posts[post];
   return (
     <div
-      id={post.id_str}
+      id={t.id_str}
       className="hover:bg-[#f8f8f8] px-3 rounded-2xl transition-colors pt-2 pb-0.5 relative"
     >
-      {isSelf ? null : <TweetHeader tweet={post} inThread />}
-      <TweetBody tweet={post} inThread>
-        <ThreadTag post={post} idx={idx} length={length} isSelf={isSelf} />
+      {isSelf ? null : <TweetHeader tweet={t} inThread />}
+      <TweetBody tweet={t} inThread>
+        <ThreadTag post={t} idx={idx} length={length} isSelf={isSelf} />
       </TweetBody>
-      {post.mediaDetails?.length ? <TweetMedia tweet={post} /> : null}
+      {t.mediaDetails?.length ? <TweetMedia tweet={t} /> : null}
+      {t.quoted_status_id_str && posts[t.quoted_status_id_str] ? (
+        <QuotedTweet tweet={posts[t.quoted_status_id_str]} />
+      ) : null}
       {idx > 1 || isSelf ? (
-        <ThreadReply post={post} expand={!isSelf} preview={isSelf} />
+        <ThreadReply post={t} expand={!isSelf} preview={isSelf} />
       ) : (
-        <TweetActions tweet={post} inThread />
+        <TweetActions tweet={t} inThread />
       )}
     </div>
   );
@@ -416,7 +415,7 @@ const ThreadView = ({
   }, [focusMode]);
 
   const parentTweet = renderThreads.length
-    ? threads[0].in_reply_to_status_id_str || threads[0].quoted_status_id_str
+    ? renderThreads[0].in_reply_to_status_id_str
     : null;
 
   // const renderThreads =
@@ -467,40 +466,68 @@ const ThreadView = ({
       >
         <div className="bg-white shadow-md rounded-b-3xl border-l border-r border-b min-h-[calc(100vh-8rem)] flex flex-nowrap flex-row">
           <div className="my-auto w-full space-y-3">
-            {parentTweet ? (
+            {parentTweet && posts[parentTweet] ? (
               <div className="flex flex-col">
+                {posts[parentTweet].in_reply_to_status_id_str && (
+                  <div
+                    className="my-3 ml-6 mr-auto flex items-center text-stone-600 text-md cursor-pointer hover:underline hover:text-stone-800"
+                    onClick={() => {
+                      if (posts[parentTweet].in_reply_to_status_id_str) {
+                        setRenderThreads([
+                          posts[posts[parentTweet].in_reply_to_status_id_str],
+                          posts[parentTweet],
+                          ...renderThreads,
+                        ]);
+                      }
+                    }}
+                  >
+                    <FontAwesomeIcon
+                      icon={faEllipsisVertical}
+                      className="scale-y-105 text-3xl mr-2.5 text-stone-400"
+                    />
+                    more replies
+                  </div>
+                )}
                 <ThreadItem
-                  post={posts[parentTweet]}
+                  post={parentTweet}
                   idx={1}
                   length={1}
                   isSelf={false}
                 />
-                <div
-                  className="my-3 ml-6 mr-auto flex items-center text-stone-600 text-md cursor-pointer hover:underline hover:text-stone-800"
-                  onClick={() => {
-                    const newReplies = getReplies(parentTweet, posts)
-                      ?.filter((t) => Math.max(t.thread_score, t.score) >= 0.4)
-                      .sort((a, b) => b.score - a.score);
-                    setRenderThreads([posts[parentTweet], ...newReplies]);
-                  }}
-                >
-                  <FontAwesomeIcon
-                    icon={faEllipsisVertical}
-                    className="scale-y-105 text-3xl mr-2.5 text-stone-400"
-                  />
-                  more replies
-                </div>
+                {!posts[parentTweet].in_reply_to_status_id_str && (
+                  <div
+                    className="my-3 ml-6 mr-auto flex items-center text-stone-600 text-md cursor-pointer hover:underline hover:text-stone-800"
+                    onClick={() => {
+                      if (posts[parentTweet].in_thread) {
+                        const threads = posts[parentTweet].in_thread?.map(
+                          (id) => posts[id]
+                        ) || [posts[parentTweet]];
+                        setRenderThreads([...threads, ...renderThreads]);
+                      } else {
+                        setRenderThreads([posts[parentTweet]]);
+                      }
+                    }}
+                  >
+                    <FontAwesomeIcon
+                      icon={faEllipsisVertical}
+                      className="scale-y-105 text-3xl mr-2.5 text-stone-400"
+                    />
+                    more replies
+                  </div>
+                )}
               </div>
             ) : null}
-            {renderThreads.map((t, idx) => (
-              <ThreadItem
-                key={t.id_str}
-                post={t}
-                idx={idx + 1}
-                length={renderThreads.length}
-                isSelf={isSelf}
-              />
-            ))}
+            {renderThreads
+              .filter((t) => !!t)
+              .map((t, idx) => (
+                <ThreadItem
+                  key={idx}
+                  post={t.id_str}
+                  idx={isSelf ? idx + 1 : 2}
+                  length={renderThreads.length}
+                  isSelf={isSelf}
+                />
+              ))}
             {focusMode && threads.length > renderThreads.length ? (
               <div className="bg-stone-100 px-3 ml-2 w-[28rem] py-2 rounded-xl mt-2">
                 <div className="text-stone-600 w-full text-base">

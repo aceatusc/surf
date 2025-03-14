@@ -16,12 +16,12 @@ import Note from "./components/note/Note";
 import { DataContext } from "./context/DataContext";
 
 const examples = [
-  {
-    id: "arxiv:2303.15343",
-    url: "https://arxiv.org/pdf/2303.15343",
-    title: "Sigmoid Loss for Language Image Pre-Training",
-    data: "/2303.15343.json",
-  },
+  // {
+  //   id: "arxiv:2303.15343",
+  //   url: "https://arxiv.org/pdf/2303.15343",
+  //   title: "Sigmoid Loss for Language Image Pre-Training",
+  //   data: "/2303.15343.json",
+  // },
   {
     id: "arxiv:2401.13782",
     url: "https://arxiv.org/pdf/2401.13782",
@@ -35,6 +35,32 @@ const examples = [
       "Self-Play Fine-Tuning Converts Weak Language Models to Strong Language Models",
     data: "/2401.01335.json",
   },
+  {
+    id: "arxiv:2406.04313",
+    url: "https://arxiv.org/pdf/2406.04313",
+    title: "Improving Alignment and Robustness with Circuit Breakers",
+    data: "/2406.04313.json",
+  },
+  {
+    id: "arxiv:2304.01373",
+    url: "https://arxiv.org/pdf/2304.01373",
+    title:
+      "Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling",
+    data: "/2304.01373.json",
+  },
+  {
+    id: "arxiv:2405.07987",
+    url: "https://arxiv.org/pdf/2405.07987",
+    title: "The Platonic Representation Hypothesis",
+    data: "/2405.07987.json",
+  },
+  // {
+  //   id: "arxiv:2405.05417",
+  //   url: "https://arxiv.org/pdf/2405.05417",
+  //   title:
+  //     "Fishing for Magikarp: Automatically Detecting Under-trained Tokens in Large Language Models",
+  //   data: "/2405.05417.json",
+  // },
   // {
   //   id: "arxiv:2309.17453",
   //   url: "https://arxiv.org/pdf/2309.17453",
@@ -90,7 +116,7 @@ function SelectExample() {
 export function AppContent() {
   const { id } = useParams();
   const paper = examples.find((example) => example.id === id);
-  const { setPosts, setLocations, setSummaries, setContext } =
+  const { setPosts, setLocations, setSummaries, setContext, setQuality } =
     useContext(DataContext);
   const [loading, setLoading] = useState(true);
   const { setStudyPhase } = useContext(DevContext);
@@ -108,13 +134,14 @@ export function AppContent() {
 
     const fetchData = async () => {
       try {
-        const { posts, locations, summaries, context } = await fetch(
+        const { posts, locations, summaries, context, quality } = await fetch(
           paper.data
         ).then((res) => res.json());
         setPosts(posts);
         setLocations(locations);
         setSummaries(summaries);
         setContext(context);
+        setQuality(quality);
       } catch (error) {
         console.error("Failed to load data:", error);
       } finally {

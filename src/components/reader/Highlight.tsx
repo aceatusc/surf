@@ -1,7 +1,7 @@
-import { Fragment, MouseEvent, useCallback, useContext, useState } from "react";
+import { Fragment, MouseEvent, useCallback, useContext } from "react";
 import { HighlightContext } from "../../context/HighlightContext";
 import { DocumentContext, TransformContext } from "../pdf";
-import { TLocation, TSummaryData, ptypeConfig } from "../types";
+import { TLocation, TQualityData, TSummaryData, ptypeConfig } from "../types";
 import { Button } from "../ui/button";
 import { getColor } from "../../context/ColorManager";
 import {
@@ -16,9 +16,11 @@ import { ArrowRight } from "lucide-react";
 export default function Highlight({
   data,
   summaries,
+  quality,
 }: {
   data: TLocation[];
   summaries: TSummaryData;
+  quality: TQualityData;
 }) {
   const { setHighlightedLocation, setHighlightedType } =
     useContext(HighlightContext);
@@ -27,7 +29,10 @@ export default function Highlight({
 
   const handleClick = useCallback((e: MouseEvent) => {
     e.stopPropagation();
-    const eleId = (e.target as HTMLElement).id || "";
+    const eleId =
+      (e.target as HTMLElement).id ||
+      (e.target as HTMLElement).getAttribute("data-loc");
+    if (!eleId) return;
     const [location, type] = eleId.split("$%^");
     setHighlightedLocation(location);
     setHighlightedType(type);
@@ -77,26 +82,46 @@ export default function Highlight({
                       {ptypeConfig[type as keyof typeof ptypeConfig].icon}
                     </Button>
                   </HoverCardTrigger>
-                  {summaries[type]?.[title] ? (
-                    <HoverCardContent
-                      className="px-5 py-2 relative z-10 w-[24rem]"
-                      side={isLeft ? "left" : "right"}
-                      style={{ direction: "ltr" }}
+                  <HoverCardContent
+                    className="px-5 py-2 relative z-10 w-[24rem]"
+                    side={isLeft ? "left" : "right"}
+                    style={{ direction: "ltr" }}
+                  >
+                    <div
+                      className="flex items-center justify-between cursor-pointer"
+                      onClick={handleClick}
+                      data-loc={`${title}$%^${type}`}
                     >
-                      <div className="flex items-center justify-between">
-                        <div className="text-2xl font-mono mb-1 underline font-semibold">
-                          {type}
-                        </div>
-                        <ArrowRight
-                          className="w-10 h-10 hover:bg-stone-100 p-2 rounded-full cursor-pointer"
-                          onClick={handleClick}
-                          data-loc={`${title}$%^${type}`}
-                        />
+                      <div
+                        className="text-2xl font-mono mb-1 underline font-semibold"
+                        onClick={handleClick}
+                        data-loc={`${title}$%^${type}`}
+                      >
+                        {type}
                       </div>
-                      <Separator className="mb-2" />
+                      <ArrowRight
+                        className="w-10 h-10 hover:bg-stone-100 p-2 rounded-full"
+                        onClick={handleClick}
+                        data-loc={`${title}$%^${type}`}
+                      />
+                    </div>
+
+                    <Separator className="mb-2" />
+                    {quality[type]?.[title] >= 0.5 && (
+                      <div className="font-mono text-md bg-slate-200 rounded-full px-3 py-1 mb-1.5">
+                        {quality[type]?.[title] >= 0.7
+                          ? "🔥 Recommended"
+                          : "📌 Quality read"}
+                      </div>
+                    )}
+                    {summaries[type]?.[title] ? (
                       <Summary type={type} loc={title} />
-                    </HoverCardContent>
-                  ) : null}
+                    ) : (
+                      <span className="text-lg">
+                        Click to read overview threads
+                      </span>
+                    )}
+                  </HoverCardContent>
                 </HoverCard>
               ))}
           </div>

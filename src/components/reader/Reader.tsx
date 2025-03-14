@@ -13,12 +13,12 @@ import ZoomControl from "./ZoomControl";
 import { ScrollArea } from "../ui/scroll-area";
 export default function Reader({ url }: { url: string }) {
   const { numPages } = useContext(DocumentContext);
-  const { locations, summaries } = useContext(DataContext);
+  const { locations, summaries, quality } = useContext(DataContext);
   const { sidebarOpen } = useContext(UIContext);
 
   return (
     <ScrollArea
-      className={`ml-auto`}
+      className={`ml-auto overscroll-contain`}
       style={{
         maxWidth: sidebarOpen ? "calc(100% - 42rem)" : "100%",
         transition: "max-width 0.2s",
@@ -35,7 +35,11 @@ export default function Reader({ url }: { url: string }) {
           >
             <Overlay>
               {locations[i] && (
-                <Highlight data={locations[i]} summaries={summaries} />
+                <Highlight
+                  data={locations[i]}
+                  summaries={summaries}
+                  quality={quality}
+                />
               )}
             </Overlay>
           </PageWrapper>

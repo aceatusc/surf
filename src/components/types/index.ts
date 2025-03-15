@@ -56,7 +56,11 @@ export const ptypeConfig = {
 };
 
 export const FOCUS_THRESHOLD = (type: string) => {
-  return type in ["Critique", "Q&A", "Perspective"] ? 0.5 : 0.3;
+  return type in ["Critique", "Q&A", "Perspective"]
+    ? 0.5
+    : type === "Teaser"
+    ? 0.1
+    : 0.3;
 };
 
 export const getIcon = (type: string) => {

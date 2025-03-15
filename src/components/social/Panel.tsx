@@ -47,7 +47,8 @@ const AccordionPanelItem = ({ loc }: { loc: string }) => {
     localFocusMode
       ? postToDisplay.filter(
           (p) =>
-            p.thread_score && p.thread_score > FOCUS_THRESHOLD(highlightedType)
+            Math.max(p.score, p.thread_score) >=
+            FOCUS_THRESHOLD(highlightedType)
         )
       : postToDisplay
   ).sort((a, b) => {

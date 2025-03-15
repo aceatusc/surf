@@ -14,6 +14,7 @@ import { SidebarProvider } from "./components/ui/sidebar";
 import Social from "./components/social/Panel";
 import Note from "./components/note/Note";
 import { DataContext } from "./context/DataContext";
+import { url } from "inspector";
 
 const examples = [
   // {
@@ -36,10 +37,40 @@ const examples = [
     data: "/2401.01335.json",
   },
   {
+    id: "arxiv:2403.17887",
+    url: "https://arxiv.org/pdf/2403.17887",
+    title: "The Unreasonable Ineffectiveness of the Deeper Layers",
+    data: "/2403.17887.json",
+  },
+  {
+    id: "arxiv:2405.14734",
+    url: "https://arxiv.org/pdf/2405.14734",
+    title: "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+    data: "/2405.14734.json",
+  },
+  // {
+  //   id: "arxiv:2401.02412",
+  //   url: "https://arxiv.org/pdf/2401.02412",
+  //   title: "LLM Augmented LLMs: Expanding Capabilities through Composition",
+  //   data: "/2401.02412.json",
+  // },
+  {
     id: "arxiv:2406.04313",
     url: "https://arxiv.org/pdf/2406.04313",
     title: "Improving Alignment and Robustness with Circuit Breakers",
     data: "/2406.04313.json",
+  },
+  {
+    id: "arxiv:2405.05904",
+    url: "https://arxiv.org/pdf/2405.05904",
+    title: "Does Fine-Tuning LLMs on New Knowledge Encourage Hallucinations?",
+    data: "/2405.05904.json",
+  },
+  {
+    id: "arxiv:2305.14342",
+    url: "https://arxiv.org/pdf/2305.14342",
+    title: "test",
+    data: "/2305.14342.json",
   },
   {
     id: "arxiv:2304.01373",

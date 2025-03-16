@@ -126,10 +126,7 @@ export default function Summary({
     <Fragment>
       {summaries[type][loc].map((r, idx) => (
         <div
-          className={clsx(
-            "text-[1.2rem] text-stone-800 leading-6 pb-1.5",
-            className
-          )}
+          className={clsx("text-lg text-stone-800 leading-6 pb-1.5", className)}
           style={style}
           key={idx}
         >

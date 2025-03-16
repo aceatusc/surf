@@ -43,6 +43,12 @@ const examples = [
     data: "/2403.17887.json",
   },
   {
+    id: "arxiv:2401.08565",
+    url: "https://arxiv.org/pdf/2401.08565",
+    title: "Tuning Language Models by Proxy",
+    data: "/2401.08565.json",
+  },
+  {
     id: "arxiv:2405.14734",
     url: "https://arxiv.org/pdf/2405.14734",
     title: "SimPO: Simple Preference Optimization with a Reference-Free Reward",
@@ -59,6 +65,12 @@ const examples = [
     url: "https://arxiv.org/pdf/2406.04313",
     title: "Improving Alignment and Robustness with Circuit Breakers",
     data: "/2406.04313.json",
+  },
+  {
+    id: "arxiv:2404.03592",
+    url: "https://arxiv.org/pdf/2404.03592",
+    title: "2404.03592",
+    data: "/2404.03592.json",
   },
   {
     id: "arxiv:2405.05904",

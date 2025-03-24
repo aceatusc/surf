@@ -13461,5 +13461,31 @@
         "Related Work": {
             "Related Work": 0
         }
+    },
+    "titles": {
+        "Analysis": {
+            "number": "4",
+            "title": "Analysis"
+        },
+        "Data Collection": {
+            "number": "3",
+            "title": "Data Collection"
+        },
+        "Introduction": {
+            "number": "1",
+            "title": "Introduction"
+        },
+        "Discussion": {
+            "number": "5",
+            "title": "Discussion"
+        },
+        "Related Work": {
+            "number": "2",
+            "title": "Related Work"
+        },
+        "Conclusion": {
+            "number": "6",
+            "title": "Conclusion"
+        }
     }
 }

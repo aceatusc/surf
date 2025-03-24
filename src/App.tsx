@@ -14,144 +14,62 @@ import { SidebarProvider } from "./components/ui/sidebar";
 import Social from "./components/social/Panel";
 import Note from "./components/note/Note";
 import { DataContext } from "./context/DataContext";
-import { url } from "inspector";
-
-const examples = [
-  // {
-  //   id: "arxiv:2303.15343",
-  //   url: "https://arxiv.org/pdf/2303.15343",
-  //   title: "Sigmoid Loss for Language Image Pre-Training",
-  //   data: "/2303.15343.json",
-  // },
-  {
-    id: "arxiv:2401.13782",
-    url: "https://arxiv.org/pdf/2401.13782",
-    title: "Position: AI/ML Influencers Have a Place in the Academic Process",
-    data: "/2401.13782.json",
-  },
-  {
-    id: "arxiv:2401.01335",
-    url: "https://arxiv.org/pdf/2401.01335",
-    title:
-      "Self-Play Fine-Tuning Converts Weak Language Models to Strong Language Models",
-    data: "/2401.01335.json",
-  },
-  {
-    id: "arxiv:2403.17887",
-    url: "https://arxiv.org/pdf/2403.17887",
-    title: "The Unreasonable Ineffectiveness of the Deeper Layers",
-    data: "/2403.17887.json",
-  },
-  {
-    id: "arxiv:2401.08565",
-    url: "https://arxiv.org/pdf/2401.08565",
-    title: "Tuning Language Models by Proxy",
-    data: "/2401.08565.json",
-  },
-  {
-    id: "arxiv:2405.14734",
-    url: "https://arxiv.org/pdf/2405.14734",
-    title: "SimPO: Simple Preference Optimization with a Reference-Free Reward",
-    data: "/2405.14734.json",
-  },
-  // {
-  //   id: "arxiv:2401.02412",
-  //   url: "https://arxiv.org/pdf/2401.02412",
-  //   title: "LLM Augmented LLMs: Expanding Capabilities through Composition",
-  //   data: "/2401.02412.json",
-  // },
-  {
-    id: "arxiv:2406.04313",
-    url: "https://arxiv.org/pdf/2406.04313",
-    title: "Improving Alignment and Robustness with Circuit Breakers",
-    data: "/2406.04313.json",
-  },
-  {
-    id: "arxiv:2404.03592",
-    url: "https://arxiv.org/pdf/2404.03592",
-    title: "2404.03592",
-    data: "/2404.03592.json",
-  },
-  {
-    id: "arxiv:2405.05904",
-    url: "https://arxiv.org/pdf/2405.05904",
-    title: "Does Fine-Tuning LLMs on New Knowledge Encourage Hallucinations?",
-    data: "/2405.05904.json",
-  },
-  {
-    id: "arxiv:2305.14342",
-    url: "https://arxiv.org/pdf/2305.14342",
-    title: "test",
-    data: "/2305.14342.json",
-  },
-  {
-    id: "arxiv:2304.01373",
-    url: "https://arxiv.org/pdf/2304.01373",
-    title:
-      "Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling",
-    data: "/2304.01373.json",
-  },
-  {
-    id: "arxiv:2405.07987",
-    url: "https://arxiv.org/pdf/2405.07987",
-    title: "The Platonic Representation Hypothesis",
-    data: "/2405.07987.json",
-  },
-  // {
-  //   id: "arxiv:2405.05417",
-  //   url: "https://arxiv.org/pdf/2405.05417",
-  //   title:
-  //     "Fishing for Magikarp: Automatically Detecting Under-trained Tokens in Large Language Models",
-  //   data: "/2405.05417.json",
-  // },
-  // {
-  //   id: "arxiv:2309.17453",
-  //   url: "https://arxiv.org/pdf/2309.17453",
-  //   title: "Efficient Streaming Language Models with Attention Sinks",
-  //   postData: "/2309.17453_posts.json",
-  //   locationData: "/2309.17453_highlights.json",
-  // },
-  // {
-  //   id: "arxiv:2310.06816",
-  //   url: "https://arxiv.org/pdf/2310.06816",
-  //   title: "Text Embeddings Reveal (Almost) As Much As Text",
-  //   postData: "/2310.06816_posts.json",
-  //   locationData: "/2310.06816_highlights.json",
-  // },
-  // {
-  //   id: "arxiv:2306.04634",
-  //   url: "https://arxiv.org/pdf/2306.04634",
-  //   title: "[NLP] On the Reliability of Watermarks for Large Language Models",
-  //   postData: "/2306.04634_posts.json",
-  //   locationData: null,
-  //   annotated: false,
-  // },
-  // {
-  //   id: "arxiv:2303.15343",
-  //   url: "https://arxiv.org/pdf/2303.15343",
-  //   title: "Sigmoid Loss for Language Image Pre-Training",
-  //   postData: "/2303.15343_posts.json",
-  //   locationData: "/2303.15343_highlights.json",
-  //   phase: "formative",
-  // },
-];
+import examples from "./paper_data.json";
+import { Card, CardContent, CardHeader } from "./components/ui/card";
+import { Badge } from "./components/ui/badge";
+import { Switch } from "./components/ui/switch";
+import { Label } from "./components/ui/label";
 
 function SelectExample() {
   const navigate = useNavigate();
+  const [isControl, setIsControl] = useState(false);
+
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-2xl font-bold mb-4">Select a Sample Paper</h1>
-      <ul className="space-y-2">
+    <div className="flex flex-col items-center justify-center">
+      <h1 className="text-2xl font-bold mb-6 mt-12">Select a Sample Paper</h1>
+      <div className="flex-col space-x-4 items-center">
+        <Switch
+          id="condition"
+          onClick={() => setIsControl(!isControl)}
+          checked={!isControl}
+        />
+        <Label htmlFor="condition" className="text-lg font-mono">
+          {isControl ? "Control" : "Treatment"}
+        </Label>
+      </div>
+
+      <div className="grid grid-cols-3 gap-4 p-6">
         {examples.map((example) => (
-          <li
+          <Card
             key={example.id}
-            className="cursor-pointer hover:underline text-blue-500"
-            onClick={() => navigate(`/${example.id}`)}
+            onClick={() => {
+              if (isControl) {
+                window.open(`${example.url}`, "_blank");
+              } else {
+                navigate(`/${example.id}`);
+              }
+            }}
+            className="hover:bg-slate-100 cursor-pointer"
           >
-            {example.title}{" "}
-          </li>
+            <CardHeader className="text-2xl">
+              <Badge className="inline w-fit bg-slate-300 text-slate-900 text-xl rounded-full">
+                {example.conference}
+              </Badge>
+              <span>{example.title}</span>
+            </CardHeader>
+            <CardContent>
+              <div className="space-x-4">
+                {example.subject?.map((sub) => (
+                  <Badge key={sub} className="text-xl">
+                    {sub}
+                  </Badge>
+                ))}
+              </div>
+              <div className="mt-3 text-lg">{example.abstract}</div>
+            </CardContent>
+          </Card>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
@@ -159,8 +77,14 @@ function SelectExample() {
 export function AppContent() {
   const { id } = useParams();
   const paper = examples.find((example) => example.id === id);
-  const { setPosts, setLocations, setSummaries, setContext, setQuality } =
-    useContext(DataContext);
+  const {
+    setPosts,
+    setLocations,
+    setSummaries,
+    setContext,
+    setQuality,
+    setTitles,
+  } = useContext(DataContext);
   const [loading, setLoading] = useState(true);
   const { setStudyPhase } = useContext(DevContext);
 
@@ -177,14 +101,14 @@ export function AppContent() {
 
     const fetchData = async () => {
       try {
-        const { posts, locations, summaries, context, quality } = await fetch(
-          paper.data
-        ).then((res) => res.json());
+        const { posts, locations, summaries, context, quality, titles } =
+          await fetch(paper.data).then((res) => res.json());
         setPosts(posts);
         setLocations(locations);
         setSummaries(summaries);
         setContext(context);
         setQuality(quality);
+        setTitles(titles);
       } catch (error) {
         console.error("Failed to load data:", error);
       } finally {

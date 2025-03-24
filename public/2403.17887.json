@@ -67203,5 +67203,45 @@
             "Abstract": 0,
             "Introduction": 0.6
         }
+    },
+    "titles": {
+        "Abstract": {
+            "name": "Abstract"
+        },
+        "Introduction": {
+            "number": "1",
+            "name": "Introduction"
+        },
+        "Literature review": {
+            "number": "2",
+            "name": "Literature Review"
+        },
+        "Method": {
+            "number": "3",
+            "name": "Method"
+        },
+        "Intuition": {
+            "number": "3.1",
+            "name": "Intuition"
+        },
+        "Results": {
+            "number": "4",
+            "name": "Results"
+        },
+        "Accuracy on qa benchmarks": {
+            "number": "4.1",
+            "name": "Accuracy on QA Benchmarks"
+        },
+        "Loss on next-token predictions": {
+            "number": "4.1",
+            "name": "Loss on Next-token Predictions"
+        },
+        "Discussion and future directions": {
+            "number": "5",
+            "name": "Discussion and Future Directions"
+        },
+        "General": {
+            "name": "General"
+        }
     }
 }

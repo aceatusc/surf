@@ -1,0 +1,127 @@
+[
+    {
+        "id": "arxiv:2401.13782",
+        "url": "https://arxiv.org/pdf/2401.13782",
+        "title": "Position: AI/ML Influencers Have a Place in the Academic Process",
+        "data": "/2401.13782.json",
+        "subject": [
+            "Social Networks",
+            "Machine Learning"
+        ],
+        "conference": "ICML'24",
+        "abstract": "As the number of accepted papers at AI and ML conferences reaches into the thousands, it has become unclear how researchers access and read research publications. In this paper, we investigate the role of social media influencers in enhancing the visibility of machine learning research, particularly the citation counts of papers they share. We have compiled a comprehensive dataset of over 8,000 papers, spanning tweets from December 2018 to October 2023, alongside controls precisely matched by 9 key covariates. Our statistical and causal inference analysis reveals a significant increase in citations for papers endorsed by these influencers, with median citation counts 2-3 times higher than those of the control group. Additionally, the study delves into the geographic, gender, and institutional diversity of highlighted authors. Given these findings, we advocate for a responsible approach to curation, encouraging influencers to uphold the journalistic standard that includes showcasing diverse research topics, authors, and institutions."
+    },
+    {
+        "id": "arxiv:2406.10209",
+        "url": "https://arxiv.org/pdf/2406.10209",
+        "title": "Be like a Goldfish, Don’t Memorize! Mitigating Memorization in Generative LLMs",
+        "data": "/2406.10209.json",
+        "subject": [
+            "NLP"
+        ],
+        "conference": "NeurIPS'24",
+        "abstract": "Large language models can memorize and repeat their training data, causing privacy and copyright risks. To mitigate memorization, we introduce a subtle modification to the next-token training objective that we call the goldfish loss. During training, randomly sampled subsets of tokens are excluded from the loss computation. These dropped tokens are not memorized by the model, which prevents verbatim reproduction of a complete chain of tokens from the training set. We run extensive experiments training billion-scale Llama-2 models, both pre-trained and trained from scratch, and demonstrate significant reductions in extractable memorization with little to no impact on downstream benchmarks."
+    },
+    {
+        "id": "arxiv:2401.01335",
+        "url": "https://arxiv.org/pdf/2401.01335",
+        "title": "Self-Play Fine-Tuning Converts Weak Language Models to Strong Language Models",
+        "data": "/2401.01335.json",
+        "subject": [
+            "NLP"
+        ],
+        "conference": "ICML'24",
+        "abstract": "Harnessing the power of human-annotated data through Supervised Fine-Tuning (SFT) is pivotal for advancing Large Language Models (LLMs). In this paper, we delve into the prospect of growing a strong LLM out of a weak one without the need for acquiring additional human-annotated data. We propose a new fine-tuning method called Self-Play fIne-tuNing (SPIN), which starts from a supervised fine-tuned model. At the heart of SPIN lies a self-play mechanism, where the LLM refines its capability by playing against instances of itself. More specifically, the LLM generates its own training data from its previous iterations, refining its policy by discerning these self-generated responses from those obtained from human-annotated data. Our method progressively elevates the LLM from a nascent model to a formidable one, unlocking the full potential of human-annotated demonstration data for SFT. Theoretically, we prove that the global optimum to the training objective function of our method is achieved only when the LLM policy aligns with the target data distribution. Empirically, we evaluate our method on several benchmark datasets including the HuggingFace Open LLM Leaderboard, MT-Bench, and datasets from Big-Bench. Our results show that SPIN can significantly improve the LLM's performance across a variety of benchmarks and even outperform models trained through direct preference optimization (DPO) supplemented with extra GPT-4 preference data. This sheds light on the promise of self-play, enabling the achievement of human-level performance in LLMs without the need for expert opponents. Codes are available at this https URL."
+    },
+    {
+        "id": "arxiv:2403.17887",
+        "url": "https://arxiv.org/pdf/2403.17887",
+        "title": "The Unreasonable Ineffectiveness of the Deeper Layers",
+        "data": "/2403.17887.json",
+        "subject": [
+            "NLP"
+        ],
+        "conference": "ICLR'25",
+        "abstract": "How is knowledge stored in an LLM's weights? We study this via layer pruning: if removing a certain layer does not affect model performance in common question-answering benchmarks, then the weights in that layer are not necessary for storing the knowledge needed to answer those questions. To find these unnecessary parameters, we identify the optimal block of layers to prune by considering similarity across layers; then, to heal the damage, we perform a small amount of finetuning. Surprisingly, with this method we find minimal degradation of performance until after a large fraction (up to half) of the layers are removed for some common open-weight models. From a scientific perspective, the robustness of these LLMs to the deletion of layers implies either that current pretraining methods are not properly leveraging the parameters in the deeper layers of the network or that the shallow layers play a critical role in storing knowledge. For our study, we use parameter-efficient finetuning (PEFT) methods, specifically quantization and Low Rank Adapters (QLoRA), such that each of our experiments can be performed on a single 40GB A100 GPU."
+    },
+    {
+        "id": "arxiv:2404.03592",
+        "url": "https://arxiv.org/pdf/2404.03592",
+        "title": "ReFT: Representation Finetuning for Language Models",
+        "data": "/2404.03592.json",
+        "conference": "NeurIPS'24",
+        "subject": [
+            "NLP"
+        ],
+        "abstract": "Parameter-efficient finetuning (PEFT) methods seek to adapt large neural models via updates to a small number of weights. However, much prior interpretability work has shown that representations encode rich semantic information, suggesting that editing representations might be a more powerful alternative. We pursue this hypothesis by developing a family of Representation Finetuning (ReFT) methods. ReFT methods operate on a frozen base model and learn task-specific interventions on hidden representations. We define a strong instance of the ReFT family, Low-rank Linear Subspace ReFT (LoReFT), and we identify an ablation of this method that trades some performance for increased efficiency. Both are drop-in replacements for existing PEFTs and learn interventions that are 15x--65x more parameter-efficient than LoRA. We showcase LoReFT on eight commonsense reasoning tasks, four arithmetic reasoning tasks, instruction-tuning, and GLUE. In all these evaluations, our ReFTs deliver the best balance of efficiency and performance, and almost always outperform state-of-the-art PEFTs. We release a generic ReFT training library publicly at this https URL."
+    },
+    {
+        "id": "arxiv:2401.08565",
+        "url": "https://arxiv.org/pdf/2401.08565",
+        "title": "Tuning Language Models by Proxy",
+        "data": "/2401.08565.json",
+        "subject": [
+            "NLP"
+        ],
+        "conference": "COLM'24",
+        "abstract": "Despite the general capabilities of large pretrained language models, they consistently benefit from further adaptation to better achieve desired behaviors. However, tuning these models has become increasingly resource-intensive, or impossible when model weights are private. We introduce proxy-tuning, a lightweight decoding-time algorithm that operates on top of black-box LMs to achieve the same end as direct tuning, but by accessing only its predictions over the output vocabulary, not its parameters. Our method tunes a smaller LM, then applies the difference between the predictions of the small tuned and untuned LMs to shift the original predictions of the larger untuned model in the direction of tuning, while retaining the benefits of larger-scale pretraining. In experiments, when we apply proxy-tuning to Llama2-70B using proxies of only 7B size, we can close 88% of the gap between Llama2-70B and its truly-tuned chat version, when evaluated across knowledge, reasoning, and safety benchmarks. We then demonstrate the generality of proxy-tuning by applying it to domain adaptation on code, and task-specific finetuning on question-answering and math problems. Finally, we show how to proxy-tune a truly black-box LM, GPT-3.5, for temporal adaptation, increasing its knowledge about recent events. Our work demonstrates the promise of using small tuned LMs to efficiently customize large, potentially proprietary LMs through decoding-time guidance."
+    },
+    {
+        "id": "arxiv:2305.14342",
+        "url": "https://arxiv.org/pdf/2305.14342",
+        "title": "Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training",
+        "data": "/2305.14342.json",
+        "subject": [
+            "Optimization and Control",
+            "NLP"
+        ],
+        "conference": "ICLR'24",
+        "abstract": "Given the massive cost of language model pre-training, a non-trivial improvement of the optimization algorithm would lead to a material reduction on the time and cost of training. Adam and its variants have been state-of-the-art for years, and more sophisticated second-order (Hessian-based) optimizers often incur too much per-step overhead. In this paper, we propose Sophia, Second-order Clipped Stochastic Optimization, a simple scalable second-order optimizer that uses a light-weight estimate of the diagonal Hessian as the pre-conditioner. The update is the moving average of the gradients divided by the moving average of the estimated Hessian, followed by element-wise clipping. The clipping controls the worst-case update size and tames the negative impact of non-convexity and rapid change of Hessian along the trajectory. Sophia only estimates the diagonal Hessian every handful of iterations, which has negligible average per-step time and memory overhead. On language modeling with GPT models of sizes ranging from 125M to 1.5B, Sophia achieves a 2x speed-up compared to Adam in the number of steps, total compute, and wall-clock time, achieving the same perplexity with 50% fewer steps, less total compute, and reduced wall-clock time. Theoretically, we show that Sophia, in a much simplified setting, adapts to the heterogeneous curvatures in different parameter dimensions, and thus has a run-time bound that does not depend on the condition number of the loss."
+    },
+    {
+        "id": "arxiv:2305.15507",
+        "url": "https://arxiv.org/pdf/2305.15507",
+        "title": "The Larger They Are, the Harder They Fail: Language Models do not Recognize Identifier Swaps in Python",
+        "data": "/2305.15507.json",
+        "subject": [
+            "NLP"
+        ],
+        "conference": "ACL'23",
+        "abstract": "Large Language Models (LLMs) have successfully been applied to code generation tasks, raising the question of how well these models understand programming. Typical programming languages have invariances and equivariances in their semantics that human programmers intuitively understand and exploit, such as the (near) invariance to the renaming of identifiers. We show that LLMs not only fail to properly generate correct Python code when default function names are swapped, but some of them even become more confident in their incorrect predictions as the model size increases, an instance of the recently discovered phenomenon of Inverse Scaling, which runs contrary to the commonly observed trend of increasing prediction quality with increasing model size. Our findings indicate that, despite their astonishing typical-case performance, LLMs still lack a deep, abstract understanding of the content they manipulate, making them unsuitable for tasks that statistically deviate from their training data, and that mere scaling is not enough to achieve such capability."
+    },
+    {
+        "id": "arxiv:2405.14734",
+        "url": "https://arxiv.org/pdf/2405.14734",
+        "title": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+        "data": "/2405.14734.json",
+        "subject": [
+            "NLP",
+            "Machine Learning"
+        ],
+        "conference": "NeurIPS'24",
+        "abstract": "Direct Preference Optimization (DPO) is a widely used offline preference optimization algorithm that reparameterizes reward functions in reinforcement learning from human feedback (RLHF) to enhance simplicity and training stability. In this work, we propose SimPO, a simpler yet more effective approach. The effectiveness of SimPO is attributed to a key design: using the average log probability of a sequence as the implicit reward. This reward formulation better aligns with model generation and eliminates the need for a reference model, making it more compute and memory efficient. Additionally, we introduce a target reward margin to the Bradley-Terry objective to encourage a larger margin between the winning and losing responses, further improving the algorithm's performance. We compare SimPO to DPO and its latest variants across various state-of-the-art training setups, including both base and instruction-tuned models such as Mistral, Llama 3, and Gemma 2. We evaluate on extensive chat-based evaluation benchmarks, including AlpacaEval 2, MT-Bench, and Arena-Hard. Our results demonstrate that SimPO consistently and significantly outperforms existing approaches without substantially increasing response length. Specifically, SimPO outperforms DPO by up to 6.4 points on AlpacaEval 2 and by up to 7.5 points on Arena-Hard. Our top-performing model, built on Gemma-2-9B-it, achieves a 72.4% length-controlled win rate on AlpacaEval 2, a 59.1% win rate on Arena-Hard, and ranks 1st on Chatbot Arena among <10B models with real user votes."
+    },
+    {
+        "id": "arxiv:2311.12022",
+        "url": "https://arxiv.org/pdf/2311.12022",
+        "title": "GPQA: A Graduate-Level Google-Proof Q&A Benchmark",
+        "data": "/2311.12022.json",
+        "conference": "COLM'24",
+        "subject": [
+            "NLP"
+        ],
+        "abstract": "We present GPQA, a challenging dataset of 448 multiple-choice questions written by domain experts in biology, physics, and chemistry. We ensure that the questions are high-quality and extremely difficult: experts who have or are pursuing PhDs in the corresponding domains reach 65% accuracy (74% when discounting clear mistakes the experts identified in retrospect), while highly skilled non-expert validators only reach 34% accuracy, despite spending on average over 30 minutes with unrestricted access to the web (i.e., the questions are 'Google-proof'). The questions are also difficult for state-of-the-art AI systems, with our strongest GPT-4 based baseline achieving 39% accuracy. If we are to use future AI systems to help us answer very hard questions, for example, when developing new scientific knowledge, we need to develop scalable oversight methods that enable humans to supervise their outputs, which may be difficult even if the supervisors are themselves skilled and knowledgeable. The difficulty of GPQA both for skilled non-experts and frontier AI systems should enable realistic scalable oversight experiments, which we hope can help devise ways for human experts to reliably get truthful information from AI systems that surpass human capabilities."
+    },
+    {
+        "id": "arxiv:2406.04313",
+        "url": "https://arxiv.org/pdf/2406.04313",
+        "title": "Improving Alignment and Robustness with Circuit Breakers",
+        "data": "/2406.04313.json",
+        "subject": [
+            "NLP",
+            "CV"
+        ],
+        "conference": "NeurIPS'24",
+        "abstract": "AI systems can take harmful actions and are highly vulnerable to adversarial attacks. We present an approach, inspired by recent advances in representation engineering, that interrupts the models as they respond with harmful outputs with 'circuit breakers.' Existing techniques aimed at improving alignment, such as refusal training, are often bypassed. Techniques such as adversarial training try to plug these holes by countering specific attacks. As an alternative to refusal training and adversarial training, circuit-breaking directly controls the representations that are responsible for harmful outputs in the first place. Our technique can be applied to both text-only and multimodal language models to prevent the generation of harmful outputs without sacrificing utility -- even in the presence of powerful unseen attacks. Notably, while adversarial robustness in standalone image recognition remains an open challenge, circuit breakers allow the larger multimodal system to reliably withstand image 'hijacks' that aim to produce harmful content. Finally, we extend our approach to AI agents, demonstrating considerable reductions in the rate of harmful actions when they are under attack. Our approach represents a significant step forward in the development of reliable safeguards to harmful behavior and adversarial attacks."
+    }
+]

@@ -44,6 +44,16 @@ export type TQualityData = {
   [key: string]: TQuality;
 };
 
+export type TTitle = {
+  number?: string;
+  name: string;
+  type?: string;
+};
+
+export type TTitleData = {
+  [key: string]: TTitle;
+};
+
 export const ptypeConfig = {
   "Related Work": { icon: "📖", priority: 5 },
   Perspective: { icon: "💬", priority: 4 },

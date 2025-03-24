@@ -29,7 +29,8 @@ const TabTypes = Object.keys(ptypeConfig).sort((a, b) => {
 
 const AccordionPanelItem = ({ loc }: { loc: string }) => {
   const { highlightedType, highlightedLocation } = useContext(HighlightContext);
-  const { context, posts, focusMode, quality } = useContext(DataContext);
+  const { context, posts, focusMode, quality, titles } =
+    useContext(DataContext);
   const [localFocusMode, setLocalFocusMode] = useState(focusMode);
 
   useEffect(() => {
@@ -40,7 +41,7 @@ const AccordionPanelItem = ({ loc }: { loc: string }) => {
     (p) =>
       p.tweet_type === highlightedType &&
       p.is_branch &&
-      (p.location === loc || (!p.location && loc === "General"))
+      (p.location === loc || (!p.location && loc.toLowerCase() === "general"))
   );
 
   const postToRender = (
@@ -61,16 +62,16 @@ const AccordionPanelItem = ({ loc }: { loc: string }) => {
     <AccordionItem value={loc} className="mt-3 border-none">
       <AccordionTrigger
         className={clsx(
-          "text-xl font-mono px-4 rounded-t-3xl flex-wrap",
+          "text-[1.36rem] font-mono px-4 rounded-t-3xl flex-wrap",
           loc === highlightedLocation ? "pb-1.5" : "rounded-b-3xl"
         )}
         style={{
           backgroundColor: getColor(loc),
         }}
       >
-        <span>
-          <b className="mr-2">Section:</b>
-          {loc}{" "}
+        <span className="capitalize">
+          <b className="mr-6">{titles?.[loc]?.number}</b>
+          <span className="mr-2">{titles?.[loc]?.name || loc}</span>
           {quality[highlightedType]?.[loc] >= 0.7 ? (
             <span>🔥</span>
           ) : (

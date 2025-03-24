@@ -55,7 +55,7 @@ export default function Thread({ post }: { post: EnrichedTweet }) {
     ?.sort((a, b) => b.score - a.score);
 
   const previewReply =
-    replies?.length && (replies[0].score > 0.5 || replies[0].thread_score > 0.7)
+    replies?.length && (replies[0].score > 0.3 || replies[0].thread_score > 0.3)
       ? replies[0]
       : null;
 

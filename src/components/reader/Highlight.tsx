@@ -110,8 +110,8 @@ export default function Highlight({
                     {quality[type]?.[title] >= 0.5 && (
                       <div className="font-mono text-md bg-slate-200 rounded-full px-3 py-1 mb-1.5">
                         {quality[type]?.[title] >= 0.7
-                          ? "🔥 Recommended"
-                          : "📌 Quality read"}
+                          ? "🔥 Quality read"
+                          : "📌 Recommended"}
                       </div>
                     )}
                     {summaries[type]?.[title] ? (

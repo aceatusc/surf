@@ -3,6 +3,7 @@ import { EnrichedTweet, formatNumber } from "../utils.js";
 import s from "./tweet-actions.module.css";
 import { TweetInfo } from "./tweet-info.js";
 import { faReply } from "@fortawesome/free-solid-svg-icons";
+import { faTwitter, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import clsx from "clsx";
 import {
   Tooltip,
@@ -88,10 +89,10 @@ export const TweetActions = ({
         </div>
         <span className={s.replyText}>Reply</span>
       </div>
-      <TweetInfo
-        tweet={tweet}
-        style={{ marginLeft: "auto", marginRight: "0.4rem" }}
-      />
+      <div className="flex items-center ml-auto">
+        <FontAwesomeIcon icon={faXTwitter} className="mr-1" />
+        <TweetInfo tweet={tweet} style={{ margin: 0 }} />
+      </div>
     </div>
   );
 };

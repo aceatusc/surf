@@ -174,7 +174,7 @@ export function AppLanding() {
               Run Huang
             </a>{" "}
             · Anna Katherine Zhao · Zeinabsadat Saghi ·{" "}
-            <a href="" className="text-gray-800">
+            <a href="https://sadrasabouri.github.io/" className="text-gray-800">
               Sadra Sabouri
             </a>{" "}
             ·{" "}

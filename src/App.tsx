@@ -329,9 +329,9 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<AppLanding />} />
-        <Route path="/:id" element={<AppContent />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="/surf/" element={<AppLanding />} />
+        <Route path="/surf/:id" element={<AppContent />} />
+        <Route path="*" element={<Navigate to="/surf/" replace />} />
       </Routes>
     </BrowserRouter>
   );

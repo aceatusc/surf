@@ -158,7 +158,7 @@ export function AppLanding() {
       <div className="max-w-[92rem] mx-auto px-[8vw] py-20 lg:px-0">
         {/* Header */}
         <div className="text-center mb-16 border-b border-black pb-12">
-          <h1 className="text-[4.5vw] leading-[5vw] lg:text-7xl font-light tracking-tight mb-12 text-black">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight mb-12 text-black">
             Beyond the Page: Enriching{" "}
             <u className="decoration-dotted decoration-2 underline-offset-4">
               Academic Paper
@@ -169,7 +169,7 @@ export function AppLanding() {
             </u>{" "}
             Discussions
           </h1>
-          <div className="text-2xl text-gray-800 mb-9 font-mono">
+          <div className="text-xl md:text-2xl text-gray-800 mb-9 font-mono">
             <a href="https://huang.run" className="text-gray-800">
               Run Huang
             </a>{" "}

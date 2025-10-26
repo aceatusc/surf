@@ -182,6 +182,10 @@ export function AppLanding() {
               Souti Chattopadhyay
             </a>
           </div>
+          <p className="bg-red-700 text-white text-2xl w-fit mx-auto px-4">
+            Want to help deploy SURF or make it open source? We'd love to hear
+            from you!
+          </p>
           <div className="flex justify-center gap-6 mt-8">
             <a
               href="https://dl.acm.org/doi/10.1145/3746059.3747647"
@@ -211,10 +215,6 @@ export function AppLanding() {
           <p className="mt-6 text-gray-600 font-mono">
             <b>UIST 2025</b>, ACM Symposium on User Interface Software and
             Technology
-          </p>
-          <p className="mt-8 bg-red-700 text-white text-2xl">
-            Want to help deploy SURF or make it open source? We'd love to hear
-            from you!
           </p>
         </div>
 

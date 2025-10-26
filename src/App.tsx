@@ -120,7 +120,7 @@ export function AppContent() {
   }, [paper]);
 
   if (!paper) {
-    return <Navigate to="/" replace />;
+    return <Navigate to="/surf" replace />;
   }
 
   if (loading) {
@@ -270,7 +270,7 @@ export function AppLanding() {
           {examples.map((example) => (
             <div
               key={example.id}
-              onClick={() => navigate(`/${example.id}`)}
+              onClick={() => navigate(`/surf/${example.id}`)}
               className="border-2 border-black hover:bg-black hover:text-white transition-all cursor-pointer group"
             >
               <div className="p-6">

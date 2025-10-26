@@ -3,7 +3,7 @@
         "id": "arxiv:2406.10209",
         "url": "https://arxiv.org/pdf/2406.10209",
         "title": "Be like a Goldfish, Don’t Memorize! Mitigating Memorization in Generative LLMs",
-        "data": "/2406.10209.json",
+        "data": "/surf/2406.10209.json",
         "subject": [
             "NLP"
         ],
@@ -14,7 +14,7 @@
         "id": "arxiv:2405.14734",
         "url": "https://arxiv.org/pdf/2405.14734",
         "title": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
-        "data": "/2405.14734.json",
+        "data": "/surf/2405.14734.json",
         "subject": [
             "NLP",
             "Machine Learning"
@@ -26,7 +26,7 @@
         "id": "arxiv:2401.01335",
         "url": "https://arxiv.org/pdf/2401.01335",
         "title": "Self-Play Fine-Tuning Converts Weak Language Models to Strong Language Models",
-        "data": "/2401.01335.json",
+        "data": "/surf/2401.01335.json",
         "subject": [
             "NLP"
         ],
@@ -37,7 +37,7 @@
         "id": "arxiv:2401.13782",
         "url": "https://arxiv.org/pdf/2401.13782",
         "title": "Position: AI/ML Influencers Have a Place in the Academic Process",
-        "data": "/2401.13782.json",
+        "data": "/surf/2401.13782.json",
         "subject": [
             "HCI",
             "Social Networks",
@@ -50,7 +50,7 @@
         "id": "arxiv:2403.17887",
         "url": "https://arxiv.org/pdf/2403.17887",
         "title": "The Unreasonable Ineffectiveness of the Deeper Layers",
-        "data": "/2403.17887.json",
+        "data": "/surf/2403.17887.json",
         "subject": [
             "NLP"
         ],
@@ -61,7 +61,7 @@
         "id": "arxiv:2404.03592",
         "url": "https://arxiv.org/pdf/2404.03592",
         "title": "ReFT: Representation Finetuning for Language Models",
-        "data": "/2404.03592.json",
+        "data": "/surf/2404.03592.json",
         "conference": "NeurIPS'24",
         "subject": [
             "NLP"
@@ -72,7 +72,7 @@
         "id": "arxiv:2401.08565",
         "url": "https://arxiv.org/pdf/2401.08565",
         "title": "Tuning Language Models by Proxy",
-        "data": "/2401.08565.json",
+        "data": "/surf/2401.08565.json",
         "subject": [
             "NLP"
         ],
@@ -83,7 +83,7 @@
         "id": "arxiv:2311.12022",
         "url": "https://arxiv.org/pdf/2311.12022",
         "title": "GPQA: A Graduate-Level Google-Proof Q&A Benchmark",
-        "data": "/2311.12022.json",
+        "data": "/surf/2311.12022.json",
         "conference": "COLM'24",
         "subject": [
             "NLP"

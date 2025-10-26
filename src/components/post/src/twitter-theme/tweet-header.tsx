@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import type { EnrichedTweet } from "../utils.js";
-import { AvatarImg } from "./avatar-img.jsx";
 import s from "./tweet-header.module.css";
 import { VerifiedBadge } from "./verified-badge.jsx";
 import {
@@ -10,13 +9,6 @@ import {
 } from "../../../ui/hover-card.jsx";
 import { Separator } from "../../../ui/separator.jsx";
 import { Fragment, ReactNode } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-regular-svg-icons";
-import { Toggle } from "../../../ui/toggle.jsx";
-import { Button } from "../../../ui/button.jsx";
-import { ptypeConfig } from "../../../types/index.js";
-import { getColor } from "../../../../context/ColorManager.jsx";
-import { ArrowLeft } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,

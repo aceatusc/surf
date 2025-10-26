@@ -157,7 +157,7 @@ export function AppLanding() {
       {/* Hero Section */}
       <div className="max-w-[92rem] mx-auto px-[8vw] py-20 lg:px-0">
         {/* Header */}
-        <div className="text-center mb-16 border-b border-black pb-12">
+        <div className="text-center mb-2 pb-12">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-light tracking-tight mb-12 text-black">
             Beyond the Page: Enriching{" "}
             <u className="decoration-dotted decoration-2 underline-offset-4">
@@ -169,7 +169,7 @@ export function AppLanding() {
             </u>{" "}
             Discussions
           </h1>
-          <div className="text-xl md:text-2xl text-gray-800 mb-9 font-mono">
+          <div className="text-xl md:text-2xl text-gray-800 mb-8 font-mono">
             <a href="https://huang.run" className="text-gray-800">
               Run Huang
             </a>{" "}
@@ -212,13 +212,17 @@ export function AppLanding() {
             <b>UIST 2025</b>, ACM Symposium on User Interface Software and
             Technology
           </p>
+          <p className="mt-8 bg-red-700 text-white text-2xl">
+            Want to help deploy SURF or make it open source? We'd love to hear
+            from you!
+          </p>
         </div>
 
-        <div className="mb-16 border-2 border-black">
-          <div className="border-b-2 border-black bg-black text-white px-6 py-4">
-            <h2 className="text-2xl font-light tracking-wide">ABSTRACT</h2>
+        <div className="mb-8">
+          <div className="bg-black text-white px-6 py-4">
+            <h2 className="text-2xl font-light tracking-wide">Abstract</h2>
           </div>
-          <div className="px-6 py-4 leading-relaxed text-lg text-black font-light">
+          <div className="px-2 py-4 leading-relaxed text-lg text-black font-light">
             <p>
               Researchers actively engage in informal discussions about academic
               papers on social media. They share insights, promote papers, and
@@ -257,13 +261,16 @@ export function AppLanding() {
         </div>
 
         {/* Example Papers Section */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-light tracking-wide text-center mb-4 text-black">
-            Try the System
-          </h2>
-          <p className="text-center text-gray-600 mb-12 font-light">
-            Select a paper below to experience the SURF reading interface
-          </p>
+        <div className="mb-4">
+          <div className="bg-black text-white px-6 py-4">
+            <h2 className="text-2xl font-light tracking-wide">Demo</h2>
+          </div>
+          <div className="px-2 py-4 leading-relaxed text-lg font-light">
+            <p>
+              Select a paper below to get a hands-on experience with the SURF
+              reading interface
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -299,16 +306,15 @@ export function AppLanding() {
         </div>
 
         {/* BibTeX Citation Section */}
-        <div className="mt-20 border-2 border-black">
-          <div className="border-b-2 border-black bg-black text-white px-6 py-4">
-            <h2 className="text-2xl font-light tracking-wide">CITATION</h2>
-          </div>
-          <div className="px-6 py-8">
-            <p className="text-base mb-4 text-black font-light">
-              If you find our work useful, please consider citing:
-            </p>
-            <pre className="bg-gray-100 p-4 rounded text-sm overflow-x-auto border border-gray-300">
-              <code>{`@inproceedings{10.1145/3746059.3747647,
+        <div className="bg-black text-white px-6 py-4 mt-16">
+          <h2 className="text-2xl font-light tracking-wide">Citation</h2>
+        </div>
+        <div className="px-2 py-4 leading-relaxed text-lg font-light">
+          <p className="text-base mb-4 text-black font-light">
+            If you find our work useful, please consider citing:
+          </p>
+          <pre className="bg-gray-100 p-4 rounded text-sm overflow-x-auto border border-gray-300">
+            <code>{`@inproceedings{10.1145/3746059.3747647,
 author = {Huang, Run and Zhao, Anna Katherine and Saghi, Zeinabsadat and Sabouri, Sadra and Chattopadhyay, Souti},
 title = {Beyond the Page: Enriching Academic Paper Reading with Social Media Discussions},
 year = {2025},
@@ -317,8 +323,7 @@ doi = {10.1145/3746059.3747647},
 booktitle = {Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology},
 series = {UIST '25}
 }`}</code>
-            </pre>
-          </div>
+          </pre>
         </div>
       </div>
     </div>
